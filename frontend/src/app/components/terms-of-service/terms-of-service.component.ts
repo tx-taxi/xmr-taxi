@@ -15,7 +15,7 @@ export class TermsOfServiceComponent {
 
   ngOnInit(): void {
     this.seoService.setTitle('Terms of Service');
-    this.seoService.setDescription('Terms for using MoneroSpace, an open-source Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.');
+    this.seoService.setDescription('Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.');
     this.ogService.setManualOgImage('terms-of-service.jpg');
   }
 }

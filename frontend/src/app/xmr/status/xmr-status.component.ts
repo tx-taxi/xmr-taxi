@@ -39,7 +39,7 @@ export class XmrStatusComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setTitle('Monero daemon status');
-    this.seoService.setDescription('Live xmr-space backend and monerod health, sync state, version, peers, and storage status.');
+    this.seoService.setDescription('Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.');
     this.ogService.setManualOgImage('dashboard.png');
 
     this.status$ = timer(0, 10_000).pipe(

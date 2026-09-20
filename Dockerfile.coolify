@@ -39,6 +39,17 @@ COPY frontend ./
 RUN cp mempool-frontend-config.sample.json mempool-frontend-config.json
 RUN npm run build
 
+FROM node:24.13-bookworm-slim AS source-archive
+
+WORKDIR /source
+COPY . .
+RUN printf '%s\n' \
+      'This archive is generated from the same sanitized Docker build context as the deployed xmr.tx.taxi image.' \
+      'It intentionally excludes secrets, dependencies, caches, and generated build output.' \
+      > SOURCE-ARCHIVE.txt \
+    && tar --sort=name --mtime='UTC 1970-01-01' --owner=0 --group=0 --numeric-owner \
+      -czf /tmp/xmr-taxi-source.tar.gz .
+
 FROM node:24.13-bookworm-slim AS runtime
 
 RUN apt-get update && \
@@ -53,6 +64,7 @@ COPY --from=backend-builder /repo/backend/node_modules ./backend/node_modules
 COPY --from=backend-builder /repo/backend/package.json ./backend/package.json
 COPY --from=backend-builder /repo/backend/mempool-config.sample.json ./backend/mempool-config.json
 COPY --from=frontend-builder /repo/frontend/dist/mempool /usr/share/nginx/html
+COPY --from=source-archive /tmp/xmr-taxi-source.tar.gz /usr/share/nginx/html/browser/source/xmr-taxi-source.tar.gz
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/start.sh /usr/local/bin/monerospace-start
 

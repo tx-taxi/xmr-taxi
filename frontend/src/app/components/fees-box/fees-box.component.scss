@@ -45,6 +45,11 @@
       width: fit-content;
       margin: auto;
       font-size: 20px;
+      white-space: nowrap;
+
+      @media (width < 576px) {
+        font-size: 18px;
+      }
     }
     .fiat {
       display: block;

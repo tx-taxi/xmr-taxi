@@ -11,9 +11,9 @@ import { languages } from '@app/app.constants';
 })
 export class SeoService {
   network = '';
-  baseTitle = 'monerospace.org';
+  baseTitle = 'xmr.tx.taxi';
   baseDescription = 'Explore Monero blocks, transactions, mempool activity, mining data, and privacy-preserving RingCT metadata.';
-  baseDomain = 'monerospace.org';
+  baseDomain = 'xmr.tx.taxi';
 
   canonicalLink: HTMLLinkElement = document.getElementById('canonical') as HTMLLinkElement;
   private alternateLinks: { link: HTMLLinkElement; seg: string }[] = [];

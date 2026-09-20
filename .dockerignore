@@ -4,6 +4,7 @@
 .idea
 .vscode
 .iteration-screenshots
+seo-audit
 tmp
 node_modules
 **/node_modules
@@ -11,6 +12,7 @@ node_modules
 **/.cache
 **/coverage
 **/dist
+**/target
 **/package
 backend/GeoIP
 backend/cache

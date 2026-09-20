@@ -16,7 +16,7 @@ export class TrademarkPolicyComponent {
 
   ngOnInit(): void {
     this.seoService.setTitle('Trademark & Attribution');
-    this.seoService.setDescription('Trademark and attribution notes for MoneroSpace, including upstream mempool/mempool attribution and Monero project independence.');
+    this.seoService.setDescription('Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.');
     this.ogService.setManualOgImage('trademark-policy.jpg');
   }
 }

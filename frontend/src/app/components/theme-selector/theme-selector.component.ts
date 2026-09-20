@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
 })
 export class ThemeSelectorComponent implements OnInit, OnDestroy {
   themeForm: UntypedFormGroup;
-  themes = ['default', 'contrast', 'softsimon', 'bukele', 'nymkappa'];
+  themes = ['default', 'original'];
   themeStateSubscription: Subscription;
 
   constructor(

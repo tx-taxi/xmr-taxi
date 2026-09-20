@@ -20,7 +20,7 @@ export class XmrUswapComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setTitle('Buy, Sell, & Swap XMR with uSwap');
-    this.seoService.setDescription('Use uSwap from MoneroSpace to onramp, off-ramp, and convert XMR across crypto, fiat routes, cards, Telegram, VPN, gift cards, and more.');
+    this.seoService.setDescription('Use uSwap from xmr.tx.taxi to onramp, off-ramp, and convert XMR across crypto, fiat routes, cards, Telegram, VPN, gift cards, and more.');
     this.ogService.setManualOgImage('dashboard.png');
   }
 }
