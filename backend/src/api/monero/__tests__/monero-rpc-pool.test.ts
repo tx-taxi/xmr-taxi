@@ -134,4 +134,29 @@ describe('MoneroRpcPool', () => {
       await fallback.close();
     }
   });
+
+  it('tries subsequent public fallbacks when the first fallback fails', async () => {
+    const primary = await makeRpcServer(() => ({ status: 503, body: { error: 'primary unavailable' } }));
+    const firstFallback = await makeRpcServer(() => ({ status: 503, body: { error: 'first fallback unavailable' } }));
+    const secondFallback = await makeRpcServer(() => ({ body: { result: { count: 1_000, status: 'OK' } } }));
+
+    try {
+      const pool = new MoneroRpcPool({
+        rpcUrl: primary.url,
+        fallbackRpcUrls: [firstFallback.url, secondFallback.url],
+        timeoutMs: 500,
+        requirePrimarySync: false,
+      });
+
+      const count = await pool.jsonRpc<{ count: number }>('get_block_count');
+
+      expect(count.count).toBe(1_000);
+      expect(firstFallback.calls).not.toHaveLength(0);
+      expect(secondFallback.calls.map((call) => call.method)).toEqual(['get_block_count']);
+    } finally {
+      await primary.close();
+      await firstFallback.close();
+      await secondFallback.close();
+    }
+  });
 });

@@ -18,14 +18,16 @@ The active backend entrypoint is the standalone Monero server:
 cd backend
 npm install --no-install-links
 npm run build
-MONEROD_RPC_URL=https://xmr-node.cakewallet.com:18081 npm run start
+MONEROD_RPC_URL=https://xmr-node.cakewallet.com:18081 \
+MONEROD_RPC_FALLBACK_URLS=https://node.xmr.pub,http://node.sethforprivacy.com:18089 \
+npm run start
 ```
 
 `npm run start` and `npm run start-production` intentionally launch `dist/api/monero/xmr-server.js`, not the upstream Bitcoin bootstrap at `dist/index.js`. The upstream entrypoint is still available as `npm run start-upstream` for historical/debug work only.
 
 Important runtime env:
 
-- `MONEROD_RPC_URL`, `MONEROD_RPC_USER`, `MONEROD_RPC_PASSWORD`, `MONEROD_RPC_TIMEOUT_MS`
+- `MONEROD_RPC_URL`, `MONEROD_RPC_FALLBACK_URLS`, `MONEROD_RPC_USER`, `MONEROD_RPC_PASSWORD`, `MONEROD_RPC_TIMEOUT_MS`
 - `MONERO_WALLET_RPC_URL` plus optional wallet-RPC credentials for tx_proof verification
 - `XMR_HOST`, `XMR_PORT`, `XMR_INDEX_DIR`
 - `XMR_DATABASE_ENABLED=true` or `DATABASE_ENABLED=true` enables MySQL persistence for XMR mempool stats and price history, with JSON files under `XMR_INDEX_DIR` as fallback
@@ -38,6 +40,10 @@ Payment verification notes:
 - Subaddress receive scanning from only a subaddress + private view key is reported as unsupported in the view-key flow; use `tx_secret_key` for subaddress payment checks.
 
 Docker startup also runs the Monero entrypoint and checks `/healthz`.
+
+The tx.taxi deployment does not run a bundled `monerod`. It uses the configured
+public restricted-RPC pool, trying its primary and then ordered fallbacks for
+transient failures. Keep the provider list in this per-chain repository.
 
 ---
 

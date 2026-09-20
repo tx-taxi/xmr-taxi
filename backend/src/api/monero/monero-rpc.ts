@@ -95,9 +95,8 @@ export class MoneroRpc {
 }
 
 /**
- * Sync-aware primary/fallback transport. The primary is normally the local
- * monerod; the fallback is a public daemon used while the local node is still
- * syncing or briefly unavailable.
+ * Sync-aware primary/fallback transport. Deployments may use a local daemon
+ * or a public primary, with the remaining public daemons tried in order.
  */
 export class MoneroRpcPool {
   private primary: MoneroRpc;
@@ -138,14 +137,23 @@ export class MoneroRpcPool {
     try {
       return await call(selected);
     } catch (err) {
-      const fallback = this.fallbacks[0];
-      if (selected === this.primary && fallback) {
+      if (selected === this.primary) {
         this.primaryUsable = false;
         this.primaryCheckedAt = Date.now();
-        this.warn(`primary ${this.primary.rpcUrl} failed ${label}; using fallback ${fallback.rpcUrl}: ${formatError(err)}`);
-        return call(fallback);
       }
-      throw err;
+
+      let lastError = err;
+      for (const fallback of this.fallbacks) {
+        if (fallback === selected) continue;
+        try {
+          this.warn(`using fallback ${fallback.rpcUrl} for ${label}: ${formatError(lastError)}`);
+          return await call(fallback);
+        } catch (fallbackError) {
+          lastError = fallbackError;
+        }
+      }
+
+      throw lastError;
     }
   }
 
