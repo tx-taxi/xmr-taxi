@@ -159,6 +159,8 @@ export class MempoolBlockOverviewComponent implements OnInit, OnDestroy, OnChang
       return;
     }
 
+    this.applySparsePoolScale(transactionsStripped);
+
     const blockMined = (this.stateService.latestBlockHeight > this.lastBlockHeight);
     if (this.blockIndex !== this.index) {
       const direction = (this.blockIndex == null || this.index < this.blockIndex) ? this.poolDirection : this.chainDirection;
@@ -206,6 +208,7 @@ export class MempoolBlockOverviewComponent implements OnInit, OnDestroy, OnChang
       return;
     }
     if (this.blockGraph?.scene) {
+      this.applySparsePoolScale(transactionsStripped);
       this.firstLoad = false;
       this.blockGraph.setup(transactionsStripped, true);
       this.blockIndex = this.index;
@@ -248,5 +251,13 @@ export class MempoolBlockOverviewComponent implements OnInit, OnDestroy, OnChang
         context: 'projected',
       };
     });
+  }
+
+  private applySparsePoolScale(transactions: TransactionStripped[]): void {
+    const totalWeight = transactions.reduce((sum, tx) => sum + Math.max(0, tx.vsize || 0), 0);
+    const largestWeight = transactions.reduce((largest, tx) => Math.max(largest, tx.vsize || 0), 0);
+    const sparseLimit = Math.ceil(Math.max(totalWeight * 1.35, largestWeight * 4));
+    this.visualBlockWeightLimit = Math.min(XMR_VISUAL_BLOCK_WEIGHT_LIMIT, Math.max(1, sparseLimit));
+    this.blockGraph.setBlockLimit(this.visualBlockWeightLimit);
   }
 }

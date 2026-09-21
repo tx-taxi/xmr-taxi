@@ -180,6 +180,11 @@ td.amount.large {
 	font-size: 12px;
 }
 
+.xmr-hidden-total {
+	font-size: 12px;
+	white-space: nowrap;
+}
+
 .tx-link {
 	width: 0;
 	flex-grow: 1;

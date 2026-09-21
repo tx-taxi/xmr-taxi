@@ -154,23 +154,19 @@
          glyph is xmr.tx.taxi. ViewBox 0 0 500 126 unchanged so layout slots
          the same. -->
     <svg [class]="class" [style]="style" [attr.width]="width" [attr.height]="height" [attr.viewBox]="viewBox" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0.94" width="125" height="125" rx="18" fill="#10131e" stroke="#2e3349" stroke-width="3"/>
-      <path d="M22 82C25 58 42 38 62.5 38C83 38 100 58 103 82H89C86 66 75 53 62.5 53C50 53 39 66 36 82H22Z" fill="#ff6600"/>
-      <path d="M62.5 32L95 103H79L62.5 73L46 103H30L62.5 32Z" fill="#f8fbff"/>
-      <rect x="54" y="86" width="16" height="16" rx="2" fill="#35cfe0"/>
-      <rect x="36" y="98" width="13" height="13" rx="2" fill="#8b5cf6"/>
-      <rect x="76" y="98" width="13" height="13" rx="2" fill="#8b5cf6"/>
+      <g transform="translate(8 4) scale(.23)">
+        <path fill="#ff6600" d="M256 0C114.6 0 0 114.6 0 256c0 28.4 4.6 55.6 13.2 81.1h76.6V121.6L256 287.8l166.2-166.2v215.5h76.6C507.4 311.6 512 284.4 512 256 512 114.6 397.4 0 256 0Z"/>
+        <path fill="#4c4c4c" d="M384 246.4v113.9h107.5C452.4 449.7 363.1 512 256 512S59.6 449.7 20.5 360.3H128V246.4l128 128 128-128Z"/>
+      </g>
       <text x="150" y="79" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="42" font-weight="500" fill="var(--fg)">xmr<tspan fill="#ff6600">.</tspan>tx<tspan fill="#ff6600">.</tspan>taxi</text>
     </svg>
   </ng-container>
   <ng-container *ngSwitchCase="'mempoolSquare'">
     <svg [class]="class" [style]="style" [attr.width]="width" [attr.height]="height" [attr.viewBox]="viewBox" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0.94" width="125" height="125" rx="18" fill="#10131e" stroke="#2e3349" stroke-width="3"/>
-      <path d="M22 82C25 58 42 38 62.5 38C83 38 100 58 103 82H89C86 66 75 53 62.5 53C50 53 39 66 36 82H22Z" fill="#ff6600"/>
-      <path d="M62.5 32L95 103H79L62.5 73L46 103H30L62.5 32Z" fill="#f8fbff"/>
-      <rect x="54" y="86" width="16" height="16" rx="2" fill="#35cfe0"/>
-      <rect x="36" y="98" width="13" height="13" rx="2" fill="#8b5cf6"/>
-      <rect x="76" y="98" width="13" height="13" rx="2" fill="#8b5cf6"/>
+      <g transform="translate(4 4) scale(.23)">
+        <path fill="#ff6600" d="M256 0C114.6 0 0 114.6 0 256c0 28.4 4.6 55.6 13.2 81.1h76.6V121.6L256 287.8l166.2-166.2v215.5h76.6C507.4 311.6 512 284.4 512 256 512 114.6 397.4 0 256 0Z"/>
+        <path fill="#4c4c4c" d="M384 246.4v113.9h107.5C452.4 449.7 363.1 512 256 512S59.6 449.7 20.5 360.3H128V246.4l128 128 128-128Z"/>
+      </g>
     </svg>
   </ng-container>
   <ng-container *ngSwitchCase="'clippy'">

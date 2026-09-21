@@ -62,7 +62,7 @@
         <p><a [routerLink]="['/' | relativeUrl]">Dashboard</a></p>
         <p><a [routerLink]="['/blocks' | relativeUrl]">Recent Blocks</a></p>
         <p><a [routerLink]="['/mempool-block/0' | relativeUrl]">Mempool wall</a></p>
-        <p><a href="https://github.com/n0/monerospace-org" target="_blank" rel="noopener noreferrer">MoneroSpace upstream</a></p>
+        <p><a [routerLink]="['/status' | relativeUrl]">Instance status</a></p>
       </div>
       <div class="links">
         <p class="category">Learn</p>
@@ -71,12 +71,13 @@
         <p><a href="https://www.getmonero.org/resources/moneropedia/viewkey.html" target="_blank" rel="noopener noreferrer">View key</a></p>
         <p><a href="https://www.getmonero.org/resources/moneropedia/transaction-proof.html" target="_blank" rel="noopener noreferrer">tx_proof signatures</a></p>
         <p><a href="https://www.getmonero.org/resources/research-lab/" target="_blank" rel="noopener noreferrer">Monero research lab</a></p>
+        <p><a [routerLink]="['/docs' | relativeUrl]">Explorer documentation</a></p>
       </div>
       <div class="links">
         <p class="category">xmr.tx.taxi</p>
         <p><a [routerLink]="['/uswap']">Buy, Sell, &amp; Swap XMR with uSwap</a></p>
         <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact Us</a></p>
-        <p><a href="/source/xmr-taxi-source.tar.gz" download>Download source</a></p>
+        <p><a href="/source/xmr-taxi-source.tar.gz" download="xmr-taxi-source.tar.gz" type="application/gzip">Download source (.tar.gz)</a></p>
         <p><a href="https://github.com/n0/monerospace-org" target="_blank" rel="noopener noreferrer">MoneroSpace upstream</a></p>
         <p><a href="https://github.com/mempool/mempool" target="_blank" rel="noopener noreferrer">Forked from mempool/mempool</a></p>
         <p>Released under AGPLv3</p>

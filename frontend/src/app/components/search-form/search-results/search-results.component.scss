@@ -19,6 +19,23 @@
   width: 100%;
 }
 
+.search-guidance {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  white-space: normal;
+
+  strong {
+    color: var(--title-fg);
+  }
+
+  span {
+    color: var(--secondary-fg);
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}
+
 .inactive {
   opacity: 0.2;
 }

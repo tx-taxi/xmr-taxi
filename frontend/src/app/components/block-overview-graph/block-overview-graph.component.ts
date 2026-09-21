@@ -250,6 +250,13 @@ export class BlockOverviewGraphComponent implements AfterViewInit, OnDestroy, On
     }
   }
 
+  setBlockLimit(blockLimit: number): void {
+    this.blockLimit = blockLimit;
+    if (this.scene && Number.isFinite(blockLimit) && blockLimit > 0) {
+      this.scene.vbytesPerUnit = blockLimit / Math.pow(this.resolution / 1.02, 2);
+    }
+  }
+
   // collates deferred updates into a set of consistent pending changes
   queueUpdate(add: TransactionStripped[], remove: string[], change: { txid: string, rate: number | undefined }[], direction: string = 'left'): void {
     for (const tx of add) {

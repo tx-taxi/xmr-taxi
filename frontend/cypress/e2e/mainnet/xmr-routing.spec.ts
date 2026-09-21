@@ -409,6 +409,7 @@ function stubBlockApis(blockHash: string): { auditCalls: () => number; accelerat
     flags: XMR_PUBLIC_SIGNAL_FLAGS,
     time: now,
   }]);
+  cy.intercept('GET', '/api/block-height/3700000', blockHash);
   cy.intercept('GET', `/api/block/${PREVIOUS_BLOCK_HASH}/txs/0`, []);
   cy.intercept('GET', '/api/v1/block/*/audit-summary', (req) => {
     auditCalls++;
@@ -874,6 +875,11 @@ describe('XMR routing contract', () => {
 
       cy.visit('/txs');
       cy.scrollTo('top');
+      sendMinimalSnapshot({ transactions: [] });
+      cy.get('[data-cy="transactions-empty-row"]')
+        .should('be.visible')
+        .and('contain', 'No transactions currently in the mempool.');
+
       sendMinimalSnapshot({
         transactions: [
           xmrRecentTx(firstTxid, 120_000, 500),
@@ -1379,6 +1385,9 @@ describe('XMR routing contract', () => {
       cy.location('pathname', { timeout: 10_000 }).should('eq', `/tx/${TXID}`);
       cy.get('app-transaction').should('exist');
       cy.contains('h2', 'Payment verification').should('be.visible');
+      cy.contains('app-transaction-details tr', 'First seen').should('contain', 'Unavailable');
+      cy.contains('app-transaction-details tr', 'ETA').should('contain', 'Unavailable');
+      cy.get('app-transaction-details .skeleton-loader').should('not.exist');
       cy.contains('tr', 'Fee rate').within(() => {
         cy.contains(/246\.9|247/).should('be.visible');
         cy.contains('ɱ/B').should('be.visible');
@@ -1388,6 +1397,7 @@ describe('XMR routing contract', () => {
       cy.get('app-transactions-list').within(() => {
         cy.contains('Ring 16').should('be.visible');
         cy.contains('RingCT output').should('be.visible');
+        cy.contains('button', 'Amount hidden').should('be.visible');
         cy.get('.xmr-amount-blur')
           .should('have.attr', 'aria-label', 'Amount hidden by RingCT');
       });
@@ -1488,7 +1498,7 @@ describe('XMR routing contract', () => {
       cy.contains('tr', 'Miner tx hash').contains('fffffffffffff').should('be.visible');
       cy.contains('tr', 'Nonce').contains('123456').should('be.visible');
       cy.get('app-block-filters .menu-toggle').first().click({ force: true });
-      cy.get('app-block-filters').within(() => {
+      cy.get('app-block-filters').first().within(() => {
         cy.contains('Monero public signals').should('be.visible');
         cy.contains('Standard ring (16)').should('be.visible');
         cy.contains('View tags').should('be.visible');
@@ -1609,6 +1619,11 @@ describe('XMR routing contract', () => {
       cy.contains('.card-title', 'Monero Block / Transaction').should('be.visible');
       cy.get('#xmr-search-results-listbox').should('have.attr', 'role', 'listbox');
       cy.get('#xmr-search-results-listbox [role="option"]').first().should('have.attr', 'aria-selected', 'true');
+
+      cy.get('@search').clear().type('83PcqHAZRciDzuwiKFwXJ7dgYbmudizgLNGJE6uvV1KoiDdGL8jfVz2FQoG32wFbgdCo4YQ3mGnDZ7buXL1zsqcgMzAVbYs');
+      cy.contains('.search-guidance', 'Monero addresses are private').should('be.visible');
+      cy.contains('.search-guidance', 'cannot produce an address history').should('be.visible');
+      cy.location('pathname').should('eq', '/about');
     });
 
     it('routes 64-hex search submissions through the Monero block probe', () => {
@@ -1664,6 +1679,15 @@ describe('XMR routing contract', () => {
       cy.get('body').should('not.contain', 'sat/vB');
       cy.get('body').should('not.contain', 'vBytesPerSecond');
       cy.get('body').should('not.contain', 'scripthash');
+
+      cy.viewport(390, 844);
+      cy.document().then((doc) => {
+        expect(doc.documentElement.scrollWidth).to.eq(doc.documentElement.clientWidth);
+      });
+      cy.get('.xmr-api-table').first().find('tr').eq(1).within(() => {
+        cy.contains('GET').should('be.visible');
+        cy.contains('/api/v1/init-data').should('be.visible');
+      });
     });
 
     it('ships only the XMR production resource allowlist', () => {
@@ -1710,13 +1734,13 @@ describe('XMR routing contract', () => {
       });
     });
 
-    it('keeps active legal and footer surfaces retargeted to monerospace.org', () => {
+  it('keeps active legal and footer surfaces retargeted to xmr.tx.taxi', () => {
       mockWebSocketV2();
       stubDashboardApis();
 
       cy.visit('/terms-of-service');
       cy.contains('h2', 'Terms of Service').should('be.visible');
-      cy.contains('MoneroSpace is an open-source Monero block and mempool explorer').should('be.visible');
+      cy.contains('xmr.tx.taxi is a Monero block and mempool explorer').should('be.visible');
       cy.get('body').should('not.contain', 'Mempool Accelerator');
       cy.get('body').should('not.contain', 'Bitcoin community');
 
@@ -1733,7 +1757,7 @@ describe('XMR routing contract', () => {
       cy.get('body').should('not.contain', 'Explore the full Bitcoin ecosystem');
 
       cy.visit('/about');
-      cy.contains('xmr-space').should('be.visible');
+      cy.contains('h5', 'About xmr.tx.taxi').should('be.visible');
       cy.contains('Monero block & mempool explorer').should('be.visible');
       cy.get('body').should('not.contain', 'The Mempool Open Source Project');
       cy.get('body').should('not.contain', 'Become a Community Sponsor');
@@ -1743,16 +1767,21 @@ describe('XMR routing contract', () => {
       cy.get('app-master-page app-testnet-alert').should('not.exist');
       cy.get('body').should('not.contain', 'Testnet3');
       cy.get('body').should('not.contain', 'Liquid Testnet');
-      cy.get('app-master-page a[aria-label="monerospace.org dashboard"]').should('exist');
+      cy.get('app-master-page a[aria-label="xmr.tx.taxi dashboard"]').should('exist');
       cy.get('app-master-page a.nav-link[aria-label="Dashboard"]').should('have.attr', 'title', 'Dashboard');
       cy.get('app-master-page a.nav-link[aria-label="Recent blocks"]').should('have.attr', 'title', 'Recent blocks');
       cy.get('app-master-page a.nav-link[aria-label="Graphs"]').should('have.attr', 'title', 'Graphs');
       cy.get('app-master-page a.nav-link[aria-label="Documentation"]').should('have.attr', 'title', 'Documentation');
       cy.get('app-master-page a.nav-link[aria-label="Buy, sell, and swap XMR with uSwap"]').should('have.attr', 'title', 'Buy, Sell, & Swap XMR');
-      cy.get('app-master-page a.nav-link[aria-label="About monerospace.org"]').should('have.attr', 'title', 'About monerospace.org');
+      cy.get('app-master-page a.nav-link[aria-label="About xmr.tx.taxi"]').should('have.attr', 'title', 'About xmr.tx.taxi');
       cy.get('app-global-footer app-amount-selector').should('not.exist');
       cy.get('app-global-footer a[href="/uswap"]').should('contain', 'Buy, Sell, & Swap XMR with uSwap');
       cy.get('app-global-footer a[href="https://t.me/hiss"]').should('contain', 'Contact Us');
+      cy.get('app-global-footer a[href="/status"]').should('contain', 'Instance status');
+      cy.get('app-global-footer a[href="/docs"]').should('contain', 'Explorer documentation');
+      cy.get('app-global-footer a[href="/source/xmr-taxi-source.tar.gz"]')
+        .should('have.attr', 'download', 'xmr-taxi-source.tar.gz')
+        .and('have.attr', 'type', 'application/gzip');
       cy.contains('app-global-footer .footer-credit', 'Made with').should('be.visible');
       cy.get('app-global-footer .footer-credit-link[href="https://u.software"]').should('contain', 'u.software');
       cy.get('app-global-footer a[href*="github.com/n0/monerospace-org/commit"]').should('not.exist');
@@ -1768,6 +1797,17 @@ describe('XMR routing contract', () => {
 
       cy.visit('/donate');
       cy.location('pathname').should('eq', '/uswap');
+  });
+
+  it('uses the official Monero symbol colors in shared branding', () => {
+    cy.visit('/');
+    cy.get('.navbar-brand app-svg-images svg').first().within(() => {
+      cy.get('path[fill="#ff6600"]').should('exist');
+      cy.get('path[fill="#4c4c4c"]').should('exist');
+      cy.get('rect[fill="#10131e"]').should('not.exist');
+      cy.get('rect[fill="#35cfe0"]').should('not.exist');
+      cy.get('rect[fill="#8b5cf6"]').should('not.exist');
     });
+  });
   }
 });

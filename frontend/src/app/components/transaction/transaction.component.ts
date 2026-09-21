@@ -10,7 +10,6 @@ import {
   map,
   retry,
   startWith,
-  repeat,
   take,
   distinctUntilChanged
 } from 'rxjs/operators';
@@ -152,10 +151,8 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
       }),
       switchMap((txid) => this.apiService.getTransactionTimes$([txid]).pipe(
         retry({ count: 2, delay: 2000 }),
-        // Try again until we either get a valid response, or the transaction is confirmed
-        repeat({ delay: 2000 }),
-        filter((transactionTimes) => transactionTimes?.[0] > 0 || this.tx.status?.confirmed),
         take(1),
+        catchError(() => of([])),
       )),
     )
     .subscribe((transactionTimes) => {

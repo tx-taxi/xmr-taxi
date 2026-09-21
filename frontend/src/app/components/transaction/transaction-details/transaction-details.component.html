@@ -83,6 +83,11 @@
       <td i18n="transaction.first-seen|Transaction first seen">First seen</td>
       <td><span class="skeleton-loader"></span></td>
     </tr>
+  } @else {
+    <tr>
+      <td i18n="transaction.first-seen|Transaction first seen">First seen</td>
+      <td class="text-muted" i18n="shared.unavailable">Unavailable</td>
+    </tr>
   }
 </ng-template>
 
@@ -107,15 +112,15 @@
       <tr>
         <td class="td-width align-items-center align-middle" i18n="transaction.eta|Transaction ETA">ETA</td>
         <td>
-          <ng-container *ngIf="(ETA$ | async) as eta; else etaSkeleton">
+          <ng-container *ngIf="(ETA$ | async) as eta; else etaUnavailable">
             @if (eta.blocks >= 7) {
               <span i18n="transaction.eta.not-any-time-soon|Transaction ETA mot any time soon">Not any time soon</span>
             } @else {
               <app-time kind="until" [time]="eta.time" [fastRender]="false" [fixedRender]="true"></app-time>
             }
           </ng-container>
-          <ng-template #etaSkeleton>
-            <span class="skeleton-loader"></span>
+          <ng-template #etaUnavailable>
+            <span class="text-muted" i18n="shared.unavailable">Unavailable</span>
           </ng-template>
         </td>
       </tr>
@@ -129,7 +134,7 @@
   @if (!isLoadingTx) {
     <tr>
       <td class="td-width" i18n="transaction.fee|Transaction fee">Fee</td>
-      <td class="text-wrap">{{ (tx.fee | number) ?? '-' }} <span class="symbol">atomic</span>
+      <td class="text-wrap">{{ (tx.fee | number) ?? '-' }} <span class="symbol">atomic units</span>
         <span class="fiat"><app-fiat *ngIf="tx.fee >= 0" [blockConversion]="tx.price" [value]="tx.fee"></app-fiat></span>
       </td>
     </tr>

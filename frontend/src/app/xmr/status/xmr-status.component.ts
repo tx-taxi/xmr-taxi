@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
-import { forkJoin, Observable, of, timer } from 'rxjs';
+import { Observable, of, timer } from 'rxjs';
 import { catchError, map, shareReplay, switchMap } from 'rxjs/operators';
 import { ApiService, XmrBackendHealth, XmrDaemonInfo } from '@app/services/api.service';
 import { SeoService } from '@app/services/seo.service';
@@ -43,26 +43,27 @@ export class XmrStatusComponent implements OnInit {
     this.ogService.setManualOgImage('dashboard.png');
 
     this.status$ = timer(0, 10_000).pipe(
-      switchMap(() => forkJoin({
-        backend: this.apiService.getXmrBackendHealth$().pipe(
-          map((data) => ({
-            ok: data.ok === true,
-            data,
-            error: data.ok ? undefined : 'healthz returned not ok',
-          })),
-          catchError((error) => of({ ok: false, error: this.describeError(error) })),
-        ),
-        daemon: this.apiService.getXmrDaemonInfo$().pipe(
-          map((data) => ({ ok: true, data })),
-          catchError((error) => of({ ok: false, error: this.describeError(error) })),
-        ),
-      })),
-      map(({ backend, daemon }) => ({
-        backend,
-        daemon,
-        checkedAt: Date.now(),
-        state: this.resolveState(backend, daemon),
-      })),
+      switchMap(() => this.apiService.getXmrDaemonInfo$().pipe(
+        map((data) => {
+          const backend: CheckResult<XmrBackendHealth> = {
+            ok: true,
+            data: { ok: true, service: 'xmr-taxi' },
+          };
+          const daemon: CheckResult<XmrDaemonInfo> = { ok: !data.offline, data };
+          return {
+            backend,
+            daemon,
+            checkedAt: Date.now(),
+            state: this.resolveState(backend, daemon),
+          };
+        }),
+        catchError((error) => {
+          const message = this.describeError(error);
+          const backend: CheckResult<XmrBackendHealth> = { ok: false, error: message };
+          const daemon: CheckResult<XmrDaemonInfo> = { ok: false, error: message };
+          return of({ backend, daemon, checkedAt: Date.now(), state: 'offline' as XmrStatusState });
+        }),
+      )),
       shareReplay({ bufferSize: 1, refCount: true }),
     );
   }
@@ -130,7 +131,9 @@ export class XmrStatusComponent implements OnInit {
   }
 
   formatBytes(value: number | undefined | null): string {
-    if (typeof value !== 'number' || !Number.isFinite(value)) {
+    // Restricted public daemons commonly return UINT64_MAX when free-space
+    // information is unavailable. Do not present that sentinel as petabytes.
+    if (typeof value !== 'number' || !Number.isFinite(value) || value < 0 || value >= 2 ** 63) {
       return 'unknown';
     }
     const units = ['B', 'KiB', 'MiB', 'GiB', 'TiB'];
@@ -144,7 +147,7 @@ export class XmrStatusComponent implements OnInit {
   }
 
   formatDuration(seconds: number | undefined | null): string {
-    if (typeof seconds !== 'number' || !Number.isFinite(seconds)) {
+    if (typeof seconds !== 'number' || !Number.isFinite(seconds) || seconds <= 0) {
       return 'unknown';
     }
     const days = Math.floor(seconds / 86_400);
@@ -160,7 +163,7 @@ export class XmrStatusComponent implements OnInit {
   }
 
   formatTimestamp(epochSeconds: number | undefined | null): string {
-    if (typeof epochSeconds !== 'number' || !Number.isFinite(epochSeconds)) {
+    if (typeof epochSeconds !== 'number' || !Number.isFinite(epochSeconds) || epochSeconds <= 0) {
       return 'unknown';
     }
     return new Date(epochSeconds * 1000).toLocaleString();

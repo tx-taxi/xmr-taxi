@@ -13,6 +13,8 @@ interface XmrSearchResults {
   hashQuickMatch: boolean;
   blockHeight: boolean;
   blockOrTxHash: boolean;
+  unsupportedAddress: boolean;
+  showDropdown: boolean;
 }
 
 @Component({
@@ -53,6 +55,8 @@ export class SearchFormComponent implements OnInit {
       hashQuickMatch: false,
       blockHeight: false,
       blockOrTxHash: false,
+      unsupportedAddress: false,
+      showDropdown: false,
     };
   }
 
@@ -132,6 +136,13 @@ export class SearchFormComponent implements OnInit {
 
     const HEX64 = /^[a-f0-9]{64}$/i;
     const NUMERIC = /^[0-9]+$/;
+    const XMR_ADDRESS = /^[48][123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{94}(?:[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{11})?$/;
+
+    if (XMR_ADDRESS.test(searchText)) {
+      this.dropdownHidden = false;
+      this.isSearching = false;
+      return;
+    }
 
     if (NUMERIC.test(searchText)) {
       const h = parseInt(searchText, 10);
@@ -180,12 +191,15 @@ export class SearchFormComponent implements OnInit {
     const matchesBlockHeight = /^[0-9]+$/.test(searchText)
       && (this.stateService.latestBlockHeight < 0 || searchHeight <= this.stateService.latestBlockHeight);
     const matchesXmrHash = /^[a-f0-9]{64}$/i.test(searchText);
+    const matchesXmrAddress = /^[48][123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{94}(?:[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{11})?$/.test(searchText);
 
     return {
       searchText,
       hashQuickMatch: matchesBlockHeight || matchesXmrHash,
       blockHeight: matchesBlockHeight,
       blockOrTxHash: matchesXmrHash,
+      unsupportedAddress: matchesXmrAddress,
+      showDropdown: matchesBlockHeight || matchesXmrHash || matchesXmrAddress,
     };
   }
 }

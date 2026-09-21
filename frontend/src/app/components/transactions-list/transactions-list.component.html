@@ -203,7 +203,7 @@
     <div class="summary">
       <div class="float-start mt-2-5" *ngIf="!transactionPage && !isCoinbase(tx) && tx.fee !== -1">
         <app-fee-rate [fee]="tx.fee" [weight]="tx.weight"></app-fee-rate>
-        <span class="d-none d-sm-inline-block">&nbsp;&ndash; {{ tx.fee | number }} <span class="symbol">atomic</span> <span class="fiat"><app-fiat [blockConversion]="tx.price" [value]="tx.fee"></app-fiat></span></span>
+        <span class="d-none d-sm-inline-block">&nbsp;&ndash; {{ tx.fee | number }} <span class="symbol">atomic units</span> <span class="fiat"><app-fiat [blockConversion]="tx.price" [value]="tx.fee"></app-fiat></span></span>
       </div>
       <div class="float-start mt-2-5 grey-info-text" *ngIf="tx.fee === -1" i18n="transactions-list.load-to-reveal-fee-info">Show more inputs to reveal fee data</div>
 
@@ -211,8 +211,12 @@
         <ng-container *ngIf="showConfirmations && latestBlock$ | async as latestBlock">
           <app-confirmations [chainTip]="latestBlock?.height" [height]="tx?.status?.block_height" [buttonClass]="'mt-2'"></app-confirmations>
         </ng-container>
-        <button type="button" class="btn btn-sm btn-primary mt-2 ms-2" (click)="switchCurrency()">
-          <app-amount [blockConversion]="tx.price" [satoshis]="getTotalTxOutput(tx)" [blurHiddenAmount]="hasRingctOutputs(tx)"></app-amount>
+        <button type="button" class="btn btn-sm btn-primary mt-2 ms-2" (click)="switchCurrency()" [attr.aria-label]="hasRingctOutputs(tx) ? 'Transaction amount hidden by RingCT' : 'Change amount denomination'">
+          @if (hasRingctOutputs(tx)) {
+            <span class="xmr-hidden-total">Amount hidden</span>
+          } @else {
+            <app-amount [blockConversion]="tx.price" [satoshis]="getTotalTxOutput(tx)"></app-amount>
+          }
         </button>
       </div>
       <div class="clearfix"></div>
