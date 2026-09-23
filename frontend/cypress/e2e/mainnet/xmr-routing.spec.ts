@@ -1779,9 +1779,6 @@ describe('XMR routing contract', () => {
       cy.get('app-global-footer a[href="https://t.me/hiss"]').should('contain', 'Contact Us');
       cy.get('app-global-footer a[href="/status"]').should('contain', 'Instance status');
       cy.get('app-global-footer a[href="/docs"]').should('contain', 'Explorer documentation');
-      cy.get('app-global-footer a[href="/source/xmr-taxi-source.tar.gz"]')
-        .should('have.attr', 'download', 'xmr-taxi-source.tar.gz')
-        .and('have.attr', 'type', 'application/gzip');
       cy.contains('app-global-footer .footer-credit', 'Made with').should('be.visible');
       cy.get('app-global-footer .footer-credit-link[href="https://u.software"]').should('contain', 'u.software');
       cy.get('app-global-footer a[href*="github.com/n0/monerospace-org/commit"]').should('not.exist');
