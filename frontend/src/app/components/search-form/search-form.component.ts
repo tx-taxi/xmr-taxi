@@ -43,7 +43,7 @@ export class SearchFormComponent implements OnInit {
   readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/monero.png';
   readonly defaultChainIconAlt = 'Monero explorer';
   readonly defaultChainAccent = '#ff6600';
-  readonly defaultSearchPlaceholder = 'Search a Monero block height, block hash, or tx hash';
+  readonly defaultSearchPlaceholder = 'Wave a taxi, paste anything here.';
   isSearching = false;
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
   typeAhead$: Observable<XmrSearchResults>;
