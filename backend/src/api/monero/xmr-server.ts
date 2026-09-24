@@ -27,6 +27,7 @@ import { moneroWalletRpcFromEnv } from './monero-wallet-rpc';
 import { XmrSwapTickerRoutes } from './xmr-swap-ticker';
 import { XmrSitemapRoutes } from './xmr-sitemap.routes';
 import { XmrMinerProofRegistry } from './xmr-miner-proof-registry';
+import { XmrEntityMetaRoutes } from './xmr-entity-meta.routes';
 
 function main(): void {
   const app = express();
@@ -57,6 +58,7 @@ function main(): void {
 
   const daemonConfig = moneroDaemonConfigFromEnv();
   const api = new MoneroApi(daemonConfig);
+  new XmrEntityMetaRoutes(api).initRoutes(app);
   const walletRpc = moneroWalletRpcFromEnv();
   const minerProofRegistry = process.env.XMR_MINER_PROOF_REGISTRY_ENABLED === 'false'
     ? null
