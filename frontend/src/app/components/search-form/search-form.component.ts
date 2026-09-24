@@ -28,7 +28,7 @@ interface XmrSearchResults {
 export class SearchFormComponent implements OnInit {
   @Input() hamburgerOpen = false;
   readonly sourceChainId = 'monero';
-  readonly defaultChainIconUrl = 'https://tx.taxi/assets/brand/xmr-dark-car.svg';
+  readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/monero.png';
   readonly defaultChainIconAlt = 'Monero explorer';
   isSearching = false;
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
