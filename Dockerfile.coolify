@@ -15,11 +15,11 @@ COPY rust ./rust
 COPY backend/package*.json ./backend/
 
 WORKDIR /repo/backend
-RUN npm ci
+RUN npm ci --include=optional
 
 COPY backend ./
 RUN npm run build
-RUN npm prune --omit=dev
+RUN npm prune --omit=dev --include=optional
 
 FROM node:24.13-bookworm-slim AS frontend-builder
 
