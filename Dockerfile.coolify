@@ -20,7 +20,7 @@ RUN npm ci --include=optional
 COPY backend ./
 RUN npm run build
 RUN npm prune --omit=dev --include=optional
-RUN npm install --omit=dev --include=optional --os=linux --cpu=x64 sharp @img/sharp-linux-x64
+RUN npm install --omit=dev --include=optional --os=linux --cpu=x64 sharp @img/sharp-linux-x64 @img/sharp-libvips-linux-x64
 
 FROM node:24.13-bookworm-slim AS frontend-builder
 
