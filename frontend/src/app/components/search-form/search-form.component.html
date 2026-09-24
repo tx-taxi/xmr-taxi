@@ -1,39 +1,63 @@
 <form role="search" aria-label="Chain search" [class]="{hamburgerOpen: hamburgerOpen}" [formGroup]="searchForm" (submit)="searchForm.valid && search()" novalidate>
-  <div class="d-flex search-form-row" [style.--search-chain-accent]="(selectedExplorer$ | async)?.accentColor || defaultChainAccent">
+  <div class="d-flex search-form-row" [style.--search-chain-accent]="(activeTarget$ | async)?.accentColor || defaultChainAccent">
     <div class="search-box-container me-2">
-      <label class="visually-hidden" for="xmr-search-input">{{ (selectedExplorer$ | async)?.searchPlaceholder || defaultSearchPlaceholder }}</label>
+      <label class="visually-hidden" for="xmr-search-input">{{ (activeTarget$ | async)?.searchPlaceholder || defaultSearchPlaceholder }}</label>
       <div class="search-input-row">
         <div ngbDropdown class="search-chain-selector" placement="bottom-start">
           <button ngbDropdownToggle type="button" class="search-chain-trigger" aria-label="Choose search chain" title="Choose search chain">
-            <ng-container *ngIf="selectedExplorer$ | async as selectedExplorer; else defaultChainIcon">
-              <img [src]="selectedExplorer.iconUrl" [alt]="selectedExplorer.iconAlt">
+            <ng-container *ngIf="activeTarget$ | async as activeTarget; else defaultChainIcon">
+              <img [src]="activeTarget.iconUrl" [alt]="activeTarget.iconAlt">
             </ng-container>
             <ng-template #defaultChainIcon>
               <img [src]="defaultChainIconUrl" [alt]="defaultChainIconAlt">
             </ng-template>
           </button>
           <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain">
+            <ng-container *ngIf="searchOptions$ | async as searchOptions">
+              <ng-container *ngIf="searchOptions.candidates.length">
+                <span class="search-chain-group-label">Matches</span>
+                <button
+                  *ngFor="let candidate of searchOptions.candidates; trackBy: trackCandidate"
+                  type="button"
+                  ngbDropdownItem
+                  class="search-chain-option search-chain-candidate"
+                  [class.is-current]="isSelectedCandidate(candidate)"
+                  [attr.aria-pressed]="isSelectedCandidate(candidate)"
+                  [style.--chain-option-accent]="candidate.accentColor"
+                  (click)="selectCandidate(candidate)"
+                >
+                  <img [src]="candidate.iconUrl" alt="">
+                  <span class="search-chain-copy">
+                    <span class="search-chain-name">{{ candidate.name }}</span>
+                    <span class="search-chain-host">{{ candidate.host }}</span>
+                  </span>
+                  <span class="search-chain-match" [class.is-confirmed]="candidate.confirmed">
+                    {{ candidate.confirmed ? 'Found' : 'Possible' }}
+                  </span>
+                </button>
+                <div class="search-chain-divider" aria-hidden="true"></div>
+              </ng-container>
+            </ng-container>
             <ng-container *ngIf="explorers$ | async as explorers; else explorerRegistryLoading">
-              <button
+              <span class="search-chain-group-label">Explorers</span>
+              <div
                 *ngFor="let explorer of explorers; trackBy: trackExplorer"
-                type="button"
-                ngbDropdownItem
-                class="search-chain-option"
+                class="search-chain-option search-chain-explorer"
                 [class.is-current]="isSelectedExplorer(explorer)"
-                [attr.aria-pressed]="isSelectedExplorer(explorer)"
                 [style.--chain-option-accent]="explorer.accentColor"
-                (click)="selectExplorer(explorer)"
               >
+                <button type="button" ngbDropdownItem class="search-chain-select"
+                  [attr.aria-pressed]="isSelectedExplorer(explorer)"
+                  (click)="selectExplorer(explorer)">
                 <img [src]="explorer.iconUrl" alt="">
                 <span class="search-chain-copy">
                   <span class="search-chain-name">{{ explorer.name }}</span>
                   <span class="search-chain-host">{{ explorer.host }}</span>
                 </span>
-                <span class="search-chain-status" [class]="'search-chain-status is-' + explorer.status" [title]="explorer.statusTitle">
-                  <span class="search-chain-status-dot" aria-hidden="true"></span>
-                  <span>{{ explorer.statusLabel }}</span>
-                </span>
-              </button>
+                </button>
+                <a class="search-chain-switch" [href]="explorer.origin"
+                  [attr.aria-label]="'Switch to ' + explorer.name">Switch</a>
+              </div>
               <span *ngIf="!explorers.length" class="search-chain-message">Explorer registry unavailable</span>
             </ng-container>
             <ng-template #explorerRegistryLoading>
@@ -49,8 +73,8 @@
           formControlName="searchText"
           type="text"
           class="form-control"
-          [placeholder]="(selectedExplorer$ | async)?.searchPlaceholder || defaultSearchPlaceholder"
-          [attr.aria-label]="(selectedExplorer$ | async)?.searchPlaceholder || defaultSearchPlaceholder"
+          [placeholder]="(activeTarget$ | async)?.searchPlaceholder || defaultSearchPlaceholder"
+          [attr.aria-label]="(activeTarget$ | async)?.searchPlaceholder || defaultSearchPlaceholder"
           aria-autocomplete="list"
           aria-controls="xmr-search-results-listbox"
           [attr.aria-expanded]="isSourceChainSelected() && !dropdownHidden"

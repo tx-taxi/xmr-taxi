@@ -3,9 +3,9 @@ import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms
 import { HttpClient } from '@angular/common/http';
 import { EventType, NavigationStart, Router } from '@angular/router';
 import { StateService } from '@app/services/state.service';
-import { TxTaxiExplorer, TxTaxiExplorerRegistryService } from '@app/services/tx-taxi-explorer-registry.service';
+import { TxTaxiExplorer, TxTaxiExplorerRegistryService, TxTaxiSearchCandidate, TxTaxiSearchOptions } from '@app/services/tx-taxi-explorer-registry.service';
 import { BehaviorSubject, combineLatest, Observable, of } from 'rxjs';
-import { catchError, debounceTime, distinctUntilChanged, map, startWith, switchMap, tap } from 'rxjs/operators';
+import { catchError, debounceTime, distinctUntilChanged, map, shareReplay, startWith, switchMap, tap } from 'rxjs/operators';
 import { RelativeUrlPipe } from '@app/shared/pipes/relative-url/relative-url.pipe';
 import { SearchResultsComponent } from '@components/search-form/search-results/search-results.component';
 
@@ -16,6 +16,18 @@ interface XmrSearchResults {
   blockOrTxHash: boolean;
   unsupportedAddress: boolean;
   showDropdown: boolean;
+}
+
+interface SearchTarget {
+  kind: 'explorer' | 'candidate' | 'router';
+  chainId?: string;
+  name: string;
+  accentColor: string;
+  iconUrl: string;
+  iconAlt: string;
+  searchPlaceholder: string;
+  confirmed?: boolean;
+  directUrl?: string;
 }
 
 @Component({
@@ -36,13 +48,24 @@ export class SearchFormComponent implements OnInit {
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
   typeAhead$: Observable<XmrSearchResults>;
   explorers$: Observable<TxTaxiExplorer[]>;
-  selectedChainId$ = new BehaviorSubject<string>(this.sourceChainId);
-  selectedExplorer$: Observable<TxTaxiExplorer | undefined>;
+  selectedChainId$ = new BehaviorSubject<string | undefined>(this.sourceChainId);
+  activeTarget$ = new BehaviorSubject<SearchTarget>({
+    kind: 'explorer',
+    chainId: this.sourceChainId,
+    name: 'Monero',
+    accentColor: this.defaultChainAccent,
+    iconUrl: this.defaultChainIconUrl,
+    iconAlt: this.defaultChainIconAlt,
+    searchPlaceholder: this.defaultSearchPlaceholder,
+  });
+  searchOptions$ = new BehaviorSubject<TxTaxiSearchOptions | undefined>(undefined);
   searchForm: UntypedFormGroup;
   dropdownHidden = true;
+  private explorers: TxTaxiExplorer[] = [];
   private manualChainId = this.sourceChainId;
   private manualOverrideSearchText: string | undefined;
-  private detectedChainId: string | undefined;
+  private manualOverrideTarget: SearchTarget | undefined;
+  private searchOptions: TxTaxiSearchOptions | undefined;
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event) {
@@ -82,9 +105,6 @@ export class SearchFormComponent implements OnInit {
     private explorerRegistry: TxTaxiExplorerRegistryService,
   ) {
     this.explorers$ = this.explorerRegistry.explorers$;
-    this.selectedExplorer$ = combineLatest([this.explorers$, this.selectedChainId$]).pipe(
-      map(([explorers, chainId]) => explorers.find((explorer) => explorer.chainId === chainId)),
-    );
   }
 
   ngOnInit(): void {
@@ -106,6 +126,11 @@ export class SearchFormComponent implements OnInit {
       searchText: ['', Validators.required],
     });
 
+    this.explorers$.subscribe((explorers) => {
+      this.explorers = explorers;
+      this.updateActiveTarget();
+    });
+
     const searchText$ = this.searchForm.get('searchText').valueChanges
     .pipe(
       map((text) => {
@@ -115,17 +140,29 @@ export class SearchFormComponent implements OnInit {
         this.stateService.searchText$.next(text);
       }),
       distinctUntilChanged(),
+      tap((text) => this.clearManualOverrideOnInputChange(text)),
+      shareReplay(1),
     );
 
     searchText$.pipe(
-      tap((searchText) => this.clearManualOverrideOnInputChange(searchText)),
-      debounceTime(180),
-      switchMap((searchText) => this.explorerRegistry.detectSearchChain$(searchText).pipe(
-        map((chainId) => ({ searchText, chainId })),
+      debounceTime(120),
+      switchMap((searchText) => this.explorerRegistry.searchOptions$(searchText).pipe(
+        map((options) => ({ searchText, options })),
       )),
-    ).subscribe(({ searchText, chainId }) => {
-      if (this.manualOverrideSearchText === undefined && this.currentSearchText() === searchText) {
-        this.setDetectedChain(chainId);
+    ).subscribe(({ searchText, options }) => {
+      if (options && this.currentSearchText() === searchText) {
+        this.setSearchOptions(options);
+      }
+    });
+
+    searchText$.pipe(
+      debounceTime(420),
+      switchMap((searchText) => this.explorerRegistry.searchOptions$(searchText, true).pipe(
+        map((options) => ({ searchText, options })),
+      )),
+    ).subscribe(({ searchText, options }) => {
+      if (options && this.currentSearchText() === searchText) {
+        this.setSearchOptions(options);
       }
     });
 
@@ -151,8 +188,18 @@ export class SearchFormComponent implements OnInit {
     return explorer.chainId;
   }
 
+  trackCandidate(_index: number, candidate: TxTaxiSearchCandidate): string {
+    return candidate.chainId;
+  }
+
   isSelectedExplorer(explorer: TxTaxiExplorer): boolean {
-    return explorer.chainId === this.selectedChainId$.value;
+    return explorer.chainId === this.manualChainId
+      && (!this.searchOptions?.candidates.length || this.currentManualTarget()?.kind === 'explorer');
+  }
+
+  isSelectedCandidate(candidate: TxTaxiSearchCandidate): boolean {
+    const target = this.activeTarget$.value;
+    return target.kind === 'candidate' && target.chainId === candidate.chainId;
   }
 
   isSourceChainSelected(): boolean {
@@ -162,7 +209,16 @@ export class SearchFormComponent implements OnInit {
   selectExplorer(explorer: TxTaxiExplorer): void {
     this.manualChainId = explorer.chainId;
     this.manualOverrideSearchText = this.currentSearchText();
-    this.setDetectedChain(undefined);
+    this.manualOverrideTarget = this.targetForExplorer(explorer);
+    this.updateActiveTarget();
+    this.dropdownHidden = true;
+    setTimeout(() => this.dropdownHidden = true);
+  }
+
+  selectCandidate(candidate: TxTaxiSearchCandidate): void {
+    this.manualOverrideSearchText = this.currentSearchText();
+    this.manualOverrideTarget = this.targetForCandidate(candidate);
+    this.updateActiveTarget();
     this.dropdownHidden = true;
     setTimeout(() => this.dropdownHidden = true);
   }
@@ -193,35 +249,44 @@ export class SearchFormComponent implements OnInit {
     const searchText = result || this.searchForm.value.searchText.trim();
     if (!searchText) return;
 
-    if (!this.isSourceChainSelected()) {
-      this.searchSelectedChain(searchText);
+    const manualTarget = this.currentManualTarget(searchText);
+    if (manualTarget) {
+      this.searchTarget(manualTarget, searchText);
       return;
     }
 
-    if (this.manualOverrideSearchText === searchText) {
-      this.searchSourceChain(searchText);
+    const resolvedCandidate = this.resolvedCandidate();
+    if (resolvedCandidate) {
+      this.searchTarget(this.targetForCandidate(resolvedCandidate), searchText);
+      return;
+    }
+
+    if (this.searchOptions?.input === searchText && this.searchOptions.candidates.length) {
+      this.searchRouter(searchText);
       return;
     }
 
     this.isSearching = true;
-    this.explorerRegistry.detectSearchChain$(searchText).subscribe((chainId) => {
-      if (this.manualOverrideSearchText === searchText) {
-        if (!this.isSourceChainSelected()) {
-          this.searchSelectedChain(searchText);
-          return;
-        }
+    this.explorerRegistry.searchOptions$(searchText).subscribe((options) => {
+      if (this.currentSearchText() !== searchText) {
+        this.isSearching = false;
+        return;
+      }
 
+      if (options) {
+        this.setSearchOptions(options);
+      }
+
+      const currentManualTarget = this.currentManualTarget(searchText);
+      if (currentManualTarget) {
+        this.searchTarget(currentManualTarget, searchText);
+      } else if (this.resolvedCandidate()) {
+        this.searchTarget(this.targetForCandidate(this.resolvedCandidate()!), searchText);
+      } else if (options?.candidates.length) {
+        this.searchRouter(searchText);
+      } else {
         this.searchSourceChain(searchText);
-        return;
       }
-
-      this.setDetectedChain(chainId);
-      if (!this.isSourceChainSelected()) {
-        this.searchSelectedChain(searchText);
-        return;
-      }
-
-      this.searchSourceChain(searchText);
     });
   }
 
@@ -266,35 +331,145 @@ export class SearchFormComponent implements OnInit {
     this.isSearching = false;
   }
 
-  private searchSelectedChain(searchText: string): void {
+  private searchTarget(target: SearchTarget, searchText: string): void {
+    if (target.kind === 'explorer' && target.chainId === this.sourceChainId) {
+      this.searchSourceChain(searchText);
+      return;
+    }
+
     this.isSearching = true;
     this.searchTriggered.emit();
-    window.location.assign(this.explorerRegistry.chainSearchUrl(this.selectedChainId$.value, searchText));
+    if (target.kind === 'candidate' && target.confirmed && target.directUrl) {
+      window.location.assign(target.directUrl);
+      return;
+    }
+
+    if (target.chainId) {
+      window.location.assign(this.explorerRegistry.chainSearchUrl(target.chainId, searchText));
+      return;
+    }
+
+    this.searchRouter(searchText);
+  }
+
+  private searchRouter(searchText: string): void {
+    this.isSearching = true;
+    this.searchTriggered.emit();
+    window.location.assign(this.explorerRegistry.routerSearchUrl(searchText));
   }
 
   private clearManualOverrideOnInputChange(searchText: string): void {
     if (this.manualOverrideSearchText !== undefined && this.manualOverrideSearchText !== searchText) {
       this.manualOverrideSearchText = undefined;
+      this.manualOverrideTarget = undefined;
     }
-    if (this.detectedChainId !== undefined) {
-      this.setDetectedChain(undefined);
-    }
-    if (!searchText) {
-      this.setDetectedChain(undefined);
-    }
+    this.setSearchOptions(undefined);
   }
 
   private currentSearchText(): string {
     return this.searchForm?.value?.searchText?.trim() || '';
   }
 
-  private setDetectedChain(chainId: string | undefined): void {
-    this.detectedChainId = chainId;
-    const activeChainId = this.detectedChainId || this.manualChainId;
-    if (this.selectedChainId$.value !== activeChainId) {
-      this.selectedChainId$.next(activeChainId);
+  private currentManualTarget(searchText = this.currentSearchText()): SearchTarget | undefined {
+    return this.manualOverrideSearchText === searchText ? this.manualOverrideTarget : undefined;
+  }
+
+  private resolvedCandidate(): TxTaxiSearchCandidate | undefined {
+    if (!this.searchOptions?.resolvedChainId) {
+      return undefined;
+    }
+
+    return this.searchOptions.candidates.find(
+      (candidate) => candidate.chainId === this.searchOptions?.resolvedChainId && Boolean(candidate.directUrl),
+    );
+  }
+
+  private setSearchOptions(options: TxTaxiSearchOptions | undefined): void {
+    if (
+      options
+      && this.searchOptions?.input === options.input
+      && this.searchOptions.phase === 'resolved'
+      && options.phase === 'classified'
+    ) {
+      return;
+    }
+
+    this.searchOptions = options;
+    this.searchOptions$.next(options);
+    this.updateActiveTarget();
+  }
+
+  private updateActiveTarget(): void {
+    const manualTarget = this.currentManualTarget();
+    const resolvedCandidate = manualTarget ? undefined : this.resolvedCandidate();
+    const hasCandidates = !manualTarget && Boolean(this.searchOptions?.candidates.length);
+    const target = manualTarget
+      ?? (resolvedCandidate ? this.targetForCandidate(resolvedCandidate) : undefined)
+      ?? (hasCandidates ? this.routerSearchTarget : this.defaultSearchTarget());
+    const selectedChainId = manualTarget ? target.chainId : hasCandidates ? undefined : target.chainId;
+
+    if (this.selectedChainId$.value !== selectedChainId) {
+      this.selectedChainId$.next(selectedChainId);
+    }
+
+    const activeTarget = this.activeTarget$.value;
+    if (
+      activeTarget.kind !== target.kind
+      || activeTarget.chainId !== target.chainId
+      || activeTarget.accentColor !== target.accentColor
+      || activeTarget.directUrl !== target.directUrl
+    ) {
+      this.activeTarget$.next(target);
     }
   }
+
+  private defaultSearchTarget(): SearchTarget {
+    const explorer = this.explorers.find((candidate) => candidate.chainId === this.manualChainId);
+    return explorer ? this.targetForExplorer(explorer) : {
+      kind: 'explorer',
+      chainId: this.sourceChainId,
+      name: 'Monero',
+      accentColor: this.defaultChainAccent,
+      iconUrl: this.defaultChainIconUrl,
+      iconAlt: this.defaultChainIconAlt,
+      searchPlaceholder: this.defaultSearchPlaceholder,
+    };
+  }
+
+  private targetForExplorer(explorer: TxTaxiExplorer): SearchTarget {
+    return {
+      kind: 'explorer',
+      chainId: explorer.chainId,
+      name: explorer.name,
+      accentColor: explorer.accentColor,
+      iconUrl: explorer.iconUrl,
+      iconAlt: explorer.iconAlt,
+      searchPlaceholder: explorer.searchPlaceholder,
+    };
+  }
+
+  private targetForCandidate(candidate: TxTaxiSearchCandidate): SearchTarget {
+    return {
+      kind: 'candidate',
+      chainId: candidate.chainId,
+      name: candidate.name,
+      accentColor: candidate.accentColor,
+      iconUrl: candidate.iconUrl,
+      iconAlt: candidate.iconAlt,
+      searchPlaceholder: `Search ${candidate.name}`,
+      confirmed: candidate.confirmed,
+      directUrl: candidate.directUrl,
+    };
+  }
+
+  private readonly routerSearchTarget: SearchTarget = {
+    kind: 'router',
+    name: 'tx.taxi',
+    accentColor: '#ffd21f',
+    iconUrl: 'https://tx.taxi/assets/brand/taxi-logo.svg',
+    iconAlt: 'tx.taxi',
+    searchPlaceholder: 'Search any supported chain',
+  };
 
 
   navigate(url: string, searchText: string) {

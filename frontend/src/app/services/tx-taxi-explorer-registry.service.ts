@@ -46,8 +46,32 @@ interface RouterHealthResponse {
   explorers: RouterHealthSnapshot[];
 }
 
-interface RouterSearchContextResponse {
-  chainId?: string;
+interface RouterSearchOption {
+  chainId: string;
+  name: string;
+  symbol: string;
+  category: string;
+  objectType: 'address' | 'tx' | 'block';
+  confidence: 'strong' | 'weak' | 'fallback';
+  confirmed: boolean;
+  firstParty: boolean;
+  accentColor: string;
+  iconUrl: string;
+  iconAlt: string;
+  explorerName: string;
+  host: string;
+  directUrl?: string;
+}
+
+interface RouterSearchOptionsResponse {
+  input: string;
+  normalizedInput: string;
+  phase: 'classified' | 'resolved';
+  status: 'redirect' | 'choices' | 'aggregate' | 'not_found';
+  candidates: RouterSearchOption[];
+  resolvedChainId?: string;
+  redirectUrl?: string;
+  elapsedMs: number;
 }
 
 export interface TxTaxiExplorer {
@@ -63,6 +87,21 @@ export interface TxTaxiExplorer {
   status: ExplorerStatus;
   statusLabel: string;
   statusTitle: string;
+}
+
+export interface TxTaxiSearchCandidate extends RouterSearchOption {
+  iconUrl: string;
+}
+
+export interface TxTaxiSearchOptions {
+  input: string;
+  normalizedInput: string;
+  phase: 'classified' | 'resolved';
+  status: 'redirect' | 'choices' | 'aggregate' | 'not_found';
+  candidates: TxTaxiSearchCandidate[];
+  resolvedChainId?: string;
+  redirectUrl?: string;
+  elapsedMs: number;
 }
 
 @Injectable({
@@ -93,17 +132,33 @@ export class TxTaxiExplorerRegistryService {
     return `${this.routerOrigin}/${encodeURIComponent(chainId)}/${encodeURIComponent(searchText)}`;
   }
 
-  detectSearchChain$(searchText: string): Observable<string | undefined> {
+  routerSearchUrl(searchText: string): string {
+    return `${this.routerOrigin}/${encodeURIComponent(searchText)}`;
+  }
+
+  searchOptions$(searchText: string, probe = false): Observable<TxTaxiSearchOptions | undefined> {
     const value = searchText.trim();
     if (!value) {
       return of(undefined);
     }
 
-    return this.http.get<RouterSearchContextResponse>(`${this.routerOrigin}/api/v1/search-context`, {
-      params: { value },
+    return this.http.get<RouterSearchOptionsResponse>(`${this.routerOrigin}/api/v1/search-options`, {
+      params: probe ? { value, probe: '1' } : { value },
     }).pipe(
-      timeout(700),
-      map((response) => response.chainId),
+      timeout(probe ? 6500 : 900),
+      map((response) => ({
+        input: response.input,
+        normalizedInput: response.normalizedInput,
+        phase: response.phase,
+        status: response.status,
+        candidates: response.candidates.map((candidate) => ({
+          ...candidate,
+          iconUrl: this.absoluteRouterUrl(candidate.iconUrl),
+        })),
+        ...(response.resolvedChainId ? { resolvedChainId: response.resolvedChainId } : {}),
+        ...(response.redirectUrl ? { redirectUrl: response.redirectUrl } : {}),
+        elapsedMs: response.elapsedMs,
+      })),
       catchError(() => of(undefined)),
     );
   }
@@ -157,5 +212,9 @@ export class TxTaxiExplorerRegistryService {
 
   private sameOrigin(left: string, right: string): boolean {
     return left.replace(/\/$/, '') === right.replace(/\/$/, '');
+  }
+
+  private absoluteRouterUrl(url: string): string {
+    return url.startsWith('/') ? `${this.routerOrigin}${url}` : url;
   }
 }
