@@ -55,8 +55,17 @@
                   <span class="search-chain-host">{{ explorer.host }}</span>
                 </span>
                 </button>
-                <a class="search-chain-switch" [href]="explorer.origin"
-                  [attr.aria-label]="'Switch to ' + explorer.name">Switch</a>
+                <span *ngIf="explorer.chainId === sourceChainId; else explorerActions" class="search-chain-opened">Opened</span>
+                <ng-template #explorerActions>
+                  <span class="search-chain-actions">
+                    <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer"
+                      [attr.aria-label]="'Open ' + explorer.name + ' in a new tab'" [attr.title]="'Open ' + explorer.name + ' in a new tab'">
+                      <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
+                    </a>
+                    <a class="search-chain-switch" [href]="explorer.origin"
+                      [attr.aria-label]="'Switch to ' + explorer.name">Switch</a>
+                  </span>
+                </ng-template>
               </div>
               <span *ngIf="!explorers.length" class="search-chain-message">Explorer registry unavailable</span>
             </ng-container>
