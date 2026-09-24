@@ -207,6 +207,13 @@ nav {
   }
 }
 
+img.mempool-logo {
+  width: auto;
+  height: 35px;
+  max-width: 127px;
+  object-fit: contain;
+}
+
 main {
   transition: 0.2s;
   transition-property: max-width;
