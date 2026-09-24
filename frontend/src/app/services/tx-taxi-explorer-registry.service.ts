@@ -14,6 +14,7 @@ interface RouterBrandAsset {
 interface RouterExplorerSite {
   origin: string;
   host: string;
+  searchPlaceholder?: string;
   switcherLogo?: RouterBrandAsset;
 }
 
@@ -46,6 +47,7 @@ export interface TxTaxiExplorer {
   symbol: string;
   origin: string;
   host: string;
+  searchPlaceholder: string;
   iconUrl: string;
   iconAlt: string;
   status: ExplorerStatus;
@@ -77,6 +79,10 @@ export class TxTaxiExplorerRegistryService {
     );
   }
 
+  chainSearchUrl(chainId: string, searchText: string): string {
+    return `${this.routerOrigin}/${encodeURIComponent(chainId)}/${encodeURIComponent(searchText)}`;
+  }
+
   private isFirstPartyExplorer(chain: RouterChain): boolean {
     return Boolean(
       chain.site?.host?.endsWith('.tx.taxi')
@@ -103,6 +109,7 @@ export class TxTaxiExplorerRegistryService {
           symbol: chain.nativeSymbol,
           origin: site.origin,
           host: site.host,
+          searchPlaceholder: site.searchPlaceholder || `Search ${chain.name}`,
           iconUrl: logo.url,
           iconAlt: logo.alt,
           status,

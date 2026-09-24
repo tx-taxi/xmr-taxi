@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { EventType, NavigationStart, Router } from '@angular/router';
 import { StateService } from '@app/services/state.service';
 import { TxTaxiExplorer, TxTaxiExplorerRegistryService } from '@app/services/tx-taxi-explorer-registry.service';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, combineLatest, Observable, of } from 'rxjs';
 import { catchError, debounceTime, distinctUntilChanged, map, startWith, tap } from 'rxjs/operators';
 import { RelativeUrlPipe } from '@app/shared/pipes/relative-url/relative-url.pipe';
 import { SearchResultsComponent } from '@components/search-form/search-results/search-results.component';
@@ -30,17 +30,19 @@ export class SearchFormComponent implements OnInit {
   readonly sourceChainId = 'monero';
   readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/monero.png';
   readonly defaultChainIconAlt = 'Monero explorer';
+  readonly defaultSearchPlaceholder = 'Search a Monero block height, block hash, or tx hash';
   isSearching = false;
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
   typeAhead$: Observable<XmrSearchResults>;
   explorers$: Observable<TxTaxiExplorer[]>;
-  currentExplorer$: Observable<TxTaxiExplorer | undefined>;
+  selectedChainId$ = new BehaviorSubject<string>(this.sourceChainId);
+  selectedExplorer$: Observable<TxTaxiExplorer | undefined>;
   searchForm: UntypedFormGroup;
   dropdownHidden = true;
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event) {
-    if (this.elementRef.nativeElement.contains(event.target)) {
+    if (this.elementRef.nativeElement.contains(event.target) && this.isSourceChainSelected()) {
       this.dropdownHidden = false;
     } else {
       this.dropdownHidden = true;
@@ -76,8 +78,8 @@ export class SearchFormComponent implements OnInit {
     private explorerRegistry: TxTaxiExplorerRegistryService,
   ) {
     this.explorers$ = this.explorerRegistry.explorers$;
-    this.currentExplorer$ = this.explorers$.pipe(
-      map((explorers) => explorers.find((explorer) => explorer.chainId === this.sourceChainId)),
+    this.selectedExplorer$ = combineLatest([this.explorers$, this.selectedChainId$]).pipe(
+      map(([explorers, chainId]) => explorers.find((explorer) => explorer.chainId === chainId)),
     );
   }
 
@@ -111,7 +113,12 @@ export class SearchFormComponent implements OnInit {
       distinctUntilChanged(),
     );
 
-    this.typeAhead$ = searchText$.pipe(
+    const sourceSearchText$ = combineLatest([searchText$, this.selectedChainId$]).pipe(
+      map(([searchText, chainId]) => chainId === this.sourceChainId ? searchText : ''),
+      distinctUntilChanged(),
+    );
+
+    this.typeAhead$ = sourceSearchText$.pipe(
       debounceTime(100),
       map((searchText) => this.buildSearchResults(searchText)),
       startWith(this.emptySearchResults()),
@@ -119,11 +126,31 @@ export class SearchFormComponent implements OnInit {
   }
 
   handleKeyDown($event): void {
-    this.searchResults.handleKeyDown($event);
+    if (this.isSourceChainSelected()) {
+      this.searchResults.handleKeyDown($event);
+    }
   }
 
   trackExplorer(_index: number, explorer: TxTaxiExplorer): string {
     return explorer.chainId;
+  }
+
+  isSelectedExplorer(explorer: TxTaxiExplorer): boolean {
+    return explorer.chainId === this.selectedChainId$.value;
+  }
+
+  isSourceChainSelected(): boolean {
+    return this.selectedChainId$.value === this.sourceChainId;
+  }
+
+  selectExplorer(explorer: TxTaxiExplorer): void {
+    this.selectedChainId$.next(explorer.chainId);
+    this.dropdownHidden = true;
+    setTimeout(() => this.dropdownHidden = true);
+  }
+
+  showSourceSuggestions(): void {
+    this.dropdownHidden = !this.isSourceChainSelected();
   }
 
   itemSelected(): void {
@@ -147,6 +174,12 @@ export class SearchFormComponent implements OnInit {
     //   else    → no-op
     const searchText = result || this.searchForm.value.searchText.trim();
     if (!searchText) return;
+
+    if (!this.isSourceChainSelected()) {
+      this.searchSelectedChain(searchText);
+      return;
+    }
+
     this.isSearching = true;
 
     const HEX64 = /^[a-f0-9]{64}$/i;
@@ -185,6 +218,12 @@ export class SearchFormComponent implements OnInit {
       return;
     }
     this.isSearching = false;
+  }
+
+  private searchSelectedChain(searchText: string): void {
+    this.isSearching = true;
+    this.searchTriggered.emit();
+    window.location.assign(this.explorerRegistry.chainSearchUrl(this.selectedChainId$.value, searchText));
   }
 
 

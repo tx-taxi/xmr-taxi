@@ -1,26 +1,27 @@
-<form role="search" aria-label="Monero chain search" [class]="{hamburgerOpen: hamburgerOpen}" [formGroup]="searchForm" (submit)="searchForm.valid && search()" novalidate>
+<form role="search" aria-label="Chain search" [class]="{hamburgerOpen: hamburgerOpen}" [formGroup]="searchForm" (submit)="searchForm.valid && search()" novalidate>
   <div class="d-flex">
     <div class="search-box-container me-2">
-      <label class="visually-hidden" for="xmr-search-input">Search a Monero block height, block hash, or tx hash</label>
+      <label class="visually-hidden" for="xmr-search-input">{{ (selectedExplorer$ | async)?.searchPlaceholder || defaultSearchPlaceholder }}</label>
       <div class="search-input-row">
         <div ngbDropdown class="search-chain-selector" placement="bottom-start">
-          <button ngbDropdownToggle type="button" class="search-chain-trigger" aria-label="Switch chain explorer" title="Switch chain explorer">
-            <ng-container *ngIf="currentExplorer$ | async as currentExplorer; else defaultChainIcon">
-              <img [src]="currentExplorer.iconUrl" [alt]="currentExplorer.iconAlt">
+          <button ngbDropdownToggle type="button" class="search-chain-trigger" aria-label="Choose search chain" title="Choose search chain">
+            <ng-container *ngIf="selectedExplorer$ | async as selectedExplorer; else defaultChainIcon">
+              <img [src]="selectedExplorer.iconUrl" [alt]="selectedExplorer.iconAlt">
             </ng-container>
             <ng-template #defaultChainIcon>
               <img [src]="defaultChainIconUrl" [alt]="defaultChainIconAlt">
             </ng-template>
           </button>
-          <div ngbDropdownMenu class="search-chain-menu" aria-label="Select chain explorer">
+          <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain">
             <ng-container *ngIf="explorers$ | async as explorers; else explorerRegistryLoading">
-              <a
+              <button
                 *ngFor="let explorer of explorers; trackBy: trackExplorer"
+                type="button"
                 ngbDropdownItem
                 class="search-chain-option"
-                [class.is-current]="explorer.chainId === sourceChainId"
-                [href]="explorer.origin"
-                [attr.aria-current]="explorer.chainId === sourceChainId ? 'page' : null"
+                [class.is-current]="isSelectedExplorer(explorer)"
+                [attr.aria-pressed]="isSelectedExplorer(explorer)"
+                (click)="selectExplorer(explorer)"
               >
                 <img [src]="explorer.iconUrl" alt="">
                 <span class="search-chain-copy">
@@ -31,7 +32,7 @@
                   <span class="search-chain-status-dot" aria-hidden="true"></span>
                   <span>{{ explorer.statusLabel }}</span>
                 </span>
-              </a>
+              </button>
               <span *ngIf="!explorers.length" class="search-chain-message">Explorer registry unavailable</span>
             </ng-container>
             <ng-template #explorerRegistryLoading>
@@ -42,26 +43,25 @@
         <input
           #searchInput
           id="xmr-search-input"
-          (focus)="dropdownHidden = false"
-          (click)="dropdownHidden = false"
+          (focus)="showSourceSuggestions()"
+          (click)="showSourceSuggestions()"
           formControlName="searchText"
           type="text"
           class="form-control"
-          i18n-placeholder="search-form.searchbar-placeholder"
-          placeholder="Search a Monero block height, block hash, or tx hash"
-          aria-label="Search a Monero block height, block hash, or tx hash"
+          [placeholder]="(selectedExplorer$ | async)?.searchPlaceholder || defaultSearchPlaceholder"
+          [attr.aria-label]="(selectedExplorer$ | async)?.searchPlaceholder || defaultSearchPlaceholder"
           aria-autocomplete="list"
           aria-controls="xmr-search-results-listbox"
-          [attr.aria-expanded]="!dropdownHidden"
+          [attr.aria-expanded]="isSourceChainSelected() && !dropdownHidden"
           autocomplete="off"
           autocapitalize="off"
           spellcheck="false"
         >
       </div>
-      <app-search-results #searchResults [hidden]="dropdownHidden" [results]="typeAhead$ | async" (selectedResult)="selectedResult($event)"></app-search-results>
+      <app-search-results #searchResults [hidden]="dropdownHidden || !isSourceChainSelected()" [results]="typeAhead$ | async" (selectedResult)="selectedResult($event)"></app-search-results>
     </div>
     <div>
-      <button [disabled]="isSearching" type="submit" class="btn btn-purple search-submit" aria-label="Search Monero chain" title="Search Monero chain">
+      <button [disabled]="isSearching" type="submit" class="btn btn-purple search-submit" aria-label="Search selected chain" title="Search selected chain">
         <fa-icon *ngIf="!(isTypeaheading$ | async) else searchLoading" [icon]="['fas', 'search']" [fixedWidth]="true" i18n-title="search-form.search-title" title="Search"></fa-icon>
       </button>
     </div>
