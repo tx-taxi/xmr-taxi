@@ -15,11 +15,12 @@ COPY rust ./rust
 COPY backend/package*.json ./backend/
 
 WORKDIR /repo/backend
-RUN npm ci
+RUN npm ci --include=optional
 
 COPY backend ./
 RUN npm run build
-RUN npm prune --omit=dev --omit=optional
+RUN npm prune --omit=dev --include=optional
+RUN npm install --omit=dev --include=optional --os=linux --cpu=x64 sharp @img/sharp-linux-x64
 
 FROM node:24.13-bookworm-slim AS frontend-builder
 
@@ -53,6 +54,8 @@ COPY --from=backend-builder /repo/backend/node_modules ./backend/node_modules
 COPY --from=backend-builder /repo/backend/package.json ./backend/package.json
 COPY --from=backend-builder /repo/backend/mempool-config.sample.json ./backend/mempool-config.json
 COPY --from=frontend-builder /repo/frontend/dist/mempool /usr/share/nginx/html
+COPY frontend/src/resources/monerospace-preview-source.png /app/backend/assets/xmr-card-background.png
+COPY frontend/src/resources/branding/xmr-dark-navbar.svg /app/backend/assets/xmr-card-logo.svg
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/start.sh /usr/local/bin/monerospace-start
 
