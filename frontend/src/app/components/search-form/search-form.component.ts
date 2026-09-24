@@ -5,7 +5,7 @@ import { EventType, NavigationStart, Router } from '@angular/router';
 import { StateService } from '@app/services/state.service';
 import { TxTaxiExplorer, TxTaxiExplorerRegistryService } from '@app/services/tx-taxi-explorer-registry.service';
 import { BehaviorSubject, combineLatest, Observable, of } from 'rxjs';
-import { catchError, debounceTime, distinctUntilChanged, map, startWith, tap } from 'rxjs/operators';
+import { catchError, debounceTime, distinctUntilChanged, map, startWith, switchMap, tap } from 'rxjs/operators';
 import { RelativeUrlPipe } from '@app/shared/pipes/relative-url/relative-url.pipe';
 import { SearchResultsComponent } from '@components/search-form/search-results/search-results.component';
 
@@ -30,6 +30,7 @@ export class SearchFormComponent implements OnInit {
   readonly sourceChainId = 'monero';
   readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/monero.png';
   readonly defaultChainIconAlt = 'Monero explorer';
+  readonly defaultChainAccent = '#ff6600';
   readonly defaultSearchPlaceholder = 'Search a Monero block height, block hash, or tx hash';
   isSearching = false;
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
@@ -39,6 +40,9 @@ export class SearchFormComponent implements OnInit {
   selectedExplorer$: Observable<TxTaxiExplorer | undefined>;
   searchForm: UntypedFormGroup;
   dropdownHidden = true;
+  private manualChainId = this.sourceChainId;
+  private manualOverrideSearchText: string | undefined;
+  private detectedChainId: string | undefined;
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event) {
@@ -113,6 +117,18 @@ export class SearchFormComponent implements OnInit {
       distinctUntilChanged(),
     );
 
+    searchText$.pipe(
+      tap((searchText) => this.clearManualOverrideOnInputChange(searchText)),
+      debounceTime(180),
+      switchMap((searchText) => this.explorerRegistry.detectSearchChain$(searchText).pipe(
+        map((chainId) => ({ searchText, chainId })),
+      )),
+    ).subscribe(({ searchText, chainId }) => {
+      if (this.manualOverrideSearchText === undefined && this.currentSearchText() === searchText) {
+        this.setDetectedChain(chainId);
+      }
+    });
+
     const sourceSearchText$ = combineLatest([searchText$, this.selectedChainId$]).pipe(
       map(([searchText, chainId]) => chainId === this.sourceChainId ? searchText : ''),
       distinctUntilChanged(),
@@ -144,7 +160,9 @@ export class SearchFormComponent implements OnInit {
   }
 
   selectExplorer(explorer: TxTaxiExplorer): void {
-    this.selectedChainId$.next(explorer.chainId);
+    this.manualChainId = explorer.chainId;
+    this.manualOverrideSearchText = this.currentSearchText();
+    this.setDetectedChain(undefined);
     this.dropdownHidden = true;
     setTimeout(() => this.dropdownHidden = true);
   }
@@ -180,6 +198,34 @@ export class SearchFormComponent implements OnInit {
       return;
     }
 
+    if (this.manualOverrideSearchText === searchText) {
+      this.searchSourceChain(searchText);
+      return;
+    }
+
+    this.isSearching = true;
+    this.explorerRegistry.detectSearchChain$(searchText).subscribe((chainId) => {
+      if (this.manualOverrideSearchText === searchText) {
+        if (!this.isSourceChainSelected()) {
+          this.searchSelectedChain(searchText);
+          return;
+        }
+
+        this.searchSourceChain(searchText);
+        return;
+      }
+
+      this.setDetectedChain(chainId);
+      if (!this.isSourceChainSelected()) {
+        this.searchSelectedChain(searchText);
+        return;
+      }
+
+      this.searchSourceChain(searchText);
+    });
+  }
+
+  private searchSourceChain(searchText: string): void {
     this.isSearching = true;
 
     const HEX64 = /^[a-f0-9]{64}$/i;
@@ -224,6 +270,30 @@ export class SearchFormComponent implements OnInit {
     this.isSearching = true;
     this.searchTriggered.emit();
     window.location.assign(this.explorerRegistry.chainSearchUrl(this.selectedChainId$.value, searchText));
+  }
+
+  private clearManualOverrideOnInputChange(searchText: string): void {
+    if (this.manualOverrideSearchText !== undefined && this.manualOverrideSearchText !== searchText) {
+      this.manualOverrideSearchText = undefined;
+    }
+    if (this.detectedChainId !== undefined) {
+      this.setDetectedChain(undefined);
+    }
+    if (!searchText) {
+      this.setDetectedChain(undefined);
+    }
+  }
+
+  private currentSearchText(): string {
+    return this.searchForm?.value?.searchText?.trim() || '';
+  }
+
+  private setDetectedChain(chainId: string | undefined): void {
+    this.detectedChainId = chainId;
+    const activeChainId = this.detectedChainId || this.manualChainId;
+    if (this.selectedChainId$.value !== activeChainId) {
+      this.selectedChainId$.next(activeChainId);
+    }
   }
 
 

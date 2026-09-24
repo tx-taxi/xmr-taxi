@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { StateService } from '@app/services/state.service';
 import { Observable, of } from 'rxjs';
-import { catchError, map, shareReplay, switchMap } from 'rxjs/operators';
+import { catchError, map, shareReplay, switchMap, timeout } from 'rxjs/operators';
 
 type ExplorerStatus = 'live' | 'unavailable' | 'checking';
 
@@ -18,11 +18,16 @@ interface RouterExplorerSite {
   switcherLogo?: RouterBrandAsset;
 }
 
+interface RouterChainBrand {
+  accentColor: string;
+}
+
 interface RouterChain {
   id: string;
   name: string;
   nativeSymbol: string;
   displayOrder: number;
+  brand: RouterChainBrand;
   site?: RouterExplorerSite;
 }
 
@@ -41,12 +46,17 @@ interface RouterHealthResponse {
   explorers: RouterHealthSnapshot[];
 }
 
+interface RouterSearchContextResponse {
+  chainId?: string;
+}
+
 export interface TxTaxiExplorer {
   chainId: string;
   name: string;
   symbol: string;
   origin: string;
   host: string;
+  accentColor: string;
   searchPlaceholder: string;
   iconUrl: string;
   iconAlt: string;
@@ -83,6 +93,21 @@ export class TxTaxiExplorerRegistryService {
     return `${this.routerOrigin}/${encodeURIComponent(chainId)}/${encodeURIComponent(searchText)}`;
   }
 
+  detectSearchChain$(searchText: string): Observable<string | undefined> {
+    const value = searchText.trim();
+    if (!value) {
+      return of(undefined);
+    }
+
+    return this.http.get<RouterSearchContextResponse>(`${this.routerOrigin}/api/v1/search-context`, {
+      params: { value },
+    }).pipe(
+      timeout(700),
+      map((response) => response.chainId),
+      catchError(() => of(undefined)),
+    );
+  }
+
   private isFirstPartyExplorer(chain: RouterChain): boolean {
     return Boolean(
       chain.site?.host?.endsWith('.tx.taxi')
@@ -109,6 +134,7 @@ export class TxTaxiExplorerRegistryService {
           symbol: chain.nativeSymbol,
           origin: site.origin,
           host: site.host,
+          accentColor: chain.brand.accentColor,
           searchPlaceholder: site.searchPlaceholder || `Search ${chain.name}`,
           iconUrl: logo.url,
           iconAlt: logo.alt,
