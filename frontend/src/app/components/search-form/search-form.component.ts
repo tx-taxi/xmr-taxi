@@ -3,6 +3,7 @@ import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms
 import { HttpClient } from '@angular/common/http';
 import { EventType, NavigationStart, Router } from '@angular/router';
 import { StateService } from '@app/services/state.service';
+import { TxTaxiExplorer, TxTaxiExplorerRegistryService } from '@app/services/tx-taxi-explorer-registry.service';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { catchError, debounceTime, distinctUntilChanged, map, startWith, tap } from 'rxjs/operators';
 import { RelativeUrlPipe } from '@app/shared/pipes/relative-url/relative-url.pipe';
@@ -26,9 +27,14 @@ interface XmrSearchResults {
 })
 export class SearchFormComponent implements OnInit {
   @Input() hamburgerOpen = false;
+  readonly sourceChainId = 'monero';
+  readonly defaultChainIconUrl = 'https://tx.taxi/assets/brand/xmr-dark-car.svg';
+  readonly defaultChainIconAlt = 'Monero explorer';
   isSearching = false;
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
   typeAhead$: Observable<XmrSearchResults>;
+  explorers$: Observable<TxTaxiExplorer[]>;
+  currentExplorer$: Observable<TxTaxiExplorer | undefined>;
   searchForm: UntypedFormGroup;
   dropdownHidden = true;
 
@@ -67,7 +73,12 @@ export class SearchFormComponent implements OnInit {
     private relativeUrlPipe: RelativeUrlPipe,
     private elementRef: ElementRef,
     private http: HttpClient,
+    private explorerRegistry: TxTaxiExplorerRegistryService,
   ) {
+    this.explorers$ = this.explorerRegistry.explorers$;
+    this.currentExplorer$ = this.explorers$.pipe(
+      map((explorers) => explorers.find((explorer) => explorer.chainId === this.sourceChainId)),
+    );
   }
 
   ngOnInit(): void {
@@ -109,6 +120,10 @@ export class SearchFormComponent implements OnInit {
 
   handleKeyDown($event): void {
     this.searchResults.handleKeyDown($event);
+  }
+
+  trackExplorer(_index: number, explorer: TxTaxiExplorer): string {
+    return explorer.chainId;
   }
 
   itemSelected(): void {

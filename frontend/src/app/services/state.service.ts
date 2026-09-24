@@ -67,6 +67,7 @@ export interface Env {
   GIT_COMMIT_HASH: string;
   PACKAGE_JSON_VERSION: string;
   MEMPOOL_WEBSITE_URL: string;
+  TX_TAXI_ROUTER_URL: string;
   LIQUID_WEBSITE_URL: string;
   MINING_DASHBOARD: boolean;
   MAINNET_TX_FIRST_SEEN_START_HEIGHT: number;
@@ -104,6 +105,7 @@ const defaultEnv: Env = {
   'GIT_COMMIT_HASH': '',
   'PACKAGE_JSON_VERSION': '',
   'MEMPOOL_WEBSITE_URL': '',
+  'TX_TAXI_ROUTER_URL': 'https://tx.taxi',
   'LIQUID_WEBSITE_URL': '',
   // xmr-space: enabled now that XmrChainIndexer hydrates per-block
   // size/fees/reward from xmrchain.net and difficulty from monerod.
