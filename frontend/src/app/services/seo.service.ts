@@ -49,15 +49,17 @@ export class SeoService {
     ).subscribe((data) => {
       this.clearSoft404();
       this.clearJsonLd('breadcrumb');
+      this.updateCanonical(this.router.url.split('?')[0].split('#')[0]);
     });
 
     this.setStructuredData();
   }
 
   setTitle(newTitle: string): void {
-    this.titleService.setTitle(newTitle + ' - ' + this.getTitle());
-    this.metaService.updateTag({ property: 'og:title', content: newTitle});
-    this.metaService.updateTag({ name: 'twitter:title', content: newTitle});
+    const fullTitle = newTitle + ' - ' + this.getTitle();
+    this.titleService.setTitle(fullTitle);
+    this.metaService.updateTag({ property: 'og:title', content: fullTitle});
+    this.metaService.updateTag({ name: 'twitter:title', content: fullTitle});
     this.metaService.updateTag({ property: 'og:meta:ready', content: 'ready'});
   }
 

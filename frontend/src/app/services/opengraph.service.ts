@@ -24,7 +24,7 @@ export class OpenGraphService {
   ) {
     // save og:image tag from original template
     const initialOgImageTag = metaService.getTag('property=\'og:image\'');
-    this.defaultImageUrl = initialOgImageTag?.content || 'https://xmr.tx.taxi/resources/previews/dashboard.png';
+    this.defaultImageUrl = initialOgImageTag?.content || 'https://tx.taxi/assets/og/explorers/monero.png';
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
       map(() => this.activatedRoute),
@@ -49,26 +49,23 @@ export class OpenGraphService {
   }
 
   setOgImage() {
-    // The dynamic preview unfurler that serves /render/<lang>/preview* is not
-    // deployed in production (pure CSR — see SEO audit), so that URL returns the
-    // SPA HTML shell instead of an image and social cards break. Until an
-    // SSR/unfurler service is live, fall back to a static section preview.
-    // (Restore the /render/<lang>/preview${this.router.url} URL once it ships.)
-    const url = this.router.url;
-    const image = (url.startsWith('/block') || url.startsWith('/tx')) ? 'blocks.jpg' : 'dashboard.png';
-    this.setManualOgImage(image);
+    // Entity cards are owned by the Monero explorer, but no renderer is live
+    // yet. Preserve the valid default card rather than claim a dynamic image.
+    this.clearOgImage();
   }
 
   clearOgImage() {
     this.metaService.updateTag({ property: 'og:image', content: this.defaultImageUrl });
     this.metaService.updateTag({ name: 'twitter:image', content: this.defaultImageUrl });
-    this.metaService.updateTag({ property: 'og:image:width', content: '1000' });
-    this.metaService.updateTag({ property: 'og:image:height', content: '500' });
+    this.metaService.updateTag({ property: 'og:image:type', content: 'image/png' });
+    this.metaService.updateTag({ property: 'og:image:width', content: '1200' });
+    this.metaService.updateTag({ property: 'og:image:height', content: '630' });
   }
 
   setManualOgImage(imageFilename) {
     const ogImage = `${window.location.protocol}//${window.location.host}/resources/previews/${imageFilename}`;
     this.metaService.updateTag({ property: 'og:image', content: ogImage });
+    this.metaService.updateTag({ property: 'og:image:type', content: imageFilename.endsWith('.png') ? 'image/png' : 'image/jpeg' });
     this.metaService.updateTag({ property: 'og:image:width', content: '2000' });
     this.metaService.updateTag({ property: 'og:image:height', content: '1000' });
     this.metaService.updateTag({ name: 'twitter:image', content: ogImage });
