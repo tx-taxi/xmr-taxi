@@ -1,3 +1,4 @@
+import { readHubSnapshot } from './hub-snapshot';
 import { Injectable } from '@angular/core';
 import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
 import { WebsocketResponse } from '@interfaces/websocket.interface';
@@ -37,6 +38,10 @@ export class WebsocketService {
   private reconnectTimeout: number | undefined;
   private subscription: Subscription;
   private network = '';
+  private hubSnapshotClosed = false;
+  private hubSnapshotApplied = false;
+  private hubSnapshotListener?: EventListener;
+  private hubSnapshotTimer?: number;
 
   constructor(
     private stateService: StateService,
@@ -57,6 +62,7 @@ export class WebsocketService {
 
       const { response: theInitData } = this.transferState.get<any>(initData, null) || {};
       if (theInitData) {
+        if (theInitData.body?.blocks?.length || theInitData.body?.['mempool-blocks']) this.stopHubSnapshot();
         if (theInitData.body.blocks) {
           theInitData.body.blocks = theInitData.body.blocks.reverse();
         }
@@ -68,10 +74,14 @@ export class WebsocketService {
         this.startSubscription();
       }
 
+      this.installHubSnapshot();
+
       this.stateService.networkChanged$.subscribe((network) => {
         if (network === this.network || (this.network === '' && network === this.stateService.env.ROOT_NETWORK)) {
           return;
         }
+        this.stopHubSnapshot();
+        this.hubSnapshotApplied = false;
         this.network = network === this.stateService.env.ROOT_NETWORK ? '' : network;
         clearTimeout(this.onlineCheckTimeout);
         clearTimeout(this.onlineCheckTimeoutTwo);
@@ -81,6 +91,36 @@ export class WebsocketService {
         this.reconnectWebsocket();
       });
     }
+  }
+
+  private stopHubSnapshot(): void {
+    this.hubSnapshotClosed = true;
+    if (this.hubSnapshotListener) window.removeEventListener('tx-taxi:hub-snapshot', this.hubSnapshotListener);
+    if (this.hubSnapshotTimer !== undefined) window.clearTimeout(this.hubSnapshotTimer);
+    this.hubSnapshotListener = undefined;
+  }
+
+  private installHubSnapshot(): void {
+    if (this.hubSnapshotClosed) return;
+    const isDashboard = (): boolean => (!this.stateService.env.ROOT_NETWORK || this.stateService.env.ROOT_NETWORK === 'mainnet') && !this.network && (!this.stateService.network || this.stateService.network === this.stateService.env.ROOT_NETWORK)
+      && /^\/(?:[a-z]{2}(?:-[A-Z]{2})?\/?)?$/.test(window.location.pathname);
+    if (!isDashboard()) { this.stopHubSnapshot(); return; }
+    const apply = (envelope: unknown): void => {
+      if (this.hubSnapshotClosed || !isDashboard()) return;
+      const snapshot = readHubSnapshot(envelope, 'monero');
+      if (!snapshot) return;
+      this.stopHubSnapshot();
+      this.hubSnapshotApplied = true;
+      this.handleResponse({ blocks: snapshot.blocks.reverse(), 'mempool-blocks': snapshot.mempoolBlocks,
+        ...(snapshot.difficultyAdjustment ? {da: snapshot.difficultyAdjustment} : {}) } as WebsocketResponse);
+      this.stateService.isLoadingWebSocket$.next(false);
+      this.stateService.isLoadingMempool$.next(false);
+      this.stateService.connectionState$.next(1);
+    };
+    this.hubSnapshotListener = (event: Event) => apply((event as CustomEvent).detail);
+    window.addEventListener('tx-taxi:hub-snapshot', this.hubSnapshotListener);
+    this.hubSnapshotTimer = window.setTimeout(() => this.stopHubSnapshot(), 30000);
+    apply((window as any).__txTaxiHubSnapshot);
   }
 
   reconnectWebsocket(retrying = false, hasInitData = false) {
@@ -100,7 +140,7 @@ export class WebsocketService {
 
   startSubscription(retrying = false, hasInitData = false) {
     if (!hasInitData) {
-      this.stateService.isLoadingWebSocket$.next(true);
+      if (!this.hubSnapshotApplied) this.stateService.isLoadingWebSocket$.next(true);
       this.websocketSubject.next({'action': 'init'});
     }
     if (retrying) {
@@ -108,6 +148,10 @@ export class WebsocketService {
     }
     this.subscription = this.websocketSubject
       .subscribe((response: WebsocketResponse) => {
+        if (Array.isArray(response.blocks) || response.block || Array.isArray(response['mempool-blocks'])) {
+          this.hubSnapshotApplied = false;
+          this.stopHubSnapshot();
+        }
         this.stateService.isLoadingWebSocket$.next(false);
         this.handleResponse(response);
 

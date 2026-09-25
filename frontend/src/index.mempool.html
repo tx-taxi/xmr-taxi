@@ -59,6 +59,38 @@
       window.addEventListener('pagehide',()=>{observer.disconnect();clearInterval(poll);clearTimeout(fallback);},{once:true});
     }
   }
+  function requestHubSnapshot() {
+    const profile=profiles.find(profile=>profile.chain===source);
+    if(!profile || !/^\/(?:[a-z]{2}(?:-[A-Z]{2})?\/)?$/.test(location.pathname))return;
+    const hubOrigin=local?'http://127.0.0.1:4330':'https://tx.taxi';
+    const nonce=crypto.randomUUID();
+    const frame=document.createElement('iframe');
+    frame.hidden=true;frame.title='Explorer data handoff';frame.tabIndex=-1;
+    frame.setAttribute('aria-hidden','true');frame.setAttribute('sandbox','allow-scripts allow-same-origin');
+    frame.referrerPolicy='no-referrer';
+    let timer;
+    const cleanup=()=>{window.removeEventListener('message',receive);clearTimeout(timer);frame.remove();};
+    const receive=event=>{
+      if(event.origin!==hubOrigin || event.source!==frame.contentWindow)return;
+      const response=event.data;
+      if(response?.type!=='tx-taxi:hub-snapshot' || response.nonce!==nonce || response.chainId!==profile.coin)return;
+      const envelope=response.snapshot;
+      if(envelope?.version===1 && envelope.chainId===profile.coin && Number.isFinite(envelope.capturedAt)
+        && Date.now()-envelope.capturedAt>=0 && Date.now()-envelope.capturedAt<=30000){
+        // The chain service validates the block schema before applying anything.
+        window.__txTaxiHubSnapshot=envelope;
+        window.dispatchEvent(new CustomEvent('tx-taxi:hub-snapshot',{detail:envelope}));
+      }
+      cleanup();
+    };
+    window.addEventListener('message',receive);
+    frame.onload=()=>frame.contentWindow?.postMessage({type:'tx-taxi:read-hub-snapshot',nonce,chainId:profile.coin},hubOrigin);
+    frame.src=hubOrigin+'/hub-handoff';
+    document.documentElement.append(frame);
+    timer=setTimeout(cleanup,5000);
+    window.addEventListener('pagehide',cleanup,{once:true});
+  }
+  if(source)requestHubSnapshot();
   async function depart(url, profile, band) {
     if(leaving)return;leaving=true;
     if(local)url=new URL(url.pathname+url.search+url.hash,`http://127.0.0.1:${profile.port}`);
