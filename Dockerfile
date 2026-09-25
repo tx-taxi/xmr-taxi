@@ -43,7 +43,7 @@ RUN npm run build
 FROM node:24.13-bookworm-slim AS runtime
 
 RUN apt-get update && \
-    apt-get install -y nginx curl bash ca-certificates && \
+    apt-get install -y nginx curl bash ca-certificates fonts-dejavu-core && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -54,7 +54,6 @@ COPY --from=backend-builder /repo/backend/node_modules ./backend/node_modules
 COPY --from=backend-builder /repo/backend/package.json ./backend/package.json
 COPY --from=backend-builder /repo/backend/mempool-config.sample.json ./backend/mempool-config.json
 COPY --from=frontend-builder /repo/frontend/dist/mempool /usr/share/nginx/html
-COPY frontend/src/resources/monerospace-preview-source.png /app/backend/assets/xmr-card-background.png
 COPY frontend/src/resources/branding/xmr-dark-navbar.svg /app/backend/assets/xmr-card-logo.svg
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/start.sh /usr/local/bin/monerospace-start

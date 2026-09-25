@@ -8,7 +8,6 @@ const ORIGIN = 'https://xmr.tx.taxi';
 const HEX64 = /^[0-9a-f]{64}$/i;
 const HEIGHT = /^(0|[1-9]\d{0,9})$/;
 const HTML_PATH = process.env.XMR_INDEX_HTML_PATH ?? '/usr/share/nginx/html/browser/en-US/index.html';
-const CARD_BACKGROUND = process.env.XMR_CARD_BACKGROUND_PATH ?? path.join(__dirname, '../../../assets/xmr-card-background.png');
 const CARD_LOGO = process.env.XMR_CARD_LOGO_PATH ?? path.join(__dirname, '../../../assets/xmr-card-logo.svg');
 
 type Kind = 'tx' | 'block';
@@ -83,7 +82,7 @@ export class XmrEntityMetaRoutes {
       try {
         const [template, entity] = await Promise.all([readFile(HTML_PATH, 'utf8'), this.entity(kind, id)]);
         const url = `${ORIGIN}/${kind}/${id}`;
-        const image = `${ORIGIN}/og/xmr/${kind}/${id}.png`;
+        const image = `${ORIGIN}/og/xmr/${kind}/${id}.png?v=20260925-brand`;
         let html = template.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(entity.title)} | xmr.tx.taxi</title>`);
         html = html.replace(/<link id="canonical"[^>]*>/i, `<link id="canonical" rel="canonical" href="${url}">`);
         for (const [attribute, key, value] of [
@@ -120,14 +119,16 @@ export class XmrEntityMetaRoutes {
       const entity = await this.entity(kind, id);
       const label = kind === 'tx' ? 'TRANSACTION' : 'BLOCK';
       const svg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-        <text x="55" y="248" fill="#ff8a3d" font-size="26" font-family="sans-serif" font-weight="bold">MONERO ${label}</text>
-        <text x="55" y="317" fill="#fff" font-size="43" font-family="sans-serif" font-weight="bold">${escapeHtml(entity.title)}</text>
-        <text x="55" y="372" fill="#bec5d4" font-size="25" font-family="sans-serif">${escapeHtml(entity.detail)}</text>
-        <text x="55" y="557" fill="#aeb7ca" font-size="22" font-family="monospace">${escapeHtml(id)}</text>
+        <rect width="1200" height="630" fill="#111111"/><rect width="1200" height="8" fill="#ff6600"/>
+        <path d="M55 170H1145 M55 510H1145" stroke="#383838"/>
+        <text x="55" y="248" fill="#ff6600" font-size="26" font-family="DejaVu Sans, sans-serif" font-weight="bold">MONERO ${label}</text>
+        <text x="55" y="317" fill="#fff" font-size="43" font-family="DejaVu Sans, sans-serif" font-weight="bold">${escapeHtml(entity.title)}</text>
+        <text x="55" y="372" fill="#c7c7c7" font-size="25" font-family="DejaVu Sans, sans-serif">${escapeHtml(entity.detail)}</text>
+        <text x="55" y="557" fill="#aeaeae" font-size="22" font-family="DejaVu Sans Mono, monospace">${escapeHtml(id)}</text>
       </svg>`;
       const logo = await sharp(CARD_LOGO).resize({ width: 350 }).png().toBuffer();
-      const png = await sharp(CARD_BACKGROUND).resize(1200, 630, { fit: 'cover', position: 'left' })
-        .composite([{ input: Buffer.from(svg) }, { input: logo, left: 52, top: 54 }]).png().toBuffer();
+      const png = await sharp(Buffer.from(svg))
+        .composite([{ input: logo, left: 55, top: 54 }]).png().toBuffer();
       res.setHeader('Cache-Control', 'public, max-age=300, stale-if-error=3600');
       res.type('png').send(png);
     } catch (_) {
