@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { EventType, NavigationStart, Router } from '@angular/router';
 import { StateService } from '@app/services/state.service';
 import { TxTaxiExplorer, TxTaxiExplorerRegistryService, TxTaxiSearchCandidate, TxTaxiSearchOptions } from '@app/services/tx-taxi-explorer-registry.service';
-import { BehaviorSubject, combineLatest, Observable, of } from 'rxjs';
+import { BehaviorSubject, combineLatest, Observable, defer, of } from 'rxjs';
 import { catchError, debounceTime, finalize, distinctUntilChanged, map, shareReplay, startWith, switchMap, tap } from 'rxjs/operators';
 import { RelativeUrlPipe } from '@app/shared/pipes/relative-url/relative-url.pipe';
 import { SearchResultsComponent } from '@components/search-form/search-results/search-results.component';
@@ -73,7 +73,7 @@ export class SearchFormComponent implements OnInit {
   @HostListener('document:click', ['$event'])
   onDocumentClick(event) {
     if (!this.elementRef.nativeElement.contains(event.target)
-      && !this.isSearching && !this.pendingSearchRequests && !this.isTypeaheading$.value) {
+      && !this.isSearching && !this.pendingSearchRequests) {
       this.chainMenu?.close();
     }
     if (this.elementRef.nativeElement.contains(event.target) && this.isSourceChainSelected()) {
@@ -81,6 +81,20 @@ export class SearchFormComponent implements OnInit {
     } else {
       this.dropdownHidden = true;
     }
+  }
+
+  @HostListener('document:keydown.escape')
+  closeChainMenu(): void {
+    this.chainMenu?.close();
+  }
+
+  private querySearchOptions(searchText: string, probe = false): Observable<TxTaxiSearchOptions | undefined> {
+    return defer(() => {
+      this.pendingSearchRequests++;
+      return this.explorerRegistry.searchOptions$(searchText, probe).pipe(
+        finalize(() => this.pendingSearchRequests--),
+      );
+    });
   }
 
   @Output() searchTriggered = new EventEmitter();
