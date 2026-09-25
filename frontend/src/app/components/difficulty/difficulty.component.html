@@ -30,8 +30,8 @@
                 <stop offset="100%" stop-color="var(--mainnet-alt)" />
               </linearGradient>
               <linearGradient id="diff-hover-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#2486eb" />
-                <stop offset="100%" stop-color="#ae6af7" />
+                <stop offset="0%" stop-color="var(--data-hover-start)" />
+                <stop offset="100%" stop-color="var(--data-hover-end)" />
               </linearGradient>
             </defs>
             <rect
@@ -39,6 +39,7 @@
               [attr.x]="rect.x" [attr.y]="rect.y"
               [attr.width]="rect.w" [attr.height]="rect.h"
               class="rect {{rect.status}}"
+              [style.fill]="rect.status === 'next' ? (rect.expected ? 'var(--primary)' : 'var(--secondary)') : null"
               [class.hover]="hoverSection && rect.status === hoverSection.status"
               (pointerover)="onHover($event, rect);"
               (pointerout)="onBlur();"
@@ -46,8 +47,8 @@
               <animate
                 *ngIf="rect.status === 'next'"
                 attributeType="XML"
-                attributeName="fill"
-                [attr.values]="'#fff;' + (rect.expected ? '#D81B60' : '#2d3348') + ';#fff'"
+                attributeName="opacity"
+                values="1;0.45;1"
                 dur="2s"
                 repeatCount="indefinite"/>
             </rect>

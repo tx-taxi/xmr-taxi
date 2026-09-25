@@ -6,7 +6,7 @@
  * accent on every interactive surface.
  *
  * Theme variables that describe other Bitcoin networks (testnet, signet,
- * liquid, mainnet-alt) are kept as-is — those network selectors are being
+ * liquid) are kept as-is — those network selectors are being
  * stripped by route, not by SCSS, so leaving the vars wired avoids dead
  * `var(--testnet)` references in components we haven't deleted yet.
  */
@@ -30,8 +30,8 @@ $gray-700: $fg;
 $nav-tabs-link-active-bg: $active-bg;
 
 $primary: #ff6600;     /* Monero orange (was #007cfa Bitcoin blue) */
-$secondary: #2a1e16;   /* warm-tinted dark for orange context (was #272f4e) */
-$tertiary: #4d2a87;    /* keep purple as accent for fee tiers / charts */
+$secondary: #292b30;   /* warm-tinted dark for orange context (was #272f4e) */
+$tertiary: #b34700;    /* Selected navigation uses the Monero accent. */
 $success: #0eaa2e;     /* green confirmations */
 $info: #ffb380;        /* soft orange for info chips, not blue */
 
@@ -130,7 +130,7 @@ $dropdown-link-active-bg: $active-bg;
   --mempool-block-top: #403834;
   --mempool-block-side: #2d2825;
   --mempool-block-loading: #554b45;
-  --alert-bg: #3a1c61;
+  --alert-bg: #493021;
   --navbar-bg: #212121;
   --transparent-fg: #ffffffbb;
   --footer-fg: rgba(255, 255, 255, 0.4);
@@ -146,7 +146,7 @@ $dropdown-link-active-bg: $active-bg;
   --liquid: #116761;
   --liquidtestnet: #494a4a;
 
-  --mainnet-alt: #9339f4;
+  --mainnet-alt: #c44e00;
   --testnet-alt: #183550;
   --signet-alt: #471850;
   --regtest-alt: #4a4a4a;
@@ -173,10 +173,10 @@ $dropdown-link-active-bg: $active-bg;
   --fee-tier-fast: #ff6600;
   --fee-tier-fastest: #ffaa00;
 
-  --search-button: #4d2d77;
-  --search-button-border: #472a6e;
-  --search-button-focus: #533180;
-  --search-button-shadow: #7c58ab80;
+  --search-button: #b34700;
+  --search-button-border: #9c3e00;
+  --search-button-focus: #c44e00;
+  --search-button-shadow: #ff660080;
   
   --bs-body-color: var(--fg);
   --bs-body-bg: var(--active-bg);
@@ -1721,3 +1721,9 @@ form label:not(.form-check-label):not(.btn) {
 .ngb-dp-header, .ngb-dp-week {
   background-color: var(--bg) !important;
 }
+
+.fiat-color { color: var(--fiat-color, var(--info)); }
+
+:root { --data-hover-start: var(--primary); --data-hover-end: var(--info); }
+
+:root { --fee-label-color: #08090b; }

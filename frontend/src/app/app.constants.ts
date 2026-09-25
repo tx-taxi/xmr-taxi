@@ -40,6 +40,14 @@ export const defaultMempoolFeeColors = [
   'ae005b',
 ];
 
+// Ordered fee intensity for the native theme; Original keeps its upstream palette.
+export const nativeMempoolFeeColors = defaultMempoolFeeColors.map((_, index, colors) => {
+  const fraction = index / (colors.length - 1);
+  return [195, 83, 0].map((channel, i) =>
+    Math.round(channel + ([230, 96, 8][i] - channel) * fraction).toString(16).padStart(2, '0')
+  ).join('');
+});
+
 export const contrastMempoolFeeColors = [
   '06adef',
   '0082e6',

@@ -1,4 +1,4 @@
-import { Component, Input, Inject, LOCALE_ID, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, Inject, LOCALE_ID, ChangeDetectionStrategy, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { EChartsOption } from '@app/graphs/echarts';
 import { OnChanges } from '@angular/core';
 import { StorageService } from '@app/services/storage.service';
@@ -6,6 +6,7 @@ import { download, formatterXAxis, formatterXAxisLabel } from '@app/shared/graph
 import { formatNumber } from '@angular/common';
 import { StateService } from '@app/services/state.service';
 import { Subscription } from 'rxjs';
+import { ThemeService } from '@app/services/theme.service';
 
 const OUTLIERS_MEDIAN_MULTIPLIER = 4;
 
@@ -44,15 +45,24 @@ export class IncomingTransactionsGraphComponent implements OnInit, OnChanges, On
   MA: number[][] = [];
   weightMode: boolean = false;
   rateUnitSub: Subscription;
+  themeSub: Subscription;
   medianBytesPerSecond: number | undefined;
 
   constructor(
     @Inject(LOCALE_ID) private locale: string,
     private storageService: StorageService,
+    private themeService: ThemeService,
+    private cd: ChangeDetectorRef,
     public stateService: StateService,
   ) { }
 
   ngOnInit() {
+    this.themeSub = this.themeService.themeState$.subscribe(state => {
+      if (!state.loading && this.data) {
+        this.mountChart();
+        this.cd.markForCheck();
+      }
+    });
     this.rateUnitSub = this.stateService.rateUnits$.subscribe(() => {
       this.weightMode = false;
       if (this.data) {
@@ -289,7 +299,7 @@ export class IncomingTransactionsGraphComponent implements OnInit, OnChanges, On
         pieces: [{
           gt: 0,
           lte: 1667,
-          color: '#7CB342'
+          color: this.themeService.theme === 'default' ? '#ff6600' : '#7CB342'
         },
         {
           gt: 1667,
@@ -313,7 +323,7 @@ export class IncomingTransactionsGraphComponent implements OnInit, OnChanges, On
         },
         {
           gt: 3500,
-          color: '#D81B60'
+          color: this.themeService.theme === 'default' ? '#ff3d00' : '#D81B60'
         }],
         outOfRange: {
           color: '#999'
@@ -350,5 +360,6 @@ export class IncomingTransactionsGraphComponent implements OnInit, OnChanges, On
 
   ngOnDestroy(): void {
     this.rateUnitSub.unsubscribe();
+    this.themeSub.unsubscribe();
   }
 }

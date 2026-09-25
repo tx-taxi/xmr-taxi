@@ -1,4 +1,5 @@
 :root {
+  --mainnet-alt: #9339f4;
   --bg: #11131f;
   --active-bg: #000000;
   --hover-bg: #12131e;
@@ -39,3 +40,9 @@
   --bs-link-hover-color: #009bb3;
   --bs-link-hover-color-rgb: 0, 155, 179;
 }
+
+:root { --fiat-color: #83fd00; }
+
+:root { --data-hover-start: #2486eb; --data-hover-end: #ae6af7; }
+
+:root { --fee-label-color: #fff; }

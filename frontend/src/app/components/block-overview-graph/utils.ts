@@ -1,4 +1,4 @@
-import { feeLevels, defaultMempoolFeeColors, contrastMempoolFeeColors } from '@app/app.constants';
+import { feeLevels, nativeMempoolFeeColors, defaultMempoolFeeColors, contrastMempoolFeeColors } from '@app/app.constants';
 import { Color } from '@components/block-overview-graph/sprite-types';
 import TxView from '@components/block-overview-graph/tx-view';
 
@@ -80,6 +80,18 @@ for (const key in defaultColors) {
   };
 }
 
+const nativeColors: { [key: string]: ColorPalette } = {};
+for (const key of ['fee', 'unmatchedfee']) {
+  const base = nativeMempoolFeeColors.map(hexToColor);
+  const opacity = key === 'unmatchedfee' ? 0.2 : 1;
+  nativeColors[key] = {
+    base: base.map(c => setOpacity(c, opacity)),
+    audit: base.map(c => setOpacity(darken(desaturate(c, 0.3), 0.9), opacity)),
+    marginal: base.map(c => setOpacity(darken(desaturate(c, 0.8), 1.1), opacity)),
+    baseLevel: defaultColors.fee.baseLevel,
+  };
+}
+
 export { defaultColors as defaultColors };
 
 export const defaultAuditColors = {
@@ -126,6 +138,10 @@ export function defaultColorFunction(
   auditColors: { [status: string]: Color } = defaultAuditColors,
   relativeTime?: number,
 ): Color {
+  if (tx.scene?.theme.theme === 'default') {
+    if (colors === defaultColors.fee) colors = nativeColors.fee;
+    if (colors === defaultColors.unmatchedfee) colors = nativeColors.unmatchedfee;
+  }
   const rate = tx.fee / tx.vsize; // color by simple single-tx fee rate
   const levelIndex = colors.baseLevel(tx, rate, relativeTime || (Date.now() / 1000));
   const levelColor = colors.base[levelIndex] || colors.base[defaultMempoolFeeColors.length - 1];
