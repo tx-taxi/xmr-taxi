@@ -7,6 +7,14 @@
   const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const cookieName = 'tx_taxi_handoff';
+  // One divider treatment for native strips, hub shadows and loading surfaces.
+  const dividerCss = `#divider{background:none!important}#divider::before,#divider::after{content:"";position:absolute;left:0;width:100%;height:calc(50% - 32px);pointer-events:none;background:linear-gradient(var(--nav-icon,#fff) 0 0) top/100% 12px no-repeat,linear-gradient(var(--nav-icon,#fff) 0 0) center/100% 12px no-repeat,linear-gradient(var(--nav-icon,#fff) 0 0) bottom/100% 12px no-repeat}#divider::before{top:0}#divider::after{bottom:0}`;
+  window.__txTaxiDividerCss = dividerCss;
+  if (source) {
+    const style = document.createElement('style');
+    style.textContent = dividerCss;
+    document.head.append(style);
+  }
   const hubOrigin = local ? 'http://127.0.0.1:4330' : 'https://tx.taxi';
   const dashboardPath = () => document.querySelector('#btn-home a')?.getAttribute('href') || '/';
   const isDashboard = () => location.pathname.replace(/\/$/,'') === new URL(dashboardPath(),location.origin).pathname.replace(/\/$/,'');
@@ -22,7 +30,7 @@
     Object.assign(element.style, {position:'fixed',inset:'0',background:profile.background,zIndex:'100000',pointerEvents:'none',transformOrigin:'top',overflow:'hidden'});
     const skeleton = document.createElement('div');
     skeleton.style.cssText='position:absolute;inset:0';
-    skeleton.attachShadow({mode:'open'}).innerHTML=loadingTemplates[profile.chain];
+    skeleton.attachShadow({mode:'open'}).innerHTML=loadingTemplates[profile.chain] + '<style>' + dividerCss + '</style>';
     element.append(skeleton);
     return element;
   }
@@ -73,7 +81,8 @@
         done = true; clearInterval(poll); clearTimeout(timeout);
         const nav = document.querySelector('.hub-navbar')?.getBoundingClientRect().height || 76;
         const top = host.getBoundingClientRect().top + scrollY;
-        window.scrollTo({top:Math.max(0, top - nav - 24),behavior:'instant'});
+        const firstBand = host.closest('.hub-band') === document.querySelector('.hub-band');
+        window.scrollTo({top:firstBand ? 0 : Math.max(0, top - nav - 24),behavior:'instant'});
         const rect = host.getBoundingClientRect();
         const bottom = Math.max(0, innerHeight - rect.bottom);
         const skeleton = layer.firstElementChild;
@@ -110,7 +119,7 @@
       scheduled = false;
       const dashboard = isDashboard();
       const root = dashboardPath();
-      document.querySelectorAll('a.navbar-brand').forEach(link => {
+      document.querySelectorAll('a.navbar-brand, a.chain-divider-mark').forEach(link => {
         link.href = dashboard ? hubOrigin + '/' : root;
         link.setAttribute('aria-label', dashboard ? 'Back to tx.taxi' : source + '.tx.taxi dashboard');
         link.title = dashboard ? 'Back to tx.taxi' : source + '.tx.taxi dashboard';
@@ -123,7 +132,7 @@
     addEventListener('popstate', updateBrandLinks);
     document.addEventListener('click', event => {
       if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const link = event.composedPath().find(n => n instanceof HTMLAnchorElement && n.matches('.navbar-brand'));
+      const link = event.composedPath().find(n => n instanceof HTMLAnchorElement && n.matches('.navbar-brand, .chain-divider-mark'));
       if (!link || link.target === '_blank' || !isDashboard()) return;
       event.preventDefault(); event.stopImmediatePropagation();
       if (leaving) return;
