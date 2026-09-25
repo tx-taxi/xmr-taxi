@@ -19,6 +19,7 @@ interface RouterExplorerSite {
 }
 
 interface RouterChainBrand {
+  icon: RouterBrandAsset;
   accentColor: string;
 }
 
@@ -29,6 +30,7 @@ interface RouterChain {
   displayOrder: number;
   brand: RouterChainBrand;
   site?: RouterExplorerSite;
+  explorers: Array<{id:string;name:string;baseUrl:string}>;
 }
 
 interface RouterChainsResponse {
@@ -89,6 +91,8 @@ export interface TxTaxiExplorer {
   statusTitle: string;
 }
 
+export interface TxTaxiThirdPartyExplorer { id:string; chainId:string; name:string; origin:string; host:string; accentColor:string; iconUrl:string; }
+
 export interface TxTaxiSearchCandidate extends RouterSearchOption {
   iconUrl: string;
 }
@@ -109,6 +113,7 @@ export interface TxTaxiSearchOptions {
 })
 export class TxTaxiExplorerRegistryService {
   readonly explorers$: Observable<TxTaxiExplorer[]>;
+  readonly thirdPartyExplorers$: Observable<TxTaxiThirdPartyExplorer[]>;
 
   private readonly routerOrigin: string;
 
@@ -117,7 +122,15 @@ export class TxTaxiExplorerRegistryService {
     private stateService: StateService,
   ) {
     this.routerOrigin = (this.stateService.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, '');
-    this.explorers$ = this.http.get<RouterChainsResponse>(`${this.routerOrigin}/api/v1/chains`).pipe(
+    const registry$ = this.http.get<RouterChainsResponse>(`${this.routerOrigin}/api/v1/chains`).pipe(shareReplay(1));
+    this.thirdPartyExplorers$ = registry$.pipe(
+      map(response => response.chains.sort((a,b)=>a.displayOrder-b.displayOrder).flatMap(chain =>
+        (chain.explorers || []).filter(explorer => { const url=new URL(explorer.baseUrl); return url.protocol==='https:' && !url.username && !url.password && url.hostname!=='tx.taxi' && !url.hostname.endsWith('.tx.taxi'); }).map(explorer => ({
+          id:chain.id+':'+explorer.id, chainId:chain.id, name:explorer.name, origin:explorer.baseUrl,
+          host:new URL(explorer.baseUrl).host, accentColor:chain.brand.accentColor, iconUrl:this.absoluteRouterUrl(chain.brand.icon.url),
+        })))), catchError(()=>of([])), shareReplay(1),
+    );
+    this.explorers$ = registry$.pipe(
       map((response) => response.chains.filter((chain) => this.isFirstPartyExplorer(chain))),
       switchMap((chains) => this.http.get<RouterHealthResponse>(`${this.routerOrigin}/api/v1/health`).pipe(
         map((health) => this.toExplorers(chains, health.explorers)),

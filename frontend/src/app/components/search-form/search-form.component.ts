@@ -51,6 +51,7 @@ export class SearchFormComponent implements OnInit {
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
   typeAhead$: Observable<XmrSearchResults>;
   explorers$: Observable<TxTaxiExplorer[]>;
+  thirdPartyExplorers$: typeof this.explorerRegistry.thirdPartyExplorers$;
   selectedChainId$ = new BehaviorSubject<string | undefined>(this.sourceChainId);
   activeTarget$ = new BehaviorSubject<SearchTarget>({
     kind: 'explorer',
@@ -129,6 +130,7 @@ export class SearchFormComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.thirdPartyExplorers$ = this.explorerRegistry.thirdPartyExplorers$;
     this.router.events.subscribe((e: NavigationStart) => { // Reset search focus when changing page
       if (this.searchInput && e.type === EventType.NavigationStart) {
         this.chainMenu?.close();

@@ -13,11 +13,13 @@
             </ng-template>
           </button>
           <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain">
+            <span class="search-chain-group-label">NATIVE EXPLORERS</span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
-                <span class="search-chain-group-label">Matches</span>
+
                 <button
                   *ngFor="let candidate of searchOptions.candidates; trackBy: trackCandidate"
+                  [hidden]="!candidate.firstParty"
                   type="button"
                   ngbDropdownItem
                   class="search-chain-option search-chain-candidate"
@@ -39,7 +41,7 @@
               </ng-container>
             </ng-container>
             <ng-container *ngIf="explorers$ | async as explorers; else explorerRegistryLoading">
-              <span class="search-chain-group-label">Explorers</span>
+
               <div
                 *ngFor="let explorer of explorers; trackBy: trackExplorer"
                 class="search-chain-option search-chain-explorer"
@@ -69,6 +71,44 @@
               </div>
               <span *ngIf="!explorers.length" class="search-chain-message">Explorer registry unavailable</span>
             </ng-container>
+            <span class="search-chain-group-label">3RD-PARTY EXPLORERS</span>
+            <ng-container *ngIf="searchOptions$ | async as searchOptions">
+              <ng-container *ngIf="searchOptions.candidates.length">
+
+                <button
+                  *ngFor="let candidate of searchOptions.candidates; trackBy: trackCandidate"
+                  [hidden]="candidate.firstParty"
+                  type="button"
+                  ngbDropdownItem
+                  class="search-chain-option search-chain-candidate"
+                  [class.is-current]="isSelectedCandidate(candidate)"
+                  [attr.aria-pressed]="isSelectedCandidate(candidate)"
+                  [style.--chain-option-accent]="candidate.accentColor"
+                  (click)="selectCandidate(candidate)"
+                >
+                  <img [src]="candidate.iconUrl" alt="">
+                  <span class="search-chain-copy">
+                    <span class="search-chain-name">{{ candidate.name }}</span>
+                    <span class="search-chain-host">{{ candidate.host }}</span>
+                  </span>
+                  <span class="search-chain-match" [class.is-confirmed]="candidate.confirmed">
+                    {{ candidate.confirmed ? 'Found' : 'Possible' }}
+                  </span>
+                </button>
+                <div class="search-chain-divider" aria-hidden="true"></div>
+              </ng-container>
+            </ng-container>
+
+            <div *ngFor="let explorer of thirdPartyExplorers$ | async" class="search-chain-option search-chain-explorer" [style.--chain-option-accent]="explorer.accentColor">
+              <a class="search-chain-select" [href]="explorer.origin" [attr.aria-label]="'Open ' + explorer.name">
+                <img [src]="explorer.iconUrl" alt="">
+                <span class="search-chain-copy"><span class="search-chain-name">{{ explorer.name }}</span><span class="search-chain-host">{{ explorer.host }}</span></span>
+              </a>
+              <span class="search-chain-actions">
+                <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Open ' + explorer.name + ' in a new tab'" [attr.title]="'Open ' + explorer.name + ' in a new tab'"><fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon></a>
+                <a class="search-chain-switch" [href]="explorer.origin">Open</a>
+              </span>
+            </div>
             <ng-template #explorerRegistryLoading>
               <span class="search-chain-message">Loading explorers</span>
             </ng-template>

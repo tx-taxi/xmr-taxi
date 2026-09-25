@@ -114,3 +114,11 @@
     direction: rtl;
   }
 }
+.chain-divider-mark {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  display: grid; place-items: center; width: 64px; height: 64px; padding: 15px;
+  border-radius: 50%; z-index: 2;
+  background: radial-gradient(circle closest-side, var(--active-bg) 48%, color-mix(in srgb, var(--active-bg) 75%, transparent) 68%, transparent 100%);
+  img { display: block; width: 34px; height: 34px; object-fit: contain; }
+  &:focus-visible { outline: 2px solid var(--nav-icon); outline-offset: 3px; }
+}
