@@ -1,3 +1,4 @@
+import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, ChangeDetectionStrategy, EventEmitter, Output, ViewChild, HostListener, ElementRef, Input } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -5,7 +6,7 @@ import { EventType, NavigationStart, Router } from '@angular/router';
 import { StateService } from '@app/services/state.service';
 import { TxTaxiExplorer, TxTaxiExplorerRegistryService, TxTaxiSearchCandidate, TxTaxiSearchOptions } from '@app/services/tx-taxi-explorer-registry.service';
 import { BehaviorSubject, combineLatest, Observable, of } from 'rxjs';
-import { catchError, debounceTime, distinctUntilChanged, map, shareReplay, startWith, switchMap, tap } from 'rxjs/operators';
+import { catchError, debounceTime, finalize, distinctUntilChanged, map, shareReplay, startWith, switchMap, tap } from 'rxjs/operators';
 import { RelativeUrlPipe } from '@app/shared/pipes/relative-url/relative-url.pipe';
 import { SearchResultsComponent } from '@components/search-form/search-results/search-results.component';
 
@@ -44,6 +45,8 @@ export class SearchFormComponent implements OnInit {
   readonly defaultChainIconAlt = 'Monero explorer';
   readonly defaultChainAccent = '#ff6600';
   readonly defaultSearchPlaceholder = 'Wave a taxi, paste anything here.';
+  @ViewChild('chainMenu') chainMenu: NgbDropdown;
+  pendingSearchRequests = 0;
   isSearching = false;
   isTypeaheading$ = new BehaviorSubject<boolean>(false);
   typeAhead$: Observable<XmrSearchResults>;
@@ -69,6 +72,10 @@ export class SearchFormComponent implements OnInit {
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event) {
+    if (!this.elementRef.nativeElement.contains(event.target)
+      && !this.isSearching && !this.pendingSearchRequests && !this.isTypeaheading$.value) {
+      this.chainMenu?.close();
+    }
     if (this.elementRef.nativeElement.contains(event.target) && this.isSourceChainSelected()) {
       this.dropdownHidden = false;
     } else {
@@ -110,6 +117,7 @@ export class SearchFormComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((e: NavigationStart) => { // Reset search focus when changing page
       if (this.searchInput && e.type === EventType.NavigationStart) {
+        this.chainMenu?.close();
         this.searchInput.nativeElement.blur();
       }
     });
@@ -146,7 +154,7 @@ export class SearchFormComponent implements OnInit {
 
     searchText$.pipe(
       debounceTime(120),
-      switchMap((searchText) => this.explorerRegistry.searchOptions$(searchText).pipe(
+      switchMap((searchText) => this.querySearchOptions(searchText).pipe(
         map((options) => ({ searchText, options })),
       )),
     ).subscribe(({ searchText, options }) => {
@@ -157,7 +165,7 @@ export class SearchFormComponent implements OnInit {
 
     searchText$.pipe(
       debounceTime(420),
-      switchMap((searchText) => this.explorerRegistry.searchOptions$(searchText, true).pipe(
+      switchMap((searchText) => this.querySearchOptions(searchText, true).pipe(
         map((options) => ({ searchText, options })),
       )),
     ).subscribe(({ searchText, options }) => {
@@ -267,7 +275,7 @@ export class SearchFormComponent implements OnInit {
     }
 
     this.isSearching = true;
-    this.explorerRegistry.searchOptions$(searchText).subscribe((options) => {
+    this.querySearchOptions(searchText).subscribe((options) => {
       if (this.currentSearchText() !== searchText) {
         this.isSearching = false;
         return;

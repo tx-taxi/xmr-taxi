@@ -3,7 +3,7 @@
     <div class="search-box-container me-2">
       <label class="visually-hidden" for="xmr-search-input">{{ defaultSearchPlaceholder }}</label>
       <div class="search-input-row">
-        <div ngbDropdown class="search-chain-selector" placement="bottom-start">
+        <div ngbDropdown #chainMenu="ngbDropdown" [autoClose]="false" class="search-chain-selector" placement="bottom-start">
           <button ngbDropdownToggle type="button" class="search-chain-trigger" aria-label="Choose search chain" title="Choose search chain">
             <ng-container *ngIf="activeTarget$ | async as activeTarget; else defaultChainIcon">
               <img [src]="activeTarget.iconUrl" [alt]="activeTarget.iconAlt">
