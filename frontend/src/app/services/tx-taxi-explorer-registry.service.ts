@@ -145,18 +145,18 @@ export class TxTaxiExplorerRegistryService {
     return `${this.routerOrigin}/${encodeURIComponent(chainId)}/${encodeURIComponent(searchText)}`;
   }
 
-  routerSearchUrl(searchText: string): string {
-    return `${this.routerOrigin}/${encodeURIComponent(searchText)}`;
+  routerSearchUrl(searchText: string, sourceChainId?: string): string {
+    return `${this.routerOrigin}/${encodeURIComponent(searchText)}${sourceChainId ? `?source=${encodeURIComponent(sourceChainId)}` : ''}`;
   }
 
-  searchOptions$(searchText: string, probe = false): Observable<TxTaxiSearchOptions | undefined> {
+  searchOptions$(searchText: string, probe = false, sourceChainId?: string): Observable<TxTaxiSearchOptions | undefined> {
     const value = searchText.trim();
     if (!value) {
       return of(undefined);
     }
 
     return this.http.get<RouterSearchOptionsResponse>(`${this.routerOrigin}/api/v1/search-options`, {
-      params: probe ? { value, probe: '1' } : { value },
+      params: {value, ...(probe ? {probe:'1'} : {}), ...(sourceChainId ? {source:sourceChainId} : {})},
     }).pipe(
       timeout(probe ? 6500 : 900),
       map((response) => ({
