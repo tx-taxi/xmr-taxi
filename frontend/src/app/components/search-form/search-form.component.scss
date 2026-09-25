@@ -212,12 +212,12 @@
   justify-content: center;
   width: 26px;
   height: 28px;
-  color: color-mix(in srgb, var(--row-accent) 18%, var(--secondary));
+  color: var(--row-text);
   font-size: 13px;
   text-decoration: none;
 
   &:hover, &:focus-visible {
-    color: color-mix(in srgb, var(--row-accent) 35%, var(--secondary));
+    color: var(--fg);
   }
 }
 
