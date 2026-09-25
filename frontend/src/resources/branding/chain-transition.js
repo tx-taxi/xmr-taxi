@@ -7,6 +7,9 @@
   const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const cookieName = 'tx_taxi_handoff';
+  const hubOrigin = local ? 'http://127.0.0.1:4330' : 'https://tx.taxi';
+  const dashboardPath = () => document.querySelector('#btn-home a')?.getAttribute('href') || '/';
+  const isDashboard = () => location.pathname.replace(/\/$/,'') === new URL(dashboardPath(),location.origin).pathname.replace(/\/$/,'');
   let leaving = false, layer, animations = [];
   const ease = 'cubic-bezier(.22,1,.36,1)';
   function cookie(value) {
@@ -50,6 +53,84 @@
       const fallback=setTimeout(()=>{if(done||!layer)return;layer.removeAttribute('aria-hidden');const retry=document.createElement('button');retry.textContent='Explorer could not load. Retry';retry.style.cssText='position:absolute;top:360px;left:50%;transform:translateX(-50%);pointer-events:auto;background:transparent;border:1px solid #777;color:#ddd;padding:8px 12px';retry.onclick=()=>location.reload();layer.append(retry);},20000);
       window.addEventListener('pagehide',()=>{observer.disconnect();clearInterval(poll);clearTimeout(fallback);},{once:true});
     }
+  }
+  // The return cover is installed from the hub's initial HTML, before its first
+  // paint. Contract only after the destination's real native strip has mounted.
+  if (!source && location.pathname === '/') {
+    let handoff;
+    try { handoff = JSON.parse(decodeURIComponent(document.cookie.split('; ').find(c => c.startsWith(cookieName + '='))?.slice(cookieName.length + 1) || '')); } catch {}
+    const profile = profiles.find(p => p.chain === handoff?.chain);
+    if (profile && handoff?.direction === 'hub' && Date.now() - handoff.at >= 0 && Date.now() - handoff.at < 15000) {
+      cookie('');
+      layer = surface(profile);
+      document.documentElement.append(layer);
+      let done = false;
+      const contract = async () => {
+        if (done) return;
+        const host = document.querySelector(`tx-native-strip[chain-id="${profile.coin}"]`);
+        const divider = host?.shadowRoot?.querySelector('#divider');
+        if (!divider || divider.getBoundingClientRect().height < 100) return;
+        done = true; clearInterval(poll); clearTimeout(timeout);
+        const nav = document.querySelector('.hub-navbar')?.getBoundingClientRect().height || 76;
+        const top = host.getBoundingClientRect().top + scrollY;
+        window.scrollTo({top:Math.max(0, top - nav - 24),behavior:'instant'});
+        const rect = host.getBoundingClientRect();
+        const bottom = Math.max(0, innerHeight - rect.bottom);
+        const skeleton = layer.firstElementChild;
+        const nativeStrip = skeleton.shadowRoot?.querySelector('.blockchain-wrapper');
+        const nativeTop = nativeStrip?.getBoundingClientRect().top || nav;
+        if (!reduced.matches) {
+          animations.push(layer.animate([
+            {clipPath:'inset(0px 0px 0px 0px)'},
+            {clipPath:`inset(${Math.max(0,rect.top)}px 0px ${bottom}px 0px)`}
+          ], {duration:400,easing:ease,fill:'forwards'}));
+          animations.push(skeleton.animate([{transform:'translateY(0)'},{transform:`translateY(${rect.top-nativeTop}px)`}],{duration:400,easing:ease,fill:'forwards'}));
+          const position = skeleton.shadowRoot?.querySelector('.position-container');
+          if (position) {
+            const from = getComputedStyle(position).left;
+            for (const style of skeleton.shadowRoot.querySelectorAll('style')) style.textContent = style.textContent.replace(/!important/g,'');
+            position.style.left = from;
+            animations.push(position.animate([{left:from},{left:'50%'}],{duration:400,easing:ease,fill:'forwards'}));
+          }
+          try { await Promise.all(animations.map(a => a.finished)); } catch {}
+        }
+        reset();
+      };
+      const poll = setInterval(contract,50);
+      // A missing hub adapter should never trap visitors behind the cover.
+      const timeout = setTimeout(() => { done=true; clearInterval(poll); reset(); },8000);
+      addEventListener('pagehide',()=>{clearInterval(poll);clearTimeout(timeout);},{once:true});
+    }
+  }
+  // Keep the real link target accessible to keyboard, modified-click and new-tab
+  // navigation. Inner pages retain Angular's existing dashboard router link.
+  if (source) {
+    let scheduled = false;
+    const updateBrandLinks = () => {
+      scheduled = false;
+      const dashboard = isDashboard();
+      const root = dashboardPath();
+      document.querySelectorAll('a.navbar-brand').forEach(link => {
+        link.href = dashboard ? hubOrigin + '/' : root;
+        link.setAttribute('aria-label', dashboard ? 'Back to tx.taxi' : source + '.tx.taxi dashboard');
+        link.title = dashboard ? 'Back to tx.taxi' : source + '.tx.taxi dashboard';
+      });
+    };
+    const observer = new MutationObserver(() => {
+      if (!scheduled) { scheduled=true; requestAnimationFrame(updateBrandLinks); }
+    });
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+    addEventListener('popstate', updateBrandLinks);
+    document.addEventListener('click', event => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const link = event.composedPath().find(n => n instanceof HTMLAnchorElement && n.matches('.navbar-brand'));
+      if (!link || link.target === '_blank' || !isDashboard()) return;
+      event.preventDefault(); event.stopImmediatePropagation();
+      if (leaving) return;
+      leaving = true;
+      cookie(encodeURIComponent(JSON.stringify({chain:source,direction:'hub',at:Date.now()})));
+      location.assign(hubOrigin + '/');
+    },true);
   }
   function requestHubSnapshot() {
     const profile=profiles.find(profile=>profile.chain===source);
