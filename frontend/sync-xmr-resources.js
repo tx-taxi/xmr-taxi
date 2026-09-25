@@ -18,6 +18,7 @@ const allowedResources = [
   'config.js',
   'config.template.js',
   'customize.js',
+  'mempool-original.css',
   'branding/xmr-dark-full.svg',
   'branding/xmr-dark-navbar.svg',
   'branding/xmr-favicon.svg',
