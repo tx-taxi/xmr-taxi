@@ -359,3 +359,26 @@ footer .nowrap {
     width: unset;
   }
 }
+
+footer .footer-telegram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  margin: 2px 0 5px;
+  padding: 5px 10px;
+  border: 1px solid color-mix(in srgb, var(--primary) 55%, var(--bg));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 13%, var(--bg));
+  color: color-mix(in srgb, var(--primary) 72%, var(--fg));
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+footer .footer-telegram-link:hover,
+footer .footer-telegram-link:focus-visible {
+  background: color-mix(in srgb, var(--primary) 23%, var(--bg));
+  color: var(--fg);
+  text-decoration: none;
+}
