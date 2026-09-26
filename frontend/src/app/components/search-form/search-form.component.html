@@ -13,6 +13,24 @@
             </ng-template>
           </button>
           <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain">
+            <div class="search-chain-option search-chain-explorer search-chain-automatic"
+              [class.is-current]="isAutomaticRoutingSelected()" style="--chain-option-accent: #ffd21f">
+              <button type="button" ngbDropdownItem class="search-chain-select"
+                [attr.aria-pressed]="isAutomaticRoutingSelected()" (click)="selectAutomaticRouting()">
+                <img src="https://tx.taxi/assets/brand/taxi-logo.svg" alt="">
+                <span class="search-chain-copy">
+                  <span class="search-chain-name">Automatic Routing</span>
+                  <span class="search-chain-host">tx.taxi</span>
+                </span>
+              </button>
+              <span class="search-chain-actions">
+                <a class="search-chain-new-tab" href="https://tx.taxi/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open tx.taxi in a new tab" title="Open tx.taxi in a new tab">
+                  <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
+                </a>
+                <a class="search-chain-switch" href="https://tx.taxi/">View Hub</a>
+              </span>
+            </div>
             <span class="search-chain-group-label">NATIVE EXPLORERS</span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
