@@ -3,13 +3,12 @@
   'use strict';
   const role = document.currentScript.dataset.migration;
   const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
-  const source = local ? 'http://127.0.0.1:4381' : 'https://monerospace.org';
   const target = local ? 'http://127.0.0.1:4382' : 'https://xmr.tx.taxi';
   const prefix = '#xmr-move=';
   const key = 'xmr-taxi-default-v1', nonceKey = 'xmr-taxi-move-v1', seenKey = 'xmr-taxi-from-monerospace-v1';
   const languages = new Set(["ar", "ca", "cs", "de", "da", "es", "fa", "fr", "hr", "ja", "ka", "ko", "it", "he", "nl", "nb", "pl", "pt", "sl", "sv", "th", "tr", "uk", "fi", "vi", "hu", "mk", "zh", "ro", "ru", "hi", "ne", "lt", "en", "en-US"]);
   const timezones = new Set(["local", "-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "+0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10", "+11", "+12", "+13", "+14"]);
-  let incoming, arrived = false, enabled = false, confirmEnable = false, storageFailed = false;
+  let incoming, confirmEnable = false, storageFailed = false;
   const read = (store, name) => { try { return window[store].getItem(name); } catch { return null; } };
   const write = (store, name, value) => { try { value === null ? window[store].removeItem(name) : window[store].setItem(name,value); return true; } catch { return false; } };
   const metric = event => {
@@ -62,11 +61,17 @@
     history.replaceState(null,'',location.pathname + location.search + (incoming?.h || ''));
   }
   if (role === 'target' && incoming && ['try','auto','enabled'].includes(incoming.mode)) {
-    arrived = true; enabled = ['enabled','auto'].includes(incoming.mode);
     if (incoming.mode !== 'auto' || read('localStorage',seenKey) !== '1') applyPrefs(incoming.p);
     write('sessionStorage',nonceKey,JSON.stringify({nonce:incoming.nonce,t:incoming.t}));
     write('localStorage',seenKey,'1');
     metric('arrival');
+  }
+  if (role === 'target' && read('localStorage',seenKey) === '1') {
+    const today = new Date().toISOString().slice(0,10);
+    const lastVisit = read('localStorage','xmr-taxi-return-day-v1');
+    // Count at most one returning browser-day without showing a target-site banner.
+    if (lastVisit && lastVisit !== today) metric('return_visit');
+    write('localStorage','xmr-taxi-return-day-v1',today);
   }
   if (role === 'source') {
     if (incoming && ['back','enable'].includes(incoming.mode)) applyPrefs(incoming.p);
@@ -83,7 +88,7 @@
     }
   }
   function mount() {
-    if (role === 'target' && !arrived && read('localStorage',seenKey) !== '1') return;
+    if (role !== 'source') return;
     const banner = document.createElement('aside');
     banner.id = 'monerospace-migration'; banner.setAttribute('aria-label','MoneroSpace and XMR Taxi');
     const style = document.createElement('style');
@@ -93,30 +98,15 @@
     const actions = document.createElement('div'); actions.className = 'migration-actions';
     const button = (label, action) => { const el=document.createElement('button');el.type='button';el.textContent=label;el.onclick=action;actions.append(el);return el; };
     const anchor = (label, destination, onClick) => { const el=document.createElement('a');el.textContent=label;el.href=destination();for (const event of ['pointerdown','focus','contextmenu']) el.addEventListener(event,()=>{el.href=destination();});el.addEventListener('click',()=>{el.href=destination();onClick?.();});el.addEventListener('auxclick',()=>{el.href=destination();onClick?.();});actions.append(el);return el; };
-    if (role === 'source') {
-      text.innerHTML = '<strong>MoneroSpace’s next chapter is xmr.tx.taxi.</strong> Familiar Monero explorer, now part of tx.taxi.';
-      const tryLink=anchor('Continue on XMR Taxi →',()=>toTaxi(),()=>metric('try_click'));
-      const refresh = () => { tryLink.textContent = supported(location.pathname) && !/^\/(?:[a-z]{2}\/?)?$/.test(location.pathname) ? 'Open this page on XMR Taxi →' : 'Try XMR Taxi →'; };
-      refresh(); window.addEventListener('popstate',refresh);
-      // Angular pushState navigations update the visible CTA without changing its destination until clicked.
-      const observer = new MutationObserver(refresh); observer.observe(document.querySelector('app-root') || document.body,{childList:true,subtree:true});
-      if (confirmEnable) button('Use XMR Taxi by default',()=>{if(!rememberDefault()){text.textContent='Your browser cannot save this preference. You can still open XMR Taxi.';}});
-      if (storageFailed) text.textContent='Your browser cannot save preferences. You can still open XMR Taxi.';
-      metric('announcement_view');
-    } else {
-      text.innerHTML = '<strong>From the team behind MoneroSpace.</strong> Welcome to XMR Taxi.';
-      if (enabled) text.textContent = 'XMR Taxi is now your default explorer. You can switch back anytime.';
-      else button('Use XMR Taxi by default',()=>{
-        let saved; try { saved=JSON.parse(read('sessionStorage',nonceKey)); } catch {}
-        location.href=link(source,{mode:'enable',nonce:saved?.nonce || crypto.randomUUID(),p:prefs()});
-      });
-      anchor('Back to MoneroSpace',()=>link(source,{mode:'back',nonce:crypto.randomUUID(),p:prefs()}));
-      const today = new Date().toISOString().slice(0,10);
-      const lastVisit = read('localStorage','xmr-taxi-return-day-v1');
-      // Count at most one returning browser-day; a same-day page load is not retention.
-      if (lastVisit && lastVisit !== today) metric('return_visit');
-      write('localStorage','xmr-taxi-return-day-v1',today);
-    }
+    text.innerHTML = '<strong>MoneroSpace’s next chapter is xmr.tx.taxi.</strong> Familiar Monero explorer, now part of tx.taxi.';
+    const tryLink=anchor('Continue on XMR Taxi →',()=>toTaxi(),()=>metric('try_click'));
+    const refresh = () => { tryLink.textContent = supported(location.pathname) && !/^\/(?:[a-z]{2}\/?)?$/.test(location.pathname) ? 'Open this page on XMR Taxi →' : 'Try XMR Taxi →'; };
+    refresh(); window.addEventListener('popstate',refresh);
+    // Angular pushState navigations update the visible CTA without changing its destination until clicked.
+    const observer = new MutationObserver(refresh); observer.observe(document.querySelector('app-root') || document.body,{childList:true,subtree:true});
+    if (confirmEnable) button('Use XMR Taxi by default',()=>{if(!rememberDefault()){text.textContent='Your browser cannot save this preference. You can still open XMR Taxi.';}});
+    if (storageFailed) text.textContent='Your browser cannot save preferences. You can still open XMR Taxi.';
+    metric('announcement_view');
     banner.append(text,actions); document.body.prepend(banner);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',mount,{once:true}); else mount();
