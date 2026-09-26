@@ -137,7 +137,7 @@
           id="xmr-search-input"
           (focus)="showSourceSuggestions()"
           (click)="showSourceSuggestions()"
-          formControlName="searchText"
+          (input)="chainMenu.open()" formControlName="searchText"
           type="text"
           class="form-control"
           [placeholder]="defaultSearchPlaceholder"
