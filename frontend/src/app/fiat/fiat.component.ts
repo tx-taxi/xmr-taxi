@@ -38,4 +38,19 @@ export class FiatComponent implements OnInit, OnDestroy {
     this.currencySubscription.unsubscribe();
   }
 
+  getRate(conversions?: Record<string, number>): number | null {
+    const historical = this.blockConversion;
+    const direct = historical ? historical.price?.[this.currency] : conversions?.[this.currency];
+    if (Number.isFinite(direct) && direct > 0) {
+      return direct;
+    }
+    if (historical) {
+      const usd = historical.price?.USD;
+      const exchange = historical.exchangeRates?.['USD' + this.currency];
+      const converted = usd * exchange;
+      return Number.isFinite(converted) && converted > 0 ? converted : null;
+    }
+    return null;
+  }
+
 }
