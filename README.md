@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="frontend/src/resources/branding/xmr-favicon.svg" width="88" height="88" alt="xmr.tx.taxi logo">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="frontend/src/resources/branding/xmr-dark-full.svg">
+    <img src="frontend/src/resources/branding/xmr-light-full.svg" width="360" alt="xmr.tx.taxi banner logo">
+  </picture>
 </p>
 
 <h1 align="center">Monero Explorer · xmr.tx.taxi</h1>
