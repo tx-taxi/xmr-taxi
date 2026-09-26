@@ -1,167 +1,47 @@
-:host { display: block; padding: 2rem 0; }
+.container-xl { display: flow-root; min-height: 75vh; }
 
-.xmr-docs {
-  color: var(--fg);
+.docs-tabs { margin: 0 0 2rem; }
+.docs-tabs .nav-link { color: var(--fg); cursor: pointer; }
+.docs-tabs .nav-link.active { background: var(--secondary); border-color: var(--secondary) var(--secondary) var(--active-bg); color: var(--title-fg); }
 
-  h1 {
-    color: #ff6600;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-  }
-  h2 {
-    color: #ff6600;
-    font-size: 1.4rem;
-    margin: 2rem 0 1rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid var(--border-subtle);
-  }
-  h4 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.05rem;
-    color: var(--fg);
-  }
-  p, li {
-    color: var(--fg);
-    line-height: 1.6;
-  }
-  code {
-    background: rgba(255, 102, 0, 0.08);
-    border: 1px solid rgba(255, 102, 0, 0.25);
-    padding: 0.05rem 0.4rem;
-    border-radius: 0.2rem;
-    font-size: 0.88em;
-    color: #ffaa66;
-  }
-  a { color: #ff6600; }
-  a:hover { color: #ffaa00; }
+#doc-nav-desktop { float: left; margin-top: -15px; overflow-y: auto; position: sticky; top: 80px; width: 300px; max-height: calc(100vh - 95px); scrollbar-color: var(--secondary) var(--active-bg); scrollbar-width: thin; }
+.docs-sidebar a { color: var(--fg); cursor: pointer; display: block; font-size: .9rem; margin: 5px 0; text-decoration: none; }
+.docs-sidebar a:hover { color: var(--link-hover-color); }
+.sidebar-category { color: var(--title-fg); font-weight: 700; margin: 15px 0 10px; }
+.sidebar-category:first-child { margin-top: 0; }
+
+.doc-content { float: right; width: calc(100% - 330px); }
+.doc-welcome-note { margin-bottom: 1.5rem; }
+.endpoint-container { scroll-margin-top: 90px; }
+.endpoint-container::before { content: ' '; display: block; height: 1px; margin-top: -1px; visibility: hidden; }
+.endpoint-container .section-header, h1 {
+  background: var(--secondary); border-radius: .25rem; color: var(--info); display: block; font-size: 1.5rem; font-weight: 700; margin: 20px 0; padding: 1rem 1.3rem; position: relative;
 }
+h1 { color: var(--title-fg); }
+.endpoint-container .section-header { cursor: pointer; text-decoration: none; }
+.endpoint-container .section-header span { background: var(--tertiary); border-radius: .25rem; color: var(--fg); float: right; font-family: monospace; font-size: 12px; font-weight: 400; letter-spacing: 1px; padding: 8px 10px; text-transform: uppercase; white-space: nowrap; }
+.endpoint-content { padding: 0 .25rem 1.5rem; }
+.endpoint-content p, .endpoint-content li { line-height: 1.65; }
+.subtitle { color: var(--title-fg); font-size: .8rem; font-weight: 700; margin: 1rem 0 .4rem; text-transform: uppercase; }
 
-.xmr-docs-toc {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  padding: 0.75rem 1rem;
-  background: var(--box-bg);
-  border: 1px solid var(--border-subtle);
-  border-radius: 0.4rem;
+table { margin: 1rem 0; table-layout: fixed; width: 100%; }
+th, td { border-bottom: 1px solid var(--border-subtle); padding: .7rem; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+th { color: var(--title-fg); font-size: .78rem; text-transform: uppercase; }
+td:first-child { width: 34%; }
+code { background: var(--bg); font-family: Consolas, Monaco, 'Lucida Console', monospace; }
+pre { background: var(--bg); margin: 0; overflow-x: auto; padding: 1rem; }
+pre code { white-space: pre; }
 
-  a {
-    color: var(--tooltip-grey);
-    font-size: 0.9em;
-    &:hover { color: #ff6600; }
-  }
-}
-
-.xmr-api-table {
-  table-layout: fixed;
-  width: 100%;
-  margin-top: 1rem;
-  font-size: 0.92em;
-
-  th, td {
-    padding: 0.55rem 0.75rem;
-    border-bottom: 1px solid var(--border-subtle);
-    vertical-align: top;
-    overflow-wrap: anywhere;
-  }
-  th {
-    color: var(--tooltip-grey);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 0.78em;
-    font-weight: 600;
-  }
-  td:first-child {
-    width: 60px;
-    color: var(--tooltip-grey);
-  }
-  td:nth-child(2) {
-    width: 32%;
-  }
-
-  code {
-    white-space: normal;
-  }
-}
+.docs-mobile-toc { margin-bottom: 1.25rem; }
+.docs-mobile-toc a { color: var(--fg); display: inline-block; font-size: .88rem; margin: .3rem .9rem .3rem 0; }
 
 @media (max-width: 767.98px) {
-  :host {
-    padding-top: 1.25rem;
-  }
-
-  .xmr-docs {
-    h1 {
-      font-size: 1.65rem;
-      line-height: 1.15;
-    }
-
-    p,
-    li {
-      font-size: 0.95rem;
-    }
-  }
-
-  .xmr-docs-toc {
-    gap: 0.5rem 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .xmr-api-table {
-    display: block;
-    font-size: 0.92rem;
-
-    thead {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      white-space: nowrap;
-    }
-
-    tbody,
-    tr,
-    td {
-      display: block;
-      width: 100%;
-    }
-
-    tr {
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    td {
-      display: grid;
-      grid-template-columns: 4.75rem minmax(0, 1fr);
-      gap: 0.75rem;
-      padding: 0.25rem 0;
-      border: 0;
-    }
-
-    td::before {
-      color: var(--tooltip-grey);
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    td:nth-child(1),
-    td:nth-child(2) {
-      width: 100%;
-    }
-
-    td:nth-child(1)::before { content: 'Method'; }
-    td:nth-child(2)::before { content: 'Path'; }
-    td:nth-child(3)::before { content: 'Returns'; }
-
-    &:nth-of-type(2) td:nth-child(3)::before { content: 'Behavior'; }
-  }
-}
-
-section {
-  scroll-margin-top: 80px;
+  .docs-tabs { flex-wrap: nowrap; overflow-x: auto; }
+  .docs-tabs .nav-link { white-space: nowrap; }
+  .doc-content { float: none; width: 100%; }
+  .endpoint-container .section-header, h1 { font-size: 1.2rem; padding: .85rem 1rem; }
+  th { display: none; }
+  tr, td { display: block; width: 100% !important; }
+  td:first-child { color: var(--title-fg); font-weight: 700; padding-bottom: .15rem; }
+  td:last-child { padding-top: .15rem; }
 }
