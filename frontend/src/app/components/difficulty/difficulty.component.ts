@@ -1,41 +1,16 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, HostListener, ElementRef, ViewChild, Inject, Input, LOCALE_ID, OnInit } from '@angular/core';
-import { combineLatest, Observable } from 'rxjs';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { StateService } from '@app/services/state.service';
+import { BlockPacePoint } from '@components/block-pace-graph/block-pace-graph.component';
 
-interface EpochProgress {
-  base: string;
-  change: number;
-  progress: number;
-  minedBlocks: number;
-  remainingBlocks: number;
-  expectedBlocks: number;
-  newDifficultyHeight: number;
-  colorAdjustments: string;
-  colorPreviousAdjustments: string;
-  estimatedRetargetDate: number;
-  retargetDateString: string;
-  previousRetarget: number;
-  blocksUntilHalving: number;
-  timeUntilHalving: number;
-  timeAvg: number;
-  adjustedTimeAvg: number;
+const TARGET_BLOCK_SECONDS = 120;
+
+interface DifficultyStatus {
+  averageBlockTime: number | null;
+  pacePercent: number | null;
+  difficultyChangePercent: number | null;
 }
-
-type BlockStatus = 'mined' | 'behind' | 'ahead' | 'next' | 'remaining';
-type DifficultyMode = 'difficulty' | 'halving' | 'rewards';
-
-interface DiffShape {
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-  status: BlockStatus;
-  expected: boolean;
-}
-
-// Preserved for the hidden upstream halving branch; Monero mode uses a one-block retarget window.
-const EPOCH_BLOCK_LENGTH = 2016;
 
 @Component({
   selector: 'app-difficulty',
@@ -45,223 +20,53 @@ const EPOCH_BLOCK_LENGTH = 2016;
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DifficultyComponent implements OnInit {
-  @Input() showProgress = true;
-  @Input() showHalving = false;
   @Input() showTitle = true;
-  isMonero = true;
-
-  @ViewChild('epochSvg') epochSvgElement: ElementRef<SVGElement>;
-
+  mode: 'difficulty' | 'rewards' = 'difficulty';
+  status$: Observable<DifficultyStatus>;
   isLoadingWebSocket$: Observable<boolean>;
-  difficultyEpoch$: Observable<EpochProgress>;
+  paceData: BlockPacePoint[] = [];
 
-  mode: DifficultyMode = 'difficulty';
-  userSelectedMode: boolean = false;
+  private blockHistory = new Map<number, { timestamp: number; difficulty: number }>();
 
-  now: number = Date.now();
-  epochStart: number;
-  currentHeight: number;
-  currentIndex: number;
-  expectedHeight: number;
-  expectedIndex: number;
-  difference: number;
-  shapes: DiffShape[];
-  nextSubsidy: number;
-
-  tooltipPosition = { x: 0, y: 0 };
-  hoverSection: DiffShape | void;
-
-  constructor(
-    public stateService: StateService,
-    private cd: ChangeDetectorRef,
-    @Inject(LOCALE_ID) private locale: string,
-  ) { }
+  constructor(public stateService: StateService) {}
 
   ngOnInit(): void {
     this.isLoadingWebSocket$ = this.stateService.isLoadingWebSocket$;
-    this.difficultyEpoch$ = combineLatest([
-      this.stateService.blocks$,
-      this.stateService.difficultyAdjustment$,
-    ])
-    .pipe(
-      map(([blocks, da]) => {
-        const maxHeight = blocks.reduce((max, block) => Math.max(max, block.height), 0);
-        let colorAdjustments = 'var(--transparent-fg)';
-        if (da.difficultyChange > 0) {
-          colorAdjustments = 'var(--green)';
-        }
-        if (da.difficultyChange < 0) {
-          colorAdjustments = 'var(--red)';
-        }
+    this.status$ = this.stateService.blocks$.pipe(map(blocks => {
+      const recent = [...blocks]
+        .filter(block => Number.isFinite(block.height) && Number.isFinite(block.timestamp))
+        .sort((a, b) => a.height - b.height);
+      const first = recent[0];
+      const last = recent[recent.length - 1];
+      if (!first || !last) return { averageBlockTime: null, pacePercent: null, difficultyChangePercent: null };
 
-        let colorPreviousAdjustments = 'var(--red)';
-        if (da.previousRetarget) {
-          if (da.previousRetarget >= 0) {
-            colorPreviousAdjustments = 'var(--green)';
-          }
-          if (da.previousRetarget === 0) {
-            colorPreviousAdjustments = 'var(--transparent-fg)';
-          }
-        } else {
-          colorPreviousAdjustments = 'var(--transparent-fg)';
-        }
+      for (const block of recent) {
+        this.blockHistory.set(block.height, { timestamp: block.timestamp, difficulty: block.difficulty });
+      }
+      for (const height of this.blockHistory.keys()) {
+        if (height > last.height || height < last.height - 99) this.blockHistory.delete(height);
+      }
+      const history = [...this.blockHistory.entries()].sort(([a], [b]) => a - b);
+      const [baselineHeight, baseline] = history[0];
+      this.paceData = history.map(([height, block]) => ({
+        height,
+        timestamp: block.timestamp,
+        deviation: (height - baselineHeight) * TARGET_BLOCK_SECONDS - (block.timestamp - baseline.timestamp),
+      }));
 
-        const blocksUntilHalving = this.isMonero ? 0 : 210000 - (maxHeight % 210000);
-        const timeUntilHalving = this.isMonero ? 0 : new Date().getTime() + (blocksUntilHalving * 600000);
-        const newEpochStart = this.isMonero
-          ? this.stateService.latestBlockHeight
-          : Math.floor(this.stateService.latestBlockHeight / EPOCH_BLOCK_LENGTH) * EPOCH_BLOCK_LENGTH;
-        const newExpectedHeight = this.isMonero
-          ? this.stateService.latestBlockHeight + 1
-          : Math.floor(newEpochStart + da.expectedBlocks);
-        this.now = new Date().getTime();
-        this.nextSubsidy = getNextBlockSubsidy(maxHeight);
-
-        if (!this.isMonero && blocksUntilHalving < da.remainingBlocks && !this.userSelectedMode) {
-          this.mode = 'halving';
-        }
-
-        if (newEpochStart !== this.epochStart || newExpectedHeight !== this.expectedHeight || this.currentHeight !== this.stateService.latestBlockHeight) {
-          this.epochStart = newEpochStart;
-          this.expectedHeight = newExpectedHeight;
-          this.currentHeight = this.stateService.latestBlockHeight;
-          this.currentIndex = this.isMonero ? 1 : this.currentHeight - this.epochStart;
-          this.expectedIndex = this.isMonero ? 1 : Math.min(this.expectedHeight - this.epochStart, 2016) - 1;
-          this.difference = this.currentIndex - this.expectedIndex;
-
-          if (this.isMonero) {
-            this.shapes = [
-              { x: 0, y: 0, w: 112, h: 9, status: 'mined', expected: true },
-              { x: 112, y: 0, w: 112, h: 9, status: 'next', expected: true },
-            ];
-          } else {
-            this.shapes = [];
-            this.shapes = this.shapes.concat(this.blocksToShapes(
-              0, Math.min(this.currentIndex, this.expectedIndex), 'mined', true
-            ));
-            this.shapes = this.shapes.concat(this.blocksToShapes(
-              this.currentIndex + 1, this.expectedIndex, 'behind', true
-            ));
-            this.shapes = this.shapes.concat(this.blocksToShapes(
-              this.expectedIndex + 1, this.currentIndex, 'ahead', false
-            ));
-            if (this.currentIndex < 2015) {
-              this.shapes = this.shapes.concat(this.blocksToShapes(
-                this.currentIndex + 1, this.currentIndex + 1, 'next', (this.expectedIndex > this.currentIndex)
-              ));
-            }
-            this.shapes = this.shapes.concat(this.blocksToShapes(
-              Math.max(this.currentIndex + 2, this.expectedIndex + 1), 2105, 'remaining', false
-            ));
-          }
-        }
-
-
-        let retargetDateString;
-        if (this.isMonero) {
-          retargetDateString = `height ${da.nextRetargetHeight}`;
-        } else if (da.remainingBlocks > 1870) {
-          retargetDateString = (new Date(da.estimatedRetargetDate)).toLocaleDateString(this.locale, { month: 'long', day: 'numeric' });
-        } else {
-          retargetDateString = (new Date(da.estimatedRetargetDate)).toLocaleTimeString(this.locale, { month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' });
-        }
-
-        const data = {
-          base: `${da.progressPercent.toFixed(2)}%`,
-          change: da.difficultyChange,
-          progress: da.progressPercent,
-          minedBlocks: this.currentIndex,
-          remainingBlocks: da.remainingBlocks,
-          expectedBlocks: Math.floor(da.expectedBlocks),
-          colorAdjustments,
-          colorPreviousAdjustments,
-          newDifficultyHeight: da.nextRetargetHeight,
-          estimatedRetargetDate: da.estimatedRetargetDate,
-          retargetDateString,
-          previousRetarget: da.previousRetarget,
-          blocksUntilHalving,
-          timeUntilHalving,
-          timeAvg: da.timeAvg,
-          adjustedTimeAvg: da.adjustedTimeAvg,
-        };
-        return data;
-      })
-    );
+      const intervals = last.height - first.height;
+      const elapsed = last.timestamp - first.timestamp;
+      const averageBlockTime = intervals > 0 && elapsed > 0 ? elapsed / intervals : null;
+      const pacePercent = averageBlockTime === null ? null : (1 - averageBlockTime / TARGET_BLOCK_SECONDS) * 100;
+      const difficultyChangePercent = Number.isFinite(first.difficulty) && first.difficulty > 0 && Number.isFinite(last.difficulty)
+        ? (last.difficulty / first.difficulty - 1) * 100
+        : null;
+      return { averageBlockTime, pacePercent, difficultyChangePercent };
+    }));
   }
 
-  blocksToShapes(start: number, end: number, status: BlockStatus, expected: boolean = false): DiffShape[] {
-    const startY = start % 9;
-    const startX = Math.floor(start / 9);
-    const endY = (end % 9);
-    const endX = Math.floor(end / 9);
-
-    if (startX > endX) {
-      return [];
-    }
-
-    if (startX === endX) {
-      return [{
-        x: startX, y: startY, w: 1, h: 1 + endY - startY, status, expected
-      }];
-    }
-
-    const shapes = [];
-    shapes.push({
-      x: startX, y: startY, w: 1, h: 9 - startY, status, expected
-    });
-    shapes.push({
-      x: endX, y: 0, w: 1, h: endY + 1, status, expected
-    });
-
-    if (startX < endX - 1) {
-      shapes.push({
-        x: startX + 1, y: 0, w: endX - startX - 1, h: 9, status, expected
-      });
-    }
-
-    return shapes;
-  }
-
-  setMode(mode: DifficultyMode): boolean {
+  setMode(mode: 'difficulty' | 'rewards'): boolean {
     this.mode = mode;
-    this.userSelectedMode = true;
     return false;
   }
-
-  @HostListener('pointerdown', ['$event'])
-  onPointerDown(event): void {
-    if (this.epochSvgElement?.nativeElement?.contains(event.target)) {
-      this.onPointerMove(event);
-      event.preventDefault();
-    }
-  }
-
-  @HostListener('pointermove', ['$event'])
-  onPointerMove(event): void {
-    if (this.epochSvgElement?.nativeElement?.contains(event.target)) {
-      this.tooltipPosition = { x: event.clientX, y: event.clientY };
-      this.cd.markForCheck();
-    }
-  }
-
-  onHover(_, rect): void {
-    this.hoverSection = rect;
-  }
-
-  onBlur(): void {
-    this.hoverSection = null;
-  }
-}
-
-function getNextBlockSubsidy(height: number): number {
-  const halvings = Math.floor(height / 210_000) + 1;
-  // Force block reward to zero when right shift is undefined.
-  if (halvings >= 64) {
-    return 0;
-  }
-
-  let subsidy = BigInt(50 * 100_000_000);
-  // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-  subsidy >>= BigInt(halvings);
-  return Number(subsidy);
 }

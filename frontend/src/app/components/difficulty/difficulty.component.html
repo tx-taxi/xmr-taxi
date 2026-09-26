@@ -1,94 +1,37 @@
-<div *ngIf="showTitle && mode === 'difficulty'" class="main-title" i18n="dashboard.difficulty-adjustment">Difficulty Adjustment</div>
-<div *ngIf="!isMonero && showTitle && mode === 'halving'" class="main-title" i18n="dashboard.halving-countdown">Halving Countdown</div>
-<div *ngIf="isMonero && showTitle && mode === 'rewards'" class="main-title">
-  <span [attr.data-cy]="'reward-stats'" i18n="mining.reward-stats">Reward stats</span>&nbsp;
-  <span style="font-size: xx-small" i18n="mining.144-blocks">(144 blocks)</span>
-</div>
+<div *ngIf="showTitle" class="main-title">{{ mode === 'difficulty' ? 'Difficulty Adjustment' : 'Reward stats' }}</div>
 <div class="card-wrapper">
   <div class="card">
-    <div class="widget-toggler" *ngIf="!isMonero">
-      <a href="" (click)="setMode('difficulty')" class="toggler-option"
-        [ngClass]="{'inactive': mode === 'difficulty'}"><small i18n="statistics.average-small">difficulty</small></a>
-      <span style="color: var(--transparent-fg); font-size: 8px"> | </span>
-      <a href="" (click)="setMode('halving')" class="toggler-option"
-        [ngClass]="{'inactive': mode === 'halving'}"><small i18n="statistics.median-small">halving</small></a>
+    <div class="widget-toggler">
+      <a href="" (click)="setMode('difficulty')" class="toggler-option" [class.inactive]="mode === 'difficulty'"><small>difficulty</small></a>
+      <span class="toggler-divider"> | </span>
+      <a href="" (click)="setMode('rewards')" class="toggler-option" [class.inactive]="mode === 'rewards'"><small>rewards</small></a>
     </div>
-    <div class="widget-toggler" *ngIf="isMonero">
-      <a href="" (click)="setMode('difficulty')" class="toggler-option"
-        [ngClass]="{'inactive': mode === 'difficulty'}"><small>difficulty</small></a>
-      <span style="color: var(--transparent-fg); font-size: 8px"> | </span>
-      <a href="" (click)="setMode('rewards')" class="toggler-option"
-        [ngClass]="{'inactive': mode === 'rewards'}"><small>rewards</small></a>
-    </div>
-    <div *ngIf="mode === 'difficulty'; else alternatePanel" class="card-body more-padding">
-      <div class="difficulty-adjustment-container" *ngIf="(isLoadingWebSocket$ | async) === false && (difficultyEpoch$ | async) as epochData; else loadingDifficulty">
-        <div class="epoch-progress">
-          <svg #epochSvg class="epoch-blocks" height="22px" width="100%" viewBox="0 0 224 9" shape-rendering="crispEdges" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="diff-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="var(--primary)" />
-                <stop offset="100%" stop-color="var(--mainnet-alt)" />
-              </linearGradient>
-              <linearGradient id="diff-hover-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="var(--data-hover-start)" />
-                <stop offset="100%" stop-color="var(--data-hover-end)" />
-              </linearGradient>
-            </defs>
-            <rect
-              *ngFor="let rect of shapes"
-              [attr.x]="rect.x" [attr.y]="rect.y"
-              [attr.width]="rect.w" [attr.height]="rect.h"
-              class="rect {{rect.status}}"
-              [style.fill]="rect.status === 'next' ? (rect.expected ? 'var(--primary)' : 'var(--secondary)') : null"
-              [class.hover]="hoverSection && rect.status === hoverSection.status"
-              (pointerover)="onHover($event, rect);"
-              (pointerout)="onBlur();"
-            >
-              <animate
-                *ngIf="rect.status === 'next'"
-                attributeType="XML"
-                attributeName="opacity"
-                values="1;0.45;1"
-                dur="2s"
-                repeatCount="indefinite"/>
-            </rect>
-          </svg>
-        </div>
+    <div *ngIf="mode === 'difficulty'; else rewards" class="card-body more-padding">
+      <div class="difficulty-adjustment-container" *ngIf="(isLoadingWebSocket$ | async) === false && (status$ | async) as status; else loadingDifficulty">
+        <app-block-pace-graph [data]="paceData" [compressed]="true" class="block-pace-graph"></app-block-pace-graph>
         <div class="difficulty-stats">
           <div class="item">
-            <div class="card-text">
-              ~<app-time [time]="epochData.timeAvg / 1000" [fractionDigits]="1"></app-time>
-            </div>
-            <div class="symbol">{{ isMonero ? 'Target block time' : 'Average block time' }}</div>
+            <div class="card-text" *ngIf="status.averageBlockTime != null; else unavailableTime">~<app-time [time]="status.averageBlockTime" [fractionDigits]="1"></app-time></div>
+            <ng-template #unavailableTime><div class="card-text">—</div></ng-template>
+            <div class="symbol">Average block time</div>
           </div>
           <div class="item">
-            <div class="card-text bigger" [ngStyle]="{'color': epochData.colorAdjustments}">
-              <span *ngIf="epochData.change > 0; else arrowDownDifficulty" >
-                <fa-icon class="retarget-sign" [icon]="['fas', 'caret-up']" [fixedWidth]="true"></fa-icon>
-              </span>
-              <ng-template #arrowDownDifficulty >
-                <fa-icon class="retarget-sign" [icon]="['fas', 'caret-down']" [fixedWidth]="true"></fa-icon>
-              </ng-template>
-              {{ epochData.change | absolute | number: '1.2-2' }}
-              <span class="symbol">%</span>
+            <div class="card-text bigger" *ngIf="status.pacePercent != null; else unavailablePace"
+              [style.color]="status.pacePercent > 0 ? 'var(--green)' : status.pacePercent < 0 ? 'var(--red)' : 'var(--transparent-fg)'">
+              <fa-icon [icon]="['fas', status.pacePercent >= 0 ? 'caret-up' : 'caret-down']" [fixedWidth]="true"></fa-icon>
+              {{ status.pacePercent | absolute | number:'1.2-2' }}<span class="symbol">%</span>
             </div>
-            <div class="symbol">
-              <span>{{ isMonero ? 'Last block' : 'Previous' }}</span>:
-              <span [ngStyle]="{'color': epochData.colorPreviousAdjustments}">
-                <span *ngIf="epochData.previousRetarget > 0; else arrowDownPreviousDifficulty" >
-                  <fa-icon class="previous-retarget-sign" [icon]="['fas', 'caret-up']" [fixedWidth]="true"></fa-icon>
-                </span>
-                <ng-template #arrowDownPreviousDifficulty >
-                  <fa-icon class="previous-retarget-sign" [icon]="['fas', 'caret-down']" [fixedWidth]="true"></fa-icon>
-                </ng-template>
-                {{ epochData.previousRetarget | absolute | number: '1.2-2' }} </span> %
-            </div>
+            <ng-template #unavailablePace><div class="card-text">—</div></ng-template>
+            <div class="symbol" ngbTooltip="Recent blocks compared with Monero's two-minute target" placement="bottom">Block pace</div>
           </div>
           <div class="item">
-            <div class="card-text"><app-time kind="until" [time]="epochData.estimatedRetargetDate" [fastRender]="true" [precision]="1"></app-time></div>
-            <div class="symbol">
-              {{ epochData.retargetDateString }}
+            <div class="card-text" *ngIf="status.difficultyChangePercent != null; else unavailableChange"
+              [style.color]="status.difficultyChangePercent > 0 ? 'var(--green)' : status.difficultyChangePercent < 0 ? 'var(--red)' : 'var(--transparent-fg)'">
+              <fa-icon [icon]="['fas', status.difficultyChangePercent >= 0 ? 'caret-up' : 'caret-down']" [fixedWidth]="true"></fa-icon>
+              {{ status.difficultyChangePercent | absolute | number:'1.2-2' }}<span class="symbol">%</span>
             </div>
+            <ng-template #unavailableChange><div class="card-text">—</div></ng-template>
+            <div class="symbol">Difficulty Δ</div>
           </div>
         </div>
       </div>
@@ -96,89 +39,15 @@
   </div>
 </div>
 
-<ng-template #alternatePanel>
-  <ng-container *ngIf="isMonero; else halving">
-    <div class="card-body more-padding reward-stats-panel">
-      <app-reward-stats></app-reward-stats>
-    </div>
-  </ng-container>
-</ng-template>
-
-<ng-template #halving>
-  <div class="card-body more-padding">
-    <div class="difficulty-adjustment-container halving" *ngIf="(isLoadingWebSocket$ | async) === false && (difficultyEpoch$ | async) as epochData; else loadingDifficulty">
-      <div class="halving-progress">
-        <div class="background"></div>
-        <div class="remaining" [style]="{ left: ((210000 - epochData.blocksUntilHalving) / 2100).toFixed(2) + '%' }"></div>
-        <div class="label">
-          {{ ((210000 - epochData.blocksUntilHalving) / 2100).toFixed(2) }}%
-        </div>
-      </div>
-      <div class="difficulty-stats">
-        <div class="item">
-          <div class="card-text bigger">
-            <app-btc [satoshis]="nextSubsidy"></app-btc>
-          </div>
-          <div class="symbol">
-            <span i18n="difficulty-box.new-subsidy">New subsidy</span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-text">
-            {{ epochData.blocksUntilHalving | number }}
-          </div>
-          <div class="symbol">
-            <span *ngIf="epochData.blocksUntilHalving > 1" i18n="shared.blocks-remaining">Blocks remaining</span>
-            <span *ngIf="epochData.blocksUntilHalving === 1" i18n="shared.block-remaining">Block remaining</span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-text" i18n-ngbTooltip="mining.average-fee" placement="bottom">
-            <span>{{ epochData.timeUntilHalving | date }}</span>
-          </div>
-          <div class="symbol" *ngIf="epochData.blocksUntilHalving === 1; else approxTime">
-            <app-time kind="until" [time]="epochData.adjustedTimeAvg + now" [fastRender]="false" [fixedRender]="true" [precision]="1" minUnit="minute"></app-time>
-          </div>
-          <ng-template #approxTime>
-            <div class="symbol">
-              <app-time kind="until" [time]="epochData.timeUntilHalving" [fastRender]="false" [fixedRender]="true" [precision]="0" [numUnits]="2" [units]="['year', 'day', 'hour', 'minute']"></app-time>
-            </div>
-          </ng-template>
-        </div>
-      </div>
-    </div>
-  </div>
+<ng-template #rewards>
+  <div class="card-body more-padding reward-stats-panel"><app-reward-stats></app-reward-stats></div>
 </ng-template>
 
 <ng-template #loadingDifficulty>
-  <div class="epoch-progress">
-    <div class="skeleton-loader"></div>
-  </div>
+  <div class="schedule-bar-container"><div class="skeleton-loader" style="height: 80px"></div></div>
   <div class="difficulty-skeleton loading-container">
-    <div class="item">
-      <div class="card-text">
-        <div class="skeleton-loader"></div>
-        <div class="skeleton-loader"></div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card-text">
-        <div class="skeleton-loader"></div>
-        <div class="skeleton-loader"></div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card-text">
-        <div class="skeleton-loader"></div>
-        <div class="skeleton-loader"></div>
-      </div>
+    <div class="item" *ngFor="let label of ['Average block time', 'Block pace', 'Difficulty Δ']">
+      <div class="card-text"><div class="skeleton-loader"></div><div class="skeleton-loader"></div></div>
     </div>
   </div>
 </ng-template>
-
-<app-difficulty-tooltip
-  *ngIf="hoverSection && (isLoadingWebSocket$ | async) === false && (difficultyEpoch$ | async) as epochData"
-  [cursorPosition]="tooltipPosition"
-  [status]="hoverSection.status"
-  [progress]="epochData"
-></app-difficulty-tooltip>

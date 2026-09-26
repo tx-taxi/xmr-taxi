@@ -15,22 +15,26 @@
     <div class="item">
       <div class="card-text">
         <div class="fee-text"><app-fee-rate [fee]="recommendedFees.economyFee" [dp]="1"></app-fee-rate></div>
+        <span class="fiat" i18n-ngbTooltip="Monero fee example" ngbTooltip="Estimated fee for a 2 kB Monero transaction at this rate" placement="bottom"><app-fiat [value]="recommendedFees.economyFee * 2000"></app-fiat></span>
       </div>
     </div>
     <div class="band-separator"></div>
     <div class="item">
       <div class="card-text">
         <div class="fee-text"><app-fee-rate [fee]="recommendedFees.hourFee" [dp]="1"></app-fee-rate></div>
+        <span class="fiat" i18n-ngbTooltip="Monero fee example" ngbTooltip="Estimated fee for a 2 kB Monero transaction at this rate" placement="bottom"><app-fiat [value]="recommendedFees.hourFee * 2000"></app-fiat></span>
       </div>
     </div>
     <div class="item">
       <div class="card-text">
         <div class="fee-text"><app-fee-rate [fee]="recommendedFees.halfHourFee" [dp]="1"></app-fee-rate></div>
+        <span class="fiat" i18n-ngbTooltip="Monero fee example" ngbTooltip="Estimated fee for a 2 kB Monero transaction at this rate" placement="bottom"><app-fiat [value]="recommendedFees.halfHourFee * 2000"></app-fiat></span>
       </div>
     </div>
     <div class="item">
       <div class="card-text">
         <div class="fee-text"><app-fee-rate [fee]="recommendedFees.fastestFee" [dp]="1"></app-fee-rate></div>
+        <span class="fiat" i18n-ngbTooltip="Monero fee example" ngbTooltip="Estimated fee for a 2 kB Monero transaction at this rate" placement="bottom"><app-fiat [value]="recommendedFees.fastestFee * 2000"></app-fiat></span>
       </div>
     </div>
   </div>

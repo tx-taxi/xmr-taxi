@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgxEchartsModule } from 'ngx-echarts';
 import { NgbCollapseModule, NgbTypeaheadModule, NgbNavModule, NgbTooltipModule, NgbPaginationModule, NgbDropdownModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faFilter, faAngleDown, faAngleUp, faAngleRight, faAngleLeft, faBolt, faCogs, faDatabase, faExchangeAlt, faInfoCircle,
@@ -55,6 +56,7 @@ import { SearchFormComponent } from '@components/search-form/search-form.compone
 import { FooterComponent } from '@components/footer/footer.component';
 import { FeesBoxComponent } from '@components/fees-box/fees-box.component';
 import { DifficultyComponent } from '@components/difficulty/difficulty.component';
+import { BlockPaceGraphComponent } from '@components/block-pace-graph/block-pace-graph.component';
 import { DifficultyTooltipComponent } from '@components/difficulty/difficulty-tooltip.component';
 import { DifficultyMiningComponent } from '@components/difficulty-mining/difficulty-mining.component';
 import { AmountShortenerPipe } from '@app/shared/pipes/amount-shortener.pipe';
@@ -138,6 +140,7 @@ import { OnlyVsizeDirective, OnlyWeightDirective } from '@app/shared/components/
     FooterComponent,
     FeesBoxComponent,
     DifficultyComponent,
+    BlockPaceGraphComponent,
     DifficultyMiningComponent,
     DifficultyTooltipComponent,
     AmountShortenerPipe,
@@ -184,6 +187,9 @@ import { OnlyVsizeDirective, OnlyWeightDirective } from '@app/shared/components/
     NgbDatepickerModule,
     InfiniteScrollModule,
     FontAwesomeModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('@app/graphs/echarts').then((m) => m.echarts),
+    }),
   ],
   providers: [
     BytesPipe,
@@ -249,6 +255,7 @@ import { OnlyVsizeDirective, OnlyWeightDirective } from '@app/shared/components/
     FooterComponent,
     FeesBoxComponent,
     DifficultyComponent,
+    BlockPaceGraphComponent,
     DifficultyMiningComponent,
     DifficultyTooltipComponent,
     AmountShortenerPipe,

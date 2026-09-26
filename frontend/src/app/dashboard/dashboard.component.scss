@@ -285,6 +285,15 @@
   }
 }
 
+.fee-card {
+  min-height: 146px;
+
+  .card-body {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}
+
 .retarget-sign {
   margin-right: -3px;
   font-size: 14px;
