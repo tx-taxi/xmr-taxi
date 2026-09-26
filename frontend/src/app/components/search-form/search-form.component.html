@@ -17,7 +17,7 @@
               [class.is-current]="isAutomaticRoutingSelected()" style="--chain-option-accent: #ffd21f">
               <button type="button" ngbDropdownItem class="search-chain-select"
                 [attr.aria-pressed]="isAutomaticRoutingSelected()" (click)="selectAutomaticRouting()">
-                <img src="https://tx.taxi/assets/brand/taxi-logo.svg" alt="">
+                <img src="https://tx.taxi/assets/brand/router-favicon.svg" alt="">
                 <span class="search-chain-copy">
                   <span class="search-chain-name">Automatic Routing</span>
                   <span class="search-chain-host">tx.taxi</span>
@@ -135,9 +135,9 @@
         <input
           #searchInput
           id="xmr-search-input"
-          (focus)="showSourceSuggestions()"
+          (focus)="onSearchInputFocus()"
           (click)="showSourceSuggestions()"
-          (input)="chainMenu.open()" formControlName="searchText"
+          (input)="showSourceSuggestions()" formControlName="searchText"
           type="text"
           class="form-control"
           [placeholder]="defaultSearchPlaceholder"
