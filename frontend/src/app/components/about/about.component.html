@@ -1,36 +1,34 @@
-<!-- MoneroSpace about page. Replaces upstream's mempool-marketing
-     content (promo video, sponsor grid, translator credits, alliance
-     pitches) with a focused page that explains what MoneroSpace is,
-     what it tries to be honest about, and where the upstream
-     attribution lives. -->
 <div class="container-xl about-page">
-  <div class="intro">
-    <h1 class="visually-hidden" i18n="About hidden heading@@about.h1">About xmr.tx.taxi</h1>
-    <img src="/resources/branding/xmr-dark-full.svg" alt="xmr.tx.taxi Monero explorer" class="mempool-logo">
-    <div class="version">
-      <span>xmr.tx.taxi - Monero block &amp; pending transaction explorer</span>
-      <span class="version-sub">Derived from the Mempool Open Source Project</span>
-    </div>
-  </div>
-
-  <div class="about-text">
-    <h5>About xmr.tx.taxi</h5>
-    <p>xmr.tx.taxi adapts the Mempool Open Source Project interface for <a href="https://www.getmonero.org" target="_blank" rel="noopener">Monero</a>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts and recipients are hidden by Monero's RingCT and stay hidden in the default render.</p>
-    <h5>Privacy by default</h5>
+  <app-tx-taxi-docs-intro chainName="Monero" chainHost="xmr.tx.taxi" context="explorer"></app-tx-taxi-docs-intro>
+  <div class="about-layout">
+    <aside class="about-identity">
+      <img src="/resources/branding/xmr-dark-full.svg" alt="xmr.tx.taxi" class="about-logo">
+      <h1>About xmr.tx.taxi</h1>
+      <p>The Monero explorer in the tx.taxi family.</p>
+      <nav class="about-links" aria-label="Project links">
+        <a routerLink="/docs">Monero documentation</a>
+        <a href="https://github.com/tx-taxi/xmr-taxi" target="_blank" rel="noopener noreferrer">Explorer source</a>
+        <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact the maintainer</a>
+      </nav>
+    </aside>
+    <main class="about-text">
+      <h2>About xmr.tx.taxi</h2>
+    <p>xmr.tx.taxi adapts the Mempool Open Source Project interface for <a href="https://www.getmonero.org" target="_blank" rel="noopener">Monero</a>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</p>
+    <h2>Privacy by default</h2>
     <p>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</p>
     <ul>
       <li><strong>Recipient checks</strong> — require the recipient's own wallet/view key tooling. Private keys should stay local.</li>
       <li><strong>tx_proof verification</strong> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</li>
       <li><strong>tx_secret_key checks</strong> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</li>
     </ul>
-    <h5>Daemon</h5>
+    <h2>Daemon</h2>
     <p>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <code>monerod</code> JSON-RPC endpoint.</p>
-    <h5>License</h5>
+    <h2>License</h2>
     <p>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</p>
-  </div>
-
-  <div class="contributors">
-    <h5>Licensing</h5>
-    <p><a href="https://t.me/hiss" target="_blank" rel="noopener">Contact the operator</a> for applicable source and license information.</p>
+      <div class="about-attribution">
+        <h2>Built on open source</h2>
+        <p>This explorer builds on the <a href="https://github.com/mempool/mempool" target="_blank" rel="noopener noreferrer">Mempool Open Source Project</a>. See the explorer source for its license and <a href="/3rdpartylicenses.txt">third-party attribution</a>.</p>
+      </div>
+    </main>
   </div>
 </div>

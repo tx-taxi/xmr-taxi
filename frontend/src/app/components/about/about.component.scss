@@ -1,51 +1,23 @@
-.about-page {
-  text-align: center;
-
-  .intro {
-    width: min(320px, 90vw);
-    margin: 25px auto 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mempool-logo {
-    width: min(250px, 80vw);
-    display: block;
-  }
-
-  .version {
-    width: 100%;
-    text-align: right;
-    font-size: 10px;
-    margin-top: -10px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .version-sub {
-    color: var(--tooltip-grey);
-  }
-
-  .about-text,
-  .contributors {
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 10px 15px 15px;
-    text-align: left;
-  }
-
-  .contributors {
-    margin-top: 10px;
-    margin-bottom: 35px;
-  }
-
-  h5 {
-    margin-top: 18px;
-  }
-
-  li {
-    margin-bottom: 8px;
-  }
+ :host { display: block; }
+.about-page { padding-bottom: 3rem; }
+.about-layout { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 4rem; align-items: start; }
+.about-identity { position: sticky; top: 90px; }
+.about-logo { width: 210px; max-width: 100%; height: auto; margin-bottom: 1.5rem; }
+h1 { font-size: 1.5rem; color: var(--fg); margin: 0 0 .75rem; }
+.about-identity p { color: var(--info); line-height: 1.6; }
+.about-links { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; margin-top: 1.5rem; }
+a { color: var(--info); }
+a:hover { color: var(--fg); }
+a:focus-visible { outline: 2px solid var(--info); outline-offset: 4px; }
+.about-text { min-width: 0; max-width: 75ch; }
+h2 { font-size: 1.25rem; color: var(--info); margin: 2rem 0 .75rem; }
+h2:first-child { margin-top: 0; }
+p, li { line-height: 1.75; }
+code { color: var(--info); background: var(--bg); }
+.about-attribution { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--secondary); }
+@media (max-width: 767.98px) {
+ .about-layout { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+ .about-identity { position: static; }
+ .about-logo { width: 180px; margin-bottom: 1rem; }
+ .about-links { flex-direction: row; flex-wrap: wrap; gap: .8rem 1.2rem; }
 }

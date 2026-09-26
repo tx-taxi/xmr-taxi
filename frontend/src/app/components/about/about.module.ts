@@ -1,3 +1,4 @@
+import { TxTaxiDocsIntroComponent } from '@app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
@@ -24,6 +25,7 @@ export class AboutRoutingModule { }
 @NgModule({
   imports: [
     CommonModule,
+    TxTaxiDocsIntroComponent,
     AboutRoutingModule,
     SharedModule,
   ],
