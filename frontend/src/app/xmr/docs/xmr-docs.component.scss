@@ -2,7 +2,7 @@
 
 .docs-tabs { margin: 0 0 2rem; }
 .docs-tabs .nav-link { color: var(--fg); cursor: pointer; }
-.docs-tabs .nav-link.active { background: var(--secondary); border-color: var(--secondary) var(--secondary) var(--active-bg); color: var(--title-fg); }
+.docs-tabs .nav-link.active { background: var(--active-bg); border-color: var(--fg) var(--fg) var(--active-bg); color: var(--fg); }
 
 #doc-nav-desktop { float: left; margin-top: -15px; overflow-y: auto; position: sticky; top: 80px; width: 300px; max-height: calc(100vh - 95px); scrollbar-color: var(--secondary) var(--active-bg); scrollbar-width: thin; }
 .docs-sidebar a { color: var(--fg); cursor: pointer; display: block; font-size: .9rem; margin: 5px 0; text-decoration: none; }
@@ -35,7 +35,7 @@ pre code { white-space: pre; }
 .docs-mobile-toc { margin-bottom: 1.25rem; }
 .docs-mobile-toc a { color: var(--fg); display: inline-block; font-size: .88rem; margin: .3rem .9rem .3rem 0; }
 
-@media (max-width: 767.98px) {
+@media (max-width: 992px) {
   .docs-tabs { flex-wrap: nowrap; overflow-x: auto; }
   .docs-tabs .nav-link { white-space: nowrap; }
   .doc-content { float: none; width: 100%; }
@@ -45,3 +45,16 @@ pre code { white-space: pre; }
   td:first-child { color: var(--title-fg); font-weight: 700; padding-bottom: .15rem; }
   td:last-child { padding-top: .15rem; }
 }
+
+@media (min-width: 993px) {
+  .hide-on-desktop { display: none; }
+  .docs-layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 30px; align-items: start; }
+  #doc-nav-desktop { float: none; margin-top: 0; }
+  .doc-content { float: none; width: auto; min-width: 0; }
+}
+@media (max-width: 992px) {
+  .hide-on-mobile { display: none; }
+  .endpoint-container { scroll-margin-top: 120px; }
+}
+
+code, pre, pre code { color: var(--info); }

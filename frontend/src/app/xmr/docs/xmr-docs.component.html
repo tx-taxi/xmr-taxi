@@ -1,6 +1,7 @@
 <div class="container-xl xmr-docs">
   <app-tx-taxi-docs-intro chainName="Monero" chainHost="xmr.tx.taxi"></app-tx-taxi-docs-intro>
-  <nav class="nav nav-tabs docs-tabs" aria-label="Documentation sections"><a *ngFor="let tab of tabs" class="nav-link" [class.active]="activeTab === tab.id" [attr.aria-current]="activeTab === tab.id ? 'page' : null" (click)="selectTab(tab.id)">{{ tab.title }}</a></nav>
+  <h2 class="text-center mb-3">Documentation</h2>
+  <nav class="nav nav-tabs docs-tabs" aria-label="Documentation sections"><a *ngFor="let tab of tabs" class="nav-link" [class.active]="activeTab === tab.id" [attr.aria-current]="activeTab === tab.id ? 'page' : null" [routerLink]="tab.id === 'faq' ? '/docs/faq' : '/docs/api/' + tab.id">{{ tab.title }}</a></nav>
   <div class="docs-layout">
     <aside id="doc-nav-desktop" class="docs-sidebar hide-on-mobile" aria-label="On this page"><ng-container *ngFor="let section of sections[activeTab]"><p *ngIf="section.category" class="sidebar-category">{{ section.category }}</p><a [href]="'#' + section.id" (click)="anchorLinkClick($event, section.id)">{{ section.title }}</a></ng-container></aside>
     <main class="doc-content">

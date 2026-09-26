@@ -1,0 +1,52 @@
+:host { display: block; margin-bottom: 2rem; }
+.taxi-docs-intro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  text-align: left;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--border-subtle, var(--secondary));
+  border-radius: 6px;
+  padding: 2rem;
+}
+.taxi-docs-art {
+  position: absolute;
+  z-index: -2;
+  pointer-events: none;
+  width: 84%;
+  height: 700px;
+  right: -12%;
+  top: -180px;
+  background: url('/resources/docs/hub-chains-ece0809c4b.webp') center / cover no-repeat;
+  opacity: .58;
+  transform: perspective(1100px) rotateY(-16deg) rotateZ(-12deg);
+  transform-origin: center;
+}
+.taxi-docs-intro::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 96%, transparent) 28%, color-mix(in srgb, var(--bg) 72%, transparent) 54%, color-mix(in srgb, var(--bg) 12%, transparent) 100%);
+}
+.taxi-docs-copy { position: relative; max-width: 35rem; }
+.taxi-docs-eyebrow { color: var(--info); font-size: .875rem; margin: 0 0 .75rem; }
+.taxi-docs-eyebrow span { margin: 0 .4rem; color: var(--fg); opacity: .5; }
+h2 { margin: 0 0 .75rem; font-size: 1.75rem; line-height: 1.2; font-weight: 600; color: var(--fg); }
+p { margin: 0; max-width: 55ch; line-height: 1.65; }
+.taxi-docs-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.5rem; }
+a { text-decoration: none; }
+.taxi-docs-button { display: inline-flex; align-items: center; gap: 1rem; padding: .55rem .9rem; border: 1px solid var(--info); border-radius: 4px; background: var(--bg); color: var(--info); font-size: .95rem; }
+.taxi-docs-button:hover { background: var(--hover-bg, var(--secondary)); color: var(--fg); }
+.taxi-docs-native { color: var(--info); font-size: .95rem; }
+.taxi-docs-native:hover { color: var(--fg); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--info); outline-offset: 4px; }
+@media (max-width: 767.98px) {
+  :host { margin-bottom: 1.5rem; }
+  .taxi-docs-intro { padding: 1.5rem; }
+  h2 { font-size: 1.5rem; }
+  .taxi-docs-art { width: 170%; right: -72%; top: -110px; opacity: .3; }
+  .taxi-docs-intro::after { background: linear-gradient(90deg, var(--bg), color-mix(in srgb, var(--bg) 88%, transparent) 55%, color-mix(in srgb, var(--bg) 65%, transparent)); }
+}
