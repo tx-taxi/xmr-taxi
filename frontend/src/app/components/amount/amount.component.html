@@ -1,3 +1,10 @@
+@if (compactBlock) {
+  @if ((viewAmountMode$ | async) === 'xmr' || (viewAmountMode$ | async) === 'fiat' || ignoreViewMode) {
+    {{ compactBlockAmount(satoshis) }} <span class="symbol" [style]="unitStyle">XMR</span>
+  } @else {
+    {{ compactBlockAmount(satoshis, true) }} <span class="symbol" [style]="unitStyle">atomic</span>
+  }
+} @else {
 <!-- xmr-space: amount values arriving here are Monero atomic units
      (1 XMR = 1e12 atomic). The variable is named `satoshis` for upstream
      compatibility but should be read as "atomic units." Default view renders
@@ -45,3 +52,5 @@
     }
   </ng-template>
 </ng-template>
+
+}

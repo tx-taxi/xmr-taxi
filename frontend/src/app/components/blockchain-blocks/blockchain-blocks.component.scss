@@ -287,3 +287,8 @@
   border-radius: 2px;
   z-index: -1;
 }
+
+// Compact strip values keep the native fixed-height rows aligned.
+.fees, .fee-span, .block-size, .transaction-count, .time-difference {
+  white-space: nowrap;
+}

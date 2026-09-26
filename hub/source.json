@@ -1,0 +1,7 @@
+{
+  "commit": "76f9a6e59ce4b74c4728a94768a4d9282369e5e3",
+  "repository": "tx-taxi/xmr-taxi",
+  "approval": "Latest integrated approved metadata revision; strip unchanged since verified palette revision f6a451f85",
+  "formattingBaseline": "5a5a3145a5c1c2f2410f8f47b6808e8f5af2fa94",
+  "formattingReconciliation": "2026-09-26: preserve deployed native source and approved extraction wrapper; compact display only, exact overlay tooltips, DOGE consistent ETA/count. Generated provenance records actual build commit and source hashes."
+}

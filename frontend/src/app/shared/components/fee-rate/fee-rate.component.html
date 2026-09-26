@@ -4,8 +4,8 @@
      the template so consumers that pass `units="wu"` don't crash. -->
 <ng-container *ngIf="rateUnits$ | async as units">
   <ng-container *ngIf="fee !== undefined; else noFee">
-    <ng-container *ngIf="units !== 'wu'">{{ fee / weight | feeRounding:rounding:dp }} <span *ngIf="showUnit" [class]="unitClass" [style]="unitStyle">ɱ/B</span></ng-container>
-    <ng-container *ngIf="units === 'wu'">{{ fee / weight | feeRounding:rounding:dp }} <span *ngIf="showUnit" [class]="unitClass" [style]="unitStyle">ɱ/B</span></ng-container>
+    <ng-container *ngIf="units !== 'wu'">{{ compactBlock ? compactBlockNumber(fee / weight) : (fee / weight | feeRounding:rounding:dp) }} <span *ngIf="showUnit" [class]="unitClass" [style]="unitStyle">ɱ/B</span></ng-container>
+    <ng-container *ngIf="units === 'wu'">{{ compactBlock ? compactBlockNumber(fee / weight) : (fee / weight | feeRounding:rounding:dp) }} <span *ngIf="showUnit" [class]="unitClass" [style]="unitStyle">ɱ/B</span></ng-container>
   </ng-container>
   <ng-template #noFee>
       <ng-container *ngIf="units !== 'wu'">- <span *ngIf="showUnit" [class]="unitClass" [style]="unitStyle">ɱ/B</span></ng-container>

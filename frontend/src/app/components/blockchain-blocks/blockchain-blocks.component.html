@@ -15,7 +15,7 @@
         [style]="blockTransformation"
         [class.blink-bg]="isSpecial(block.height)">
         <a draggable="false" [routerLink]="[getHref(i, block) | relativeUrl]" [state]="{ data: { block: block } }"
-          class="blockLink" [ngClass]="{'disabled': (this.stateService.blockScrolling$ | async)}">&nbsp;</a>
+          [attr.title]="blockValueDetails(block.extras?.totalFees, block.extras?.medianFee, block.extras?.minFee, block.extras?.maxFee)" class="blockLink" [ngClass]="{'disabled': (this.stateService.blockScrolling$ | async)}">&nbsp;</a>
         <div *ngIf="!minimal" [attr.data-cy]="'xmr-block-' + i + '-height'" class="block-height">
           <a [routerLink]="[getHref(i, block) | relativeUrl]" [state]="{ data: { block: block } }" class="block-height-link">{{ block.height
             }}</a>
@@ -36,25 +36,25 @@
         <div class="block-body">
           <ng-container *ngIf="!minimal">
             <div *ngIf="block?.extras; else emptyfees" [attr.data-cy]="'xmr-block-offset=' + offset + '-index-' + i + '-fees'" class="fees">
-              ~<app-fee-rate [fee]="block?.extras?.medianFee" unitClass="" rounding="1.0-0"></app-fee-rate>
+              ~<app-fee-rate [compactBlock]="true" [fee]="block?.extras?.medianFee" unitClass="" rounding="1.0-0"></app-fee-rate>
             </div>
             <ng-template #emptyfees>
               <div [attr.data-cy]="'xmr-block-offset=' + offset + '-index-' + i + '-fees'" class="fees">
-                <app-fee-rate unitClass=""></app-fee-rate>
+                <app-fee-rate [compactBlock]="true" unitClass=""></app-fee-rate>
               </div>
             </ng-template>
             <div [attr.data-cy]="'xmr-block-' + offset + '-index-' + i + '-fee-span'" class="fee-span"
               *ngIf="block?.extras?.minFee != null && block?.extras?.maxFee != null; else emptyfeespan">
-              {{ compactFeeRange(block?.extras?.minFee, block?.extras?.maxFee) }} <span class="symbol">&#x0271;/B</span>
+              <app-fee-rate [compactBlock]="true" [fee]="block?.extras?.minFee" [showUnit]="false" unitClass=""></app-fee-rate>–<app-fee-rate [compactBlock]="true" [fee]="block?.extras?.maxFee" unitClass=""></app-fee-rate>
             </div>
             <ng-template #emptyfeespan>
               <div [attr.data-cy]="'xmr-block-offset=' + offset + '-index-' + i + '-fees'" class="fee-span">
-                <app-fee-rate unitClass=""></app-fee-rate>
+                <app-fee-rate [compactBlock]="true" unitClass=""></app-fee-rate>
               </div>
             </ng-template>
             <div [attr.data-cy]="'xmr-block-' + offset + '-index-' + i + '-total-fees'" *ngIf="blockDisplayMode === 'fees'; else noMiningInfo"
               class="block-size">
-              <app-amount [satoshis]="block.extras?.totalFees ?? 0" digitsInfo="1.2-3" [noFiat]="true"></app-amount>
+              <app-amount [compactBlock]="true" [satoshis]="block.extras?.totalFees ?? 0" digitsInfo="1.2-3" [noFiat]="true"></app-amount>
             </div>
             <ng-template #noMiningInfo>
             <div [attr.data-cy]="'xmr-block-' + offset + '-index-' + i + 'block-size'"

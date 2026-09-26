@@ -1,3 +1,4 @@
+import { compactBlockAmount } from '@app/shared/block-format';
 import { Component, OnInit, OnDestroy, Input, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { StateService, ViewAmountMode } from '@app/services/state.service';
 import { Observable, Subscription } from 'rxjs';
@@ -20,6 +21,9 @@ export class AmountComponent implements OnInit, OnDestroy {
   currencySubscription: Subscription;
 
   @Input() satoshis: number;
+  @Input() compactBlock = false;
+  compactBlockAmount = compactBlockAmount;
+
   @Input() digitsInfo = '1.8-8';
   @Input() noFiat = false;
   @Input() addPlus = false;

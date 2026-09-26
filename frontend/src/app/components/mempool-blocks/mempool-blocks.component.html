@@ -9,17 +9,17 @@
         ></div>
         <div @blockEntryTrigger [@.disabled]="i > 0 || !animateEntry" [attr.data-cy]="'mempool-block-' + i" class="xmr-block text-center mempool-block" [class.hide-block]="count && i >= count" id="mempool-block-{{ i }}" [ngStyle]="mempoolBlockStyles[i]" [class.blink-bg]="projectedBlock.blink" [style]="blockTransformation">
           <a draggable="false" [routerLink]="[getHref(i) | relativeUrl]"
-            class="blockLink" [ngClass]="{'disabled': (this.stateService.blockScrolling$ | async)}">&nbsp;</a>
+            [attr.title]="blockValueDetails(projectedBlock.totalFees, projectedBlock.medianFee, projectedBlock.feeRange?.[0], projectedBlock.feeRange?.[projectedBlock.feeRange.length - 1])" class="blockLink" [ngClass]="{'disabled': (this.stateService.blockScrolling$ | async)}">&nbsp;</a>
           <div class="block-body">
             <ng-container *ngIf="!minimal">
               <div [attr.data-cy]="'mempool-block-' + i + '-fees'" class="fees">
-                ~<app-fee-rate [fee]="projectedBlock.medianFee" unitClass="" rounding="1.0-0"></app-fee-rate>
+                ~<app-fee-rate [compactBlock]="true" [fee]="projectedBlock.medianFee" unitClass="" rounding="1.0-0"></app-fee-rate>
               </div>
               <div [attr.data-cy]="'mempool-block-' + i + '-fee-span'" class="fee-span">
-                {{ compactFeeRange(projectedBlock.feeRange) }} <span class="symbol">&#x0271;/B</span>
+                <app-fee-rate [compactBlock]="true" [fee]="projectedBlock.feeRange[0]" [showUnit]="false" unitClass=""></app-fee-rate>–<app-fee-rate [compactBlock]="true" [fee]="projectedBlock.feeRange[projectedBlock.feeRange.length - 1]" unitClass=""></app-fee-rate>
               </div>
               <div *ngIf="blockDisplayMode === 'fees'; else noMiningInfo" class="block-size">
-                <app-amount [attr.data-cy]="'mempool-block-' + i + '-total-fees'" [satoshis]="projectedBlock.totalFees" digitsInfo="1.2-3" [noFiat]="true"></app-amount>
+                <app-amount [compactBlock]="true" [attr.data-cy]="'mempool-block-' + i + '-total-fees'" [satoshis]="projectedBlock.totalFees" digitsInfo="1.2-3" [noFiat]="true"></app-amount>
               </div>
               <ng-template #noMiningInfo>
                 <div class="block-size" [innerHTML]="'&lrm;' + (projectedBlock.blockSize | bytes: 2)"></div>
