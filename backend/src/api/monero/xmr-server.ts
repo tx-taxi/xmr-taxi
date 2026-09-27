@@ -13,6 +13,7 @@
  * paths are retargeted (or stripped, for the ones that don't apply),
  * this file gives the frontend something to talk to.
  */
+import { XmrActivityIndex } from './xmr-activity';
 import express, { Request, Response } from 'express';
 import { mountMigrationMetrics } from './xmr-migration-metrics';
 import { createServer } from 'http';
@@ -93,6 +94,9 @@ function main(): void {
   const indexer = new XmrChainIndexer(api, bus, minerProofRegistry);
   void indexer.start();
   new XmrMiningRoutes(indexer).initRoutes(app);
+  const activity = new XmrActivityIndex(api);
+  activity.initRoutes(app);
+  void activity.start();
   new XmrSwapTickerRoutes().initRoutes(app);
 
   // WebSocket adapter at /api/v1/ws speaking the upstream mempool/mempool

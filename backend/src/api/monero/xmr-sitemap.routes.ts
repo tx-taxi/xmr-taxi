@@ -25,6 +25,7 @@ const STABLE_PATHS: SitemapEntry[] = [
   { path: '/blocks/1', changefreq: 'hourly', priority: '0.8' },
   { path: '/txs', changefreq: 'always', priority: '0.7' },
   { path: '/graphs/mempool', changefreq: 'hourly', priority: '0.6' },
+  { path: '/graphs/transactions', changefreq: 'hourly', priority: '0.6' },
   { path: '/graphs/price', changefreq: 'hourly', priority: '0.6' },
   { path: '/graphs/swaps', changefreq: 'daily', priority: '0.5' },
   { path: '/graphs/mining/hashrate-difficulty', changefreq: 'daily', priority: '0.5' },

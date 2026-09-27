@@ -1,0 +1,14 @@
+:host { display: block; }
+.activity-description, .activity-note { color: var(--transparent-fg, #aaa); }
+.activity-description { margin-bottom: 1.5rem; max-width: 52rem; }
+.activity-totals { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+.activity-totals .box { padding: 1rem 1.25rem; margin: 0; }
+.activity-totals span { display: block; color: var(--transparent-fg, #aaa); font-size: .85rem; }
+.activity-totals strong { display: block; margin-top: .5rem; color: var(--title-fg); font-size: clamp(1.2rem, 2.2vw, 1.8rem); font-variant-numeric: tabular-nums; }
+.activity-chart-box, .activity-table-box { padding: 1.25rem; margin-bottom: 1.5rem; }
+.activity-controls { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+.activity-controls h3 { font-size: 1.2rem; margin: 0; }
+.activity-chart { height: 380px; }
+.activity-note { font-size: .8rem; margin: .5rem 0 0; }
+.table { font-variant-numeric: tabular-nums; }
+@media (max-width: 767px) { .activity-totals { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; } .activity-chart-box, .activity-table-box { padding: .75rem; } .activity-chart { height: 310px; } }

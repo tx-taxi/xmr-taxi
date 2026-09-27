@@ -1,3 +1,4 @@
+import { transactionMetadata, transactionWeight, transactionFee } from './xmr-transaction';
 import express, { Application, Request, Response } from 'express';
 import { handleError } from '../../utils/api';
 import logger from '../../logger';
@@ -74,7 +75,7 @@ const FORBIDDEN_SECRET_BODY_KEYS = [
  * deliberately omits routes that don't translate (address balance,
  * scripthash, UTXO endpoints, RBF, accelerator).
  *
- * All responses return ONLY public chain data — no amounts, no recipients.
+ * All responses return ONLY public chain data, including visible legacy and miner amounts.
  * Recipient/amount disclosure happens client-side in the frontend's reveal
  * flows; the server never sees keys.
  */
@@ -181,6 +182,8 @@ export class MoneroRoutes {
     // /get_transaction_pool; for confirmed txs monerod's pruned
     // /get_transactions response gives the pruned tx hex, which is the
     // honest public blob available without fetching rangeproof data.
+    app.get('/api/tx/:txid/json', (req, res) => this.getTxBitcoinShape(req, res));
+    app.get(this.prefix + 'tx/:hash/json', (req, res) => this.getTxBitcoinShape(req, res));
     app.get('/api/tx/:txid/hex', (req, res) => this.getTxHex(req, res));
     app.get(this.prefix + 'tx/:hash/hex', (req, res) => this.getTxHex(req, res));
     // /api/v1/transaction-times — array of receive_time per txid request.
@@ -500,118 +503,33 @@ export class MoneroRoutes {
       return;
     }
     try {
-      // Mempool first.
-      const pool = await this.api.getTransactionPool();
-      const inMempool = pool.transactions?.find((t) => t.id_hash === txid);
-      if (inMempool) {
-        const parsed = this.parseTransactionJson(inMempool.tx_json);
-        const info = await this.api.getInfo().catch(() => null);
-        const ringResolution = await this.resolveRingMembers(parsed, info?.height);
-        const numInputs = parsed?.vin?.length ?? 1;
-        const numOutputs = parsed?.vout?.length ?? 1;
-        res.json({
-          txid,
-          version: parsed?.version ?? 2,
-          locktime: parsed?.unlock_time ?? 0,
-          size: inMempool.blob_size || inMempool.weight,
-          weight: inMempool.weight,
-          fee: inMempool.fee,
-          vin: Array.from({ length: numInputs }, (_, i) => ({
-            is_coinbase: false,
-            ringct: true,
-            ring_size: parsed?.vin?.[i]?.key?.key_offsets?.length ?? null,
-            key_image: parsed?.vin?.[i]?.key?.k_image ?? '',
-            ring_offsets: parsed?.vin?.[i]?.key?.key_offsets ?? [],
-            ring_members: ringResolution.membersPerInput[i] ?? [],
-            ring_members_truncated: ringResolution.truncated,
-            prevout: null,
-            scriptsig: '',
-            scriptsig_asm: '',
-            sequence: 0,
-            witness: [],
-          })),
-          vout: Array.from({ length: numOutputs }, () => ({
-            ringct: true,
-            value: 0,
-            scriptpubkey: '',
-            scriptpubkey_asm: '',
-            scriptpubkey_address: '',
-            scriptpubkey_type: 'ringct',
-          })),
-          status: { confirmed: false },
-          firstSeen: inMempool.receive_time || 0,
-          rct_type: parsed?.rct_signatures?.type ?? null,
-          has_view_tags: this.hasViewTags(parsed),
-        });
-        return;
-      }
-      // Confirmed via /get_transactions.
-      const confirmed = await this.api.getTransactionByHash(txid);
-      if (!confirmed) {
-        handleError(req, res, 404, 'tx not found');
-        return;
-      }
-      // Parse the as_json payload to grab vin/vout counts + fee.
-      let parsed: IMoneroApi.TransactionJson | null = null;
-      parsed = this.parseTransactionJson(confirmed.as_json);
-      const fee = parsed?.rct_signatures?.txnFee ?? 0;
-      const blobBytes = confirmed.pruned_as_hex
-        ? Math.floor(confirmed.pruned_as_hex.length / 2)
-        : confirmed.as_hex
-          ? Math.floor(confirmed.as_hex.length / 2)
-          : 0;
-      const numInputs = parsed?.vin?.length ?? 1;
-      const numOutputs = parsed?.vout?.length ?? 1;
-      const blockHeight = confirmed.block_height ?? 0;
-      const blockTimestamp = confirmed.block_timestamp ?? 0;
-      // Resolve block hash for status.
-      let blockHash = '';
-      if (blockHeight > 0) {
-        const b = await this.api.getBlockByHeight(blockHeight).catch(() => null);
-        blockHash = b?.block_header.hash ?? '';
-      }
-      const ringResolution = await this.resolveRingMembers(parsed, blockHeight || undefined);
+      const pool = await this.api.getTransactionPool().catch(() => null);
+      const pending = pool?.transactions?.find(t => t.id_hash === txid);
+      const confirmed = pending ? null : await this.api.getTransactionByHash(txid);
+      if (!pending && !confirmed) { handleError(req, res, 404, 'tx not found'); return; }
+      const parsed = this.parseTransactionJson(pending?.tx_json || confirmed?.as_json);
+      if (!parsed) { handleError(req, res, 502, 'Transaction metadata unavailable'); return; }
+      if (req.path.endsWith('/json')) { res.json(parsed); return; }
+      const metadata = transactionMetadata(parsed, confirmed?.output_indices);
+      const fullHex = confirmed?.as_hex || (confirmed?.prunable_as_hex ? (confirmed.pruned_as_hex || '') + confirmed.prunable_as_hex : '') || (parsed.vin.some(v => v.gen) ? confirmed?.pruned_as_hex || '' : '');
+      const isPending = !!pending || !!confirmed?.in_pool;
+      const pruned = !pending && !fullHex;
+      const size = pending ? (pending.blob_size || pending.weight) : Math.floor((fullHex || confirmed?.pruned_as_hex || '').length / 2);
+      const height = confirmed?.block_height;
+      const block = height !== undefined ? await this.api.getBlockByHeight(height).catch(() => null) : null;
+      const info = isPending ? await this.api.getInfo().catch(() => null) : null;
+      const rings = await this.resolveRingMembers(parsed, height ?? info?.height);
       res.json({
-        txid,
-        version: parsed?.version ?? 2,
-        locktime: parsed?.unlock_time ?? 0,
-        size: blobBytes,
-        weight: blobBytes,
-        fee,
-        // One vin per Monero input — helps the upstream input decoder
-        // render a row per ring rather than a single placeholder.
-        vin: Array.from({ length: numInputs }, (_, i) => ({
-          is_coinbase: false,
-          ringct: true,
-          ring_size: parsed?.vin?.[i]?.key?.key_offsets?.length ?? null,
-          key_image: parsed?.vin?.[i]?.key?.k_image ?? '',
-          ring_offsets: parsed?.vin?.[i]?.key?.key_offsets ?? [],
-          ring_members: ringResolution.membersPerInput[i] ?? [],
-          ring_members_truncated: ringResolution.truncated,
-          prevout: null,
-          scriptsig: '',
-          scriptsig_asm: '',
-          sequence: 0,
-          witness: [],
-        })),
-        vout: Array.from({ length: numOutputs }, () => ({
-          ringct: true,
-          value: 0,
-          scriptpubkey: '',
-          scriptpubkey_asm: '',
-          scriptpubkey_address: '',
-          scriptpubkey_type: 'ringct',
-        })),
-        status: {
-          confirmed: true,
-          block_height: blockHeight,
-          block_hash: blockHash,
-          block_time: blockTimestamp,
+        txid, ...metadata, details_complete: true,
+        size, size_is_pruned: pruned,
+        weight: pending?.weight || (pruned ? size : transactionWeight(parsed, size)),
+        weight_known: !pruned,
+        fee: pending?.fee ?? metadata.fee,
+        vin: metadata.vin.map((v, i) => ({ ...v, ring_members: rings.membersPerInput[i] ?? [], ring_members_truncated: rings.truncated })),
+        status: isPending ? { confirmed: false } : {
+          confirmed: true, block_height: height, block_hash: block?.block_header.hash || '', block_time: confirmed?.block_timestamp,
         },
-        // Monero-only extras the upstream component will ignore but
-        // our reveal-flow shim can read.
-        rct_type: parsed?.rct_signatures?.type ?? null,
-        has_view_tags: this.hasViewTags(parsed),
+        firstSeen: pending?.receive_time || confirmed?.received_timestamp || 0,
       });
     } catch (err) {
       logger.err(`xmr getTxBitcoinShape failed: ${err instanceof Error ? err.message : String(err)}`);
@@ -619,7 +537,7 @@ export class MoneroRoutes {
     }
   }
 
-  /** GET /api/tx/:txid/hex — mempool full blob or confirmed pruned tx hex. */
+  /** GET /api/tx/:txid/hex — full blob when available, otherwise the pruned blob. */
   private async getTxHex(req: Request, res: Response): Promise<void> {
     const txid = req.params.txid ?? req.params.hash;
     if (!txid || !HEX64.test(txid)) {
@@ -635,7 +553,7 @@ export class MoneroRoutes {
       }
 
       const confirmed = await this.api.getTransactionByHash(txid);
-      const hex = confirmed?.as_hex || confirmed?.pruned_as_hex || '';
+      const hex = confirmed?.as_hex || (confirmed?.pruned_as_hex || '') + (confirmed?.prunable_as_hex || '');
       if (!hex) {
         handleError(req, res, 404, 'tx hex not found');
         return;
@@ -693,9 +611,8 @@ export class MoneroRoutes {
    * Response shape mirrors Bitcoin's Transaction interface enough that
    * the upstream TransactionsList renders cleanly:
    *   { txid, version, locktime, fee, size, weight, vin[], vout[], status }
-   * vin/vout are populated with synthetic single-entry placeholders
-   * tagged 'ringct' so consumers can't decode amounts but don't crash
-   * on empty arrays either.
+   * Inputs and outputs preserve public legacy/miner amounts and output keys.
+   * Confidential RingCT values are explicitly marked hidden.
    */
   private async getBlockTxsByPage(req: Request, res: Response, _useV1: boolean): Promise<void> {
     const hash = req.params.hash;
@@ -718,59 +635,17 @@ export class MoneroRoutes {
       const allHashes = [block.miner_tx_hash, ...(block.tx_hashes ?? [])];
       const PAGE = 25;
       const sliceHashes = allHashes.slice(index, index + PAGE);
-      const stripped = sliceHashes.length
-        ? await this.api.getBlockStrippedTxs(block.block_header.hash, sliceHashes, blockTime)
-            .catch(() => [] as Awaited<ReturnType<typeof this.api.getBlockStrippedTxs>>)
-        : [];
-      // Build txs in upstream Transaction shape. ALWAYS include at
-      // least one vin and one vout entry; upstream's transactions-list
-      // template dereferences `tx.vin[0].is_coinbase` (line 515)
-      // unconditionally — empty vin arrays throw "can't access
-      // is_coinbase of undefined" and the error spams the console
-      // every render cycle.
-      const out = sliceHashes.map((h, i) => {
-        const isCoinbase = i === 0 && index === 0;
-        const stat = stripped.find((s) => s.txid === h);
-        const fee = isCoinbase ? 0 : stat?.fee ?? 0;
-        const size = stat?.vsize ?? 0;
-        return {
-          txid: h,
-          version: 2,
-          locktime: 0,
-          size,
-          weight: size,
-          fee,
-          // Synthetic vin/vout — we don't know the real input ring or
-          // output addresses without keys. Each entry is a placeholder
-          // tagged with `ringct: true` (or `is_coinbase: true` for the
-          // miner tx) so consumers know to render 'hidden' rather than
-          // '0' but the upstream template's `vin[0].is_coinbase` and
-          // `vout[0].ringct` dereferences both succeed.
-          vin: [{
-            is_coinbase: isCoinbase,
-            ringct: !isCoinbase,
-            prevout: null,
-            scriptsig: '',
-            scriptsig_asm: '',
-            sequence: 0,
-            witness: [],
-          }],
-          vout: [{
-            ringct: !isCoinbase,
-            value: 0,
-            scriptpubkey: '',
-            scriptpubkey_asm: '',
-            scriptpubkey_address: '',
-            scriptpubkey_type: isCoinbase ? 'coinbase' : 'ringct',
-          }],
-          status: {
-            confirmed: true,
-            block_height: blockHeight,
-            block_hash: block.block_header.hash,
-            block_time: blockTime,
-          },
-          confirmations,
-        };
+      const entries = await this.api.getTransactionsByHashes(sliceHashes);
+      const out = sliceHashes.map(h => {
+        const entry = entries.find(t => t.tx_hash === h);
+        const parsed = this.parseTransactionJson(entry?.as_json);
+        if (!entry || !parsed) throw new Error('Block transaction metadata unavailable');
+        const metadata = transactionMetadata(parsed, entry.output_indices);
+        const fullHex = entry.as_hex || (entry.prunable_as_hex ? (entry.pruned_as_hex || '') + entry.prunable_as_hex : '') || (parsed.vin.some(v => v.gen) ? entry.pruned_as_hex || '' : '');
+        const size = Math.floor((fullHex || entry.pruned_as_hex || '').length / 2);
+        return { txid: h, ...metadata, size, size_is_pruned: !fullHex,
+          weight: fullHex ? transactionWeight(parsed, size) : size, weight_known: !!fullHex,
+          status: { confirmed: true, block_height: blockHeight, block_hash: hash, block_time: blockTime }, confirmations };
       });
       res.json(out);
     } catch (err) {
@@ -1248,7 +1123,7 @@ export class MoneroRoutes {
    *     into public ring-member heights via `/get_outs`.
    *   - has_view_tags: derived from any vout with `target.tagged_key.view_tag`
    *     set — a privacy/scanning-speed signal.
-   *   - rct_type: ringct version (0=none, 1=full, 2=simple, 3=bulletproof, 4=clsag, 5=bulletproof+, 6=clsag-bp+)
+   *   - rct_type: ringct version (0=none, 1=full, 2=simple, 3=bulletproof, 4=bulletproof2, 5=CLSAG, 6=bulletproof+)
    *
    * NEVER includes amounts (vout[].amount is always 0 in RingCT post-v4
    * anyway, but we don't even forward that field) or recipient addresses.
@@ -1281,7 +1156,7 @@ export class MoneroRoutes {
       : t.as_hex
         ? Math.floor(t.as_hex.length / 2)
         : 0;
-    const fee = parsed?.rct_signatures?.txnFee ?? null;
+    const fee = parsed ? transactionFee(parsed) : null;
     const feePerByte = fee && blobBytes > 0 ? Math.floor(fee / blobBytes) : 0;
     return {
       hash: t.tx_hash,

@@ -19,7 +19,8 @@
 ## Features
 
 - Search and inspect Monero blocks, transactions, and observed mempool activity.
-- View transaction status, fee, size or weight, confirmations, public ring metadata, and RingCT flags. Recipient addresses and output amounts remain hidden.
+- Inspect transaction status, fee, size or weight, ring members, key images, output keys, and decoded transaction extra. Legacy and miner transaction amounts are visible; RingCT amounts and recipient addresses remain hidden.
+- Explore [transaction activity](https://xmr.tx.taxi/graphs/transactions) by hour, day, month, or year, with exact counts and CSV downloads. Counts exclude miner reward transactions and come from canonical block headers; see [data provenance](docs/transaction-activity.md).
 - Follow fee estimates, projected pending blocks, every-block difficulty adjustment, difficulty-derived hashrate, and mining history.
 - Use the in-app public REST documentation for chain, transaction, mempool, and mining routes.
 - Verify a shareable `tx_proof` through an optional `monero-wallet-rpc` service. Check receipt with a private view key or `tx_secret_key` in the browser: these secret values are never sent to the backend, placed in URLs, or stored in browser storage. A private-view-key-only scan cannot verify a subaddress; use the `tx_secret_key` check for subaddress payments.

@@ -7,6 +7,8 @@ export interface XmrRingMember {
   txid: string | null;
   unlocked: boolean | null;
   age_blocks: number | null;
+  public_key?: string;
+  commitment?: string;
 }
 
 interface InternalRingMember extends XmrRingMember {
@@ -95,6 +97,8 @@ export function attachResolvedRingMembers(
       global_index: member.global_index,
       height,
       txid: typeof out?.txid === 'string' ? out.txid : null,
+      public_key: out?.key,
+      commitment: out?.mask,
       unlocked: typeof out?.unlocked === 'boolean' ? out.unlocked : null,
       age_blocks: typeof referenceHeight === 'number' && height !== null
         ? Math.max(0, referenceHeight - height)

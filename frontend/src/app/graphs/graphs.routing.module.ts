@@ -1,3 +1,4 @@
+import { TransactionActivityComponent } from '@components/transaction-activity/transaction-activity.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GraphsComponent } from '@components/graphs/graphs.component';
@@ -67,6 +68,9 @@ const routes: Routes = [
         path: 'graphs',
         component: GraphsComponent,
         children: [
+          {
+            path: 'transactions', component: TransactionActivityComponent,
+          },
           {
             path: 'mempool',
             component: StatisticsComponent,

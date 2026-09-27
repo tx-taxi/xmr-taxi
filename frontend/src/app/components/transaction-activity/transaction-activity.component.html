@@ -1,0 +1,36 @@
+<div class="container-xl activity-page">
+<div class="title-block"><h2>Transaction activity</h2></div>
+<p class="activity-description">Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</p>
+<div *ngIf="data" class="activity-totals">
+  <div class="box"><span>Today · so far</span><strong>{{ data.totals.today | number }}</strong></div>
+  <div class="box"><span>This month · so far</span><strong>{{ data.totals.month | number }}</strong></div>
+  <div class="box"><span>This year · so far</span><strong>{{ data.totals.year | number }}</strong></div>
+  <div class="box"><span>Since genesis</span><strong>{{ data.totals.all | number }}</strong></div>
+</div>
+<div class="box activity-chart-box">
+  <div class="activity-controls">
+    <div class="btn-group" aria-label="Count transactions per">
+      <button *ngFor="let item of intervals" type="button" class="btn btn-sm" [class.btn-primary]="interval === item.key" [class.btn-outline-info]="interval !== item.key" [attr.aria-pressed]="interval === item.key" (click)="selectInterval(item.key)">{{ item.label }}</button>
+    </div>
+    <div class="btn-group" aria-label="Date range">
+      <button *ngFor="let item of ranges" type="button" class="btn btn-sm" [class.btn-primary]="range === item" [class.btn-outline-info]="range !== item" [attr.aria-pressed]="range === item" (click)="selectRange(item)">{{ item === 'all' ? 'All time' : item }}</button>
+    </div>
+  </div>
+  <p *ngIf="loading" role="status">Loading transaction history…</p>
+  <div *ngIf="error" role="alert">Transaction history could not be loaded. <button class="btn btn-sm btn-outline-info" (click)="retry()">Retry</button></div>
+  <ng-container *ngIf="data && !loading">
+    <div class="activity-chart" echarts [initOpts]="chartInitOptions" [options]="chartOptions" role="img" aria-label="Monero transaction counts over time; exact counts are available in the table below"></div>
+    <p class="activity-note">{{ selectedTotal | number }} transactions in the displayed periods. Faded bars mark partial periods.</p>
+    <p class="activity-note">Indexed through block {{ data.height | number }} · {{ data.indexedThrough * 1000 | date:'yyyy-MM-dd HH:mm':'UTC' }} UTC<span *ngIf="data.stale"> · Refresh delayed; showing the last indexed data</span></p>
+  </ng-container>
+</div>
+<div *ngIf="data && !loading" class="box activity-table-box">
+  <div class="activity-controls"><h3>Transaction counts</h3><button class="btn btn-sm btn-outline-info" (click)="download()">Download CSV</button></div>
+  <div class="table-responsive"><table class="table table-striped table-borderless">
+    <thead><tr><th scope="col">Period (UTC)</th><th scope="col" class="text-end">Transactions</th><th scope="col" class="text-end">Blocks</th></tr></thead>
+    <tbody><tr *ngFor="let row of rows"><td>{{ label(row.timestamp) }} <span *ngIf="row.partial" class="badge bg-secondary">Partial</span></td><td class="text-end">{{ row.transactions | number }}</td><td class="text-end">{{ row.blocks | number }}</td></tr></tbody>
+  </table></div>
+  <button *ngIf="shown < data.series.length" type="button" class="btn btn-sm btn-outline-info" (click)="shown = shown + 50">Show more periods</button>
+</div>
+
+</div>

@@ -433,3 +433,13 @@ h2 .cpfp-beta {
     color: var(--info);
   }
 }
+
+.xmr-metadata-value { display: inline; white-space: normal; overflow-wrap: anywhere; word-break: break-all; }
+.xmr-extra-box td:first-child { min-width: 9rem; width: 25%; }
+.xmr-payment-verification { margin: 1.5rem 0; }
+.xmr-payment-verification > summary { cursor: pointer; color: var(--primary); font-size: 1.15rem; padding: .75rem 0; }
+
+.xmr-extra-box table { width: 100%; table-layout: fixed; }
+.xmr-extra-box td { white-space: normal; overflow-wrap: anywhere; }
+.xmr-extra-box td:first-child { min-width: 0; }
+@media (max-width: 576px) { .xmr-extra-box td:first-child { width: 35%; } }

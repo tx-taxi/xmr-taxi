@@ -67,7 +67,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
   inputIndex: number;
   outputIndex: number;
   xmrRingctTx: boolean = false;
-  isDetailsOpen: boolean = false;
+  isDetailsOpen: boolean = true;
   tooltipPosition: { x: number, y: number };
   isMobile: boolean;
   isLoadingFirstSeen = false;
@@ -128,7 +128,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit() {
     this.enterpriseService.page();
-    this.isDetailsOpen = this.route.snapshot.queryParams['showDetails'] === 'true';
+    this.isDetailsOpen = this.route.snapshot.queryParams['showDetails'] !== 'false';
 
     this.websocketService.want(['blocks', 'mempool-blocks']);
     this.networkChangedSubscription = this.stateService.networkChanged$.subscribe(
@@ -221,7 +221,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
           this.seoService.setTitle(
             $localize`:@@xmr.transaction.browser-title:Transaction: ${shortTxId}:INTERPOLATION:`
           );
-          this.seoService.setDescription($localize`:@@meta.description.xmr.transaction:Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid ${this.txId}. Amounts and recipients stay hidden by RingCT.`);
+          this.seoService.setDescription($localize`:@@meta.description.xmr.transaction:Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid ${this.txId}. See public input rings, output keys, transaction extra and protocol metadata.`);
           this.resetTransaction();
 
           return merge(
@@ -236,7 +236,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
         switchMap(() => {
           let transactionObservable$: Observable<Transaction>;
           const cached = this.cacheService.getTxFromCache(this.txId);
-          if (cached && cached.fee !== -1) {
+          if (cached?.details_complete && cached.fee !== -1) {
             transactionObservable$ = of(cached);
           } else {
             transactionObservable$ = this.electrsApiService
@@ -330,7 +330,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
     });
 
     this.queryParamsSubscription = this.route.queryParams.subscribe((params) => {
-      this.isDetailsOpen = params.showDetails === 'true';
+      this.isDetailsOpen = params.showDetails !== 'false';
       this.txList?.setDetailsOpen(this.isDetailsOpen);
     });
 
@@ -365,7 +365,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
     this.isDetailsOpen = !this.isDetailsOpen;
     this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { showDetails: this.isDetailsOpen ? 'true' : null },
+      queryParams: { showDetails: this.isDetailsOpen ? null : 'false' },
       queryParamsHandling: 'merge',
       preserveFragment: true,
       replaceUrl: true,
@@ -386,7 +386,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
 
   setFeatures(): void {
     this.xmrRingctTx = this.tx ? this.isXmrRingctTransaction(this.tx) : false;
-    this.featuresEnabled = this.xmrRingctTx;
+    this.featuresEnabled = !!this.tx;
   }
 
   isXmrRingctTransaction(tx: Transaction): boolean {
@@ -394,7 +394,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private getFeeRateDenominator(tx: Transaction): number {
-    return Math.max(this.xmrRingctTx ? tx.weight : (tx.weight / 4), 1);
+    return Math.max(tx.weight, 1);
   }
 
   private getTxFeeRate(tx: Transaction): number {
@@ -639,7 +639,7 @@ export class TransactionComponent implements OnInit, AfterViewInit, OnDestroy {
     this.isLoadingTx = true;
     this.transactionTime = -1;
     this.mempoolPosition = null;
-    this.isDetailsOpen = this.route.snapshot.queryParams['showDetails'] === 'true';
+    this.isDetailsOpen = this.route.snapshot.queryParams['showDetails'] !== 'false';
     this.resetXmrProof();
     this.resetXmrLocalVerification();
     document.body.scrollTo(0, 0);

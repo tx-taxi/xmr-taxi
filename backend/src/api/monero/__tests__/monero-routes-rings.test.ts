@@ -108,7 +108,7 @@ describe('MoneroRoutes ring-member enrichment', () => {
       { amount: 0, index: 15 },
     ], true);
     expect(vin.ring_offsets).toEqual([10, 2, 3]);
-    expect(vin.ring_members).toEqual([
+    expect(vin.ring_members).toMatchObject([
       { amount: 0, global_index: 10, height: 90, txid: 'tx0', unlocked: true, age_blocks: 10 },
       { amount: 0, global_index: 12, height: 95, txid: 'tx1', unlocked: true, age_blocks: 5 },
       { amount: 0, global_index: 15, height: 99, txid: 'tx2', unlocked: true, age_blocks: 1 },

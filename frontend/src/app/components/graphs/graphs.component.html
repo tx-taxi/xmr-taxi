@@ -3,6 +3,7 @@
 
   <a routerLinkActive="active" class="btn btn-primary flex-fill"
     [routerLink]="['/graphs/mempool' | relativeUrl]">Mempool</a>
+  <a class="btn btn-primary flex-fill" routerLinkActive="active" [routerLink]="['/graphs/transactions' | relativeUrl]">Transactions</a>
 
   @if (stateService.env.MINING_DASHBOARD) {
   <div ngbDropdown class="flex-fill">

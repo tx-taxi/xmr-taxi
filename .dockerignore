@@ -27,3 +27,6 @@ data
 .env
 .env.*
 !.env.sample
+
+!backend/src/api/monero/data/
+!backend/src/api/monero/data/activity-seed.json.gz

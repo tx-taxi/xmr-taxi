@@ -134,7 +134,7 @@
   @if (!isLoadingTx) {
     <tr>
       <td class="td-width" i18n="transaction.fee|Transaction fee">Fee</td>
-      <td class="text-wrap">{{ (tx.fee | number) ?? '-' }} <span class="symbol">atomic units</span>
+      <td class="text-wrap"><span [title]="(tx.fee | number) + ' atomic units'"><app-amount [satoshis]="tx.fee" [noFiat]="true"></app-amount></span>
         <span class="fiat"><app-fiat *ngIf="tx.fee >= 0" [blockConversion]="tx.price" [value]="tx.fee"></app-fiat></span>
       </td>
     </tr>
@@ -148,7 +148,7 @@
     <tr>
       <td i18n="transaction.fee-rate|Transaction fee rate">Fee rate</td>
       <td>
-        <app-fee-rate [fee]="tx.feePerVsize"></app-fee-rate>
+        <app-fee-rate *ngIf="tx.weight_known !== false; else unknownWeight" [fee]="tx.feePerVsize"></app-fee-rate><ng-template #unknownWeight>Unavailable for pruned data</ng-template>
       </td>
     </tr>
   } @else {

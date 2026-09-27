@@ -1,3 +1,4 @@
+import { transactionFee } from './xmr-transaction';
 import memoryCache from '../memory-cache';
 import { IMoneroApi, MoneroDaemonConfig } from './monero-api.interface';
 import { MoneroRpcPool } from './monero-rpc';
@@ -134,20 +135,20 @@ export class MoneroApi {
    * forever — but the wrapper response carries `confirmations`, which IS
    * dynamic. 30s is a reasonable compromise.
    */
-  public async getTransactionsByHashes(hashes: string[]): Promise<IMoneroApi.TransactionEntry[]> {
+  public async getTransactionsByHashes(hashes: string[], prune = true): Promise<IMoneroApi.TransactionEntry[]> {
     if (hashes.length === 0) {
       return [];
     }
     // Cache by sorted hash list; for single-hash lookups (the common case
     // in tx-detail views) this still hits the same key on repeated reads.
-    const cacheKey = hashes.slice().sort().join(',');
+    const cacheKey = `${prune}:` + hashes.slice().sort().join(',');
     const cached = memoryCache.get<IMoneroApi.TransactionEntry[]>('xmr-tx', cacheKey);
     if (cached) {
       return cached;
     }
     const resp = await this.rpc.raw<{ txs?: IMoneroApi.TransactionEntry[]; status: string }>(
       '/get_transactions',
-      { txs_hashes: hashes, decode_as_json: true, prune: true },
+      { txs_hashes: hashes, decode_as_json: true, prune },
     );
     const txs = resp.txs ?? [];
     memoryCache.set('xmr-tx', cacheKey, txs, 30);
@@ -156,7 +157,7 @@ export class MoneroApi {
 
   /** Convenience wrapper for the single-hash case. Returns `null` if not found. */
   public async getTransactionByHash(hash: string): Promise<IMoneroApi.TransactionEntry | null> {
-    const txs = await this.getTransactionsByHashes([hash]);
+    const txs = await this.getTransactionsByHashes([hash], false);
     return txs.find((t) => t.tx_hash === hash) ?? null;
   }
 
@@ -240,7 +241,7 @@ export class MoneroApi {
       let fee = 0;
       try {
         const parsed = t.as_json ? JSON.parse(t.as_json) as IMoneroApi.TransactionJson : null;
-        fee = parsed?.rct_signatures?.txnFee ?? 0;
+        fee = parsed ? transactionFee(parsed) : 0;
       } catch {
         fee = 0;
       }
@@ -311,7 +312,7 @@ export class MoneroApi {
       let fee = 0;
       try {
         const parsed = t.as_json ? JSON.parse(t.as_json) as IMoneroApi.TransactionJson : null;
-        fee = parsed?.rct_signatures?.txnFee ?? 0;
+        fee = parsed ? transactionFee(parsed) : 0;
       } catch {
         fee = 0;
       }

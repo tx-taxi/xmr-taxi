@@ -17,6 +17,7 @@
     <div class="row">
       <div class="col">
         <table class="table table-fixed table-borderless smaller-text table-sm table-tx-vin">
+          <thead *ngIf="transactionPage"><tr><th colspan="3">Inputs ({{ tx.vin.length }})</th></tr></thead>
           <tbody>
             <ng-template ngFor let-vin let-vindex="index" [ngForOf]="tx.vin.slice(0, getVinLimit(tx))" [ngForTrackBy]="trackByIndexFn">
               <tr [ngClass]="{ 'assetBox': inputIndex === vindex }">
@@ -42,7 +43,7 @@
                         <span class="badge bg-secondary scriptmessage longer">{{ vin.scriptsig | hex2ascii }}</span>
                       </a>
                     }
-                  } @else if (vin.ringct) {
+                  } @else if (vin.key_image) {
                     <div class="xmr-ring-input-summary">
                       <span class="badge bg-info" *ngIf="vin.ring_size">Ring {{ vin.ring_size }}</span>
                       <code class="xmr-key-image" *ngIf="vin.key_image" ngbTooltip="Key image">{{ vin.key_image | slice:0:10 }}...{{ vin.key_image | slice:-6 }}</code>
@@ -52,7 +53,7 @@
                   }
                 </td>
                 <td class="text-end nowrap amount" [class.large]="tx.largeInput">
-                  @if (vin.prevout || inputAmountHidden(vin)) {
+                  @if (vin.amount != null || vin.prevout || inputAmountHidden(vin)) {
                     <app-amount [blockConversion]="tx.price" [satoshis]="inputAmount(vin)" [blurHiddenAmount]="inputAmountHidden(vin)"></app-amount>
                   }
                 </td>
@@ -79,7 +80,7 @@
                       }
                       @if (vin.ring_offsets?.length) {
                         <tr>
-                          <td>Ring offsets</td>
+                          <td>Relative ring offsets</td>
                           <td style="text-align: left;"><code class="xmr-mono-wrap">{{ ringOffsetsPreview(vin) }}</code></td>
                         </tr>
                       }
@@ -87,27 +88,22 @@
                         <tr>
                           <td>Ring members</td>
                           <td style="text-align: left;">
-                            <div class="xmr-ring-members">
+                            <div class="xmr-ring-members-list">
                               @for (member of vin.ring_members; track $index) {
-                                @if (member.txid) {
-                                  <a class="xmr-ring-member" [routerLink]="['/tx/' | relativeUrl, member.txid]" [ngbTooltip]="ringMemberTooltip(member)">
-                                    <span>{{ ringMemberLabel(member) }}</span>
-                                    @if (member.age_blocks !== null) {
-                                      <small>{{ member.age_blocks | number }} blocks</small>
-                                    }
-                                  </a>
-                                } @else {
-                                  <span class="xmr-ring-member" [ngbTooltip]="ringMemberTooltip(member)">
-                                    <span>{{ ringMemberLabel(member) }}</span>
-                                    @if (member.age_blocks !== null) {
-                                      <small>{{ member.age_blocks | number }} blocks</small>
-                                    }
-                                  </span>
-                                }
+                                <div class="xmr-ring-member-detail">
+                                  <div>Output #{{ member.global_index | number }}
+                                    @if (member.height != null) { · <a [routerLink]="['/block/' | relativeUrl, member.height]">Block {{ member.height | number }}</a> }
+                                    @if (member.age_blocks != null) { · {{ member.age_blocks | number }} blocks earlier }
+                                  </div>
+                                  @if (member.txid) { <a class="xmr-mono-wrap" [routerLink]="['/tx/' | relativeUrl, member.txid]">{{ member.txid }}</a> }
+                                  @if (member.public_key) { <div>Output key <code class="xmr-mono-wrap">{{ member.public_key }}</code></div> }
+                                  @if (!member.txid) { <span class="xmr-ring-note">Source transaction temporarily unavailable.</span> }
+                                </div>
                               }
                             </div>
+                            <div class="xmr-ring-note">{{ vin.ring_size === 1 ? 'This legacy input has no decoys.' : 'Ring members include decoys; the actual spent output is not identified.' }}</div>
                             @if (vin.ring_members_truncated) {
-                              <div class="xmr-ring-note">Additional ring members omitted from this response.</div>
+                              <div class="xmr-ring-note">Some ring-member details were not resolved in this response.</div>
                             }
                           </td>
                         </tr>
@@ -134,6 +130,7 @@
       <div class="w-100 d-block d-md-none"></div>
       <div class="col mobile-bottomcol">
         <table class="table table-fixed table-borderless smaller-text table-sm table-tx-vout">
+          <thead *ngIf="transactionPage"><tr><th colspan="3">Outputs ({{ tx.vout.length }})</th></tr></thead>
           <tbody>
             <ng-template ngFor let-vout let-vindex="index" [ngForOf]="tx.vout.slice(0, getVoutLimit(tx))" [ngForTrackBy]="trackByIndexFn">
               <tr [ngClass]="{ 'assetBox': outputIndex === vindex }">
@@ -173,6 +170,9 @@
                           <td style="text-align: left;">Hidden by stealth addressing</td>
                         </tr>
                       }
+                      @if (vout.global_index != null) { <tr><td>Global output index</td><td>{{ vout.global_index | number }}</td></tr> }
+                      @if (vout.view_tag) { <tr><td>View tag</td><td><code>{{ vout.view_tag }}</code></td></tr> }
+                      @if (vout.commitment) { <tr><td>Amount commitment</td><td><code class="xmr-mono-wrap">{{ vout.commitment }}</code></td></tr> }
                       @if (vout.scriptpubkey) {
                         <tr>
                           <td>Output key</td>

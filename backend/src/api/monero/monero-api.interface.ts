@@ -189,7 +189,7 @@ export namespace IMoneroApi {
   export interface TransactionJson {
     version: number;
     unlock_time: number;
-    vin: Array<{ key?: { amount: number; key_offsets: number[]; k_image: string } }>;
+    vin: Array<{ gen?: { height: number }; key?: { amount: number; key_offsets: number[]; k_image: string } }>;
     vout: Array<{ amount: number; target: { tagged_key?: { key: string; view_tag?: string }; key?: string } }>;
     extra: number[];
     rct_signatures: {

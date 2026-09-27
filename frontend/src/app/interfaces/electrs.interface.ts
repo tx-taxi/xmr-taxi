@@ -13,6 +13,17 @@ export interface Transaction {
   vout: Vout[];
   status: Status;
 
+  ringct?: boolean;
+  rct_type?: number;
+  rct_type_name?: string;
+  has_view_tags?: boolean;
+  details_complete?: boolean;
+  size_is_pruned?: boolean;
+  weight_known?: boolean;
+  tx_extra?: string;
+  tx_extra_fields?: Array<{ label: string; value: string }>;
+  tx_extra_complete?: boolean;
+
   // Custom properties
   firstSeen?: number;
   feePerVsize?: number;
@@ -101,6 +112,9 @@ export interface Vin {
   taprootInfo?: ParsedTaproot;
   // xmr-space: Monero RingCT public input metadata
   ringct?: boolean;
+  amount?: number | null;
+  coinbase_height?: number;
+  ring_indices?: number[];
   ring_size?: number;
   key_image?: string;
   ring_offsets?: number[];
@@ -115,6 +129,8 @@ export interface XmrRingMember {
   txid: string | null;
   unlocked: boolean | null;
   age_blocks: number | null;
+  public_key?: string;
+  commitment?: string;
 }
 
 interface Issuance {
@@ -130,6 +146,9 @@ interface Issuance {
 }
 
 export interface Vout {
+  view_tag?: string | null;
+  global_index?: number | null;
+  commitment?: string | null;
   scriptpubkey: string;
   scriptpubkey_asm: string;
   scriptpubkey_type: string;

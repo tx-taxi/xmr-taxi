@@ -38,13 +38,76 @@
 
   <ng-template [ngIf]="!isLoadingTx && !error">
 
-    <ng-container *ngIf="xmrRingctTx">
-      <br>
-      <div class="subtitle-block">
-        <div class="title">
-          <h2>Payment verification</h2>
+
+
+    <br>
+
+    <div class="subtitle-block">
+      <div class="title">
+        <h2 i18n="transaction.inputs-and-outputs|Transaction inputs and outputs">Inputs & Outputs</h2>
+      </div>
+
+      <div class="title-buttons">
+        <button type="button" class="btn btn-outline-info btn-sm" (click)="toggleDetailsFromTxPage()" i18n="transaction.details|Transaction Details">Details</button>
+      </div>
+    </div>
+
+
+    <app-transactions-list #txList [transactions]="[tx]" [cached]="isCached" [inputIndex]="inputIndex" [outputIndex]="outputIndex" [transactionPage]="true"></app-transactions-list>
+
+    <div class="title text-start">
+      <h2 i18n="transaction.details|Transaction Details">Details</h2>
+    </div>
+    <div class="box">
+      <div class="row">
+        <div class="col-sm">
+          <table class="table table-borderless table-striped">
+            <tbody>
+              <tr>
+                <td>{{ tx.size_is_pruned ? "Pruned data size" : "Serialized size" }}</td>
+                <td [innerHTML]="'&lrm;' + (tx.size | bytes: 2)"></td>
+              </tr>
+              <tr *ngIf="tx.weight_known !== false">
+                <td i18n="block.weight">Weight</td>
+                <td><span [innerHTML]="'&lrm;' + (tx.weight | bytes: 2)"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm">
+          <table class="table table-borderless table-striped">
+            <tbody>
+              <tr>
+                <td i18n="transaction.version">Version</td>
+                <td [innerHTML]="'&lrm;' + (tx.version | number)"></td>
+              </tr>
+              <tr>
+                <td>Unlock time</td>
+                <td [innerHTML]="'&lrm;' + (tx.locktime | number)"></td>
+              </tr>
+              <tr><td>Decoded transaction</td><td><a [href]="'/api/tx/' + txId + '/json'" target="_blank" rel="noopener">JSON</a></td></tr>
+              <tr>
+                <td i18n="transaction.blob|Transaction blob label@@transaction.blob">Transaction blob</td>
+                <td><a target="_blank" href="{{ network === '' ? '' : '/' + network }}/api/tx/{{ txId }}/hex"><fa-icon [icon]="['fas', 'external-link-alt']" [fixedWidth]="true"></fa-icon></a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+    </div>
+
+    <div class="title text-start"><h2>Transaction extra</h2></div>
+    <div class="box xmr-extra-box">
+      <table class="table table-borderless table-striped">
+        <tbody>
+          <tr *ngFor="let field of tx.tx_extra_fields"><td>{{ field.label }}</td><td><code class="xmr-metadata-value">{{ field.value }}</code></td></tr>
+          <tr><td>Raw tx_extra</td><td><code class="xmr-metadata-value">{{ tx.tx_extra || 'Empty' }}</code><app-clipboard *ngIf="tx.tx_extra" [text]="tx.tx_extra"></app-clipboard></td></tr>
+        </tbody>
+      </table>
+      <p *ngIf="tx.tx_extra_complete === false" class="text-muted">Some extra fields are unrecognized; the complete raw bytes are shown above.</p>
+    </div>
+    <details class="xmr-payment-verification" *ngIf="!tx.vin?.[0]?.is_coinbase">
+      <summary>Payment verification</summary>
 
       <div class="box xmr-proof-box">
         <div class="xmr-proof-tabs" role="tablist" aria-label="Monero payment verification mode">
@@ -264,63 +327,7 @@
           {{ xmrLocalError }}
         </div>
       </div>
-    </ng-container>
-
-    <br>
-
-    <div class="subtitle-block">
-      <div class="title">
-        <h2 i18n="transaction.inputs-and-outputs|Transaction inputs and outputs">Inputs & Outputs</h2>
-      </div>
-
-      <div class="title-buttons">
-        <button type="button" class="btn btn-outline-info btn-sm" (click)="toggleDetailsFromTxPage()" i18n="transaction.details|Transaction Details">Details</button>
-      </div>
-    </div>
-
-
-    <app-transactions-list #txList [transactions]="[tx]" [cached]="isCached" [inputIndex]="inputIndex" [outputIndex]="outputIndex" [transactionPage]="true"></app-transactions-list>
-
-    <div class="title text-start">
-      <h2 i18n="transaction.details|Transaction Details">Details</h2>
-    </div>
-    <div class="box">
-      <div class="row">
-        <div class="col-sm">
-          <table class="table table-borderless table-striped">
-            <tbody>
-              <tr>
-                <td i18n="block.size">Size</td>
-                <td [innerHTML]="'&lrm;' + (tx.size | bytes: 2)"></td>
-              </tr>
-              <tr>
-                <td i18n="block.weight">Weight</td>
-                <td><span [innerHTML]="'&lrm;' + (tx.weight | bytes: 2)"></span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm">
-          <table class="table table-borderless table-striped">
-            <tbody>
-              <tr>
-                <td i18n="transaction.version">Version</td>
-                <td [innerHTML]="'&lrm;' + (tx.version | number)"></td>
-              </tr>
-              <tr>
-                <td i18n="transaction.locktime">Locktime</td>
-                <td [innerHTML]="'&lrm;' + (tx.locktime | number)"></td>
-              </tr>
-              <tr>
-                <td i18n="transaction.blob|Transaction blob label@@transaction.blob">Transaction blob</td>
-                <td><a target="_blank" href="{{ network === '' ? '' : '/' + network }}/api/tx/{{ txId }}/hex"><fa-icon [icon]="['fas', 'external-link-alt']" [fixedWidth]="true"></fa-icon></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
+    </details>
   </ng-template>
 
   <ng-template [ngIf]="isLoadingTx && !error">

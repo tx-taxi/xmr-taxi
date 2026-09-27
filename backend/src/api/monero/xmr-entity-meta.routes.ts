@@ -38,7 +38,7 @@ export class XmrEntityMetaRoutes {
   private async entity(kind: Kind, id: string): Promise<Entity> {
     const shortId = HEX64.test(id) ? `${id.slice(0, 12)}...${id.slice(-8)}` : id;
     const fallback: Entity = kind === 'tx'
-      ? { kind, id, title: `Monero transaction ${shortId}`, description: `Look up public metadata for Monero transaction ${id} on xmr.tx.taxi. Amounts and recipients are private.`, detail: 'Public transaction metadata' }
+      ? { kind, id, title: `Monero transaction ${shortId}`, description: `Look up public metadata for Monero transaction ${id} on xmr.tx.taxi.`, detail: 'Public transaction metadata' }
       : { kind, id, title: `Monero block ${shortId}`, description: `Look up public metadata for Monero block ${id} on xmr.tx.taxi.`, detail: 'Public block metadata' };
 
     try {
@@ -53,7 +53,7 @@ export class XmrEntityMetaRoutes {
         const location = result.in_pool ? 'Pending' : result.block_height !== undefined ? `Block ${result.block_height.toLocaleString('en-US')}` : 'Confirmed';
         return {
           ...fallback,
-          description: `Monero transaction ${id}. ${location}. Public transaction metadata on xmr.tx.taxi; amounts and recipients are private.`,
+          description: `Monero transaction ${id}. ${location}. Explore public input rings, output keys and transaction metadata on xmr.tx.taxi.`,
           detail: location,
         };
       }

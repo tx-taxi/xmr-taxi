@@ -36,7 +36,7 @@ describe('xmr ring helpers', () => {
       { height: 80, key: 'k3', mask: 'm3', txid: 'tx3', unlocked: true },
     ], 100);
 
-    expect(result.membersPerInput[0]).toEqual([
+    expect(result.membersPerInput[0]).toMatchObject([
       { amount: 0, global_index: 10, height: 90, txid: 'tx0', unlocked: true, age_blocks: 10 },
       { amount: 0, global_index: 12, height: 95, txid: 'tx1', unlocked: true, age_blocks: 5 },
       { amount: 0, global_index: 15, height: 99, txid: 'tx2', unlocked: false, age_blocks: 1 },

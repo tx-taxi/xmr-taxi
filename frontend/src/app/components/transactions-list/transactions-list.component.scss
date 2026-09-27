@@ -190,3 +190,7 @@ td.amount.large {
 	flex-grow: 1;
 	margin-inline-end: 2em;
 }
+
+.xmr-ring-member-detail { padding: .5rem 0; border-bottom: 1px solid var(--border-color, #ffffff18); font-size: .75rem; }
+.xmr-ring-member-detail:last-child { border-bottom: 0; }
+.xmr-ring-members-list { min-width: 0; }

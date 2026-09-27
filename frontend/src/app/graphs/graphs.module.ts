@@ -1,3 +1,4 @@
+import { TransactionActivityComponent } from '@components/transaction-activity/transaction-activity.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxEchartsModule } from 'ngx-echarts';
@@ -25,6 +26,7 @@ import { MiningDashboardComponent } from '@components/mining-dashboard/mining-da
 
 @NgModule({
   declarations: [
+    TransactionActivityComponent,
     DashboardComponent,
     MempoolBlockComponent,
     StatisticsComponent,

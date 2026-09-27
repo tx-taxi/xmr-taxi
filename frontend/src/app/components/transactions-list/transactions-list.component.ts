@@ -134,7 +134,7 @@ export class TransactionsListComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   inputAmount(vin: Vin): number {
-    return vin.prevout?.value ?? 0;
+    return vin.amount ?? vin.prevout?.value ?? 0;
   }
 
   inputAmountHidden(vin: Vin): boolean {
@@ -152,13 +152,14 @@ export class TransactionsListComponent implements OnInit, OnChanges, OnDestroy {
     if (vin.ringct) {
       return 'RingCT input';
     }
-    return 'Input';
+    return vin.key_image ? 'Legacy ring input' : 'Input';
   }
 
   outputLabel(vout: Vout): string {
     if (vout.ringct) {
       return 'RingCT output';
     }
+    if (vout.scriptpubkey_type === 'stealth_key') return 'Stealth output';
     if (vout.scriptpubkey_type === 'fee') {
       return 'Fee';
     }
