@@ -1,27 +1,16 @@
 ---
-name: ✨ Feature Request
-about: Request a feature or suggest other enhancements
+name: Feature request
+about: Suggest an improvement to the Monero explorer
 ---
 
-<!--
-   SUPPORT REQUESTS:
-   This is for requesting features in Mempool, not for support requests. 
-   If you have a support request, please reach out on Matrix:
-   https://matrix.to/#/#mempool.support:bitcoin.kyoto
--->
+<!-- For support, contact https://t.me/hiss. -->
 
-### Description
+### Problem
 
-<!-- brief description of the feature request -->
+<!-- What are you trying to do on https://xmr.tx.taxi? -->
 
-### Problem to be solved
+### Proposed improvement
 
-<!-- description of the the problem you're having -->
+### Examples or references
 
-### Proposed solution
-
-<!-- explain how you think we should solve the problem -->
-
-#### Additional info
-
-<!-- Additional information useful for implementing (e.g. docs, links, etc.) -->
+<!-- Include relevant Monero examples or documentation when available. -->

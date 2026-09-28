@@ -1,43 +1,24 @@
 ---
-name: 🐛 Bug Report
-about: Report bugs (no support requests, please)
+name: Bug report
+about: Report a problem with the Monero explorer
 ---
 
-<!--
-   SUPPORT REQUESTS:
-   This is for reporting bugs in Mempool, not for support requests. 
-   If you have a support request, please reach out on Matrix:
-   https://matrix.to/#/#mempool.support:bitcoin.kyoto
--->
+<!-- For support or private reports, contact https://t.me/hiss. -->
 
-### Description
+### What happened?
 
-<!-- brief description of the bug -->
+<!-- Describe the problem on https://xmr.tx.taxi. -->
 
-#### Version
-
-<!-- commit id or version number -->
+### Expected behavior
 
 ### Steps to reproduce
 
-<!-- if you can reliably reproduce the bug, list the steps here -->
+<!-- Include the affected page URL and a public transaction, block, or address when relevant. -->
 
-### Expected behaviour
+### Environment
 
-<!-- description of the expected behavior -->
+<!-- Browser, device, theme, and commit or version if self-hosted. -->
 
-### Actual behaviour
+### Screenshots or logs
 
-<!-- explain what happened instead of the expected behaviour -->
-
-### Screenshots
-
-<!-- Screenshots if gui related, drag and drop to add to the issue -->
-
-#### Device or machine
-
-<!-- device/machine used, operating system -->
-
-#### Additional info
-
-<!-- Additional information useful for debugging (e.g. logs) -->
+<!-- Remove credentials, private keys, recovery phrases, and personal information. -->
