@@ -76,10 +76,12 @@
       </div>
       <div class="links">
         <p class="category">xmr.tx.taxi</p>
-        <p><a class="footer-telegram-link" href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" aria-label="Join the tx.taxi Telegram channel">Telegram Channel</a></p>
+        <p><a [routerLink]="['/about']">About</a></p>
+        <p><a href="https://github.com/tx-taxi/xmr-taxi" target="_blank" rel="noopener noreferrer">Source code</a></p>
+        <p><a href="https://status.tx.taxi/" target="_blank" rel="noopener noreferrer">Status</a></p>
+        <p><a href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" aria-label="Join the tx.taxi Telegram channel">Telegram</a></p>
         <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact Us</a></p>
         <p>Released under AGPLv3</p>
-        <p>Data:<br><code style="font-size: 0.78em; color: var(--tooltip-grey); word-break: break-all;">public Monero RPC provider pool</code></p>
       </div>
       <div class="links">
         <p class="category" i18n="footer.legal">Legal</p>
@@ -93,7 +95,7 @@
     <div class="row footer-credit" [style]="{'background-color': isServicesPage ? 'var(--bg)' : ''}">
       <div class="col-sm-12">
         <p>
-          Made with <span class="footer-credit-emoji" aria-hidden="true">🕵️</span> by
+          Made with <span class="footer-credit-emoji" aria-hidden="true">🚕</span> by
           <a class="footer-credit-link" href="https://u.software" target="_blank" rel="noopener noreferrer">u.software</a>
         </p>
       </div>

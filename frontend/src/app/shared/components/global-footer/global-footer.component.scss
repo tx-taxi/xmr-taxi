@@ -96,16 +96,15 @@ footer .row.link-tree {
 }
 
 footer .row.footer-credit {
-  padding-top: 18px !important;
-  padding-bottom: 22px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
   background-color: var(--bg);
 }
 
 footer .row.footer-credit p {
   margin-bottom: 0;
   text-align: center;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
   color: var(--footer-fg);
   letter-spacing: 0;
 }
@@ -116,17 +115,16 @@ footer .row.footer-credit .footer-credit-emoji {
 }
 
 footer .row.footer-credit .footer-credit-link {
-  color: color-mix(in srgb, var(--primary) 72%, #ffffff);
+  color: color-mix(in srgb, var(--primary) 72%, #fff);
+  font-weight: 600;
   text-decoration: none;
   text-underline-offset: 4px;
-  transition: color 120ms ease, text-decoration-color 120ms ease;
 }
 
 footer .row.footer-credit .footer-credit-link:hover,
 footer .row.footer-credit .footer-credit-link:focus {
-  color: color-mix(in srgb, var(--primary) 86%, #ffffff);
+  color: color-mix(in srgb, var(--primary) 88%, #fff);
   text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--primary) 55%, transparent);
 }
 
 .main-logo {
@@ -238,6 +236,10 @@ footer .nowrap {
     .main-logo {
       display: block;
       margin: 0 auto;
+
+      & > img {
+        margin-inline: auto;
+      }
     }
 
     footer .site-options {
@@ -292,6 +294,10 @@ footer .nowrap {
   .main-logo {
     display: block;
     margin: 0 auto;
+
+    & > img {
+      margin-inline: auto;
+    }
   }
 
   .enterprise-logo {
@@ -331,6 +337,10 @@ footer .nowrap {
   .services.main-logo {
     display: block;
     margin: 0 auto;
+
+    & > img {
+      margin-inline: auto;
+    }
   }
 
   footer .services.site-options {
@@ -358,27 +368,4 @@ footer .nowrap {
     flex-shrink: unset;
     width: unset;
   }
-}
-
-footer .footer-telegram-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35em;
-  margin: 2px 0 5px;
-  padding: 5px 10px;
-  border: 1px solid color-mix(in srgb, var(--primary) 55%, var(--bg));
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--primary) 13%, var(--bg));
-  color: color-mix(in srgb, var(--primary) 72%, var(--fg));
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.4;
-  text-decoration: none;
-}
-
-footer .footer-telegram-link:hover,
-footer .footer-telegram-link:focus-visible {
-  background: color-mix(in srgb, var(--primary) 23%, var(--bg));
-  color: var(--fg);
-  text-decoration: none;
 }
