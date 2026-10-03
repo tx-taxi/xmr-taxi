@@ -16,6 +16,7 @@ const targetRoot = path.resolve(frontendRoot, targetArg);
 const allowedResources = [
   '.gitkeep',
   'monerospace-migration.js',
+  'lightning-navigation.js',
   'config.js',
   'config.template.js',
   'customize.js',
