@@ -17,6 +17,7 @@ interface RouterExplorerDestination {
   origin: string;
   default?: boolean;
   icon?: RouterBrandAsset;
+  accentColor?: string;
   searchPlaceholder?: string;
   reviewOrigin?: string;
   search: { kind?: 'chain' | 'lightning'; resolvePath: string; params?: Record<string, string> };
@@ -274,6 +275,7 @@ export class TxTaxiExplorerRegistryService {
           origin: this.navigationUrl(destination.origin),
           host: new URL(destination.origin).host,
           default: destination.default,
+          accentColor: destination.accentColor || explorer.accentColor,
           searchPlaceholder: destination.searchPlaceholder || `Search ${chain.name} · ${destination.name}`,
           iconUrl: destination.icon ? this.absoluteRouterUrl(destination.icon.url) : explorer.iconUrl,
           iconAlt: destination.icon?.alt || explorer.iconAlt,
