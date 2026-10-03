@@ -56,6 +56,7 @@ COPY --from=backend-builder /repo/backend/mempool-config.sample.json ./backend/m
 COPY --from=frontend-builder /repo/frontend/dist/mempool /usr/share/nginx/html
 COPY frontend/src/resources/branding/xmr-dark-navbar.svg /app/backend/assets/xmr-card-logo.svg
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
+COPY --from=frontend-builder /repo/frontend/dist/native-seo-nginx.conf /etc/nginx/native-seo.conf
 COPY deploy/start.sh /usr/local/bin/monerospace-start
 
 RUN chmod +x /usr/local/bin/monerospace-start && \

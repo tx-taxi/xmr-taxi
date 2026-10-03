@@ -110,7 +110,8 @@ const routes: Routes = [
       },
       {
         path: 'api',
-        loadChildren: () => import('@app/xmr/docs/xmr-docs.module').then(m => m.XmrDocsModule),
+        redirectTo: 'docs/api/rest',
+        pathMatch: 'full',
       },
     ],
   }

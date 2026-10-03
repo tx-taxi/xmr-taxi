@@ -1,0 +1,209 @@
+{
+  "chain": "Monero",
+  "host": "xmr.tx.taxi",
+  "origin": "https://xmr.tx.taxi",
+  "explorerTitle": "Monero Explorer",
+  "pages": [
+    {
+      "path": "/",
+      "title": "Monero Mempool Explorer",
+      "description": "Explore Monero blocks, transactions, mempool activity, mining data, and privacy-preserving RingCT metadata.",
+      "template": "src/app/dashboard/dashboard.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/about",
+      "title": "About xmr.tx.taxi",
+      "description": "About the Monero explorer, its public-data limits and open-source attribution.",
+      "template": "src/app/components/about/about.component.html",
+      "kind": "info"
+    },
+    {
+      "path": "/terms-of-service",
+      "title": "Terms of Service",
+      "description": "Service terms, public-data limitations and open-source attribution.",
+      "template": "src/app/components/terms-of-service/terms-of-service.component.html",
+      "kind": "info"
+    },
+    {
+      "path": "/privacy-policy",
+      "title": "Privacy Policy",
+      "description": "Public explorer requests, local preferences and privacy limits.",
+      "template": "src/app/components/privacy-policy/privacy-policy.component.html",
+      "kind": "info"
+    },
+    {
+      "path": "/trademark-policy",
+      "title": "Brand attribution",
+      "description": "Independent explorer branding, upstream attribution and third-party marks.",
+      "template": "src/app/components/trademark-policy/trademark-policy.component.html",
+      "kind": "info"
+    },
+    {
+      "path": "/docs/faq",
+      "title": "Monero FAQ",
+      "description": "Monero explorer FAQ: public mempool data, fees, confirmations and privacy limits.",
+      "template": "src/app/xmr/docs/xmr-docs.component.html",
+      "kind": "docs",
+      "section": "faq"
+    },
+    {
+      "path": "/docs/api/rest",
+      "title": "REST API",
+      "description": "Monero REST API reference for public chain data, fees, mining history and proof verification.",
+      "template": "src/app/xmr/docs/xmr-docs.component.html",
+      "kind": "docs",
+      "section": "rest"
+    },
+    {
+      "path": "/docs/api/websocket",
+      "title": "WebSocket API",
+      "description": "Monero WebSocket reference for snapshots, updates and public transaction tracking.",
+      "template": "src/app/xmr/docs/xmr-docs.component.html",
+      "kind": "docs",
+      "section": "websocket"
+    },
+    {
+      "path": "/docs/api/sse",
+      "title": "Server-Sent Events",
+      "description": "Monero server-sent events reference for snapshots, blocks and observed mempool changes.",
+      "template": "src/app/xmr/docs/xmr-docs.component.html",
+      "kind": "docs",
+      "section": "sse"
+    },
+    {
+      "path": "/status",
+      "title": "Monero daemon status",
+      "description": "Backend liveness and public monerod sync state for this xmr.tx.taxi instance.",
+      "template": "src/app/xmr/status/xmr-status.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/blocks/1",
+      "title": "Blocks",
+      "description": "See the most recent Monero blocks with height, timestamp, reward, fees, transaction count, and block size.",
+      "template": "src/app/components/blocks-list/blocks-list.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/txs",
+      "title": "Recent Transactions",
+      "description": "See the most recent Monero transactions known to this node's mempool, updated in real time.",
+      "template": "src/app/components/recent-transactions-list/recent-transactions-list.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/tools/calculator",
+      "title": "Calculator",
+      "description": "Convert XMR, atomic units and fiat using the selected date\u2019s available price data.",
+      "template": "src/app/components/calculator/calculator.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/mining",
+      "title": "Mining dashboard",
+      "description": "Explore Monero difficulty-derived hashrate, block history and best-effort mining pool attribution.",
+      "template": "src/app/components/mining-dashboard/mining-dashboard.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/transactions",
+      "title": "Monero transaction activity",
+      "description": "Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.",
+      "template": "src/app/components/transaction-activity/transaction-activity.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mempool",
+      "title": "Mempool statistics",
+      "description": "See Monero mempool size and transaction bytes per second visualized over time.",
+      "template": "src/app/components/statistics/statistics.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/price",
+      "title": "XMR Price",
+      "description": "See the Monero price in USD visualized over time.",
+      "template": "src/app/components/price-chart/price-chart.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/swaps",
+      "title": "Haveno and atomic swap ticker",
+      "description": "Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.",
+      "template": "src/app/components/swap-ticker/swap-ticker.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mining/hashrate-difficulty",
+      "title": "Hashrate & Difficulty",
+      "description": "See Monero hashrate and difficulty visualized over time.",
+      "template": "src/app/components/hashrate-chart/hashrate-chart.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mining/pools",
+      "title": "Mining Pools",
+      "description": "See best-effort Monero mining pool attribution ranked by observed blocks over your desired timeframe.",
+      "template": "src/app/components/pool-ranking/pool-ranking.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mining/block-fees",
+      "title": "Block Fees",
+      "description": "See the average mining fees earned per Monero block visualized in XMR and fiat over time.",
+      "template": "src/app/components/block-fees-graph/block-fees-graph.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mining/block-fees-subsidy",
+      "title": "Block Fees Vs Subsidy",
+      "description": "See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.",
+      "template": "src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mining/block-rewards",
+      "title": "Block Rewards",
+      "description": "See Monero block rewards in XMR and fiat visualized over time.",
+      "template": "src/app/components/block-rewards-graph/block-rewards-graph.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mining/block-fee-rates",
+      "title": "Block Fee Rates",
+      "description": "See Monero minimum, maximum and percentile fee rates per block visualized over time.",
+      "template": "src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/graphs/mining/block-sizes-weights",
+      "title": "Block Sizes & Weights",
+      "description": "See Monero block sizes and weights visualized over time.",
+      "template": "src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.html",
+      "kind": "live"
+    },
+    {
+      "path": "/mempool-block/0",
+      "title": "Projected mempool block",
+      "description": "See live Monero mempool-block fee ranges, aggregate size, transaction count and total fees.",
+      "template": "src/app/components/mempool-block/mempool-block.component.html",
+      "kind": "live"
+    }
+  ],
+  "aliases": {
+    "/docs": "/docs/faq",
+    "/docs/api": "/docs/api/rest",
+    "/api": "/docs/api/rest",
+    "/graphs": "/graphs/mempool",
+    "/blocks": "/blocks/1",
+    "/donate": "/"
+  },
+  "limits": "Monero public chain data does not reveal recipient addresses, transferred amounts or public address histories. A transaction ID establishes public transaction status, not payment to a named recipient. Public tx_proof verification depends on the operator\u2019s wallet-RPC configuration; private keys must remain local. Mining pool attribution is best-effort.",
+  "preview": {
+    "url": "https://tx.taxi/assets/screenshots/xmr-transaction-3ae6ed44ffa7.jpg",
+    "width": 1440,
+    "height": 6518,
+    "alt": "A Monero transaction page in xmr.tx.taxi, with public transaction details and privacy labels."
+  }
+}

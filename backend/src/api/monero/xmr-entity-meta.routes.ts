@@ -5,6 +5,7 @@ import sharp from 'sharp';
 import { MoneroApi } from './monero-api';
 
 const ORIGIN = 'https://xmr.tx.taxi';
+const PAGE_CAPTURE = {url: 'https://tx.taxi/assets/screenshots/xmr-transaction-3ae6ed44ffa7.jpg', width: '1440', height: '6518', alt: 'A Monero transaction page in xmr.tx.taxi, with public transaction details and privacy labels.'};
 const HEX64 = /^[0-9a-f]{64}$/i;
 const HEIGHT = /^(0|[1-9]\d{0,9})$/;
 const HTML_PATH = process.env.XMR_INDEX_HTML_PATH ?? '/usr/share/nginx/html/browser/en-US/index.html';
@@ -82,7 +83,7 @@ export class XmrEntityMetaRoutes {
       try {
         const [template, entity] = await Promise.all([readFile(HTML_PATH, 'utf8'), this.entity(kind, id)]);
         const url = `${ORIGIN}/${kind}/${id}`;
-        const image = `${ORIGIN}/og/xmr/${kind}/${id}.png?v=20260925-brand`;
+        const image = PAGE_CAPTURE.url;
         let html = template.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(entity.title)} | xmr.tx.taxi</title>`);
         html = html.replace(/<link id="canonical"[^>]*>/i, `<link id="canonical" rel="canonical" href="${url}">`);
         for (const [attribute, key, value] of [
@@ -92,14 +93,22 @@ export class XmrEntityMetaRoutes {
           ['property', 'og:description', entity.description],
           ['property', 'og:url', url],
           ['property', 'og:image', image],
-          ['property', 'og:image:alt', entity.title],
+          ['property', 'og:image:alt', PAGE_CAPTURE.alt],
+          ['property', 'og:image:type', 'image/jpeg'],
+          ['property', 'og:image:width', PAGE_CAPTURE.width],
+          ['property', 'og:image:height', PAGE_CAPTURE.height],
           ['name', 'twitter:title', entity.title],
           ['name', 'twitter:description', entity.description],
           ['name', 'twitter:image', image],
-          ['name', 'twitter:image:alt', entity.title],
+          ['name', 'twitter:image:alt', PAGE_CAPTURE.alt],
         ] as Array<['name' | 'property', string, string]>) {
           html = replaceMeta(html, attribute, key, value);
         }
+        // The homepage projection must not describe an entity request before Angular boots.
+        html = html.replace(/<app-root[^>]*>[\s\S]*?<\/app-root>/i, `<app-root><main class="container-xl" data-native-seo><h1>${escapeHtml(entity.title)}</h1><p>${escapeHtml(entity.description)}</p></main></app-root>`);
+        html = html.replace(/<link\b[^>]*rel="alternate"[^>]*type="text\/markdown"[^>]*>/gi, '');
+        const schema = JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:entity.title,description:entity.description,url}).replace(/</g, '\\u003c');
+        html = html.replace(/<script[^>]*id="native-page-schema"[^>]*>[\s\S]*?<\/script>/i, `<script id="native-page-schema" type="application/ld+json">${schema}</script>`);
         res.setHeader('Cache-Control', 'public, max-age=30, stale-if-error=300');
         res.type('html').send(html);
       } catch (err) {

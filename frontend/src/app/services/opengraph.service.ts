@@ -22,7 +22,7 @@ export class OpenGraphService {
     private router: Router,
     private activatedRoute: ActivatedRoute,
   ) {
-    this.defaultImageUrl = 'https://tx.taxi/assets/og/explorers/monero.png?v=20260925-brand';
+    this.defaultImageUrl = 'https://tx.taxi/assets/screenshots/xmr-transaction-3ae6ed44ffa7.jpg';
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
       map(() => this.activatedRoute),
@@ -53,13 +53,29 @@ export class OpenGraphService {
   }
 
   clearOgImage() {
-    const entity = this.router.url.split('?')[0].match(/^\/(tx|block)\/([^/]+)$/);
-    const image = entity ? `https://xmr.tx.taxi/og/xmr/${entity[1]}/${entity[2]}.png?v=20260925-brand` : this.defaultImageUrl;
+    // The generated route catalog retains the approved full-page capture after hydration.
+    try {
+      const data = JSON.parse(document.getElementById('native-seo-data')?.textContent || '{}');
+      if (data.preview) {
+        this.metaService.updateTag({property: 'og:image', content: data.preview.url});
+        this.metaService.updateTag({name: 'twitter:image', content: data.preview.url});
+        this.metaService.updateTag({property: 'og:image:type', content: 'image/jpeg'});
+        this.metaService.updateTag({property: 'og:image:width', content: String(data.preview.width)});
+        this.metaService.updateTag({property: 'og:image:height', content: String(data.preview.height)});
+        this.metaService.updateTag({property: 'og:image:alt', content: data.preview.alt});
+        this.metaService.updateTag({name: 'twitter:image:alt', content: data.preview.alt});
+        return;
+      }
+    } catch { /* Development shells can omit the generated route catalog. */ }
+
+    const image = this.defaultImageUrl;
     this.metaService.updateTag({ property: 'og:image', content: image });
     this.metaService.updateTag({ name: 'twitter:image', content: image });
-    this.metaService.updateTag({ property: 'og:image:type', content: 'image/png' });
-    this.metaService.updateTag({ property: 'og:image:width', content: '1200' });
-    this.metaService.updateTag({ property: 'og:image:height', content: '630' });
+    this.metaService.updateTag({ property: 'og:image:type', content: 'image/jpeg' });
+    this.metaService.updateTag({ property: 'og:image:width', content: '1440' });
+    this.metaService.updateTag({ property: 'og:image:height', content: '6518' });
+    this.metaService.updateTag({ property: 'og:image:alt', content: 'A Monero transaction page in xmr.tx.taxi, with public transaction details and privacy labels.' });
+    this.metaService.updateTag({ name: 'twitter:image:alt', content: 'A Monero transaction page in xmr.tx.taxi, with public transaction details and privacy labels.' });
   }
 
   setManualOgImage(_imageFilename) {

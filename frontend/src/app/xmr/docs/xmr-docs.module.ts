@@ -7,7 +7,8 @@ import { XmrDocsComponent } from './xmr-docs.component';
 const routes: Routes = [
   {
     path: '',
-    component: XmrDocsComponent,
+    redirectTo: 'faq',
+    pathMatch: 'full',
   },
   {
     path: 'faq',
@@ -15,7 +16,8 @@ const routes: Routes = [
   },
   {
     path: 'api',
-    component: XmrDocsComponent,
+    redirectTo: 'api/rest',
+    pathMatch: 'full',
   },
   {
     path: 'api/rest',
