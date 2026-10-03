@@ -343,16 +343,23 @@ input:focus {
   white-space: normal;
 }
 
-.search-routing-hint {
+.search-chain-automatic > .search-routing-hint {
+  grid-column: 1 / -1;
   min-width: 0;
+  padding: 0 0 7px 37px;
   white-space: normal;
-  overflow-wrap: anywhere;
-  line-height: 1.3;
+  overflow: visible;
+  text-overflow: clip;
+  line-height: 1.4;
+}
 
-  code {
-    color: inherit;
-    font-family: monospace;
-    font-size: inherit;
-    white-space: normal;
-  }
+.search-chain-automatic > .search-routing-hint code {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: baseline;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  overflow-wrap: anywhere;
 }
