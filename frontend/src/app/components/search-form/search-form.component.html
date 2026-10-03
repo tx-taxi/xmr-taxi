@@ -7,12 +7,40 @@
           <button ngbDropdownToggle type="button" class="search-chain-trigger" aria-label="Choose search chain" title="Choose search chain">
             <ng-container *ngIf="activeTarget$ | async as activeTarget; else defaultChainIcon">
               <img [src]="activeTarget.iconUrl" [alt]="activeTarget.iconAlt">
+              <span *ngIf="activeTarget.destinationId && !activeTarget.destinationDefault" class="search-chain-target-label">{{ activeTarget.name }}</span>
             </ng-container>
             <ng-template #defaultChainIcon>
               <img [src]="defaultChainIconUrl" [alt]="defaultChainIconAlt">
             </ng-template>
           </button>
           <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain">
+            <div class="search-chain-selected-group" role="group" aria-label="Selected explorer">
+              <span class="search-chain-group-label">SELECTED</span>
+              <ng-container *ngIf="selectedExplorer() as explorer; else selectedAutomatic">
+                <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: explorer}"></ng-container>
+                <ng-container *ngFor="let destination of childDestinations(explorer); trackBy: trackExplorer">
+                  <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: destination, destination: true}"></ng-container>
+                </ng-container>
+              </ng-container>
+              <ng-template #selectedAutomatic>
+                <ng-container *ngIf="selectedExternalCandidate() as candidate; else automaticSelectedRow">
+                  <ng-container *ngTemplateOutlet="candidateRow; context: {$implicit: candidate}"></ng-container>
+                </ng-container>
+                <ng-template #automaticSelectedRow>
+                  <ng-container *ngIf="isAutomaticRoutingSelected(); else selectedRegistryState">
+                    <ng-container *ngTemplateOutlet="automaticRow"></ng-container>
+                  </ng-container>
+                  <ng-template #selectedRegistryState>
+                    <span class="search-chain-message">{{ explorerRegistryLoaded ? 'Explorer registry unavailable' : 'Loading explorers' }}</span>
+                  </ng-template>
+                </ng-template>
+              </ng-template>
+            </div>
+            <ng-container *ngIf="selectedExplorer() || selectedExternalCandidate()">
+              <div class="search-chain-divider" aria-hidden="true"></div>
+              <ng-container *ngTemplateOutlet="automaticRow"></ng-container>
+            </ng-container>
+            <ng-template #automaticRow>
             <div class="search-chain-option search-chain-explorer search-chain-automatic"
               [class.is-current]="isAutomaticRoutingSelected()" style="--chain-option-accent: #ffd21f">
               <button type="button" ngbDropdownItem class="search-chain-select"
@@ -23,96 +51,52 @@
                 </span>
               </button>
               <span class="search-chain-actions">
-                <a class="search-chain-new-tab" href="https://tx.taxi/" target="_blank" rel="noopener noreferrer"
+                <a class="search-chain-new-tab" [href]="routerHubUrl" target="_blank" rel="noopener noreferrer"
                   aria-label="Open tx.taxi in a new tab" title="Open tx.taxi in a new tab">
                   <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                 </a>
-                <a class="search-chain-switch" href="https://tx.taxi/">View Hub</a>
+                <a class="search-chain-switch" [href]="routerHubUrl">View Hub</a>
               </span>
               <span class="search-chain-host search-routing-hint">Or go straight to <code>tx.taxi/[your search]</code></span>
             </div>
+            </ng-template>
             <span class="search-chain-group-label">NATIVE EXPLORERS</span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
 
-                <button
-                  *ngFor="let candidate of searchOptions.candidates; trackBy: trackCandidate"
-                  [hidden]="!candidate.firstParty"
-                  type="button"
-                  ngbDropdownItem
-                  class="search-chain-option search-chain-candidate"
-                  [class.is-current]="isSelectedCandidate(candidate)"
-                  [attr.aria-pressed]="isSelectedCandidate(candidate)"
-                  [style.--chain-option-accent]="candidate.accentColor"
-                  (click)="selectCandidate(candidate)"
-                >
-                  <img [src]="candidate.iconUrl" alt="">
-                  <span class="search-chain-copy">
-                    <span class="search-chain-name">{{ candidate.name }}</span>
-                    <span class="search-chain-host">{{ candidate.host }}</span>
-                  </span>
-                  <span class="search-chain-match" [class.is-confirmed]="candidate.confirmed">
-                    {{ candidate.confirmed ? 'Found' : 'Possible' }}
-                  </span>
-                </button>
+                <ng-container *ngFor="let candidate of searchOptions.candidates; trackBy: trackCandidate">
+                  <ng-container *ngIf="candidate.firstParty">
+                    <ng-container *ngTemplateOutlet="candidateRow; context: {$implicit: candidate}"></ng-container>
+                  </ng-container>
+                </ng-container>
                 <div class="search-chain-divider" aria-hidden="true"></div>
               </ng-container>
             </ng-container>
             <ng-container *ngIf="explorers$ | async as explorers; else explorerRegistryLoading">
 
-              <div
-                *ngFor="let explorer of explorers; trackBy: trackExplorer"
-                class="search-chain-option search-chain-explorer"
-                [class.is-current]="isSelectedExplorer(explorer)"
-                [style.--chain-option-accent]="explorer.accentColor"
-              >
-                <button type="button" ngbDropdownItem class="search-chain-select"
-                  [attr.aria-pressed]="isSelectedExplorer(explorer)"
-                  (click)="selectExplorer(explorer)">
-                <img [src]="explorer.iconUrl" alt="">
-                <span class="search-chain-copy">
-                  <span class="search-chain-name">{{ explorer.name }}</span>
-                  <span class="search-chain-host">{{ explorer.host }}</span>
-                </span>
-                </button>
-                <span *ngIf="explorer.chainId === sourceChainId; else explorerActions" class="search-chain-opened">Opened</span>
-                <ng-template #explorerActions>
-                  <span class="search-chain-actions">
-                    <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer"
-                      [attr.aria-label]="'Open ' + explorer.name + ' in a new tab'" [attr.title]="'Open ' + explorer.name + ' in a new tab'">
-                      <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
-                    </a>
-                    <a class="search-chain-switch" [href]="explorer.origin"
-                      [attr.aria-label]="'Switch to ' + explorer.name">Switch</a>
-                  </span>
-                </ng-template>
-              </div>
+              <ng-container *ngFor="let explorer of otherExplorers(explorers); trackBy: trackExplorer">
+                <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: explorer, count: childDestinations(explorer).length}"></ng-container>
+                <div *ngIf="childDestinations(explorer).length" class="search-chain-additional-options"
+                  [id]="'search-additional-' + explorer.chainId" [hidden]="!additionalExplorersExpanded(explorer)"
+                  role="group" [attr.aria-label]="explorer.name + ' additional explorers'">
+                  <ng-container *ngIf="additionalExplorersExpanded(explorer)">
+                    <ng-container *ngFor="let destination of childDestinations(explorer); trackBy: trackExplorer">
+                      <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: destination, destination: true}"></ng-container>
+                    </ng-container>
+                  </ng-container>
+                </div>
+              </ng-container>
               <span *ngIf="!explorers.length" class="search-chain-message">Explorer registry unavailable</span>
             </ng-container>
             <span class="search-chain-group-label">3RD-PARTY EXPLORERS</span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
 
-                <button
-                  *ngFor="let candidate of searchOptions.candidates; trackBy: trackCandidate"
-                  [hidden]="candidate.firstParty"
-                  type="button"
-                  ngbDropdownItem
-                  class="search-chain-option search-chain-candidate"
-                  [class.is-current]="isSelectedCandidate(candidate)"
-                  [attr.aria-pressed]="isSelectedCandidate(candidate)"
-                  [style.--chain-option-accent]="candidate.accentColor"
-                  (click)="selectCandidate(candidate)"
-                >
-                  <img [src]="candidate.iconUrl" alt="">
-                  <span class="search-chain-copy">
-                    <span class="search-chain-name">{{ candidate.name }}</span>
-                    <span class="search-chain-host">{{ candidate.host }}</span>
-                  </span>
-                  <span class="search-chain-match" [class.is-confirmed]="candidate.confirmed">
-                    {{ candidate.confirmed ? 'Found' : 'Possible' }}
-                  </span>
-                </button>
+                <ng-container *ngFor="let candidate of searchOptions.candidates; trackBy: trackCandidate">
+                  <ng-container *ngIf="!candidate.firstParty && !isSelectedExternalCandidate(candidate)">
+                    <ng-container *ngTemplateOutlet="candidateRow; context: {$implicit: candidate}"></ng-container>
+                  </ng-container>
+                </ng-container>
                 <div class="search-chain-divider" aria-hidden="true"></div>
               </ng-container>
             </ng-container>
@@ -127,6 +111,64 @@
                 <a class="search-chain-switch" [href]="explorer.origin">Open</a>
               </span>
             </div>
+            <ng-template #candidateRow let-candidate>
+                <button
+                  type="button"
+                  ngbDropdownItem
+                  class="search-chain-option search-chain-candidate"
+                  [class.is-current]="isSelectedCandidate(candidate)"
+                  [attr.aria-pressed]="isSelectedCandidate(candidate)"
+                  [style.--chain-option-accent]="candidate.accentColor"
+                  (click)="selectCandidate(candidate)"
+                >
+                  <img [src]="candidate.iconUrl" alt="">
+                  <span class="search-chain-copy">
+                    <span class="search-chain-name">{{ candidate.name }}<ng-container *ngIf="candidate.destinationName && !candidate.destinationDefault"> · {{ candidate.destinationName }}</ng-container></span>
+                    <span class="search-chain-host">{{ candidate.host }}</span>
+                  </span>
+                  <span class="search-chain-match" [class.is-confirmed]="candidate.confirmed">
+                    {{ candidate.confirmed ? 'Found' : 'Possible' }}
+                  </span>
+                </button>
+            </ng-template>
+            <ng-template #explorerRow let-explorer let-destination="destination" let-count="count">
+              <div class="search-chain-option search-chain-explorer"
+                [class.search-chain-destination]="destination"
+                [attr.data-chain-id]="explorer.chainId" [attr.data-destination-id]="explorer.destinationId || null"
+                [attr.data-explorer-id]="explorer.id"
+                [class.is-current]="isSelectedExplorer(explorer)"
+                [style.--chain-option-accent]="explorer.accentColor">
+                <button type="button" ngbDropdownItem class="search-chain-select"
+                  [attr.aria-pressed]="isSelectedExplorer(explorer)" (click)="selectExplorer(explorer)">
+                  <img [src]="explorer.iconUrl" alt="">
+                  <span class="search-chain-copy">
+                    <span class="search-chain-name">{{ explorer.name }}</span>
+                    <span class="search-chain-host" [attr.title]="explorer.host">{{ explorer.host }}</span>
+                  </span>
+                </button>
+                <span *ngIf="count; else rowActions" class="search-chain-row-actions">
+                  <button type="button" ngbDropdownItem class="search-chain-count"
+                    [attr.aria-expanded]="additionalExplorersExpanded(explorer)"
+                    [attr.aria-controls]="'search-additional-' + explorer.chainId"
+                    [attr.aria-label]="(additionalExplorersExpanded(explorer) ? 'Hide ' : 'Show ') + count + ' additional ' + explorer.name + (count === 1 ? ' option' : ' options')"
+                    (click)="toggleAdditionalExplorers(explorer)">+{{ count }}</button>
+                  <ng-container *ngTemplateOutlet="rowActions"></ng-container>
+                </span>
+                <ng-template #rowActions>
+                <span *ngIf="isOpenedExplorer(explorer); else explorerActions" class="search-chain-opened">Opened</span>
+                <ng-template #explorerActions>
+                  <span class="search-chain-actions">
+                    <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer"
+                      [attr.aria-label]="'Open ' + explorer.name + ' in a new tab'" [attr.title]="'Open ' + explorer.name + ' in a new tab'">
+                      <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
+                    </a>
+                    <a class="search-chain-switch" [href]="explorer.origin"
+                      [attr.aria-label]="'Switch to ' + explorer.name">Switch</a>
+                  </span>
+                </ng-template>
+                </ng-template>
+              </div>
+            </ng-template>
             <ng-template #explorerRegistryLoading>
               <span class="search-chain-message">Loading explorers</span>
             </ng-template>

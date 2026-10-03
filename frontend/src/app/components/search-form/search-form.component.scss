@@ -363,3 +363,61 @@ input:focus {
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
   overflow-wrap: anywhere;
 }
+
+// BEGIN SHARED DESTINATION HIERARCHY
+.search-chain-target-label {
+  max-width: 120px;
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-chain-target-label[hidden] {
+  display: none !important;
+}
+
+.search-chain-selector .search-chain-menu {
+  width: min(340px, calc(100vw - 24px));
+}
+
+.search-chain-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.search-chain-row-actions .search-chain-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 28px;
+  width: 28px;
+  min-height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  color: var(--grey);
+  background: transparent;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover, &:focus-visible {
+    color: var(--row-text);
+    background: color-mix(in srgb, var(--row-accent) 14%, transparent);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--row-accent);
+    outline-offset: -2px;
+  }
+}
+
+.search-chain-additional-options[hidden] {
+  display: none !important;
+}
+
+// END SHARED DESTINATION HIERARCHY
