@@ -33,7 +33,7 @@
     if(leaving) return; leaving=true;
     const url = new URL(destination,location.origin);
     const callback=typeof options.navigate==='function'?options.navigate:()=>location.assign(url.href);
-    const hub = url.hostname==='tx.taxi' || url.hostname==='www.tx.taxi' || local && url.port==='4582';
+    const hub = url.pathname==='/' && (url.hostname==='tx.taxi' || url.hostname==='www.tx.taxi' || local && url.port==='4582');
     const layer = reduced.matches ? null : snapshot();
     try {
       if(layer) await layer.animate([{opacity:1,transform:'scale(1)'},{opacity:.08,transform:options.reverse?'scale(.97)':'scale(1.025)'}],{duration:320,easing:ease,fill:'forwards'}).finished;
