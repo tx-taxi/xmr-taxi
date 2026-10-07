@@ -22,7 +22,7 @@ RUN npm run build
 RUN npm prune --omit=dev --include=optional
 RUN npm install --omit=dev --include=optional --os=linux --cpu=x64 sharp @img/sharp-linux-x64 @img/sharp-libvips-linux-x64
 
-FROM node:24.13-bookworm-slim AS frontend-builder
+FROM node:26.9-bookworm-slim AS frontend-builder
 
 ENV CYPRESS_INSTALL_BINARY=0
 
@@ -40,7 +40,7 @@ COPY frontend ./
 RUN cp mempool-frontend-config.sample.json mempool-frontend-config.json
 RUN npm run build
 
-FROM node:24.13-bookworm-slim AS runtime
+FROM node:26.9-bookworm-slim AS runtime
 
 RUN apt-get update && \
     apt-get install -y nginx curl bash ca-certificates fonts-dejavu-core && \
