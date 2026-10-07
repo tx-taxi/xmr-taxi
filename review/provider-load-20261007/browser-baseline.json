@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-07T16:50:19.705Z",
+  "http": [],
+  "ws": [],
+  "browser": [
+    {
+      "n": 1,
+      "requests": [
+        {
+          "url": "/api/v1/statistics/2h",
+          "status": 200,
+          "atMs": 1768
+        },
+        {
+          "url": "https://tx.taxi/api/v1/chains",
+          "status": 200,
+          "atMs": 1824
+        },
+        {
+          "url": "https://tx.taxi/api/v1/health",
+          "status": 200,
+          "atMs": 1926
+        }
+      ],
+      "ws": [
+        {
+          "url": "wss://xmr.tx.taxi/api/v1/ws",
+          "openMs": 1762,
+          "messages": []
+        }
+      ],
+      "errors": [],
+      "domMs": 852,
+      "error": "page.waitForSelector: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.block-height-link') to be visible\u001b[22m\n"
+    },
+    {
+      "n": 2,
+      "requests": [
+        {
+          "url": "https://tx.taxi/api/v1/chains",
+          "status": 200,
+          "atMs": 795
+        },
+        {
+          "url": "/api/v1/statistics/2h",
+          "status": 200,
+          "atMs": 798
+        },
+        {
+          "url": "https://tx.taxi/api/v1/health",
+          "status": 200,
+          "atMs": 876
+        }
+      ],
+      "ws": [
+        {
+          "url": "wss://xmr.tx.taxi/api/v1/ws",
+          "openMs": 779,
+          "messages": []
+        }
+      ],
+      "errors": [],
+      "domMs": 569,
+      "error": "page.waitForSelector: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.block-height-link') to be visible\u001b[22m\n"
+    }
+  ]
+}

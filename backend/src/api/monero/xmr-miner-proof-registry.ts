@@ -81,6 +81,11 @@ export class XmrMinerProofRegistry {
     return attributions.get(normalized) ?? null;
   }
 
+  /** A recorded attribution identifies an immutable block; refreshing pool feeds is separate. */
+  public getCachedAttributionForBlock(hash: string): XmrBlockAttribution | null {
+    return this.cache?.attributions.get(hash.toLowerCase()) ?? null;
+  }
+
   /** Back-compat: returns only the cryptographic proof (P2Pool), if any. */
   public async getProofForBlock(hash: string): Promise<XmrMinerProof | null> {
     return (await this.getAttributionForBlock(hash))?.proof ?? null;

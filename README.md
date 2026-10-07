@@ -29,6 +29,8 @@
 
 Use the Node version in [`.nvmrc`](.nvmrc). The backend requires access to a synced Monero daemon's JSON-RPC endpoint. `MONEROD_RPC_URL` may point to a local restricted daemon or another endpoint you operate; configure credentials with `MONEROD_RPC_USER` and `MONEROD_RPC_PASSWORD` when required. Optional ordered failover endpoints use `MONEROD_RPC_FALLBACK_URLS`. `monero-wallet-rpc` is only required for server-side public `tx_proof` verification, configured with `MONERO_WALLET_RPC_URL` and optional credentials.
 
+Production reuses MoneroSpace's existing restricted daemon through its internal public-method proxy, `http://monerospace/api/v1/monerod`. Both applications already share the Coolify network; the `monerospace` service alias survives container replacement. This URL belongs in the deployment's runtime environment, not the public default. Keep `MONEROD_RPC_FALLBACK_URLS` configured with public daemons, `MONEROD_RPC_REQUIRE_SYNC=true`, and `MONEROD_RPC_TIMEOUT_MS=3000`. With fallback peers configured, each failed node gets one bounded attempt; the primary is checked again after `MONEROD_RPC_HEALTH_INTERVAL_MS` (15 seconds by default). No RPC port needs to be published to the host.
+
 Start the backend from one terminal:
 
 ```bash

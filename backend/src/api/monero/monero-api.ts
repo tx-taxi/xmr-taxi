@@ -24,20 +24,36 @@ import { createHash } from 'crypto';
  */
 export class MoneroApi {
   private rpc: MoneroRpcPool;
+  private inFlightReads = new Map<string, Promise<unknown>>();
 
   constructor(config: MoneroDaemonConfig) {
     this.rpc = new MoneroRpcPool(config);
   }
 
+  /** Share a cache miss across dashboard, indexer, REST and websocket readers. */
+  private cachedRead<T>(type: string, id: string, seconds: number, fetch: () => Promise<T>): Promise<T> {
+    const cached = memoryCache.get<T>(type, id);
+    if (cached !== null) {
+      return Promise.resolve(cached);
+    }
+    const key = `${type}:${id}`;
+    const pending = this.inFlightReads.get(key);
+    if (pending) {
+      return pending as Promise<T>;
+    }
+    const request = fetch()
+      .then((value) => {
+        memoryCache.set(type, id, value, seconds);
+        return value;
+      })
+      .finally(() => { this.inFlightReads.delete(key); });
+    this.inFlightReads.set(key, request);
+    return request;
+  }
+
   /** Daemon info: height, hashrate-derivable difficulty, mempool size, version. */
   public async getInfo(): Promise<IMoneroApi.Info> {
-    const cached = memoryCache.get<IMoneroApi.Info>('xmr', 'info');
-    if (cached) {
-      return cached;
-    }
-    const info = await this.rpc.jsonRpc<IMoneroApi.Info>('get_info');
-    memoryCache.set('xmr', 'info', info, 5);
-    return info;
+    return this.cachedRead('xmr', 'info', 5, () => this.rpc.jsonRpc<IMoneroApi.Info>('get_info'));
   }
 
   /**
@@ -61,35 +77,22 @@ export class MoneroApi {
 
   /** Just the height — cheaper than `getInfo` when that's all the caller needs. */
   public async getBlockCount(): Promise<number> {
-    const cached = memoryCache.get<number>('xmr', 'blockcount');
-    if (cached !== null) {
-      return cached;
-    }
-    const result = await this.rpc.jsonRpc<IMoneroApi.BlockCount>('get_block_count');
-    memoryCache.set('xmr', 'blockcount', result.count, 5);
-    return result.count;
+    return this.cachedRead('xmr', 'blockcount', 5, async () => {
+      const result = await this.rpc.jsonRpc<IMoneroApi.BlockCount>('get_block_count');
+      return result.count;
+    });
   }
 
   /** Full block by hash (header + miner tx + tx hashes). */
   public async getBlockByHash(hash: string): Promise<IMoneroApi.Block> {
-    const cached = memoryCache.get<IMoneroApi.Block>('xmr-block-hash', hash);
-    if (cached) {
-      return cached;
-    }
-    const block = await this.rpc.jsonRpc<IMoneroApi.Block>('get_block', { hash });
-    memoryCache.set('xmr-block-hash', hash, block, 60);
-    return block;
+    return this.cachedRead('xmr-block-hash', hash, 60,
+      () => this.rpc.jsonRpc<IMoneroApi.Block>('get_block', { hash }));
   }
 
   /** Full block by height. */
   public async getBlockByHeight(height: number): Promise<IMoneroApi.Block> {
-    const cached = memoryCache.get<IMoneroApi.Block>('xmr-block-height', String(height));
-    if (cached) {
-      return cached;
-    }
-    const block = await this.rpc.jsonRpc<IMoneroApi.Block>('get_block', { height });
-    memoryCache.set('xmr-block-height', String(height), block, 60);
-    return block;
+    return this.cachedRead('xmr-block-height', String(height), 60,
+      () => this.rpc.jsonRpc<IMoneroApi.Block>('get_block', { height }));
   }
 
   /**
@@ -112,13 +115,8 @@ export class MoneroApi {
 
   /** Mempool snapshot — list of pending txs with fees, weights, ages. */
   public async getTransactionPool(): Promise<IMoneroApi.TransactionPool> {
-    const cached = memoryCache.get<IMoneroApi.TransactionPool>('xmr', 'mempool');
-    if (cached) {
-      return cached;
-    }
-    const pool = await this.rpc.raw<IMoneroApi.TransactionPool>('/get_transaction_pool');
-    memoryCache.set('xmr', 'mempool', pool, 5);
-    return pool;
+    return this.cachedRead('xmr', 'mempool', 5,
+      () => this.rpc.raw<IMoneroApi.TransactionPool>('/get_transaction_pool'));
   }
 
   /**
@@ -142,17 +140,13 @@ export class MoneroApi {
     // Cache by sorted hash list; for single-hash lookups (the common case
     // in tx-detail views) this still hits the same key on repeated reads.
     const cacheKey = `${prune}:` + hashes.slice().sort().join(',');
-    const cached = memoryCache.get<IMoneroApi.TransactionEntry[]>('xmr-tx', cacheKey);
-    if (cached) {
-      return cached;
-    }
-    const resp = await this.rpc.raw<{ txs?: IMoneroApi.TransactionEntry[]; status: string }>(
-      '/get_transactions',
-      { txs_hashes: hashes, decode_as_json: true, prune },
-    );
-    const txs = resp.txs ?? [];
-    memoryCache.set('xmr-tx', cacheKey, txs, 30);
-    return txs;
+    return this.cachedRead('xmr-tx', cacheKey, 30, async () => {
+      const resp = await this.rpc.raw<{ txs?: IMoneroApi.TransactionEntry[]; status: string }>(
+        '/get_transactions',
+        { txs_hashes: hashes, decode_as_json: true, prune },
+      );
+      return resp.txs ?? [];
+    });
   }
 
   /** Convenience wrapper for the single-hash case. Returns `null` if not found. */
@@ -345,13 +339,8 @@ export class MoneroApi {
    * more conservative slow tier.
    */
   public async getFeeEstimate(): Promise<IMoneroApi.FeeEstimate> {
-    const cached = memoryCache.get<IMoneroApi.FeeEstimate>('xmr', 'fees');
-    if (cached) {
-      return cached;
-    }
-    const fees = await this.rpc.jsonRpc<IMoneroApi.FeeEstimate>('get_fee_estimate', { grace_blocks: 10 });
-    memoryCache.set('xmr', 'fees', fees, 10);
-    return fees;
+    return this.cachedRead('xmr', 'fees', 10,
+      () => this.rpc.jsonRpc<IMoneroApi.FeeEstimate>('get_fee_estimate', { grace_blocks: 10 }));
   }
 }
 

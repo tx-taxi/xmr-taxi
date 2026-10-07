@@ -1,0 +1,95 @@
+[
+  {
+    "path": "/",
+    "curl": "200 0.144186 0.350477 860278",
+    "error": ""
+  },
+  {
+    "path": "/healthz",
+    "curl": "200 0.343855 0.343933 41",
+    "error": "",
+    "summary": {
+      "keys": [
+        "ok",
+        "service"
+      ],
+      "blocks": 0,
+      "height": null,
+      "heights": [],
+      "pool": null
+    }
+  },
+  {
+    "path": "/api/v1/info",
+    "curl": "200 0.537952 0.538020 690",
+    "error": "",
+    "summary": {
+      "keys": [
+        "height",
+        "target_height",
+        "difficulty",
+        "hashrate_hs",
+        "mempool_size",
+        "tx_count",
+        "nettype",
+        "top_block_hash",
+        "block_size_limit",
+        "version",
+        "daemon_status",
+        "synced",
+        "offline",
+        "untrusted",
+        "outgoing_connections_count",
+        "incoming_connections_count",
+        "rpc_connections_count",
+        "white_peerlist_size",
+        "grey_peerlist_size",
+        "start_time",
+        "uptime_s",
+        "database_size",
+        "free_space",
+        "height_without_bootstrap",
+        "bootstrap_daemon_address",
+        "was_bootstrap_ever_used",
+        "update_available"
+      ],
+      "blocks": 0,
+      "height": 3778985,
+      "heights": [],
+      "pool": null
+    }
+  },
+  {
+    "path": "/api/v1/init-data",
+    "curl": "000 0.000000 25.002160 0",
+    "error": "curl: (28) Operation timed out after 25002 milliseconds with 0 bytes received\n"
+  },
+  {
+    "path": "/api/v1/blocks?limit=8",
+    "curl": "200 1.408579 1.408830 11964",
+    "error": "",
+    "summary": {
+      "keys": null,
+      "blocks": 10,
+      "height": null,
+      "heights": [
+        3778984,
+        3778983,
+        3778982,
+        3778981,
+        3778980,
+        3778979,
+        3778978,
+        3778977,
+        3778976,
+        3778975
+      ],
+      "pool": null
+    }
+  },
+  {
+    "path": "/api/blocks/tip/height",
+    "curl": "404 0.343745 0.343810 163",
+    "error": ""
+  }
+]

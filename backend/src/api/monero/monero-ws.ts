@@ -3,7 +3,8 @@ import { WebSocketServer, WebSocket } from 'ws';
 import { MoneroApi } from './monero-api';
 import { MoneroEventBus } from './monero-event-bus';
 import { IMoneroApi } from './monero-api.interface';
-import { getLatestXmrPrice, priceToConversions } from './xmr-price';
+import { getLatestXmrPrice, priceToConversions, XmrApiPrice } from './xmr-price';
+import memoryCache from '../memory-cache';
 import { shapeXmrDifficultyAdjustment } from './xmr-difficulty';
 import { identifyXmrMinerPool, unknownXmrMinerPool } from './xmr-miner-fingerprint';
 import { XmrBlockAttribution, XmrMinerProof, XmrMinerProofRegistry } from './xmr-miner-proof-registry';
@@ -192,6 +193,11 @@ export class MoneroWs {
    * snapshot.
    */
   private connState = new Map<WebSocket, ConnState>();
+  private snapshotInFlight: Promise<Record<string, unknown>> | null = null;
+  private recentBlockSnapshot: UpstreamBlock[] = [];
+  private priceRefresh: Promise<void> | null = null;
+  private priceRefreshStartedAt = 0;
+  private attributionRefresh: Promise<void> | null = null;
 
   constructor(
     private api: MoneroApi,
@@ -339,13 +345,24 @@ export class MoneroWs {
    * Keep this in lock-step with `sendSnapshot` — both must produce the
    * same shape so the first render matches the first ws message.
    */
-  public async buildSnapshot(): Promise<Record<string, unknown>> {
-    const [info, fees, pool, recentBlocks, latestPrice] = await Promise.all([
+  public buildSnapshot(): Promise<Record<string, unknown>> {
+    if (!this.snapshotInFlight) {
+      this.snapshotInFlight = this.fetchSnapshot().finally(() => {
+        this.snapshotInFlight = null;
+      });
+    }
+    return this.snapshotInFlight;
+  }
+
+  private async fetchSnapshot(): Promise<Record<string, unknown>> {
+    // Fiat pricing and external mining-pool feeds must not hold up the chain feed.
+    // Known values are included immediately; late enrichment is pushed over WS.
+    this.refreshOptionalData();
+    const [info, fees, pool, recentBlocks] = await Promise.all([
       this.api.getInfo(),
       this.api.getFeeEstimate(),
       this.api.getTransactionPool(),
       this.recentBlocks(RECENT_BLOCKS_TO_PUSH),
-      getLatestXmrPrice(),
     ]);
 
     const tipBlock = recentBlocks.at(-1) ?? null;
@@ -370,8 +387,48 @@ export class MoneroWs {
       fees: shapeXmrRecommendedFees(pool, fees),
       da: shapeXmrDifficultyAdjustment(tipBlock, previousBlock, previousPreviousBlock),
       transactions: this.shapeRecentMempoolTxs(pool, 6),
-      conversions: priceToConversions(latestPrice),
+      ...this.cachedConversions(),
     };
+  }
+
+  private cachedConversions(): Record<string, unknown> {
+    const price = memoryCache.get<XmrApiPrice>('xmr-price', 'latest')
+      ?? memoryCache.get<XmrApiPrice>('xmr-price', 'latest-stale');
+    return price ? { conversions: priceToConversions(price) } : {};
+  }
+
+  private refreshOptionalData(): void {
+    if (!this.priceRefresh && Date.now() - this.priceRefreshStartedAt >= 60_000) {
+      this.priceRefreshStartedAt = Date.now();
+      this.priceRefresh = getLatestXmrPrice()
+        .then((price) => { this.broadcast({ conversions: priceToConversions(price) }); })
+        .catch(() => undefined)
+        .finally(() => { this.priceRefresh = null; });
+    }
+    if (this.proofRegistry && !this.attributionRefresh) {
+      this.attributionRefresh = this.proofRegistry.recentAttributions()
+        .then((attributions) => {
+          let changed = false;
+          this.recentBlockSnapshot = this.recentBlockSnapshot.map((block) => {
+            const attribution = attributions.get(block.id);
+            if (!attribution || (block.extras?.pool?.slug === attribution.pool.slug
+                && !!block.extras?.minerProof === !!attribution.proof)) {
+              return block;
+            }
+            changed = true;
+            return { ...block, extras: {
+              ...block.extras,
+              pool: attribution.pool,
+              ...(attribution.proof ? { minerProof: attribution.proof } : {}),
+            } };
+          });
+          if (changed) {
+            this.broadcast({ blocks: this.recentBlockSnapshot });
+          }
+        })
+        .catch(() => undefined)
+        .finally(() => { this.attributionRefresh = null; });
+    }
   }
 
   /**
@@ -407,6 +464,11 @@ export class MoneroWs {
     ]);
     const shaped = this.shapeBlock(headerForShape, numTxes, fees ?? undefined, this.poolForBlock(block, attribution), attribution?.proof ?? null);
     this.lastBroadcastHeight = header.height;
+    this.recentBlockSnapshot = this.recentBlockSnapshot
+      .filter((previous) => previous.height < shaped.height)
+      .concat(shaped)
+      .slice(-RECENT_BLOCKS_TO_PUSH);
+    this.refreshOptionalData();
     // Also push refreshed mempool info and difficulty state — confirming
     // a block drains the pool, and Monero retargets on every new block.
     const [pool, previousBlock, previousPreviousBlock] = await Promise.all([
@@ -687,14 +749,17 @@ export class MoneroWs {
       ]);
       return this.shapeBlock(b.block_header, b.tx_hashes?.length, fees ?? undefined, this.poolForBlock(b, attribution), attribution?.proof ?? null);
     }));
-    return shapes;
+    if ((shapes.at(-1)?.height ?? -1) >= (this.recentBlockSnapshot.at(-1)?.height ?? -1)) {
+      this.recentBlockSnapshot = shapes;
+    }
+    return this.recentBlockSnapshot;
   }
 
-  private async attributionForBlock(hash: string): Promise<XmrBlockAttribution | null> {
+  private attributionForBlock(hash: string): XmrBlockAttribution | null {
     if (!this.proofRegistry) {
       return null;
     }
-    return this.proofRegistry.getAttributionForBlock(hash).catch(() => null);
+    return this.proofRegistry.getCachedAttributionForBlock(hash);
   }
 
   private poolForBlock(block: IMoneroApi.Block | null | undefined, attribution: XmrBlockAttribution | null) {

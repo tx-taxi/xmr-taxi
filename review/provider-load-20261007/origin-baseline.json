@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-07T16:49:47.096Z",
+  "source": "docker exec existing production xmr container; Node fetch127.0.0.1:8999",
+  "requests": [
+    {
+      "path": "/healthz",
+      "status": 200,
+      "ms": 33
+    },
+    {
+      "path": "/api/v1/info",
+      "status": 200,
+      "ms": 12,
+      "height": 3778985
+    },
+    {
+      "path": "/api/v1/init-data",
+      "status": 502,
+      "ms": 32197
+    },
+    {
+      "path": "/api/v1/blocks?limit=8",
+      "status": 200,
+      "ms": 272,
+      "heights": [
+        3778984,
+        3778983,
+        3778982,
+        3778981,
+        3778980,
+        3778979,
+        3778978,
+        3778977,
+        3778976,
+        3778975
+      ]
+    },
+    {
+      "path": "/api/blocks/tip/height",
+      "status": 200,
+      "ms": 273
+    }
+  ],
+  "targeted_at": "2026-10-07T16:50:10.241Z",
+  "targeted": [
+    {
+      "path": "/api/v1/mempool",
+      "ms": 15003,
+      "error": "Aborted due to timeout"
+    },
+    {
+      "path": "/api/v1/fees/recommended",
+      "ms": 15000,
+      "error": "Aborted due to timeout"
+    }
+  ]
+}

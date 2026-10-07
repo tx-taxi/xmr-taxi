@@ -21,7 +21,7 @@ export class MoneroRpc {
   private client: AxiosInstance;
   public readonly rpcUrl: string;
 
-  constructor(private config: MoneroDaemonConfig) {
+  constructor(private config: MoneroDaemonConfig, private retries = RPC_RETRIES) {
     this.rpcUrl = config.rpcUrl.replace(/\/$/, '');
     this.client = axios.create({
       baseURL: this.rpcUrl,
@@ -79,12 +79,12 @@ export class MoneroRpc {
     requestConfig?: AxiosRequestConfig,
   ): Promise<AxiosResponse<T>> {
     let lastError: unknown;
-    for (let attempt = 0; attempt <= RPC_RETRIES; attempt++) {
+    for (let attempt = 0; attempt <= this.retries; attempt++) {
       try {
         return await this.client.post<T>(path, body, requestConfig);
       } catch (err) {
         lastError = err;
-        if (attempt >= RPC_RETRIES || !isTransientRpcError(err)) {
+        if (attempt >= this.retries || !isTransientRpcError(err)) {
           throw err;
         }
         await sleep(RPC_RETRY_BACKOFF_MS * (attempt + 1));
@@ -103,13 +103,18 @@ export class MoneroRpcPool {
   private fallbacks: MoneroRpc[];
   private primaryUsable: boolean | null = null;
   private primaryCheckedAt = 0;
+  private primaryHealthCheck: Promise<boolean> | null = null;
   private lastWarning = '';
   private lastWarningAt = 0;
 
   constructor(private config: MoneroDaemonConfig) {
-    this.primary = new MoneroRpc(config);
-    this.fallbacks = (config.fallbackRpcUrls ?? [])
-      .filter((url) => url.trim().length > 0)
+    const fallbackUrls = (config.fallbackRpcUrls ?? []).filter((url) => url.trim().length > 0);
+    // The pool handles retries by trying another daemon. Repeating a timed-out
+    // request against the same daemon first multiplies the failover delay.
+    // A transport without peers keeps the standalone retry behavior.
+    const retries = fallbackUrls.length ? 0 : RPC_RETRIES;
+    this.primary = new MoneroRpc(config, retries);
+    this.fallbacks = fallbackUrls
       .map((rpcUrl) => new MoneroRpc({
         ...config,
         rpcUrl,
@@ -117,7 +122,7 @@ export class MoneroRpcPool {
         rpcUser: undefined,
         rpcPassword: undefined,
         requirePrimarySync: false,
-      }));
+      }, retries));
   }
 
   public async jsonRpc<T>(method: string, params: Record<string, unknown> = {}): Promise<T> {
@@ -162,6 +167,9 @@ export class MoneroRpcPool {
     if (!fallback) {
       return this.primary;
     }
+    if (this.primaryUsable === false && Date.now() - this.primaryCheckedAt < this.healthCheckInterval()) {
+      return fallback;
+    }
     if (!this.config.requirePrimarySync) {
       return this.primary;
     }
@@ -170,12 +178,28 @@ export class MoneroRpcPool {
 
   private async isPrimaryUsable(): Promise<boolean> {
     const now = Date.now();
-    const interval = Math.max(1_000, this.config.primaryHealthCheckIntervalMs ?? 15_000);
+    const interval = this.healthCheckInterval();
     if (this.primaryUsable !== null && now - this.primaryCheckedAt < interval) {
       return this.primaryUsable;
     }
+    if (!this.primaryHealthCheck) {
+      this.primaryHealthCheck = this.checkPrimary();
+    }
+    const healthCheck = this.primaryHealthCheck;
+    try {
+      return await healthCheck;
+    } finally {
+      if (this.primaryHealthCheck === healthCheck) {
+        this.primaryHealthCheck = null;
+      }
+    }
+  }
 
-    this.primaryCheckedAt = now;
+  private healthCheckInterval(): number {
+    return Math.max(1_000, this.config.primaryHealthCheckIntervalMs ?? 15_000);
+  }
+
+  private async checkPrimary(): Promise<boolean> {
     try {
       const info = await this.primary.jsonRpc<IMoneroApi.Info>('get_info');
       const status = daemonSyncStatus(info, this.config.maxPrimaryHeightLag ?? 10);
@@ -188,6 +212,9 @@ export class MoneroRpcPool {
       this.primaryUsable = false;
       this.warn(`primary ${this.primary.rpcUrl} health check failed; using fallback ${this.fallbacks[0]?.rpcUrl}: ${formatError(err)}`);
       return false;
+    } finally {
+      // Count cooldown from the completed check, including a timed-out probe.
+      this.primaryCheckedAt = Date.now();
     }
   }
 

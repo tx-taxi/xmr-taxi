@@ -3,7 +3,8 @@ import { createServer, IncomingMessage, Server, ServerResponse } from 'http';
 import { MoneroRpcPool } from '../monero-rpc';
 
 type RpcBody = { method?: string; params?: Record<string, unknown> };
-type RpcHandler = (path: string, body: RpcBody) => { status?: number; body: unknown };
+type RpcReply = { status?: number; body: unknown };
+type RpcHandler = (path: string, body: RpcBody) => RpcReply | Promise<RpcReply>;
 
 async function makeRpcServer(handler: RpcHandler): Promise<{
   url: string;
@@ -16,10 +17,10 @@ async function makeRpcServer(handler: RpcHandler): Promise<{
     req.on('data', (chunk) => {
       raw += chunk.toString('utf8');
     });
-    req.on('end', () => {
+    req.on('end', async () => {
       const body = raw ? JSON.parse(raw) as RpcBody : {};
       calls.push(body);
-      const result = handler(req.url ?? '/', body);
+      const result = await handler(req.url ?? '/', body);
       res.statusCode = result.status ?? 200;
       res.setHeader('Content-Type', 'application/json');
       res.end(JSON.stringify(result.body));
@@ -127,7 +128,7 @@ describe('MoneroRpcPool', () => {
 
       expect(count.count).toBe(1_000);
       expect(primary.calls[0].method).toBe('get_info');
-      expect(primary.calls.filter((call) => call.method === 'get_block_count')).toHaveLength(3);
+      expect(primary.calls.filter((call) => call.method === 'get_block_count')).toHaveLength(1);
       expect(fallback.calls.map((call) => call.method)).toEqual(['get_block_count']);
     } finally {
       await primary.close();
@@ -151,12 +152,108 @@ describe('MoneroRpcPool', () => {
       const count = await pool.jsonRpc<{ count: number }>('get_block_count');
 
       expect(count.count).toBe(1_000);
-      expect(firstFallback.calls).not.toHaveLength(0);
+      expect(primary.calls).toHaveLength(1);
+      expect(firstFallback.calls).toHaveLength(1);
       expect(secondFallback.calls.map((call) => call.method)).toEqual(['get_block_count']);
     } finally {
       await primary.close();
       await firstFallback.close();
       await secondFallback.close();
+    }
+  });
+
+  it('bounds an unresponsive primary to one timeout before serving from fallback', async () => {
+    const primary = await makeRpcServer(() => new Promise<RpcReply>(() => undefined));
+    const fallback = await makeRpcServer(() => ({ body: { result: { count: 1_000, status: 'OK' } } }));
+
+    try {
+      const pool = new MoneroRpcPool({
+        rpcUrl: primary.url,
+        fallbackRpcUrls: [fallback.url],
+        timeoutMs: 75,
+        requirePrimarySync: false,
+      });
+      const startedAt = Date.now();
+      const count = await pool.jsonRpc<{ count: number }>('get_block_count');
+
+      expect(count.count).toBe(1_000);
+      expect(Date.now() - startedAt).toBeLessThan(500);
+      expect(primary.calls).toHaveLength(1);
+    } finally {
+      await primary.close();
+      await fallback.close();
+    }
+  });
+
+  it('keeps a failed primary out of subsequent reads until cooldown ends without requiring sync checks', async () => {
+    let primaryAvailable = false;
+    const primary = await makeRpcServer(() => primaryAvailable
+      ? { body: { result: { count: 1_001, status: 'OK' } } }
+      : { status: 503, body: { error: 'primary unavailable' } });
+    const fallback = await makeRpcServer(() => ({ body: { result: { count: 1_000, status: 'OK' } } }));
+
+    try {
+      const pool = new MoneroRpcPool({
+        rpcUrl: primary.url,
+        fallbackRpcUrls: [fallback.url],
+        timeoutMs: 500,
+        requirePrimarySync: false,
+        primaryHealthCheckIntervalMs: 1_000,
+      });
+      expect((await pool.jsonRpc<{ count: number }>('get_block_count')).count).toBe(1_000);
+      primaryAvailable = true;
+      expect((await pool.jsonRpc<{ count: number }>('get_block_count')).count).toBe(1_000);
+      expect(primary.calls).toHaveLength(1);
+
+      await new Promise((resolve) => setTimeout(resolve, 1_025));
+      expect((await pool.jsonRpc<{ count: number }>('get_block_count')).count).toBe(1_001);
+      expect(primary.calls).toHaveLength(2);
+    } finally {
+      await primary.close();
+      await fallback.close();
+    }
+  });
+
+  it('shares a single primary health check across concurrent cold reads', async () => {
+    const primary = await makeRpcServer(async (_path, body) => {
+      if (body.method === 'get_info') {
+        await new Promise((resolve) => setTimeout(resolve, 25));
+        return { body: { result: { status: 'OK', height: 1_000, synchronized: true } } };
+      }
+      return { body: { result: { count: 1_000, status: 'OK' } } };
+    });
+    const fallback = await makeRpcServer(() => ({ status: 503, body: { error: 'fallback should not be needed' } }));
+
+    try {
+      const pool = new MoneroRpcPool({
+        rpcUrl: primary.url,
+        fallbackRpcUrls: [fallback.url],
+        timeoutMs: 500,
+        requirePrimarySync: true,
+      });
+      const results = await Promise.all(Array.from({ length: 8 }, () => pool.jsonRpc<{ count: number }>('get_block_count')));
+
+      expect(results.every((result) => result.count === 1_000)).toBe(true);
+      expect(primary.calls.filter((call) => call.method === 'get_info')).toHaveLength(1);
+      expect(fallback.calls).toHaveLength(0);
+    } finally {
+      await primary.close();
+      await fallback.close();
+    }
+  });
+
+  it('keeps transport retries when there are no fallback daemons', async () => {
+    let attempts = 0;
+    const primary = await makeRpcServer(() => ++attempts === 1
+      ? { status: 503, body: { error: 'temporary failure' } }
+      : { body: { result: { count: 1_000, status: 'OK' } } });
+
+    try {
+      const pool = new MoneroRpcPool({ rpcUrl: primary.url, timeoutMs: 500 });
+      expect((await pool.jsonRpc<{ count: number }>('get_block_count')).count).toBe(1_000);
+      expect(primary.calls).toHaveLength(2);
+    } finally {
+      await primary.close();
     }
   });
 });
