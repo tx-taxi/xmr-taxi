@@ -1,0 +1,7 @@
+<div class="promotion" *ngIf="!dismissed">
+  <a class="promotion-link" [href]="destination" target="_blank" rel="noopener noreferrer">
+    <span class="promotion-intro">From the creators of tx.taxi:</span>
+    <span class="promotion-message">Swap <span class="promotion-accent">{{ chainName }}</span> starting at <strong>0% uSwap Fees</strong> at <span class="promotion-accent">app.uswap.net</span></span>
+  </a>
+  <button type="button" class="btn-close btn-close-white promotion-close" aria-label="Dismiss uSwap promotion" title="Dismiss" (click)="dismiss()"></button>
+</div>

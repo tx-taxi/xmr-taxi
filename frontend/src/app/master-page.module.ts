@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { MasterPageComponent } from '@components/master-page/master-page.component';
 import { SharedModule } from '@app/shared/shared.module';
+import { UswapPromotionComponent } from '@app/shared/components/uswap-promotion/uswap-promotion.component';
 
 import { StartComponent } from '@components/start/start.component';
 import { RecentTransactionsList } from '@components/recent-transactions-list/recent-transactions-list.component';
@@ -141,6 +142,7 @@ export class MasterPageRoutingModule { }
     CommonModule,
     MasterPageRoutingModule,
     SharedModule,
+    UswapPromotionComponent,
   ],
   declarations: [
     MasterPageComponent,
