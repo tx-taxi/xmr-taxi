@@ -264,12 +264,15 @@ describe('restricted daemon compatibility', () => {
   it('keeps polling hashes on the primary after its full-pool endpoint refuses access', async () => {
     let hashes = ['a'.repeat(64)];
     let poolReads = 0;
+    let fullPoolAvailable = false;
     let hashReads = 0;
     let brokenSnapshot = false;
     const primary = await makeRpcServer((path) => {
       if (path === '/get_transaction_pool') {
         poolReads++;
-        return { status: 404, body: {} };
+        return fullPoolAvailable
+          ? { body: { status: 'OK', transactions: [{ id_hash: 'primary' }] } }
+          : { status: 404, body: {} };
       }
       if (path === '/get_transaction_pool_hashes') {
         hashReads++;
@@ -286,7 +289,7 @@ describe('restricted daemon compatibility', () => {
       const pool = new MoneroRpcPool(config);
       expect((await pool.raw<{ transactions: unknown[] }>('/get_transaction_pool')).transactions).toHaveLength(1);
       await pool.raw('/get_transaction_pool');
-      expect(poolReads).toBe(1);
+      expect(poolReads).toBe(2);
       expect((await pool.raw<{ tx_hashes: string[] }>('/get_transaction_pool_hashes')).tx_hashes).toEqual(hashes);
       expect(warning.mock.calls.flat().join(' ')).not.toContain('private-token');
       expect(rpcOrigin('https://user:password@rpc.example/v1/private-token?q=secret')).toBe('https://rpc.example');
@@ -313,7 +316,9 @@ describe('restricted daemon compatibility', () => {
       await poll();
       expect(bus.snapshot().mempoolHashes).toEqual([]);
       expect(hashReads).toBe(5);
-      expect(poolReads).toBe(1);
+      expect(poolReads).toBe(2);
+      fullPoolAvailable = true;
+      expect((await pool.raw<{ transactions: Array<{ id_hash: string }> }>('/get_transaction_pool')).transactions[0].id_hash).toBe('primary');
     } finally {
       warning.mockRestore();
       await primary.close();

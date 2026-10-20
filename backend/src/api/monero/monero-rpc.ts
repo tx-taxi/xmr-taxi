@@ -64,10 +64,6 @@ export class MoneroRpc {
   public async raw<T>(path: string, body: Record<string, unknown> = {}): Promise<T> {
     const normalized = path.startsWith('/') ? path : `/${path}`;
     const { data } = await this.postWithRetry<T>(normalized, body);
-    const status = (data as { status?: string } | null)?.status;
-    if (status !== undefined && status !== 'OK') {
-      throw new Error(`monerod ${normalized} returned a non-OK status`);
-    }
     return data;
   }
 
@@ -119,7 +115,6 @@ export class MoneroRpcPool {
   private primaryUsable: boolean | null = null;
   private primaryCheckedAt = 0;
   private primaryHealthCheck: Promise<boolean> | null = null;
-  private unsupportedUntil = new Map<MoneroRpc, Map<string, number>>();
   private lastWarning = '';
   private lastWarningAt = 0;
 
@@ -158,7 +153,6 @@ export class MoneroRpcPool {
     const candidates = [selected, ...this.fallbacks.filter((rpc) => rpc !== selected)];
     let lastError: unknown = new Error(`No daemon supports ${label}`);
     for (const rpc of candidates) {
-      if ((this.unsupportedUntil.get(rpc)?.get(label) ?? 0) > Date.now()) continue;
       try {
         const result = await call(rpc);
         if (rpc !== this.primary) this.warn(`using fallback ${rpcOrigin(rpc.rpcUrl)} for ${label}`);
@@ -166,12 +160,9 @@ export class MoneroRpcPool {
       } catch (err) {
         lastError = err;
         // A restricted endpoint is a capability failure, not node downtime.
-        // Recheck eventually, but do not hammer it on every five-second read.
-        if (err instanceof RpcRequestError && (err.status === 404 || err.status === 405)) {
-          let methods = this.unsupportedUntil.get(rpc);
-          if (!methods) { methods = new Map(); this.unsupportedUntil.set(rpc, methods); }
-          methods.set(label, Date.now() + 5 * 60_000);
-        } else if (rpc === this.primary) {
+        // Keep probing normally so restored access takes effect immediately.
+        const unsupported = err instanceof RpcRequestError && (err.status === 404 || err.status === 405);
+        if (rpc === this.primary && !unsupported) {
           this.primaryUsable = false;
           this.primaryCheckedAt = Date.now();
         }

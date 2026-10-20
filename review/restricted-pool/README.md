@@ -8,8 +8,8 @@ https://github.com/monero-project/monero/blob/v0.18.5.3/src/rpc/core_rpc_server.
 ## Changes
 
 - Three-second event polling reads hashes rather than downloading and decoding full transaction objects. Failed or malformed snapshots preserve the preceding hash set; a valid empty snapshot clears it.
-- Full-pool reads retain the existing native response contract. HTTP 404/405 suppress only that provider/method for five minutes, rather than declaring the whole primary unhealthy. Other methods keep using the primary; unsupported methods recover on a later probe.
-- Non-OK plain RPC responses fail over instead of being cached as successful empty reads.
+- Full-pool reads retain the existing native response contract. HTTP 404/405 trigger the existing fallback sequence without declaring the whole primary unhealthy. Other methods keep using the primary. No capability cooldown was introduced; restored access is picked up on the next call.
+- Generic plain RPC response handling is unchanged; only event-bus hash snapshots validate status and contents.
 - Startup/failover logs show only origins, without userinfo, paths or query strings. Transport exceptions retain HTTP status without the Axios config or token-bearing URL.
 - Runtime-only mnr configuration is private outside this repository. Existing Tari and mony.st fallback order is preserved, mnr appended last. The MoneroSpace primary is unchanged. No credentials belong in source, examples or build arguments.
 
@@ -33,3 +33,7 @@ npm run tsc
 ```
 
 A subsequent release must ship the redaction changes before adding the tokenized fallback to Coolify runtime `MONEROD_RPC_FALLBACK_URLS`; do not add it to the currently deployed backend, whose startup logs print full fallback URLs. Preserve the current primary and fallback order. Check native pool freshness and live deltas after rollout.
+
+## Conservative scope review
+
+Removed the proposed five-minute capability cooldown, which could delay recovery, and generic non-OK response rejection, which could change public RPC error semantics outside mempool polling. Full transaction reads, projection data, retries, primary sync checks and fallback order remain unchanged. Added coverage for immediate return to the primary after endpoint access recovers. mnr remains private local configuration only, pending any production release.
