@@ -17,6 +17,17 @@ const RPC_RETRY_BACKOFF_MS = Math.max(0, Number(process.env.MONEROD_RPC_RETRY_BA
  * nodes (cakewallet, xmr.node.live, etc.) are open. We support both via
  * axios's built-in `auth` option.
  */
+class RpcRequestError extends Error {
+  constructor(public readonly status: number | undefined, message: string) {
+    super(message);
+  }
+}
+
+/** Log only the origin: credentials can be in userinfo, path or query. */
+export function rpcOrigin(value: string): string {
+  try { return new URL(value).origin; } catch { return '[invalid RPC URL]'; }
+}
+
 export class MoneroRpc {
   private client: AxiosInstance;
   public readonly rpcUrl: string;
@@ -38,7 +49,7 @@ export class MoneroRpc {
     const body = { jsonrpc: '2.0', id: '0', method, params };
     const { data } = await this.postWithRetry<{ result?: T; error?: MoneroRpcError }>('/json_rpc', body);
     if (data.error) {
-      throw new Error(`monerod RPC error (${method}) ${data.error.code}: ${data.error.message}`);
+      throw new Error(`monerod RPC error (${method}) ${data.error.code}`);
     }
     if (data.result === undefined) {
       throw new Error(`monerod RPC ${method} returned no result`);
@@ -53,6 +64,10 @@ export class MoneroRpc {
   public async raw<T>(path: string, body: Record<string, unknown> = {}): Promise<T> {
     const normalized = path.startsWith('/') ? path : `/${path}`;
     const { data } = await this.postWithRetry<T>(normalized, body);
+    const status = (data as { status?: string } | null)?.status;
+    if (status !== undefined && status !== 'OK') {
+      throw new Error(`monerod ${normalized} returned a non-OK status`);
+    }
     return data;
   }
 
@@ -85,7 +100,7 @@ export class MoneroRpc {
       } catch (err) {
         lastError = err;
         if (attempt >= this.retries || !isTransientRpcError(err)) {
-          throw err;
+          throw new RpcRequestError(axios.isAxiosError(err) ? err.response?.status : undefined, formatError(err));
         }
         await sleep(RPC_RETRY_BACKOFF_MS * (attempt + 1));
       }
@@ -104,6 +119,7 @@ export class MoneroRpcPool {
   private primaryUsable: boolean | null = null;
   private primaryCheckedAt = 0;
   private primaryHealthCheck: Promise<boolean> | null = null;
+  private unsupportedUntil = new Map<MoneroRpc, Map<string, number>>();
   private lastWarning = '';
   private lastWarningAt = 0;
 
@@ -139,27 +155,29 @@ export class MoneroRpcPool {
 
   private async withFallback<T>(call: (rpc: MoneroRpc) => Promise<T>, label: string): Promise<T> {
     const selected = await this.selectRpc();
-    try {
-      return await call(selected);
-    } catch (err) {
-      if (selected === this.primary) {
-        this.primaryUsable = false;
-        this.primaryCheckedAt = Date.now();
-      }
-
-      let lastError = err;
-      for (const fallback of this.fallbacks) {
-        if (fallback === selected) continue;
-        try {
-          this.warn(`using fallback ${fallback.rpcUrl} for ${label}: ${formatError(lastError)}`);
-          return await call(fallback);
-        } catch (fallbackError) {
-          lastError = fallbackError;
+    const candidates = [selected, ...this.fallbacks.filter((rpc) => rpc !== selected)];
+    let lastError: unknown = new Error(`No daemon supports ${label}`);
+    for (const rpc of candidates) {
+      if ((this.unsupportedUntil.get(rpc)?.get(label) ?? 0) > Date.now()) continue;
+      try {
+        const result = await call(rpc);
+        if (rpc !== this.primary) this.warn(`using fallback ${rpcOrigin(rpc.rpcUrl)} for ${label}`);
+        return result;
+      } catch (err) {
+        lastError = err;
+        // A restricted endpoint is a capability failure, not node downtime.
+        // Recheck eventually, but do not hammer it on every five-second read.
+        if (err instanceof RpcRequestError && (err.status === 404 || err.status === 405)) {
+          let methods = this.unsupportedUntil.get(rpc);
+          if (!methods) { methods = new Map(); this.unsupportedUntil.set(rpc, methods); }
+          methods.set(label, Date.now() + 5 * 60_000);
+        } else if (rpc === this.primary) {
+          this.primaryUsable = false;
+          this.primaryCheckedAt = Date.now();
         }
       }
-
-      throw lastError;
     }
+    throw lastError;
   }
 
   private async selectRpc(): Promise<MoneroRpc> {
@@ -205,12 +223,12 @@ export class MoneroRpcPool {
       const status = daemonSyncStatus(info, this.config.maxPrimaryHeightLag ?? 10);
       this.primaryUsable = status.usable;
       if (!status.usable) {
-        this.warn(`primary ${this.primary.rpcUrl} not ready (${status.reason}); using fallback ${this.fallbacks[0]?.rpcUrl}`);
+        this.warn(`primary ${rpcOrigin(this.primary.rpcUrl)} not ready (${status.reason}); using fallback ${this.fallbacks[0] ? rpcOrigin(this.fallbacks[0].rpcUrl) : 'none'}`);
       }
       return status.usable;
     } catch (err) {
       this.primaryUsable = false;
-      this.warn(`primary ${this.primary.rpcUrl} health check failed; using fallback ${this.fallbacks[0]?.rpcUrl}: ${formatError(err)}`);
+      this.warn(`primary ${rpcOrigin(this.primary.rpcUrl)} health check failed; using fallback ${this.fallbacks[0] ? rpcOrigin(this.fallbacks[0].rpcUrl) : 'none'}: ${formatError(err)}`);
       return false;
     } finally {
       // Count cooldown from the completed check, including a timed-out probe.
@@ -270,7 +288,7 @@ function sleep(ms: number): Promise<void> {
 function formatError(err: unknown): string {
   if (axios.isAxiosError(err)) {
     const status = err.response?.status ? ` HTTP ${err.response.status}` : '';
-    return `${err.code ?? 'axios'}${status} ${err.message}`.trim();
+    return `${err.code ?? 'axios'}${status}`.trim();
   }
   return err instanceof Error ? err.message : String(err);
 }

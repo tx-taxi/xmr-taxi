@@ -125,6 +125,12 @@ export namespace IMoneroApi {
   }
 
   /** Response from `get_transaction_pool` (NB: this is a `/endpoint` call, not JSON-RPC). */
+  export interface TransactionPoolHashes {
+    tx_hashes?: string[];
+    status: string;
+    untrusted: boolean;
+  }
+
   export interface TransactionPool {
     transactions?: MempoolEntry[];
     spent_key_images?: Array<{ id_hash: string; txs_hashes: string[] }>;

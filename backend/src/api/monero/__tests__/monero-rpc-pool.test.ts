@@ -1,6 +1,7 @@
 import { AddressInfo } from 'net';
 import { createServer, IncomingMessage, Server, ServerResponse } from 'http';
-import { MoneroRpcPool } from '../monero-rpc';
+import { MoneroEventBus } from '../monero-event-bus';
+import { MoneroRpcPool, rpcOrigin } from '../monero-rpc';
 
 type RpcBody = { method?: string; params?: Record<string, unknown> };
 type RpcReply = { status?: number; body: unknown };
@@ -254,6 +255,89 @@ describe('MoneroRpcPool', () => {
       expect(primary.calls).toHaveLength(2);
     } finally {
       await primary.close();
+    }
+  });
+});
+
+
+describe('restricted daemon compatibility', () => {
+  it('keeps polling hashes on the primary after its full-pool endpoint refuses access', async () => {
+    let hashes = ['a'.repeat(64)];
+    let poolReads = 0;
+    let hashReads = 0;
+    let brokenSnapshot = false;
+    const primary = await makeRpcServer((path) => {
+      if (path === '/get_transaction_pool') {
+        poolReads++;
+        return { status: 404, body: {} };
+      }
+      if (path === '/get_transaction_pool_hashes') {
+        hashReads++;
+        return { body: brokenSnapshot ? { status: 'BUSY' } : { status: 'OK', tx_hashes: hashes } };
+      }
+      return { body: { result: { status: 'OK', height: 100, top_block_hash: 'tip' } } };
+    });
+    const fallback = await makeRpcServer((path) => path === '/v1/private-token/get_transaction_pool'
+      ? { body: { status: 'OK', transactions: [{ id_hash: 'relay' }] } }
+      : { status: 404, body: {} });
+    const warning = jest.spyOn(console, 'warn').mockImplementation(() => undefined);
+    try {
+      const config = { rpcUrl: primary.url, fallbackRpcUrls: [fallback.url + '/v1/private-token'], timeoutMs: 500 };
+      const pool = new MoneroRpcPool(config);
+      expect((await pool.raw<{ transactions: unknown[] }>('/get_transaction_pool')).transactions).toHaveLength(1);
+      await pool.raw('/get_transaction_pool');
+      expect(poolReads).toBe(1);
+      expect((await pool.raw<{ tx_hashes: string[] }>('/get_transaction_pool_hashes')).tx_hashes).toEqual(hashes);
+      expect(warning.mock.calls.flat().join(' ')).not.toContain('private-token');
+      expect(rpcOrigin('https://user:password@rpc.example/v1/private-token?q=secret')).toBe('https://rpc.example');
+
+      const bus = new MoneroEventBus({ rpcUrl: primary.url, timeoutMs: 500 });
+      const errors: unknown[] = [];
+      const deltas: unknown[] = [];
+      bus.on('error', (error) => errors.push(error));
+      bus.on('mempool-delta', (delta) => deltas.push(delta));
+      const poll = () => (bus as unknown as { poll(): Promise<void> }).poll();
+      await poll();
+      hashes = ['b'.repeat(64)];
+      await poll();
+      expect(deltas).toEqual([
+        { added: ['a'.repeat(64)], removed: [] },
+        { added: ['b'.repeat(64)], removed: ['a'.repeat(64)] },
+      ]);
+      brokenSnapshot = true;
+      await poll();
+      expect(errors).toHaveLength(1);
+      expect(bus.snapshot().mempoolHashes).toEqual(['b'.repeat(64)]);
+      brokenSnapshot = false;
+      hashes = [];
+      await poll();
+      expect(bus.snapshot().mempoolHashes).toEqual([]);
+      expect(hashReads).toBe(5);
+      expect(poolReads).toBe(1);
+    } finally {
+      warning.mockRestore();
+      await primary.close();
+      await fallback.close();
+    }
+  });
+});
+
+
+describe('credential-safe transport failures', () => {
+  it('does not expose a token path or Axios request config when all providers fail', async () => {
+    const daemon = await makeRpcServer(() => ({ status: 403, body: { error: 'denied' } }));
+    try {
+      const pool = new MoneroRpcPool({
+        rpcUrl: daemon.url + '/v1/private-token',
+        timeoutMs: 500,
+      });
+      const error = await pool.raw('/get_transaction_pool').catch((err: unknown) => err) as Error & { config?: unknown };
+      expect(error).toBeInstanceOf(Error);
+      expect(error.message).toContain('403');
+      expect(JSON.stringify(error) + error.stack).not.toContain('private-token');
+      expect(error.config).toBeUndefined();
+    } finally {
+      await daemon.close();
     }
   });
 });

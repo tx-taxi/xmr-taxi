@@ -19,6 +19,7 @@ import { mountMigrationMetrics } from './xmr-migration-metrics';
 import { createServer } from 'http';
 import { MoneroApi, moneroDaemonConfigFromEnv } from './monero-api';
 import { MoneroRoutes } from './monero.routes';
+import { rpcOrigin } from './monero-rpc';
 import { MoneroEventBus } from './monero-event-bus';
 import { MoneroSseRoutes } from './monero-sse.routes';
 import { MoneroWs } from './monero-ws';
@@ -114,10 +115,10 @@ function main(): void {
     // eslint-disable-next-line no-console
     console.log(`[xmr-space] listening on http://${host}:${port}`);
     // eslint-disable-next-line no-console
-    console.log(`[xmr-space] daemon: ${daemonConfig.rpcUrl}`);
+    console.log(`[xmr-space] daemon: ${rpcOrigin(daemonConfig.rpcUrl)}`);
     if (daemonConfig.fallbackRpcUrls?.length) {
       // eslint-disable-next-line no-console
-      console.log(`[xmr-space] daemon fallback: ${daemonConfig.fallbackRpcUrls.join(', ')}`);
+      console.log(`[xmr-space] daemon fallback: ${daemonConfig.fallbackRpcUrls.map(rpcOrigin).join(', ')}`);
     }
     // eslint-disable-next-line no-console
     console.log(`[xmr-space] wallet-rpc proofs: ${walletRpc ? 'enabled' : 'disabled (set MONERO_WALLET_RPC_URL)'}`);

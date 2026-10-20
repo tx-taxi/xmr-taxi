@@ -104,8 +104,13 @@ export class MoneroEventBus extends EventEmitter {
 
       // Mempool delta. The daemon's response is unsorted, so we work in
       // sets. A typical pool churn cycle is 5-15 txs/poll on mainnet.
-      const pool = await this.rpc.raw<IMoneroApi.TransactionPool>('/get_transaction_pool');
-      const currentHashes = new Set((pool.transactions ?? []).map((t) => t.id_hash));
+      const pool = await this.rpc.raw<IMoneroApi.TransactionPoolHashes>('/get_transaction_pool_hashes');
+      if (pool.status !== 'OK' || (pool.tx_hashes !== undefined &&
+          (!Array.isArray(pool.tx_hashes) || pool.tx_hashes.some((hash) =>
+            typeof hash !== 'string' || !/^[0-9a-f]{64}$/i.test(hash))))) {
+        throw new Error('monerod returned an invalid mempool hash snapshot');
+      }
+      const currentHashes = new Set((pool.tx_hashes ?? []).map((hash) => hash.toLowerCase()));
       const added: string[] = [];
       const removed: string[] = [];
       for (const h of currentHashes) {
