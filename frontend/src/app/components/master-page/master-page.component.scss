@@ -229,3 +229,24 @@ main {
   top: 65px;
   padding-bottom: 20px;
 }
+
+// Quiet desktop-only sponsorship placement; reveal fully for keyboard focus.
+.chain-sponsorship {
+  display: none;
+  @media (min-width: 1400px) {
+    display: block;
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 8px 12px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--nav-icon);
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: .3;
+    &:hover { opacity: .75; text-decoration: underline; }
+    &:focus-visible { opacity: 1; outline: 1px solid currentColor; outline-offset: -2px; }
+  }
+}
