@@ -230,23 +230,36 @@ main {
   padding-bottom: 20px;
 }
 
-// Quiet desktop-only sponsorship placement; reveal fully for keyboard focus.
+// Quiet sponsorship link uses only spare header space.
 .chain-sponsorship {
   display: none;
+  color: var(--nav-icon);
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+  opacity: .3;
+  &:hover { opacity: .75; text-decoration: underline; }
+  &:focus-visible { opacity: 1; outline: 1px solid currentColor; outline-offset: -2px; }
   @media (min-width: 1400px) {
     display: block;
     flex: 1 1 auto;
     min-width: 0;
     padding: 8px 12px;
     text-align: center;
-    white-space: nowrap;
-    color: var(--nav-icon);
-    font-size: 11px;
-    line-height: 1.5;
-    font-weight: 400;
-    text-decoration: none;
-    opacity: .3;
-    &:hover { opacity: .75; text-decoration: underline; }
-    &:focus-visible { opacity: 1; outline: 1px solid currentColor; outline-offset: -2px; }
   }
+  // Below 564px search occupies its own row. Reserve logo + a clear gap;
+  // narrower screens cannot fit both labels without crowding.
+  @media (min-width: 360px) and (max-width: 563px) {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    padding: 8px 4px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 563px) {
+  .navbar:has(.navbar-brand.dual-logos) .chain-sponsorship { display: none; }
 }
