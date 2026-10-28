@@ -236,13 +236,13 @@ class MysqlXmrPriceStore implements XmrPriceStore {
         INSERT INTO ${this.table()} (time, USD, EUR, GBP, CAD, CHF, AUD, JPY)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ON DUPLICATE KEY UPDATE
-          USD = VALUES(USD),
-          EUR = VALUES(EUR),
-          GBP = VALUES(GBP),
-          CAD = VALUES(CAD),
-          CHF = VALUES(CHF),
-          AUD = VALUES(AUD),
-          JPY = VALUES(JPY)
+          USD = IF(VALUES(USD) > 0, VALUES(USD), USD),
+          EUR = IF(VALUES(EUR) > 0, VALUES(EUR), EUR),
+          GBP = IF(VALUES(GBP) > 0, VALUES(GBP), GBP),
+          CAD = IF(VALUES(CAD) > 0, VALUES(CAD), CAD),
+          CHF = IF(VALUES(CHF) > 0, VALUES(CHF), CHF),
+          AUD = IF(VALUES(AUD) > 0, VALUES(AUD), AUD),
+          JPY = IF(VALUES(JPY) > 0, VALUES(JPY), JPY)
       `, [
         price.time,
         price.USD,
@@ -485,6 +485,8 @@ async function fetchHistoricalCurrencyPoint(currency: XmrCurrency, timestamp: nu
   if (cached !== null) {
     return cached;
   }
+  // Do not amplify an active provider rate limit across every history query.
+  if (memoryCache.get<boolean>('xmr-price', 'coingecko-cooldown')) return -1;
 
   const from = Math.max(0, timestamp - NEAREST_PRICE_TOLERANCE_SECONDS);
   const to = timestamp + NEAREST_PRICE_TOLERANCE_SECONDS;
@@ -503,6 +505,9 @@ async function fetchHistoricalCurrencyPoint(currency: XmrCurrency, timestamp: nu
     return price;
   } catch (err) {
     logger.warn(`xmr-price: historical ${currency} fetch failed: ${err instanceof Error ? err.message : err}`);
+    if (err instanceof Error && err.message === 'HTTP 429' && !memoryCache.get<boolean>('xmr-price', 'coingecko-cooldown')) {
+      memoryCache.set('xmr-price', 'coingecko-cooldown', true, 300);
+    }
     memoryCache.set('xmr-price-history', cacheKey, -1, 300);
     return -1;
   }
@@ -533,19 +538,37 @@ async function fetchHistoricalPrice(timestamp: number): Promise<XmrApiPrice> {
   return price;
 }
 
+let backfillInFlight: Promise<void> | null = null;
+
 async function backfillRecentHistory(): Promise<void> {
+  if (memoryCache.get<boolean>('xmr-price', 'coingecko-cooldown')) return;
   const cacheKey = `recent:${DEFAULT_HISTORY_DAYS}`;
-  if (memoryCache.get<boolean>('xmr-price-backfill', cacheKey)) {
+  if (memoryCache.get<boolean>('xmr-price-backfill', cacheKey)
+      || memoryCache.get<boolean>('xmr-price-backfill', `${cacheKey}:retry`)) {
     return;
   }
-  memoryCache.set('xmr-price-backfill', cacheKey, true, 12 * HOUR_SECONDS);
+  if (backfillInFlight) return backfillInFlight;
+  backfillInFlight = performRecentBackfill(cacheKey).finally(() => { backfillInFlight = null; });
+  return backfillInFlight;
+}
+
+async function performRecentBackfill(cacheKey: string): Promise<void> {
   const now = Math.floor(Date.now() / 1000);
   const from = Math.max(0, now - (DEFAULT_HISTORY_DAYS * 24 * HOUR_SECONDS));
   const ranges = await Promise.allSettled(CURRENCIES.map((currency) => fetchHistoricalCurrencyRange(currency, from, now)));
+  if (ranges.some(result => result.status === 'rejected' && result.reason instanceof Error && result.reason.message === 'HTTP 429')
+      && !memoryCache.get<boolean>('xmr-price', 'coingecko-cooldown')) {
+    memoryCache.set('xmr-price', 'coingecko-cooldown', true, 300);
+  }
   const prices = mergePrices(ranges.flatMap((result) => result.status === 'fulfilled' ? result.value : []));
   if (prices.length > 0) {
     await savePriceHistory(prices);
     logger.notice(`xmr-price: backfilled ${prices.length} historical price points into ${priceStore.describe()}`);
+  }
+  if (ranges.every(result => result.status === 'fulfilled' && result.value.length > 0)) {
+    memoryCache.set('xmr-price-backfill', cacheKey, true, 12 * HOUR_SECONDS);
+  } else {
+    memoryCache.set('xmr-price-backfill', `${cacheKey}:retry`, true, 300);
   }
 }
 
@@ -586,7 +609,8 @@ export async function getXmrPriceConversion(timestamp?: number): Promise<XmrPric
   if (!timestamp || !Number.isFinite(timestamp) || timestamp <= 0) {
     const latest = await getLatestXmrPrice();
     let prices = await loadPriceHistory();
-    if (prices.length < 2 && process.env.XMR_PRICE_BACKFILL_ON_DEMAND !== 'false') {
+    const hasCompleteHistory = CURRENCIES.every(currency => prices.filter(price => price[currency] > 0).length >= 2);
+    if (!hasCompleteHistory && process.env.XMR_PRICE_BACKFILL_ON_DEMAND !== 'false') {
       await backfillRecentHistory();
       prices = await loadPriceHistory();
     }

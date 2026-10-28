@@ -157,6 +157,12 @@ describe('XMR price history', () => {
     expect(global.fetch).toHaveBeenCalledTimes(2);
     expect(store.saved).toEqual([]);
     expect(isFreshXmrPrice(a)).toBe(true);
+    const history = await getXmrPriceConversion(1_700_000_000);
+    expect(history.prices[0].USD).toBe(-1);
+    expect(global.fetch).toHaveBeenCalledTimes(2);
+    process.env.XMR_PRICE_BACKFILL_ON_DEMAND = 'true';
+    await getXmrPriceConversion();
+    expect(global.fetch).toHaveBeenCalledTimes(2);
     dateNow.mockReturnValue(1_700_100_591_000);
     expect(isFreshXmrPrice(a)).toBe(false);
   });
@@ -182,6 +188,27 @@ describe('XMR price history', () => {
     expect(result).toMatchObject({ USD: 599, source: 'kraken' });
     expect(isFreshXmrPrice({ ...result, time: 1_700_100_031 })).toBe(false);
     expect(isFreshXmrPrice({ ...result, time: 1_700_099_399 })).toBe(false);
+  });
+
+  it('retries optional history after a rate-limited backfill recovers', async () => {
+    const store = new MemoryXmrPriceStore();
+    setXmrPriceStoreForTests(store);
+    process.env.XMR_PRICE_BACKFILL_ON_DEMAND = 'true';
+    let historyAvailable = false;
+    global.fetch = jest.fn((url: string) => {
+      if (url.includes('/simple/price')) return Promise.resolve(response({ monero: { usd: 150, last_updated_at: 1_700_099_999 } }));
+      if (!historyAvailable && !url.includes('vs_currency=usd')) return Promise.resolve({ ok: false, status: 429 } as Response);
+      return Promise.resolve(response({ prices: [[1_700_000_000_000, 140]] }));
+    }) as typeof fetch;
+    await getXmrPriceConversion();
+    expect(global.fetch).toHaveBeenCalledTimes(8);
+    expect(store.saved.some(item => item.time === bucket(1_700_000_000) && item.USD === 140)).toBe(true);
+    historyAvailable = true;
+    mockMemoryCache.data.delete('xmr-price:coingecko-cooldown');
+    mockMemoryCache.data.delete('xmr-price-backfill:recent:1095:retry');
+    await getXmrPriceConversion();
+    expect(global.fetch).toHaveBeenCalledTimes(15);
+    expect(store.saved.some(item => item.time === bucket(1_700_000_000))).toBe(true);
   });
 
   it('uses a stored nearest point for timestamp lookups', async () => {
