@@ -38,7 +38,7 @@ def main():
     for locale, definition in locales.items():
         path = ROOT / 'frontend' / definition['translation']
         target = read_units(path)
-        missing, empty, broken, unchanged = [], [], [], []
+        missing, empty, broken, unchanged, stale_source = [], [], [], [], []
         for key, source_unit in source.items():
             original = source_unit.find('x:source', NS)
             if not text(original):
@@ -47,6 +47,9 @@ def main():
             if item is None:
                 missing.append(key)
                 continue
+            catalog_source = item.find('x:source', NS)
+            if text(catalog_source) != text(original) or placeholders(catalog_source) != placeholders(original):
+                stale_source.append(key)
             translation = item.find('x:target', NS)
             if not text(translation) and not placeholders(translation):
                 empty.append(key)
@@ -55,7 +58,7 @@ def main():
                 broken.append({'id': key, 'expected': dict(placeholders(original)), 'found': dict(placeholders(translation))})
             if text(original) == text(translation):
                 unchanged.append(key)
-        report['locales'][locale] = {'missing': missing, 'empty': empty, 'broken_placeholders': broken, 'unchanged_review': unchanged}
+        report['locales'][locale] = {'missing': missing, 'empty': empty, 'broken_placeholders': broken, 'unchanged_review': unchanged, 'stale_source_review': stale_source}
     output = json.dumps(report, ensure_ascii=False, indent=2) + '\n'
     if args.output:
         args.output.write_text(output)
