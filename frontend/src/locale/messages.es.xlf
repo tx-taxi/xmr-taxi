@@ -2937,7 +2937,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fee-rates" datatype="html">
         <source>See Bitcoin feerates visualized over time, including minimum and maximum feerates per block along with feerates at various percentiles.</source>
-        <target>See Monero fee rates visualized over time, including minimum and maximum fee rates per block along with fee rates at various percentiles.</target>
+        <target>Consulta la evolución de las tasas de comisión de Monero, incluidos los valores mínimo y máximo por bloque y varios percentiles.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">74</context>
@@ -2978,7 +2978,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees" datatype="html">
         <source>See the average mining fees earned per Bitcoin block visualized in BTC and USD over time.</source>
-        <target>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</target>
+        <target>Consulta la evolución de las comisiones medias de minería por bloque de Monero en XMR y moneda fiduciaria.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">71</context>
@@ -3043,7 +3043,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees-subsidy" datatype="html">
         <source>See the mining fees earned per Bitcoin block compared to the Bitcoin block subsidy, visualized in BTC and USD over time.</source>
-        <target>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</target>
+        <target>Compara las comisiones de minería de cada bloque de Monero con su subsidio a lo largo del tiempo, en XMR y USD.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">80</context>
@@ -3481,7 +3481,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-rewards" datatype="html">
         <source>See Bitcoin block rewards in BTC and USD visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
-        <target>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</target>
+        <target>Consulta la evolución de las recompensas de los bloques de Monero en XMR y moneda fiduciaria. Las recompensas son la suma del subsidio y las comisiones.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-rewards-graph/block-rewards-graph.component.ts</context>
           <context context-type="linenumber">69</context>
@@ -3506,7 +3506,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-sizes" datatype="html">
         <source>See Monero block sizes and block weights, both measured in bytes, visualized over time.</source>
-        <target>See Monero block sizes visualized over time.</target>
+        <target>Consulta la evolución del tamaño de los bloques de Monero.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">66</context>
@@ -5463,7 +5463,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
         <source>See hashrate and difficulty for the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> network visualized over time.</source>
-        <target>See Monero hashrate and difficulty<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> visualized over time.</target>
+        <target>Consulta la evolución de la tasa de hash y la dificultad de Monero<x id="PH"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">79</context>
@@ -6635,7 +6635,7 @@
       </trans-unit>
       <trans-unit id="price-chart.title" datatype="html">
         <source>Bitcoin Price</source>
-        <target>XMR Price</target>
+        <target>Precio de XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">77</context>
@@ -6643,7 +6643,7 @@
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
         <source>See the Bitcoin price in USD visualized over time.</source>
-        <target>See the Monero price in USD visualized over time.</target>
+        <target>Consulta la evolución del precio de Monero en USD.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">78</context>
@@ -11476,7 +11476,7 @@
       </trans-unit>
       <trans-unit id="32fba724df729afb840693b40e3f8869356f4e33" datatype="html">
         <source>Size</source>
-        <target>Size</target>
+        <target>Tamaño</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">39</context>
@@ -11530,7 +11530,7 @@
       </trans-unit>
       <trans-unit id="a0c19cdf2e20449ee2b70d469a5fb00973024e43" datatype="html">
         <source>Block blob</source>
-        <target>Block blob</target>
+        <target>Datos binarios del bloque</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">335</context>
@@ -11565,7 +11565,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.view-tags" datatype="html">
         <source>View tags</source>
-        <target>View tags</target>
+        <target>Etiquetas de vista</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">55</context>
@@ -11594,7 +11594,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesBtc" datatype="html">
         <source>Fees XMR</source>
-        <target>Fees XMR</target>
+        <target>Comisiones XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">116</context>
@@ -11602,7 +11602,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesFiat" datatype="html">
         <source>Fees <x id="currency" equiv-text="this.currency"/></source>
-        <target>Fees <x id="currency" equiv-text="this.currency"/></target>
+        <target>Comisiones <x id="currency"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">117</context>
@@ -11610,7 +11610,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.avgBlock" datatype="html">
         <source>* On average around block <x id="block" equiv-text="data[0].data[2]"/></source>
-        <target>* On average around block <x id="block" equiv-text="data[0].data[2]"/></target>
+        <target>* En promedio, alrededor del bloque <x id="block"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">180</context>
@@ -11618,7 +11618,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html">
         <source>Subsidy</source>
-        <target>Subsidy</target>
+        <target>Subsidio</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">57</context>
@@ -11626,7 +11626,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.fees" datatype="html">
         <source>Fees</source>
-        <target>Fees</target>
+        <target>Comisiones</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">58</context>
@@ -11634,7 +11634,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html">
         <source>Subsidy (USD)</source>
-        <target>Subsidy (USD)</target>
+        <target>Subsidio (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">59</context>
@@ -11642,7 +11642,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html">
         <source>Fees (USD)</source>
-        <target>Fees (USD)</target>
+        <target>Comisiones (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -11650,7 +11650,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html">
         <source>Subsidy (%)</source>
-        <target>Subsidy (%)</target>
+        <target>Subsidio (%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -11658,7 +11658,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html">
         <source>Fees (%)</source>
-        <target>Fees (%)</target>
+        <target>Comisiones (%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -11666,7 +11666,7 @@
       </trans-unit>
       <trans-unit id="f7861032fb8a0dd0876cef908e93dd380cdf509d" datatype="html">
         <source>XMR Price</source>
-        <target>XMR Price</target>
+        <target>Precio de XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">8</context>
