@@ -13321,6 +13321,34 @@
       <trans-unit id="xmr.footer.telegramLabel" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Únete al canal de Telegram de tx.taxi</target></trans-unit>
       <trans-unit id="xmr.brand.imageAlt" datatype="html"><source>xmr.tx.taxi Monero explorer</source><target>Explorador de Monero xmr.tx.taxi</target></trans-unit>
       <trans-unit id="xmr.nav.returnHub" datatype="html"><source>Back to tx.taxi</source><target>Volver a tx.taxi</target></trans-unit>
+
+      <trans-unit id="taxi.timezone.minus12" datatype="html"><source>Anywhere on Earth (AoE)</source><target>Cualquier lugar de la Tierra (AoE)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html"><source>Samoa Standard Time (SST)</source><target>Hora estándar de Samoa (SST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html"><source>Hawaii Standard Time (HST)</source><target>Hora estándar de Hawái (HST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html"><source>Alaska Standard Time (AKST)</source><target>Hora estándar de Alaska (AKST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html"><source>Pacific Standard Time (PST)</source><target>Hora estándar del Pacífico (PST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html"><source>Mountain Standard Time (MST)</source><target>Hora estándar de la montaña (MST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html"><source>Central Standard Time (CST)</source><target>Hora estándar central (CST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html"><source>Eastern Standard Time (EST)</source><target>Hora estándar del este (EST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html"><source>Atlantic Standard Time (AST)</source><target>Hora estándar del Atlántico (AST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html"><source>Argentina Time (ART)</source><target>Hora de Argentina (ART)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html"><source>Fernando de Noronha Time (FNT)</source><target>Hora de Fernando de Noronha (FNT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html"><source>Azores Time (AZOT)</source><target>Hora de las Azores (AZOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html"><source>Greenwich Mean Time (GMT)</source><target>Hora media de Greenwich (GMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html"><source>Central European Time (CET)</source><target>Hora central europea (CET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html"><source>Eastern European Time (EET)</source><target>Hora de Europa oriental (EET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html"><source>Moscow Standard Time (MSK)</source><target>Hora estándar de Moscú (MSK)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html"><source>Armenia Time (AMT)</source><target>Hora de Armenia (AMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html"><source>Pakistan Standard Time (PKT)</source><target>Hora estándar de Pakistán (PKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html"><source>Xinjiang Time (XJT)</source><target>Hora de Xinjiang (XJT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html"><source>Indochina Time (ICT)</source><target>Hora de Indochina (ICT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html"><source>Hong Kong Time (HKT)</source><target>Hora de Hong Kong (HKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html"><source>Japan Standard Time (JST)</source><target>Hora estándar de Japón (JST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html"><source>Australian Eastern Standard Time (AEST)</source><target>Hora estándar del este de Australia (AEST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html"><source>Norfolk Time (NFT)</source><target>Hora de Norfolk (NFT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target>Hora estándar de Nueva Zelanda (NZST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target>Hora de Tonga (TOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target>Hora de las islas de la Línea (LINT)</target></trans-unit>
     </body>
   </file>
 </xliff>
