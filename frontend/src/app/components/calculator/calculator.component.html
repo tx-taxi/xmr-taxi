@@ -28,7 +28,7 @@
       <form [formGroup]="form" class="calculator-form">
         <div class="input-group input-group-lg mb-1">
           <span class="input-group-text">{{ currency$ | async }}</span>
-          <input type="text" inputmode="decimal" class="form-control" formControlName="fiat" (input)="transformInput('fiat')" (click)="selectAll($event)">
+          <input type="text" inputmode="decimal" class="form-control" formControlName="fiat" [readOnly]="!isValidPrice(price$ | async)" [attr.aria-label]="es ? 'Importe fiduciario' : 'Fiat amount'" (input)="transformInput('fiat')" (click)="selectAll($event)">
           <app-clipboard [button]="true" [text]="form.get('fiat').value" [class]="'btn btn-lg btn-secondary ms-1'"></app-clipboard>
         </div>
 
@@ -69,12 +69,12 @@
 
     <div class="row calculator-inline-row justify-content-center mt-3">
       <div class="symbol" *ngIf="{ value: (price$ | async) } as priceData">
-        @if (todaySelected) {
-          <span>Fiat price last updated <app-time kind="since" [time]="lastFiatPrice$ | async" [fastRender]="true"></app-time>: {{ priceData.value | fiatCurrency : '1.0-0' : (currency$ | async) }}</span>
-        } @else if (priceData.value > 0) {
-          <span>Fiat daily closing price <app-time kind="since" [time]="timestamp$ | async" [fastRender]="true"></app-time>: {{ priceData.value | fiatCurrency : '1.0-0' : (currency$ | async) }}</span>
+        @if (!isValidPrice(priceData.value)) {
+          <span>{{ es ? 'Precio fiduciario no disponible para la fecha seleccionada' : 'Fiat price not available for the selected date' }}</span>
+        } @else if (todaySelected) {
+          <span>{{ es ? 'Precio fiduciario' : 'Fiat price' }}<ng-container *ngIf="lastFiatPrice$ | async as updated"> {{ es ? 'actualizado' : 'last updated' }} <app-time kind="since" [time]="updated" [fastRender]="true"></app-time></ng-container>: {{ priceData.value | fiatCurrency : '1.0-0' : (currency$ | async) }}</span>
         } @else {
-          <span>Fiat price not available for the selected date</span>
+          <span>{{ es ? 'Precio fiduciario histórico' : 'Historical fiat price' }} <app-time kind="since" [time]="timestamp$ | async" [fastRender]="true"></app-time>: {{ priceData.value | fiatCurrency : '1.0-0' : (currency$ | async) }}</span>
         }
       </div>
     </div>

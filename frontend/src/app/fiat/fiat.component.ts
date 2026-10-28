@@ -44,12 +44,8 @@ export class FiatComponent implements OnInit, OnDestroy {
     if (Number.isFinite(direct) && direct > 0) {
       return direct;
     }
-    if (historical) {
-      const usd = historical.price?.USD;
-      const exchange = historical.exchangeRates?.['USD' + this.currency];
-      const converted = usd * exchange;
-      return Number.isFinite(converted) && converted > 0 ? converted : null;
-    }
+    // Historical conversions must come from the same historical observation;
+    // PriceService's exchangeRates can represent a different date.
     return null;
   }
 

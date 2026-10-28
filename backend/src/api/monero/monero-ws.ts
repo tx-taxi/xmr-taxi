@@ -3,8 +3,7 @@ import { WebSocketServer, WebSocket } from 'ws';
 import { MoneroApi } from './monero-api';
 import { MoneroEventBus } from './monero-event-bus';
 import { IMoneroApi } from './monero-api.interface';
-import { getLatestXmrPrice, priceToConversions, XmrApiPrice } from './xmr-price';
-import memoryCache from '../memory-cache';
+import { getCachedFreshXmrPrice, getLatestXmrPrice, isFreshXmrPrice, priceToConversions } from './xmr-price';
 import { shapeXmrDifficultyAdjustment } from './xmr-difficulty';
 import { identifyXmrMinerPool, unknownXmrMinerPool } from './xmr-miner-fingerprint';
 import { XmrBlockAttribution, XmrMinerProof, XmrMinerProofRegistry } from './xmr-miner-proof-registry';
@@ -392,16 +391,23 @@ export class MoneroWs {
   }
 
   private cachedConversions(): Record<string, unknown> {
-    const price = memoryCache.get<XmrApiPrice>('xmr-price', 'latest')
-      ?? memoryCache.get<XmrApiPrice>('xmr-price', 'latest-stale');
-    return price ? { conversions: priceToConversions(price) } : {};
+    const price = getCachedFreshXmrPrice();
+    return price ? { conversions: priceToConversions(price), conversionInfo: { source: price.source || 'coingecko', time: price.time } } : {};
   }
 
   private refreshOptionalData(): void {
     if (!this.priceRefresh && Date.now() - this.priceRefreshStartedAt >= 60_000) {
       this.priceRefreshStartedAt = Date.now();
       this.priceRefresh = getLatestXmrPrice()
-        .then((price) => { this.broadcast({ conversions: priceToConversions(price) }); })
+        .then((price) => {
+          const fresh = isFreshXmrPrice(price);
+          const conversions = priceToConversions(price);
+          if (!fresh) for (const currency of Object.keys(conversions)) conversions[currency] = -1;
+          this.broadcast({
+            conversions,
+            conversionInfo: fresh ? { source: price.source || 'coingecko', time: price.time } : null,
+          });
+        })
         .catch(() => undefined)
         .finally(() => { this.priceRefresh = null; });
     }

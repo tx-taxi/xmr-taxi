@@ -14,6 +14,10 @@ import { supportedFiatCurrencies, writeSharedPreference } from '@app/services/sh
 })
 export class FiatSelectorComponent implements OnInit {
   fiatForm: UntypedFormGroup;
+  reference$ = this.stateService.fiatReference$.asObservable();
+  conversionInfo$ = this.stateService.conversionInfo$.asObservable();
+  readonly referenceTitle = $localize`:@@xmr.fiat.reference:ECB reference rate`;
+  readonly staleReferenceTitle = $localize`:@@xmr.fiat.referenceStale:ECB reference rate; update unavailable`;
   currencies = Object.entries(fiatCurrencies).sort((a: any, b: any) => {
     if (a[1].code < b[1].code) {
       return -1;

@@ -8,6 +8,8 @@ import config from '../../config';
 import database from '../../database';
 
 const COINGECKO_BASE = process.env.XMR_PRICE_API_URL ?? 'https://api.coingecko.com/api/v3';
+const KRAKEN_LAST_TRADE_URL = 'https://api.kraken.com/0/public/Trades?pair=XMRUSD&count=1';
+const MAX_FALLBACK_TRADE_AGE_SECONDS = 10 * 60;
 const CURRENCIES = ['USD', 'EUR', 'GBP', 'CAD', 'CHF', 'AUD', 'JPY'] as const;
 type XmrCurrency = typeof CURRENCIES[number];
 const HOUR_SECONDS = 3600;
@@ -19,6 +21,7 @@ const NEAREST_PRICE_TOLERANCE_SECONDS = 36 * HOUR_SECONDS;
 
 export interface XmrApiPrice {
   time: number;
+  source?: 'coingecko' | 'kraken';
   USD: number;
   EUR: number;
   GBP: number;
@@ -65,6 +68,13 @@ const emptyExchangeRates = (): XmrExchangeRates => ({
 function isValidPrice(price: XmrApiPrice): boolean {
   return Number.isFinite(price?.time)
     && CURRENCIES.some((currency) => Number.isFinite(price[currency]) && price[currency] > 0);
+}
+
+/** Current quotes may be displayed only while their source observation is recent. */
+export function isFreshXmrPrice(price: XmrApiPrice | null | undefined): price is XmrApiPrice {
+  if (!price || !isValidPrice(price)) return false;
+  const age = Date.now() / 1000 - price.time;
+  return age >= -30 && age <= MAX_FALLBACK_TRADE_AGE_SECONDS;
 }
 
 function exchangeRatesFromPrice(price: XmrApiPrice): XmrExchangeRates {
@@ -345,9 +355,13 @@ function isDatabaseEnabled(): boolean {
 }
 
 let priceStore = createDefaultStore();
+let currentPrice: XmrApiPrice | null = null;
+let currentPriceExpiry = 0;
 
 export function setXmrPriceStoreForTests(store: XmrPriceStore | null): void {
   priceStore = store ?? createDefaultStore();
+  currentPrice = null;
+  currentPriceExpiry = 0;
 }
 
 function nearestPrice(prices: XmrApiPrice[], timestamp: number, toleranceSeconds: number): XmrApiPrice | null {
@@ -366,7 +380,9 @@ function nearestPrice(prices: XmrApiPrice[], timestamp: number, toleranceSeconds
 
 function parseSimplePrice(body: unknown): XmrApiPrice {
   const monero = (body as { monero?: Record<string, unknown> })?.monero ?? {};
-  const price = emptyPrice(Number(monero.last_updated_at) || Math.floor(Date.now() / 1000));
+  const timestamp = Number(monero.last_updated_at);
+  const price = emptyPrice(Number.isFinite(timestamp) && timestamp > 0 ? timestamp : 0);
+  price.source = 'coingecko';
   for (const currency of CURRENCIES) {
     const value = Number(monero[currency.toLowerCase()]);
     price[currency] = Number.isFinite(value) && value > 0 ? value : -1;
@@ -386,21 +402,79 @@ export function priceToConversions(price: XmrApiPrice): Record<XmrCurrency, numb
   };
 }
 
-export async function getLatestXmrPrice(): Promise<XmrApiPrice> {
-  const cached = memoryCache.get<XmrApiPrice>('xmr-price', 'latest');
-  if (cached) {
-    return cached;
-  }
+let latestPriceInFlight: Promise<XmrApiPrice> | null = null;
 
+function currentCachedPrice(): XmrApiPrice | null {
+  if (currentPrice && Date.now() < currentPriceExpiry && isFreshXmrPrice(currentPrice)) return currentPrice;
+  const cached = memoryCache.get<XmrApiPrice>('xmr-price', 'latest');
+  return isFreshXmrPrice(cached) ? cached : null;
+}
+
+export function getCachedFreshXmrPrice(): XmrApiPrice | null {
+  const current = currentCachedPrice();
+  if (current) return current;
+  const stale = memoryCache.get<XmrApiPrice>('xmr-price', 'latest-stale');
+  return isFreshXmrPrice(stale) ? stale : null;
+}
+
+function cacheCurrentPrice(price: XmrApiPrice): void {
+  currentPrice = price;
+  currentPriceExpiry = Date.now() + 60_000;
+  memoryCache.set('xmr-price', 'latest', price, 60);
+}
+
+async function fetchKrakenLastTrade(): Promise<XmrApiPrice> {
+  const body = await fetchJson<{ error?: string[]; result?: Record<string, unknown> }>(KRAKEN_LAST_TRADE_URL);
+  if (!Array.isArray(body.error) || body.error.length || !body.result) throw new Error('Kraken trade unavailable');
+  const rows = body.result.XXMRZUSD;
+  if (!Array.isArray(rows) || !rows.length || !Array.isArray(rows[rows.length - 1])) throw new Error('Kraken trade unavailable');
+  const trade = rows[rows.length - 1] as unknown[];
+  const usd = Number(trade[0]);
+  const time = Number(trade[2]);
+  const now = Date.now() / 1000;
+  if (!Number.isFinite(usd) || usd <= 0 || !Number.isFinite(time) || time > now + 30 || now - time > MAX_FALLBACK_TRADE_AGE_SECONDS) {
+    throw new Error('Kraken trade is invalid or too old');
+  }
+  const price = emptyPrice(Math.floor(time));
+  price.USD = usd;
+  price.source = 'kraken';
+  return price;
+}
+
+export async function getLatestXmrPrice(): Promise<XmrApiPrice> {
+  const cached = currentCachedPrice();
+  if (cached) return cached;
+
+  if (latestPriceInFlight) return latestPriceInFlight;
+  latestPriceInFlight = fetchLatestXmrPrice().finally(() => { latestPriceInFlight = null; });
+  return latestPriceInFlight;
+}
+
+async function fetchLatestXmrPrice(): Promise<XmrApiPrice> {
+  const coingeckoCoolingDown = !!memoryCache.get<boolean>('xmr-price', 'coingecko-cooldown');
   try {
+    if (coingeckoCoolingDown) throw new Error('CoinGecko temporarily unavailable');
     const price = parseSimplePrice(await fetchJson<unknown>(simplePriceUrl()));
-    memoryCache.set('xmr-price', 'latest', price, 60);
+    if (!isFreshXmrPrice(price) || price.USD <= 0) throw new Error('CoinGecko returned no fresh USD price');
+    cacheCurrentPrice(price);
     memoryCache.set('xmr-price', 'latest-stale', price, 86_400);
     await savePriceHistory([price]);
     return price;
   } catch (err) {
     logger.warn(`xmr-price: latest price fetch failed: ${err instanceof Error ? err.message : err}`);
-    return memoryCache.get<XmrApiPrice>('xmr-price', 'latest-stale') ?? emptyPrice();
+    if (!coingeckoCoolingDown) memoryCache.set('xmr-price', 'coingecko-cooldown', true, 300);
+    try {
+      if (memoryCache.get<boolean>('xmr-price', 'fallback-cooldown')) throw new Error('Kraken temporarily unavailable');
+      // A recent last trade is a current USD quote, never historical data.
+      const fallback = await fetchKrakenLastTrade();
+      cacheCurrentPrice(fallback);
+      return fallback;
+    } catch (fallbackError) {
+      logger.warn(`xmr-price: fallback price fetch failed: ${fallbackError instanceof Error ? fallbackError.message : fallbackError}`);
+      if (!memoryCache.get<boolean>('xmr-price', 'fallback-cooldown')) memoryCache.set('xmr-price', 'fallback-cooldown', true, 60);
+      const stale = memoryCache.get<XmrApiPrice>('xmr-price', 'latest-stale');
+      return isFreshXmrPrice(stale) ? stale! : emptyPrice();
+    }
   }
 }
 

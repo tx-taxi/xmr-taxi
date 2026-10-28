@@ -5,6 +5,7 @@ import { MoneroEventBus } from '../monero-event-bus';
 import { MoneroWs } from '../monero-ws';
 import { getLatestXmrPrice, XmrApiPrice } from '../xmr-price';
 import { XmrBlockAttribution, XmrMinerProofRegistry } from '../xmr-miner-proof-registry';
+import memoryCache from '../../memory-cache';
 
 jest.mock('../xmr-price', () => ({
   ...jest.requireActual('../xmr-price'),
@@ -29,6 +30,18 @@ function deferred<T>() {
 const nextTurn = () => new Promise<void>((resolve) => setImmediate(resolve));
 
 describe('Monero dashboard loading boundaries', () => {
+  it('does not include expired prices in fresh websocket snapshots', () => {
+    const adapter = new MoneroWs({} as MoneroApi, new EventEmitter() as unknown as MoneroEventBus);
+    const now = Math.floor(Date.now() / 1000);
+    const values = { USD: 150, EUR: 130, GBP: 110, CAD: 200, CHF: 120, AUD: 220, JPY: 20_000 };
+    memoryCache.set('xmr-price', 'latest', { ...values, time: now - 601 }, 60);
+    memoryCache.set('xmr-price', 'latest-stale', { ...values, time: now - 3600 }, 3600);
+    expect((adapter as any).cachedConversions()).toEqual({});
+    memoryCache.set('xmr-price', 'latest', { ...values, time: now - 1, source: 'kraken' }, 60);
+    expect((adapter as any).cachedConversions()).toMatchObject({
+      conversions: { USD: 150 }, conversionInfo: { source: 'kraken', time: now - 1 },
+    });
+  });
   it('serves concurrent visitors before optional providers finish, then pushes their enrichment', async () => {
     const price = deferred<XmrApiPrice>();
     const attributions = deferred<Map<string, XmrBlockAttribution>>();
@@ -78,7 +91,7 @@ describe('Monero dashboard loading boundaries', () => {
     expect(await second).toEqual(await first);
 
     const blockHash = (snapshot?.blocks.at(-1).id ?? '') as string;
-    price.resolve({ time: 1_800_000_000, USD: 150, EUR: 130, GBP: 110, CAD: 200, CHF: 120, AUD: 220, JPY: 20_000 });
+    price.resolve({ time: Math.floor(Date.now() / 1000), USD: 150, EUR: 130, GBP: 110, CAD: 200, CHF: 120, AUD: 220, JPY: 20_000 });
     attributions.resolve(new Map([[blockHash, {
       pool: { id: 1, name: 'P2Pool', slug: 'p2pool', minerNames: ['P2Pool'] },
       source: 'p2pool.observer',

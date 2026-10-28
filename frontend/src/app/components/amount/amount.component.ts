@@ -30,7 +30,7 @@ export class AmountComponent implements OnInit, OnDestroy {
   @Input() blockConversion: Price;
   @Input() forceBtc: boolean = false;
   @Input() ignoreViewMode: boolean = false;
-  @Input() forceBlockConversion: boolean = false; // true = displays fiat price as 0 if blockConversion is undefined instead of falling back to conversions
+  @Input() forceBlockConversion: boolean = false; // do not substitute a current quote for a missing historical quote
   @Input() blurHiddenAmount: boolean = false;
   @Input() unitStyle: any;
 
@@ -42,6 +42,22 @@ export class AmountComponent implements OnInit, OnDestroy {
       this.currency = fiat;
       this.cd.markForCheck();
     });
+  }
+
+  readonly unavailableTitle = $localize`:@@xmr.fiat.unavailable:Fiat value unavailable`;
+
+  historicalRate(): number | null {
+    // Bulk historical responses carry one current-ish FX snapshot for many
+    // timestamps. Only a direct quote from this historical price is reliable.
+    return this.validRate(this.blockConversion?.price?.[this.currency]);
+  }
+
+  currentRate(conversions: Record<string, number>): number | null {
+    return this.validRate(conversions?.[this.currency]);
+  }
+
+  private validRate(value: number): number | null {
+    return typeof value === 'number' && Number.isFinite(value) && value > 0 ? value : null;
   }
 
   ngOnInit() {

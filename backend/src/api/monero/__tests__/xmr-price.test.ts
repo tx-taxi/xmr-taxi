@@ -19,6 +19,8 @@ jest.mock('../../memory-cache', () => ({
 
 import {
   getXmrPriceConversion,
+  getLatestXmrPrice,
+  isFreshXmrPrice,
   setXmrPriceStoreForTests,
   XmrApiPrice,
   XmrPriceStore,
@@ -121,7 +123,7 @@ describe('XMR price history', () => {
         chf: 136,
         aud: 233,
         jpy: 23_250,
-        last_updated_at: 1_700_010_001,
+        last_updated_at: 1_700_099_900,
       },
     })) as typeof fetch;
 
@@ -131,14 +133,55 @@ describe('XMR price history', () => {
     expect(result.prices.map((item) => item.time)).toEqual([
       bucket(1_700_000_000),
       bucket(1_700_003_600),
-      bucket(1_700_010_001),
+      bucket(1_700_099_900),
     ]);
     expect(result.prices[result.prices.length - 1]).toMatchObject({ USD: 155, EUR: 142 });
     expect(result.exchangeRates.USDEUR).toBeCloseTo(142 / 155);
     expect(store.saved[store.saved.length - 1]).toMatchObject({
-      time: bucket(1_700_010_001),
+      time: bucket(1_700_099_900),
       USD: 155,
     });
+  });
+
+  it('uses a recent Kraken trade once for concurrent requests and does not store it as history', async () => {
+    const store = new MemoryXmrPriceStore();
+    setXmrPriceStoreForTests(store);
+    global.fetch = jest.fn((url: string) => {
+      if (url.includes('coingecko')) return Promise.resolve({ ok: false, status: 429 } as Response);
+      if (url.includes('kraken')) return Promise.resolve(response({ error: [], result: { XXMRZUSD: [['598.25', '0.1', 1_700_099_990, 'b', 'l']], last: '1' } }));
+      throw new Error('unexpected provider');
+    }) as typeof fetch;
+    const [a, b] = await Promise.all([getLatestXmrPrice(), getLatestXmrPrice()]);
+    expect(a).toMatchObject({ USD: 598.25, EUR: -1, time: 1_700_099_990, source: 'kraken' });
+    expect(b).toEqual(a);
+    expect(global.fetch).toHaveBeenCalledTimes(2);
+    expect(store.saved).toEqual([]);
+    expect(isFreshXmrPrice(a)).toBe(true);
+    dateNow.mockReturnValue(1_700_100_591_000);
+    expect(isFreshXmrPrice(a)).toBe(false);
+  });
+
+  it('returns unavailable instead of a stale or malformed fallback trade', async () => {
+    setXmrPriceStoreForTests(new MemoryXmrPriceStore());
+    global.fetch = jest.fn((url: string) => Promise.resolve(url.includes('coingecko')
+      ? { ok: false, status: 429 } as Response
+      : response({ error: [], result: { XXMRZUSD: [['598', '0.1', 1_700_000_000]] } }))) as typeof fetch;
+    const result = await getLatestXmrPrice();
+    expect(result.USD).toBe(-1);
+    expect(result.EUR).toBe(-1);
+    await getLatestXmrPrice();
+    expect(global.fetch).toHaveBeenCalledTimes(2);
+  });
+
+  it('rejects CoinGecko quotes with missing, stale or future source timestamps', async () => {
+    setXmrPriceStoreForTests(new MemoryXmrPriceStore());
+    global.fetch = jest.fn((url: string) => Promise.resolve(url.includes('coingecko')
+      ? response({ monero: { usd: 100 } })
+      : response({ error: [], result: { XXMRZUSD: [['599', '0.1', 1_700_099_999]] } }))) as typeof fetch;
+    const result = await getLatestXmrPrice();
+    expect(result).toMatchObject({ USD: 599, source: 'kraken' });
+    expect(isFreshXmrPrice({ ...result, time: 1_700_100_031 })).toBe(false);
+    expect(isFreshXmrPrice({ ...result, time: 1_700_099_399 })).toBe(false);
   });
 
   it('uses a stored nearest point for timestamp lookups', async () => {

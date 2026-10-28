@@ -8,6 +8,7 @@ export interface WebsocketResponse {
   block?: BlockExtended;
   blocks?: BlockExtended[];
   conversions?: Record<string, number>;
+  conversionInfo?: { source: 'coingecko' | 'kraken'; time: number } | null;
   txConfirmed?: string;
   historicalDate?: string;
   mempoolInfo?: MempoolInfo;

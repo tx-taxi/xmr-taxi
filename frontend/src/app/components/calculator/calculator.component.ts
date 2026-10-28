@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { BehaviorSubject, combineLatest, Observable } from 'rxjs';
-import { distinctUntilChanged, map, shareReplay, switchMap } from 'rxjs/operators';
+import { BehaviorSubject, combineLatest, Observable, of } from 'rxjs';
+import { catchError, distinctUntilChanged, map, shareReplay, switchMap } from 'rxjs/operators';
 import { StateService } from '@app/services/state.service';
 import { ApiService } from '@app/services/api.service';
 import { Price } from '@app/services/price.service';
@@ -23,13 +23,13 @@ export class CalculatorComponent implements OnInit {
   todayDateModel: NgbDateStruct;
 
   form: FormGroup;
-  currentPrice: number | undefined = undefined;
+  currentPrice: number | null | undefined = undefined;
   currentCurrency = 'USD';
   currencyDecimals = 2;
 
   currency$ = this.stateService.fiatCurrency$;
-  price$: Observable<number>;
-  lastFiatPrice$: Observable<number>;
+  price$: Observable<number | null>;
+  lastFiatPrice$: Observable<number | null>;
   timestamp$ = new BehaviorSubject<number>(new Date().getTime() / 1000);
 
   constructor(
@@ -51,10 +51,7 @@ export class CalculatorComponent implements OnInit {
       atomicUnits: [0],
     });
 
-    this.lastFiatPrice$ = this.stateService.conversions$.asObservable()
-      .pipe(
-        map((conversions) => conversions.time)
-      );
+    this.lastFiatPrice$ = this.stateService.conversionInfo$.pipe(map(info => info?.time ?? null));
 
     this.price$ = combineLatest({
       currency: this.currency$.pipe(distinctUntilChanged()),
@@ -68,64 +65,63 @@ export class CalculatorComponent implements OnInit {
           ? this.stateService.conversions$.asObservable()
           : this.apiService.getHistoricalPrice$(timestamp, currency).pipe(
             map((p: any) => {
-              const formatted: { time: number; [key: string]: number } = {
-                time: p.prices[0].time
-              };
-              formatted[this.currentCurrency] = Math.max(0, p.prices[0][this.currentCurrency]);
-              return formatted;
-            })
+              const price = p?.prices?.[0];
+              return price ? { [currency]: price[currency] } : {};
+            }),
+            catchError(() => of({}))
           );
       }),
       map((conversions) => {
-        return conversions[this.currentCurrency];
+        const rate = conversions?.[this.currentCurrency];
+        return this.isValidPrice(rate) ? rate : null;
       }),
       // Share one latest price stream across all form subscriptions to avoid duplicate API calls.
       shareReplay({ bufferSize: 1, refCount: true })
     );
 
-    combineLatest([
-      this.price$,
-      this.form.get('fiat').valueChanges
-    ]).subscribe(([price, value]) => {
+    // Keep the field the user last edited authoritative when a quote changes.
+    this.price$.subscribe((price) => {
       this.currentPrice = price;
-      const rate = parseFloat((value / price).toFixed(XMR_DECIMALS));
-      if (isNaN(value)) {
-        return;
-      }
-      const xmrValue = rate.toFixed(XMR_DECIMALS);
-      this.form.get('xmr').setValue(xmrValue, { emitEvent: false });
-      this.form.get('atomicUnits').setValue(this.toAtomicUnits(xmrValue), { emitEvent: false } );
+      this.recalculate(this.lastEdited, this.form.get(this.lastEdited).value, price);
     });
-
-    combineLatest([
-      this.price$,
-      this.form.get('xmr').valueChanges
-    ]).subscribe(([price, value]) => {
-      this.currentPrice = price;
-      const rate = parseFloat((value * price).toFixed(8));
-      if (isNaN(value)) {
-        return;
-      }
-      this.form.get('fiat').setValue(this.formatFiat(rate), { emitEvent: false } );
-      this.form.get('atomicUnits').setValue(this.toAtomicUnits(value), { emitEvent: false } );
-    });
-
-    combineLatest([
-      this.price$,
-      this.form.get('atomicUnits').valueChanges
-    ]).subscribe(([price, value]) => {
-      this.currentPrice = price;
-      if (isNaN(value)) {
-        return;
-      }
-      const xmrValue = this.atomicUnitsToXmr(value);
-      const rate = parseFloat((parseFloat(xmrValue) * price).toFixed(8));
-      this.form.get('fiat').setValue(this.formatFiat(rate), { emitEvent: false } );
-      this.form.get('xmr').setValue(xmrValue, { emitEvent: false });
-    });
+    for (const name of ['fiat', 'xmr', 'atomicUnits'] as const) {
+      this.form.get(name).valueChanges.subscribe((value) => {
+        this.lastEdited = name;
+        this.recalculate(name, value, this.currentPrice);
+      });
+    }
 
     // Default form with 1 XMR.
     this.form.get('xmr').setValue(1, { emitEvent: true });
+  }
+
+  private lastEdited: 'fiat' | 'xmr' | 'atomicUnits' = 'xmr';
+
+  private recalculate(name: 'fiat' | 'xmr' | 'atomicUnits', value: string | number, price: number | null | undefined): void {
+    if (!Number.isFinite(Number(value))) return;
+    if (name === 'fiat') {
+      if (!this.isValidPrice(price)) {
+        // Preserve the last known XMR amount, but remove the unavailable fiat value.
+        this.lastEdited = 'xmr';
+        this.form.get('fiat').setValue('', { emitEvent: false });
+        return;
+      }
+      const xmrValue = parseFloat((Number(value) / price).toFixed(XMR_DECIMALS)).toFixed(XMR_DECIMALS);
+      this.form.get('xmr').setValue(xmrValue, { emitEvent: false });
+      this.form.get('atomicUnits').setValue(this.toAtomicUnits(xmrValue), { emitEvent: false });
+      return;
+    }
+    const xmrValue = name === 'atomicUnits' ? this.atomicUnitsToXmr(value) : String(value);
+    const rate = this.isValidPrice(price) ? parseFloat((Number(xmrValue) * price).toFixed(8)) : null;
+    this.form.get('fiat').setValue(rate === null ? '' : this.formatFiat(rate), { emitEvent: false });
+    if (name === 'atomicUnits') this.form.get('xmr').setValue(xmrValue, { emitEvent: false });
+    else this.form.get('atomicUnits').setValue(this.toAtomicUnits(value), { emitEvent: false });
+  }
+
+  get es(): boolean { return this.locale.startsWith('es'); }
+
+  isValidPrice(price: unknown): price is number {
+    return typeof price === 'number' && Number.isFinite(price) && price > 0;
   }
 
   transformInput(name: string): void {

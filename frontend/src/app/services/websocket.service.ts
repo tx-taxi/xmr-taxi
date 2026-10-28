@@ -326,7 +326,7 @@ export class WebsocketService {
     }
 
     if (response.conversions) {
-      this.stateService.conversions$.next(response.conversions);
+      this.stateService.updateCurrentConversions(response.conversions, response.conversionInfo);
     }
 
     if (response['mempool-blocks']) {

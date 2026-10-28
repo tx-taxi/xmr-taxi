@@ -2,4 +2,6 @@
     <select formControlName="fiat" class="form-select form-select-sm form-control-secondary form-control mx-auto" style="width: 85px;" (change)="changeFiat()">
         <option *ngFor="let currency of currencies" [value]="currency[1].code">{{ currency[1].code }}</option>
     </select>
+    <ng-container *ngIf="conversionInfo$ | async as quote"><a *ngIf="quote.source === 'kraken'" href="https://www.kraken.com/prices/monero" target="_blank" rel="noopener noreferrer" class="fiat-reference"><span i18n="@@xmr.fiat.krakenTrade">Kraken last trade</span> · {{ quote.time * 1000 | date:'short' }}</a></ng-container>
+    <a *ngIf="reference$ | async as reference" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" target="_blank" rel="noopener noreferrer" class="fiat-reference" [title]="reference.stale ? staleReferenceTitle : referenceTitle">ECB · {{ reference.asOf }}<span *ngIf="reference.stale" i18n="@@xmr.fiat.stale"> · stale</span></a>
 </div>

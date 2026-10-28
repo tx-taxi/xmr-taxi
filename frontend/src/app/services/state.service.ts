@@ -8,6 +8,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { filter, map, scan, share, shareReplay } from 'rxjs/operators';
 import { StorageService } from '@app/services/storage.service';
 import { readSharedPreference, supportedFiatCurrencies } from '@app/services/shared-preferences';
+import { FiatReferenceConversions, FiatReferenceInfo } from '@app/services/fiat-reference-conversions';
 import { hasTouchScreen } from '@app/shared/pipes/bytes-pipe/utils';
 import { ActiveFilter } from '@app/shared/filters.utils';
 
@@ -150,7 +151,10 @@ export class StateService {
   blocksSubject$ = new BehaviorSubject<BlockExtended[]>([]);
   blocks$: Observable<BlockExtended[]>;
   transactions$ = new BehaviorSubject<TransactionStripped[]>(null);
-  conversions$ = new ReplaySubject<Record<string, number>>(1);
+  fiatReference$ = new BehaviorSubject<FiatReferenceInfo | null>(null);
+  conversions$ = new FiatReferenceConversions(this.isBrowser, info => this.fiatReference$.next(info));
+  conversionInfo$ = new BehaviorSubject<{ source: 'coingecko' | 'kraken'; time: number } | null>(null);
+  private conversionExpiry?: ReturnType<typeof setTimeout>;
   mempoolInfo$ = new ReplaySubject<MempoolInfo>(1);
   mempoolBlocks$ = new ReplaySubject<MempoolBlock[]>(1);
   mempoolBlockUpdate$ = new Subject<MempoolBlockUpdate>();
@@ -187,6 +191,22 @@ export class StateService {
   timeLtr: BehaviorSubject<boolean>;
   hideFlow: BehaviorSubject<boolean>;
   fiatCurrency$: BehaviorSubject<string>;
+
+  updateCurrentConversions(conversions: Record<string, number>, info?: { source: 'coingecko' | 'kraken'; time: number } | null): void {
+    clearTimeout(this.conversionExpiry);
+    const ageMs = info ? Date.now() - info.time * 1000 : Infinity;
+    if (!info || !['coingecko', 'kraken'].includes(info.source) || !Number.isFinite(ageMs) || ageMs < -30_000 || ageMs >= 600_000) {
+      this.conversionInfo$.next(null);
+      this.conversions$.next(Object.fromEntries(Object.keys(conversions).map(currency => [currency, -1])));
+      return;
+    }
+    this.conversionInfo$.next(info);
+    this.conversions$.next(conversions);
+    this.conversionExpiry = setTimeout(() => {
+      this.conversionInfo$.next(null);
+      this.conversions$.next(Object.fromEntries(Object.keys(conversions).map(currency => [currency, -1])));
+    }, Math.max(1, 600_000 - ageMs));
+  }
   rateUnits$: BehaviorSubject<string>;
   blockDisplayMode$: BehaviorSubject<string>;
 
@@ -211,6 +231,7 @@ export class StateService {
     }
 
     this.env = Object.assign(defaultEnv, browserWindowEnv);
+    this.conversions$.setRouterUrl(this.env.TX_TAXI_ROUTER_URL);
 
     if (defaultEnv.BASE_MODULE !== 'mempool') {
       this.env.MINING_DASHBOARD = false;
@@ -302,6 +323,7 @@ export class StateService {
     const fiatPreference = sharedFiat && supportedFiatCurrencies.includes(sharedFiat)
       ? sharedFiat : (supportedFiatCurrencies.includes(legacyFiat) ? legacyFiat : 'USD');
     this.fiatCurrency$ = new BehaviorSubject<string>(fiatPreference);
+    this.fiatCurrency$.subscribe(currency => this.conversions$.select(currency));
     if (this.isBrowser) {
       // Cookies are shared across hosts, but do not emit storage events.
       const refreshFiatPreference = () => {

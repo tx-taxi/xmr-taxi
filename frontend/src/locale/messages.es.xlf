@@ -13162,6 +13162,11 @@
       <trans-unit id="xmr.block.tooltip.totalFees" datatype="html"><source>Total fees</source><target>Comisiones totales</target></trans-unit>
       <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Mediana de la tasa de comisión</target></trans-unit>
       <trans-unit id="xmr.block.tooltip.feeRange" datatype="html"><source>Fee range</source><target>Intervalo de comisiones</target></trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html"><source>ECB reference rate</source><target>Tipo de referencia del BCE</target></trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html"><source>ECB reference rate; update unavailable</source><target>Tipo de referencia del BCE; actualización no disponible</target></trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html"><source> · stale</source><target> · desactualizado</target></trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html"><source>Fiat value unavailable</source><target>Valor fiduciario no disponible</target></trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html"><source>Kraken last trade</source><target>Última operación de Kraken</target></trans-unit>
     </body>
   </file>
 </xliff>
