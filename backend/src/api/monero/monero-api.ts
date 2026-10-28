@@ -145,6 +145,8 @@ export class MoneroApi {
         '/get_transactions',
         { txs_hashes: hashes, decode_as_json: true, prune },
       );
+      // A busy/error daemon response is not evidence that the transaction is absent.
+      if (resp.status !== 'OK') throw new Error('Transaction metadata temporarily unavailable');
       return resp.txs ?? [];
     });
   }
