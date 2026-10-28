@@ -3,8 +3,7 @@
     <body>
       <trans-unit id="ngb.alert.close" datatype="html">
         <source>Close</source>
-        <target>(Newly Generated Coins)</target>
-        <context-group purpose="location">
+        <target>Schließen</target><context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/alert/alert.ts</context>
           <context context-type="linenumber">50</context>
         </context-group>
@@ -11755,6 +11754,225 @@
           <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="description">mining.no-observed-blocks</note>
+      </trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html">
+        <source>Monero explorer dashboard</source>
+        <target>Monero-Explorer-Übersicht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html">
+        <source>Switch to displaying block sizes</source>
+        <target>Blockgrößen anzeigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html">
+        <source>Switch to displaying total fees per block</source>
+        <target>Gesamtgebühren pro Block anzeigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source>
+        <target>Neueste Blöcke rechts anzeigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source>
+        <target>Neueste Blöcke links anzeigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22074d9b0ef5a18f1569ba121bf689923002ff17" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this block's fee rate</source>
+        <target>Geschätzte Gebühr für eine 2 kB große Monero-Transaktion bei der Gebührenrate dieses Blocks</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <note priority="1" from="description">Monero historical fee example</note>
+      </trans-unit>
+      <trans-unit id="6948786787037977434" datatype="html">
+        <source>Blocks</source>
+        <target>Blöcke</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="420763834450076269" datatype="html">
+        <source>Block</source>
+        <target>Block</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71862f6b2c89c8901f90240b219f01844a301dcb" datatype="html">
+        <source>Daemon floor or lowest observed current mempool rate</source>
+        <target>Daemon-Mindestwert oder niedrigste beobachtete aktuelle Mempool-Rate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (economy)</note>
+      </trans-unit>
+      <trans-unit id="77a014215a8ebca1d2cb97afd2d6d0b98f30064d" datatype="html">
+        <source>Derived from lower current Monero mempool fee rates</source>
+        <target>Aus niedrigeren aktuellen Monero-Mempool-Gebührenraten abgeleitet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (low priority)</note>
+      </trans-unit>
+      <trans-unit id="9b7f259ef00e0bc210c59220cbe1505594e08510" datatype="html">
+        <source>Derived from mid-range current Monero mempool fee rates</source>
+        <target>Aus mittleren aktuellen Monero-Mempool-Gebührenraten abgeleitet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (medium priority)</note>
+      </trans-unit>
+      <trans-unit id="841d41ed3f0a7f43195b96dd3f8006706810cd6d" datatype="html">
+        <source>Derived from the highest current Monero projected-block fee rates</source>
+        <target>Aus den höchsten aktuellen Gebührenraten der prognostizierten Monero-Blöcke abgeleitet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (high priority)</note>
+      </trans-unit>
+      <trans-unit id="b869c9a96b183dcb932213b60d4a26fb4e9fa2db" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this rate</source>
+        <target>Geschätzte Gebühr für eine 2 kB große Monero-Transaktion bei dieser Rate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html">
+        <source>Total fees</source>
+        <target>Gesamtgebühren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html">
+        <source>Median fee rate</source>
+        <target>Mediane Gebührenrate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html">
+        <source>Fee range</source>
+        <target>Gebührenbereich</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
+        <source>Pending Transactions</source>
+        <target>Ausstehende Transaktionen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.h1" datatype="html">
+        <source>Monero Block &amp; Pending Transactions Explorer</source>
+        <target>Monero-Explorer für Blöcke und ausstehende Transaktionen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Dashboard hidden heading</note>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html">
+        <source>Fiat value unavailable</source>
+        <target>Fiatwert nicht verfügbar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/amount/amount.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html">
+        <source>Kraken last trade</source>
+        <target>Letzter Handel auf Kraken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html">
+        <source> · stale</source>
+        <target>· veraltet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html">
+        <source>ECB reference rate</source>
+        <target>EZB-Referenzkurs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html">
+        <source>ECB reference rate; update unavailable</source>
+        <target>EZB-Referenzkurs; Aktualisierung nicht verfügbar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.pool.logoNamed" datatype="html">
+        <source>Logo of <x id="name" equiv-text="this.name" /> mining pool</source>
+        <target>Logo des Mining-Pools <x id="name" equiv-text="this.name" /></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html">
+        <source>Mining pool logo</source>
+        <target>Mining-Pool-Logo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>
