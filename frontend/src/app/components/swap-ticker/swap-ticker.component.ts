@@ -38,15 +38,17 @@ interface SwapGoggleOption {
   standalone: false,
 })
 export class SwapTickerComponent implements OnInit {
+  readonly noUpstreamTrades = $localize`:@@xmr.swap.noUpstreamTrades:No recent trades returned by the upstream market source.`;
+  readonly noFilteredTrades = $localize`:@@xmr.swap.noFilteredTrades:No recent trades match this goggle.`;
   radioGroupForm: UntypedFormGroup;
   tickerState$: Observable<SwapTickerState>;
   readonly goggleOptions: SwapGoggleOption[] = [
-    { mode: 'all', label: 'All' },
+    { mode: 'all', label: $localize`:@@xmr.swap.all:All` },
     { mode: 'btc', label: 'XMR/BTC' },
     { mode: 'fiat', label: 'Fiat' },
-    { mode: 'crypto', label: 'Crypto' },
-    { mode: 'movers', label: 'Movers' },
-    { mode: 'volume', label: 'Volume' },
+    { mode: 'crypto', label: $localize`:@@xmr.swap.crypto:Crypto` },
+    { mode: 'movers', label: $localize`:@@xmr.swap.movers:Movers` },
+    { mode: 'volume', label: $localize`:@@xmr.swap.optionVolume:Volume` },
   ];
   private readonly fiatCounters = new Set([
     'ARS', 'AUD', 'BRL', 'CAD', 'CHF', 'CLP', 'CNY', 'CZK', 'DKK', 'EUR',
@@ -66,8 +68,8 @@ export class SwapTickerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.seoService.setTitle('Haveno and atomic swap ticker');
-    this.seoService.setDescription('Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.');
+    this.seoService.setTitle($localize`:@@xmr.swap.metaTitle:Haveno and atomic swap ticker`);
+    this.seoService.setDescription($localize`:@@xmr.swap.metaDescription:Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.`);
 
     const tickerFetch$ = this.radioGroupForm.get('period').valueChanges.pipe(
       startWith(this.radioGroupForm.controls.period.value),
@@ -78,7 +80,7 @@ export class SwapTickerComponent implements OnInit {
           catchError((error) => of({
             loading: false,
             ticker: null,
-            error: error?.error?.message || error?.message || 'Swap ticker is unavailable.',
+            error: error?.error?.message || error?.message || $localize`:@@xmr.swap.unavailable:Swap ticker is unavailable.`,
           })),
         ),
       )),
@@ -93,6 +95,10 @@ export class SwapTickerComponent implements OnInit {
       map(([state, activeGoggle]: [SwapTickerBaseState, SwapGoggleMode]) => this.applyGoggle(state, activeGoggle)),
     );
   }
+
+  atomicLabel(value: string): string { return value === 'XMR/BTC atomic swaps' ? $localize`:@@xmr.swap.atomicLabel:XMR/BTC atomic swaps` : value; }
+  atomicDirection(value: string): string { return value === 'BTC to XMR makers' ? $localize`:@@xmr.swap.atomicDirection:BTC to XMR makers` : value; }
+  atomicNote(value: string): string { return value === 'Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.' ? $localize`:@@xmr.swap.atomicNote:Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.` : value; }
 
   priceUnit(market: XmrSwapMarket | XmrSwapTrade): string {
     return market.pair.startsWith('XMR_') ? `${market.counterCurrency}/XMR` : `XMR/${market.counterCurrency}`;

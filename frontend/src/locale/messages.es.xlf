@@ -13274,6 +13274,43 @@
       <trans-unit id="xmr.legal.terms-of-service.meta-description" datatype="html"><source>Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.</source><target>Condiciones de uso de xmr.tx.taxi, un explorador de bloques y mempool de Monero que muestra datos públicos de la cadena sin servicios de cartera, custodia ni prioridad de transacciones.</target></trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.meta-title" datatype="html"><source>Trademark &amp; Attribution</source><target>Marcas y atribuciones</target></trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.meta-description" datatype="html"><source>Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.</source><target>Información sobre marcas y atribuciones de xmr.tx.taxi, incluida la atribución al proyecto original mempool/mempool y su independencia del proyecto Monero.</target></trans-unit>
+      <trans-unit id="xmr.swap.title" datatype="html"><source>Swap ticker</source><target>Panel de intercambios</target></trans-unit>
+      <trans-unit id="xmr.swap.subtitle" datatype="html"><source>Haveno markets and XMR/BTC atomic-swap discovery</source><target>Mercados de Haveno y búsqueda de intercambios atómicos XMR/BTC</target></trans-unit>
+      <trans-unit id="xmr.swap.network" datatype="html"><source>Network</source><target>Red</target></trans-unit>
+      <trans-unit id="xmr.swap.activePairs" datatype="html"><source>Active pairs</source><target>Pares activos</target></trans-unit>
+      <trans-unit id="xmr.swap.volume" datatype="html"><source>Volume</source><target>Volumen</target></trans-unit>
+      <trans-unit id="xmr.swap.tradesSampled" datatype="html"><source>Trades sampled</source><target>Operaciones de muestra</target></trans-unit>
+      <trans-unit id="xmr.swap.goggles" datatype="html"><source>Swap goggles</source><target>Filtros de intercambios</target></trans-unit>
+      <trans-unit id="xmr.swap.atomic" datatype="html"><source>Atomic swaps</source><target>Intercambios atómicos</target></trans-unit>
+      <trans-unit id="xmr.swap.direction" datatype="html"><source>Direction</source><target>Dirección</target></trans-unit>
+      <trans-unit id="xmr.swap.status" datatype="html"><source>Status</source><target>Estado</target></trans-unit>
+      <trans-unit id="xmr.swap.makerDiscovery" datatype="html"><source>Maker discovery</source><target>Búsqueda de ofertas</target></trans-unit>
+      <trans-unit id="xmr.swap.haveno" datatype="html"><source>Haveno markets</source><target>Mercados de Haveno</target></trans-unit>
+      <trans-unit id="xmr.swap.pair" datatype="html"><source>Pair</source><target>Par</target></trans-unit>
+      <trans-unit id="xmr.swap.price" datatype="html"><source>Price</source><target>Precio</target></trans-unit>
+      <trans-unit id="xmr.swap.change" datatype="html"><source>Change</source><target>Variación</target></trans-unit>
+      <trans-unit id="xmr.swap.tableVolume" datatype="html"><source>Volume</source><target>Volumen</target></trans-unit>
+      <trans-unit id="xmr.swap.range" datatype="html"><source>Range</source><target>Intervalo</target></trans-unit>
+      <trans-unit id="xmr.swap.noMarkets" datatype="html"><source>No markets match this goggle.</source><target>Ningún mercado coincide con este filtro.</target></trans-unit>
+      <trans-unit id="xmr.swap.recent" datatype="html"><source>Recent trades</source><target>Operaciones recientes</target></trans-unit>
+      <trans-unit id="xmr.swap.method" datatype="html"><source>Method</source><target>Método</target></trans-unit>
+      <trans-unit id="xmr.swap.time" datatype="html"><source>Time</source><target>Hora</target></trans-unit>
+      <trans-unit id="xmr.swap.docs" datatype="html"><source>Docs</source><target>Documentación</target></trans-unit>
+      <trans-unit id="xmr.swap.pairSummary" datatype="html"><source><x id="INTERPOLATION"/> pairs · <x id="INTERPOLATION_1"/> XMR</source><target><x id="INTERPOLATION"/> pares · <x id="INTERPOLATION_1"/> XMR</target></trans-unit>
+      <trans-unit id="xmr.swap.marketsSummary" datatype="html"><source><x id="INTERPOLATION"/> of <x id="INTERPOLATION_1"/> pairs · updated <x id="INTERPOLATION_2"/></source><target><x id="INTERPOLATION"/> de <x id="INTERPOLATION_1"/> pares · actualizado <x id="INTERPOLATION_2"/></target></trans-unit>
+      <trans-unit id="xmr.swap.tradesSummary" datatype="html"><source><x id="INTERPOLATION"/> of <x id="INTERPOLATION_1"/> sampled trades</source><target><x id="INTERPOLATION"/> de <x id="INTERPOLATION_1"/> operaciones de muestra</target></trans-unit>
+      <trans-unit id="xmr.swap.all" datatype="html"><source>All</source><target>Todos</target></trans-unit>
+      <trans-unit id="xmr.swap.crypto" datatype="html"><source>Crypto</source><target>Cripto</target></trans-unit>
+      <trans-unit id="xmr.swap.movers" datatype="html"><source>Movers</source><target>Mayores variaciones</target></trans-unit>
+      <trans-unit id="xmr.swap.optionVolume" datatype="html"><source>Volume</source><target>Volumen</target></trans-unit>
+      <trans-unit id="xmr.swap.metaTitle" datatype="html"><source>Haveno and atomic swap ticker</source><target>Panel de Haveno e intercambios atómicos</target></trans-unit>
+      <trans-unit id="xmr.swap.metaDescription" datatype="html"><source>Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.</source><target>Consulta los mercados XMR de RetoSwap Haveno y las ofertas de intercambios atómicos XMR/BTC.</target></trans-unit>
+      <trans-unit id="xmr.swap.unavailable" datatype="html"><source>Swap ticker is unavailable.</source><target>El panel de intercambios no está disponible.</target></trans-unit>
+      <trans-unit id="xmr.swap.noUpstreamTrades" datatype="html"><source>No recent trades returned by the upstream market source.</source><target>La fuente del mercado no ha devuelto operaciones recientes.</target></trans-unit>
+      <trans-unit id="xmr.swap.noFilteredTrades" datatype="html"><source>No recent trades match this goggle.</source><target>Ninguna operación reciente coincide con este filtro.</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicLabel" datatype="html"><source>XMR/BTC atomic swaps</source><target>Intercambios atómicos XMR/BTC</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicDirection" datatype="html"><source>BTC to XMR makers</source><target>Ofertas de BTC a XMR</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicNote" datatype="html"><source>Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.</source><target>Las ofertas de intercambios atómicos se anuncian en el registro público de eigenwallet y mediante el descubrimiento rendezvous de libp2p, en lugar de un panel centralizado de órdenes.</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -2,8 +2,8 @@
   <div class="card-header mb-3">
     <div class="swap-title-row">
       <div>
-        <span>Swap ticker</span>
-        <div class="swap-subtitle">Haveno markets and XMR/BTC atomic-swap discovery</div>
+        <span i18n="@@xmr.swap.title">Swap ticker</span>
+        <div class="swap-subtitle" i18n="@@xmr.swap.subtitle">Haveno markets and XMR/BTC atomic-swap discovery</div>
       </div>
 
       <form [formGroup]="radioGroupForm" class="formRadioGroup">
@@ -30,28 +30,28 @@
   <ng-container *ngIf="state.ticker as ticker">
     <section class="swap-summary">
       <div class="summary-item">
-        <div class="summary-label">Network</div>
+        <div class="summary-label" i18n="@@xmr.swap.network">Network</div>
         <div class="summary-value">{{ ticker.network.name }}</div>
       </div>
       <div class="summary-item">
-        <div class="summary-label">Active pairs</div>
+        <div class="summary-label" i18n="@@xmr.swap.activePairs">Active pairs</div>
         <div class="summary-value">{{ ticker.totals.activePairs | number }}</div>
       </div>
       <div class="summary-item">
-        <div class="summary-label">Volume</div>
+        <div class="summary-label" i18n="@@xmr.swap.volume">Volume</div>
         <div class="summary-value">{{ ticker.totals.xmrVolume | number:'1.2-2' }} <span>XMR</span></div>
       </div>
       <div class="summary-item">
-        <div class="summary-label">Trades sampled</div>
+        <div class="summary-label" i18n="@@xmr.swap.tradesSampled">Trades sampled</div>
         <div class="summary-value">{{ ticker.totals.recentTrades | number }}</div>
       </div>
     </section>
 
-    <section class="swap-goggles" aria-label="Swap goggles">
+    <section class="swap-goggles" aria-label="Swap goggles" i18n-aria-label="@@xmr.swap.goggles">
       <div class="goggle-heading">
         <div>
-          <h2>Swap goggles</h2>
-          <span>{{ state.filteredMarkets.length | number }} pairs · {{ state.visibleVolume | number:'1.2-2' }} XMR</span>
+          <h2 i18n="@@xmr.swap.goggles">Swap goggles</h2>
+          <span i18n="@@xmr.swap.pairSummary">{{ state.filteredMarkets.length | number }} pairs · {{ state.visibleVolume | number:'1.2-2' }} XMR</span>
         </div>
       </div>
 
@@ -72,38 +72,38 @@
 
     <section class="atomic-panel">
       <div>
-        <div class="panel-eyebrow">Atomic swaps</div>
-        <h2>{{ ticker.atomicSwap.label }}</h2>
-        <p>{{ ticker.atomicSwap.note }}</p>
+        <div class="panel-eyebrow" i18n="@@xmr.swap.atomic">Atomic swaps</div>
+        <h2>{{ atomicLabel(ticker.atomicSwap.label) }}</h2>
+        <p>{{ atomicNote(ticker.atomicSwap.note) }}</p>
       </div>
       <div class="atomic-meta">
         <div>
-          <span>Direction</span>
-          <strong>{{ ticker.atomicSwap.direction }}</strong>
+          <span i18n="@@xmr.swap.direction">Direction</span>
+          <strong>{{ atomicDirection(ticker.atomicSwap.direction) }}</strong>
         </div>
         <div>
-          <span>Status</span>
-          <strong>Maker discovery</strong>
+          <span i18n="@@xmr.swap.status">Status</span>
+          <strong i18n="@@xmr.swap.makerDiscovery">Maker discovery</strong>
         </div>
-        <a [href]="ticker.atomicSwap.docsUrl" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a [href]="ticker.atomicSwap.docsUrl" target="_blank" rel="noopener noreferrer" i18n="@@xmr.swap.docs">Docs</a>
       </div>
     </section>
 
     <section class="swap-table-section">
       <div class="section-heading">
-        <h2>Haveno markets</h2>
-        <span>{{ state.filteredMarkets.length | number }} of {{ ticker.markets.length | number }} pairs · updated {{ ticker.updatedAt | date:'medium' }}</span>
+        <h2 i18n="@@xmr.swap.haveno">Haveno markets</h2>
+        <span i18n="@@xmr.swap.marketsSummary">{{ state.filteredMarkets.length | number }} of {{ ticker.markets.length | number }} pairs · updated {{ ticker.updatedAt | date:'medium' }}</span>
       </div>
 
       <div class="table-responsive">
         <table class="table table-borderless swap-table">
           <thead>
             <tr>
-              <th>Pair</th>
-              <th>Price</th>
-              <th>Change</th>
-              <th>Volume</th>
-              <th class="d-none d-md-table-cell">Range</th>
+              <th i18n="@@xmr.swap.pair">Pair</th>
+              <th i18n="@@xmr.swap.price">Price</th>
+              <th i18n="@@xmr.swap.change">Change</th>
+              <th i18n="@@xmr.swap.tableVolume">Volume</th>
+              <th class="d-none d-md-table-cell" i18n="@@xmr.swap.range">Range</th>
             </tr>
           </thead>
           <tbody>
@@ -122,7 +122,7 @@
               </td>
             </tr>
             <tr *ngIf="state.filteredMarkets.length === 0">
-              <td colspan="5" class="empty-state">No markets match this goggle.</td>
+              <td colspan="5" class="empty-state" i18n="@@xmr.swap.noMarkets">No markets match this goggle.</td>
             </tr>
           </tbody>
         </table>
@@ -131,19 +131,19 @@
 
     <section class="swap-table-section">
       <div class="section-heading">
-        <h2>Recent trades</h2>
-        <span>{{ state.filteredTrades.length | number }} of {{ ticker.recentTrades.length | number }} sampled trades</span>
+        <h2 i18n="@@xmr.swap.recent">Recent trades</h2>
+        <span i18n="@@xmr.swap.tradesSummary">{{ state.filteredTrades.length | number }} of {{ ticker.recentTrades.length | number }} sampled trades</span>
       </div>
 
       <div class="table-responsive">
         <table class="table table-borderless swap-table">
           <thead>
             <tr>
-              <th>Pair</th>
-              <th>Price</th>
-              <th>Volume</th>
-              <th class="d-none d-md-table-cell">Method</th>
-              <th>Time</th>
+              <th i18n="@@xmr.swap.pair">Pair</th>
+              <th i18n="@@xmr.swap.price">Price</th>
+              <th i18n="@@xmr.swap.tableVolume">Volume</th>
+              <th class="d-none d-md-table-cell" i18n="@@xmr.swap.method">Method</th>
+              <th i18n="@@xmr.swap.time">Time</th>
             </tr>
           </thead>
           <tbody>
@@ -156,7 +156,7 @@
             </tr>
             <tr *ngIf="state.filteredTrades.length === 0">
               <td colspan="5" class="empty-state">
-                {{ ticker.recentTrades.length === 0 ? 'No recent trades returned by the upstream market source.' : 'No recent trades match this goggle.' }}
+                {{ ticker.recentTrades.length === 0 ? noUpstreamTrades : noFilteredTrades }}
               </td>
             </tr>
           </tbody>
