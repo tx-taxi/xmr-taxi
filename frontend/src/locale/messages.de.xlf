@@ -14603,6 +14603,7 @@
       <trans-unit id="xmr.nav.about" datatype="html"><source>About xmr.tx.taxi</source><target>Über xmr.tx.taxi</target></trans-unit>
       <trans-unit id="xmr.footer.telegramLabel" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Dem tx.taxi-Telegram-Kanal beitreten</target></trans-unit>
       <trans-unit id="xmr.brand.imageAlt" datatype="html"><source>xmr.tx.taxi Monero explorer</source><target>xmr.tx.taxi Monero-Explorer</target></trans-unit>
+      <trans-unit id="xmr.nav.returnHub" datatype="html"><source>Back to tx.taxi</source><target>Zurück zu tx.taxi</target></trans-unit>
     </body>
   </file>
 </xliff>
