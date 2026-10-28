@@ -147,26 +147,26 @@ export class TransactionsListComponent implements OnInit, OnChanges, OnDestroy {
 
   inputLabel(vin: Vin): string {
     if (vin.is_coinbase) {
-      return 'Coinbase';
+      return $localize`:@@xmr.list.coinbase:Coinbase`;
     }
     if (vin.ringct) {
-      return 'RingCT input';
+      return $localize`:@@xmr.list.ringct-input:RingCT input`;
     }
-    return vin.key_image ? 'Legacy ring input' : 'Input';
+    return vin.key_image ? $localize`:@@xmr.list.legacy-ring-input:Legacy ring input` : $localize`:@@xmr.list.input:Input`;
   }
 
   outputLabel(vout: Vout): string {
     if (vout.ringct) {
-      return 'RingCT output';
+      return $localize`:@@xmr.list.ringct-output:RingCT output`;
     }
-    if (vout.scriptpubkey_type === 'stealth_key') return 'Stealth output';
+    if (vout.scriptpubkey_type === 'stealth_key') return $localize`:@@xmr.list.stealth-output:Stealth output`;
     if (vout.scriptpubkey_type === 'fee') {
-      return 'Fee';
+      return $localize`:@@xmr.list.fee:Fee`;
     }
     if (vout.scriptpubkey_type) {
       return vout.scriptpubkey_type.replace(/_/g, ' ').toUpperCase();
     }
-    return 'Output';
+    return $localize`:@@xmr.list.output:Output`;
   }
 
   ringOffsetsPreview(vin: Vin): string {
@@ -185,17 +185,23 @@ export class TransactionsListComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ringMemberTooltip(member: XmrRingMember): string {
-    const parts = [`global output ${member.global_index.toLocaleString()}`];
+    const parts = [$localize`:@@xmr.list.tooltip-global-output:global output ${member.global_index.toLocaleString()}:index:`];
     if (member.height !== null && member.height !== undefined) {
-      parts.push(`height ${member.height.toLocaleString()}`);
+      parts.push($localize`:@@xmr.list.tooltip-height:height ${member.height.toLocaleString()}:height:`);
     }
     if (member.age_blocks !== null && member.age_blocks !== undefined) {
-      parts.push(`${member.age_blocks.toLocaleString()} blocks before spend`);
+      parts.push($localize`:@@xmr.list.tooltip-blocks-before-spend:${member.age_blocks.toLocaleString()}:count: blocks before spend`);
     }
     if (member.unlocked === false) {
-      parts.push('locked');
+      parts.push($localize`:@@xmr.list.tooltip-locked:locked`);
     }
     return parts.join(' | ');
+  }
+
+  amountButtonLabel(tx: Transaction): string {
+    return this.hasRingctOutputs(tx)
+      ? $localize`:@@xmr.list.aria-amount-hidden:Transaction amount hidden by RingCT`
+      : $localize`:@@xmr.list.aria-change-denomination:Change amount denomination`;
   }
 
   switchCurrency(): void {

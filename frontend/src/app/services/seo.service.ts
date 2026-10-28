@@ -205,7 +205,13 @@ export class SeoService {
 
   clearSoft404() {
     window['soft404'] = false;
-    this.metaService.removeTag('name=\'robots\'');
+    // Locale shells are intentionally excluded from search; clearing a soft
+    // 404 must not remove their matching robots directive after navigation.
+    if (document.documentElement.lang && !/^en(?:-|$)/i.test(document.documentElement.lang)) {
+      this.metaService.updateTag({ name: 'robots', content: 'noindex, follow' });
+    } else {
+      this.metaService.removeTag('name=\'robots\'');
+    }
   }
 
   logSoft404() {

@@ -148,7 +148,7 @@
     <tr>
       <td i18n="transaction.fee-rate|Transaction fee rate">Fee rate</td>
       <td>
-        <app-fee-rate *ngIf="tx.weight_known !== false; else unknownWeight" [fee]="tx.feePerVsize"></app-fee-rate><ng-template #unknownWeight>Unavailable for pruned data</ng-template>
+        <app-fee-rate *ngIf="tx.weight_known !== false; else unknownWeight" [fee]="tx.feePerVsize"></app-fee-rate><ng-template #unknownWeight><ng-container i18n="@@xmr.tx.pruned-fee-rate-unavailable">Unavailable for pruned data</ng-container></ng-template>
       </td>
     </tr>
   } @else {

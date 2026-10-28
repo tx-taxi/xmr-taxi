@@ -17,7 +17,7 @@
     <div class="row">
       <div class="col">
         <table class="table table-fixed table-borderless smaller-text table-sm table-tx-vin">
-          <thead *ngIf="transactionPage"><tr><th colspan="3">Inputs ({{ tx.vin.length }})</th></tr></thead>
+          <thead *ngIf="transactionPage"><tr><th colspan="3" i18n="@@xmr.list.inputs">Inputs ({{ tx.vin.length }})</th></tr></thead>
           <tbody>
             <ng-template ngFor let-vin let-vindex="index" [ngForOf]="tx.vin.slice(0, getVinLimit(tx))" [ngForTrackBy]="trackByIndexFn">
               <tr [ngClass]="{ 'assetBox': inputIndex === vindex }">
@@ -45,8 +45,8 @@
                     }
                   } @else if (vin.key_image) {
                     <div class="xmr-ring-input-summary">
-                      <span class="badge bg-info" *ngIf="vin.ring_size">Ring {{ vin.ring_size }}</span>
-                      <code class="xmr-key-image" *ngIf="vin.key_image" ngbTooltip="Key image">{{ vin.key_image | slice:0:10 }}...{{ vin.key_image | slice:-6 }}</code>
+                      <span class="badge bg-info" *ngIf="vin.ring_size" i18n="@@xmr.list.ring">Ring {{ vin.ring_size }}</span>
+                      <code class="xmr-key-image" *ngIf="vin.key_image" ngbTooltip="Key image" i18n-ngbTooltip="@@xmr.list.key-image">{{ vin.key_image | slice:0:10 }}...{{ vin.key_image | slice:-6 }}</code>
                     </div>
                   } @else {
                     <span>{{ inputLabel(vin) }}</span>
@@ -63,47 +63,47 @@
                   <table class="table table-striped table-fixed table-borderless details-table mb-3">
                     <tbody>
                       <tr>
-                        <td>Input type</td>
+                        <td i18n="@@xmr.list.input-type">Input type</td>
                         <td style="text-align: left;">{{ inputLabel(vin) }}</td>
                       </tr>
                       @if (vin.key_image) {
                         <tr>
-                          <td>Key image</td>
+                          <td i18n="@@xmr.list.key-image">Key image</td>
                           <td style="text-align: left;"><code class="xmr-mono-wrap">{{ vin.key_image }}</code></td>
                         </tr>
                       }
                       @if (vin.ring_size) {
                         <tr>
-                          <td>Ring size</td>
+                          <td i18n="@@xmr.list.ring-size">Ring size</td>
                           <td style="text-align: left;">{{ vin.ring_size | number }}</td>
                         </tr>
                       }
                       @if (vin.ring_offsets?.length) {
                         <tr>
-                          <td>Relative ring offsets</td>
+                          <td i18n="@@xmr.list.relative-ring-offsets">Relative ring offsets</td>
                           <td style="text-align: left;"><code class="xmr-mono-wrap">{{ ringOffsetsPreview(vin) }}</code></td>
                         </tr>
                       }
                       @if (vin.ring_members?.length) {
                         <tr>
-                          <td>Ring members</td>
+                          <td i18n="@@xmr.list.ring-members">Ring members</td>
                           <td style="text-align: left;">
                             <div class="xmr-ring-members-list">
                               @for (member of vin.ring_members; track $index) {
                                 <div class="xmr-ring-member-detail">
-                                  <div>Output #{{ member.global_index | number }}
-                                    @if (member.height != null) { · <a [routerLink]="['/block/' | relativeUrl, member.height]">Block {{ member.height | number }}</a> }
-                                    @if (member.age_blocks != null) { · {{ member.age_blocks | number }} blocks earlier }
+                                  <div><ng-container i18n="@@xmr.list.output-index">Output #{{ member.global_index | number }}</ng-container>
+                                    @if (member.height != null) { · <a [routerLink]="['/block/' | relativeUrl, member.height]"><ng-container i18n="@@xmr.list.block-height">Block {{ member.height | number }}</ng-container></a> }
+                                    @if (member.age_blocks != null) { · <ng-container i18n="@@xmr.list.blocks-earlier">{{ member.age_blocks | number }} blocks earlier</ng-container> }
                                   </div>
                                   @if (member.txid) { <a class="xmr-mono-wrap" [routerLink]="['/tx/' | relativeUrl, member.txid]">{{ member.txid }}</a> }
-                                  @if (member.public_key) { <div>Output key <code class="xmr-mono-wrap">{{ member.public_key }}</code></div> }
-                                  @if (!member.txid) { <span class="xmr-ring-note">Source transaction temporarily unavailable.</span> }
+                                  @if (member.public_key) { <div><ng-container i18n="@@xmr.list.output-key">Output key</ng-container> <code class="xmr-mono-wrap">{{ member.public_key }}</code></div> }
+                                  @if (!member.txid) { <span class="xmr-ring-note" i18n="@@xmr.list.source-unavailable">Source transaction temporarily unavailable.</span> }
                                 </div>
                               }
                             </div>
-                            <div class="xmr-ring-note">{{ vin.ring_size === 1 ? 'This legacy input has no decoys.' : 'Ring members include decoys; the actual spent output is not identified.' }}</div>
+                            <div class="xmr-ring-note">@if (vin.ring_size === 1) { <ng-container i18n="@@xmr.list.no-decoys">This legacy input has no decoys.</ng-container> } @else { <ng-container i18n="@@xmr.list.decoys">Ring members include decoys; the actual spent output is not identified.</ng-container> }</div>
                             @if (vin.ring_members_truncated) {
-                              <div class="xmr-ring-note">Some ring-member details were not resolved in this response.</div>
+                              <div class="xmr-ring-note" i18n="@@xmr.list.ring-details-unresolved">Some ring-member details were not resolved in this response.</div>
                             }
                           </td>
                         </tr>
@@ -130,14 +130,14 @@
       <div class="w-100 d-block d-md-none"></div>
       <div class="col mobile-bottomcol">
         <table class="table table-fixed table-borderless smaller-text table-sm table-tx-vout">
-          <thead *ngIf="transactionPage"><tr><th colspan="3">Outputs ({{ tx.vout.length }})</th></tr></thead>
+          <thead *ngIf="transactionPage"><tr><th colspan="3" i18n="@@xmr.list.outputs">Outputs ({{ tx.vout.length }})</th></tr></thead>
           <tbody>
             <ng-template ngFor let-vout let-vindex="index" [ngForOf]="tx.vout.slice(0, getVoutLimit(tx))" [ngForTrackBy]="trackByIndexFn">
               <tr [ngClass]="{ 'assetBox': outputIndex === vindex }">
                 <td class="address-cell">
                   @if (vout.ringct) {
-                    <span class="badge bg-info">RingCT output</span>
-                    <span class="xmr-output-note">recipient hidden</span>
+                    <span class="badge bg-info" i18n="@@xmr.list.ringct-output">RingCT output</span>
+                    <span class="xmr-output-note" i18n="@@xmr.list.recipient-hidden">recipient hidden</span>
                   } @else {
                     <span>{{ outputLabel(vout) }}</span>
                   }
@@ -157,25 +157,25 @@
                   <table class="table table-striped table-borderless details-table mb-3">
                     <tbody>
                       <tr>
-                        <td>Output type</td>
+                        <td i18n="@@xmr.list.output-type">Output type</td>
                         <td style="text-align: left;">{{ outputLabel(vout) }}</td>
                       </tr>
                       @if (vout.ringct) {
                         <tr>
-                          <td>Amount</td>
-                          <td style="text-align: left;">Hidden by RingCT</td>
+                          <td i18n="@@xmr.list.amount">Amount</td>
+                          <td style="text-align: left;" i18n="@@xmr.list.hidden-ringct">Hidden by RingCT</td>
                         </tr>
                         <tr>
-                          <td>Recipient</td>
-                          <td style="text-align: left;">Hidden by stealth addressing</td>
+                          <td i18n="@@xmr.list.recipient">Recipient</td>
+                          <td style="text-align: left;" i18n="@@xmr.list.hidden-stealth">Hidden by stealth addressing</td>
                         </tr>
                       }
-                      @if (vout.global_index != null) { <tr><td>Global output index</td><td>{{ vout.global_index | number }}</td></tr> }
-                      @if (vout.view_tag) { <tr><td>View tag</td><td><code>{{ vout.view_tag }}</code></td></tr> }
-                      @if (vout.commitment) { <tr><td>Amount commitment</td><td><code class="xmr-mono-wrap">{{ vout.commitment }}</code></td></tr> }
+                      @if (vout.global_index != null) { <tr><td i18n="@@xmr.list.global-output-index">Global output index</td><td>{{ vout.global_index | number }}</td></tr> }
+                      @if (vout.view_tag) { <tr><td i18n="@@xmr.list.view-tag">View tag</td><td><code>{{ vout.view_tag }}</code></td></tr> }
+                      @if (vout.commitment) { <tr><td i18n="@@xmr.list.amount-commitment">Amount commitment</td><td><code class="xmr-mono-wrap">{{ vout.commitment }}</code></td></tr> }
                       @if (vout.scriptpubkey) {
                         <tr>
-                          <td>Output key</td>
+                          <td i18n="@@xmr.list.output-key">Output key</td>
                           <td style="text-align: left;"><code class="xmr-mono-wrap">{{ vout.scriptpubkey }}</code></td>
                         </tr>
                       }
@@ -203,7 +203,7 @@
     <div class="summary">
       <div class="float-start mt-2-5" *ngIf="!transactionPage && !isCoinbase(tx) && tx.fee !== -1">
         <app-fee-rate [fee]="tx.fee" [weight]="tx.weight"></app-fee-rate>
-        <span class="d-none d-sm-inline-block">&nbsp;&ndash; {{ tx.fee | number }} <span class="symbol">atomic units</span> <span class="fiat"><app-fiat [blockConversion]="tx.price" [value]="tx.fee"></app-fiat></span></span>
+        <span class="d-none d-sm-inline-block">&nbsp;&ndash; {{ tx.fee | number }} <span class="symbol" i18n="@@xmr.list.atomic-units">atomic units</span> <span class="fiat"><app-fiat [blockConversion]="tx.price" [value]="tx.fee"></app-fiat></span></span>
       </div>
       <div class="float-start mt-2-5 grey-info-text" *ngIf="tx.fee === -1" i18n="transactions-list.load-to-reveal-fee-info">Show more inputs to reveal fee data</div>
 
@@ -211,9 +211,9 @@
         <ng-container *ngIf="showConfirmations && latestBlock$ | async as latestBlock">
           <app-confirmations [chainTip]="latestBlock?.height" [height]="tx?.status?.block_height" [buttonClass]="'mt-2'"></app-confirmations>
         </ng-container>
-        <button type="button" class="btn btn-sm btn-primary mt-2 ms-2" (click)="switchCurrency()" [attr.aria-label]="hasRingctOutputs(tx) ? 'Transaction amount hidden by RingCT' : 'Change amount denomination'">
+        <button type="button" class="btn btn-sm btn-primary mt-2 ms-2" (click)="switchCurrency()" [attr.aria-label]="amountButtonLabel(tx)">
           @if (hasRingctOutputs(tx)) {
-            <span class="xmr-hidden-total">Amount hidden</span>
+            <span class="xmr-hidden-total" i18n="@@xmr.list.amount-hidden">Amount hidden</span>
           } @else {
             <app-amount [blockConversion]="tx.price" [satoshis]="getTotalTxOutput(tx)"></app-amount>
           }

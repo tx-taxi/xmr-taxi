@@ -3,6 +3,7 @@ import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { StorageService } from '@app/services/storage.service';
 import { fiatCurrencies } from '@app/app.constants';
 import { StateService } from '@app/services/state.service';
+import { supportedFiatCurrencies, writeSharedPreference } from '@app/services/shared-preferences';
 
 @Component({
   selector: 'app-fiat-selector',
@@ -36,15 +37,14 @@ export class FiatSelectorComponent implements OnInit {
     this.stateService.fiatCurrency$.subscribe((fiat) => {
       this.fiatForm.get('fiat')?.setValue(fiat);
     });
-    if (!this.stateService.env.ADDITIONAL_CURRENCIES) {
-      this.currencies = this.currencies.filter((currency: any) => {
-        return ['AUD', 'CAD', 'EUR', 'JPY', 'GBP', 'CHF', 'USD'].includes(currency[0]);
-      });
-    }
+    // The Monero price feed supplies these seven currencies.
+    this.currencies = this.currencies.filter((currency: any) => supportedFiatCurrencies.includes(currency[0]));
   }
 
   changeFiat() {
     const newFiat = this.fiatForm.get('fiat')?.value;
+    if (!supportedFiatCurrencies.includes(newFiat)) { return; }
+    writeSharedPreference('txtaxi_currency', newFiat);
     this.storageService.setValue('fiat-preference', newFiat);
     this.stateService.fiatCurrency$.next(newFiat);
   }

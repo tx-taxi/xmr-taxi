@@ -11,7 +11,7 @@
           }
         </div>
         @if (!enterpriseInfo?.footer_img) {
-          <p class="explore-tagline-mobile">Privacy by default</p>
+          <p class="explore-tagline-mobile" i18n="@@xmr.footer.privacy">Privacy by default</p>
         }
         <div class="site-options language-selector d-flex justify-content-center align-items-center" [class]="{'services': isServicesPage}">
           <div class="selector">
@@ -47,7 +47,7 @@
             <span *ngIf="user" i18n="shared.my-account" class="nowrap">My Account</span>
             <span *ngIf="!user" i18n="shared.sign-in" class="nowrap">Sign In</span>
           </a>
-          <p class="explore-tagline-desktop">Privacy by default</p>
+          <p class="explore-tagline-desktop" i18n="@@xmr.footer.privacy">Privacy by default</p>
         }
       </div>
     </div>
@@ -58,30 +58,30 @@
          removed. Replaced with Monero-relevant categories. -->
     <div class="row col-md-12 link-tree" [class]="{'services': isServicesPage}">
       <div class="links">
-        <p class="category">Explore</p>
-        <p><a [routerLink]="['/' | relativeUrl]">Dashboard</a></p>
-        <p><a [routerLink]="['/blocks' | relativeUrl]">Recent Blocks</a></p>
-        <p><a [routerLink]="['/mempool-block/0' | relativeUrl]">Pending Transactions</a></p>
-        <p><a [routerLink]="['/graphs/transactions' | relativeUrl]">Transaction activity</a></p>
-        <p><a [routerLink]="['/status' | relativeUrl]">Instance status</a></p>
+        <p class="category" i18n="@@xmr.footer.explore">Explore</p>
+        <p><a [routerLink]="['/' | relativeUrl]" i18n="@@xmr.footer.dashboard">Dashboard</a></p>
+        <p><a [routerLink]="['/blocks' | relativeUrl]" i18n="@@xmr.footer.recentBlocks">Recent Blocks</a></p>
+        <p><a [routerLink]="['/mempool-block/0' | relativeUrl]" i18n="@@xmr.footer.pending">Pending Transactions</a></p>
+        <p><a [routerLink]="['/graphs/transactions' | relativeUrl]" i18n="@@xmr.footer.activity">Transaction activity</a></p>
+        <p><a [routerLink]="['/status' | relativeUrl]" i18n="@@xmr.footer.instanceStatus">Instance status</a></p>
       </div>
       <div class="links">
-        <p class="category">Learn</p>
-        <p><a href="https://www.getmonero.org/resources/moneropedia/" target="_blank" rel="noopener noreferrer">Moneropedia</a></p>
-        <p><a href="https://www.getmonero.org/resources/moneropedia/ringCT.html" target="_blank" rel="noopener noreferrer">What is RingCT?</a></p>
-        <p><a href="https://www.getmonero.org/resources/moneropedia/viewkey.html" target="_blank" rel="noopener noreferrer">View key</a></p>
-        <p><a href="https://www.getmonero.org/resources/moneropedia/transaction-proof.html" target="_blank" rel="noopener noreferrer">tx_proof signatures</a></p>
-        <p><a href="https://www.getmonero.org/resources/research-lab/" target="_blank" rel="noopener noreferrer">Monero research lab</a></p>
-        <p><a [routerLink]="['/docs' | relativeUrl]">Explorer documentation</a></p>
+        <p class="category" i18n="@@xmr.footer.learn">Learn</p>
+        <p><a href="https://www.getmonero.org/resources/moneropedia/" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.moneropedia">Moneropedia</a></p>
+        <p><a href="https://www.getmonero.org/resources/moneropedia/ringCT.html" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.whatRingct">What is RingCT?</a></p>
+        <p><a href="https://www.getmonero.org/resources/moneropedia/viewkey.html" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.viewKey">View key</a></p>
+        <p><a href="https://www.getmonero.org/resources/moneropedia/transaction-proof.html" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.proofSignatures">tx_proof signatures</a></p>
+        <p><a href="https://www.getmonero.org/resources/research-lab/" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.research">Monero research lab</a></p>
+        <p><a [routerLink]="['/docs' | relativeUrl]" i18n="@@xmr.footer.documentation">Explorer documentation</a></p>
       </div>
       <div class="links">
         <p class="category">xmr.tx.taxi</p>
-        <p><a [routerLink]="['/about']">About</a></p>
-        <p><a href="https://github.com/tx-taxi/xmr-taxi" target="_blank" rel="noopener noreferrer">Source code</a></p>
-        <p><a href="https://status.tx.taxi/" target="_blank" rel="noopener noreferrer">Status</a></p>
-        <p><a href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" aria-label="Join the tx.taxi Telegram channel">Telegram</a></p>
-        <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact Us</a></p>
-        <p>Released under AGPLv3</p>
+        <p><a [routerLink]="['/about']" i18n="@@xmr.footer.about">About</a></p>
+        <p><a href="https://github.com/tx-taxi/xmr-taxi" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.source">Source code</a></p>
+        <p><a href="https://status.tx.taxi/" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.status">Status</a></p>
+        <p><a href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" aria-label="Join the tx.taxi Telegram channel" i18n="@@xmr.footer.telegram">Telegram</a></p>
+        <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.contact">Contact Us</a></p>
+        <p i18n="@@xmr.footer.released">Released under AGPLv3</p>
       </div>
       <div class="links">
         <p class="category" i18n="footer.legal">Legal</p>
@@ -95,7 +95,7 @@
     <div class="row footer-credit" [style]="{'background-color': isServicesPage ? 'var(--bg)' : ''}">
       <div class="col-sm-12">
         <p>
-          Made with <span class="footer-credit-emoji" aria-hidden="true">🚕</span> by
+          <span i18n="@@xmr.footer.madeWith">Made with</span> <span class="footer-credit-emoji" aria-hidden="true">🚕</span> <span i18n="@@xmr.footer.by">by</span>
           <a class="footer-credit-link" href="https://u.software" target="_blank" rel="noopener noreferrer">u.software</a>
         </p>
       </div>

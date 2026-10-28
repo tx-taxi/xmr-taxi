@@ -30,6 +30,11 @@ interface XmrStatusSnapshot {
 })
 export class XmrStatusComponent implements OnInit {
   status$: Observable<XmrStatusSnapshot>;
+  readonly unknownLabel = $localize`:@@xmr-status-unknown:unknown`;
+  readonly notConfiguredLabel = $localize`:@@xmr-status-not-configured:not configured`;
+  readonly noLabel = $localize`:@@xmr-status-no:no`;
+  readonly yesLabel = $localize`:@@xmr-status-yes:yes`;
+
 
   constructor(
     private apiService: ApiService,
@@ -84,13 +89,13 @@ export class XmrStatusComponent implements OnInit {
   stateLabel(state: XmrStatusState): string {
     switch (state) {
       case 'online':
-        return 'monerod reachable';
+        return $localize`:@@xmr-status-state-online:monerod reachable`;
       case 'syncing':
-        return 'syncing';
+        return $localize`:@@xmr-status-state-syncing:syncing`;
       case 'degraded':
-        return 'attention needed';
+        return $localize`:@@xmr-status-state-degraded:attention needed`;
       case 'offline':
-        return 'daemon unreachable';
+        return $localize`:@@xmr-status-state-offline:daemon unreachable`;
     }
   }
 
@@ -107,18 +112,18 @@ export class XmrStatusComponent implements OnInit {
 
   shortHash(hash?: string): string {
     if (!hash) {
-      return 'unknown';
+      return this.unknownLabel;
     }
     return hash.length > 18 ? `${hash.slice(0, 10)}...${hash.slice(-8)}` : hash;
   }
 
   formatNumber(value: number | undefined | null): string {
-    return typeof value === 'number' && Number.isFinite(value) ? value.toLocaleString() : 'unknown';
+    return typeof value === 'number' && Number.isFinite(value) ? value.toLocaleString() : this.unknownLabel;
   }
 
   formatHashrate(value: number | undefined | null): string {
     if (typeof value !== 'number' || !Number.isFinite(value)) {
-      return 'unknown';
+      return this.unknownLabel;
     }
     const units = ['H/s', 'kH/s', 'MH/s', 'GH/s', 'TH/s'];
     let scaled = value;
@@ -134,7 +139,7 @@ export class XmrStatusComponent implements OnInit {
     // Restricted public daemons commonly return UINT64_MAX when free-space
     // information is unavailable. Do not present that sentinel as petabytes.
     if (typeof value !== 'number' || !Number.isFinite(value) || value < 0 || value >= 2 ** 63) {
-      return 'unknown';
+      return this.unknownLabel;
     }
     const units = ['B', 'KiB', 'MiB', 'GiB', 'TiB'];
     let scaled = value;
@@ -148,7 +153,7 @@ export class XmrStatusComponent implements OnInit {
 
   formatDuration(seconds: number | undefined | null): string {
     if (typeof seconds !== 'number' || !Number.isFinite(seconds) || seconds <= 0) {
-      return 'unknown';
+      return this.unknownLabel;
     }
     const days = Math.floor(seconds / 86_400);
     const hours = Math.floor((seconds % 86_400) / 3600);
@@ -164,7 +169,7 @@ export class XmrStatusComponent implements OnInit {
 
   formatTimestamp(epochSeconds: number | undefined | null): string {
     if (typeof epochSeconds !== 'number' || !Number.isFinite(epochSeconds) || epochSeconds <= 0) {
-      return 'unknown';
+      return this.unknownLabel;
     }
     return new Date(epochSeconds * 1000).toLocaleString();
   }
@@ -172,13 +177,13 @@ export class XmrStatusComponent implements OnInit {
   private describeError(error: unknown): string {
     if (error instanceof HttpErrorResponse) {
       if (error.status) {
-        return `${error.status} ${error.statusText || 'request failed'}`;
+        return `${error.status} ${error.statusText || $localize`:@@xmr-status-request-failed:request failed`}`;
       }
-      return 'network request failed';
+      return $localize`:@@xmr-status-network-request-failed:network request failed`;
     }
     if (error instanceof Error) {
       return error.message;
     }
-    return 'request failed';
+    return $localize`:@@xmr-status-request-failed:request failed`;
   }
 }

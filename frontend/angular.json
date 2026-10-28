@@ -196,6 +196,9 @@
             ]
           },
           "configurations": {
+            "spanish": {
+              "localize": ["es"]
+            },
             "production": {
               "assets": [
                 "src/favicon.ico",

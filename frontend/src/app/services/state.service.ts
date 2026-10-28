@@ -7,6 +7,7 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { filter, map, scan, share, shareReplay } from 'rxjs/operators';
 import { StorageService } from '@app/services/storage.service';
+import { readSharedPreference, supportedFiatCurrencies } from '@app/services/shared-preferences';
 import { hasTouchScreen } from '@app/shared/pipes/bytes-pipe/utils';
 import { ActiveFilter } from '@app/shared/filters.utils';
 
@@ -296,8 +297,25 @@ export class StateService {
       }
     });
 
-    const fiatPreference = this.storageService.getValue('fiat-preference');
-    this.fiatCurrency$ = new BehaviorSubject<string>(fiatPreference || 'USD');
+    const sharedFiat = this.isBrowser ? readSharedPreference('txtaxi_currency') : null;
+    const legacyFiat = this.storageService.getValue('fiat-preference');
+    const fiatPreference = sharedFiat && supportedFiatCurrencies.includes(sharedFiat)
+      ? sharedFiat : (supportedFiatCurrencies.includes(legacyFiat) ? legacyFiat : 'USD');
+    this.fiatCurrency$ = new BehaviorSubject<string>(fiatPreference);
+    if (this.isBrowser) {
+      // Cookies are shared across hosts, but do not emit storage events.
+      const refreshFiatPreference = () => {
+        if (document.visibilityState !== 'visible') { return; }
+        const currency = readSharedPreference('txtaxi_currency');
+        if (currency && supportedFiatCurrencies.includes(currency) && currency !== this.fiatCurrency$.value) {
+          this.storageService.setValue('fiat-preference', currency);
+          this.fiatCurrency$.next(currency);
+        }
+      };
+      document.addEventListener('visibilitychange', refreshFiatPreference);
+      window.addEventListener('focus', refreshFiatPreference);
+      window.addEventListener('pageshow', refreshFiatPreference);
+    }
 
     const rateUnitPreference = this.storageService.getValue('rate-unit-preference');
     this.rateUnits$ = new BehaviorSubject<string>(rateUnitPreference || 'vb');

@@ -3,30 +3,30 @@
   <div class="about-layout">
     <aside class="about-identity">
       <img src="/resources/branding/xmr-dark-full.svg" alt="xmr.tx.taxi" class="about-logo">
-      <h1>About xmr.tx.taxi</h1>
-      <p>The Monero explorer in the tx.taxi family.</p>
-      <nav class="about-links" aria-label="Project links">
-        <a routerLink="/docs">Monero documentation</a>
-        <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact the maintainer</a>
+      <h1 i18n="@@xmr.about.title">About xmr.tx.taxi</h1>
+      <p i18n="@@xmr.about.tagline">The Monero explorer in the tx.taxi family.</p>
+      <nav class="about-links" aria-label="Project links" i18n-aria-label="@@xmr.about.projectLinks">
+        <a routerLink="/docs" i18n="@@xmr.about.documentation">Monero documentation</a>
+        <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer" i18n="@@xmr.about.contact">Contact the maintainer</a>
       </nav>
     </aside>
     <main class="about-text">
-      <h2>About xmr.tx.taxi</h2>
-    <p>xmr.tx.taxi adapts the Mempool Open Source Project interface for <a href="https://www.getmonero.org" target="_blank" rel="noopener">Monero</a>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</p>
-    <h2>Privacy by default</h2>
-    <p>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</p>
+      <h2 i18n="@@xmr.about.title">About xmr.tx.taxi</h2>
+    <p i18n="@@xmr.about.description">xmr.tx.taxi adapts the Mempool Open Source Project interface for <a href="https://www.getmonero.org" target="_blank" rel="noopener">Monero</a>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</p>
+    <h2 i18n="@@xmr.about.privacy">Privacy by default</h2>
+    <p i18n="@@xmr.about.privacyDescription">Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</p>
     <ul>
-      <li><strong>Recipient checks</strong> — require the recipient's own wallet/view key tooling. Private keys should stay local.</li>
-      <li><strong>tx_proof verification</strong> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</li>
-      <li><strong>tx_secret_key checks</strong> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</li>
+      <li i18n="@@xmr.about.recipientChecks"><strong>Recipient checks</strong> — require the recipient's own wallet/view key tooling. Private keys should stay local.</li>
+      <li i18n="@@xmr.about.proofChecks"><strong>tx_proof verification</strong> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</li>
+      <li i18n="@@xmr.about.secretChecks"><strong>tx_secret_key checks</strong> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</li>
     </ul>
-    <h2>Daemon</h2>
-    <p>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <code>monerod</code> JSON-RPC endpoint.</p>
-    <h2>License</h2>
-    <p>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</p>
+    <h2 i18n="@@xmr.about.daemon">Daemon</h2>
+    <p i18n="@@xmr.about.daemonDescription">This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <code>monerod</code> JSON-RPC endpoint.</p>
+    <h2 i18n="@@xmr.about.license">License</h2>
+    <p i18n="@@xmr.about.licenseDescription">xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</p>
       <div class="about-attribution">
-        <h2>Built on open source</h2>
-        <p>This explorer builds on the <a href="https://github.com/mempool/mempool" target="_blank" rel="noopener noreferrer">Mempool Open Source Project</a>. See <a href="/3rdpartylicenses.txt">third-party attribution</a> and contact the maintainer for source and license information.</p>
+        <h2 i18n="@@xmr.about.openSource">Built on open source</h2>
+        <p i18n="@@xmr.about.openSourceDescription">This explorer builds on the <a href="https://github.com/mempool/mempool" target="_blank" rel="noopener noreferrer">Mempool Open Source Project</a>. See <a href="/3rdpartylicenses.txt">third-party attribution</a> and contact the maintainer for source and license information.</p>
       </div>
     </main>
   </div>

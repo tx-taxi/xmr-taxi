@@ -3,7 +3,7 @@
     <body>
       <trans-unit id="ngb.alert.close" datatype="html">
         <source>Close</source>
-        <target>(Newly Generated Coins)</target>
+        <target>Cerrar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/alert/alert.ts</context>
           <context context-type="linenumber">50</context>
@@ -431,7 +431,7 @@
       </trans-unit>
       <trans-unit id="meta.description.about" datatype="html">
         <source>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
-        <target>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</target>
+        <target>Descubre xmr.tx.taxi, un explorador de bloques y de la mempool de Monero que muestra datos públicos y respeta la privacidad de RingCT.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
           <context context-type="linenumber">51</context>
@@ -1403,7 +1403,7 @@
       </trans-unit>
       <trans-unit id="cb1b52c13b95fa29ea4044f2bbe0ac623b890c80" datatype="html">
         <source>Fee</source>
-        <target>Tasa</target>
+        <target>Comisión</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">23</context>
@@ -1450,7 +1450,7 @@
       </trans-unit>
       <trans-unit id="3e322ffba6477484e0dd2e65650fdd70322ea6d0" datatype="html">
         <source>Fee rate</source>
-        <target>Tasa de intercambio</target>
+        <target>Tasa de comisión</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">36</context>
@@ -3690,7 +3690,7 @@
       </trans-unit>
       <trans-unit id="07193288a0312875e18f38c3a2486b927a15520a" datatype="html">
         <source>Timestamp</source>
-        <target>Timestamp</target>
+        <target>Fecha y hora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-preview.component.html</context>
           <context context-type="linenumber">26</context>
@@ -4564,7 +4564,7 @@
       </trans-unit>
       <trans-unit id="86d26b45470e43b409e589517922276109138e87" datatype="html">
         <source>Transaction Fees</source>
-        <target>Tasa de Transacción</target>
+        <target>Comisiones de transacción</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">8</context>
@@ -5952,7 +5952,7 @@
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
         <source>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</source>
-        <target>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</target>
+        <target>Consulta estadísticas de bloques de la mempool de Monero en tiempo real: rango de comisiones por byte, tamaño total, número de transacciones y comisiones totales.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -7223,7 +7223,7 @@
       </trans-unit>
       <trans-unit id="statistics.memory-by-vBytes" datatype="html">
         <source>Mempool by bytes (ɱ/B)</source>
-        <target>Mempool by bytes (ɱ/B)</target>
+        <target>Mempool por bytes (ɱ/B)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">7</context>
@@ -7263,7 +7263,7 @@
       </trans-unit>
       <trans-unit id="statistics.transaction-vbytes-per-second" datatype="html">
         <source>Transaction bytes per second (B/s)</source>
-        <target>Transaction bytes per second (B/s)</target>
+        <target>Bytes de transacciones por segundo (B/s)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">110</context>
@@ -7289,7 +7289,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.mempool" datatype="html">
         <source>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</source>
-        <target>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</target>
+        <target>Consulta el tamaño de la mempool de Monero (en MB) y los bytes de transacciones por segundo (B/s) a lo largo del tiempo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.ts</context>
           <context context-type="linenumber">67</context>
@@ -7530,7 +7530,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.transaction" datatype="html">
         <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</source>
-        <target>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</target>
+        <target>Consulta el estado, la comisión, el tamaño, la información del anillo, las imágenes de clave y las confirmaciones de la transacción de Monero <x id="PH" equiv-text="this.txId"/>. RingCT mantiene ocultos los importes y destinatarios.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">207</context>
@@ -7538,7 +7538,7 @@
       </trans-unit>
       <trans-unit id="transaction.blob" datatype="html">
         <source>Transaction blob</source>
-        <target>Transaction blob</target>
+        <target>Datos binarios de la transacción</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">189</context>
@@ -8056,7 +8056,7 @@
       </trans-unit>
       <trans-unit id="7d745f2569c4ddc2992529f00ed991e36dada39a" datatype="html">
         <source>(Newly Generated Coins)</source>
-        <target>(Newly Generated Coins)</target>
+        <target>(Monedas recién generadas)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">90</context>
@@ -10898,7 +10898,7 @@
       </trans-unit>
       <trans-unit id="2da938f28079d0d1ba372c5290b1bb1c18cf077c" datatype="html">
         <source>fee</source>
-        <target>tasa</target>
+        <target>comisión</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-type/address-type.component.html</context>
           <context context-type="linenumber">3</context>
@@ -11400,7 +11400,7 @@
       </trans-unit>
       <trans-unit id="2799825781368047816" datatype="html">
         <source>Transaction fee</source>
-        <target>Tasa de transacción</target>
+        <target>Comisión de transacción</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/pipes/scriptpubkey-type-pipe/scriptpubkey-type.pipe.ts</context>
           <context context-type="linenumber">12</context>
@@ -11416,7 +11416,7 @@
       </trans-unit>
       <trans-unit id="recent-transactions-title" datatype="html">
         <source>Recent Transactions</source>
-        <target>Recent Transactions</target>
+        <target>Transacciones recientes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">94</context>
@@ -11424,7 +11424,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.recent-transactions" datatype="html">
         <source>See the most recent Monero transactions known to this node&apos;s mempool, updated in real time.</source>
-        <target>See the most recent Monero transactions known to this node&apos;s mempool, updated in real time.</target>
+        <target>Consulta las transacciones más recientes que este nodo conoce en su mempool, actualizadas en tiempo real.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">95</context>
@@ -11432,7 +11432,7 @@
       </trans-unit>
       <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
         <source>1 new transaction</source>
-        <target>1 new transaction</target>
+        <target>1 transacción nueva</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">7</context>
@@ -11447,7 +11447,7 @@
         <target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt;
 &lt;/button&gt;
 
-&lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> new transactions</target>
+&lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> transacciones nuevas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">8</context>
@@ -11456,7 +11456,7 @@
       </trans-unit>
       <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
+        <target>Pausar/Reanudar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -11466,7 +11466,7 @@
       </trans-unit>
       <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
+        <target>Pausar/Reanudar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -11486,7 +11486,7 @@
       </trans-unit>
       <trans-unit id="12712092967db7dedb58de04474dd9387f0b25c1" datatype="html">
         <source>No transactions currently in the mempool.</source>
-        <target>No transactions currently in the mempool.</target>
+        <target>No hay transacciones en la mempool en este momento.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">57</context>
@@ -11495,7 +11495,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.block" datatype="html">
         <source>See Monero block size, weight, fees, reward, included transaction hashes, and public chain metadata for block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</source>
-        <target>See Monero block size, weight, fees, reward, included transaction hashes, and public chain metadata for block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</target>
+        <target>Consulta el tamaño, el peso, las comisiones, la recompensa, los hashes de las transacciones y los datos públicos del bloque de Monero <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
           <context context-type="linenumber">288</context>
@@ -11503,7 +11503,7 @@
       </trans-unit>
       <trans-unit id="f2e3b7efbb8a150162d83424d6e47d6e56aa8402" datatype="html">
         <source>Major version</source>
-        <target>Major version</target>
+        <target>Versión principal</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">308</context>
@@ -11512,7 +11512,7 @@
       </trans-unit>
       <trans-unit id="723c8f5d2ddddc61bd1de35aa3b198b8b6be3766" datatype="html">
         <source>Miner tx hash</source>
-        <target>Miner tx hash</target>
+        <target>Hash de la transacción del minero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">316</context>
@@ -11521,7 +11521,7 @@
       </trans-unit>
       <trans-unit id="d698f4953b16a622df57735484ebf7c0b000da81" datatype="html">
         <source>Minor version</source>
-        <target>Minor version</target>
+        <target>Versión secundaria</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">312</context>
@@ -11539,7 +11539,7 @@
       </trans-unit>
       <trans-unit id="0b2a8975eccbec2ab3549027507c09f8034f6ec4" datatype="html">
         <source>Search a Monero block height, block hash, or tx hash</source>
-        <target>Search a Monero block height, block hash, or tx hash</target>
+        <target>Busca la altura o el hash de un bloque de Monero, o el hash de una transacción</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
           <context context-type="linenumber">14</context>
@@ -11557,7 +11557,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.ring16" datatype="html">
         <source>Standard ring (16)</source>
-        <target>Standard ring (16)</target>
+        <target>Anillo estándar (16)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">54</context>
@@ -11573,7 +11573,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.rct6" datatype="html">
         <source>RCT v6 (latest)</source>
-        <target>RCT v6 (latest)</target>
+        <target>RCT v6 (actual)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -11581,7 +11581,7 @@
       </trans-unit>
       <trans-unit id="1bb63205bfc0b2c54da06a75b8d60516697c2382" datatype="html">
         <source>atomic units</source>
-        <target>atomic units</target>
+        <target>unidades atómicas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
           <context context-type="linenumber">42</context>
@@ -11683,7 +11683,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.group-public-signals" datatype="html">
         <source>Monero public signals</source>
-        <target>Monero public signals</target>
+        <target>Señales públicas de Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">98</context>
@@ -11691,7 +11691,7 @@
       </trans-unit>
       <trans-unit id="b17df68c0822021ce4480bbd4ed72b15733b818e" datatype="html">
         <source>Hidden by RingCT</source>
-        <target>Hidden by RingCT</target>
+        <target>Oculto por RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">40</context>
@@ -11700,7 +11700,7 @@
       </trans-unit>
       <trans-unit id="89864e276d5211949a4f7bfe381f86d509191852" datatype="html">
         <source>Comparison status</source>
-        <target>Comparison status</target>
+        <target>Estado de la comparación</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">58</context>
@@ -11709,7 +11709,7 @@
       </trans-unit>
       <trans-unit id="ab4fd1a5febd86d3f383293363de659a92fd4091" datatype="html">
         <source>Missing from block</source>
-        <target>Missing from block</target>
+        <target>Ausente del bloque</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">62</context>
@@ -11719,7 +11719,7 @@
       </trans-unit>
       <trans-unit id="bd686becafa75168c61368a59bee2c36af7a521a" datatype="html">
         <source>Different block template</source>
-        <target>Different block template</target>
+        <target>Plantilla de bloque diferente</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">63</context>
@@ -11732,7 +11732,7 @@
       </trans-unit>
       <trans-unit id="66f3ae3eff97ee4cbf8c9751eacdd4f736cb338b" datatype="html">
         <source>Monero transaction filters</source>
-        <target>Monero transaction filters</target>
+        <target>Filtros de transacciones de Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">3</context>
@@ -11757,6 +11757,1411 @@
         </context-group>
         <note priority="1" from="description">mining.no-observed-blocks</note>
       </trans-unit>
+      <trans-unit id="xmr.about.title" datatype="html">
+        <source>About xmr.tx.taxi</source>
+        <target>Acerca de xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.tagline" datatype="html">
+        <source>The Monero explorer in the tx.taxi family.</source>
+        <target>El explorador de Monero de la familia tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.projectLinks" datatype="html">
+        <source>Project links</source>
+        <target>Enlaces del proyecto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.documentation" datatype="html">
+        <source>Monero documentation</source>
+        <target>Documentación de Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.contact" datatype="html">
+        <source>Contact the maintainer</source>
+        <target>Contactar con el responsable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.description" datatype="html">
+        <source>xmr.tx.taxi adapts the Mempool Open Source Project interface for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</source>
+        <target>xmr.tx.taxi adapta la interfaz del proyecto de código abierto Mempool para <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Muestra lo que la cadena permite verificar: altura, tasa de hash, actividad de transacciones pendientes, niveles de comisión, información de anillos y tipo de RingCT. Los importes están ocultos por RingCT y los destinatarios por direcciones ocultas; no se muestran por defecto.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacy" datatype="html">
+        <source>Privacy by default</source>
+        <target>Privacidad por defecto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacyDescription" datatype="html">
+        <source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero&apos;s privacy model:</source>
+        <target>Las páginas de detalle de transacciones difuminan los campos sensibles por diseño. La divulgación por los participantes se limita a procesos compatibles con el modelo de privacidad de Monero:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.recipientChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Recipient checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — require the recipient&apos;s own wallet/view key tooling. Private keys should stay local.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Comprobaciones del destinatario<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: requieren las herramientas de cartera o clave de vista del propio destinatario. Las claves privadas deben permanecer en el dispositivo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.proofChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_proof verification<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Verificación de tx_proof<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: el servidor puede comprobar una firma tx_proof y la dirección del destinatario cuando el operador configura monero-wallet-rpc. No se envían claves privadas.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.secretChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_secret_key checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Comprobaciones de tx_secret_key<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: deben realizarse con herramientas de cartera locales; xmr.tx.taxi no solicita que se envíe esa clave al servidor.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemon" datatype="html">
+        <source>Daemon</source>
+        <target>Nodo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemonDescription" datatype="html">
+        <source>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> JSON-RPC endpoint.</source>
+        <target>Esta instalación utiliza un conjunto configurado de nodos públicos de Monero con RPC restringida y alternativas en orden. Los operadores pueden conectar una instancia propia a cualquier punto de acceso JSON-RPC compatible de <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.license" datatype="html">
+        <source>License</source>
+        <target>Licencia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.licenseDescription" datatype="html">
+        <source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source>
+        <target>xmr.tx.taxi cumple las obligaciones de la licencia AGPLv3 del proyecto original. El proyecto de código abierto Mempool creó los patrones de interfaz en los que se basa este explorador.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSource" datatype="html">
+        <source>Built on open source</source>
+        <target>Basado en código abierto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSourceDescription" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source>
+        <target>Este explorador se basa en el <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>proyecto de código abierto Mempool<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Consulta las <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>atribuciones de terceros<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> y contacta con el responsable para obtener información sobre el código fuente y la licencia.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
+        <source>Pending Transactions</source>
+        <target>Transacciones pendientes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.aria" datatype="html">
+        <source>About tx.taxi</source>
+        <target>Acerca de tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.title" datatype="html">
+        <source>One search across chains.</source>
+        <target>Una búsqueda en varias cadenas.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.description" datatype="html">
+        <source>Paste a transaction, block or address into tx.taxi. Open a confirmed match, choose between possible networks, or head straight to your chain’s explorer.</source>
+        <target>Pega una transacción, un bloque o una dirección en tx.taxi. Abre una coincidencia confirmada, elige entre las posibles redes o accede directamente al explorador de tu cadena.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.openTaxi" datatype="html">
+        <source>Open tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Abrir tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.exploreChain" datatype="html">
+        <source>Explore <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Explorar <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22074d9b0ef5a18f1569ba121bf689923002ff17" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this block&apos;s fee rate</source>
+        <target>Comisión estimada para una transacción de Monero de 2 kB a la tasa de este bloque</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <note priority="1" from="description">Monero historical fee example</note>
+      </trans-unit>
+      <trans-unit id="6948786787037977434" datatype="html">
+        <source>Blocks</source>
+        <target>Bloques</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="420763834450076269" datatype="html">
+        <source>Block</source>
+        <target>Bloque</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71862f6b2c89c8901f90240b219f01844a301dcb" datatype="html">
+        <source>Daemon floor or lowest observed current mempool rate</source>
+        <target>Mínimo del nodo o tasa más baja observada en la mempool actual</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (economy)</note>
+      </trans-unit>
+      <trans-unit id="77a014215a8ebca1d2cb97afd2d6d0b98f30064d" datatype="html">
+        <source>Derived from lower current Monero mempool fee rates</source>
+        <target>Calculada a partir de las tasas de comisión más bajas de la mempool actual de Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (low priority)</note>
+      </trans-unit>
+      <trans-unit id="9b7f259ef00e0bc210c59220cbe1505594e08510" datatype="html">
+        <source>Derived from mid-range current Monero mempool fee rates</source>
+        <target>Calculada a partir de las tasas de comisión intermedias de la mempool actual de Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (medium priority)</note>
+      </trans-unit>
+      <trans-unit id="841d41ed3f0a7f43195b96dd3f8006706810cd6d" datatype="html">
+        <source>Derived from the highest current Monero projected-block fee rates</source>
+        <target>Calculada a partir de las tasas de comisión más altas del bloque proyectado actual de Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (high priority)</note>
+      </trans-unit>
+      <trans-unit id="b869c9a96b183dcb932213b60d4a26fb4e9fa2db" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this rate</source>
+        <target>Comisión estimada para una transacción de Monero de 2 kB a esta tasa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+      <trans-unit id="graphs.h1" datatype="html">
+        <source>Monero Network Graphs</source>
+        <target>Gráficos de la red Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/graphs/graphs.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Graphs hidden heading</note>
+      </trans-unit>
+      <trans-unit id="2c15418ab123a8ff78ca76d128831cd88893f0da" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this fee rate</source>
+        <target>Comisión estimada para una transacción de Monero de 2 kB a esta tasa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+      <trans-unit id="xmr.meta.title.mining.dashboard" datatype="html">
+        <source>Mining</source>
+        <target>Minería</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.meta.description.mining.dashboard" datatype="html">
+        <source>See Monero mining stats: hashrate, per-block difficulty changes, block rewards, pool attribution, and recent blocks.</source>
+        <target>Consulta estadísticas de minería de Monero: tasa de hash, cambios de dificultad por bloque, recompensas, atribución de pools y bloques recientes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8493638f3af7c7eae48091929c7f8461bddbed51" datatype="html">
+        <source>All pools</source>
+        <target>Todos los pools</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">mining.all-pools</note>
+      </trans-unit>
+      <trans-unit id="2fdc79ab67991fd81012f4fe18de77138da9230f" datatype="html">
+        <source>No observed blocks yet.</source>
+        <target>Aún no hay bloques observados.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">mining.no-observed-blocks</note>
+      </trans-unit>
+      <trans-unit id="15c02cb6b6c3be53477e502d3e1ee26955b23af0" datatype="html">
+        <source>Unavailable</source>
+        <target>No disponible</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <note priority="1" from="description">shared.unavailable</note>
+      </trans-unit>
+      <trans-unit id="2611475427610660053" datatype="html">
+        <source>Transactions</source>
+        <target>Transacciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="313854265968026491" datatype="html">
+        <source>Transaction</source>
+        <target>Transacción</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.h1" datatype="html">
+        <source>Monero Block &amp; Pending Transactions Explorer</source>
+        <target>Explorador de bloques y transacciones pendientes de Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Dashboard hidden heading</note>
+      </trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html">
+        <source>Documentation</source>
+        <target>Documentación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html">
+        <source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source>
+        <target>Documentación del explorador de Monero: datos públicos que respetan la privacidad, puntos de acceso REST y flujos en directo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html">
+        <source>Unavailable for pruned data</source>
+        <target>No disponible para datos podados</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html">
+        <source>Pruned data size</source>
+        <target>Tamaño de los datos podados</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html">
+        <source>Serialized size</source>
+        <target>Tamaño serializado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html">
+        <source>Unlock time</source>
+        <target>Tiempo de desbloqueo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html">
+        <source>Decoded transaction</source>
+        <target>Transacción decodificada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html">
+        <source>Transaction extra</source>
+        <target>Datos extra de la transacción</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html">
+        <source>Raw tx_extra</source>
+        <target>tx_extra sin procesar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html">
+        <source>Empty</source>
+        <target>Vacío</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source>
+        <target>Algunos campos extra no se reconocen; arriba se muestran todos los bytes sin procesar.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html">
+        <source>Payment verification</source>
+        <target>Verificación de pago</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html">
+        <source>Monero payment verification mode</source>
+        <target>Modo de verificación de pago de Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html">
+        <source>Received</source>
+        <target>Recibido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-help" datatype="html">
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source>
+        <target>La verificación de tx_proof usa el RPC de la cartera del servidor cuando está configurado. Las claves privadas de visualización y los valores de tx_secret_key se comprueban localmente en este navegador y no se envían a xmr.tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html">
+        <source>Recipient address</source>
+        <target>Dirección del destinatario</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html">
+        <source>Message</source>
+        <target>Mensaje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html">
+        <source>tx_proof signature</source>
+        <target>Firma tx_proof</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html">
+        <source>Verifying...</source>
+        <target>Verificando...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html">
+        <source>Verify proof</source>
+        <target>Verificar prueba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html">
+        <source>Proof verified</source>
+        <target>Prueba verificada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.confirmations" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/> confirmations</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/> confirmaciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html">
+        <source>In mempool</source>
+        <target>En la mempool</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html">
+        <source>Private view key</source>
+        <target>Clave privada de visualización</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html">
+        <source>Scanning...</source>
+        <target>Analizando...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html">
+        <source>Scan this tx</source>
+        <target>Analizar esta transacción</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html">
+        <source>Checking...</source>
+        <target>Comprobando...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html">
+        <source>Check key</source>
+        <target>Comprobar clave</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html">
+        <source>Payment found</source>
+        <target>Pago encontrado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.atomic-amount" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> atomic units </source>
+        <target><x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> unidades atómicas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">318,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.privacy" datatype="html">
+        <source>Privacy by default</source>
+        <target>Privacidad por defecto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.explore" datatype="html">
+        <source>Explore</source>
+        <target>Explorar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <target>Panel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.recentBlocks" datatype="html">
+        <source>Recent Blocks</source>
+        <target>Bloques recientes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.pending" datatype="html">
+        <source>Pending Transactions</source>
+        <target>Transacciones pendientes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.activity" datatype="html">
+        <source>Transaction activity</source>
+        <target>Actividad de transacciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.instanceStatus" datatype="html">
+        <source>Instance status</source>
+        <target>Estado de la instancia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.learn" datatype="html">
+        <source>Learn</source>
+        <target>Aprender</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.moneropedia" datatype="html">
+        <source>Moneropedia</source>
+        <target>Moneropedia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.whatRingct" datatype="html">
+        <source>What is RingCT?</source>
+        <target>¿Qué es RingCT?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.viewKey" datatype="html">
+        <source>View key</source>
+        <target>Clave de visualización</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.proofSignatures" datatype="html">
+        <source>tx_proof signatures</source>
+        <target>Firmas tx_proof</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.research" datatype="html">
+        <source>Monero research lab</source>
+        <target>Laboratorio de investigación de Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.documentation" datatype="html">
+        <source>Explorer documentation</source>
+        <target>Documentación del explorador</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.about" datatype="html">
+        <source>About</source>
+        <target>Acerca de</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.source" datatype="html">
+        <source>Source code</source>
+        <target>Código fuente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.status" datatype="html">
+        <source>Status</source>
+        <target>Estado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.telegram" datatype="html">
+        <source>Telegram</source>
+        <target>Telegram</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.contact" datatype="html">
+        <source>Contact Us</source>
+        <target>Contacto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.released" datatype="html">
+        <source>Released under AGPLv3</source>
+        <target>Publicado bajo AGPLv3</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
+        <source>Address and tx_proof signature are required.</source>
+        <target>La dirección y la firma tx_proof son obligatorias.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html">
+        <source>Enter a valid-looking Monero mainnet address.</source>
+        <target>Introduce una dirección de la red principal de Monero con formato válido.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html">
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source>
+        <target>Introduce la firma tx_proof generada por una cartera de Monero.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
+        <source>The proof did not verify for this transaction and address.</source>
+        <target>La prueba no se verificó para esta transacción y dirección.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
+        <source>Unable to verify proof.</source>
+        <target>No se pudo verificar la prueba.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
+        <source>Address and private view key are required.</source>
+        <target>La dirección y la clave privada de visualización son obligatorias.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
+        <source>Load a transaction before running local verification.</source>
+        <target>Carga una transacción antes de ejecutar la verificación local.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html">
+        <source>Enter a 64-character hexadecimal private view key.</source>
+        <target>Introduce una clave privada de visualización hexadecimal de 64 caracteres.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
+        <source>Address and tx_secret_key are required.</source>
+        <target>La dirección y tx_secret_key son obligatorias.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html">
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source>
+        <target>Introduce la tx_secret_key hexadecimal de la cartera remitente.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
+        <source>Unable to verify this transaction locally.</source>
+        <target>No se pudo verificar esta transacción localmente.</target>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofMessageLength" datatype="html">
+        <source>Proof messages must be <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> characters or less.</source>
+        <target>Los mensajes de prueba deben tener como máximo <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> caracteres.</target>
+      </trans-unit>
+      <trans-unit id="xmr.footer.madeWith" datatype="html"><source>Made with</source><target>Hecho con</target></trans-unit>
+      <trans-unit id="xmr.footer.by" datatype="html"><source>by</source><target>por</target></trans-unit>
+      <trans-unit id="xmr.list.inputs" datatype="html">
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</source>
+        <target>Entradas (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.outputs" datatype="html">
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</source>
+        <target>Salidas (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></source>
+        <target>Anillo <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html">
+        <source>Key image</source>
+        <target>Imagen de clave</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html">
+        <source>Input type</source>
+        <target>Tipo de entrada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html">
+        <source>Ring size</source>
+        <target>Tamaño del anillo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
+        <source>Relative ring offsets</source>
+        <target>Desplazamientos relativos del anillo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html">
+        <source>Ring members</source>
+        <target>Miembros del anillo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-index" datatype="html">
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></source>
+        <target>Salida n.º <x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.block-height" datatype="html">
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></source>
+        <target>Bloque <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.blocks-earlier" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> blocks earlier</source>
+        <target><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> bloques antes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html">
+        <source>Output key</source>
+        <target>Clave de salida</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html">
+        <source>Source transaction temporarily unavailable.</source>
+        <target>La transacción de origen no está disponible temporalmente.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html">
+        <source>This legacy input has no decoys.</source>
+        <target>Esta entrada antigua no tiene señuelos.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html">
+        <source>Ring members include decoys; the actual spent output is not identified.</source>
+        <target>Los miembros del anillo incluyen señuelos; la salida realmente gastada no se identifica.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
+        <source>Some ring-member details were not resolved in this response.</source>
+        <target>Algunos detalles de los miembros del anillo no se pudieron obtener en esta respuesta.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html">
+        <source>RingCT output</source>
+        <target>Salida RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html">
+        <source>recipient hidden</source>
+        <target>destinatario oculto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html">
+        <source>Output type</source>
+        <target>Tipo de salida</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html">
+        <source>Amount</source>
+        <target>Cantidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html">
+        <source>Hidden by RingCT</source>
+        <target>Oculta por RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html">
+        <source>Recipient</source>
+        <target>Destinatario</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html">
+        <source>Hidden by stealth addressing</source>
+        <target>Oculto mediante direcciones ocultas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html">
+        <source>Global output index</source>
+        <target>Índice global de salida</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html">
+        <source>View tag</source>
+        <target>Etiqueta de visualización</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html">
+        <source>Amount commitment</source>
+        <target>Compromiso de cantidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html">
+        <source>atomic units</source>
+        <target>unidades atómicas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html">
+        <source>Amount hidden</source>
+        <target>Cantidad oculta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html">
+        <source>Coinbase</source>
+        <target>Coinbase</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html">
+        <source>RingCT input</source>
+        <target>Entrada RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
+        <source>Legacy ring input</source>
+        <target>Entrada de anillo antigua</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html">
+        <source>Input</source>
+        <target>Entrada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html">
+        <source>Stealth output</source>
+        <target>Salida oculta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html">
+        <source>Fee</source>
+        <target>Comisión</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html">
+        <source>Output</source>
+        <target>Salida</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
+        <source>Transaction amount hidden by RingCT</source>
+        <target>Cantidad de la transacción oculta por RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html">
+        <source>Change amount denomination</source>
+        <target>Cambiar la denominación de la cantidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()"/></source>
+        <target>salida global <x id="index" equiv-text="member.global_index.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-height" datatype="html">
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()"/></source>
+        <target>altura <x id="height" equiv-text="member.height.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-blocks-before-spend" datatype="html">
+        <source><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> blocks before spend</source>
+        <target><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> bloques antes del gasto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html">
+        <source>locked</source>
+        <target>bloqueado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-title" datatype="html"><source>Monero daemon status</source><target>Estado del nodo Monero</target></trans-unit>
+      <trans-unit id="xmr-status-chain" datatype="html"><source>Chain</source><target>Cadena</target></trans-unit>
+      <trans-unit id="xmr-status-network" datatype="html"><source>Network</source><target>Red</target></trans-unit>
+      <trans-unit id="xmr-status-workload" datatype="html"><source>Workload</source><target>Actividad</target></trans-unit>
+      <trans-unit id="xmr-status-daemon" datatype="html"><source>Daemon</source><target>Nodo</target></trans-unit>
+      <trans-unit id="xmr-status-storage" datatype="html"><source>Storage</source><target>Almacenamiento</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap" datatype="html"><source>Bootstrap</source><target>Arranque</target></trans-unit>
+      <trans-unit id="xmr-status-check-failed" datatype="html"><source>Daemon check failed</source><target>Falló la comprobación del nodo</target></trans-unit>
+      <trans-unit id="xmr-status-height" datatype="html"><source>Height</source><target>Altura</target></trans-unit>
+      <trans-unit id="xmr-status-target-height" datatype="html"><source>Target height</source><target>Altura objetivo</target></trans-unit>
+      <trans-unit id="xmr-status-behind" datatype="html"><source>Behind</source><target>Retraso</target></trans-unit>
+      <trans-unit id="xmr-status-tip-hash" datatype="html"><source>Tip hash</source><target>Hash del último bloque</target></trans-unit>
+      <trans-unit id="xmr-status-nettype" datatype="html"><source>Nettype</source><target>Tipo de red</target></trans-unit>
+      <trans-unit id="xmr-status-peers" datatype="html"><source>Peers</source><target>Pares</target></trans-unit>
+      <trans-unit id="xmr-status-connections" datatype="html"><source>Incoming / outgoing</source><target>Entrantes / salientes</target></trans-unit>
+      <trans-unit id="xmr-status-rpc-clients" datatype="html"><source>RPC clients</source><target>Clientes RPC</target></trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html"><source>Mempool</source><target>Mempool</target></trans-unit>
+      <trans-unit id="xmr-status-total-txs" datatype="html"><source>Total txs</source><target>Total de transacciones</target></trans-unit>
+      <trans-unit id="xmr-status-difficulty" datatype="html"><source>Difficulty</source><target>Dificultad</target></trans-unit>
+      <trans-unit id="xmr-status-estimated-hashrate" datatype="html"><source>Estimated hashrate</source><target>Tasa de hash estimada</target></trans-unit>
+      <trans-unit id="xmr-status-version" datatype="html"><source>Version</source><target>Versión</target></trans-unit>
+      <trans-unit id="xmr-status-uptime" datatype="html"><source>Uptime</source><target>Tiempo en línea</target></trans-unit>
+      <trans-unit id="xmr-status-started" datatype="html"><source>Started</source><target>Inicio</target></trans-unit>
+      <trans-unit id="xmr-status-trusted-rpc" datatype="html"><source>Trusted RPC</source><target>RPC de confianza</target></trans-unit>
+      <trans-unit id="xmr-status-database-size" datatype="html"><source>Database size</source><target>Tamaño de la base de datos</target></trans-unit>
+      <trans-unit id="xmr-status-free-space" datatype="html"><source>Free space</source><target>Espacio libre</target></trans-unit>
+      <trans-unit id="xmr-status-block-size-limit" datatype="html"><source>Block size limit</source><target>Límite de tamaño de bloque</target></trans-unit>
+      <trans-unit id="xmr-status-update-available" datatype="html"><source>Update available</source><target>Actualización disponible</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-height" datatype="html"><source>Bootstrap height</source><target>Altura de arranque</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-daemon" datatype="html"><source>Bootstrap daemon</source><target>Nodo de arranque</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-used" datatype="html"><source>Bootstrap used</source><target>Arranque utilizado</target></trans-unit>
+      <trans-unit id="xmr-status-peerlist" datatype="html"><source>Peerlist</source><target>Lista de pares</target></trans-unit>
+      <trans-unit id="xmr-status-instance-health" datatype="html"><source>Instance health</source><target>Estado de la instancia</target></trans-unit>
+      <trans-unit id="xmr-status-description" datatype="html"><source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target>Disponibilidad del servidor y estado de sincronización del nodo público de esta instancia de xmr.tx.taxi.</target></trans-unit>
+      <trans-unit id="xmr-status-checked" datatype="html"><source>Checked</source><target>Comprobado</target></trans-unit>
+      <trans-unit id="xmr-status-backend" datatype="html"><source>Backend</source><target>Servidor</target></trans-unit>
+      <trans-unit id="xmr-status-checking" datatype="html"><source>Checking daemon status...</source><target>Comprobando el estado del nodo...</target></trans-unit>
+      <trans-unit id="xmr-status-service-reachability" datatype="html"><source>Service reachability</source><target>Disponibilidad de los servicios</target></trans-unit>
+      <trans-unit id="xmr-status-daemon-details" datatype="html"><source>Daemon details</source><target>Detalles del nodo</target></trans-unit>
+      <trans-unit id="xmr-status-reachable" datatype="html"><source>reachable</source><target>disponible</target></trans-unit>
+      <trans-unit id="xmr-status-unreachable" datatype="html"><source>unreachable</source><target>no disponible</target></trans-unit>
+      <trans-unit id="xmr-status-blocks" datatype="html"><source>blocks</source><target>bloques</target></trans-unit>
+      <trans-unit id="xmr-status-txs" datatype="html"><source>txs</source><target>transacciones</target></trans-unit>
+      <trans-unit id="xmr-status-white" datatype="html"><source>white</source><target>blancos</target></trans-unit>
+      <trans-unit id="xmr-status-grey" datatype="html"><source>grey</source><target>grises</target></trans-unit>
+      <trans-unit id="xmr-status-backend-answered" datatype="html"><source>The backend answered, but monerod did not return</source><target>El servidor respondió, pero monerod no devolvió</target></trans-unit>
+      <trans-unit id="xmr-status-unknown" datatype="html"><source>unknown</source><target>desconocido</target></trans-unit>
+      <trans-unit id="xmr-status-not-configured" datatype="html"><source>not configured</source><target>sin configurar</target></trans-unit>
+      <trans-unit id="xmr-status-no" datatype="html"><source>no</source><target>no</target></trans-unit>
+      <trans-unit id="xmr-status-yes" datatype="html"><source>yes</source><target>sí</target></trans-unit>
+      <trans-unit id="xmr-status-state-online" datatype="html"><source>monerod reachable</source><target>monerod disponible</target></trans-unit>
+      <trans-unit id="xmr-status-state-syncing" datatype="html"><source>syncing</source><target>sincronizando</target></trans-unit>
+      <trans-unit id="xmr-status-state-degraded" datatype="html"><source>attention needed</source><target>requiere atención</target></trans-unit>
+      <trans-unit id="xmr-status-state-offline" datatype="html"><source>daemon unreachable</source><target>nodo no disponible</target></trans-unit>
+      <trans-unit id="xmr-status-request-failed" datatype="html"><source>request failed</source><target>falló la solicitud</target></trans-unit>
+      <trans-unit id="xmr-status-network-request-failed" datatype="html"><source>network request failed</source><target>falló la solicitud de red</target></trans-unit>
+      <trans-unit id="xmr.docs.heading" datatype="html"><source>Documentation</source><target>Documentación</target></trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html"><source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target>xmr.tx.taxi muestra datos públicos del nodo y la cadena. Monero mantiene privados los importes, los destinatarios y el historial de direcciones; por eso este explorador indica esos límites sin hacer suposiciones.</target></trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html"><source>What is xmr.tx.taxi?</source><target>¿Qué es xmr.tx.taxi?</target></trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html"><source>What is a mempool?</source><target>¿Qué es la mempool?</target></trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html"><source>Why are amounts hidden?</source><target>¿Por qué se ocultan los importes?</target></trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html"><source>Why is there no public address history?</source><target>¿Por qué no hay un historial público de direcciones?</target></trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html"><source>How do Monero fees work?</source><target>¿Cómo funcionan las comisiones de Monero?</target></trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html"><source>What does pending or confirmed mean?</source><target>¿Qué significa pendiente o confirmada?</target></trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html"><source>Can I verify a payment?</source><target>¿Puedo verificar un pago?</target></trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html"><source>How are mining pools identified?</source><target>¿Cómo se identifican los grupos de minería?</target></trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html"><source>Server messages</source><target>Mensajes del servidor</target></trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html"><source>Client messages</source><target>Mensajes del cliente</target></trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html"><source>Events and reconnection</source><target>Eventos y reconexión</target></trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html"><source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source><target>RingCT oculta los importes de salida mediante compromisos, mientras que las direcciones furtivas ocultan a los destinatarios tras salidas de un solo uso. Los datos públicos muestran la estructura de las transacciones, las comisiones, su inclusión en bloques, las imágenes de clave y las referencias a los miembros del anillo, pero no permiten deducir los importes ni los destinatarios.</target></trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html"><source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source><target>Las pruebas de transacción y los análisis de la cartera son comprobaciones de los participantes; no convierten una dirección pública en un historial público.</target></trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html"><source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target>Una dirección de Monero no es una cuenta en la cadena con salidas visibles. Las carteras usan claves de visualización para reconocer sus propias salidas de un solo uso. El explorador no presenta un saldo, conjunto de salidas no gastadas ni historial de transacciones para una dirección.</target></trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html"><source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target>Las comisiones públicas se expresan en unidades atómicas por byte. El nodo estima tasas de prioridad lenta, normal, rápida y máxima; las carteras aplican la tasa elegida al peso de la transacción y a la cuantización de la comisión. Los bloques previstos resumen las comisiones y los pesos pendientes observados, pero no garantizan su inclusión.</target></trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html"><source>Address tracking is intentionally not a public Monero stream feature.</source><target>El seguimiento de direcciones no está disponible en el flujo público de Monero.</target></trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html"><source>Endpoint</source><target>Punto de acceso</target></trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html"><source>Public result</source><target>Resultado público</target></trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html"><source>Message</source><target>Mensaje</target></trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html"><source>Behavior</source><target>Comportamiento</target></trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html"><source>Event</source><target>Evento</target></trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html"><source>Payload</source><target>Contenido</target></trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html"><source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target>Estado del nodo, altura, dificultad, tasa de hash, pares y número de transacciones pendientes.</target></trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html"><source>Recent block headers; count is capped at 25.</source><target>Cabeceras de bloques recientes; el máximo es 25.</target></trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html"><source>Up to 25 headers ending at a height.</source><target>Hasta 25 cabeceras que terminan en una altura.</target></trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html"><source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target>Cabecera, identificadores de transacciones, estadísticas públicas de comisiones y atribución aproximada del grupo.</target></trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html"><source>Privacy-safe summaries used by the block visualization.</source><target>Resúmenes que respetan la privacidad utilizados para visualizar el bloque.</target></trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html"><source>The daemon’s raw Monero block blob.</source><target>Datos originales del bloque Monero proporcionados por el nodo.</target></trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html"><source>Every-block Monero retarget metadata.</source><target>Metadatos del ajuste de dificultad de cada bloque de Monero.</target></trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html"><source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target>Estado, comisión, tamaño o peso, confirmaciones, datos públicos del anillo e indicadores de RingCT. No incluye la dirección del destinatario ni el importe de salida.</target></trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html"><source>Mempool blob or available pruned confirmed transaction hex.</source><target>Datos de la transacción pendiente o datos hexadecimales disponibles de la transacción confirmada.</target></trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html"><source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source><target>Número observado de transacciones pendientes, peso y comisiones agregados y campos que respetan la privacidad.</target></trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html"><source>Projected pending blocks from the observed pool.</source><target>Bloques pendientes previstos a partir de las transacciones observadas.</target></trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html"><source>Live-client bootstrap snapshot.</source><target>Instantánea inicial para el cliente en tiempo real.</target></trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html"><source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target>Estimaciones lenta, normal, rápida y máxima en unidades atómicas por byte y máscara de cuantización.</target></trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html"><source>Current or timestamped locally indexed fiat conversion data.</source><target>Datos de conversión a moneda fiduciaria actuales o indexados localmente para una fecha.</target></trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html"><source>Difficulty-derived network hashrate history.</source><target>Historial de la tasa de hash de la red derivada de la dificultad.</target></trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html"><source>Indexed block fee, subsidy, reward, and fiat series.</source><target>Series indexadas de comisiones, subsidios, recompensas y valores fiduciarios de bloques.</target></trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html"><source>Public fee-rate buckets and block size/weight history.</source><target>Intervalos públicos de tasas de comisión e historial del tamaño y peso de bloques.</target></trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html"><source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source><target>Estadísticas aproximadas de grupos basadas en marcadores; los bloques sin atribución permanecen como desconocidos.</target></trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html"><source>Request the current snapshot.</source><target>Solicita la instantánea actual.</target></trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html"><source>Subscribe to a projected block snapshot by index.</source><target>Se suscribe a la instantánea de un bloque previsto por índice.</target></trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html"><source>Track public confirmation status for one transaction hash.</source><target>Sigue el estado público de confirmación de una transacción por su identificador.</target></trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html"><source>Current daemon info and observed mempool hashes at connect.</source><target>Información actual del nodo e identificadores pendientes observados al conectar.</target></trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html"><source>A new public block header.</source><target>Una nueva cabecera pública de bloque.</target></trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html"><source>Overview</source><target>Descripción general</target></trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html"><source>Getting started</source><target>Primeros pasos</target></trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html"><source>Chain and blocks</source><target>Cadena y bloques</target></trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html"><source>Endpoints</source><target>Puntos de acceso</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html"><source>Transactions and mempool</source><target>Transacciones y mempool</target></trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html"><source>Fees and history</source><target>Comisiones e historial</target></trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html"><source>Mining data</source><target>Datos de minería</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html"><source>Transaction proof</source><target>Prueba de transacción</target></trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html"><source>Verification</source><target>Verificación</target></trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html"><source>Public daemon bridge</source><target>Pasarela pública del nodo</target></trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html"><source>Connect and initialize</source><target>Conexión e inicialización</target></trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html"><source>Connection</source><target>Conexión</target></trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html"><source>Events</source><target>Eventos</target></trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html"><source>Commands</source><target>Comandos</target></trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html"><source>Connect</source><target>Conectar</target></trans-unit>
+      <trans-unit id="xmr.docs.whatDescription" datatype="html"><source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source>
+        <target>Un explorador de bloques y transacciones pendientes para <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Adapta la conocida vista de mempool a los datos que un nodo Monero puede demostrar públicamente.</target></trans-unit>
+      <trans-unit id="xmr.docs.mempoolDescription" datatype="html"><source>A node-local set of valid transactions observed but not yet included in a block. There is no single global mempool: the site shows the configured daemon’s <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> response when last polled.</source>
+        <target>Conjunto local de transacciones válidas observadas por un nodo que aún no se han incluido en un bloque. No existe una única mempool global: el sitio muestra la respuesta <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> del nodo configurado en su última consulta.</target></trans-unit>
+      <trans-unit id="xmr.docs.confirmationDescription" datatype="html"><source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Pending<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> means this daemon currently observes the transaction in its pool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Confirmed<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> means a daemon returned it as included at a block height; confirmations grow as newer blocks arrive. Absence from one node’s pool is not proof a transaction never propagated or will not confirm.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Pendiente<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> significa que este nodo observa la transacción en su mempool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Confirmada<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> significa que un nodo la ha devuelto como incluida a una altura de bloque; las confirmaciones aumentan a medida que llegan nuevos bloques. Que una transacción no aparezca en la mempool de un nodo no demuestra que no se haya propagado o que no vaya a confirmarse.</target></trans-unit>
+      <trans-unit id="xmr.docs.proofDescription" datatype="html"><source>The transaction page can verify a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> when monero-wallet-rpc is configured. Recipient scans with a private view key and sender checks with a transaction secret key run in the browser; private key material is not sent to this API. A private view key alone is not a subaddress-proof tool.</source>
+        <target>La página de transacción puede verificar una <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> pública cuando monero-wallet-rpc está configurado. Los análisis del destinatario con una clave de visualización privada y las comprobaciones del remitente con una clave secreta de transacción se ejecutan en el navegador; las claves privadas no se envían a esta API. Una clave de visualización privada por sí sola no es una herramienta para demostrar subdirecciones.</target></trans-unit>
+      <trans-unit id="xmr.docs.miningDescription" datatype="html"><source>Pool labels are best-effort: public miner-transaction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> markers and, where published, proof-registry evidence. Unattributed blocks remain <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />Unknown<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" />; a label never identifies an individual miner.</source>
+        <target>Las etiquetas de grupos son aproximadas: se basan en marcadores públicos <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> de la transacción de minería y, cuando está publicada, en la evidencia del registro de pruebas. Los bloques sin atribución permanecen como <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>desconocidos<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; una etiqueta nunca identifica a un minero individual.</target></trans-unit>
+      <trans-unit id="xmr.docs.restDescription" datatype="html"><source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source>
+        <target>Las rutas documentadas son de solo lectura y están en el mismo origen bajo <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. No se ofrece una API de autenticación, cartera ni cuenta. Las comisiones y recompensas se expresan en unidades atómicas.</target></trans-unit>
+      <trans-unit id="xmr.docs.chainBlocksTitle" datatype="html"><source>Chain and blocks <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target>Cadena y bloques <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html"><source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target>Transacciones y mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.timesResult" datatype="html"><source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target>Horas conocidas de recepción en la mempool; el valor es <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> para transacciones confirmadas o desconocidas.</target></trans-unit>
+      <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html"><source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target>Comisiones e historial <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.statisticsResult" datatype="html"><source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target>Observaciones guardadas de un minuto para <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> o <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target></trans-unit>
+      <trans-unit id="xmr.docs.miningDataTitle" datatype="html"><source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target>Datos de minería <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.historyPeriods" datatype="html"><source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target>Las rutas de gráficos históricos admiten períodos como <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> y <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionProofTitle" datatype="html"><source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target>Verificación de prueba de transacción <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.verifyDescription" datatype="html"><source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source>
+        <target><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> acepta una <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> pública, una dirección y un mensaje opcional. Devuelve <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> si monero-wallet-rpc no está disponible. Nunca envíes una clave de visualización privada ni una clave secreta de transacción a este punto de acceso.</target></trans-unit>
+      <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html"><source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target>Pasarela pública del nodo <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.daemonDescription" datatype="html"><source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> proxy an allowlisted public daemon subset for browser-local verification. Wallet methods and secret-shaped fields are rejected; this is not a general remote node or wallet service.</source>
+        <target><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> y <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> dan acceso a un subconjunto permitido de métodos públicos del nodo para la verificación local en el navegador. Se rechazan los métodos de cartera y los campos que parecen contener secretos; no es un servicio general de nodo remoto ni de cartera.</target></trans-unit>
+      <trans-unit id="xmr.docs.websocketDescription" datatype="html"><source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ initMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> requests another. Messages use the established mempool protocol shape.</source>
+        <target>Conéctate a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. El servidor envía inmediatamente una instantánea; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> solicita otra. Los mensajes siguen el formato del protocolo de mempool.</target></trans-unit>
+      <trans-unit id="xmr.docs.eventsDescription" datatype="html"><source>Snapshots and updates can contain <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. A projected-block subscriber also receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. Treat all as observations from the configured daemon, not global finality.</source>
+        <target>Las instantáneas y actualizaciones pueden contener <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> y <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Un suscriptor de bloques previstos también recibe <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Son observaciones del nodo configurado, no una garantía de finalidad global.</target></trans-unit>
+      <trans-unit id="xmr.docs.pingResult" datatype="html"><source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ pongMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target>Recibe <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target></trans-unit>
+      <trans-unit id="xmr.docs.sseDescription" datatype="html"><source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source>
+        <target>Abre <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> como <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> para recibir actualizaciones unidireccionales. El búfer del proxy está desactivado y el flujo comienza con una instantánea.</target></trans-unit>
+      <trans-unit id="xmr.docs.deltaResult" datatype="html"><source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> for the observed pool.</source>
+        <target><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> para la mempool observada.</target></trans-unit>
+      <trans-unit id="xmr.docs.reconnectDescription" datatype="html"><source>A comment heartbeat is sent every 25 seconds. Native <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> reconnection is suitable for most clients; resync from the snapshot or REST after a disconnect.</source>
+        <target>Se envía un comentario de actividad cada 25 segundos. La reconexión nativa de <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> es adecuada para la mayoría de los clientes; tras una desconexión, vuelve a sincronizar desde la instantánea o la API REST.</target></trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html"><source>Documentation sections</source>
+        <target>Secciones de la documentación</target></trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html"><source>On this page</source>
+        <target>En esta página</target></trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html"><source>Chain search</source>
+        <target>Buscar en la cadena</target></trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html"><source>Choose search chain</source>
+        <target>Elegir cadena de búsqueda</target></trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html"><source>Selected explorer</source>
+        <target>Explorador seleccionado</target></trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html"><source>SELECTED</source>
+        <target>SELECCIONADO</target></trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html"><source>Automatic Routing</source>
+        <target>Enrutamiento automático</target></trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html"><source>Open tx.taxi in a new tab</source>
+        <target>Abrir tx.taxi en una pestaña nueva</target></trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html"><source>View Hub</source>
+        <target>Ver portal</target></trans-unit>
+      <trans-unit id="xmr.search.routingHint" datatype="html"><source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></source>
+        <target>O ve directamente a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[tu búsqueda]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html"><source>NATIVE EXPLORERS</source>
+        <target>EXPLORADORES NATIVOS</target></trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source>
+        <target>Registro de exploradores no disponible</target></trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html"><source>3RD-PARTY EXPLORERS</source>
+        <target>EXPLORADORES DE TERCEROS</target></trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html"><source>Open</source>
+        <target>Abrir</target></trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html"><source>Opened</source>
+        <target>Abierto</target></trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html"><source>Switch</source>
+        <target>Cambiar</target></trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html"><source>Loading explorers</source>
+        <target>Cargando exploradores</target></trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html"><source>Search selected chain</source>
+        <target>Buscar en la cadena seleccionada</target></trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html"><source>Monero explorer</source>
+        <target>Explorador de Monero</target></trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html"><source>Found</source>
+        <target>Encontrado</target></trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html"><source>Possible</source>
+        <target>Posible</target></trans-unit>
+      <trans-unit id="xmr.search.additionalExplorers" datatype="html"><source><x id="name" equiv-text="name" /> additional explorers</source>
+        <target>Exploradores adicionales de <x id="name" equiv-text="name"/></target></trans-unit>
+      <trans-unit id="xmr.search.openExplorer" datatype="html"><source>Open <x id="name" equiv-text="name" /></source>
+        <target>Abrir <x id="name" equiv-text="name"/></target></trans-unit>
+      <trans-unit id="xmr.search.openExplorerNewTab" datatype="html"><source>Open <x id="name" equiv-text="name" /> in a new tab</source>
+        <target>Abrir <x id="name" equiv-text="name"/> en una pestaña nueva</target></trans-unit>
+      <trans-unit id="xmr.search.switchExplorer" datatype="html"><source>Switch to <x id="name" equiv-text="name" /></source>
+        <target>Cambiar a <x id="name" equiv-text="name"/></target></trans-unit>
+      <trans-unit id="xmr.search.hideOne" datatype="html"><source>Hide <x id="count" equiv-text="count" /> additional <x id="name" equiv-text="name" /> option</source>
+        <target>Ocultar <x id="count" equiv-text="count"/> opción adicional de <x id="name" equiv-text="name"/></target></trans-unit>
+      <trans-unit id="xmr.search.hideMany" datatype="html"><source>Hide <x id="count" equiv-text="count" /> additional <x id="name" equiv-text="name" /> options</source>
+        <target>Ocultar <x id="count" equiv-text="count"/> opciones adicionales de <x id="name" equiv-text="name"/></target></trans-unit>
+      <trans-unit id="xmr.search.showOne" datatype="html"><source>Show <x id="count" equiv-text="count" /> additional <x id="name" equiv-text="name" /> option</source>
+        <target>Mostrar <x id="count" equiv-text="count"/> opción adicional de <x id="name" equiv-text="name"/></target></trans-unit>
+      <trans-unit id="xmr.search.showMany" datatype="html"><source>Show <x id="count" equiv-text="count" /> additional <x id="name" equiv-text="name" /> options</source>
+        <target>Mostrar <x id="count" equiv-text="count"/> opciones adicionales de <x id="name" equiv-text="name"/></target></trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source>
+        <target>Pide un taxi y pega aquí lo que quieras.</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html"><source>Total fees</source><target>Comisiones totales</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Mediana de la tasa de comisión</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html"><source>Fee range</source><target>Intervalo de comisiones</target></trans-unit>
     </body>
   </file>
 </xliff>

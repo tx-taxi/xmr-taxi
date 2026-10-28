@@ -1,10 +1,10 @@
-<form role="search" aria-label="Chain search" [class]="{hamburgerOpen: hamburgerOpen}" [formGroup]="searchForm" (submit)="searchForm.valid && search()" novalidate>
+<form role="search" aria-label="Chain search" i18n-aria-label="@@xmr.search.searchForm" [class]="{hamburgerOpen: hamburgerOpen}" [formGroup]="searchForm" (submit)="searchForm.valid && search()" novalidate>
   <div class="d-flex search-form-row" [style.--search-chain-accent]="(activeTarget$ | async)?.accentColor || defaultChainAccent">
     <div class="search-box-container me-2">
       <label class="visually-hidden" for="xmr-search-input">{{ defaultSearchPlaceholder }}</label>
       <div class="search-input-row">
         <div ngbDropdown #chainMenu="ngbDropdown" [autoClose]="false" class="search-chain-selector" placement="bottom-start">
-          <button ngbDropdownToggle type="button" class="search-chain-trigger" aria-label="Choose search chain" title="Choose search chain">
+          <button ngbDropdownToggle type="button" class="search-chain-trigger" aria-label="Choose search chain" i18n-aria-label="@@xmr.search.chooseChain" title="Choose search chain" i18n-title="@@xmr.search.chooseChain">
             <ng-container *ngIf="activeTarget$ | async as activeTarget; else defaultChainIcon">
               <img [src]="activeTarget.iconUrl" [alt]="activeTarget.iconAlt">
               <span *ngIf="activeTarget.destinationId && !activeTarget.destinationDefault" class="search-chain-target-label">{{ activeTarget.name }}</span>
@@ -13,9 +13,9 @@
               <img [src]="defaultChainIconUrl" [alt]="defaultChainIconAlt">
             </ng-template>
           </button>
-          <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain">
-            <div class="search-chain-selected-group" role="group" aria-label="Selected explorer">
-              <span class="search-chain-group-label">SELECTED</span>
+          <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain" i18n-aria-label="@@xmr.search.chooseChain">
+            <div class="search-chain-selected-group" role="group" aria-label="Selected explorer" i18n-aria-label="@@xmr.search.selectedExplorer">
+              <span class="search-chain-group-label" i18n="@@xmr.search.selected">SELECTED</span>
               <ng-container *ngIf="selectedExplorer() as explorer; else selectedAutomatic">
                 <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: explorer}"></ng-container>
                 <ng-container *ngFor="let destination of childDestinations(explorer); trackBy: trackExplorer">
@@ -31,7 +31,7 @@
                     <ng-container *ngTemplateOutlet="automaticRow"></ng-container>
                   </ng-container>
                   <ng-template #selectedRegistryState>
-                    <span class="search-chain-message">{{ explorerRegistryLoaded ? 'Explorer registry unavailable' : 'Loading explorers' }}</span>
+                    <span class="search-chain-message">{{ explorerRegistryLoaded ? registryUnavailableLabel : loadingExplorersLabel }}</span>
                   </ng-template>
                 </ng-template>
               </ng-template>
@@ -47,20 +47,20 @@
                 [attr.aria-pressed]="isAutomaticRoutingSelected()" (click)="selectAutomaticRouting()">
                 <img src="https://tx.taxi/assets/brand/router-favicon.svg" alt="">
                 <span class="search-chain-copy">
-                  <span class="search-chain-name">Automatic Routing</span>
+                  <span class="search-chain-name" i18n="@@xmr.search.automatic">Automatic Routing</span>
                 </span>
               </button>
               <span class="search-chain-actions">
                 <a class="search-chain-new-tab" [href]="routerHubUrl" target="_blank" rel="noopener noreferrer"
-                  aria-label="Open tx.taxi in a new tab" title="Open tx.taxi in a new tab">
+                  aria-label="Open tx.taxi in a new tab" i18n-aria-label="@@xmr.search.openHubNewTab" title="Open tx.taxi in a new tab" i18n-title="@@xmr.search.openHubNewTab">
                   <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                 </a>
-                <a class="search-chain-switch" [href]="routerHubUrl">View Hub</a>
+                <a class="search-chain-switch" [href]="routerHubUrl" i18n="@@xmr.search.viewHub">View Hub</a>
               </span>
-              <span class="search-chain-host search-routing-hint">Or go straight to <code>tx.taxi/[your search]</code></span>
+              <span class="search-chain-host search-routing-hint" i18n="@@xmr.search.routingHint">Or go straight to <code>tx.taxi/[your search]</code></span>
             </div>
             </ng-template>
-            <span class="search-chain-group-label">NATIVE EXPLORERS</span>
+            <span class="search-chain-group-label" i18n="@@xmr.search.native">NATIVE EXPLORERS</span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
 
@@ -78,7 +78,7 @@
                 <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: explorer, count: childDestinations(explorer).length}"></ng-container>
                 <div *ngIf="childDestinations(explorer).length" class="search-chain-additional-options"
                   [id]="'search-additional-' + explorer.chainId" [hidden]="!additionalExplorersExpanded(explorer)"
-                  role="group" [attr.aria-label]="explorer.name + ' additional explorers'">
+                  role="group" [attr.aria-label]="additionalExplorersLabel(explorer.name)">
                   <ng-container *ngIf="additionalExplorersExpanded(explorer)">
                     <ng-container *ngFor="let destination of childDestinations(explorer); trackBy: trackExplorer">
                       <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: destination, destination: true}"></ng-container>
@@ -86,9 +86,9 @@
                   </ng-container>
                 </div>
               </ng-container>
-              <span *ngIf="!explorers.length" class="search-chain-message">Explorer registry unavailable</span>
+              <span *ngIf="!explorers.length" class="search-chain-message" i18n="@@xmr.search.registryUnavailable">Explorer registry unavailable</span>
             </ng-container>
-            <span class="search-chain-group-label">3RD-PARTY EXPLORERS</span>
+            <span class="search-chain-group-label" i18n="@@xmr.search.thirdParty">3RD-PARTY EXPLORERS</span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
 
@@ -102,13 +102,13 @@
             </ng-container>
 
             <div *ngFor="let explorer of thirdPartyExplorers$ | async" class="search-chain-option search-chain-explorer" [style.--chain-option-accent]="explorer.accentColor">
-              <a class="search-chain-select" [href]="explorer.origin" [attr.aria-label]="'Open ' + explorer.name">
+              <a class="search-chain-select" [href]="explorer.origin" [attr.aria-label]="openExplorerLabel(explorer.name)">
                 <img [src]="explorer.iconUrl" alt="">
                 <span class="search-chain-copy"><span class="search-chain-name">{{ explorer.name }}</span><span class="search-chain-host">{{ explorer.host }}</span></span>
               </a>
               <span class="search-chain-actions">
-                <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Open ' + explorer.name + ' in a new tab'" [attr.title]="'Open ' + explorer.name + ' in a new tab'"><fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon></a>
-                <a class="search-chain-switch" [href]="explorer.origin">Open</a>
+                <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer" [attr.aria-label]="openExplorerNewTabLabel(explorer.name)" [attr.title]="openExplorerNewTabLabel(explorer.name)"><fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon></a>
+                <a class="search-chain-switch" [href]="explorer.origin" i18n="@@xmr.search.open">Open</a>
               </span>
             </div>
             <ng-template #candidateRow let-candidate>
@@ -127,7 +127,7 @@
                     <span class="search-chain-host">{{ candidate.host }}</span>
                   </span>
                   <span class="search-chain-match" [class.is-confirmed]="candidate.confirmed">
-                    {{ candidate.confirmed ? 'Found' : 'Possible' }}
+                    {{ candidate.confirmed ? foundLabel : possibleLabel }}
                   </span>
                 </button>
             </ng-template>
@@ -150,27 +150,27 @@
                   <button type="button" ngbDropdownItem class="search-chain-count"
                     [attr.aria-expanded]="additionalExplorersExpanded(explorer)"
                     [attr.aria-controls]="'search-additional-' + explorer.chainId"
-                    [attr.aria-label]="(additionalExplorersExpanded(explorer) ? 'Hide ' : 'Show ') + count + ' additional ' + explorer.name + (count === 1 ? ' option' : ' options')"
+                    [attr.aria-label]="additionalOptionsLabel(explorer, count)"
                     (click)="toggleAdditionalExplorers(explorer)">+{{ count }}</button>
                   <ng-container *ngTemplateOutlet="rowActions"></ng-container>
                 </span>
                 <ng-template #rowActions>
-                <span *ngIf="isOpenedExplorer(explorer); else explorerActions" class="search-chain-opened">Opened</span>
+                <span *ngIf="isOpenedExplorer(explorer); else explorerActions" class="search-chain-opened" i18n="@@xmr.search.opened">Opened</span>
                 <ng-template #explorerActions>
                   <span class="search-chain-actions">
-                    <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer"
-                      [attr.aria-label]="'Open ' + explorer.name + ' in a new tab'" [attr.title]="'Open ' + explorer.name + ' in a new tab'">
+                    <a class="search-chain-new-tab" [href]="localizedExplorerUrl(explorer.origin)" target="_blank" rel="noopener noreferrer"
+                      [attr.aria-label]="openExplorerNewTabLabel(explorer.name)" [attr.title]="openExplorerNewTabLabel(explorer.name)">
                       <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                     </a>
-                    <a class="search-chain-switch" [href]="explorer.origin"
-                      [attr.aria-label]="'Switch to ' + explorer.name">Switch</a>
+                    <a class="search-chain-switch" [href]="localizedExplorerUrl(explorer.origin)"
+                      [attr.aria-label]="switchExplorerLabel(explorer.name)" i18n="@@xmr.search.switch">Switch</a>
                   </span>
                 </ng-template>
                 </ng-template>
               </div>
             </ng-template>
             <ng-template #explorerRegistryLoading>
-              <span class="search-chain-message">Loading explorers</span>
+              <span class="search-chain-message" i18n="@@xmr.search.loadingExplorers">Loading explorers</span>
             </ng-template>
           </div>
         </div>
@@ -195,7 +195,7 @@
       <app-search-results #searchResults [hidden]="dropdownHidden || !isSourceChainSelected()" [results]="typeAhead$ | async" (selectedResult)="selectedResult($event)"></app-search-results>
     </div>
     <div>
-      <button [disabled]="isSearching" type="submit" class="btn btn-purple search-submit" aria-label="Search selected chain" title="Search selected chain">
+      <button [disabled]="isSearching" type="submit" class="btn btn-purple search-submit" aria-label="Search selected chain" i18n-aria-label="@@xmr.search.searchSelected" title="Search selected chain" i18n-title="@@xmr.search.searchSelected">
         <fa-icon *ngIf="!(isTypeaheading$ | async) else searchLoading" [icon]="['fas', 'search']" [fixedWidth]="true" i18n-title="search-form.search-title" title="Search"></fa-icon>
       </button>
     </div>

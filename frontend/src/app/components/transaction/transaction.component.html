@@ -64,7 +64,7 @@
           <table class="table table-borderless table-striped">
             <tbody>
               <tr>
-                <td>{{ tx.size_is_pruned ? "Pruned data size" : "Serialized size" }}</td>
+                <td><ng-container *ngIf="tx.size_is_pruned; else serializedSize" i18n="@@xmr.tx.pruned-size">Pruned data size</ng-container><ng-template #serializedSize><ng-container i18n="@@xmr.tx.serialized-size">Serialized size</ng-container></ng-template></td>
                 <td [innerHTML]="'&lrm;' + (tx.size | bytes: 2)"></td>
               </tr>
               <tr *ngIf="tx.weight_known !== false">
@@ -82,10 +82,10 @@
                 <td [innerHTML]="'&lrm;' + (tx.version | number)"></td>
               </tr>
               <tr>
-                <td>Unlock time</td>
+                <td i18n="@@xmr.tx.unlock-time">Unlock time</td>
                 <td [innerHTML]="'&lrm;' + (tx.locktime | number)"></td>
               </tr>
-              <tr><td>Decoded transaction</td><td><a [href]="'/api/tx/' + txId + '/json'" target="_blank" rel="noopener">JSON</a></td></tr>
+              <tr><td i18n="@@xmr.tx.decoded">Decoded transaction</td><td><a [href]="'/api/tx/' + txId + '/json'" target="_blank" rel="noopener">JSON</a></td></tr>
               <tr>
                 <td i18n="transaction.blob|Transaction blob label@@transaction.blob">Transaction blob</td>
                 <td><a target="_blank" href="{{ network === '' ? '' : '/' + network }}/api/tx/{{ txId }}/hex"><fa-icon [icon]="['fas', 'external-link-alt']" [fixedWidth]="true"></fa-icon></a></td>
@@ -96,27 +96,27 @@
       </div>
     </div>
 
-    <div class="title text-start"><h2>Transaction extra</h2></div>
+    <div class="title text-start"><h2 i18n="@@xmr.tx.extra">Transaction extra</h2></div>
     <div class="box xmr-extra-box">
       <table class="table table-borderless table-striped">
         <tbody>
           <tr *ngFor="let field of tx.tx_extra_fields"><td>{{ field.label }}</td><td><code class="xmr-metadata-value">{{ field.value }}</code></td></tr>
-          <tr><td>Raw tx_extra</td><td><code class="xmr-metadata-value">{{ tx.tx_extra || 'Empty' }}</code><app-clipboard *ngIf="tx.tx_extra" [text]="tx.tx_extra"></app-clipboard></td></tr>
+          <tr><td i18n="@@xmr.tx.raw-extra">Raw tx_extra</td><td><code class="xmr-metadata-value"><ng-container *ngIf="tx.tx_extra; else emptyExtra">{{ tx.tx_extra }}</ng-container><ng-template #emptyExtra><ng-container i18n="@@xmr.tx.empty-extra">Empty</ng-container></ng-template></code><app-clipboard *ngIf="tx.tx_extra" [text]="tx.tx_extra"></app-clipboard></td></tr>
         </tbody>
       </table>
-      <p *ngIf="tx.tx_extra_complete === false" class="text-muted">Some extra fields are unrecognized; the complete raw bytes are shown above.</p>
+      <p *ngIf="tx.tx_extra_complete === false" class="text-muted" i18n="@@xmr.tx.extra-unrecognized">Some extra fields are unrecognized; the complete raw bytes are shown above.</p>
     </div>
     <details class="xmr-payment-verification" *ngIf="!tx.vin?.[0]?.is_coinbase">
-      <summary>Payment verification</summary>
+      <summary i18n="@@xmr.tx.payment-verification">Payment verification</summary>
 
       <div class="box xmr-proof-box">
-        <div class="xmr-proof-tabs" role="tablist" aria-label="Monero payment verification mode">
+        <div class="xmr-proof-tabs" role="tablist" aria-label="Monero payment verification mode" i18n-aria-label="@@xmr.tx.verification-mode">
           <button type="button" class="btn btn-sm" [class.btn-primary]="xmrVerificationMode === 'proof'" [class.btn-outline-info]="xmrVerificationMode !== 'proof'" (click)="setXmrVerificationMode('proof')">tx_proof</button>
-          <button type="button" class="btn btn-sm" [class.btn-primary]="xmrVerificationMode === 'view-key'" [class.btn-outline-info]="xmrVerificationMode !== 'view-key'" (click)="setXmrVerificationMode('view-key')">Received</button>
+          <button type="button" class="btn btn-sm" [class.btn-primary]="xmrVerificationMode === 'view-key'" [class.btn-outline-info]="xmrVerificationMode !== 'view-key'" (click)="setXmrVerificationMode('view-key')" i18n="@@xmr.tx.received">Received</button>
           <button type="button" class="btn btn-sm" [class.btn-primary]="xmrVerificationMode === 'tx-secret-key'" [class.btn-outline-info]="xmrVerificationMode !== 'tx-secret-key'" (click)="setXmrVerificationMode('tx-secret-key')">tx_secret_key</button>
         </div>
 
-        <p id="xmr-proof-help" class="xmr-proof-copy">
+        <p id="xmr-proof-help" class="xmr-proof-copy" i18n="@@xmr.tx.proof-help">
           tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi.
         </p>
 
@@ -129,7 +129,7 @@
         >
           <div class="xmr-proof-grid">
             <div class="xmr-proof-field xmr-proof-address">
-              <label for="xmr-proof-address">Recipient address</label>
+              <label for="xmr-proof-address" i18n="@@xmr.tx.recipient-address">Recipient address</label>
               <input
                 id="xmr-proof-address"
                 type="text"
@@ -145,7 +145,7 @@
             </div>
 
             <div class="xmr-proof-field xmr-proof-message">
-              <label for="xmr-proof-message">Message</label>
+              <label for="xmr-proof-message" i18n="@@xmr.tx.proof-message">Message</label>
               <input
                 id="xmr-proof-message"
                 type="text"
@@ -161,7 +161,7 @@
             </div>
 
             <div class="xmr-proof-field xmr-proof-signature">
-              <label for="xmr-proof-signature">tx_proof signature</label>
+              <label for="xmr-proof-signature" i18n="@@xmr.tx.proof-signature">tx_proof signature</label>
               <textarea
                 id="xmr-proof-signature"
                 class="form-control"
@@ -179,23 +179,23 @@
             <div class="xmr-proof-action">
               <button type="submit" class="btn btn-primary" [disabled]="xmrProofStatus === 'loading'" aria-controls="xmr-proof-result">
                 @if (xmrProofStatus === 'loading') {
-                  Verifying...
+                  <ng-container i18n="@@xmr.tx.verifying">Verifying...</ng-container>
                 } @else {
-                  Verify proof
+                  <ng-container i18n="@@xmr.tx.verify-proof">Verify proof</ng-container>
                 }
               </button>
             </div>
           </div>
 
           <div *ngIf="xmrProofStatus === 'success' && xmrProofResult" id="xmr-proof-result" class="alert alert-success xmr-proof-result" role="status">
-            <div class="xmr-proof-result-title">Proof verified</div>
+            <div class="xmr-proof-result-title" i18n="@@xmr.tx.proof-verified">Proof verified</div>
             <div class="xmr-proof-result-values">
               <span *ngIf="xmrProofResult.received !== undefined || xmrProofResult.amount !== undefined">
-                Received
+                <ng-container i18n="@@xmr.tx.received">Received</ng-container>
                 <app-amount [satoshis]="xmrProofResult.received ?? xmrProofResult.amount ?? 0"></app-amount>
               </span>
-              <span *ngIf="xmrProofResult.confirmations !== undefined">{{ xmrProofResult.confirmations | number }} confirmations</span>
-              <span *ngIf="xmrProofResult.in_pool">In mempool</span>
+              <span *ngIf="xmrProofResult.confirmations !== undefined" i18n="@@xmr.tx.confirmations">{{ xmrProofResult.confirmations | number }} confirmations</span>
+              <span *ngIf="xmrProofResult.in_pool" i18n="@@xmr.tx.in-mempool">In mempool</span>
             </div>
           </div>
 
@@ -213,7 +213,7 @@
         >
           <div class="xmr-proof-grid xmr-proof-grid-local">
             <div class="xmr-proof-field">
-              <label for="xmr-local-receive-address">Recipient address</label>
+              <label for="xmr-local-receive-address" i18n="@@xmr.tx.recipient-address">Recipient address</label>
               <input
                 id="xmr-local-receive-address"
                 type="text"
@@ -229,7 +229,7 @@
             </div>
 
             <div class="xmr-proof-field xmr-proof-secret">
-              <label for="xmr-local-view-key">Private view key</label>
+              <label for="xmr-local-view-key" i18n="@@xmr.tx.private-view-key">Private view key</label>
               <input
                 id="xmr-local-view-key"
                 type="password"
@@ -247,9 +247,9 @@
             <div class="xmr-proof-action">
               <button type="submit" class="btn btn-primary" [disabled]="xmrLocalStatus === 'loading'" aria-controls="xmr-local-result">
                 @if (xmrLocalStatus === 'loading') {
-                  Scanning...
+                  <ng-container i18n="@@xmr.tx.scanning">Scanning...</ng-container>
                 } @else {
-                  Scan this tx
+                  <ng-container i18n="@@xmr.tx.scan-transaction">Scan this tx</ng-container>
                 }
               </button>
             </div>
@@ -265,7 +265,7 @@
         >
           <div class="xmr-proof-grid xmr-proof-grid-local">
             <div class="xmr-proof-field">
-              <label for="xmr-tx-secret-address">Recipient address</label>
+              <label for="xmr-tx-secret-address" i18n="@@xmr.tx.recipient-address">Recipient address</label>
               <input
                 id="xmr-tx-secret-address"
                 type="text"
@@ -299,9 +299,9 @@
             <div class="xmr-proof-action">
               <button type="submit" class="btn btn-primary" [disabled]="xmrLocalStatus === 'loading'" aria-controls="xmr-local-result">
                 @if (xmrLocalStatus === 'loading') {
-                  Checking...
+                  <ng-container i18n="@@xmr.tx.checking">Checking...</ng-container>
                 } @else {
-                  Check key
+                  <ng-container i18n="@@xmr.tx.check-key">Check key</ng-container>
                 }
               </button>
             </div>
@@ -309,17 +309,17 @@
         </form>
 
         <div *ngIf="xmrLocalStatus === 'success' && xmrLocalResult" id="xmr-local-result" class="alert alert-success xmr-proof-result" role="status">
-          <div class="xmr-proof-result-title">Payment found</div>
+          <div class="xmr-proof-result-title" i18n="@@xmr.tx.payment-found">Payment found</div>
           <div class="xmr-proof-result-values">
             <span *ngIf="xmrLocalResult.received !== undefined">
-              Received
+              <ng-container i18n="@@xmr.tx.received">Received</ng-container>
               <app-amount [satoshis]="xmrLocalResult.received"></app-amount>
             </span>
-            <span *ngIf="xmrLocalResult.received === undefined && xmrLocalResult.receivedAtomic !== undefined">
+            <span *ngIf="xmrLocalResult.received === undefined && xmrLocalResult.receivedAtomic !== undefined" i18n="@@xmr.tx.atomic-amount">
               {{ xmrLocalResult.receivedAtomic }} atomic units
             </span>
-            <span *ngIf="xmrLocalResult.confirmations !== undefined">{{ xmrLocalResult.confirmations | number }} confirmations</span>
-            <span *ngIf="xmrLocalResult.in_pool">In mempool</span>
+            <span *ngIf="xmrLocalResult.confirmations !== undefined" i18n="@@xmr.tx.confirmations">{{ xmrLocalResult.confirmations | number }} confirmations</span>
+            <span *ngIf="xmrLocalResult.in_pool" i18n="@@xmr.tx.in-mempool">In mempool</span>
           </div>
         </div>
 

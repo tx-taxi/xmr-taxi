@@ -2,9 +2,9 @@
   <div class="container-xl xmr-status">
     <header class="status-header">
       <div>
-        <p class="section-label">Instance health</p>
-        <h1>Monero daemon status</h1>
-        <p class="status-copy">Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</p>
+        <p class="section-label" i18n="@@xmr-status-instance-health">Instance health</p>
+        <h1 i18n="@@xmr-status-title">Monero daemon status</h1>
+        <p class="status-copy" i18n="@@xmr-status-description">Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</p>
       </div>
       <div class="status-summary" aria-live="polite">
         <span
@@ -16,157 +16,158 @@
         >
           {{ stateLabel(snapshot.state) }}
         </span>
-        <span class="checked-at">Checked {{ snapshot.checkedAt | date:'mediumTime' }}</span>
+        <span class="checked-at"><span i18n="@@xmr-status-checked">Checked</span> {{ snapshot.checkedAt | date:'mediumTime' }}</span>
       </div>
     </header>
 
-    <section class="service-strip" aria-label="Service reachability">
+    <section class="service-strip" i18n-aria-label="@@xmr-status-service-reachability" aria-label="Service reachability">
       <div class="service-item">
-        <span class="label">Backend</span>
+        <span class="label" i18n="@@xmr-status-backend">Backend</span>
         <strong [class.good]="snapshot.backend.ok" [class.bad]="!snapshot.backend.ok">
-          {{ snapshot.backend.ok ? 'reachable' : 'unreachable' }}
+          <ng-container *ngIf="snapshot.backend.ok; else unavailable" i18n="@@xmr-status-reachable">reachable</ng-container>
         </strong>
         <span>{{ snapshot.backend.data?.service || snapshot.backend.error }}</span>
       </div>
       <div class="service-item">
-        <span class="label">Daemon</span>
+        <span class="label" i18n="@@xmr-status-daemon">Daemon</span>
         <strong [class.good]="snapshot.daemon.ok" [class.bad]="!snapshot.daemon.ok">
-          {{ snapshot.daemon.ok ? 'reachable' : 'unreachable' }}
+          <ng-container *ngIf="snapshot.daemon.ok; else unavailable" i18n="@@xmr-status-reachable">reachable</ng-container>
         </strong>
         <span>{{ snapshot.daemon.data?.daemon_status || snapshot.daemon.error }}</span>
       </div>
     </section>
+    <ng-template #unavailable i18n="@@xmr-status-unreachable">unreachable</ng-template>
 
     <ng-container *ngIf="snapshot.daemon.data as info; else daemonUnavailable">
-      <section class="status-grid" aria-label="Daemon details">
+      <section class="status-grid" i18n-aria-label="@@xmr-status-daemon-details" aria-label="Daemon details">
         <article class="status-panel">
-          <h2>Chain</h2>
+          <h2 i18n="@@xmr-status-chain">Chain</h2>
           <dl>
             <div>
-              <dt>Height</dt>
+              <dt i18n="@@xmr-status-height">Height</dt>
               <dd>{{ formatNumber(info.height) }}</dd>
             </div>
             <div>
-              <dt>Target height</dt>
+              <dt i18n="@@xmr-status-target-height">Target height</dt>
               <dd>{{ formatNumber(info.target_height || info.height) }}</dd>
             </div>
             <div>
-              <dt>Behind</dt>
-              <dd>{{ heightBehind(info) === 0 ? '0 blocks' : formatNumber(heightBehind(info)) + ' blocks' }}</dd>
+              <dt i18n="@@xmr-status-behind">Behind</dt>
+              <dd>{{ formatNumber(heightBehind(info)) }} <span i18n="@@xmr-status-blocks">blocks</span></dd>
             </div>
             <div>
-              <dt>Tip hash</dt>
+              <dt i18n="@@xmr-status-tip-hash">Tip hash</dt>
               <dd><a class="hash" [routerLink]="['/block', info.top_block_hash]">{{ shortHash(info.top_block_hash) }}</a></dd>
             </div>
           </dl>
         </article>
 
         <article class="status-panel">
-          <h2>Network</h2>
+          <h2 i18n="@@xmr-status-network">Network</h2>
           <dl>
             <div>
-              <dt>Nettype</dt>
-              <dd>{{ info.nettype || 'unknown' }}</dd>
+              <dt i18n="@@xmr-status-nettype">Nettype</dt>
+              <dd>{{ info.nettype || unknownLabel }}</dd>
             </div>
             <div>
-              <dt>Peers</dt>
+              <dt i18n="@@xmr-status-peers">Peers</dt>
               <dd>{{ formatNumber(peerCount(info)) }}</dd>
             </div>
             <div>
-              <dt>Incoming / outgoing</dt>
+              <dt i18n="@@xmr-status-connections">Incoming / outgoing</dt>
               <dd>{{ formatNumber(info.incoming_connections_count) }} / {{ formatNumber(info.outgoing_connections_count) }}</dd>
             </div>
             <div>
-              <dt>RPC clients</dt>
+              <dt i18n="@@xmr-status-rpc-clients">RPC clients</dt>
               <dd>{{ formatNumber(info.rpc_connections_count) }}</dd>
             </div>
           </dl>
         </article>
 
         <article class="status-panel">
-          <h2>Workload</h2>
+          <h2 i18n="@@xmr-status-workload">Workload</h2>
           <dl>
             <div>
-              <dt>Mempool</dt>
-              <dd>{{ formatNumber(info.mempool_size) }} txs</dd>
+              <dt i18n="@@xmr-status-mempool">Mempool</dt>
+              <dd>{{ formatNumber(info.mempool_size) }} <span i18n="@@xmr-status-txs">txs</span></dd>
             </div>
             <div>
-              <dt>Total txs</dt>
+              <dt i18n="@@xmr-status-total-txs">Total txs</dt>
               <dd>{{ formatNumber(info.tx_count) }}</dd>
             </div>
             <div>
-              <dt>Difficulty</dt>
+              <dt i18n="@@xmr-status-difficulty">Difficulty</dt>
               <dd>{{ formatNumber(info.difficulty) }}</dd>
             </div>
             <div>
-              <dt>Estimated hashrate</dt>
+              <dt i18n="@@xmr-status-estimated-hashrate">Estimated hashrate</dt>
               <dd>{{ formatHashrate(info.hashrate_hs) }}</dd>
             </div>
           </dl>
         </article>
 
         <article class="status-panel">
-          <h2>Daemon</h2>
+          <h2 i18n="@@xmr-status-daemon">Daemon</h2>
           <dl>
             <div>
-              <dt>Version</dt>
-              <dd>{{ info.version || 'unknown' }}</dd>
+              <dt i18n="@@xmr-status-version">Version</dt>
+              <dd>{{ info.version || unknownLabel }}</dd>
             </div>
             <div>
-              <dt>Uptime</dt>
+              <dt i18n="@@xmr-status-uptime">Uptime</dt>
               <dd>{{ formatDuration(info.uptime_s) }}</dd>
             </div>
             <div>
-              <dt>Started</dt>
+              <dt i18n="@@xmr-status-started">Started</dt>
               <dd>{{ formatTimestamp(info.start_time) }}</dd>
             </div>
             <div>
-              <dt>Trusted RPC</dt>
-              <dd>{{ info.untrusted ? 'no' : 'yes' }}</dd>
+              <dt i18n="@@xmr-status-trusted-rpc">Trusted RPC</dt>
+              <dd>{{ info.untrusted ? noLabel : yesLabel }}</dd>
             </div>
           </dl>
         </article>
 
         <article class="status-panel">
-          <h2>Storage</h2>
+          <h2 i18n="@@xmr-status-storage">Storage</h2>
           <dl>
             <div>
-              <dt>Database size</dt>
+              <dt i18n="@@xmr-status-database-size">Database size</dt>
               <dd>{{ formatBytes(info.database_size) }}</dd>
             </div>
             <div>
-              <dt>Free space</dt>
+              <dt i18n="@@xmr-status-free-space">Free space</dt>
               <dd>{{ formatBytes(info.free_space) }}</dd>
             </div>
             <div>
-              <dt>Block size limit</dt>
+              <dt i18n="@@xmr-status-block-size-limit">Block size limit</dt>
               <dd>{{ formatBytes(info.block_size_limit) }}</dd>
             </div>
             <div>
-              <dt>Update available</dt>
-              <dd>{{ info.update_available ? 'yes' : 'no' }}</dd>
+              <dt i18n="@@xmr-status-update-available">Update available</dt>
+              <dd>{{ info.update_available ? yesLabel : noLabel }}</dd>
             </div>
           </dl>
         </article>
 
         <article class="status-panel">
-          <h2>Bootstrap</h2>
+          <h2 i18n="@@xmr-status-bootstrap">Bootstrap</h2>
           <dl>
             <div>
-              <dt>Bootstrap height</dt>
+              <dt i18n="@@xmr-status-bootstrap-height">Bootstrap height</dt>
               <dd>{{ formatNumber(info.height_without_bootstrap) }}</dd>
             </div>
             <div>
-              <dt>Bootstrap daemon</dt>
-              <dd>{{ info.bootstrap_daemon_address || 'not configured' }}</dd>
+              <dt i18n="@@xmr-status-bootstrap-daemon">Bootstrap daemon</dt>
+              <dd>{{ info.bootstrap_daemon_address || notConfiguredLabel }}</dd>
             </div>
             <div>
-              <dt>Bootstrap used</dt>
-              <dd>{{ info.was_bootstrap_ever_used ? 'yes' : 'no' }}</dd>
+              <dt i18n="@@xmr-status-bootstrap-used">Bootstrap used</dt>
+              <dd>{{ info.was_bootstrap_ever_used ? yesLabel : noLabel }}</dd>
             </div>
             <div>
-              <dt>Peerlist</dt>
-              <dd>{{ formatNumber(info.white_peerlist_size) }} white / {{ formatNumber(info.grey_peerlist_size) }} grey</dd>
+              <dt i18n="@@xmr-status-peerlist">Peerlist</dt>
+              <dd>{{ formatNumber(info.white_peerlist_size) }} <span i18n="@@xmr-status-white">white</span> / {{ formatNumber(info.grey_peerlist_size) }} <span i18n="@@xmr-status-grey">grey</span></dd>
             </div>
           </dl>
         </article>
@@ -177,13 +178,13 @@
 
 <ng-template #daemonUnavailable>
   <section class="status-error" role="alert">
-    <h2>Daemon check failed</h2>
-    <p>The backend answered, but monerod did not return <code>/api/v1/info</code>.</p>
+    <h2 i18n="@@xmr-status-check-failed">Daemon check failed</h2>
+    <p><span i18n="@@xmr-status-backend-answered">The backend answered, but monerod did not return</span> <code>/api/v1/info</code>.</p>
   </section>
 </ng-template>
 
 <ng-template #loading>
   <div class="container-xl xmr-status">
-    <div class="status-loading" role="status">Checking daemon status...</div>
+    <div class="status-loading" role="status" i18n="@@xmr-status-checking">Checking daemon status...</div>
   </div>
 </ng-template>

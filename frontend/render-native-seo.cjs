@@ -123,6 +123,18 @@ function build(outputDirectory) {
   const shellFile=fs.existsSync(path.join(directory,'index.html'))?path.join(directory,'index.html'):path.join(directory,'en-US/index.html');
   const shell=fs.readFileSync(shellFile,'utf8');
   const content=new Map();
+  // Localized shells are currently presentation views, excluded by nginx.
+  // Keep the HTML robots directive consistent with that HTTP header.
+  const localeConfig = JSON.parse(read('angular.json')).projects.mempool.i18n.locales;
+  for (const locale of Object.keys(localeConfig)) {
+    const localeShell = path.join(directory, locale, 'index.html');
+    if (!fs.existsSync(localeShell)) continue;
+    const document = documentFor(fs.readFileSync(localeShell, 'utf8'));
+    let robots = document.head.querySelector('meta[name="robots"]');
+    if (!robots) { robots = document.createElement('meta'); robots.setAttribute('name', 'robots'); document.head.appendChild(robots); }
+    robots.setAttribute('content', 'noindex, follow');
+    fs.writeFileSync(localeShell, '<!doctype html>\n' + document.documentElement.outerHTML);
+  }
   for (const page of config.pages) {
     let projection=page.template.endsWith('.ts')?tonDocs(page):templateContent(page);
     projection=projection.replace(/<main\b/g,'<div').replace(/<\/main>/g,'</div>');
