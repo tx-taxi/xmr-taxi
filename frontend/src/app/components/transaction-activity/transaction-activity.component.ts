@@ -11,7 +11,8 @@ interface Activity { interval: string; range: string; height: number; indexedThr
 export class TransactionActivityComponent implements OnInit, OnDestroy {
   data: Activity | null = null;
   interval = 'day'; range = '90d'; loading = true; error = false; shown = 20;
-  readonly intervals = [{ key: 'hour', label: 'Hour' }, { key: 'day', label: 'Day' }, { key: 'month', label: 'Month' }, { key: 'year', label: 'Year' }];
+  readonly intervals = [{ key: 'hour', label: $localize`:@@xmr.activity.hour:Hour` }, { key: 'day', label: $localize`:@@xmr.activity.day:Day` }, { key: 'month', label: $localize`:@@xmr.activity.intervalMonth:Month` }, { key: 'year', label: $localize`:@@xmr.activity.intervalYear:Year` }];
+  readonly allTime = $localize`:@@xmr.activity.allTime:All time`;
   chartOptions: EChartsOption = {};
   chartInitOptions = { renderer: 'svg' };
   private subscription: Subscription;
@@ -20,8 +21,8 @@ export class TransactionActivityComponent implements OnInit, OnDestroy {
   get rows() { return this.data?.series.slice().reverse().slice(0, this.shown) || []; }
   get selectedTotal() { return this.data?.series.reduce((sum, b) => sum + b.transactions, 0) || 0; }
   ngOnInit(): void {
-    this.seo.setTitle('Monero transaction activity');
-    this.seo.setDescription('Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.');
+    this.seo.setTitle($localize`:@@xmr.activity.metaTitle:Monero transaction activity`);
+    this.seo.setDescription($localize`:@@xmr.activity.metaDescription:Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.`);
     this.subscription = combineLatest([this.route.queryParamMap, timer(0, 60000)]).pipe(
       tap(([params]) => {
         const interval = params.get('interval') || 'day';
@@ -52,12 +53,12 @@ export class TransactionActivityComponent implements OnInit, OnDestroy {
       animation: false, backgroundColor: 'transparent', grid: { left: 70, right: 20, top: 25, bottom: 85 },
       tooltip: { trigger: 'axis', formatter: (params: any) => {
         const row = rows[params[0].dataIndex];
-        return `${this.label(row.timestamp)} UTC${row.partial ? ' · Partial period' : ''}<br/>${row.transactions.toLocaleString()} transactions<br/>${row.blocks.toLocaleString()} blocks`;
+        return `${this.label(row.timestamp)} UTC${row.partial ? $localize`:@@xmr.activity.partialPeriod: · Partial period` : ''}<br/>${$localize`:@@xmr.activity.tooltipTransactions:${row.transactions.toLocaleString()}:count: transactions`}<br/>${$localize`:@@xmr.activity.tooltipBlocks:${row.blocks.toLocaleString()}:count: blocks`}`;
       } },
       xAxis: { type: 'category', data: rows.map(b => this.label(b.timestamp)), axisLabel: { color: '#a0a0a0', hideOverlap: true } },
       yAxis: { type: 'value', min: 0, minInterval: 1, axisLabel: { color: '#a0a0a0', formatter: (n: number) => n >= 1000000 ? `${n / 1000000}m` : n >= 1000 ? `${n / 1000}k` : String(n) }, splitLine: { lineStyle: { color: '#88888825' } } },
       dataZoom: [{ type: 'inside', filterMode: 'none' }, { type: 'slider', bottom: 8, height: 24, borderColor: '#88888840', textStyle: { color: '#999' } }],
-      series: [{ name: 'Transactions', type: 'bar', itemStyle: { color: primary }, data: rows.map(b => ({ value: b.transactions, itemStyle: { opacity: b.partial ? 0.45 : 1 } })) }],
+      series: [{ name: $localize`:@@xmr.activity.transactions:Transactions`, type: 'bar', itemStyle: { color: primary }, data: rows.map(b => ({ value: b.transactions, itemStyle: { opacity: b.partial ? 0.45 : 1 } })) }],
     };
   }
   download(): void {

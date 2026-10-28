@@ -13167,6 +13167,43 @@
       <trans-unit id="xmr.fiat.stale" datatype="html"><source> · stale</source><target> · desactualizado</target></trans-unit>
       <trans-unit id="xmr.fiat.unavailable" datatype="html"><source>Fiat value unavailable</source><target>Valor fiduciario no disponible</target></trans-unit>
       <trans-unit id="xmr.fiat.krakenTrade" datatype="html"><source>Kraken last trade</source><target>Última operación de Kraken</target></trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html"><source>Monero search suggestions</source><target>Sugerencias de búsqueda de Monero</target></trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html"><source>Monero Block Height</source><target>Altura del bloque de Monero</target></trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html"><source>Monero Block / Transaction</source><target>Bloque o transacción de Monero</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html"><source>Monero addresses are private</source><target>Las direcciones de Monero son privadas</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html"><source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target>Los datos públicos de la cadena no permiten obtener un historial de direcciones. Abre una transacción para verificar un pago con su prueba o sus claves.</target></trans-unit>
+      <trans-unit id="xmr.activity.title" datatype="html"><source>Transaction activity</source><target>Actividad de transacciones</target></trans-unit>
+      <trans-unit id="xmr.activity.description" datatype="html"><source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source><target>Transacciones de Monero confirmadas, contadas desde el bloque génesis. Se excluyen las transacciones de recompensa de los mineros. Todos los períodos usan UTC.</target></trans-unit>
+      <trans-unit id="xmr.activity.today" datatype="html"><source>Today · so far</source><target>Hoy · hasta ahora</target></trans-unit>
+      <trans-unit id="xmr.activity.month" datatype="html"><source>This month · so far</source><target>Este mes · hasta ahora</target></trans-unit>
+      <trans-unit id="xmr.activity.year" datatype="html"><source>This year · so far</source><target>Este año · hasta ahora</target></trans-unit>
+      <trans-unit id="xmr.activity.genesis" datatype="html"><source>Since genesis</source><target>Desde el bloque génesis</target></trans-unit>
+      <trans-unit id="xmr.activity.countPer" datatype="html"><source>Count transactions per</source><target>Contar transacciones por</target></trans-unit>
+      <trans-unit id="xmr.activity.dateRange" datatype="html"><source>Date range</source><target>Intervalo de fechas</target></trans-unit>
+      <trans-unit id="xmr.activity.loading" datatype="html"><source>Loading transaction history…</source><target>Cargando el historial de transacciones…</target></trans-unit>
+      <trans-unit id="xmr.activity.error" datatype="html"><source>Transaction history could not be loaded.</source><target>No se pudo cargar el historial de transacciones.</target></trans-unit>
+      <trans-unit id="xmr.activity.retry" datatype="html"><source>Retry</source><target>Reintentar</target></trans-unit>
+      <trans-unit id="xmr.activity.chartLabel" datatype="html"><source>Monero transaction counts over time; exact counts are available in the table below</source><target>Número de transacciones de Monero a lo largo del tiempo; las cifras exactas aparecen en la tabla siguiente</target></trans-unit>
+      <trans-unit id="xmr.activity.totalNote" datatype="html"><source><x id="INTERPOLATION"/> transactions in the displayed periods. Faded bars mark partial periods.</source><target><x id="INTERPOLATION"/> transacciones en los períodos mostrados. Las barras atenuadas indican períodos parciales.</target></trans-unit>
+      <trans-unit id="xmr.activity.indexedThrough" datatype="html"><source>Indexed through block <x id="INTERPOLATION"/> · <x id="INTERPOLATION_1"/> UTC</source><target>Indexado hasta el bloque <x id="INTERPOLATION"/> · <x id="INTERPOLATION_1"/> UTC</target></trans-unit>
+      <trans-unit id="xmr.activity.stale" datatype="html"><source> · Refresh delayed; showing the last indexed data</source><target> · Actualización retrasada; se muestran los últimos datos indexados</target></trans-unit>
+      <trans-unit id="xmr.activity.counts" datatype="html"><source>Transaction counts</source><target>Número de transacciones</target></trans-unit>
+      <trans-unit id="xmr.activity.download" datatype="html"><source>Download CSV</source><target>Descargar CSV</target></trans-unit>
+      <trans-unit id="xmr.activity.period" datatype="html"><source>Period (UTC)</source><target>Período (UTC)</target></trans-unit>
+      <trans-unit id="xmr.activity.transactions" datatype="html"><source>Transactions</source><target>Transacciones</target></trans-unit>
+      <trans-unit id="xmr.activity.blocks" datatype="html"><source>Blocks</source><target>Bloques</target></trans-unit>
+      <trans-unit id="xmr.activity.partial" datatype="html"><source>Partial</source><target>Parcial</target></trans-unit>
+      <trans-unit id="xmr.activity.showMore" datatype="html"><source>Show more periods</source><target>Mostrar más períodos</target></trans-unit>
+      <trans-unit id="xmr.activity.hour" datatype="html"><source>Hour</source><target>Hora</target></trans-unit>
+      <trans-unit id="xmr.activity.day" datatype="html"><source>Day</source><target>Día</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalMonth" datatype="html"><source>Month</source><target>Mes</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalYear" datatype="html"><source>Year</source><target>Año</target></trans-unit>
+      <trans-unit id="xmr.activity.allTime" datatype="html"><source>All time</source><target>Todo el tiempo</target></trans-unit>
+      <trans-unit id="xmr.activity.metaTitle" datatype="html"><source>Monero transaction activity</source><target>Actividad de transacciones de Monero</target></trans-unit>
+      <trans-unit id="xmr.activity.metaDescription" datatype="html"><source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source><target>Explora el número de transacciones de Monero por hora, día, mes y año, desde el bloque génesis hasta el último bloque indexado.</target></trans-unit>
+      <trans-unit id="xmr.activity.partialPeriod" datatype="html"><source> · Partial period</source><target> · Período parcial</target></trans-unit>
+      <trans-unit id="xmr.activity.tooltipTransactions" datatype="html"><source><x id="count"/> transactions</source><target><x id="count"/> transacciones</target></trans-unit>
+      <trans-unit id="xmr.activity.tooltipBlocks" datatype="html"><source><x id="count"/> blocks</source><target><x id="count"/> bloques</target></trans-unit>
     </body>
   </file>
 </xliff>

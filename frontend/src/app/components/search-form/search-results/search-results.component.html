@@ -1,19 +1,19 @@
-<div id="xmr-search-results-listbox" class="dropdown-menu show" role="listbox" aria-label="Monero search suggestions" *ngIf="results" [hidden]="!results.showDropdown">
+<div id="xmr-search-results-listbox" class="dropdown-menu show" role="listbox" aria-label="Monero search suggestions" i18n-aria-label="@@xmr.search.suggestions" *ngIf="results" [hidden]="!results.showDropdown">
   <ng-template [ngIf]="results.blockHeight">
-    <div class="card-title">Monero Block Height</div>
+    <div class="card-title" i18n="@@xmr.search.blockHeight">Monero Block Height</div>
     <button (click)="clickItem(0)" [class.active]="0 === activeIdx" [attr.aria-selected]="0 === activeIdx" type="button" role="option" class="dropdown-item">
       <ng-container *ngTemplateOutlet="goTo; context: { $implicit: results.searchText }"></ng-container>
     </button>
   </ng-template>
   <ng-template [ngIf]="results.blockOrTxHash">
-    <div class="card-title">Monero Block / Transaction</div>
+    <div class="card-title" i18n="@@xmr.search.blockOrTransaction">Monero Block / Transaction</div>
     <button (click)="clickItem(0)" [class.active]="0 === activeIdx" [attr.aria-selected]="0 === activeIdx" type="button" role="option" class="dropdown-item">
       <ng-container *ngTemplateOutlet="goTo; context: { $implicit: results.searchText | shortenString : 13 }"></ng-container>
     </button>
   </ng-template>
   <div *ngIf="results.unsupportedAddress" class="search-guidance" role="note">
-    <strong>Monero addresses are private</strong>
-    <span>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</span>
+    <strong i18n="@@xmr.search.privateAddress">Monero addresses are private</strong>
+    <span i18n="@@xmr.search.privateAddressHelp">Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</span>
   </div>
 </div>
 
