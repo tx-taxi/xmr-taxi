@@ -10,4 +10,5 @@ import { Transaction } from '@interfaces/electrs.interface';
 })
 export class TxFeaturesComponent {
   @Input() tx: Transaction;
+  ringTypeTooltip(): string { return $localize`:@@xmr.features.ringType:RingCT type ${this.tx.rct_type}:type:: ${this.tx.rct_type_name}:name:`; }
 }

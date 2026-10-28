@@ -14,8 +14,8 @@ export class TermsOfServiceComponent {
   ) { }
 
   ngOnInit(): void {
-    this.seoService.setTitle('Terms of Service');
-    this.seoService.setDescription('Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.');
+    this.seoService.setTitle($localize`:@@xmr.legal.terms-of-service.meta-title:Terms of Service`);
+    this.seoService.setDescription($localize`:@@xmr.legal.terms-of-service.meta-description:Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.`);
     this.ogService.setManualOgImage('terms-of-service.jpg');
   }
 }

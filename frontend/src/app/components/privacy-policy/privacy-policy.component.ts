@@ -15,8 +15,8 @@ export class PrivacyPolicyComponent {
   ) { }
 
   ngOnInit(): void {
-    this.seoService.setTitle('Privacy Policy');
-    this.seoService.setDescription('Privacy notes for xmr.tx.taxi, including public Monero data limits, local preferences, server logs, and tx_proof verification behavior.');
+    this.seoService.setTitle($localize`:@@xmr.legal.privacy-policy.meta-title:Privacy Policy`);
+    this.seoService.setDescription($localize`:@@xmr.legal.privacy-policy.meta-description:Privacy notes for xmr.tx.taxi, including public Monero data limits, local preferences, server logs, and tx_proof verification behavior.`);
     this.ogService.setManualOgImage('privacy-policy.jpg');
   }
 }

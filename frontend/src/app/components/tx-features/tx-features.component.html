@@ -1,6 +1,6 @@
-<span *ngIf="tx?.vin?.[0]?.is_coinbase" class="badge bg-info me-1">Miner transaction</span>
-<span *ngIf="tx?.version === 1 && !tx?.vin?.[0]?.is_coinbase" class="badge bg-info me-1" ngbTooltip="Pre-RingCT transaction; input and output amounts are public">Legacy · public amounts</span>
-<span *ngIf="tx?.rct_type > 0" class="badge bg-success me-1" [ngbTooltip]="'RingCT type ' + tx.rct_type + ': ' + tx.rct_type_name">RingCT · {{ tx.rct_type_name }}</span>
+<span *ngIf="tx?.vin?.[0]?.is_coinbase" class="badge bg-info me-1" i18n="@@xmr.features.miner">Miner transaction</span>
+<span *ngIf="tx?.version === 1 && !tx?.vin?.[0]?.is_coinbase" class="badge bg-info me-1" ngbTooltip="Pre-RingCT transaction; input and output amounts are public" i18n-ngbTooltip="@@xmr.features.legacyHelp" i18n="@@xmr.features.legacy">Legacy · public amounts</span>
+<span *ngIf="tx?.rct_type > 0" class="badge bg-success me-1" [ngbTooltip]="ringTypeTooltip()">RingCT · {{ tx.rct_type_name }}</span>
 <span *ngIf="tx?.rct_type === 5 || tx?.rct_type === 6" class="badge bg-success me-1">CLSAG</span>
-<span *ngIf="tx?.has_view_tags" class="badge bg-success me-1" ngbTooltip="View tags help wallets scan outputs">View tags</span>
-<span *ngIf="tx?.vin?.[0]?.ring_size" class="badge bg-info me-1" ngbTooltip="Number of members in the first input's ring">Ring {{ tx.vin[0].ring_size }}</span>
+<span *ngIf="tx?.has_view_tags" class="badge bg-success me-1" ngbTooltip="View tags help wallets scan outputs" i18n-ngbTooltip="@@xmr.features.viewTagsHelp" i18n="@@xmr.features.viewTags">View tags</span>
+<span *ngIf="tx?.vin?.[0]?.ring_size" class="badge bg-info me-1" ngbTooltip="Number of members in the first input's ring" i18n-ngbTooltip="@@xmr.features.ringHelp" i18n="@@xmr.features.ring">Ring {{ tx.vin[0].ring_size }}</span>

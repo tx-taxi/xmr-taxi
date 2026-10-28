@@ -1,10 +1,10 @@
-<div *ngIf="showTitle" class="main-title">{{ mode === 'difficulty' ? 'Difficulty Adjustment' : 'Reward stats' }}</div>
+<div *ngIf="showTitle" class="main-title">{{ mode === 'difficulty' ? difficultyTitle : rewardsTitle }}</div>
 <div class="card-wrapper">
   <div class="card">
     <div class="widget-toggler">
-      <a href="" (click)="setMode('difficulty')" class="toggler-option" [class.inactive]="mode === 'difficulty'"><small>difficulty</small></a>
+      <a href="" (click)="setMode('difficulty')" class="toggler-option" [class.inactive]="mode === 'difficulty'"><small i18n="@@xmr.difficulty.toggleDifficulty">difficulty</small></a>
       <span class="toggler-divider"> | </span>
-      <a href="" (click)="setMode('rewards')" class="toggler-option" [class.inactive]="mode === 'rewards'"><small>rewards</small></a>
+      <a href="" (click)="setMode('rewards')" class="toggler-option" [class.inactive]="mode === 'rewards'"><small i18n="@@xmr.difficulty.toggleRewards">rewards</small></a>
     </div>
     <div *ngIf="mode === 'difficulty'; else rewards" class="card-body more-padding">
       <div class="difficulty-adjustment-container" *ngIf="(isLoadingWebSocket$ | async) === false && (status$ | async) as status; else loadingDifficulty">
@@ -22,7 +22,7 @@
               {{ status.pacePercent | absolute | number:'1.2-2' }}<span class="symbol">%</span>
             </div>
             <ng-template #unavailablePace><div class="card-text">—</div></ng-template>
-            <div class="symbol" ngbTooltip="Recent blocks compared with Monero's two-minute target" placement="bottom">Block pace</div>
+            <div class="symbol" ngbTooltip="Recent blocks compared with Monero's two-minute target" i18n-ngbTooltip="@@xmr.difficulty.paceHelp" placement="bottom" i18n="@@xmr.difficulty.pace">Block pace</div>
           </div>
           <div class="item">
             <div class="card-text" *ngIf="status.difficultyChangePercent != null; else unavailableChange"
@@ -31,7 +31,7 @@
               {{ status.difficultyChangePercent | absolute | number:'1.2-2' }}<span class="symbol">%</span>
             </div>
             <ng-template #unavailableChange><div class="card-text">—</div></ng-template>
-            <div class="symbol">Difficulty Δ</div>
+            <div class="symbol" i18n="@@xmr.difficulty.change">Difficulty Δ</div>
           </div>
         </div>
       </div>

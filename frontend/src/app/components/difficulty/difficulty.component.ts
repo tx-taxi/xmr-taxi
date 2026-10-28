@@ -22,6 +22,8 @@ interface DifficultyStatus {
 export class DifficultyComponent implements OnInit {
   @Input() showTitle = true;
   mode: 'difficulty' | 'rewards' = 'difficulty';
+  readonly difficultyTitle = $localize`:@@xmr.difficulty.title:Difficulty Adjustment`;
+  readonly rewardsTitle = $localize`:@@xmr.difficulty.rewardsTitle:Reward stats`;
   status$: Observable<DifficultyStatus>;
   isLoadingWebSocket$: Observable<boolean>;
   paceData: BlockPacePoint[] = [];

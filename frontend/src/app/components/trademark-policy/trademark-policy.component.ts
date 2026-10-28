@@ -15,8 +15,8 @@ export class TrademarkPolicyComponent {
   ) { }
 
   ngOnInit(): void {
-    this.seoService.setTitle('Trademark & Attribution');
-    this.seoService.setDescription('Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.');
+    this.seoService.setTitle($localize`:@@xmr.legal.trademark-policy.meta-title:Trademark & Attribution`);
+    this.seoService.setDescription($localize`:@@xmr.legal.trademark-policy.meta-description:Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.`);
     this.ogService.setManualOgImage('trademark-policy.jpg');
   }
 }
