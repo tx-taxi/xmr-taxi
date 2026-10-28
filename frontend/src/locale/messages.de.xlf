@@ -428,9 +428,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.about" datatype="html">
-        <source>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
-        <target>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</target>
-        <context-group purpose="location">
+        <source>Learn about xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
+        <target>Erfahren Sie mehr über xmr.tx.taxi, einen Monero-Block- und Mempool-Explorer für öffentliche Blockchain-Daten, der den Datenschutz von RingCT respektiert.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
           <context context-type="linenumber">51</context>
         </context-group>
@@ -7511,9 +7510,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.xmr.transaction" datatype="html">
-        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</source>
-        <target>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</target>
-        <context-group purpose="location">
+        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId" />. See public input rings, output keys, transaction extra and protocol metadata.</source>
+        <target>Aktueller Status, Gebühren, Größe, Ringinformationen, Key Images und Bestätigungen für die Monero-Transaktion <x id="PH" equiv-text="this.txId" />. Öffentliche Eingaberinge, Ausgangsschlüssel, Transaktionszusatzdaten und Protokollmetadaten anzeigen.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">207</context>
         </context-group>
