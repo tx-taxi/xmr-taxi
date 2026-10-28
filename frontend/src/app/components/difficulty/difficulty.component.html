@@ -13,7 +13,7 @@
           <div class="item">
             <div class="card-text" *ngIf="status.averageBlockTime != null; else unavailableTime">~<app-time [time]="status.averageBlockTime" [fractionDigits]="1"></app-time></div>
             <ng-template #unavailableTime><div class="card-text">—</div></ng-template>
-            <div class="symbol">Average block time</div>
+            <div class="symbol" i18n="difficulty-box.average-block-time">Average block time</div>
           </div>
           <div class="item">
             <div class="card-text bigger" *ngIf="status.pacePercent != null; else unavailablePace"
