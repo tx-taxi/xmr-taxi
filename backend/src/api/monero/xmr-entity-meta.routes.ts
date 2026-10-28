@@ -12,7 +12,7 @@ const HTML_PATH = process.env.XMR_INDEX_HTML_PATH ?? '/usr/share/nginx/html/brow
 const CARD_LOGO = process.env.XMR_CARD_LOGO_PATH ?? path.join(__dirname, '../../../assets/xmr-card-logo.svg');
 
 type Kind = 'tx' | 'block';
-type Entity = { kind: Kind; id: string; title: string; description: string; detail: string };
+type Entity = { kind: Kind; id: string; title: string; description: string; detail: string; status?: number };
 
 function escapeHtml(value: string): string {
   return value.replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char] as string));
@@ -29,6 +29,8 @@ export class XmrEntityMetaRoutes {
   public initRoutes(app: Application): void {
     app.get('/tx/:id', this.page('tx'));
     app.get('/block/:id', this.page('block'));
+    app.get('/:locale/tx/:id', this.page('tx'));
+    app.get('/:locale/block/:id', this.page('block'));
     app.get('/og/xmr/:kind/:id.png', this.card.bind(this));
   }
 
@@ -42,14 +44,15 @@ export class XmrEntityMetaRoutes {
       ? { kind, id, title: `Monero transaction ${shortId}`, description: `Look up public metadata for Monero transaction ${id} on xmr.tx.taxi.`, detail: 'Public transaction metadata' }
       : { kind, id, title: `Monero block ${shortId}`, description: `Look up public metadata for Monero block ${id} on xmr.tx.taxi.`, detail: 'Public block metadata' };
 
+    let timer: ReturnType<typeof setTimeout> | undefined;
     try {
       const result = await Promise.race([
         kind === 'tx'
           ? this.api.getTransactionByHash(id)
           : HEX64.test(id) ? this.api.getBlockByHash(id) : this.api.getBlockByHeight(Number(id)),
-        new Promise<null>((resolve) => setTimeout(() => resolve(null), 3000)),
+        new Promise<never>((_, reject) => { timer = setTimeout(() => reject(new Error('Metadata timeout')), 3000); }),
       ]);
-      if (!result) return fallback;
+      if (!result) return { ...fallback, status: 404, description: `Monero ${kind === 'tx' ? 'transaction' : 'block'} not found.` };
       if (kind === 'tx' && 'tx_hash' in result) {
         const location = result.in_pool ? 'Pending' : result.block_height !== undefined ? `Block ${result.block_height.toLocaleString('en-US')}` : 'Confirmed';
         return {
@@ -68,9 +71,12 @@ export class XmrEntityMetaRoutes {
         };
       }
     } catch (_) {
-      // A provider outage must not turn an entity share into a 502.
+      // A retryable outage must not be indexed as an empty successful entity.
+      return { ...fallback, status: 503, description: 'Monero metadata temporarily unavailable. Please retry.' };
+    } finally {
+      clearTimeout(timer);
     }
-    return fallback;
+    return { ...fallback, status: 503 };
   }
 
   private page(kind: Kind) {
@@ -81,7 +87,12 @@ export class XmrEntityMetaRoutes {
         return;
       }
       try {
-        const [template, entity] = await Promise.all([readFile(HTML_PATH, 'utf8'), this.entity(kind, id)]);
+        const locale = req.params.locale;
+        if (locale && !/^(ar|bg|bs|cs|da|de|et|el|es|eo|eu|fa|fr|gl|ko|hr|id|it|he|ka|lv|lt|hu|mk|ms|nl|ja|nb|nn|pl|pt|pt-BR|ro|ru|sk|sl|sr|sh|fi|sv|th|tr|uk|vi|zh|hi|ne)$/.test(locale)) {
+          res.status(404).send('Not found'); return;
+        }
+        const templatePath = locale ? path.join(path.dirname(path.dirname(HTML_PATH)), locale, 'index.html') : HTML_PATH;
+        const [template, entity] = await Promise.all([readFile(templatePath, 'utf8').catch(() => readFile(HTML_PATH, 'utf8')), this.entity(kind, id)]);
         const url = `${ORIGIN}/${kind}/${id}`;
         const image = PAGE_CAPTURE.url;
         let html = template.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(entity.title)} | xmr.tx.taxi</title>`);
@@ -109,8 +120,13 @@ export class XmrEntityMetaRoutes {
         html = html.replace(/<link\b[^>]*rel="alternate"[^>]*type="text\/markdown"[^>]*>/gi, '');
         const schema = JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:entity.title,description:entity.description,url}).replace(/</g, '\\u003c');
         html = html.replace(/<script[^>]*id="native-page-schema"[^>]*>[\s\S]*?<\/script>/i, `<script id="native-page-schema" type="application/ld+json">${schema}</script>`);
-        res.setHeader('Cache-Control', 'public, max-age=30, stale-if-error=300');
-        res.type('html').send(html);
+        if (locale || entity.status === 404) {
+          html = replaceMeta(html, 'name', 'robots', 'noindex, follow');
+          res.setHeader('X-Robots-Tag', 'noindex, follow');
+        }
+        res.setHeader('Cache-Control', entity.status ? 'no-store' : 'public, max-age=30, stale-if-error=300');
+        if (entity.status === 503) res.setHeader('Retry-After', '60');
+        res.status(entity.status || 200).type('html').send(html);
       } catch (err) {
         res.status(503).send('Explorer page temporarily unavailable');
       }

@@ -3,8 +3,6 @@ import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter, map, switchMap } from 'rxjs';
 import { StateService } from '@app/services/state.service';
-import { LanguageService } from '@app/services/language.service';
-import { languages } from '@app/app.constants';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +14,6 @@ export class SeoService {
   baseDomain = 'xmr.tx.taxi';
 
   canonicalLink: HTMLLinkElement = document.getElementById('canonical') as HTMLLinkElement;
-  private alternateLinks: { link: HTMLLinkElement; seg: string }[] = [];
 
   constructor(
     private titleService: Title,
@@ -24,7 +21,6 @@ export class SeoService {
     private stateService: StateService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private languageService: LanguageService,
   ) {
     // Chain defaults remain stable when the initial document describes a leaf page.
     try {
@@ -122,9 +118,10 @@ export class SeoService {
   }
 
   updateCanonical(path) {
-    const localePrefix = this.languageService.getLanguageForUrl();
     const native = this.nativePage(path);
-    const canonicalUrl = 'https://' + this.baseDomain + (native?.path || localePrefix + path);
+    // Translations remain usable but consolidate discovery to the indexable English page.
+    const cleanPath = new URL(path, 'https://' + this.baseDomain).pathname.replace(/^\/(?:ar|bg|bs|cs|da|de|et|el|es|eo|eu|fa|fr|gl|ko|hr|id|it|he|ka|lv|lt|hu|mk|ms|nl|ja|nb|nn|pl|pt|pt-BR|ro|ru|sk|sl|sr|sh|fi|sv|th|tr|uk|vi|zh|hi|ne)(?=\/|$)/, '') || '/';
+    const canonicalUrl = 'https://' + this.baseDomain + (native?.path || cleanPath);
     this.canonicalLink?.setAttribute('href', canonicalUrl);
     this.updateDiscoveryLinks(canonicalUrl);
     const pageSchema = document.getElementById('native-page-schema');
@@ -134,31 +131,9 @@ export class SeoService {
       else pageSchema.remove();
     }
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
-    this.updateHreflang(path);
-  }
-
-  // Emit <link rel="alternate" hreflang> for every supported locale + x-default.
-  // The link elements are created once, then their hrefs are updated on each
-  // navigation. NOTE: injected client-side, so only JS-rendering crawlers see
-  // them today — they become fully effective once SSR/prerendering is enabled.
-  private updateHreflang(path: string): void {
-    if (!this.alternateLinks.length) {
-      const head = document.getElementsByTagName('head')[0];
-      const make = (hreflang: string, seg: string): void => {
-        const link = document.createElement('link');
-        link.setAttribute('rel', 'alternate');
-        link.setAttribute('hreflang', hreflang);
-        head.appendChild(link);
-        this.alternateLinks.push({ link, seg });
-      };
-      for (const lang of languages) {
-        make(lang.code, lang.code === 'en' ? '' : '/' + lang.code);
-      }
-      make('x-default', '');
-    }
-    for (const { link, seg } of this.alternateLinks) {
-      link.setAttribute('href', 'https://' + this.baseDomain + seg + path);
-    }
+    // These locale routes are noindex; advertising them as hreflang alternatives
+    // caused crawlers to discover a duplicate URL for every entity and language.
+    document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => link.remove());
   }
 
   // Site-wide WebSite + Organization structured data, injected once at startup.
