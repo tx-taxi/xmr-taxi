@@ -7,7 +7,7 @@
           @if (enterpriseInfo?.footer_img) {
             <img [src]="enterpriseInfo?.footer_img" [alt]="enterpriseInfo.title" height="60px" class="enterprise-logo">
           } @else {
-            <img src="/resources/branding/xmr-dark-navbar.svg" alt="xmr.tx.taxi Monero explorer" class="explorer-logo">
+            <img src="/resources/branding/xmr-dark-navbar.svg" alt="xmr.tx.taxi Monero explorer" i18n-alt="@@xmr.brand.imageAlt" class="explorer-logo">
           }
         </div>
         @if (!enterpriseInfo?.footer_img) {
@@ -79,7 +79,7 @@
         <p><a [routerLink]="['/about']" i18n="@@xmr.footer.about">About</a></p>
         <p><a href="https://github.com/tx-taxi/xmr-taxi" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.source">Source code</a></p>
         <p><a href="https://status.tx.taxi/" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.status">Status</a></p>
-        <p><a href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" aria-label="Join the tx.taxi Telegram channel" i18n="@@xmr.footer.telegram">Telegram</a></p>
+        <p><a href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" aria-label="Join the tx.taxi Telegram channel" i18n-aria-label="@@xmr.footer.telegramLabel" i18n="@@xmr.footer.telegram">Telegram</a></p>
         <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer" i18n="@@xmr.footer.contact">Contact Us</a></p>
         <p i18n="@@xmr.footer.released">Released under AGPLv3</p>
       </div>

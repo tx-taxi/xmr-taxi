@@ -13311,6 +13311,15 @@
       <trans-unit id="xmr.swap.atomicLabel" datatype="html"><source>XMR/BTC atomic swaps</source><target>Intercambios atómicos XMR/BTC</target></trans-unit>
       <trans-unit id="xmr.swap.atomicDirection" datatype="html"><source>BTC to XMR makers</source><target>Ofertas de BTC a XMR</target></trans-unit>
       <trans-unit id="xmr.swap.atomicNote" datatype="html"><source>Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.</source><target>Las ofertas de intercambios atómicos se anuncian en el registro público de eigenwallet y mediante el descubrimiento rendezvous de libp2p, en lugar de un panel centralizado de órdenes.</target></trans-unit>
+      <trans-unit id="xmr.nav.brand" datatype="html"><source>xmr.tx.taxi dashboard</source><target>Panel de xmr.tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html"><source>Dashboard</source><target>Panel</target></trans-unit>
+      <trans-unit id="xmr.nav.mining" datatype="html"><source>Mining dashboard</source><target>Panel de minería</target></trans-unit>
+      <trans-unit id="xmr.nav.blocks" datatype="html"><source>Recent blocks</source><target>Bloques recientes</target></trans-unit>
+      <trans-unit id="xmr.nav.graphs" datatype="html"><source>Graphs</source><target>Gráficos</target></trans-unit>
+      <trans-unit id="xmr.nav.docs" datatype="html"><source>Documentation</source><target>Documentación</target></trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html"><source>About xmr.tx.taxi</source><target>Acerca de xmr.tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.footer.telegramLabel" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Únete al canal de Telegram de tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.brand.imageAlt" datatype="html"><source>xmr.tx.taxi Monero explorer</source><target>Explorador de Monero xmr.tx.taxi</target></trans-unit>
     </body>
   </file>
 </xliff>

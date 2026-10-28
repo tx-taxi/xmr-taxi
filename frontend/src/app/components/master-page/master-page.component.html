@@ -3,7 +3,7 @@
 
   <nav class="navbar navbar-expand-md navbar-dark">
   <!-- Large screen -->
-  <a class="navbar-brand d-none d-md-flex" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="xmr.tx.taxi dashboard" title="xmr.tx.taxi dashboard">
+  <a class="navbar-brand d-none d-md-flex" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="xmr.tx.taxi dashboard" i18n-aria-label="@@xmr.nav.brand" title="xmr.tx.taxi dashboard" i18n-title="@@xmr.nav.brand">
     <ng-container *ngIf="{ val: connectionState$ | async } as connectionState">
       @if (enterpriseInfo) {
         <div class="subdomain_container">
@@ -14,7 +14,7 @@
         }
       }
       @if (!enterpriseInfo || enterpriseInfo.dualLogo) {
-        <img src="/resources/branding/xmr-dark-navbar.svg" alt="xmr.tx.taxi Monero explorer" class="mempool-logo" [style.opacity]="connectionState.val === 2 ? 1 : 0.5">
+        <img src="/resources/branding/xmr-dark-navbar.svg" alt="xmr.tx.taxi Monero explorer" i18n-alt="@@xmr.brand.imageAlt" class="mempool-logo" [style.opacity]="connectionState.val === 2 ? 1 : 0.5">
       }
       <div class="connection-badge">
         <div class="badge bg-warning" *ngIf="connectionState.val === 0" i18n="master-page.offline">Offline</div>
@@ -23,7 +23,7 @@
     </ng-container>
   </a>
   <!-- Mobile -->
-  <a class="navbar-brand d-flex d-md-none justify-content-center" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo, 'me-0': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="xmr.tx.taxi dashboard" title="xmr.tx.taxi dashboard">
+  <a class="navbar-brand d-flex d-md-none justify-content-center" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo, 'me-0': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="xmr.tx.taxi dashboard" i18n-aria-label="@@xmr.nav.brand" title="xmr.tx.taxi dashboard" i18n-title="@@xmr.nav.brand">
     <ng-container *ngIf="{ val: connectionState$ | async } as connectionState">
       @if (enterpriseInfo) {
         <div class="subdomain_container">
@@ -34,7 +34,7 @@
         }
       }
       @if (!enterpriseInfo || enterpriseInfo.dualLogo) {
-        <img src="/resources/branding/xmr-dark-navbar.svg" alt="xmr.tx.taxi Monero explorer" class="mempool-logo" [style.opacity]="connectionState.val === 2 ? 1 : 0.5">
+        <img src="/resources/branding/xmr-dark-navbar.svg" alt="xmr.tx.taxi Monero explorer" i18n-alt="@@xmr.brand.imageAlt" class="mempool-logo" [style.opacity]="connectionState.val === 2 ? 1 : 0.5">
       }
       <div class="connection-badge">
         <div class="badge bg-warning" *ngIf="connectionState.val === 0" i18n="master-page.offline">Offline</div>
@@ -47,7 +47,7 @@
     <ul class="navbar-nav {{ network.val }}">
 
       <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" id="btn-home">
-        <a class="nav-link" [routerLink]="['/' | relativeUrl]" (click)="collapse()" aria-label="Dashboard" title="Dashboard">
+        <a class="nav-link" [routerLink]="['/' | relativeUrl]" (click)="collapse()" aria-label="Dashboard" i18n-aria-label="@@xmr.nav.dashboard" title="Dashboard" i18n-title="@@xmr.nav.dashboard">
           <div class="svg-wrapper"><app-svg-images name="nav-tachometer" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
@@ -57,27 +57,27 @@
            (mempool's commercial brand). Kept: home, blocks list, graphs,
            Monero mining dashboard, docs, about. -->
       <li class="nav-item mining" routerLinkActive="active" ariaCurrentWhenActive="page" id="btn-pools" *ngIf="stateService.env.MINING_DASHBOARD">
-        <a class="nav-link" [routerLink]="['/mining' | relativeUrl]" (click)="collapse()" aria-label="Mining dashboard" title="Mining dashboard">
+        <a class="nav-link" [routerLink]="['/mining' | relativeUrl]" (click)="collapse()" aria-label="Mining dashboard" i18n-aria-label="@@xmr.nav.mining" title="Mining dashboard" i18n-title="@@xmr.nav.mining">
           <div class="svg-wrapper"><app-svg-images name="nav-pickaxe" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" ariaCurrentWhenActive="page" id="btn-blocks">
-        <a class="nav-link" [routerLink]="['/blocks' | relativeUrl]" (click)="collapse()" aria-label="Recent blocks" title="Recent blocks">
+        <a class="nav-link" [routerLink]="['/blocks' | relativeUrl]" (click)="collapse()" aria-label="Recent blocks" i18n-aria-label="@@xmr.nav.blocks" title="Recent blocks" i18n-title="@@xmr.nav.blocks">
           <div class="svg-wrapper"><app-svg-images name="nav-cubes" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" ariaCurrentWhenActive="page" id="btn-graphs">
-        <a class="nav-link" [routerLink]="['/graphs' | relativeUrl]" (click)="collapse()" aria-label="Graphs" title="Graphs">
+        <a class="nav-link" [routerLink]="['/graphs' | relativeUrl]" (click)="collapse()" aria-label="Graphs" i18n-aria-label="@@xmr.nav.graphs" title="Graphs" i18n-title="@@xmr.nav.graphs">
           <div class="svg-wrapper"><app-svg-images name="nav-chart-area" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" ariaCurrentWhenActive="page" id="btn-docs">
-        <a class="nav-link" [routerLink]="['/docs']" (click)="collapse()" aria-label="Documentation" title="Documentation">
+        <a class="nav-link" [routerLink]="['/docs']" (click)="collapse()" aria-label="Documentation" i18n-aria-label="@@xmr.nav.docs" title="Documentation" i18n-title="@@xmr.nav.docs">
           <div class="svg-wrapper"><app-svg-images name="nav-book" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" ariaCurrentWhenActive="page" id="btn-about">
-        <a class="nav-link" [routerLink]="['/about']" (click)="collapse()" aria-label="About xmr.tx.taxi" title="About xmr.tx.taxi">
+        <a class="nav-link" [routerLink]="['/about']" (click)="collapse()" aria-label="About xmr.tx.taxi" i18n-aria-label="@@xmr.nav.about" title="About xmr.tx.taxi" i18n-title="@@xmr.nav.about">
           <div class="svg-wrapper"><app-svg-images name="nav-info-circle" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
