@@ -431,7 +431,7 @@
       </trans-unit>
       <trans-unit id="meta.description.about" datatype="html">
         <source>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
-        <target>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</target>
+        <target>Découvrez xmr.tx.taxi, un explorateur de blocs et du mempool Monero qui présente les données publiques de la chaîne dans le respect de la confidentialité RingCT.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
           <context context-type="linenumber">51</context>
@@ -5714,7 +5714,7 @@
       </trans-unit>
       <trans-unit id="1c6520aeea2eb946269acab0a2863162b8311e7d" datatype="html">
         <source>Dust</source>
-        <target>Dust</target>
+        <target>Poussière</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-utxos-list/federation-utxos-list.component.html</context>
           <context context-type="linenumber">15</context>
@@ -6556,7 +6556,7 @@
       </trans-unit>
       <trans-unit id="5eef71f3169c4ea9311dedb86bb781bd710a47e9" datatype="html">
         <source>Prevhash</source>
-        <target>Prevhash</target>
+        <target>Hachage précédent</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">228</context>
@@ -6672,7 +6672,7 @@
       </trans-unit>
       <trans-unit id="7e93f7285e22e5a3c58cdde2205d4d2b5bfc079c" datatype="html">
         <source>Transaction hex</source>
-        <target>Transaction hex</target>
+        <target>Transaction en hexadécimal</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">6</context>
@@ -7296,7 +7296,7 @@
       </trans-unit>
       <trans-unit id="69a200e30802920bc6d619bd543cc2a332a8c390" datatype="html">
         <source>Stratum Jobs</source>
-        <target>Stratum Jobs</target>
+        <target>Tâches Stratum</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stratum/stratum-list/stratum-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -7529,7 +7529,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.transaction" datatype="html">
         <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</source>
-        <target>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</target>
+        <target>Consultez en temps réel l’état, les frais, la taille, les informations sur les anneaux, les images de clés et les confirmations de la transaction Monero <x id="PH"/>. Les montants et les destinataires restent masqués par RingCT.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">207</context>
@@ -8961,7 +8961,7 @@
       </trans-unit>
       <trans-unit id="9fe79011b50c2ca1f9b7db7066046631bfc6b3cb" datatype="html">
         <source>Timelock delta</source>
-        <target>Timelock delta</target>
+        <target>Différence de verrouillage temporel</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">69</context>
@@ -11535,7 +11535,7 @@
       </trans-unit>
       <trans-unit id="0b2a8975eccbec2ab3549027507c09f8034f6ec4" datatype="html">
         <source>Search a Monero block height, block hash, or tx hash</source>
-        <target>Search a Monero block height, block hash, or tx hash</target>
+        <target>Rechercher une hauteur de bloc, un hachage de bloc ou un hachage de transaction Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
           <context context-type="linenumber">14</context>
@@ -11544,7 +11544,7 @@
       </trans-unit>
       <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html">
         <source>More</source>
-        <target>More</target>
+        <target>Plus</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/graphs/graphs.component.html</context>
           <context context-type="linenumber">51</context>
@@ -11737,7 +11737,7 @@
       </trans-unit>
       <trans-unit id="4918464354083196325" datatype="html">
         <source>All pools</source>
-        <target>All pools</target>
+        <target>Tous les groupes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">16</context>
@@ -11746,7 +11746,7 @@
       </trans-unit>
       <trans-unit id="2016852810705279028" datatype="html">
         <source>No observed blocks yet.</source>
-        <target>No observed blocks yet.</target>
+        <target>Aucun bloc observé pour le moment.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">93</context>
