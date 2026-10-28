@@ -120,7 +120,7 @@ export class SeoService {
   updateCanonical(path) {
     const native = this.nativePage(path);
     // Translations remain usable but consolidate discovery to the indexable English page.
-    const cleanPath = new URL(path, 'https://' + this.baseDomain).pathname.replace(/^\/(?:ar|bg|bs|cs|da|de|et|el|es|eo|eu|fa|fr|gl|ko|hr|id|it|he|ka|lv|lt|hu|mk|ms|nl|ja|nb|nn|pl|pt|pt-BR|ro|ru|sk|sl|sr|sh|fi|sv|th|tr|uk|vi|zh|hi|ne)(?=\/|$)/, '') || '/';
+    const cleanPath = new URL(path, 'https://' + this.baseDomain).pathname.replace(/^\/(?:ar|bg|bs|ca|cs|da|de|et|el|es|eo|eu|fa|fr|gl|ko|hr|id|it|he|ka|lv|lt|hu|mk|ms|nl|ja|nb|nn|pl|pt|pt-BR|ro|ru|sk|sl|sr|sh|fi|sv|th|tr|uk|vi|zh|hi|ne)(?=\/|$)/, '') || '/';
     const canonicalUrl = 'https://' + this.baseDomain + (native?.path || cleanPath);
     this.canonicalLink?.setAttribute('href', canonicalUrl);
     this.updateDiscoveryLinks(canonicalUrl);

@@ -88,7 +88,7 @@ export class XmrEntityMetaRoutes {
       }
       try {
         const locale = req.params.locale;
-        if (locale && !/^(ar|bg|bs|cs|da|de|et|el|es|eo|eu|fa|fr|gl|ko|hr|id|it|he|ka|lv|lt|hu|mk|ms|nl|ja|nb|nn|pl|pt|pt-BR|ro|ru|sk|sl|sr|sh|fi|sv|th|tr|uk|vi|zh|hi|ne)$/.test(locale)) {
+        if (locale && !/^(ar|bg|bs|ca|cs|da|de|et|el|es|eo|eu|fa|fr|gl|ko|hr|id|it|he|ka|lv|lt|hu|mk|ms|nl|ja|nb|nn|pl|pt|pt-BR|ro|ru|sk|sl|sr|sh|fi|sv|th|tr|uk|vi|zh|hi|ne)$/.test(locale)) {
           res.status(404).send('Not found'); return;
         }
         const templatePath = locale ? path.join(path.dirname(path.dirname(HTML_PATH)), locale, 'index.html') : HTML_PATH;
