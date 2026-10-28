@@ -12176,7 +12176,7 @@
       <trans-unit id="xmr.features.viewTags" datatype="html"><source>View tags</source><target>Étiquettes de vue</target></trans-unit>
       <trans-unit id="xmr.features.ringHelp" datatype="html"><source>Number of members in the first input's ring</source><target>Nombre de membres de l’anneau de la première entrée</target></trans-unit>
       <trans-unit id="xmr.features.ring" datatype="html"><source>Ring <x id="INTERPOLATION"/></source><target>Anneau <x id="INTERPOLATION"/></target></trans-unit>
-      <trans-unit id="xmr.features.ringType" datatype="html"><source>RingCT type <x id="type"/>: <x id="name"/></source><target>Type RingCT : <x id="type"/> <x id="name"/></target></trans-unit>
+      <trans-unit id="xmr.features.ringType" datatype="html"><source>RingCT type <x id="type"/>: <x id="name"/></source><target>Type RingCT <x id="type"/> : <x id="name"/></target></trans-unit>
       <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html"><source>difficulty</source><target>difficulté</target></trans-unit>
       <trans-unit id="xmr.difficulty.toggleRewards" datatype="html"><source>rewards</source><target>récompenses</target></trans-unit>
       <trans-unit id="xmr.difficulty.paceHelp" datatype="html"><source>Recent blocks compared with Monero's two-minute target</source><target>Blocs récents comparés à l’objectif de deux minutes de Monero</target></trans-unit>
