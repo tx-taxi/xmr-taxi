@@ -2937,7 +2937,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fee-rates" datatype="html">
         <source>See Bitcoin feerates visualized over time, including minimum and maximum feerates per block along with feerates at various percentiles.</source>
-        <target>See Monero fee rates visualized over time, including minimum and maximum fee rates per block along with fee rates at various percentiles.</target>
+        <target>Consultez l’évolution des taux de frais Monero, avec les taux minimum et maximum par bloc et les taux de différents centiles.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">74</context>
@@ -2978,7 +2978,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees" datatype="html">
         <source>See the average mining fees earned per Bitcoin block visualized in BTC and USD over time.</source>
-        <target>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</target>
+        <target>Consultez l’évolution des frais moyens de minage par bloc Monero en XMR et en monnaie fiduciaire.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">71</context>
@@ -3043,7 +3043,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees-subsidy" datatype="html">
         <source>See the mining fees earned per Bitcoin block compared to the Bitcoin block subsidy, visualized in BTC and USD over time.</source>
-        <target>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</target>
+        <target>Comparez les frais de minage par bloc Monero à la subvention du bloc, en XMR et en USD au fil du temps.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">80</context>
@@ -3481,7 +3481,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-rewards" datatype="html">
         <source>See Bitcoin block rewards in BTC and USD visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
-        <target>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</target>
+        <target>Consultez l’évolution des récompenses de blocs Monero en XMR et en monnaie fiduciaire. Elles comprennent la subvention du bloc et les frais perçus par les mineurs.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-rewards-graph/block-rewards-graph.component.ts</context>
           <context context-type="linenumber">69</context>
@@ -3506,7 +3506,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-sizes" datatype="html">
         <source>See Monero block sizes and block weights, both measured in bytes, visualized over time.</source>
-        <target>See Monero block sizes visualized over time.</target>
+        <target>Consultez l’évolution de la taille des blocs Monero.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">66</context>
@@ -3912,7 +3912,7 @@
       </trans-unit>
       <trans-unit id="960cd598cbd85edb0a254ff3e59574d2c5cb888c" datatype="html">
         <source>Hash</source>
-        <target>Hash</target>
+        <target>Hachage</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">48</context>
@@ -4421,7 +4421,7 @@
       </trans-unit>
       <trans-unit id="e6213c3f05146287cf121868d9f3d3c3ff5f9714" datatype="html">
         <source>TXs</source>
-        <target>TXs</target>
+        <target>Transactions</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -5463,7 +5463,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
         <source>See hashrate and difficulty for the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> network visualized over time.</source>
-        <target>See Monero hashrate and difficulty<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> visualized over time.</target>
+        <target>Consultez l’évolution du taux de hachage et de la difficulté Monero<x id="PH"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">79</context>
@@ -5951,7 +5951,7 @@
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
         <source>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</source>
-        <target>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</target>
+        <target>Consultez en direct les statistiques des blocs du mempool Monero : fourchette de frais en unités atomiques par octet, taille totale en octets, nombre de transactions et frais totaux. Les blocs du mempool sont mis à jour en temps réel.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -6634,7 +6634,7 @@
       </trans-unit>
       <trans-unit id="price-chart.title" datatype="html">
         <source>Bitcoin Price</source>
-        <target>XMR Price</target>
+        <target>Cours du XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">77</context>
@@ -6642,7 +6642,7 @@
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
         <source>See the Bitcoin price in USD visualized over time.</source>
-        <target>See the Monero price in USD visualized over time.</target>
+        <target>Consultez l’évolution du cours du Monero en USD.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">78</context>
@@ -7222,7 +7222,7 @@
       </trans-unit>
       <trans-unit id="statistics.memory-by-vBytes" datatype="html">
         <source>Mempool by bytes (ɱ/B)</source>
-        <target>Mempool by bytes (ɱ/B)</target>
+        <target>Mempool par octets (ɱ/B)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">7</context>
@@ -7262,7 +7262,7 @@
       </trans-unit>
       <trans-unit id="statistics.transaction-vbytes-per-second" datatype="html">
         <source>Transaction bytes per second (B/s)</source>
-        <target>Transaction bytes per second (B/s)</target>
+        <target>Octets de transaction par seconde (B/s)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">110</context>
@@ -7288,7 +7288,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.mempool" datatype="html">
         <source>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</source>
-        <target>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</target>
+        <target>Consultez l’évolution de la taille du mempool Monero (en Mo) et des octets de transaction par seconde (B/s).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.ts</context>
           <context context-type="linenumber">67</context>
@@ -7537,7 +7537,7 @@
       </trans-unit>
       <trans-unit id="transaction.blob" datatype="html">
         <source>Transaction blob</source>
-        <target>Transaction blob</target>
+        <target>Blob de transaction</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">189</context>
@@ -8055,7 +8055,7 @@
       </trans-unit>
       <trans-unit id="7d745f2569c4ddc2992529f00ed991e36dada39a" datatype="html">
         <source>(Newly Generated Coins)</source>
-        <target>(Newly Generated Coins)</target>
+        <target>(Pièces nouvellement créées)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">90</context>
@@ -11415,7 +11415,7 @@
       </trans-unit>
       <trans-unit id="recent-transactions-title" datatype="html">
         <source>Recent Transactions</source>
-        <target>Recent Transactions</target>
+        <target>Transactions récentes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">94</context>
@@ -11423,7 +11423,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.recent-transactions" datatype="html">
         <source>See the most recent Monero transactions known to this node&apos;s mempool, updated in real time.</source>
-        <target>See the most recent Monero transactions known to this node&apos;s mempool, updated in real time.</target>
+        <target>Consultez les transactions Monero les plus récentes connues dans le mempool de ce nœud, mises à jour en temps réel.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">95</context>
@@ -11431,7 +11431,7 @@
       </trans-unit>
       <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
         <source>1 new transaction</source>
-        <target>1 new transaction</target>
+        <target>1 nouvelle transaction</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">7</context>
@@ -11443,10 +11443,7 @@
 &lt;/button&gt;
 
 &lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> new transactions</source>
-        <target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt;
-&lt;/button&gt;
-
-&lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> new transactions</target>
+        <target><x id="INTERPOLATION"/> nouvelles transactions</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">8</context>
@@ -11455,7 +11452,7 @@
       </trans-unit>
       <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
+        <target>Pause / reprise</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -11465,7 +11462,7 @@
       </trans-unit>
       <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
+        <target>Pause / reprise</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -11475,7 +11472,7 @@
       </trans-unit>
       <trans-unit id="32fba724df729afb840693b40e3f8869356f4e33" datatype="html">
         <source>Size</source>
-        <target>Size</target>
+        <target>Taille</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">39</context>
@@ -11485,7 +11482,7 @@
       </trans-unit>
       <trans-unit id="12712092967db7dedb58de04474dd9387f0b25c1" datatype="html">
         <source>No transactions currently in the mempool.</source>
-        <target>No transactions currently in the mempool.</target>
+        <target>Aucune transaction actuellement dans le mempool.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">57</context>
@@ -11494,7 +11491,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.block" datatype="html">
         <source>See Monero block size, weight, fees, reward, included transaction hashes, and public chain metadata for block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</source>
-        <target>See Monero block size, weight, fees, reward, included transaction hashes, and public chain metadata for block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</target>
+        <target>Consultez la taille, le poids, les frais, la récompense, les hachages des transactions incluses et les métadonnées publiques du bloc Monero <x id="BLOCK_HEIGHT"/> (<x id="BLOCK_ID"/>).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
           <context context-type="linenumber">288</context>
@@ -11502,7 +11499,7 @@
       </trans-unit>
       <trans-unit id="f2e3b7efbb8a150162d83424d6e47d6e56aa8402" datatype="html">
         <source>Major version</source>
-        <target>Major version</target>
+        <target>Version majeure</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">308</context>
@@ -11511,7 +11508,7 @@
       </trans-unit>
       <trans-unit id="723c8f5d2ddddc61bd1de35aa3b198b8b6be3766" datatype="html">
         <source>Miner tx hash</source>
-        <target>Miner tx hash</target>
+        <target>Hachage de la transaction de minage</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">316</context>
@@ -11520,7 +11517,7 @@
       </trans-unit>
       <trans-unit id="d698f4953b16a622df57735484ebf7c0b000da81" datatype="html">
         <source>Minor version</source>
-        <target>Minor version</target>
+        <target>Version mineure</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">312</context>
@@ -11529,7 +11526,7 @@
       </trans-unit>
       <trans-unit id="a0c19cdf2e20449ee2b70d469a5fb00973024e43" datatype="html">
         <source>Block blob</source>
-        <target>Block blob</target>
+        <target>Blob du bloc</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">335</context>
@@ -11556,7 +11553,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.ring16" datatype="html">
         <source>Standard ring (16)</source>
-        <target>Standard ring (16)</target>
+        <target>Anneau standard (16)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">54</context>
@@ -11564,7 +11561,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.view-tags" datatype="html">
         <source>View tags</source>
-        <target>View tags</target>
+        <target>Étiquettes de vue</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">55</context>
@@ -11572,7 +11569,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.rct6" datatype="html">
         <source>RCT v6 (latest)</source>
-        <target>RCT v6 (latest)</target>
+        <target>RCT v6 (plus récent)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -11580,7 +11577,7 @@
       </trans-unit>
       <trans-unit id="1bb63205bfc0b2c54da06a75b8d60516697c2382" datatype="html">
         <source>atomic units</source>
-        <target>atomic units</target>
+        <target>unités atomiques</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
           <context context-type="linenumber">42</context>
@@ -11593,7 +11590,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesBtc" datatype="html">
         <source>Fees XMR</source>
-        <target>Fees XMR</target>
+        <target>Frais en XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">116</context>
@@ -11601,7 +11598,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesFiat" datatype="html">
         <source>Fees <x id="currency" equiv-text="this.currency"/></source>
-        <target>Fees <x id="currency" equiv-text="this.currency"/></target>
+        <target>Frais en <x id="currency"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">117</context>
@@ -11609,7 +11606,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.avgBlock" datatype="html">
         <source>* On average around block <x id="block" equiv-text="data[0].data[2]"/></source>
-        <target>* On average around block <x id="block" equiv-text="data[0].data[2]"/></target>
+        <target>* En moyenne autour du bloc <x id="block"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">180</context>
@@ -11617,7 +11614,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html">
         <source>Subsidy</source>
-        <target>Subsidy</target>
+        <target>Subvention</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">57</context>
@@ -11625,7 +11622,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.fees" datatype="html">
         <source>Fees</source>
-        <target>Fees</target>
+        <target>Frais</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">58</context>
@@ -11633,7 +11630,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html">
         <source>Subsidy (USD)</source>
-        <target>Subsidy (USD)</target>
+        <target>Subvention (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">59</context>
@@ -11641,7 +11638,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html">
         <source>Fees (USD)</source>
-        <target>Fees (USD)</target>
+        <target>Frais (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -11649,7 +11646,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html">
         <source>Subsidy (%)</source>
-        <target>Subsidy (%)</target>
+        <target>Subvention (%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -11657,7 +11654,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html">
         <source>Fees (%)</source>
-        <target>Fees (%)</target>
+        <target>Frais (%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -11665,7 +11662,7 @@
       </trans-unit>
       <trans-unit id="f7861032fb8a0dd0876cef908e93dd380cdf509d" datatype="html">
         <source>XMR Price</source>
-        <target>XMR Price</target>
+        <target>Cours du XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">8</context>
@@ -11682,7 +11679,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.group-public-signals" datatype="html">
         <source>Monero public signals</source>
-        <target>Monero public signals</target>
+        <target>Signaux publics Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">98</context>
@@ -11690,7 +11687,7 @@
       </trans-unit>
       <trans-unit id="b17df68c0822021ce4480bbd4ed72b15733b818e" datatype="html">
         <source>Hidden by RingCT</source>
-        <target>Hidden by RingCT</target>
+        <target>Masqué par RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">40</context>
@@ -11699,7 +11696,7 @@
       </trans-unit>
       <trans-unit id="89864e276d5211949a4f7bfe381f86d509191852" datatype="html">
         <source>Comparison status</source>
-        <target>Comparison status</target>
+        <target>État de la comparaison</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">58</context>
@@ -11708,7 +11705,7 @@
       </trans-unit>
       <trans-unit id="ab4fd1a5febd86d3f383293363de659a92fd4091" datatype="html">
         <source>Missing from block</source>
-        <target>Missing from block</target>
+        <target>Absent du bloc</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">62</context>
@@ -11718,7 +11715,7 @@
       </trans-unit>
       <trans-unit id="bd686becafa75168c61368a59bee2c36af7a521a" datatype="html">
         <source>Different block template</source>
-        <target>Different block template</target>
+        <target>Modèle de bloc différent</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">63</context>
@@ -11731,7 +11728,7 @@
       </trans-unit>
       <trans-unit id="66f3ae3eff97ee4cbf8c9751eacdd4f736cb338b" datatype="html">
         <source>Monero transaction filters</source>
-        <target>Monero transaction filters</target>
+        <target>Filtres de transactions Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">3</context>
