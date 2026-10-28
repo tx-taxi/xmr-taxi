@@ -48,7 +48,7 @@ export class MiningPoolComponent implements OnInit, OnDestroy {
   }
 
   get logoAlt(): string {
-    return this.name ? `Logo of ${this.name} mining pool` : 'Mining pool logo';
+    return this.name ? $localize`:@@xmr.pool.logoNamed:Logo of ${this.name}:name: mining pool` : $localize`:@@xmr.pool.logo:Mining pool logo`;
   }
 
   onImageError(event: Event): void {

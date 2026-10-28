@@ -18,6 +18,7 @@ import { BlockOverviewGraphComponent } from '@components/block-overview-graph/bl
 })
 export class BlockPreviewComponent implements OnInit, OnDestroy {
   network = '';
+  poolLogoAlt(name: string): string { return $localize`:@@xmr.pool.logoNamed:Logo of ${name}:name: mining pool`; }
   block: BlockExtended;
   blockHeight: number;
   blockHash: string;

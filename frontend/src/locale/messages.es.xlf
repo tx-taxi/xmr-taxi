@@ -13204,6 +13204,13 @@
       <trans-unit id="xmr.activity.partialPeriod" datatype="html"><source> · Partial period</source><target> · Período parcial</target></trans-unit>
       <trans-unit id="xmr.activity.tooltipTransactions" datatype="html"><source><x id="count"/> transactions</source><target><x id="count"/> transacciones</target></trans-unit>
       <trans-unit id="xmr.activity.tooltipBlocks" datatype="html"><source><x id="count"/> blocks</source><target><x id="count"/> bloques</target></trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html"><source>Monero explorer dashboard</source><target>Panel del explorador de Monero</target></trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html"><source>Switch to displaying block sizes</source><target>Mostrar los tamaños de los bloques</target></trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html"><source>Switch to displaying total fees per block</source><target>Mostrar las comisiones totales por bloque</target></trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>Mostrar los bloques más recientes a la derecha</target></trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>Mostrar los bloques más recientes a la izquierda</target></trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html"><source>Mining pool logo</source><target>Logotipo del grupo de minería</target></trans-unit>
+      <trans-unit id="xmr.pool.logoNamed" datatype="html"><source>Logo of <x id="name"/> mining pool</source><target>Logotipo del grupo de minería <x id="name"/></target></trans-unit>
     </body>
   </file>
 </xliff>
