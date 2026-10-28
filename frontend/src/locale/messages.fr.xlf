@@ -11756,6 +11756,16 @@
         </context-group>
         <note priority="1" from="description">mining.no-observed-blocks</note>
       </trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html"><source>Switch to displaying block sizes</source><target>Afficher la taille des blocs</target></trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html"><source>Switch to displaying total fees per block</source><target>Afficher les frais totaux par bloc</target></trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>Afficher les blocs les plus récents à droite</target></trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>Afficher les blocs les plus récents à gauche</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html"><source>Total fees</source><target>Frais totaux</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Taux de frais médian</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html"><source>Fee range</source><target>Fourchette des frais</target></trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html"><source>Fiat value unavailable</source><target>Valeur en monnaie fiduciaire indisponible</target></trans-unit>
+      <trans-unit id="xmr.pool.logoNamed" datatype="html"><source>Logo of <x id="name" equiv-text="this.name"/> mining pool</source><target>Logo du groupe de minage <x id="name"/></target></trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html"><source>Mining pool logo</source><target>Logo du groupe de minage</target></trans-unit>
     </body>
   </file>
 </xliff>
