@@ -14617,7 +14617,7 @@
       <trans-unit id="taxi.timezone.minus3" datatype="html"><source>Argentina Time (ART)</source><target>Argentinische Zeit (ART)</target></trans-unit>
       <trans-unit id="taxi.timezone.minus2" datatype="html"><source>Fernando de Noronha Time (FNT)</source><target>Fernando-de-Noronha-Zeit (FNT)</target></trans-unit>
       <trans-unit id="taxi.timezone.minus1" datatype="html"><source>Azores Time (AZOT)</source><target>Azorenzeit (AZOT)</target></trans-unit>
-      <trans-unit id="taxi.timezone.plus0" datatype="html"><source>Greenwich Mean Time (GMT)</source><target>Greenwich Mean Time (GMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html"><source>Greenwich Mean Time (GMT)</source><target>Mittlere Greenwich-Zeit (GMT)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus1" datatype="html"><source>Central European Time (CET)</source><target>Mitteleuropäische Zeit (CET)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus2" datatype="html"><source>Eastern European Time (EET)</source><target>Osteuropäische Zeit (EET)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus3" datatype="html"><source>Moscow Standard Time (MSK)</source><target>Moskauer Normalzeit (MSK)</target></trans-unit>
