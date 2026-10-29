@@ -13072,6 +13072,911 @@
           <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="22074d9b0ef5a18f1569ba121bf689923002ff17" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this block's fee rate</source><target state="translated">Оценка комиссии транзакции Monero размером 2 КБ по ставке этого блока</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <note priority="1" from="description">Monero historical fee example</note>
+      </trans-unit>
+      <trans-unit id="6948786787037977434" datatype="html">
+        <source>Blocks</source><target state="translated">Блоки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="420763834450076269" datatype="html">
+        <source>Block</source><target state="translated">Блок</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.calculator.waiting" datatype="html">
+        <source> Waiting for price feed... </source><target state="translated">Ожидание данных о цене...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71862f6b2c89c8901f90240b219f01844a301dcb" datatype="html">
+        <source>Daemon floor or lowest observed current mempool rate</source><target state="translated">Минимальная ставка демона или наименьшая наблюдаемая ставка мемпула</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (economy)</note>
+      </trans-unit>
+      <trans-unit id="77a014215a8ebca1d2cb97afd2d6d0b98f30064d" datatype="html">
+        <source>Derived from lower current Monero mempool fee rates</source><target state="translated">На основе низких текущих ставок комиссии мемпула Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (low priority)</note>
+      </trans-unit>
+      <trans-unit id="9b7f259ef00e0bc210c59220cbe1505594e08510" datatype="html">
+        <source>Derived from mid-range current Monero mempool fee rates</source><target state="translated">На основе средних текущих ставок комиссии мемпула Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (medium priority)</note>
+      </trans-unit>
+      <trans-unit id="841d41ed3f0a7f43195b96dd3f8006706810cd6d" datatype="html">
+        <source>Derived from the highest current Monero projected-block fee rates</source><target state="translated">На основе наиболее высоких ставок комиссии прогнозируемых блоков Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (high priority)</note>
+      </trans-unit>
+      <trans-unit id="b869c9a96b183dcb932213b60d4a26fb4e9fa2db" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this rate</source><target state="translated">Оценка комиссии транзакции Monero размером 2 КБ по этой ставке</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+      <trans-unit id="graphs.h1" datatype="html">
+        <source>Monero Network Graphs</source><target state="translated">Графики сети Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/graphs/graphs.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Graphs hidden heading</note>
+      </trans-unit>
+      <trans-unit id="xmr.brand.imageAlt" datatype="html">
+        <source>xmr.tx.taxi Monero explorer</source><target state="translated">Обозреватель Monero xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c15418ab123a8ff78ca76d128831cd88893f0da" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this fee rate</source><target state="translated">Оценка комиссии транзакции Monero размером 2 КБ по этой ставке</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+      <trans-unit id="xmr.meta.title.mining.dashboard" datatype="html">
+        <source>Mining</source><target state="translated">Майнинг</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.meta.description.mining.dashboard" datatype="html">
+        <source>See Monero mining stats: hashrate, per-block difficulty changes, block rewards, pool attribution, and recent blocks.</source><target state="translated">Статистика майнинга Monero: хешрейт, изменение сложности, награды, пулы и последние блоки.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8493638f3af7c7eae48091929c7f8461bddbed51" datatype="html">
+        <source>All pools</source><target state="translated">Все пулы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">mining.all-pools</note>
+      </trans-unit>
+      <trans-unit id="2fdc79ab67991fd81012f4fe18de77138da9230f" datatype="html">
+        <source>No observed blocks yet.</source><target state="translated">Блоки ещё не обнаружены.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">mining.no-observed-blocks</note>
+      </trans-unit>
+      <trans-unit id="xmr.swap.title" datatype="html">
+        <source>Swap ticker</source><target state="translated">Котировки обменов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.subtitle" datatype="html">
+        <source>Haveno markets and XMR/BTC atomic-swap discovery</source><target state="translated">Рынки Haveno и поиск атомарных обменов XMR/BTC</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.network" datatype="html">
+        <source>Network</source><target state="translated">Сеть</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.activePairs" datatype="html">
+        <source>Active pairs</source><target state="translated">Активные пары</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.volume" datatype="html">
+        <source>Volume</source><target state="translated">Объём</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.tradesSampled" datatype="html">
+        <source>Trades sampled</source><target state="translated">Сделок в выборке</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.goggles" datatype="html">
+        <source>Swap goggles</source><target state="translated">Фильтры обменов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.pairSummary" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="pairs · {{ state.visibleVolume | number:'1.2"/> pairs · <x id="INTERPOLATION_1" equiv-text="{{ state.visibleVolume | number:'1.2-2' }}"/> XMR</source><target state="translated">Пар: <x id="INTERPOLATION" equiv-text="pairs · {{ state.visibleVolume | number:'1.2"/> · <x id="INTERPOLATION_1" equiv-text="{{ state.visibleVolume | number:'1.2-2' }}"/> XMR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.atomic" datatype="html">
+        <source>Atomic swaps</source><target state="translated">Атомарные обмены</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.direction" datatype="html">
+        <source>Direction</source><target state="translated">Направление</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.status" datatype="html">
+        <source>Status</source><target state="translated">Статус</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.makerDiscovery" datatype="html">
+        <source>Maker discovery</source><target state="translated">Поиск участников обмена</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.docs" datatype="html">
+        <source>Docs</source><target state="translated">Документация</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.haveno" datatype="html">
+        <source>Haveno markets</source><target state="translated">Рынки Haveno</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.marketsSummary" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="of {{ ticker.markets.length | number }} pairs ·"/> of <x id="INTERPOLATION_1" equiv-text="{{ ticker.markets.length | number }}"/> pairs · updated <x id="INTERPOLATION_2" equiv-text="{{ ticker.updatedAt | date:'medium' }}"/></source><target state="translated"><x id="INTERPOLATION" equiv-text="of {{ ticker.markets.length | number }} pairs ·"/> из <x id="INTERPOLATION_1" equiv-text="{{ ticker.markets.length | number }}"/> пар · обновлено <x id="INTERPOLATION_2" equiv-text="{{ ticker.updatedAt | date:'medium' }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.pair" datatype="html">
+        <source>Pair</source><target state="translated">Пара</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.price" datatype="html">
+        <source>Price</source><target state="translated">Цена</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.change" datatype="html">
+        <source>Change</source><target state="translated">Изменение</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.tableVolume" datatype="html">
+        <source>Volume</source><target state="translated">Объём</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.range" datatype="html">
+        <source>Range</source><target state="translated">Диапазон</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.noMarkets" datatype="html">
+        <source>No markets match this goggle.</source><target state="translated">Нет рынков, соответствующих фильтру.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.recent" datatype="html">
+        <source>Recent trades</source><target state="translated">Последние сделки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.tradesSummary" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="of {{ ticker.recentTrades.length | number }} sa"/> of <x id="INTERPOLATION_1" equiv-text="{{ ticker.recentTrades.length | number }}"/> sampled trades</source><target state="translated"><x id="INTERPOLATION" equiv-text="of {{ ticker.recentTrades.length | number }} sa"/> из <x id="INTERPOLATION_1" equiv-text="{{ ticker.recentTrades.length | number }}"/> сделок в выборке</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.method" datatype="html">
+        <source>Method</source><target state="translated">Метод</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.time" datatype="html">
+        <source>Time</source><target state="translated">Время</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.noUpstreamTrades" datatype="html">
+        <source>No recent trades returned by the upstream market source.</source><target state="translated">Источник рынка не вернул последние сделки.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.noFilteredTrades" datatype="html">
+        <source>No recent trades match this goggle.</source><target state="translated">Нет последних сделок, соответствующих фильтру.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.all" datatype="html">
+        <source>All</source><target state="translated">Все</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.crypto" datatype="html">
+        <source>Crypto</source><target state="translated">Криптовалюты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.movers" datatype="html">
+        <source>Movers</source><target state="translated">Изменение цены</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.optionVolume" datatype="html">
+        <source>Volume</source><target state="translated">Объём</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.metaTitle" datatype="html">
+        <source>Haveno and atomic swap ticker</source><target state="translated">Котировки Haveno и атомарных обменов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.metaDescription" datatype="html">
+        <source>Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.</source><target state="translated">Рынки RetoSwap Haveno XMR и поиск участников атомарных обменов XMR/BTC.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.unavailable" datatype="html">
+        <source>Swap ticker is unavailable.</source><target state="translated">Котировки обменов недоступны.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.atomicLabel" datatype="html">
+        <source>XMR/BTC atomic swaps</source><target state="translated">Атомарные обмены XMR/BTC</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.atomicDirection" datatype="html">
+        <source>BTC to XMR makers</source><target state="translated">Предложения BTC на XMR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.swap.atomicNote" datatype="html">
+        <source>Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.</source><target state="translated">Участники атомарных обменов публикуют предложения через публичный реестр eigenwallet и обнаружение libp2p rendezvous, а не через централизованную книгу ордеров.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.title" datatype="html">
+        <source>Transaction activity</source><target state="translated">Активность транзакций</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.description" datatype="html">
+        <source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source><target state="translated">Подтверждённые транзакции Monero во всех блоках с момента создания сети. Транзакции наград майнеров исключены. Все периоды указаны в UTC.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.today" datatype="html">
+        <source>Today · so far</source><target state="translated">Сегодня · на текущий момент</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.month" datatype="html">
+        <source>This month · so far</source><target state="translated">В этом месяце · на текущий момент</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.year" datatype="html">
+        <source>This year · so far</source><target state="translated">В этом году · на текущий момент</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.genesis" datatype="html">
+        <source>Since genesis</source><target state="translated">С момента создания сети</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.countPer" datatype="html">
+        <source>Count transactions per</source><target state="translated">Подсчитать транзакции по</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.dateRange" datatype="html">
+        <source>Date range</source><target state="translated">Диапазон дат</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.loading" datatype="html">
+        <source>Loading transaction history…</source><target state="translated">Загрузка истории транзакций…</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.error" datatype="html">
+        <source>Transaction history could not be loaded.</source><target state="translated">Не удалось загрузить историю транзакций.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.retry" datatype="html">
+        <source>Retry</source><target state="translated">Повторить</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.chartLabel" datatype="html">
+        <source>Monero transaction counts over time; exact counts are available in the table below</source><target state="translated">Число транзакций Monero с течением времени; точные значения приведены в таблице ниже</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.totalNote" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}"/> transactions in the displayed periods. Faded bars mark partial periods.</source><target state="translated"><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}"/> транзакций за показанные периоды. Бледные столбцы обозначают неполные периоды.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.indexedThrough" datatype="html">
+        <source>Indexed through block <x id="INTERPOLATION" equiv-text="{{ data.height | number }}"/> · <x id="INTERPOLATION_1" equiv-text="{{ data.indexedThrough * 1000 | date:'yyyy-MM-dd HH:mm':'UTC' }}"/> UTC</source><target state="translated">Индексировано до блока <x id="INTERPOLATION" equiv-text="{{ data.height | number }}"/> · <x id="INTERPOLATION_1" equiv-text="{{ data.indexedThrough * 1000 | date:'yyyy-MM-dd HH:mm':'UTC' }}"/> UTC</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.stale" datatype="html">
+        <source> · Refresh delayed; showing the last indexed data</source><target state="translated"> · обновление задерживается; показаны последние индексированные данные</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.counts" datatype="html">
+        <source>Transaction counts</source><target state="translated">Количество транзакций</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.download" datatype="html">
+        <source>Download CSV</source><target state="translated">Скачать CSV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.period" datatype="html">
+        <source>Period (UTC)</source><target state="translated">Период (UTC)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.transactions" datatype="html">
+        <source>Transactions</source><target state="translated">Транзакции</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.blocks" datatype="html">
+        <source>Blocks</source><target state="translated">Блоки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.partial" datatype="html">
+        <source>Partial</source><target state="translated">Неполный</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.showMore" datatype="html">
+        <source>Show more periods</source><target state="translated">Показать больше периодов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.hour" datatype="html">
+        <source>Hour</source><target state="translated">Час</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.day" datatype="html">
+        <source>Day</source><target state="translated">День</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.intervalMonth" datatype="html">
+        <source>Month</source><target state="translated">Месяц</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.intervalYear" datatype="html">
+        <source>Year</source><target state="translated">Год</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.allTime" datatype="html">
+        <source>All time</source><target state="translated">За всё время</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.metaTitle" datatype="html">
+        <source>Monero transaction activity</source><target state="translated">Активность транзакций Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.metaDescription" datatype="html">
+        <source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source><target state="translated">Количество транзакций Monero по часам, дням, месяцам и годам с момента создания сети до последнего индексированного блока.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.partialPeriod" datatype="html">
+        <source> · Partial period</source><target state="translated"> · неполный период</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.tooltipTransactions" datatype="html">
+        <source><x id="count" equiv-text="row.transactions.toLocaleString()"/> transactions</source><target state="translated">Транзакции: <x id="count" equiv-text="row.transactions.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.tooltipBlocks" datatype="html">
+        <source><x id="count" equiv-text="row.blocks.toLocaleString()"/> blocks</source><target state="translated">Блоки: <x id="count" equiv-text="row.blocks.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="15c02cb6b6c3be53477e502d3e1ee26955b23af0" datatype="html">
+        <source>Unavailable</source><target state="translated">Недоступно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <note priority="1" from="description">shared.unavailable</note>
+      </trans-unit>
+      <trans-unit id="2611475427610660053" datatype="html">
+        <source>Transactions</source><target state="translated">Транзакции</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="313854265968026491" datatype="html">
+        <source>Transaction</source><target state="translated">Транзакция</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.h1" datatype="html">
+        <source>Monero Block &amp; Pending Transactions Explorer</source><target state="translated">Обозреватель блоков и ожидающих транзакций Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Dashboard hidden heading</note>
+      </trans-unit>
+      <trans-unit id="xmr.footer.privacy" datatype="html">
+        <source>Privacy by default</source><target state="translated">Конфиденциальность по умолчанию</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.explore" datatype="html">
+        <source>Explore</source><target state="translated">Обзор</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.dashboard" datatype="html">
+        <source>Dashboard</source><target state="translated">Главная</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.recentBlocks" datatype="html">
+        <source>Recent Blocks</source><target state="translated">Последние блоки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.pending" datatype="html">
+        <source>Pending Transactions</source><target state="translated">Ожидающие транзакции</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.activity" datatype="html">
+        <source>Transaction activity</source><target state="translated">Активность транзакций</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.instanceStatus" datatype="html">
+        <source>Instance status</source><target state="translated">Статус экземпляра</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.learn" datatype="html">
+        <source>Learn</source><target state="translated">Узнать больше</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.moneropedia" datatype="html">
+        <source>Moneropedia</source><target state="translated">Moneropedia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.whatRingct" datatype="html">
+        <source>What is RingCT?</source><target state="translated">Что такое RingCT?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.viewKey" datatype="html">
+        <source>View key</source><target state="translated">Ключ просмотра</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.proofSignatures" datatype="html">
+        <source>tx_proof signatures</source><target state="translated">Подписи tx_proof</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.research" datatype="html">
+        <source>Monero research lab</source><target state="translated">Исследовательская лаборатория Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.documentation" datatype="html">
+        <source>Explorer documentation</source><target state="translated">Документация обозревателя</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.about" datatype="html">
+        <source>About</source><target state="translated">О проекте</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.source" datatype="html">
+        <source>Source code</source><target state="translated">Исходный код</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.status" datatype="html">
+        <source>Status</source><target state="translated">Статус</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.telegramLabel" datatype="html">
+        <source>Join the tx.taxi Telegram channel</source><target state="translated">Присоединиться к каналу tx.taxi в Telegram</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.telegram" datatype="html">
+        <source>Telegram</source><target state="translated">Telegram</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.contact" datatype="html">
+        <source>Contact Us</source><target state="translated">Связаться с нами</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.released" datatype="html">
+        <source>Released under AGPLv3</source><target state="translated">Распространяется по лицензии AGPLv3</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.madeWith" datatype="html">
+        <source>Made with</source><target state="translated">Сделано с</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.footer.by" datatype="html">
+        <source>by</source><target state="translated">от</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.pool.logoNamed" datatype="html">
+        <source>Logo of <x id="name" equiv-text="this.name"/> mining pool</source><target state="translated">Логотип майнинг-пула <x id="name" equiv-text="this.name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html">
+        <source>Mining pool logo</source><target state="translated">Логотип майнинг-пула</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.aria" datatype="html">
+        <source>About tx.taxi</source><target state="translated">О tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.title" datatype="html">
+        <source>One search across chains.</source><target state="translated">Один поиск по разным блокчейнам.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.description" datatype="html">
+        <source>Paste a transaction, block or address into tx.taxi. Open a confirmed match, choose between possible networks, or head straight to your chain’s explorer.</source><target state="translated">Вставьте транзакцию, блок или адрес в tx.taxi. Откройте подтверждённый результат, выберите возможную сеть или перейдите сразу в её обозреватель.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.openTaxi" datatype="html">
+        <source>Open tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Открыть tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.exploreChain" datatype="html">
+        <source>Explore <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Открыть <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
