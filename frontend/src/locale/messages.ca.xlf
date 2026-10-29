@@ -11048,6 +11048,157 @@
         <source>Server-Sent Events</source>
         <target>Esdeveniments enviats pel servidor</target>
       </trans-unit>
+      <trans-unit id="xmr.about.title" datatype="html"><source>About xmr.tx.taxi</source><target>Sobre xmr.tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.about.tagline" datatype="html"><source>The Monero explorer in the tx.taxi family.</source><target>L’explorador de Monero de la família tx.taxi.</target></trans-unit>
+      <trans-unit id="xmr.about.projectLinks" datatype="html"><source>Project links</source><target>Enllaços del projecte</target></trans-unit>
+      <trans-unit id="xmr.about.documentation" datatype="html"><source>Monero documentation</source><target>Documentació de Monero</target></trans-unit>
+      <trans-unit id="xmr.about.contact" datatype="html"><source>Contact the maintainer</source><target>Contacta amb el mantenidor</target></trans-unit>
+      <trans-unit id="xmr.about.privacy" datatype="html"><source>Privacy by default</source><target>Privadesa per defecte</target></trans-unit>
+      <trans-unit id="xmr.about.privacyDescription" datatype="html"><source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero&#x27;s privacy model:</source><target>Les pàgines de detall de les transaccions difuminen deliberadament els camps sensibles. La divulgació per part dels participants es limita als processos compatibles amb el model de privadesa de Monero:</target></trans-unit>
+      <trans-unit id="xmr.about.daemon" datatype="html"><source>Daemon</source><target>Dimoni</target></trans-unit>
+      <trans-unit id="xmr.about.license" datatype="html"><source>License</source><target>Llicència</target></trans-unit>
+      <trans-unit id="xmr.about.licenseDescription" datatype="html"><source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source><target>xmr.tx.taxi compleix les obligacions de la llicència AGPLv3 del projecte original. El Mempool Open Source Project va crear els patrons d’interfície en què es basa aquest explorador.</target></trans-unit>
+      <trans-unit id="xmr.about.openSource" datatype="html"><source>Built on open source</source><target>Basat en codi obert</target></trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html"><source>Fiat value unavailable</source><target>Valor en moneda fiduciària no disponible</target></trans-unit>
+      <trans-unit id="22074d9b0ef5a18f1569ba121bf689923002ff17" datatype="html"><source>Estimated fee for a 2 kB Monero transaction at this block&#x27;s fee rate</source><target>Comissió estimada d’una transacció Monero de 2 kB a la tarifa d’aquest bloc</target></trans-unit>
+      <trans-unit id="6948786787037977434" datatype="html"><source>Blocks</source><target>Blocs</target></trans-unit>
+      <trans-unit id="420763834450076269" datatype="html"><source>Block</source><target>Bloc</target></trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html"><source>Monero explorer dashboard</source><target>Tauler de l’explorador Monero</target></trans-unit>
+      <trans-unit id="xmr.nav.returnHub" datatype="html"><source>Back to tx.taxi</source><target>Torna a tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.nav.brand" datatype="html"><source>xmr.tx.taxi dashboard</source><target>Tauler de xmr.tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html"><source>Switch to displaying block sizes</source><target>Mostra les mides dels blocs</target></trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html"><source>Switch to displaying total fees per block</source><target>Mostra les comissions totals per bloc</target></trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>Mostra els blocs més recents a la dreta</target></trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>Mostra els blocs més recents a l’esquerra</target></trans-unit>
+      <trans-unit id="xmr.calculator.waiting" datatype="html"><source> Waiting for price feed... </source><target> Esperant les dades de preus... </target></trans-unit>
+      <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html"><source>difficulty</source><target>dificultat</target></trans-unit>
+      <trans-unit id="xmr.difficulty.toggleRewards" datatype="html"><source>rewards</source><target>recompenses</target></trans-unit>
+      <trans-unit id="xmr.difficulty.paceHelp" datatype="html"><source>Recent blocks compared with Monero&#x27;s two-minute target</source><target>Blocs recents comparats amb l’objectiu de dos minuts de Monero</target></trans-unit>
+      <trans-unit id="xmr.difficulty.pace" datatype="html"><source>Block pace</source><target>Ritme dels blocs</target></trans-unit>
+      <trans-unit id="xmr.difficulty.change" datatype="html"><source>Difficulty Δ</source><target>Variació de dificultat</target></trans-unit>
+      <trans-unit id="xmr.difficulty.title" datatype="html"><source>Difficulty Adjustment</source><target>Ajust de dificultat</target></trans-unit>
+      <trans-unit id="xmr.difficulty.rewardsTitle" datatype="html"><source>Reward stats</source><target>Estadístiques de recompenses</target></trans-unit>
+      <trans-unit id="71862f6b2c89c8901f90240b219f01844a301dcb" datatype="html"><source>Daemon floor or lowest observed current mempool rate</source><target>Mínim del dimoni o tarifa més baixa observada al mempool actual</target></trans-unit>
+      <trans-unit id="77a014215a8ebca1d2cb97afd2d6d0b98f30064d" datatype="html"><source>Derived from lower current Monero mempool fee rates</source><target>Derivat de les tarifes de comissió més baixes del mempool actual de Monero</target></trans-unit>
+      <trans-unit id="9b7f259ef00e0bc210c59220cbe1505594e08510" datatype="html"><source>Derived from mid-range current Monero mempool fee rates</source><target>Derivat de les tarifes de comissió intermèdies del mempool actual de Monero</target></trans-unit>
+      <trans-unit id="841d41ed3f0a7f43195b96dd3f8006706810cd6d" datatype="html"><source>Derived from the highest current Monero projected-block fee rates</source><target>Derivat de les tarifes més altes dels blocs projectats actuals de Monero</target></trans-unit>
+      <trans-unit id="b869c9a96b183dcb932213b60d4a26fb4e9fa2db" datatype="html"><source>Estimated fee for a 2 kB Monero transaction at this rate</source><target>Comissió estimada d’una transacció Monero de 2 kB a aquesta tarifa</target></trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html"><source>Kraken last trade</source><target>Última operació de Kraken</target></trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html"><source> · stale</source><target> · desactualitzat</target></trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html"><source>ECB reference rate</source><target>Tipus de referència del BCE</target></trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html"><source>ECB reference rate; update unavailable</source><target>Tipus de referència del BCE; actualització no disponible</target></trans-unit>
+      <trans-unit id="graphs.h1" datatype="html"><source>Monero Network Graphs</source><target>Gràfics de la xarxa Monero</target></trans-unit>
+      <trans-unit id="xmr.brand.imageAlt" datatype="html"><source>xmr.tx.taxi Monero explorer</source><target>Explorador Monero xmr.tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html"><source>Dashboard</source><target>Tauler</target></trans-unit>
+      <trans-unit id="xmr.nav.mining" datatype="html"><source>Mining dashboard</source><target>Tauler de mineria</target></trans-unit>
+      <trans-unit id="xmr.nav.blocks" datatype="html"><source>Recent blocks</source><target>Blocs recents</target></trans-unit>
+      <trans-unit id="xmr.nav.graphs" datatype="html"><source>Graphs</source><target>Gràfics</target></trans-unit>
+      <trans-unit id="xmr.nav.docs" datatype="html"><source>Documentation</source><target>Documentació</target></trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html"><source>About xmr.tx.taxi</source><target>Sobre xmr.tx.taxi</target></trans-unit>
+      <trans-unit id="2c15418ab123a8ff78ca76d128831cd88893f0da" datatype="html"><source>Estimated fee for a 2 kB Monero transaction at this fee rate</source><target>Comissió estimada d’una transacció Monero de 2 kB a aquesta tarifa</target></trans-unit>
+      <trans-unit id="xmr.meta.title.mining.dashboard" datatype="html"><source>Mining</source><target>Mineria</target></trans-unit>
+      <trans-unit id="xmr.meta.description.mining.dashboard" datatype="html"><source>See Monero mining stats: hashrate, per-block difficulty changes, block rewards, pool attribution, and recent blocks.</source><target>Consulta les estadístiques de mineria de Monero: taxa de hash, canvis de dificultat per bloc, recompenses, atribució de grups i blocs recents.</target></trans-unit>
+      <trans-unit id="8493638f3af7c7eae48091929c7f8461bddbed51" datatype="html"><source>All pools</source><target>Tots els grups</target></trans-unit>
+      <trans-unit id="2fdc79ab67991fd81012f4fe18de77138da9230f" datatype="html"><source>No observed blocks yet.</source><target>Encara no s’ha observat cap bloc.</target></trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html"><source>Chain search</source><target>Cerca entre cadenes</target></trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html"><source>Choose search chain</source><target>Tria la cadena de cerca</target></trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html"><source>Selected explorer</source><target>Explorador seleccionat</target></trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html"><source>SELECTED</source><target>SELECCIONAT</target></trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html"><source>Automatic Routing</source><target>Encaminament automàtic</target></trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html"><source>Open tx.taxi in a new tab</source><target>Obre tx.taxi en una pestanya nova</target></trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html"><source>View Hub</source><target>Mostra el portal</target></trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>EXPLORADORS NATIUS</target></trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>Registre d’exploradors no disponible</target></trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>EXPLORADORS DE TERCERS</target></trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html"><source>Open</source><target>Obre</target></trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html"><source>Opened</source><target>Obert</target></trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html"><source>Switch</source><target>Canvia</target></trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>S’estan carregant els exploradors</target></trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html"><source>Search selected chain</source><target>Cerca a la cadena seleccionada</target></trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html"><source>Monero explorer</source><target>Explorador Monero</target></trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html"><source>Found</source><target>Trobat</target></trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html"><source>Possible</source><target>Possible</target></trans-unit>
+      <trans-unit id="xmr.footer.privacy" datatype="html"><source>Privacy by default</source><target>Privadesa per defecte</target></trans-unit>
+      <trans-unit id="xmr.footer.explore" datatype="html"><source>Explore</source><target>Explora</target></trans-unit>
+      <trans-unit id="xmr.footer.dashboard" datatype="html"><source>Dashboard</source><target>Tauler</target></trans-unit>
+      <trans-unit id="xmr.footer.recentBlocks" datatype="html"><source>Recent Blocks</source><target>Blocs recents</target></trans-unit>
+      <trans-unit id="xmr.footer.pending" datatype="html"><source>Pending Transactions</source><target>Transaccions pendents</target></trans-unit>
+      <trans-unit id="xmr.footer.activity" datatype="html"><source>Transaction activity</source><target>Activitat de transaccions</target></trans-unit>
+      <trans-unit id="xmr.footer.instanceStatus" datatype="html"><source>Instance status</source><target>Estat de la instància</target></trans-unit>
+      <trans-unit id="xmr.footer.learn" datatype="html"><source>Learn</source><target>Aprèn</target></trans-unit>
+      <trans-unit id="xmr.footer.moneropedia" datatype="html"><source>Moneropedia</source><target>Moneropedia</target></trans-unit>
+      <trans-unit id="xmr.footer.whatRingct" datatype="html"><source>What is RingCT?</source><target>Què és RingCT?</target></trans-unit>
+      <trans-unit id="xmr.footer.viewKey" datatype="html"><source>View key</source><target>Clau de visualització</target></trans-unit>
+      <trans-unit id="xmr.footer.proofSignatures" datatype="html"><source>tx_proof signatures</source><target>Signatures tx_proof</target></trans-unit>
+      <trans-unit id="xmr.footer.research" datatype="html"><source>Monero research lab</source><target>Laboratori de recerca de Monero</target></trans-unit>
+      <trans-unit id="xmr.footer.documentation" datatype="html"><source>Explorer documentation</source><target>Documentació de l’explorador</target></trans-unit>
+      <trans-unit id="xmr.footer.about" datatype="html"><source>About</source><target>Informació</target></trans-unit>
+      <trans-unit id="xmr.footer.source" datatype="html"><source>Source code</source><target>Codi font</target></trans-unit>
+      <trans-unit id="xmr.footer.status" datatype="html"><source>Status</source><target>Estat</target></trans-unit>
+      <trans-unit id="xmr.footer.telegramLabel" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Uneix-te al canal de Telegram de tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.footer.telegram" datatype="html"><source>Telegram</source><target>Telegram</target></trans-unit>
+      <trans-unit id="xmr.footer.contact" datatype="html"><source>Contact Us</source><target>Contacta amb nosaltres</target></trans-unit>
+      <trans-unit id="xmr.footer.released" datatype="html"><source>Released under AGPLv3</source><target>Publicat sota AGPLv3</target></trans-unit>
+      <trans-unit id="xmr.footer.madeWith" datatype="html"><source>Made with</source><target>Fet amb</target></trans-unit>
+      <trans-unit id="xmr.footer.by" datatype="html"><source>by</source><target>per</target></trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html"><source>Mining pool logo</source><target>Logotip del grup de mineria</target></trans-unit>
+      <trans-unit id="xmr-status-instance-health" datatype="html"><source>Instance health</source><target>Salut de la instància</target></trans-unit>
+      <trans-unit id="xmr-status-title" datatype="html"><source>Monero daemon status</source><target>Estat del dimoni Monero</target></trans-unit>
+      <trans-unit id="xmr-status-description" datatype="html"><source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target>Disponibilitat del servidor i estat públic de sincronització de monerod per a aquesta instància de xmr.tx.taxi.</target></trans-unit>
+      <trans-unit id="xmr-status-checked" datatype="html"><source>Checked</source><target>Comprovat</target></trans-unit>
+      <trans-unit id="xmr-status-service-reachability" datatype="html"><source>Service reachability</source><target>Accessibilitat del servei</target></trans-unit>
+      <trans-unit id="xmr-status-backend" datatype="html"><source>Backend</source><target>Servidor</target></trans-unit>
+      <trans-unit id="xmr-status-reachable" datatype="html"><source>reachable</source><target>accessible</target></trans-unit>
+      <trans-unit id="xmr-status-daemon" datatype="html"><source>Daemon</source><target>Dimoni</target></trans-unit>
+      <trans-unit id="xmr-status-unreachable" datatype="html"><source>unreachable</source><target>inaccessible</target></trans-unit>
+      <trans-unit id="xmr-status-daemon-details" datatype="html"><source>Daemon details</source><target>Detalls del dimoni</target></trans-unit>
+      <trans-unit id="xmr-status-chain" datatype="html"><source>Chain</source><target>Cadena</target></trans-unit>
+      <trans-unit id="xmr-status-height" datatype="html"><source>Height</source><target>Alçada</target></trans-unit>
+      <trans-unit id="xmr-status-target-height" datatype="html"><source>Target height</source><target>Alçada objectiu</target></trans-unit>
+      <trans-unit id="xmr-status-behind" datatype="html"><source>Behind</source><target>Retard</target></trans-unit>
+      <trans-unit id="xmr-status-blocks" datatype="html"><source>blocks</source><target>blocs</target></trans-unit>
+      <trans-unit id="xmr-status-tip-hash" datatype="html"><source>Tip hash</source><target>Hash de l’últim bloc</target></trans-unit>
+      <trans-unit id="xmr-status-network" datatype="html"><source>Network</source><target>Xarxa</target></trans-unit>
+      <trans-unit id="xmr-status-nettype" datatype="html"><source>Nettype</source><target>Tipus de xarxa</target></trans-unit>
+      <trans-unit id="xmr-status-peers" datatype="html"><source>Peers</source><target>Nodes connectats</target></trans-unit>
+      <trans-unit id="xmr-status-connections" datatype="html"><source>Incoming / outgoing</source><target>Entrants / sortints</target></trans-unit>
+      <trans-unit id="xmr-status-rpc-clients" datatype="html"><source>RPC clients</source><target>Clients RPC</target></trans-unit>
+      <trans-unit id="xmr-status-workload" datatype="html"><source>Workload</source><target>Càrrega</target></trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html"><source>Mempool</source><target>Mempool</target></trans-unit>
+      <trans-unit id="xmr-status-txs" datatype="html"><source>txs</source><target>transaccions</target></trans-unit>
+      <trans-unit id="xmr-status-total-txs" datatype="html"><source>Total txs</source><target>Total de transaccions</target></trans-unit>
+      <trans-unit id="xmr-status-difficulty" datatype="html"><source>Difficulty</source><target>Dificultat</target></trans-unit>
+      <trans-unit id="xmr-status-estimated-hashrate" datatype="html"><source>Estimated hashrate</source><target>Taxa de hash estimada</target></trans-unit>
+      <trans-unit id="xmr-status-version" datatype="html"><source>Version</source><target>Versió</target></trans-unit>
+      <trans-unit id="xmr-status-uptime" datatype="html"><source>Uptime</source><target>Temps de funcionament</target></trans-unit>
+      <trans-unit id="xmr-status-started" datatype="html"><source>Started</source><target>Iniciat</target></trans-unit>
+      <trans-unit id="xmr-status-trusted-rpc" datatype="html"><source>Trusted RPC</source><target>RPC de confiança</target></trans-unit>
+      <trans-unit id="xmr-status-storage" datatype="html"><source>Storage</source><target>Emmagatzematge</target></trans-unit>
+      <trans-unit id="xmr-status-database-size" datatype="html"><source>Database size</source><target>Mida de la base de dades</target></trans-unit>
+      <trans-unit id="xmr-status-free-space" datatype="html"><source>Free space</source><target>Espai lliure</target></trans-unit>
+      <trans-unit id="xmr-status-block-size-limit" datatype="html"><source>Block size limit</source><target>Límit de mida del bloc</target></trans-unit>
+      <trans-unit id="xmr-status-update-available" datatype="html"><source>Update available</source><target>Actualització disponible</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap" datatype="html"><source>Bootstrap</source><target>Inicialització</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-height" datatype="html"><source>Bootstrap height</source><target>Alçada d’inicialització</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-daemon" datatype="html"><source>Bootstrap daemon</source><target>Dimoni d’inicialització</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-used" datatype="html"><source>Bootstrap used</source><target>Inicialització utilitzada</target></trans-unit>
+      <trans-unit id="xmr-status-peerlist" datatype="html"><source>Peerlist</source><target>Llista de nodes</target></trans-unit>
+      <trans-unit id="xmr-status-white" datatype="html"><source>white</source><target>blancs</target></trans-unit>
+      <trans-unit id="xmr-status-grey" datatype="html"><source>grey</source><target>grisos</target></trans-unit>
+      <trans-unit id="xmr-status-check-failed" datatype="html"><source>Daemon check failed</source><target>Ha fallat la comprovació del dimoni</target></trans-unit>
+      <trans-unit id="xmr-status-backend-answered" datatype="html"><source>The backend answered, but monerod did not return</source><target>El servidor ha respost, però monerod no ha retornat cap resposta</target></trans-unit>
+      <trans-unit id="xmr-status-checking" datatype="html"><source>Checking daemon status...</source><target>Comprovant l’estat del dimoni...</target></trans-unit>
+      <trans-unit id="xmr-status-unknown" datatype="html"><source>unknown</source><target>desconegut</target></trans-unit>
+      <trans-unit id="xmr-status-not-configured" datatype="html"><source>not configured</source><target>no configurat</target></trans-unit>
+      <trans-unit id="xmr-status-no" datatype="html"><source>no</source><target>no</target></trans-unit>
+      <trans-unit id="xmr-status-yes" datatype="html"><source>yes</source><target>sí</target></trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html"><source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source><target>Estat en directe del servidor de xmr.tx.taxi i de monerod: salut, sincronització, versió, nodes i emmagatzematge.</target></trans-unit>
+      <trans-unit id="xmr-status-state-online" datatype="html"><source>monerod reachable</source><target>monerod accessible</target></trans-unit>
+      <trans-unit id="xmr-status-state-syncing" datatype="html"><source>syncing</source><target>sincronitzant</target></trans-unit>
+      <trans-unit id="xmr-status-state-degraded" datatype="html"><source>attention needed</source><target>cal atenció</target></trans-unit>
+      <trans-unit id="xmr-status-state-offline" datatype="html"><source>daemon unreachable</source><target>dimoni inaccessible</target></trans-unit>
+      <trans-unit id="xmr-status-request-failed" datatype="html"><source>request failed</source><target>ha fallat la sol·licitud</target></trans-unit>
+      <trans-unit id="xmr-status-network-request-failed" datatype="html"><source>network request failed</source><target>ha fallat la sol·licitud de xarxa</target></trans-unit>
     </body>
   </file>
 </xliff>
