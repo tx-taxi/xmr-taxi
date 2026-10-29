@@ -12468,6 +12468,162 @@
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
-      </body>
+        <trans-unit id="xmr.about.daemon" datatype="html"><source>Daemon</source><target>Daemon</target></trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html"><source>Dashboard</source><target>Overzicht</target></trans-unit>
+      <trans-unit id="xmr.meta.title.mining.dashboard" datatype="html"><source>Mining</source><target>Mining</target></trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html"><source>Search selected chain</source><target>Doorzoek geselecteerde keten</target></trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html"><source>Monero explorer</source><target>Monero-verkenner</target></trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html"><source>Found</source><target>Gevonden</target></trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html"><source>Possible</source><target>Mogelijk</target></trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Roep een taxi, plak hier wat je zoekt.</target></trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html"><source>Monero search suggestions</source><target>Monero-zoeksuggesties</target></trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html"><source>Monero Block Height</source><target>Monero-blokhoogte</target></trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html"><source>Monero Block / Transaction</source><target>Monero-blok of transactie</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html"><source>Monero addresses are private</source><target>Monero-adressen zijn privé</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html"><source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target>Openbare ketengegevens kunnen geen adresgeschiedenis opleveren. Open een transactie om een betaling met het bewijs of de sleutels te controleren.</target></trans-unit>
+      <trans-unit id="xmr.swap.title" datatype="html"><source>Swap ticker</source><target>Swapoverzicht</target></trans-unit>
+      <trans-unit id="xmr.swap.subtitle" datatype="html"><source>Haveno markets and XMR/BTC atomic-swap discovery</source><target>Haveno-markten en ontdekking van XMR/BTC atomic swaps</target></trans-unit>
+      <trans-unit id="xmr.swap.network" datatype="html"><source>Network</source><target>Netwerk</target></trans-unit>
+      <trans-unit id="xmr.swap.activePairs" datatype="html"><source>Active pairs</source><target>Actieve paren</target></trans-unit>
+      <trans-unit id="xmr.swap.volume" datatype="html"><source>Volume</source><target>Volume</target></trans-unit>
+      <trans-unit id="xmr.swap.tradesSampled" datatype="html"><source>Trades sampled</source><target>Transacties in de steekproef</target></trans-unit>
+      <trans-unit id="xmr.swap.goggles" datatype="html"><source>Swap goggles</source><target>Swapfilters</target></trans-unit>
+      <trans-unit id="xmr.swap.atomic" datatype="html"><source>Atomic swaps</source><target>Atomic swaps</target></trans-unit>
+      <trans-unit id="xmr.swap.direction" datatype="html"><source>Direction</source><target>Richting</target></trans-unit>
+      <trans-unit id="xmr.swap.status" datatype="html"><source>Status</source><target>Status</target></trans-unit>
+      <trans-unit id="xmr.swap.makerDiscovery" datatype="html"><source>Maker discovery</source><target>Makers vinden</target></trans-unit>
+      <trans-unit id="xmr.swap.docs" datatype="html"><source>Docs</source><target>Documentatie</target></trans-unit>
+      <trans-unit id="xmr.swap.haveno" datatype="html"><source>Haveno markets</source><target>Haveno-markten</target></trans-unit>
+      <trans-unit id="xmr.swap.pair" datatype="html"><source>Pair</source><target>Paar</target></trans-unit>
+      <trans-unit id="xmr.swap.price" datatype="html"><source>Price</source><target>Prijs</target></trans-unit>
+      <trans-unit id="xmr.swap.change" datatype="html"><source>Change</source><target>Verandering</target></trans-unit>
+      <trans-unit id="xmr.swap.tableVolume" datatype="html"><source>Volume</source><target>Volume</target></trans-unit>
+      <trans-unit id="xmr.swap.range" datatype="html"><source>Range</source><target>Bereik</target></trans-unit>
+      <trans-unit id="xmr.swap.noMarkets" datatype="html"><source>No markets match this goggle.</source><target>Geen markten voldoen aan dit filter.</target></trans-unit>
+      <trans-unit id="xmr.swap.recent" datatype="html"><source>Recent trades</source><target>Recente transacties</target></trans-unit>
+      <trans-unit id="xmr.swap.method" datatype="html"><source>Method</source><target>Methode</target></trans-unit>
+      <trans-unit id="xmr.swap.time" datatype="html"><source>Time</source><target>Tijd</target></trans-unit>
+      <trans-unit id="xmr.swap.noUpstreamTrades" datatype="html"><source>No recent trades returned by the upstream market source.</source><target>De externe marktbron heeft geen recente transacties teruggegeven.</target></trans-unit>
+      <trans-unit id="xmr.swap.noFilteredTrades" datatype="html"><source>No recent trades match this goggle.</source><target>Geen recente transacties voldoen aan dit filter.</target></trans-unit>
+      <trans-unit id="xmr.swap.all" datatype="html"><source>All</source><target>Alles</target></trans-unit>
+      <trans-unit id="xmr.swap.crypto" datatype="html"><source>Crypto</source><target>Crypto</target></trans-unit>
+      <trans-unit id="xmr.swap.movers" datatype="html"><source>Movers</source><target>Grootste bewegingen</target></trans-unit>
+      <trans-unit id="xmr.swap.optionVolume" datatype="html"><source>Volume</source><target>Volume</target></trans-unit>
+      <trans-unit id="xmr.swap.metaTitle" datatype="html"><source>Haveno and atomic swap ticker</source><target>Overzicht van Haveno en atomic swaps</target></trans-unit>
+      <trans-unit id="xmr.swap.metaDescription" datatype="html"><source>Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.</source><target>Volg RetoSwap Haveno XMR-markten en de ontdekking van aanbieders van XMR/BTC atomic swaps.</target></trans-unit>
+      <trans-unit id="xmr.swap.unavailable" datatype="html"><source>Swap ticker is unavailable.</source><target>Het swapoverzicht is niet beschikbaar.</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicLabel" datatype="html"><source>XMR/BTC atomic swaps</source><target>XMR/BTC atomic swaps</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicDirection" datatype="html"><source>BTC to XMR makers</source><target>BTC-naar-XMR-aanbieders</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicNote" datatype="html"><source>Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.</source><target>Aanbieders van atomic swaps melden zich aan via het openbare register van eigenwallet en libp2p rendezvous-ontdekking, in plaats van via een gecentraliseerd orderboek.</target></trans-unit>
+      <trans-unit id="xmr.activity.title" datatype="html"><source>Transaction activity</source><target>Transactieactiviteit</target></trans-unit>
+      <trans-unit id="xmr.activity.description" datatype="html"><source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source><target>Bevestigde Monero-transacties, geteld uit elk blok sinds genesis. Minerbeloningstransacties zijn uitgesloten. Alle perioden gebruiken UTC.</target></trans-unit>
+      <trans-unit id="xmr.activity.today" datatype="html"><source>Today · so far</source><target>Vandaag · tot nu toe</target></trans-unit>
+      <trans-unit id="xmr.activity.month" datatype="html"><source>This month · so far</source><target>Deze maand · tot nu toe</target></trans-unit>
+      <trans-unit id="xmr.activity.year" datatype="html"><source>This year · so far</source><target>Dit jaar · tot nu toe</target></trans-unit>
+      <trans-unit id="xmr.activity.genesis" datatype="html"><source>Since genesis</source><target>Sinds genesis</target></trans-unit>
+      <trans-unit id="xmr.activity.countPer" datatype="html"><source>Count transactions per</source><target>Tel transacties per</target></trans-unit>
+      <trans-unit id="xmr.activity.dateRange" datatype="html"><source>Date range</source><target>Datumbereik</target></trans-unit>
+      <trans-unit id="xmr.activity.loading" datatype="html"><source>Loading transaction history…</source><target>Transactiegeschiedenis laden…</target></trans-unit>
+      <trans-unit id="xmr.activity.error" datatype="html"><source>Transaction history could not be loaded.</source><target>De transactiegeschiedenis kon niet worden geladen.</target></trans-unit>
+      <trans-unit id="xmr.activity.retry" datatype="html"><source>Retry</source><target>Opnieuw proberen</target></trans-unit>
+      <trans-unit id="xmr.activity.chartLabel" datatype="html"><source>Monero transaction counts over time; exact counts are available in the table below</source><target>Aantal Monero-transacties in de tijd; exacte aantallen staan in de tabel hieronder</target></trans-unit>
+      <trans-unit id="xmr.activity.stale" datatype="html"><source> · Refresh delayed; showing the last indexed data</source><target> · Vernieuwen vertraagd; laatst geïndexeerde gegevens worden getoond</target></trans-unit>
+      <trans-unit id="xmr.activity.counts" datatype="html"><source>Transaction counts</source><target>Aantal transacties</target></trans-unit>
+      <trans-unit id="xmr.activity.download" datatype="html"><source>Download CSV</source><target>CSV downloaden</target></trans-unit>
+      <trans-unit id="xmr.activity.period" datatype="html"><source>Period (UTC)</source><target>Periode (UTC)</target></trans-unit>
+      <trans-unit id="xmr.activity.transactions" datatype="html"><source>Transactions</source><target>Transacties</target></trans-unit>
+      <trans-unit id="xmr.activity.blocks" datatype="html"><source>Blocks</source><target>Blokken</target></trans-unit>
+      <trans-unit id="xmr.activity.partial" datatype="html"><source>Partial</source><target>Gedeeltelijk</target></trans-unit>
+      <trans-unit id="xmr.activity.showMore" datatype="html"><source>Show more periods</source><target>Meer perioden tonen</target></trans-unit>
+      <trans-unit id="xmr.activity.hour" datatype="html"><source>Hour</source><target>Uur</target></trans-unit>
+      <trans-unit id="xmr.activity.day" datatype="html"><source>Day</source><target>Dag</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalMonth" datatype="html"><source>Month</source><target>Maand</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalYear" datatype="html"><source>Year</source><target>Jaar</target></trans-unit>
+      <trans-unit id="xmr.activity.allTime" datatype="html"><source>All time</source><target>Hele periode</target></trans-unit>
+      <trans-unit id="xmr.activity.metaTitle" datatype="html"><source>Monero transaction activity</source><target>Monero-transactieactiviteit</target></trans-unit>
+      <trans-unit id="xmr.activity.metaDescription" datatype="html"><source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source><target>Bekijk het aantal Monero-transacties per uur, dag, maand en jaar, van genesis tot het laatst geïndexeerde blok.</target></trans-unit>
+      <trans-unit id="xmr.activity.partialPeriod" datatype="html"><source> · Partial period</source><target> · Gedeeltelijke periode</target></trans-unit>
+      <trans-unit id="15c02cb6b6c3be53477e502d3e1ee26955b23af0" datatype="html"><source>Unavailable</source><target>Niet beschikbaar</target></trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html"><source>Unavailable for pruned data</source><target>Niet beschikbaar voor ingekorte gegevens</target></trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html"><source>Pruned data size</source><target>Grootte van ingekorte gegevens</target></trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html"><source>Serialized size</source><target>Geserialiseerde grootte</target></trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html"><source>Unlock time</source><target>Ontgrendeltijd</target></trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html"><source>Decoded transaction</source><target>Gedecodeerde transactie</target></trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html"><source>Transaction extra</source><target>Extra transactiegegevens</target></trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html"><source>Raw tx_extra</source><target>Ruwe tx_extra</target></trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html"><source>Empty</source><target>Leeg</target></trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html"><source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target>Sommige extra velden worden niet herkend; de volledige ruwe bytes staan hierboven.</target></trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html"><source>Payment verification</source><target>Betaling verifiëren</target></trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html"><source>Monero payment verification mode</source><target>Monero-betalingsverificatiemodus</target></trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html"><source>Received</source><target>Ontvangen</target></trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html"><source>Recipient address</source><target>Adres van de ontvanger</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html"><source>Message</source><target>Bericht</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html"><source>tx_proof signature</source><target>tx_proof-handtekening</target></trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html"><source>Verifying...</source><target>Verifiëren...</target></trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html"><source>Verify proof</source><target>Bewijs verifiëren</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html"><source>Proof verified</source><target>Bewijs geverifieerd</target></trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html"><source>In mempool</source><target>In mempool</target></trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html"><source>Private view key</source><target>Privé-kijksleutel</target></trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html"><source>Scanning...</source><target>Scannen...</target></trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html"><source>Scan this tx</source><target>Deze transactie scannen</target></trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html"><source>Checking...</source><target>Controleren...</target></trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html"><source>Check key</source><target>Sleutel controleren</target></trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html"><source>Payment found</source><target>Betaling gevonden</target></trans-unit>
+      <trans-unit id="2611475427610660053" datatype="html"><source>Transactions</source><target>Transacties</target></trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html"><source>Address and tx_proof signature are required.</source><target>Adres en tx_proof-handtekening zijn vereist.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html"><source>Enter a valid-looking Monero mainnet address.</source><target>Voer een geldig uitziend Monero-mainnetadres in.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html"><source>Enter the tx_proof signature generated by a Monero wallet.</source><target>Voer de door een Monero-wallet gegenereerde tx_proof-handtekening in.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html"><source>The proof did not verify for this transaction and address.</source><target>Het bewijs kon niet worden geverifieerd voor deze transactie en dit adres.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html"><source>Unable to verify proof.</source><target>Bewijs verifiëren niet mogelijk.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html"><source>Address and private view key are required.</source><target>Adres en privé-kijksleutel zijn vereist.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html"><source>Load a transaction before running local verification.</source><target>Laad een transactie voordat je lokale verificatie uitvoert.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html"><source>Enter a 64-character hexadecimal private view key.</source><target>Voer een hexadecimale privé-kijksleutel van 64 tekens in.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html"><source>Address and tx_secret_key are required.</source><target>Adres en tx_secret_key zijn vereist.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html"><source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target>Voer de hexadecimale tx_secret_key van de verzendende wallet in.</target></trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html"><source>Unable to verify this transaction locally.</source><target>Deze transactie kan niet lokaal worden geverifieerd.</target></trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html"><source>Key image</source><target>Sleutelafbeelding</target></trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html"><source>Input type</source><target>Invoertype</target></trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html"><source>Ring size</source><target>Ringgrootte</target></trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html"><source>Relative ring offsets</source><target>Relatieve ringoffsets</target></trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html"><source>Ring members</source><target>Ringleden</target></trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html"><source>Output key</source><target>Uitvoersleutel</target></trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html"><source>Source transaction temporarily unavailable.</source><target>Brontransactie tijdelijk niet beschikbaar.</target></trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html"><source>This legacy input has no decoys.</source><target>Deze oudere invoer bevat geen lokaas.</target></trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html"><source>Ring members include decoys; the actual spent output is not identified.</source><target>Ringleden bevatten lokaas; de werkelijk bestede uitvoer wordt niet geïdentificeerd.</target></trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html"><source>Some ring-member details were not resolved in this response.</source><target>Sommige gegevens van ringleden zijn niet opgelost in dit antwoord.</target></trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html"><source>RingCT output</source><target>RingCT-uitvoer</target></trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html"><source>recipient hidden</source><target>ontvanger verborgen</target></trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html"><source>Output type</source><target>Uitvoertype</target></trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html"><source>Amount</source><target>Bedrag</target></trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html"><source>Hidden by RingCT</source><target>Verborgen door RingCT</target></trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html"><source>Recipient</source><target>Ontvanger</target></trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html"><source>Hidden by stealth addressing</source><target>Verborgen door stealth-adressering</target></trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html"><source>Global output index</source><target>Globale uitvoerindex</target></trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html"><source>View tag</source><target>Kijktag</target></trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html"><source>Amount commitment</source><target>Bedragcommitment</target></trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html"><source>atomic units</source><target>atomaire eenheden</target></trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html"><source>Amount hidden</source><target>Bedrag verborgen</target></trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html"><source>Coinbase</source><target>Coinbase</target></trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html"><source>RingCT input</source><target>RingCT-invoer</target></trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html"><source>Legacy ring input</source><target>Oudere ringinvoer</target></trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html"><source>Input</source><target>Invoer</target></trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html"><source>Stealth output</source><target>Stealth-uitvoer</target></trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html"><source>Fee</source><target>Kosten</target></trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html"><source>Output</source><target>Uitvoer</target></trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html"><source>locked</source><target>vergrendeld</target></trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html"><source>Transaction amount hidden by RingCT</source><target>Transactiebedrag verborgen door RingCT</target></trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html"><source>Change amount denomination</source><target>Eenheid van bedrag wijzigen</target></trans-unit>
+      <trans-unit id="xmr.features.miner" datatype="html"><source>Miner transaction</source><target>Minertransactie</target></trans-unit>
+      <trans-unit id="xmr.features.legacyHelp" datatype="html"><source>Pre-RingCT transaction; input and output amounts are public</source><target>Transactie van vóór RingCT; invoer- en uitvoerbedragen zijn openbaar</target></trans-unit>
+      <trans-unit id="xmr.features.legacy" datatype="html"><source>Legacy · public amounts</source><target>Oud · openbare bedragen</target></trans-unit>
+      <trans-unit id="xmr.features.viewTagsHelp" datatype="html"><source>View tags help wallets scan outputs</source><target>Kijktags helpen wallets uitvoer te scannen</target></trans-unit>
+      <trans-unit id="xmr.features.viewTags" datatype="html"><source>View tags</source><target>Kijktags</target></trans-unit>
+      <trans-unit id="xmr.features.ringHelp" datatype="html"><source>Number of members in the first input&#x27;s ring</source><target>Aantal leden in de ring van de eerste invoer</target></trans-unit>
+      <trans-unit id="dashboard.h1" datatype="html"><source>Monero Block &amp; Pending Transactions Explorer</source><target>Monero-blok- en pendingtransactieverkenner</target></trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html"><source>Pending Transactions</source><target>Pending transacties</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html"><source>Total fees</source><target>Totale kosten</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Mediane kosten per byte</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html"><source>Fee range</source><target>Kostenbereik</target></trans-unit>
+    </body>
   </file>
 </xliff>
