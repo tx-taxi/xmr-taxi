@@ -11273,6 +11273,101 @@
       <trans-unit id="xmr.legal.trademark-policy.9" datatype="html"><source>This fork follows the upstream AGPLv3 license obligations. License notices are included with this deployment; contact the operator for applicable source and license information.</source><target>Aquesta bifurcació compleix les obligacions de la llicència AGPLv3 del projecte original. Els avisos de llicència s’inclouen en aquesta instància; contacta amb l’operador per obtenir informació sobre el codi font i la llicència aplicables.</target></trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.meta-title" datatype="html"><source>Trademark &amp; Attribution</source><target>Marques i atribució</target></trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.meta-description" datatype="html"><source>Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.</source><target>Notes sobre marques i atribucions de xmr.tx.taxi, incloent-hi l’atribució al projecte original mempool i la independència respecte del projecte Monero.</target></trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Demana un taxi, enganxa qualsevol cosa aquí.</target></trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html"><source>Monero search suggestions</source><target>Suggeriments de cerca de Monero</target></trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html"><source>Monero Block Height</source><target>Alçada del bloc de Monero</target></trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html"><source>Monero Block / Transaction</source><target>Bloc o transacció de Monero</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html"><source>Monero addresses are private</source><target>Les adreces Monero són privades</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html"><source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target>Les dades públiques de la cadena no poden generar un historial d’adreça. Obre una transacció per verificar un pagament amb la prova o les claus corresponents.</target></trans-unit>
+      <trans-unit id="xmr.swap.title" datatype="html"><source>Swap ticker</source><target>Indicador d’intercanvis</target></trans-unit>
+      <trans-unit id="xmr.swap.subtitle" datatype="html"><source>Haveno markets and XMR/BTC atomic-swap discovery</source><target>Mercats Haveno i descoberta d’intercanvis atòmics XMR/BTC</target></trans-unit>
+      <trans-unit id="xmr.swap.network" datatype="html"><source>Network</source><target>Xarxa</target></trans-unit>
+      <trans-unit id="xmr.swap.activePairs" datatype="html"><source>Active pairs</source><target>Parells actius</target></trans-unit>
+      <trans-unit id="xmr.swap.volume" datatype="html"><source>Volume</source><target>Volum</target></trans-unit>
+      <trans-unit id="xmr.swap.tradesSampled" datatype="html"><source>Trades sampled</source><target>Operacions de la mostra</target></trans-unit>
+      <trans-unit id="xmr.swap.goggles" datatype="html"><source>Swap goggles</source><target>Filtres d’intercanvi</target></trans-unit>
+      <trans-unit id="xmr.swap.atomic" datatype="html"><source>Atomic swaps</source><target>Intercanvis atòmics</target></trans-unit>
+      <trans-unit id="xmr.swap.direction" datatype="html"><source>Direction</source><target>Direcció</target></trans-unit>
+      <trans-unit id="xmr.swap.status" datatype="html"><source>Status</source><target>Estat</target></trans-unit>
+      <trans-unit id="xmr.swap.makerDiscovery" datatype="html"><source>Maker discovery</source><target>Descoberta d’ofertants</target></trans-unit>
+      <trans-unit id="xmr.swap.docs" datatype="html"><source>Docs</source><target>Documentació</target></trans-unit>
+      <trans-unit id="xmr.swap.haveno" datatype="html"><source>Haveno markets</source><target>Mercats Haveno</target></trans-unit>
+      <trans-unit id="xmr.swap.pair" datatype="html"><source>Pair</source><target>Parell</target></trans-unit>
+      <trans-unit id="xmr.swap.price" datatype="html"><source>Price</source><target>Preu</target></trans-unit>
+      <trans-unit id="xmr.swap.change" datatype="html"><source>Change</source><target>Variació</target></trans-unit>
+      <trans-unit id="xmr.swap.tableVolume" datatype="html"><source>Volume</source><target>Volum</target></trans-unit>
+      <trans-unit id="xmr.swap.range" datatype="html"><source>Range</source><target>Interval</target></trans-unit>
+      <trans-unit id="xmr.swap.noMarkets" datatype="html"><source>No markets match this goggle.</source><target>Cap mercat no coincideix amb aquest filtre.</target></trans-unit>
+      <trans-unit id="xmr.swap.recent" datatype="html"><source>Recent trades</source><target>Operacions recents</target></trans-unit>
+      <trans-unit id="xmr.swap.method" datatype="html"><source>Method</source><target>Mètode</target></trans-unit>
+      <trans-unit id="xmr.swap.time" datatype="html"><source>Time</source><target>Hora</target></trans-unit>
+      <trans-unit id="xmr.swap.noUpstreamTrades" datatype="html"><source>No recent trades returned by the upstream market source.</source><target>La font externa de mercat no ha retornat operacions recents.</target></trans-unit>
+      <trans-unit id="xmr.swap.noFilteredTrades" datatype="html"><source>No recent trades match this goggle.</source><target>Cap operació recent no coincideix amb aquest filtre.</target></trans-unit>
+      <trans-unit id="xmr.swap.all" datatype="html"><source>All</source><target>Tots</target></trans-unit>
+      <trans-unit id="xmr.swap.crypto" datatype="html"><source>Crypto</source><target>Cripto</target></trans-unit>
+      <trans-unit id="xmr.swap.movers" datatype="html"><source>Movers</source><target>Variacions</target></trans-unit>
+      <trans-unit id="xmr.swap.optionVolume" datatype="html"><source>Volume</source><target>Volum</target></trans-unit>
+      <trans-unit id="xmr.swap.metaTitle" datatype="html"><source>Haveno and atomic swap ticker</source><target>Indicador de Haveno i intercanvis atòmics</target></trans-unit>
+      <trans-unit id="xmr.swap.metaDescription" datatype="html"><source>Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.</source><target>Segueix els mercats XMR de RetoSwap Haveno i la descoberta d’ofertants d’intercanvis atòmics XMR/BTC.</target></trans-unit>
+      <trans-unit id="xmr.swap.unavailable" datatype="html"><source>Swap ticker is unavailable.</source><target>L’indicador d’intercanvis no està disponible.</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicLabel" datatype="html"><source>XMR/BTC atomic swaps</source><target>Intercanvis atòmics XMR/BTC</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicDirection" datatype="html"><source>BTC to XMR makers</source><target>Ofertants de BTC a XMR</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicNote" datatype="html"><source>Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.</source><target>Els ofertants d’intercanvis atòmics s’anuncien mitjançant el registre públic d’eigenwallet i la descoberta libp2p rendezvous, en lloc d’un indicador centralitzat de llibre d’ordres.</target></trans-unit>
+      <trans-unit id="xmr.activity.title" datatype="html"><source>Transaction activity</source><target>Activitat de transaccions</target></trans-unit>
+      <trans-unit id="xmr.activity.description" datatype="html"><source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source><target>Transaccions Monero confirmades, comptades a partir de cada bloc des del gènesi. S’exclouen les transaccions de recompensa dels miners. Tots els períodes utilitzen UTC.</target></trans-unit>
+      <trans-unit id="xmr.activity.today" datatype="html"><source>Today · so far</source><target>Avui · fins ara</target></trans-unit>
+      <trans-unit id="xmr.activity.month" datatype="html"><source>This month · so far</source><target>Aquest mes · fins ara</target></trans-unit>
+      <trans-unit id="xmr.activity.year" datatype="html"><source>This year · so far</source><target>Aquest any · fins ara</target></trans-unit>
+      <trans-unit id="xmr.activity.genesis" datatype="html"><source>Since genesis</source><target>Des del gènesi</target></trans-unit>
+      <trans-unit id="xmr.activity.countPer" datatype="html"><source>Count transactions per</source><target>Compta les transaccions per</target></trans-unit>
+      <trans-unit id="xmr.activity.dateRange" datatype="html"><source>Date range</source><target>Interval de dates</target></trans-unit>
+      <trans-unit id="xmr.activity.loading" datatype="html"><source>Loading transaction history…</source><target>S’està carregant l’historial de transaccions…</target></trans-unit>
+      <trans-unit id="xmr.activity.error" datatype="html"><source>Transaction history could not be loaded.</source><target>No s’ha pogut carregar l’historial de transaccions.</target></trans-unit>
+      <trans-unit id="xmr.activity.retry" datatype="html"><source>Retry</source><target>Torna-ho a provar</target></trans-unit>
+      <trans-unit id="xmr.activity.chartLabel" datatype="html"><source>Monero transaction counts over time; exact counts are available in the table below</source><target>Nombre de transaccions Monero al llarg del temps; els recomptes exactes estan disponibles a la taula inferior</target></trans-unit>
+      <trans-unit id="xmr.activity.stale" datatype="html"><source> · Refresh delayed; showing the last indexed data</source><target> · Actualització retardada; es mostren les últimes dades indexades</target></trans-unit>
+      <trans-unit id="xmr.activity.counts" datatype="html"><source>Transaction counts</source><target>Nombre de transaccions</target></trans-unit>
+      <trans-unit id="xmr.activity.download" datatype="html"><source>Download CSV</source><target>Descarrega el CSV</target></trans-unit>
+      <trans-unit id="xmr.activity.period" datatype="html"><source>Period (UTC)</source><target>Període (UTC)</target></trans-unit>
+      <trans-unit id="xmr.activity.transactions" datatype="html"><source>Transactions</source><target>Transaccions</target></trans-unit>
+      <trans-unit id="xmr.activity.blocks" datatype="html"><source>Blocks</source><target>Blocs</target></trans-unit>
+      <trans-unit id="xmr.activity.partial" datatype="html"><source>Partial</source><target>Parcial</target></trans-unit>
+      <trans-unit id="xmr.activity.showMore" datatype="html"><source>Show more periods</source><target>Mostra més períodes</target></trans-unit>
+      <trans-unit id="xmr.activity.hour" datatype="html"><source>Hour</source><target>Hora</target></trans-unit>
+      <trans-unit id="xmr.activity.day" datatype="html"><source>Day</source><target>Dia</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalMonth" datatype="html"><source>Month</source><target>Mes</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalYear" datatype="html"><source>Year</source><target>Any</target></trans-unit>
+      <trans-unit id="xmr.activity.allTime" datatype="html"><source>All time</source><target>Tot el temps</target></trans-unit>
+      <trans-unit id="xmr.activity.metaTitle" datatype="html"><source>Monero transaction activity</source><target>Activitat de transaccions Monero</target></trans-unit>
+      <trans-unit id="xmr.activity.metaDescription" datatype="html"><source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source><target>Explora el nombre de transaccions Monero per hora, dia, mes i any, des del gènesi fins a l’últim bloc indexat.</target></trans-unit>
+      <trans-unit id="xmr.activity.partialPeriod" datatype="html"><source> · Partial period</source><target> · Període parcial</target></trans-unit>
+      <trans-unit id="15c02cb6b6c3be53477e502d3e1ee26955b23af0" datatype="html"><source>Unavailable</source><target>No disponible</target></trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html"><source>Unavailable for pruned data</source><target>No disponible per a dades podades</target></trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html"><source>Pruned data size</source><target>Mida de les dades podades</target></trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html"><source>Serialized size</source><target>Mida serialitzada</target></trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html"><source>Unlock time</source><target>Moment de desbloqueig</target></trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html"><source>Decoded transaction</source><target>Transacció descodificada</target></trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html"><source>Transaction extra</source><target>Dades addicionals de la transacció</target></trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html"><source>Raw tx_extra</source><target>tx_extra en brut</target></trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html"><source>Empty</source><target>Buit</target></trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html"><source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target>Alguns camps addicionals no es reconeixen; els bytes complets en brut es mostren més amunt.</target></trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html"><source>Payment verification</source><target>Verificació del pagament</target></trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html"><source>Monero payment verification mode</source><target>Mode de verificació de pagament Monero</target></trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html"><source>Received</source><target>Rebut</target></trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html"><source>Recipient address</source><target>Adreça del destinatari</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html"><source>Message</source><target>Missatge</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html"><source>tx_proof signature</source><target>Signatura tx_proof</target></trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html"><source>Verifying...</source><target>Verificant...</target></trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html"><source>Verify proof</source><target>Verifica la prova</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html"><source>Proof verified</source><target>Prova verificada</target></trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html"><source>In mempool</source><target>Al mempool</target></trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html"><source>Private view key</source><target>Clau privada de visualització</target></trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html"><source>Scanning...</source><target>Explorant...</target></trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html"><source>Scan this tx</source><target>Explora aquesta transacció</target></trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html"><source>Checking...</source><target>Comprovant...</target></trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html"><source>Check key</source><target>Comprova la clau</target></trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html"><source>Payment found</source><target>Pagament trobat</target></trans-unit>
+      <trans-unit id="2611475427610660053" datatype="html"><source>Transactions</source><target>Transaccions</target></trans-unit>
     </body>
   </file>
 </xliff>
