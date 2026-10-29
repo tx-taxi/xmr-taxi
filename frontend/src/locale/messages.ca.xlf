@@ -5220,7 +5220,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
         <source>See Monero hashrate and difficulty<x id="PH" equiv-text="&apos;&apos;"/> visualized over time.</source>
-        <target>Consulta l’evolució de la taxa de hash i la dificultat de Monero.</target>
+        <target>Consulta l’evolució de la taxa de hash i la dificultat de Monero<x id="PH" equiv-text="&apos;&apos;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">79</context>
