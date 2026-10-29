@@ -430,7 +430,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.about" datatype="html">
-        <source>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
+        <source>Learn about xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
         <target>Descubre xmr.tx.taxi, un explorador de bloques y de la mempool de Monero que muestra datos públicos y respeta la privacidad de RingCT.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
@@ -2936,7 +2936,7 @@
         <note priority="1" from="description">mining.avg-block-fee-1m</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fee-rates" datatype="html">
-        <source>See Bitcoin feerates visualized over time, including minimum and maximum feerates per block along with feerates at various percentiles.</source>
+        <source>See Monero fee rates visualized over time, including minimum and maximum fee rates per block along with fee rates at various percentiles.</source>
         <target>Consulta la evolución de las tasas de comisión de Monero, incluidos los valores mínimo y máximo por bloque y varios percentiles.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
@@ -2977,7 +2977,7 @@
         <note priority="1" from="description">mining.block-fees</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees" datatype="html">
-        <source>See the average mining fees earned per Bitcoin block visualized in BTC and USD over time.</source>
+        <source>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</source>
         <target>Consulta la evolución de las comisiones medias de minería por bloque de Monero en XMR y moneda fiduciaria.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
@@ -3042,7 +3042,7 @@
         <note priority="1" from="description">mining.block-fees-subsidy-subsidy</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees-subsidy" datatype="html">
-        <source>See the mining fees earned per Bitcoin block compared to the Bitcoin block subsidy, visualized in BTC and USD over time.</source>
+        <source>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</source>
         <target>Compara las comisiones de minería de cada bloque de Monero con su subsidio a lo largo del tiempo, en XMR y USD.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
@@ -3480,7 +3480,7 @@
         <note priority="1" from="description">mining.block-rewards</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-rewards" datatype="html">
-        <source>See Bitcoin block rewards in BTC and USD visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
+        <source>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
         <target>Consulta la evolución de las recompensas de los bloques de Monero en XMR y moneda fiduciaria. Las recompensas son la suma del subsidio y las comisiones.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-rewards-graph/block-rewards-graph.component.ts</context>
@@ -3505,7 +3505,7 @@
         <note priority="1" from="description">mining.block-sizes-weights</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-sizes" datatype="html">
-        <source>See Monero block sizes and block weights, both measured in bytes, visualized over time.</source>
+        <source>See Monero block sizes visualized over time.</source>
         <target>Consulta la evolución del tamaño de los bloques de Monero.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
@@ -5462,7 +5462,7 @@
         <note priority="1" from="description">mining.hashrate</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
-        <source>See hashrate and difficulty for the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> network visualized over time.</source>
+        <source>See Monero hashrate and difficulty<x id="PH" equiv-text="&apos;&apos;"/> visualized over time.</source>
         <target>Consulta la evolución de la tasa de hash y la dificultad de Monero<x id="PH"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
@@ -6634,7 +6634,7 @@
         <note priority="1" from="description">price-chart.percent-change</note>
       </trans-unit>
       <trans-unit id="price-chart.title" datatype="html">
-        <source>Bitcoin Price</source>
+        <source>XMR Price</source>
         <target>Precio de XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
@@ -6642,7 +6642,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
-        <source>See the Bitcoin price in USD visualized over time.</source>
+        <source>See the Monero price in USD visualized over time.</source>
         <target>Consulta la evolución del precio de Monero en USD.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
@@ -7529,8 +7529,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.xmr.transaction" datatype="html">
-        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</source>
-        <target>Consulta el estado, la comisión, el tamaño, la información del anillo, las imágenes de clave y las confirmaciones de la transacción de Monero <x id="PH" equiv-text="this.txId"/>. RingCT mantiene ocultos los importes y destinatarios.</target>
+        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. See public input rings, output keys, transaction extra and protocol metadata.</source>
+        <target>Consulta el estado, la comisión, el tamaño, la información del anillo, las imágenes de clave y las confirmaciones de la transacción de Monero <x id="PH" equiv-text="this.txId"/>. Consulta los anillos de entrada públicos, las claves de salida, el campo extra y los metadatos del protocolo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">207</context>
