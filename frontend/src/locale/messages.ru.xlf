@@ -4971,7 +4971,7 @@
       </trans-unit>
       <trans-unit id="0c65c3ee0ce537e507e0b053b479012e5803d2cf" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks expected</source>
-        <target>блоков ожидается</target>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> блоков ожидается</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">50</context>
@@ -4980,7 +4980,7 @@
       </trans-unit>
       <trans-unit id="ec9f27d00a7778cd1cfe1806105d2ca3314fa506" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block expected</source>
-        <target>блок ожидается</target>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> блок ожидается</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">51</context>
@@ -5025,7 +5025,7 @@
       </trans-unit>
       <trans-unit id="4f78348af343fb64016891d67b53bdab473f9dbf" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks ahead</source>
-        <target>блоков впереди графика</target>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> блоков впереди графика</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">56</context>
@@ -5034,7 +5034,7 @@
       </trans-unit>
       <trans-unit id="15c5f3475966bf3be381378b046a65849f0f6bb6" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block ahead</source>
-        <target>блок впереди графика</target>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> блок впереди графика</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">57</context>
