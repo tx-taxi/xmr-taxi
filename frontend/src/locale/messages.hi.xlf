@@ -13957,6 +13957,599 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source><target state="translated">पृथ्वी पर कहीं भी (AoE)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source><target state="translated">समोआ मानक समय (SST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source><target state="translated">हवाई मानक समय (HST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source><target state="translated">अलास्का मानक समय (AKST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source><target state="translated">प्रशांत मानक समय (PST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source><target state="translated">पर्वतीय मानक समय (MST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source><target state="translated">मध्य मानक समय (CST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source><target state="translated">पूर्वी मानक समय (EST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source><target state="translated">अटलांटिक मानक समय (AST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source><target state="translated">अर्जेंटीना समय (ART)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source><target state="translated">फ़र्नांडो डी नोरोन्हा समय (FNT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source><target state="translated">अज़ोरेस समय (AZOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source><target state="translated">ग्रीनविच माध्य समय (GMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source><target state="translated">मध्य यूरोपीय समय (CET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source><target state="translated">पूर्वी यूरोपीय समय (EET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source><target state="translated">मॉस्को मानक समय (MSK)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source><target state="translated">आर्मेनिया समय (AMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source><target state="translated">पाकिस्तान मानक समय (PKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source><target state="translated">शिनजियांग समय (XJT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source><target state="translated">इंडोचीन समय (ICT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source><target state="translated">हांगकांग समय (HKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source><target state="translated">जापान मानक समय (JST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source><target state="translated">ऑस्ट्रेलियाई पूर्वी मानक समय (AEST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source><target state="translated">नॉरफ़ॉक समय (NFT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source><target state="translated">न्यूज़ीलैंड मानक समय (NZST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source><target state="translated">टोंगा समय (TOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source><target state="translated">लाइन द्वीप समय (LINT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-instance-health" datatype="html">
+        <source>Instance health</source><target state="translated">इंस्टेंस स्थिति</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-title" datatype="html">
+        <source>Monero daemon status</source><target state="translated">Monero डेमन स्थिति</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-description" datatype="html">
+        <source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target state="translated">इस xmr.tx.taxi इंस्टेंस के बैकएंड की उपलब्धता और सार्वजनिक monerod सिंक स्थिति।</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-checked" datatype="html">
+        <source>Checked</source><target state="translated">जाँचा गया</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-service-reachability" datatype="html">
+        <source>Service reachability</source><target state="translated">सेवा उपलब्धता</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-backend" datatype="html">
+        <source>Backend</source><target state="translated">बैकएंड</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-reachable" datatype="html">
+        <source>reachable</source><target state="translated">उपलब्ध</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-daemon" datatype="html">
+        <source>Daemon</source><target state="translated">डेमन</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-unreachable" datatype="html">
+        <source>unreachable</source><target state="translated">अनुपलब्ध</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-daemon-details" datatype="html">
+        <source>Daemon details</source><target state="translated">डेमन विवरण</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-chain" datatype="html">
+        <source>Chain</source><target state="translated">चेन</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-height" datatype="html">
+        <source>Height</source><target state="translated">ऊँचाई</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-target-height" datatype="html">
+        <source>Target height</source><target state="translated">लक्ष्य ऊँचाई</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-behind" datatype="html">
+        <source>Behind</source><target state="translated">पीछे</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-blocks" datatype="html">
+        <source>blocks</source><target state="translated">ब्लॉक</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-tip-hash" datatype="html">
+        <source>Tip hash</source><target state="translated">नवीनतम ब्लॉक हैश</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-network" datatype="html">
+        <source>Network</source><target state="translated">नेटवर्क</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-nettype" datatype="html">
+        <source>Nettype</source><target state="translated">नेटवर्क प्रकार</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-peers" datatype="html">
+        <source>Peers</source><target state="translated">पीयर</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-connections" datatype="html">
+        <source>Incoming / outgoing</source><target state="translated">आने वाले / जाने वाले</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-rpc-clients" datatype="html">
+        <source>RPC clients</source><target state="translated">RPC क्लाइंट</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-workload" datatype="html">
+        <source>Workload</source><target state="translated">कार्यभार</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html">
+        <source>Mempool</source><target state="translated">मेमपूल</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-txs" datatype="html">
+        <source>txs</source><target state="translated">लेन-देन</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-total-txs" datatype="html">
+        <source>Total txs</source><target state="translated">कुल लेन-देन</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-difficulty" datatype="html">
+        <source>Difficulty</source><target state="translated">कठिनाई</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-estimated-hashrate" datatype="html">
+        <source>Estimated hashrate</source><target state="translated">अनुमानित हैशरेट</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-version" datatype="html">
+        <source>Version</source><target state="translated">संस्करण</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-uptime" datatype="html">
+        <source>Uptime</source><target state="translated">संचालन समय</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-started" datatype="html">
+        <source>Started</source><target state="translated">शुरू हुआ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-trusted-rpc" datatype="html">
+        <source>Trusted RPC</source><target state="translated">विश्वसनीय RPC</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-storage" datatype="html">
+        <source>Storage</source><target state="translated">स्टोरेज</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-database-size" datatype="html">
+        <source>Database size</source><target state="translated">डेटाबेस आकार</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-free-space" datatype="html">
+        <source>Free space</source><target state="translated">खाली स्थान</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-block-size-limit" datatype="html">
+        <source>Block size limit</source><target state="translated">ब्लॉक आकार सीमा</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-update-available" datatype="html">
+        <source>Update available</source><target state="translated">अपडेट उपलब्ध है</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap" datatype="html">
+        <source>Bootstrap</source><target state="translated">प्रारंभिक सिंक</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-height" datatype="html">
+        <source>Bootstrap height</source><target state="translated">प्रारंभिक सिंक ऊँचाई</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-daemon" datatype="html">
+        <source>Bootstrap daemon</source><target state="translated">प्रारंभिक सिंक डेमन</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-used" datatype="html">
+        <source>Bootstrap used</source><target state="translated">प्रारंभिक सिंक उपयोग हुआ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-peerlist" datatype="html">
+        <source>Peerlist</source><target state="translated">पीयर सूची</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-white" datatype="html">
+        <source>white</source><target state="translated">सफ़ेद</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-grey" datatype="html">
+        <source>grey</source><target state="translated">धूसर</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-check-failed" datatype="html">
+        <source>Daemon check failed</source><target state="translated">डेमन जाँच विफल</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-backend-answered" datatype="html">
+        <source>The backend answered, but monerod did not return</source><target state="translated">बैकएंड ने उत्तर दिया, लेकिन monerod ने उत्तर नहीं लौटाया</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-checking" datatype="html">
+        <source>Checking daemon status...</source><target state="translated">डेमन स्थिति जाँची जा रही है...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-unknown" datatype="html">
+        <source>unknown</source><target state="translated">अज्ञात</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-not-configured" datatype="html">
+        <source>not configured</source><target state="translated">कॉन्फ़िगर नहीं</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-no" datatype="html">
+        <source>no</source><target state="translated">नहीं</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-yes" datatype="html">
+        <source>yes</source><target state="translated">हाँ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-online" datatype="html">
+        <source>monerod reachable</source><target state="translated">monerod उपलब्ध है</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-syncing" datatype="html">
+        <source>syncing</source><target state="translated">सिंक हो रहा है</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-degraded" datatype="html">
+        <source>attention needed</source><target state="translated">ध्यान आवश्यक</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-offline" datatype="html">
+        <source>daemon unreachable</source><target state="translated">डेमन अनुपलब्ध है</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-request-failed" datatype="html">
+        <source>request failed</source><target state="translated">अनुरोध विफल</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-network-request-failed" datatype="html">
+        <source>network request failed</source><target state="translated">नेटवर्क अनुरोध विफल</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
