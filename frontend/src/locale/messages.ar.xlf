@@ -68,7 +68,7 @@
       </trans-unit>
       <trans-unit id="ngb.toast.close-aria" datatype="html">
         <source>Close</source>
-        <target>مغلق</target>
+        <target>إغلاق</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -2924,7 +2924,7 @@
       </trans-unit>
       <trans-unit id="de9a93ca8a13ccbd6de65782abb6b1432759b654" datatype="html">
         <source>Avg Block Fee (1m)</source>
-        <target>متوسط رسوم الكتلة (1 دقيقة)</target>
+        <target>متوسط رسوم الكتلة (شهر واحد)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html</context>
           <context context-type="linenumber">57</context>
@@ -3727,7 +3727,7 @@
       </trans-unit>
       <trans-unit id="0b47a777f024ab4e3cdf0062acb4d86e9ae1f635" datatype="html">
         <source>Median fee</source>
-        <target>متوسط ​​الرسوم</target>
+        <target>وسيط الرسوم</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-preview.component.html</context>
           <context context-type="linenumber">36</context>
@@ -3912,7 +3912,7 @@
       </trans-unit>
       <trans-unit id="960cd598cbd85edb0a254ff3e59574d2c5cb888c" datatype="html">
         <source>Hash</source>
-        <target>معرف التشفير</target>
+        <target>التجزئة</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">48</context>
@@ -4003,7 +4003,7 @@
       </trans-unit>
       <trans-unit id="a1c8a44428c774facdd0b1e3ae42468c25666367" datatype="html">
         <source>Subsidy + fees</source>
-        <target>كفالة + رسوم</target>
+        <target>الدعم + الرسوم</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">168</context>
@@ -5499,7 +5499,7 @@
       </trans-unit>
       <trans-unit id="5ee5eb7db86675abd5f0b0db835bf362ee9b23ff" datatype="html">
         <source>Indexing network hashrate</source>
-        <target>فهرس معدل تجزئة الشبكة</target>
+        <target>جارٍ فهرسة معدل تجزئة الشبكة</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/indexing-progress/indexing-progress.component.html</context>
           <context context-type="linenumber">2</context>
@@ -5507,7 +5507,7 @@
       </trans-unit>
       <trans-unit id="439adfcf08f5035e2fd9e4c15e40eef92f6cc780" datatype="html">
         <source>Indexing pools hashrate</source>
-        <target>فهرس معدل تجزئة تجمعات التعدين</target>
+        <target>جارٍ فهرسة معدل تجزئة مجمعات التعدين</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/indexing-progress/indexing-progress.component.html</context>
           <context context-type="linenumber">3</context>
@@ -6269,7 +6269,7 @@
       </trans-unit>
       <trans-unit id="fe5317c6c60dd7e0e86f04d22f566f67cf04d404" datatype="html">
         <source>Mining Pools</source>
-        <target>مجمع التعدين</target>
+        <target>مجمعات التعدين</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">60</context>
