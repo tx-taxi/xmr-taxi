@@ -11476,6 +11476,149 @@
       <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target>न्युजिल्यान्ड मानक समय (NZST)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target>टोङ्गा समय (TOT)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target>लाइन टापु समय (LINT)</target></trans-unit>
+      <trans-unit id="xmr.swap.title" datatype="html"><source>Swap ticker</source><target>स्वाप विवरण</target></trans-unit>
+      <trans-unit id="xmr.swap.subtitle" datatype="html"><source>Haveno markets and XMR/BTC atomic-swap discovery</source><target>Haveno बजार र XMR/BTC एटोमिक स्वाप खोज</target></trans-unit>
+      <trans-unit id="xmr.swap.network" datatype="html"><source>Network</source><target>नेटवर्क</target></trans-unit>
+      <trans-unit id="xmr.swap.activePairs" datatype="html"><source>Active pairs</source><target>सक्रिय जोडीहरू</target></trans-unit>
+      <trans-unit id="xmr.swap.volume" datatype="html"><source>Volume</source><target>परिमाण</target></trans-unit>
+      <trans-unit id="xmr.swap.tradesSampled" datatype="html"><source>Trades sampled</source><target>नमुनामा समावेश कारोबार</target></trans-unit>
+      <trans-unit id="xmr.swap.goggles" datatype="html"><source>Swap goggles</source><target>स्वाप फिल्टरहरू</target></trans-unit>
+      <trans-unit id="xmr.swap.atomic" datatype="html"><source>Atomic swaps</source><target>एटोमिक स्वाप</target></trans-unit>
+      <trans-unit id="xmr.swap.direction" datatype="html"><source>Direction</source><target>दिशा</target></trans-unit>
+      <trans-unit id="xmr.swap.status" datatype="html"><source>Status</source><target>स्थिति</target></trans-unit>
+      <trans-unit id="xmr.swap.makerDiscovery" datatype="html"><source>Maker discovery</source><target>प्रस्तावकर्ता खोज</target></trans-unit>
+      <trans-unit id="xmr.swap.docs" datatype="html"><source>Docs</source><target>कागजात</target></trans-unit>
+      <trans-unit id="xmr.swap.haveno" datatype="html"><source>Haveno markets</source><target>Haveno बजार</target></trans-unit>
+      <trans-unit id="xmr.swap.pair" datatype="html"><source>Pair</source><target>जोडी</target></trans-unit>
+      <trans-unit id="xmr.swap.price" datatype="html"><source>Price</source><target>मूल्य</target></trans-unit>
+      <trans-unit id="xmr.swap.change" datatype="html"><source>Change</source><target>परिवर्तन</target></trans-unit>
+      <trans-unit id="xmr.swap.tableVolume" datatype="html"><source>Volume</source><target>परिमाण</target></trans-unit>
+      <trans-unit id="xmr.swap.range" datatype="html"><source>Range</source><target>दायरा</target></trans-unit>
+      <trans-unit id="xmr.swap.noMarkets" datatype="html"><source>No markets match this goggle.</source><target>यस फिल्टरसँग मेल खाने बजार छैन।</target></trans-unit>
+      <trans-unit id="xmr.swap.recent" datatype="html"><source>Recent trades</source><target>हालका कारोबार</target></trans-unit>
+      <trans-unit id="xmr.swap.method" datatype="html"><source>Method</source><target>विधि</target></trans-unit>
+      <trans-unit id="xmr.swap.time" datatype="html"><source>Time</source><target>समय</target></trans-unit>
+      <trans-unit id="xmr.swap.noUpstreamTrades" datatype="html"><source>No recent trades returned by the upstream market source.</source><target>बाह्य बजार स्रोतबाट हालका कारोबार प्राप्त भएनन्।</target></trans-unit>
+      <trans-unit id="xmr.swap.noFilteredTrades" datatype="html"><source>No recent trades match this goggle.</source><target>यस फिल्टरसँग मेल खाने हालका कारोबार छैनन्।</target></trans-unit>
+      <trans-unit id="xmr.swap.all" datatype="html"><source>All</source><target>सबै</target></trans-unit>
+      <trans-unit id="xmr.swap.crypto" datatype="html"><source>Crypto</source><target>क्रिप्टो</target></trans-unit>
+      <trans-unit id="xmr.swap.movers" datatype="html"><source>Movers</source><target>परिवर्तनहरू</target></trans-unit>
+      <trans-unit id="xmr.swap.optionVolume" datatype="html"><source>Volume</source><target>परिमाण</target></trans-unit>
+      <trans-unit id="xmr.swap.metaTitle" datatype="html"><source>Haveno and atomic swap ticker</source><target>Haveno र एटोमिक स्वाप विवरण</target></trans-unit>
+      <trans-unit id="xmr.swap.metaDescription" datatype="html"><source>Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.</source><target>RetoSwap Haveno XMR बजार र XMR/BTC एटोमिक स्वाप प्रस्तावकर्ता खोज हेर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.swap.unavailable" datatype="html"><source>Swap ticker is unavailable.</source><target>स्वाप विवरण उपलब्ध छैन।</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicLabel" datatype="html"><source>XMR/BTC atomic swaps</source><target>XMR/BTC एटोमिक स्वाप</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicDirection" datatype="html"><source>BTC to XMR makers</source><target>BTC बाट XMR प्रस्तावकर्ताहरू</target></trans-unit>
+      <trans-unit id="xmr.swap.atomicNote" datatype="html"><source>Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.</source><target>एटोमिक स्वाप प्रस्तावकर्ताहरू केन्द्रीकृत अर्डर बुकको सट्टा eigenwallet को सार्वजनिक रजिस्ट्रि र libp2p rendezvous खोजमार्फत जानकारी दिन्छन्।</target></trans-unit>
+      <trans-unit id="xmr.activity.title" datatype="html"><source>Transaction activity</source><target>कारोबार गतिविधि</target></trans-unit>
+      <trans-unit id="xmr.activity.description" datatype="html"><source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source><target>जेनेसिसदेखि प्रत्येक ब्लकबाट गनिएका पुष्टि भएका Monero कारोबारहरू। माइनर पुरस्कार कारोबारहरू समावेश छैनन्। सबै अवधिमा UTC प्रयोग हुन्छ।</target></trans-unit>
+      <trans-unit id="xmr.activity.today" datatype="html"><source>Today · so far</source><target>आज · अहिलेसम्म</target></trans-unit>
+      <trans-unit id="xmr.activity.month" datatype="html"><source>This month · so far</source><target>यो महिना · अहिलेसम्म</target></trans-unit>
+      <trans-unit id="xmr.activity.year" datatype="html"><source>This year · so far</source><target>यो वर्ष · अहिलेसम्म</target></trans-unit>
+      <trans-unit id="xmr.activity.genesis" datatype="html"><source>Since genesis</source><target>जेनेसिसदेखि</target></trans-unit>
+      <trans-unit id="xmr.activity.countPer" datatype="html"><source>Count transactions per</source><target>कारोबार गणना गर्ने एकाइ</target></trans-unit>
+      <trans-unit id="xmr.activity.dateRange" datatype="html"><source>Date range</source><target>मिति दायरा</target></trans-unit>
+      <trans-unit id="xmr.activity.loading" datatype="html"><source>Loading transaction history…</source><target>कारोबार इतिहास लोड हुँदैछ…</target></trans-unit>
+      <trans-unit id="xmr.activity.error" datatype="html"><source>Transaction history could not be loaded.</source><target>कारोबार इतिहास लोड गर्न सकिएन।</target></trans-unit>
+      <trans-unit id="xmr.activity.retry" datatype="html"><source>Retry</source><target>पुनः प्रयास गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.activity.chartLabel" datatype="html"><source>Monero transaction counts over time; exact counts are available in the table below</source><target>समयअनुसार Monero कारोबार संख्या; ठ्याक्कै संख्या तलको तालिकामा छ</target></trans-unit>
+      <trans-unit id="xmr.activity.stale" datatype="html"><source> · Refresh delayed; showing the last indexed data</source><target> · अद्यावधिकमा ढिलाइ; पछिल्लो इन्डेक्स गरिएको डेटा देखाइँदैछ</target></trans-unit>
+      <trans-unit id="xmr.activity.counts" datatype="html"><source>Transaction counts</source><target>कारोबार संख्या</target></trans-unit>
+      <trans-unit id="xmr.activity.download" datatype="html"><source>Download CSV</source><target>CSV डाउनलोड गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.activity.period" datatype="html"><source>Period (UTC)</source><target>अवधि (UTC)</target></trans-unit>
+      <trans-unit id="xmr.activity.transactions" datatype="html"><source>Transactions</source><target>कारोबारहरू</target></trans-unit>
+      <trans-unit id="xmr.activity.blocks" datatype="html"><source>Blocks</source><target>ब्लकहरू</target></trans-unit>
+      <trans-unit id="xmr.activity.partial" datatype="html"><source>Partial</source><target>आंशिक</target></trans-unit>
+      <trans-unit id="xmr.activity.showMore" datatype="html"><source>Show more periods</source><target>थप अवधि देखाउनुहोस्</target></trans-unit>
+      <trans-unit id="xmr.activity.hour" datatype="html"><source>Hour</source><target>घण्टा</target></trans-unit>
+      <trans-unit id="xmr.activity.day" datatype="html"><source>Day</source><target>दिन</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalMonth" datatype="html"><source>Month</source><target>महिना</target></trans-unit>
+      <trans-unit id="xmr.activity.intervalYear" datatype="html"><source>Year</source><target>वर्ष</target></trans-unit>
+      <trans-unit id="xmr.activity.allTime" datatype="html"><source>All time</source><target>सबै समय</target></trans-unit>
+      <trans-unit id="xmr.activity.metaTitle" datatype="html"><source>Monero transaction activity</source><target>Monero कारोबार गतिविधि</target></trans-unit>
+      <trans-unit id="xmr.activity.metaDescription" datatype="html"><source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source><target>जेनेसिसदेखि पछिल्लो इन्डेक्स गरिएको ब्लकसम्म Monero कारोबार संख्या घण्टा, दिन, महिना र वर्षअनुसार हेर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.activity.partialPeriod" datatype="html"><source> · Partial period</source><target> · आंशिक अवधि</target></trans-unit>
+      <trans-unit id="15c02cb6b6c3be53477e502d3e1ee26955b23af0" datatype="html"><source>Unavailable</source><target>उपलब्ध छैन</target></trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html"><source>Unavailable for pruned data</source><target>छाँटिएको डेटाका लागि उपलब्ध छैन</target></trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html"><source>Pruned data size</source><target>छाँटिएको डेटाको आकार</target></trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html"><source>Serialized size</source><target>क्रमबद्ध आकार</target></trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html"><source>Unlock time</source><target>अनलक हुने समय</target></trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html"><source>Decoded transaction</source><target>डिकोड गरिएको कारोबार</target></trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html"><source>Transaction extra</source><target>कारोबारका अतिरिक्त विवरण</target></trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html"><source>Raw tx_extra</source><target>कच्चा tx_extra</target></trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html"><source>Empty</source><target>खाली</target></trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html"><source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target>केही अतिरिक्त क्षेत्रहरू पहिचान भएनन्; पूर्ण कच्चा बाइटहरू माथि देखाइएका छन्।</target></trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html"><source>Payment verification</source><target>भुक्तानी प्रमाणीकरण</target></trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html"><source>Monero payment verification mode</source><target>Monero भुक्तानी प्रमाणीकरण मोड</target></trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html"><source>Received</source><target>प्राप्त</target></trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html"><source>Recipient address</source><target>प्राप्तकर्ताको ठेगाना</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html"><source>Message</source><target>सन्देश</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html"><source>tx_proof signature</source><target>tx_proof हस्ताक्षर</target></trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html"><source>Verifying...</source><target>प्रमाणित हुँदैछ...</target></trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html"><source>Verify proof</source><target>प्रमाण जाँच गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html"><source>Proof verified</source><target>प्रमाण प्रमाणित भयो</target></trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html"><source>In mempool</source><target>mempool मा</target></trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html"><source>Private view key</source><target>निजी हेर्ने कुञ्जी</target></trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html"><source>Scanning...</source><target>स्क्यान हुँदैछ...</target></trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html"><source>Scan this tx</source><target>यो कारोबार स्क्यान गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html"><source>Checking...</source><target>जाँच हुँदैछ...</target></trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html"><source>Check key</source><target>कुञ्जी जाँच गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html"><source>Payment found</source><target>भुक्तानी फेला पर्‍यो</target></trans-unit>
+      <trans-unit id="2611475427610660053" datatype="html"><source>Transactions</source><target>कारोबारहरू</target></trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html"><source>Address and tx_proof signature are required.</source><target>ठेगाना र tx_proof हस्ताक्षर आवश्यक छ।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html"><source>Enter a valid-looking Monero mainnet address.</source><target>वैध ढाँचाको Monero मुख्य नेटवर्क ठेगाना प्रविष्ट गर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html"><source>Enter the tx_proof signature generated by a Monero wallet.</source><target>Monero वालेटले बनाएको tx_proof हस्ताक्षर प्रविष्ट गर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html"><source>The proof did not verify for this transaction and address.</source><target>यो कारोबार र ठेगानाका लागि प्रमाण प्रमाणित भएन।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html"><source>Unable to verify proof.</source><target>प्रमाण जाँच गर्न सकिएन।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html"><source>Address and private view key are required.</source><target>ठेगाना र निजी हेर्ने कुञ्जी आवश्यक छ।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html"><source>Load a transaction before running local verification.</source><target>स्थानीय जाँच गर्नुअघि कारोबार लोड गर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html"><source>Enter a 64-character hexadecimal private view key.</source><target>64 अक्षरको हेक्साडेसिमल निजी हेर्ने कुञ्जी प्रविष्ट गर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html"><source>Address and tx_secret_key are required.</source><target>ठेगाना र tx_secret_key आवश्यक छ।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html"><source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target>पठाउने वालेटको हेक्साडेसिमल tx_secret_key प्रविष्ट गर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html"><source>Unable to verify this transaction locally.</source><target>यो कारोबार स्थानीय रूपमा जाँच गर्न सकिएन।</target></trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html"><source>Key image</source><target>कुञ्जी छवि</target></trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html"><source>Input type</source><target>इनपुट प्रकार</target></trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html"><source>Ring size</source><target>रिङको आकार</target></trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html"><source>Relative ring offsets</source><target>सापेक्ष रिङ अफसेटहरू</target></trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html"><source>Ring members</source><target>रिङका सदस्यहरू</target></trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html"><source>Output key</source><target>आउटपुट कुञ्जी</target></trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html"><source>Source transaction temporarily unavailable.</source><target>स्रोत कारोबार अस्थायी रूपमा उपलब्ध छैन।</target></trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html"><source>This legacy input has no decoys.</source><target>यो पुरानो इनपुटमा डिकोय छैन।</target></trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html"><source>Ring members include decoys; the actual spent output is not identified.</source><target>रिङका सदस्यमा डिकोयहरू छन्; वास्तवमा खर्च भएको आउटपुट पहिचान गरिएको छैन।</target></trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html"><source>Some ring-member details were not resolved in this response.</source><target>यस जवाफमा केही रिङ सदस्यको विवरण फेला परेन।</target></trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html"><source>RingCT output</source><target>RingCT आउटपुट</target></trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html"><source>recipient hidden</source><target>प्राप्तकर्ता लुकाइएको</target></trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html"><source>Output type</source><target>आउटपुट प्रकार</target></trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html"><source>Amount</source><target>रकम</target></trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html"><source>Hidden by RingCT</source><target>RingCT द्वारा लुकाइएको</target></trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html"><source>Recipient</source><target>प्राप्तकर्ता</target></trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html"><source>Hidden by stealth addressing</source><target>स्टेल्थ ठेगानाबाट लुकाइएको</target></trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html"><source>Global output index</source><target>विश्वव्यापी आउटपुट इन्डेक्स</target></trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html"><source>View tag</source><target>हेर्ने ट्याग</target></trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html"><source>Amount commitment</source><target>रकम प्रतिबद्धता</target></trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html"><source>atomic units</source><target>एटोमिक एकाइहरू</target></trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html"><source>Amount hidden</source><target>रकम लुकाइएको</target></trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html"><source>Coinbase</source><target>Coinbase</target></trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html"><source>RingCT input</source><target>RingCT इनपुट</target></trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html"><source>Legacy ring input</source><target>पुरानो रिङ इनपुट</target></trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html"><source>Input</source><target>इनपुट</target></trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html"><source>Stealth output</source><target>स्टेल्थ आउटपुट</target></trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html"><source>Fee</source><target>शुल्क</target></trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html"><source>Output</source><target>आउटपुट</target></trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html"><source>locked</source><target>लक गरिएको</target></trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html"><source>Transaction amount hidden by RingCT</source><target>कारोबारको रकम RingCT द्वारा लुकाइएको छ</target></trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html"><source>Change amount denomination</source><target>रकमको एकाइ बदल्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.features.miner" datatype="html"><source>Miner transaction</source><target>माइनर कारोबार</target></trans-unit>
+      <trans-unit id="xmr.features.legacyHelp" datatype="html"><source>Pre-RingCT transaction; input and output amounts are public</source><target>RingCT अघिको कारोबार; इनपुट र आउटपुट रकम सार्वजनिक छन्</target></trans-unit>
+      <trans-unit id="xmr.features.legacy" datatype="html"><source>Legacy · public amounts</source><target>पुरानो · सार्वजनिक रकम</target></trans-unit>
+      <trans-unit id="xmr.features.viewTagsHelp" datatype="html"><source>View tags help wallets scan outputs</source><target>हेर्ने ट्यागले वालेटलाई आउटपुट स्क्यान गर्न मद्दत गर्छ</target></trans-unit>
+      <trans-unit id="xmr.features.viewTags" datatype="html"><source>View tags</source><target>हेर्ने ट्याग</target></trans-unit>
+      <trans-unit id="xmr.features.ringHelp" datatype="html"><source>Number of members in the first input&#x27;s ring</source><target>पहिलो इनपुटको रिङमा सदस्य संख्या</target></trans-unit>
+      <trans-unit id="dashboard.h1" datatype="html"><source>Monero Block &amp; Pending Transactions Explorer</source><target>Monero ब्लक र प्रतीक्षारत कारोबार एक्सप्लोरर</target></trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html"><source>Pending Transactions</source><target>प्रतीक्षारत कारोबारहरू</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html"><source>Total fees</source><target>कुल शुल्क</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html"><source>Median fee rate</source><target>मध्य शुल्क दर</target></trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html"><source>Fee range</source><target>शुल्क दायरा</target></trans-unit>
     </body>
   </file>
 </xliff>
