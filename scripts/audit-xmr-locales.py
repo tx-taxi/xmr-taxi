@@ -41,7 +41,9 @@ def main():
         missing, empty, broken, unchanged, stale_source = [], [], [], [], []
         for key, source_unit in source.items():
             original = source_unit.find('x:source', NS)
-            if not text(original):
+            # A message can consist only of Angular placeholders. It is
+            # still active and must retain those placeholders in its target.
+            if not text(original) and not placeholders(original):
                 continue
             item = target.get(key)
             if item is None:
