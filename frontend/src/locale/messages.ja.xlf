@@ -3,7 +3,7 @@
     <body>
       <trans-unit id="ngb.alert.close" datatype="html">
         <source>Close</source>
-        <target>(Newly Generated Coins)</target>
+        <target>閉じる</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/alert/alert.ts</context>
           <context context-type="linenumber">50</context>
