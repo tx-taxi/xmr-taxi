@@ -88,7 +88,7 @@
       </trans-unit>
       <trans-unit id="ngb.pagination.first" datatype="html">
         <source>««</source>
-        <target state="needs-review-translation">««</target>
+        <target state="translated">««</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -104,7 +104,7 @@
       </trans-unit>
       <trans-unit id="ngb.pagination.previous" datatype="html">
         <source>«</source>
-        <target state="needs-review-translation">«</target>
+        <target state="translated">«</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -120,7 +120,7 @@
       </trans-unit>
       <trans-unit id="ngb.pagination.next" datatype="html">
         <source>»</source>
-        <target state="needs-review-translation">»</target>
+        <target state="translated">»</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -148,7 +148,7 @@
       </trans-unit>
       <trans-unit id="ngb.pagination.last" datatype="html">
         <source>»»</source>
-        <target state="needs-review-translation">»»</target>
+        <target state="translated">»»</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -423,7 +423,7 @@
       </trans-unit>
       <trans-unit id="004b222ff9ef9dd4771b777950ca1d0e4cd4348a" datatype="html">
         <source>About xmr.tx.taxi</source>
-        <target state="needs-review-translation">Sobre xmr.tx.taxi</target>
+        <target state="translated">Sobre xmr.tx.taxi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
           <context context-type="linenumber">50</context>
@@ -2502,7 +2502,7 @@
       </trans-unit>
       <trans-unit id="9a1fbb23439ab07ca411d9cb744ea3564911e024" datatype="html">
         <source>Fiat</source>
-        <target state="needs-review-translation">Fiat</target>
+        <target state="translated">Fiat</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/amount-selector/amount-selector.component.html</context>
           <context context-type="linenumber">5</context>
@@ -2978,7 +2978,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees" datatype="html">
         <source>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</source>
-        <target state="needs-review-translation">Veja as taxas médias de mineração ganhas por bloco Monero visualizadas em XMR e moeda fiduciária ao longo do tempo.</target>
+        <target state="translated">Veja as taxas médias de mineração ganhas por bloco Monero visualizadas em XMR e moeda fiduciária ao longo do tempo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">71</context>
@@ -3043,7 +3043,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees-subsidy" datatype="html">
         <source>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</source>
-        <target state="needs-review-translation">Veja as taxas de mineração ganhas por bloco Monero em comparação com o subsídio do bloco Monero, visualizadas em XMR e USD ao longo do tempo.</target>
+        <target state="translated">Veja as taxas de mineração ganhas por bloco Monero em comparação com o subsídio do bloco Monero, visualizadas em XMR e USD ao longo do tempo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">80</context>
@@ -3481,7 +3481,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-rewards" datatype="html">
         <source>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
-        <target state="needs-review-translation">Veja as recompensas do bloco Monero em XMR e moeda fiduciária visualizadas ao longo do tempo. As recompensas do bloco são o total de fundos que os mineradores ganham com os subsídios e taxas do bloco.</target>
+        <target state="translated">Veja as recompensas do bloco Monero em XMR e moeda fiduciária visualizadas ao longo do tempo. As recompensas do bloco são o total de fundos que os mineradores ganham com os subsídios e taxas do bloco.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-rewards-graph/block-rewards-graph.component.ts</context>
           <context context-type="linenumber">69</context>
@@ -3506,7 +3506,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-sizes" datatype="html">
         <source>See Monero block sizes visualized over time.</source>
-        <target state="needs-review-translation">Veja os tamanhos dos blocos Monero visualizados ao longo do tempo.</target>
+        <target state="translated">Veja os tamanhos dos blocos Monero visualizados ao longo do tempo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">66</context>
@@ -3912,7 +3912,7 @@
       </trans-unit>
       <trans-unit id="960cd598cbd85edb0a254ff3e59574d2c5cb888c" datatype="html">
         <source>Hash</source>
-        <target state="needs-review-translation">Hash</target>
+        <target state="translated">Hash</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">48</context>
@@ -4178,7 +4178,7 @@
       </trans-unit>
       <trans-unit id="a6bb63d98a8a67689070a79ccf13960c25b572ef" datatype="html">
         <source>Nonce</source>
-        <target state="needs-review-translation">Nonce</target>
+        <target state="translated">Nonce</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">353</context>
@@ -5235,7 +5235,7 @@
       </trans-unit>
       <trans-unit id="shared.bytes-per-second" datatype="html">
         <source>B/s</source>
-        <target state="needs-review-translation">B/s</target>
+        <target state="translated">B/s</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
           <context context-type="linenumber">13</context>
@@ -5430,7 +5430,7 @@
       </trans-unit>
       <trans-unit id="79a9dc5b1caca3cbeb1733a19515edacc5fc7920" datatype="html">
         <source>Hashrate</source>
-        <target state="needs-review-translation">Taxa de hash</target>
+        <target state="translated">Hashrate</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.html</context>
           <context context-type="linenumber">69</context>
@@ -5463,7 +5463,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
         <source>See Monero hashrate and difficulty<x id="PH" equiv-text="''"/> visualized over time.</source>
-        <target state="needs-review-translation">Veja o hashrate e a dificuldade do Monero<x id="PH" equiv-text="''"/> visualizados ao longo do tempo.</target>
+        <target state="translated">Veja o hashrate e a dificuldade <x id="PH" equiv-text="''"/> do Monero ao longo do tempo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">79</context>
@@ -5951,7 +5951,7 @@
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
         <source>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</source>
-        <target state="needs-review-translation">Veja estatísticas ao vivo do bloco mempool Monero: faixa de taxas atômicas por byte, tamanho agregado de bytes, contagem de transações e taxas totais. Os blocos Mempool são atualizados em tempo real conforme a rede recebe novas transações.</target>
+        <target state="translated">Veja estatísticas ao vivo do bloco mempool Monero: faixa de taxas atômicas por byte, tamanho agregado de bytes, contagem de transações e taxas totais. Os blocos Mempool são atualizados em tempo real conforme a rede recebe novas transações.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -6354,7 +6354,7 @@
       </trans-unit>
       <trans-unit id="cafc87479686947e2590b9f588a88040aeaf660b" datatype="html">
         <source>Tags</source>
-        <target state="needs-review-translation">Etiquetas</target>
+        <target state="translated">Etiquetas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool-preview.component.html</context>
           <context context-type="linenumber">18</context>
@@ -6461,7 +6461,7 @@
       </trans-unit>
       <trans-unit id="cc657077942054572b255be033d634cf601c50b6" datatype="html">
         <source>Hashrate (24h)</source>
-        <target state="needs-review-translation">Taxa de hash (24h)</target>
+        <target state="translated">Hashrate (24h)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">95</context>
@@ -6634,7 +6634,7 @@
       </trans-unit>
       <trans-unit id="price-chart.title" datatype="html">
         <source>XMR Price</source>
-        <target state="needs-review-translation">Preço XMR</target>
+        <target state="translated">Preço XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">77</context>
@@ -6642,7 +6642,7 @@
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
         <source>See the Monero price in USD visualized over time.</source>
-        <target state="needs-review-translation">Veja o preço do Monero em USD visualizado ao longo do tempo.</target>
+        <target state="translated">Veja o preço do Monero em USD visualizado ao longo do tempo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">78</context>
@@ -7222,7 +7222,7 @@
       </trans-unit>
       <trans-unit id="statistics.memory-by-vBytes" datatype="html">
         <source>Mempool by bytes (ɱ/B)</source>
-        <target state="needs-review-translation">Mempool por bytes (ɱ/B)</target>
+        <target state="translated">Mempool por bytes (ɱ/B)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">7</context>
@@ -7262,7 +7262,7 @@
       </trans-unit>
       <trans-unit id="statistics.transaction-vbytes-per-second" datatype="html">
         <source>Transaction bytes per second (B/s)</source>
-        <target state="needs-review-translation">Bytes de transação por segundo (B/s)</target>
+        <target state="translated">Bytes de transação por segundo (B/s)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">110</context>
@@ -7288,7 +7288,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.mempool" datatype="html">
         <source>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</source>
-        <target state="needs-review-translation">Veja o tamanho do mempool Monero (em MB) e os bytes de transação por segundo (B/s) visualizados ao longo do tempo.</target>
+        <target state="translated">Veja o tamanho do mempool Monero (em MB) e os bytes de transação por segundo (B/s) visualizados ao longo do tempo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.ts</context>
           <context context-type="linenumber">67</context>
@@ -7537,7 +7537,7 @@
       </trans-unit>
       <trans-unit id="transaction.blob" datatype="html">
         <source>Transaction blob</source>
-        <target state="needs-review-translation">Blob de transação</target>
+        <target state="translated">Blob de transação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">189</context>
@@ -8055,7 +8055,7 @@
       </trans-unit>
       <trans-unit id="7d745f2569c4ddc2992529f00ed991e36dada39a" datatype="html">
         <source>(Newly Generated Coins)</source>
-        <target state="needs-review-translation">(Moedas recém-geradas)</target>
+        <target state="translated">(Moedas recém-geradas)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">90</context>
@@ -11415,7 +11415,7 @@
       </trans-unit>
       <trans-unit id="recent-transactions-title" datatype="html">
         <source>Recent Transactions</source>
-        <target state="needs-review-translation">Transações recentes</target>
+        <target state="translated">Transações recentes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">94</context>
@@ -11423,7 +11423,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.recent-transactions" datatype="html">
         <source>See the most recent Monero transactions known to this node's mempool, updated in real time.</source>
-        <target state="needs-review-translation">Veja as transações Monero mais recentes conhecidas no mempool deste nó, atualizadas em tempo real.</target>
+        <target state="translated">Veja as transações Monero mais recentes conhecidas no mempool deste nó, atualizadas em tempo real.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">95</context>
@@ -11431,7 +11431,7 @@
       </trans-unit>
       <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
         <source>1 new transaction</source>
-        <target state="needs-review-translation">1 nova transação</target>
+        <target state="translated">1 nova transação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">7</context>
@@ -11440,7 +11440,7 @@
       </trans-unit>
       <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> new transactions</source>
-        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> novas transações</target>
+        <target state="translated"><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> novas transações</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">8</context>
@@ -11449,7 +11449,7 @@
       </trans-unit>
       <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
         <source>Pause/Resume</source>
-        <target state="needs-review-translation">Pausar/Retomar</target>
+        <target state="translated">Pausar/Retomar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -11459,7 +11459,7 @@
       </trans-unit>
       <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
         <source>Pause/Resume</source>
-        <target state="needs-review-translation">Pausar/Retomar</target>
+        <target state="translated">Pausar/Retomar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -11469,7 +11469,7 @@
       </trans-unit>
       <trans-unit id="32fba724df729afb840693b40e3f8869356f4e33" datatype="html">
         <source>Size</source>
-        <target state="needs-review-translation">Tamanho</target>
+        <target state="translated">Tamanho</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">39</context>
@@ -11479,7 +11479,7 @@
       </trans-unit>
       <trans-unit id="12712092967db7dedb58de04474dd9387f0b25c1" datatype="html">
         <source>No transactions currently in the mempool.</source>
-        <target state="needs-review-translation">Nenhuma transação atualmente no mempool.</target>
+        <target state="translated">Nenhuma transação atualmente no mempool.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">57</context>
@@ -11488,7 +11488,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.block" datatype="html">
         <source>See Monero block size, weight, fees, reward, included transaction hashes, and public chain metadata for block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</source>
-        <target state="needs-review-translation">Consulte tamanho do bloco Monero, peso, taxas, recompensa, hashes de transação incluídos e metadados de cadeia pública para o bloco <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</target>
+        <target state="translated">Consulte tamanho do bloco Monero, peso, taxas, recompensa, hashes de transação incluídos e metadados de cadeia pública para o bloco <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
           <context context-type="linenumber">288</context>
@@ -11496,7 +11496,7 @@
       </trans-unit>
       <trans-unit id="f2e3b7efbb8a150162d83424d6e47d6e56aa8402" datatype="html">
         <source>Major version</source>
-        <target state="needs-review-translation">Versão principal</target>
+        <target state="translated">Versão principal</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">308</context>
@@ -11514,7 +11514,7 @@
       </trans-unit>
       <trans-unit id="d698f4953b16a622df57735484ebf7c0b000da81" datatype="html">
         <source>Minor version</source>
-        <target state="needs-review-translation">Versão secundária</target>
+        <target state="translated">Versão secundária</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">312</context>
@@ -11550,7 +11550,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.ring16" datatype="html">
         <source>Standard ring (16)</source>
-        <target state="needs-review-translation">Anel padrão (16)</target>
+        <target state="translated">Anel padrão (16)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">54</context>
@@ -11566,7 +11566,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.rct6" datatype="html">
         <source>RCT v6 (latest)</source>
-        <target state="needs-review-translation">RCT v6 (mais recente)</target>
+        <target state="translated">RCT v6 (mais recente)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -11574,7 +11574,7 @@
       </trans-unit>
       <trans-unit id="1bb63205bfc0b2c54da06a75b8d60516697c2382" datatype="html">
         <source>atomic units</source>
-        <target state="needs-review-translation">unidades atômicas</target>
+        <target state="translated">unidades atômicas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
           <context context-type="linenumber">42</context>
@@ -11587,7 +11587,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesBtc" datatype="html">
         <source>Fees XMR</source>
-        <target state="needs-review-translation">Taxas XMR</target>
+        <target state="translated">Taxas XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">116</context>
@@ -11595,7 +11595,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesFiat" datatype="html">
         <source>Fees <x id="currency" equiv-text="this.currency"/></source>
-        <target state="needs-review-translation">Taxas <x id="currency" equiv-text="this.currency"/></target>
+        <target state="translated">Taxas <x id="currency" equiv-text="this.currency"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">117</context>
@@ -11603,7 +11603,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.avgBlock" datatype="html">
         <source>* On average around block <x id="block" equiv-text="data[0].data[2]"/></source>
-        <target state="needs-review-translation">* Em média em torno do bloco <x id="block" equiv-text="data[0].data[2]"/></target>
+        <target state="translated">* Em média em torno do bloco <x id="block" equiv-text="data[0].data[2]"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">180</context>
@@ -11627,7 +11627,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html">
         <source>Subsidy (USD)</source>
-        <target state="needs-review-translation">Subsídio (USD)</target>
+        <target state="translated">Subsídio (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">59</context>
@@ -11635,7 +11635,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html">
         <source>Fees (USD)</source>
-        <target state="needs-review-translation">Taxas (USD)</target>
+        <target state="translated">Taxas (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -11643,7 +11643,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html">
         <source>Subsidy (%)</source>
-        <target state="needs-review-translation">Subsídio (%)</target>
+        <target state="translated">Subsídio (%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -11659,7 +11659,7 @@
       </trans-unit>
       <trans-unit id="f7861032fb8a0dd0876cef908e93dd380cdf509d" datatype="html">
         <source>XMR Price</source>
-        <target state="needs-review-translation">Preço XMR</target>
+        <target state="translated">Preço XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">8</context>
@@ -11676,7 +11676,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.group-public-signals" datatype="html">
         <source>Monero public signals</source>
-        <target state="needs-review-translation">Sinais públicos Monero</target>
+        <target state="translated">Sinais públicos Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">98</context>
@@ -11684,7 +11684,7 @@
       </trans-unit>
       <trans-unit id="b17df68c0822021ce4480bbd4ed72b15733b818e" datatype="html">
         <source>Hidden by RingCT</source>
-        <target state="needs-review-translation">Oculto por RingCT</target>
+        <target state="translated">Oculto por RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">40</context>
@@ -11693,7 +11693,7 @@
       </trans-unit>
       <trans-unit id="89864e276d5211949a4f7bfe381f86d509191852" datatype="html">
         <source>Comparison status</source>
-        <target state="needs-review-translation">Status de comparação</target>
+        <target state="translated">Status de comparação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">58</context>
@@ -11702,7 +11702,7 @@
       </trans-unit>
       <trans-unit id="ab4fd1a5febd86d3f383293363de659a92fd4091" datatype="html">
         <source>Missing from block</source>
-        <target state="needs-review-translation">Faltando no bloco</target>
+        <target state="translated">Faltando no bloco</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">62</context>
@@ -11712,7 +11712,7 @@
       </trans-unit>
       <trans-unit id="bd686becafa75168c61368a59bee2c36af7a521a" datatype="html">
         <source>Different block template</source>
-        <target state="needs-review-translation">Modelo de bloco diferente</target>
+        <target state="translated">Modelo de bloco diferente</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">63</context>
@@ -11725,7 +11725,7 @@
       </trans-unit>
       <trans-unit id="66f3ae3eff97ee4cbf8c9751eacdd4f736cb338b" datatype="html">
         <source>Monero transaction filters</source>
-        <target state="needs-review-translation">Filtros de transação Monero</target>
+        <target state="translated">Filtros de transação Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">3</context>
@@ -12288,7 +12288,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.legal.privacy-policy.3" datatype="html">
-        <source>tx.taxi uses Cloudflare Web Analytics for page views and performance, and a first-party daily cookie shared across its explorers to count browsers once per UTC day. The daily audience collector stores only a daily identifier, the explorer hostname, and whether there was interaction. It does not receive search text, addresses, transaction IDs, URLs, or IP addresses. Individual daily records expire after 31 days; aggregate counts are retained for 400 days. Do Not Track and Global Privacy Control disable this first-party measurement.</source><target state="translated">tx.taxi usa Cloudflare Web Analytics para visualizações de páginas e desempenho, e um cookie diário primário compartilhado entre seus exploradores para contar navegadores uma vez por dia UTC. O coletor de público diário armazena apenas um identificador diário, o nome do host do explorador e se houve interação. Ele não recebe texto de pesquisa, endereços, IDs de transação, URLs ou endereços IP. Os registros diários individuais expiram após 31 dias; as contagens agregadas são retidas por 400 dias. Do Not Track e Global Privacy Control desativam essa medição primária.</target>
+        <source>tx.taxi uses Cloudflare Web Analytics for page views and performance, and a first-party daily cookie shared across its explorers to count browsers once per UTC day. The daily audience collector stores only a daily identifier, the explorer hostname, and whether there was interaction. It does not receive search text, addresses, transaction IDs, URLs, or IP addresses. Individual daily records expire after 31 days; aggregate counts are retained for 400 days. Do Not Track and Global Privacy Control disable this first-party measurement.</source><target state="translated">O tx.taxi usa o Cloudflare Web Analytics para medir visualizações de páginas e desempenho, além de um cookie diário próprio compartilhado entre seus exploradores para contar navegadores uma vez por dia UTC. O coletor diário de audiência armazena apenas um identificador diário, o nome do host do explorador e se houve interação. Ele não recebe texto de pesquisa, endereços, IDs de transação, URLs nem endereços IP. Os registros diários individuais expiram após 31 dias; as contagens agregadas são mantidas por 400 dias. Do Not Track e Global Privacy Control desativam essa medição própria.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
           <context context-type="linenumber">14</context>
@@ -13252,14 +13252,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.3" datatype="html">
-        <source>xmr.tx.taxi is a Monero-focused fork of the Mempool Open Source Project. The xmr.tx.taxi name, Monero-oriented copy, and retargeted behavior describe this fork only.</source><target state="translated">xmr.tx.taxi é um fork do Mempool Open Source Project focado em Monero. O nome xmr.tx.taxi, a cópia orientada ao Monero e o comportamento redirecionado descrevem apenas esta bifurcação.</target>
+        <source>xmr.tx.taxi is a Monero-focused fork of the Mempool Open Source Project. The xmr.tx.taxi name, Monero-oriented copy, and retargeted behavior describe this fork only.</source><target state="translated">xmr.tx.taxi é um fork do Mempool Open Source Project focado no Monero. O nome xmr.tx.taxi, os textos voltados ao Monero e o comportamento adaptado se referem apenas a este fork.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.4" datatype="html">
-        <source>Upstream Attribution</source><target state="translated">Atribuição ascendente</target>
+        <source>Upstream Attribution</source><target state="translated">Atribuição ao projeto original</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
           <context context-type="linenumber">18</context>
@@ -13294,7 +13294,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.9" datatype="html">
-        <source>This fork follows the upstream AGPLv3 license obligations. License notices are included with this deployment; contact the operator for applicable source and license information.</source><target state="translated">Esta bifurcação segue as obrigações de licença AGPLv3 upstream. Avisos de licença estão incluídos nesta implantação; entre em contato com a operadora para obter informações de origem e licença aplicáveis.</target>
+        <source>This fork follows the upstream AGPLv3 license obligations. License notices are included with this deployment; contact the operator for applicable source and license information.</source><target state="translated">Este fork segue as obrigações da licença AGPLv3 do projeto original. Os avisos de licença estão incluídos nesta implantação; entre em contato com o operador para obter o código-fonte e as informações de licença aplicáveis.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
           <context context-type="linenumber">29</context>
@@ -13336,56 +13336,56 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.month" datatype="html">
-        <source>This month · so far</source><target state="needs-review-translation">Este mês · até agora</target>
+        <source>This month · so far</source><target state="translated">Este mês · até agora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.year" datatype="html">
-        <source>This year · so far</source><target state="needs-review-translation">Este ano · até agora</target>
+        <source>This year · so far</source><target state="translated">Este ano · até agora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.genesis" datatype="html">
-        <source>Since genesis</source><target state="needs-review-translation">Desde a gênese</target>
+        <source>Since genesis</source><target state="translated">Desde a gênese</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.countPer" datatype="html">
-        <source>Count transactions per</source><target state="needs-review-translation">Contar transações por</target>
+        <source>Count transactions per</source><target state="translated">Contar transações por</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.dateRange" datatype="html">
-        <source>Date range</source><target state="needs-review-translation">Período</target>
+        <source>Date range</source><target state="translated">Período</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.loading" datatype="html">
-        <source>Loading transaction history…</source><target state="needs-review-translation">Carregando histórico de transações…</target>
+        <source>Loading transaction history…</source><target state="translated">Carregando histórico de transações…</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.error" datatype="html">
-        <source>Transaction history could not be loaded.</source><target state="needs-review-translation">Não foi possível carregar o histórico de transações.</target>
+        <source>Transaction history could not be loaded.</source><target state="translated">Não foi possível carregar o histórico de transações.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.retry" datatype="html">
-        <source>Retry</source><target state="needs-review-translation">Tentar novamente</target>
+        <source>Retry</source><target state="translated">Tentar novamente</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">20</context>
@@ -13399,7 +13399,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.totalNote" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}"/> transactions in the displayed periods. Faded bars mark partial periods.</source><target state="needs-review-translation">Transações <x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}"/> nos períodos exibidos. Barras desbotadas marcam períodos parciais.</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}"/> transactions in the displayed periods. Faded bars mark partial periods.</source><target state="translated">Transações <x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}"/> nos períodos exibidos. Barras desbotadas marcam períodos parciais.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">23</context>
@@ -13413,35 +13413,35 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.stale" datatype="html">
-        <source> · Refresh delayed; showing the last indexed data</source><target state="needs-review-translation">· Atualização atrasada; mostrando os últimos dados indexados</target>
+        <source> · Refresh delayed; showing the last indexed data</source><target state="translated">· Atualização atrasada; mostrando os últimos dados indexados</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.counts" datatype="html">
-        <source>Transaction counts</source><target state="needs-review-translation">Contagens de transações</target>
+        <source>Transaction counts</source><target state="translated">Contagens de transações</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.download" datatype="html">
-        <source>Download CSV</source><target state="needs-review-translation">Baixar CSV</target>
+        <source>Download CSV</source><target state="translated">Baixar CSV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.period" datatype="html">
-        <source>Period (UTC)</source><target state="needs-review-translation">Período (UTC)</target>
+        <source>Period (UTC)</source><target state="translated">Período (UTC)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.transactions" datatype="html">
-        <source>Transactions</source><target state="needs-review-translation">Transações</target>
+        <source>Transactions</source><target state="translated">Transações</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">30</context>
@@ -13452,77 +13452,77 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.blocks" datatype="html">
-        <source>Blocks</source><target state="needs-review-translation">Blocos</target>
+        <source>Blocks</source><target state="translated">Blocos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.partial" datatype="html">
-        <source>Partial</source><target state="needs-review-translation">Parcial</target>
+        <source>Partial</source><target state="translated">Parcial</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.showMore" datatype="html">
-        <source>Show more periods</source><target state="needs-review-translation">Mostrar mais períodos</target>
+        <source>Show more periods</source><target state="translated">Mostrar mais períodos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.hour" datatype="html">
-        <source>Hour</source><target state="needs-review-translation">Hora</target>
+        <source>Hour</source><target state="translated">Hora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.day" datatype="html">
-        <source>Day</source><target state="needs-review-translation">Dia</target>
+        <source>Day</source><target state="translated">Dia</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.intervalMonth" datatype="html">
-        <source>Month</source><target state="needs-review-translation">Mês</target>
+        <source>Month</source><target state="translated">Mês</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.intervalYear" datatype="html">
-        <source>Year</source><target state="needs-review-translation">Ano</target>
+        <source>Year</source><target state="translated">Ano</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.allTime" datatype="html">
-        <source>All time</source><target state="needs-review-translation">Todo o tempo</target>
+        <source>All time</source><target state="translated">Todo o tempo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.metaTitle" datatype="html">
-        <source>Monero transaction activity</source><target state="needs-review-translation">Atividade de transação Monero</target>
+        <source>Monero transaction activity</source><target state="translated">Atividade de transação Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.metaDescription" datatype="html">
-        <source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source><target state="needs-review-translation">Explore as contagens de transações do Monero por hora, dia, mês e ano, desde a gênese até o último bloco indexado.</target>
+        <source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source><target state="translated">Explore as contagens de transações do Monero por hora, dia, mês e ano, desde a gênese até o último bloco indexado.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.partialPeriod" datatype="html">
-        <source> · Partial period</source><target state="needs-review-translation">· Período parcial</target>
+        <source> · Partial period</source><target state="translated">· Período parcial</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -13543,7 +13543,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="15c02cb6b6c3be53477e502d3e1ee26955b23af0" datatype="html">
-        <source>Unavailable</source><target state="needs-review-translation">Indisponível</target>
+        <source>Unavailable</source><target state="translated">Indisponível</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">89</context>
@@ -13569,21 +13569,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.serialized-size" datatype="html">
-        <source>Serialized size</source><target state="needs-review-translation">Tamanho serializado</target>
+        <source>Serialized size</source><target state="translated">Tamanho serializado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.unlock-time" datatype="html">
-        <source>Unlock time</source><target state="needs-review-translation">Tempo de desbloqueio</target>
+        <source>Unlock time</source><target state="translated">Tempo de desbloqueio</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.decoded" datatype="html">
-        <source>Decoded transaction</source><target state="needs-review-translation">Transação decodificada</target>
+        <source>Decoded transaction</source><target state="translated">Transação decodificada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">88</context>
@@ -13604,35 +13604,35 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.empty-extra" datatype="html">
-        <source>Empty</source><target state="needs-review-translation">Vazio</target>
+        <source>Empty</source><target state="translated">Vazio</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
-        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target state="needs-review-translation">Alguns campos extras não são reconhecidos; os bytes brutos completos são mostrados acima.</target>
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target state="translated">Alguns campos extras não são reconhecidos; os bytes brutos completos são mostrados acima.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.payment-verification" datatype="html">
-        <source>Payment verification</source><target state="needs-review-translation">Verificação de pagamento</target>
+        <source>Payment verification</source><target state="translated">Verificação de pagamento</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.verification-mode" datatype="html">
-        <source>Monero payment verification mode</source><target state="needs-review-translation">Modo de verificação de pagamento Monero</target>
+        <source>Monero payment verification mode</source><target state="translated">Modo de verificação de pagamento Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.received" datatype="html">
-        <source>Received</source><target state="needs-review-translation">Recebido</target>
+        <source>Received</source><target state="translated">Recebido</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">115</context>
@@ -13647,14 +13647,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.proof-help" datatype="html">
-        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source><target state="needs-review-translation">A verificação tx_proof usa o RPC da carteira backend quando configurada. As chaves de visualização privada e os valores tx_secret_key são verificados localmente neste navegador e não são enviados para xmr.tx.taxi.</target>
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source><target state="translated">A verificação tx_proof usa o RPC da carteira backend quando configurada. As chaves de visualização privada e os valores tx_secret_key são verificados localmente neste navegador e não são enviados para xmr.tx.taxi.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">119,121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.recipient-address" datatype="html">
-        <source>Recipient address</source><target state="needs-review-translation">Endereço do destinatário</target>
+        <source>Recipient address</source><target state="translated">Endereço do destinatário</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">132</context>
@@ -13669,7 +13669,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.proof-message" datatype="html">
-        <source>Message</source><target state="needs-review-translation">Mensagem</target>
+        <source>Message</source><target state="translated">Mensagem</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">148</context>
@@ -13683,7 +13683,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.verifying" datatype="html">
-        <source>Verifying...</source><target state="needs-review-translation">Verificando...</target>
+        <source>Verifying...</source><target state="translated">Verificando...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">182</context>
@@ -13697,7 +13697,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.proof-verified" datatype="html">
-        <source>Proof verified</source><target state="needs-review-translation">Prova verificada</target>
+        <source>Proof verified</source><target state="translated">Prova verificada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">191</context>
@@ -13726,7 +13726,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.private-view-key" datatype="html">
-        <source>Private view key</source><target state="needs-review-translation">Chave de visualização privada</target>
+        <source>Private view key</source><target state="translated">Chave de visualização privada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">232</context>
@@ -13747,7 +13747,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.checking" datatype="html">
-        <source>Checking...</source><target state="needs-review-translation">Verificando...</target>
+        <source>Checking...</source><target state="translated">Verificando...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">302</context>
@@ -13761,7 +13761,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.payment-found" datatype="html">
-        <source>Payment found</source><target state="needs-review-translation">Pagamento encontrado</target>
+        <source>Payment found</source><target state="translated">Pagamento encontrado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">312</context>
@@ -13775,21 +13775,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="2611475427610660053" datatype="html">
-        <source>Transactions</source><target state="needs-review-translation">Transações</target>
+        <source>Transactions</source><target state="translated">Transações</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">261</context>
         </context-group>
       </trans-unit>
       <trans-unit id="313854265968026491" datatype="html">
-        <source>Transaction</source><target state="needs-review-translation">Transação</target>
+        <source>Transaction</source><target state="translated">Transação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">262</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
-        <source>Address and tx_proof signature are required.</source><target state="needs-review-translation">Endereço e assinatura tx_proof são obrigatórios.</target>
+        <source>Address and tx_proof signature are required.</source><target state="translated">Endereço e assinatura tx_proof são obrigatórios.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">438</context>
@@ -13811,7 +13811,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.signature" datatype="html">
-        <source>Enter the tx_proof signature generated by a Monero wallet.</source><target state="needs-review-translation">Insira a assinatura tx_proof gerada por uma carteira Monero.</target>
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source><target state="translated">Insira a assinatura tx_proof gerada por uma carteira Monero.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">452</context>
@@ -13825,28 +13825,28 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
-        <source>The proof did not verify for this transaction and address.</source><target state="needs-review-translation">A prova não foi verificada para esta transação e endereço.</target>
+        <source>The proof did not verify for this transaction and address.</source><target state="translated">A prova não foi verificada para esta transação e endereço.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">475</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
-        <source>Unable to verify proof.</source><target state="needs-review-translation">Não foi possível verificar a prova.</target>
+        <source>Unable to verify proof.</source><target state="translated">Não foi possível verificar a prova.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">481</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
-        <source>Address and private view key are required.</source><target state="needs-review-translation">O endereço e a chave de visualização privada são obrigatórios.</target>
+        <source>Address and private view key are required.</source><target state="translated">O endereço e a chave de visualização privada são obrigatórios.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">494</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
-        <source>Load a transaction before running local verification.</source><target state="needs-review-translation">Carregue uma transação antes de executar a verificação local.</target>
+        <source>Load a transaction before running local verification.</source><target state="translated">Carregue uma transação antes de executar a verificação local.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">498</context>
@@ -13857,42 +13857,42 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.viewKey" datatype="html">
-        <source>Enter a 64-character hexadecimal private view key.</source><target state="needs-review-translation">Insira uma chave de visualização privada hexadecimal de 64 caracteres.</target>
+        <source>Enter a 64-character hexadecimal private view key.</source><target state="translated">Insira uma chave de visualização privada hexadecimal de 64 caracteres.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">506</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
-        <source>Address and tx_secret_key are required.</source><target state="needs-review-translation">Endereço e tx_secret_key são obrigatórios.</target>
+        <source>Address and tx_secret_key are required.</source><target state="translated">Endereço e tx_secret_key são obrigatórios.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">527</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.secretKey" datatype="html">
-        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target state="needs-review-translation">Insira o hexadecimal tx_secret_key da carteira remetente.</target>
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target state="translated">Insira o hexadecimal tx_secret_key da carteira remetente.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">539</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
-        <source>Unable to verify this transaction locally.</source><target state="needs-review-translation">Não foi possível verificar esta transação localmente.</target>
+        <source>Unable to verify this transaction locally.</source><target state="translated">Não foi possível verificar esta transação localmente.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">569</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.inputs" datatype="html">
-        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</source><target state="needs-review-translation">Entradas (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</target>
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</source><target state="translated">Entradas (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.ring" datatype="html">
-        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></source><target state="needs-review-translation">Anel <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></target>
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></source><target state="translated">Anel <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">48,49</context>
@@ -13910,42 +13910,42 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.input-type" datatype="html">
-        <source>Input type</source><target state="needs-review-translation">Tipo de entrada</target>
+        <source>Input type</source><target state="translated">Tipo de entrada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.ring-size" datatype="html">
-        <source>Ring size</source><target state="needs-review-translation">Tamanho do anel</target>
+        <source>Ring size</source><target state="translated">Tamanho do anel</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
-        <source>Relative ring offsets</source><target state="needs-review-translation">Deslocamentos relativos do anel</target>
+        <source>Relative ring offsets</source><target state="translated">Deslocamentos relativos do anel</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.ring-members" datatype="html">
-        <source>Ring members</source><target state="needs-review-translation">Membros do anel</target>
+        <source>Ring members</source><target state="translated">Membros do anel</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.output-index" datatype="html">
-        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></source><target state="needs-review-translation">Saída #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></target>
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></source><target state="translated">Saída #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">94,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.block-height" datatype="html">
-        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></source><target state="needs-review-translation">Bloco <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></target>
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></source><target state="translated">Bloco <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">95</context>
@@ -13959,7 +13959,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.output-key" datatype="html">
-        <source>Output key</source><target state="needs-review-translation">Chave de saída</target>
+        <source>Output key</source><target state="translated">Chave de saída</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">99</context>
@@ -13970,14 +13970,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.source-unavailable" datatype="html">
-        <source>Source transaction temporarily unavailable.</source><target state="needs-review-translation">Transação de origem temporariamente indisponível.</target>
+        <source>Source transaction temporarily unavailable.</source><target state="translated">Transação de origem temporariamente indisponível.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.no-decoys" datatype="html">
-        <source>This legacy input has no decoys.</source><target state="needs-review-translation">Esta entrada legada não possui iscas.</target>
+        <source>This legacy input has no decoys.</source><target state="translated">Esta entrada legada não possui iscas.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">104</context>
@@ -13991,21 +13991,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
-        <source>Some ring-member details were not resolved in this response.</source><target state="needs-review-translation">Alguns detalhes dos membros do anel não foram resolvidos nesta resposta.</target>
+        <source>Some ring-member details were not resolved in this response.</source><target state="translated">Alguns detalhes dos membros do anel não foram resolvidos nesta resposta.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.outputs" datatype="html">
-        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</source><target state="needs-review-translation">Saídas (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</target>
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</source><target state="translated">Saídas (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">133</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.ringct-output" datatype="html">
-        <source>RingCT output</source><target state="needs-review-translation">Saída RingCT</target>
+        <source>RingCT output</source><target state="translated">Saída RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">139</context>
@@ -14016,42 +14016,42 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.recipient-hidden" datatype="html">
-        <source>recipient hidden</source><target state="needs-review-translation">destinatário oculto</target>
+        <source>recipient hidden</source><target state="translated">destinatário oculto</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">140</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.output-type" datatype="html">
-        <source>Output type</source><target state="needs-review-translation">Tipo de saída</target>
+        <source>Output type</source><target state="translated">Tipo de saída</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">160</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.amount" datatype="html">
-        <source>Amount</source><target state="needs-review-translation">Quantia</target>
+        <source>Amount</source><target state="translated">Quantia</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.hidden-ringct" datatype="html">
-        <source>Hidden by RingCT</source><target state="needs-review-translation">Oculto por RingCT</target>
+        <source>Hidden by RingCT</source><target state="translated">Oculto por RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">166</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.recipient" datatype="html">
-        <source>Recipient</source><target state="needs-review-translation">Destinatário</target>
+        <source>Recipient</source><target state="translated">Destinatário</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.hidden-stealth" datatype="html">
-        <source>Hidden by stealth addressing</source><target state="needs-review-translation">Oculto por endereçamento furtivo</target>
+        <source>Hidden by stealth addressing</source><target state="translated">Oculto por endereçamento furtivo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">170</context>
@@ -14072,21 +14072,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.amount-commitment" datatype="html">
-        <source>Amount commitment</source><target state="needs-review-translation">Compromisso de valor</target>
+        <source>Amount commitment</source><target state="translated">Compromisso de valor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">175</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.atomic-units" datatype="html">
-        <source>atomic units</source><target state="needs-review-translation">unidades atômicas</target>
+        <source>atomic units</source><target state="translated">unidades atômicas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">206</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.amount-hidden" datatype="html">
-        <source>Amount hidden</source><target state="needs-review-translation">Valor oculto</target>
+        <source>Amount hidden</source><target state="translated">Valor oculto</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">216</context>
@@ -14100,56 +14100,56 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.ringct-input" datatype="html">
-        <source>RingCT input</source><target state="needs-review-translation">Entrada RingCT</target>
+        <source>RingCT input</source><target state="translated">Entrada RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">153</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
-        <source>Legacy ring input</source><target state="needs-review-translation">Entrada de anel legado</target>
+        <source>Legacy ring input</source><target state="translated">Entrada de anel legado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">155</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.input" datatype="html">
-        <source>Input</source><target state="needs-review-translation">Entrada</target>
+        <source>Input</source><target state="translated">Entrada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">155</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.stealth-output" datatype="html">
-        <source>Stealth output</source><target state="needs-review-translation">Saída furtiva</target>
+        <source>Stealth output</source><target state="translated">Saída furtiva</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">162</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.fee" datatype="html">
-        <source>Fee</source><target state="needs-review-translation">Taxa</target>
+        <source>Fee</source><target state="translated">Taxa</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">164</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.output" datatype="html">
-        <source>Output</source><target state="needs-review-translation">Saída</target>
+        <source>Output</source><target state="translated">Saída</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
-        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()"/></source><target state="needs-review-translation">saída global <x id="index" equiv-text="member.global_index.toLocaleString()"/></target>
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()"/></source><target state="translated">saída global <x id="index" equiv-text="member.global_index.toLocaleString()"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">188</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.tooltip-height" datatype="html">
-        <source>height <x id="height" equiv-text="member.height.toLocaleString()"/></source><target state="needs-review-translation">altura <x id="height" equiv-text="member.height.toLocaleString()"/></target>
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()"/></source><target state="translated">altura <x id="height" equiv-text="member.height.toLocaleString()"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">190</context>
@@ -14163,14 +14163,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.tooltip-locked" datatype="html">
-        <source>locked</source><target state="needs-review-translation">bloqueado</target>
+        <source>locked</source><target state="translated">bloqueado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">196</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
-        <source>Transaction amount hidden by RingCT</source><target state="needs-review-translation">Valor da transação oculto pelo RingCT</target>
+        <source>Transaction amount hidden by RingCT</source><target state="translated">Valor da transação oculto pelo RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">203</context>
@@ -14184,21 +14184,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.features.miner" datatype="html">
-        <source>Miner transaction</source><target state="needs-review-translation">Transação de minerador</target>
+        <source>Miner transaction</source><target state="translated">Transação de minerador</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.features.legacyHelp" datatype="html">
-        <source>Pre-RingCT transaction; input and output amounts are public</source><target state="needs-review-translation">Transação pré-RingCT; os valores de entrada e saída são públicos</target>
+        <source>Pre-RingCT transaction; input and output amounts are public</source><target state="translated">Transação pré-RingCT; os valores de entrada e saída são públicos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.features.legacy" datatype="html">
-        <source>Legacy · public amounts</source><target state="needs-review-translation">Legado · valores públicos</target>
+        <source>Legacy · public amounts</source><target state="translated">Legado · valores públicos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">2</context>
@@ -14219,14 +14219,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.features.ringHelp" datatype="html">
-        <source>Number of members in the first input's ring</source><target state="needs-review-translation">Número de membros no anel da primeira entrada</target>
+        <source>Number of members in the first input's ring</source><target state="translated">Número de membros no anel da primeira entrada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.features.ring" datatype="html">
-        <source>Ring <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></source><target state="needs-review-translation">Anel <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></target>
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></source><target state="translated">Anel <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">6</context>
@@ -14240,7 +14240,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="dashboard.h1" datatype="html">
-        <source>Monero Block &amp; Pending Transactions Explorer</source><target state="needs-review-translation">Explorador de blocos Monero e transações pendentes</target>
+        <source>Monero Block &amp; Pending Transactions Explorer</source><target state="translated">Explorador de blocos Monero e transações pendentes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
           <context context-type="linenumber">3</context>
@@ -14248,14 +14248,14 @@
         <note priority="1" from="description">Dashboard hidden heading</note>
       </trans-unit>
       <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
-        <source>Pending Transactions</source><target state="needs-review-translation">Transações pendentes</target>
+        <source>Pending Transactions</source><target state="translated">Transações pendentes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.block.tooltip.totalFees" datatype="html">
-        <source>Total fees</source><target state="needs-review-translation">Taxas totais</target>
+        <source>Total fees</source><target state="translated">Taxas totais</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/block-format.ts</context>
           <context context-type="linenumber">51</context>
@@ -14269,14 +14269,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.block.tooltip.feeRange" datatype="html">
-        <source>Fee range</source><target state="needs-review-translation">Faixa de taxas</target>
+        <source>Fee range</source><target state="translated">Faixa de taxas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/block-format.ts</context>
           <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.privacy" datatype="html">
-        <source>Privacy by default</source><target state="needs-review-translation">Privacidade por padrão</target>
+        <source>Privacy by default</source><target state="translated">Privacidade por padrão</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">14</context>
@@ -14287,14 +14287,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.explore" datatype="html">
-        <source>Explore</source><target state="needs-review-translation">Explorar</target>
+        <source>Explore</source><target state="translated">Explorar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.dashboard" datatype="html">
-        <source>Dashboard</source><target state="needs-review-translation">Painel</target>
+        <source>Dashboard</source><target state="translated">Painel</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">62</context>
@@ -14308,42 +14308,42 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.pending" datatype="html">
-        <source>Pending Transactions</source><target state="needs-review-translation">Transações pendentes</target>
+        <source>Pending Transactions</source><target state="translated">Transações pendentes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.activity" datatype="html">
-        <source>Transaction activity</source><target state="needs-review-translation">Atividade de transação</target>
+        <source>Transaction activity</source><target state="translated">Atividade de transação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.instanceStatus" datatype="html">
-        <source>Instance status</source><target state="needs-review-translation">Status da instância</target>
+        <source>Instance status</source><target state="translated">Status da instância</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.learn" datatype="html">
-        <source>Learn</source><target state="needs-review-translation">Aprender</target>
+        <source>Learn</source><target state="translated">Aprender</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.moneropedia" datatype="html">
-        <source>Moneropedia</source><target state="needs-review-translation">Moneropédia</target>
+        <source>Moneropedia</source><target state="translated">Moneropédia</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.whatRingct" datatype="html">
-        <source>What is RingCT?</source><target state="needs-review-translation">O que é RingCT?</target>
+        <source>What is RingCT?</source><target state="translated">O que é RingCT?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">71</context>
@@ -14357,49 +14357,49 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.proofSignatures" datatype="html">
-        <source>tx_proof signatures</source><target state="needs-review-translation">assinaturas tx_proof</target>
+        <source>tx_proof signatures</source><target state="translated">assinaturas tx_proof</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.research" datatype="html">
-        <source>Monero research lab</source><target state="needs-review-translation">Laboratório de pesquisa Monero</target>
+        <source>Monero research lab</source><target state="translated">Laboratório de pesquisa Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.documentation" datatype="html">
-        <source>Explorer documentation</source><target state="needs-review-translation">Documentação do explorador</target>
+        <source>Explorer documentation</source><target state="translated">Documentação do explorador</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">75</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.about" datatype="html">
-        <source>About</source><target state="needs-review-translation">Sobre</target>
+        <source>About</source><target state="translated">Sobre</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.source" datatype="html">
-        <source>Source code</source><target state="needs-review-translation">Código fonte</target>
+        <source>Source code</source><target state="translated">Código fonte</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.status" datatype="html">
-        <source>Status</source><target state="needs-review-translation">Status</target>
+        <source>Status</source><target state="translated">Status</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.telegramLabel" datatype="html">
-        <source>Join the tx.taxi Telegram channel</source><target state="needs-review-translation">Junte-se ao canal tx.taxi Telegram</target>
+        <source>Join the tx.taxi Telegram channel</source><target state="translated">Junte-se ao canal tx.taxi Telegram</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">82</context>
@@ -14413,35 +14413,35 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.contact" datatype="html">
-        <source>Contact Us</source><target state="needs-review-translation">Contate-nos</target>
+        <source>Contact Us</source><target state="translated">Contate-nos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.released" datatype="html">
-        <source>Released under AGPLv3</source><target state="needs-review-translation">Lançado sob AGPLv3</target>
+        <source>Released under AGPLv3</source><target state="translated">Lançado sob AGPLv3</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.madeWith" datatype="html">
-        <source>Made with</source><target state="needs-review-translation">Feito com</target>
+        <source>Made with</source><target state="translated">Feito com</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.footer.by" datatype="html">
-        <source>by</source><target state="needs-review-translation">por</target>
+        <source>by</source><target state="translated">por</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.pool.logoNamed" datatype="html">
-        <source>Logo of <x id="name" equiv-text="this.name"/> mining pool</source><target state="needs-review-translation">Logotipo do pool de mineração <x id="name" equiv-text="this.name"/></target>
+        <source>Logo of <x id="name" equiv-text="this.name"/> mining pool</source><target state="translated">Logotipo do pool de mineração <x id="name" equiv-text="this.name"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
           <context context-type="linenumber">51</context>
@@ -14455,14 +14455,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.intro.aria" datatype="html">
-        <source>About tx.taxi</source><target state="needs-review-translation">Sobre tx.taxi</target>
+        <source>About tx.taxi</source><target state="translated">Sobre tx.taxi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.intro.title" datatype="html">
-        <source>One search across chains.</source><target state="needs-review-translation">Uma pesquisa nas cadeias.</target>
+        <source>One search across chains.</source><target state="translated">Uma pesquisa nas cadeias.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
           <context context-type="linenumber">5</context>
@@ -14476,49 +14476,49 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.intro.openTaxi" datatype="html">
-        <source>Open tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="needs-review-translation">Abra tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>Open tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Abra tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.intro.exploreChain" datatype="html">
-        <source>Explore <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="needs-review-translation">Explorar <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>Explore <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Explorar <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.heading" datatype="html">
-        <source>Documentation</source><target state="needs-review-translation">Documentação</target>
+        <source>Documentation</source><target state="translated">Documentação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.sectionsAria" datatype="html">
-        <source>Documentation sections</source><target state="needs-review-translation">Seções de documentação</target>
+        <source>Documentation sections</source><target state="translated">Seções de documentação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.onPageAria" datatype="html">
-        <source>On this page</source><target state="needs-review-translation">Nesta página</target>
+        <source>On this page</source><target state="translated">Nesta página</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.welcome" datatype="html">
-        <source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target state="needs-review-translation">xmr.tx.taxi relata dados públicos de nós e cadeias. Monero mantém deliberadamente os valores de pagamento, destinatários e históricos de endereços privados, de modo que este explorador marca esses limites em vez de adivinhar.</target>
+        <source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target state="translated">xmr.tx.taxi relata dados públicos de nós e cadeias. Monero mantém deliberadamente os valores de pagamento, destinatários e históricos de endereços privados, de modo que este explorador marca esses limites em vez de adivinhar.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.what" datatype="html">
-        <source>What is xmr.tx.taxi?</source><target state="needs-review-translation">O que é xmr.tx.taxi?</target>
+        <source>What is xmr.tx.taxi?</source><target state="translated">O que é xmr.tx.taxi?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">11</context>
@@ -14529,7 +14529,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.whatDescription" datatype="html">
-        <source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source><target state="needs-review-translation">Um explorador de blocos e transações pendentes para <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Ele adapta a visualização familiar do Mempool Explorer aos dados que um nó Monero pode provar publicamente.</target>
+        <source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source><target state="translated">Um explorador de blocos e transações pendentes para <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Ele adapta a visualização familiar do Mempool Explorer aos dados que um nó Monero pode provar publicamente.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">11</context>
@@ -14554,7 +14554,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.amounts" datatype="html">
-        <source>Why are amounts hidden?</source><target state="needs-review-translation">Por que os valores estão ocultos?</target>
+        <source>Why are amounts hidden?</source><target state="translated">Por que os valores estão ocultos?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">13</context>
@@ -14579,7 +14579,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.addresses" datatype="html">
-        <source>Why is there no public address history?</source><target state="needs-review-translation">Por que não há histórico de endereços públicos?</target>
+        <source>Why is there no public address history?</source><target state="translated">Por que não há um histórico público de endereços?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">14</context>
@@ -14597,7 +14597,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.fees" datatype="html">
-        <source>How do Monero fees work?</source><target state="needs-review-translation">Como funcionam as taxas do Monero?</target>
+        <source>How do Monero fees work?</source><target state="translated">Como funcionam as taxas do Monero?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">15</context>
@@ -14608,14 +14608,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.feesDescription" datatype="html">
-        <source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target state="needs-review-translation">As taxas públicas são unidades atômicas por byte. O daemon estima taxas de prioridade lentas, normais, rápidas e mais rápidas; as carteiras aplicam uma taxa escolhida ao peso da transação e à quantização das taxas. Os blocos projetados resumem os dados de taxa/peso pendentes observados e não garantem a inclusão.</target>
+        <source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target state="translated">As taxas públicas são unidades atômicas por byte. O daemon estima taxas de prioridade lentas, normais, rápidas e mais rápidas; as carteiras aplicam uma taxa escolhida ao peso da transação e à quantização das taxas. Os blocos projetados resumem os dados de taxa/peso pendentes observados e não garantem a inclusão.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.confirmations" datatype="html">
-        <source>What does pending or confirmed mean?</source><target state="needs-review-translation">O que significa pendente ou confirmado?</target>
+        <source>What does pending or confirmed mean?</source><target state="translated">O que significa pendente ou confirmado?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">16</context>
@@ -14633,7 +14633,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.proof" datatype="html">
-        <source>Can I verify a payment?</source><target state="needs-review-translation">Posso verificar um pagamento?</target>
+        <source>Can I verify a payment?</source><target state="translated">Posso verificar um pagamento?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">17</context>
@@ -14651,7 +14651,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.mining" datatype="html">
-        <source>How are mining pools identified?</source><target state="needs-review-translation">Como os pools de mineração são identificados?</target>
+        <source>How are mining pools identified?</source><target state="translated">Como os pools de mineração são identificados?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">18</context>
@@ -14669,7 +14669,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.restDescription" datatype="html">
-        <source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source><target state="needs-review-translation">As rotas documentadas são somente leitura e de mesma origem em <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Nenhuma API de autenticação, carteira ou conta é exposta. Os valores são unidades atômicas onde uma rota expõe uma taxa ou recompensa.</target>
+        <source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source><target state="translated">As rotas documentadas são somente leitura e de mesma origem em <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Nenhuma API de autenticação, carteira ou conta é exposta. Os valores são unidades atômicas onde uma rota expõe uma taxa ou recompensa.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">21</context>
@@ -14702,7 +14702,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.publicResult" datatype="html">
-        <source>Public result</source><target state="needs-review-translation">Resultado público</target>
+        <source>Public result</source><target state="translated">Resultado público</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">22</context>
@@ -14721,28 +14721,28 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.infoResult" datatype="html">
-        <source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target state="needs-review-translation">Status do daemon, altura, dificuldade, hashrate, pares e contagem de mempool.</target>
+        <source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target state="translated">Status do daemon, altura, dificuldade, hashrate, pares e contagem de mempool.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.blocksResult" datatype="html">
-        <source>Recent block headers; count is capped at 25.</source><target state="needs-review-translation">Cabeçalhos de blocos recentes; a contagem é limitada a 25.</target>
+        <source>Recent block headers; count is capped at 25.</source><target state="translated">Cabeçalhos de blocos recentes; a contagem é limitada a 25.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.blocksHeightResult" datatype="html">
-        <source>Up to 25 headers ending at a height.</source><target state="needs-review-translation">Até 25 cabeçalhos terminando em altura.</target>
+        <source>Up to 25 headers ending at a height.</source><target state="translated">Até 25 cabeçalhos terminando na altura indicada.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.blockResult" datatype="html">
-        <source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target state="needs-review-translation">Cabeçalho, hashes de transação, estatísticas de taxas públicas e atribuição de pool de melhor esforço.</target>
+        <source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target state="translated">Cabeçalho, hashes de transação, estatísticas de taxas públicas e atribuição de pool de melhor esforço.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">22</context>
@@ -14756,7 +14756,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.rawResult" datatype="html">
-        <source>The daemon’s raw Monero block blob.</source><target state="needs-review-translation">O blob de bloco Monero bruto do daemon.</target>
+        <source>The daemon’s raw Monero block blob.</source><target state="translated">O blob de bloco Monero bruto do daemon.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">22</context>
@@ -14770,14 +14770,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html">
-        <source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="needs-review-translation">Transações e mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Transações e mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.txResult" datatype="html">
-        <source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target state="needs-review-translation">Status, taxa, tamanho/peso, confirmações, dados de anel público e sinalizadores RingCT. Nenhum endereço de destinatário ou valor de saída.</target>
+        <source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target state="translated">Status, taxa, tamanho/peso, confirmações, dados de anel público e sinalizadores RingCT. Nenhum endereço de destinatário ou valor de saída.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">23</context>
@@ -14798,84 +14798,84 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.projectedResult" datatype="html">
-        <source>Projected pending blocks from the observed pool.</source><target state="needs-review-translation">Blocos pendentes projetados do pool observado.</target>
+        <source>Projected pending blocks from the observed pool.</source><target state="translated">Blocos pendentes projetados do pool observado.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.timesResult" datatype="html">
-        <source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="needs-review-translation">Tempos de recebimento conhecidos do mempool; valores confirmados ou desconhecidos são <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Tempos de recebimento conhecidos do mempool; valores confirmados ou desconhecidos são <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.snapshotResult" datatype="html">
-        <source>Live-client bootstrap snapshot.</source><target state="needs-review-translation">Instantâneo de inicialização do cliente ativo.</target>
+        <source>Live-client bootstrap snapshot.</source><target state="translated">Instantâneo de inicialização do cliente ativo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html">
-        <source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="needs-review-translation">Taxas e histórico <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Taxas e histórico <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.feesResult" datatype="html">
-        <source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target state="needs-review-translation">Estimativas lentas, normais, rápidas e mais rápidas em unidades atômicas por byte mais máscara de quantização.</target>
+        <source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target state="translated">Estimativas lentas, normais, rápidas e mais rápidas em unidades atômicas por byte mais máscara de quantização.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.statisticsResult" datatype="html">
-        <source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="needs-review-translation">Observações persistentes de um minuto para <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> ou <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Observações persistentes de um minuto para <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> ou <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.fiatResult" datatype="html">
-        <source>Current or timestamped locally indexed fiat conversion data.</source><target state="needs-review-translation">Dados de conversão fiduciária indexados localmente, atuais ou com carimbo de data/hora.</target>
+        <source>Current or timestamped locally indexed fiat conversion data.</source><target state="translated">Dados de conversão fiduciária indexados localmente, atuais ou com carimbo de data/hora.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.miningDataTitle" datatype="html">
-        <source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="needs-review-translation">Dados de mineração <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Dados de mineração <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.historyPeriods" datatype="html">
-        <source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="needs-review-translation">As rotas gráficas históricas aceitam períodos como <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> e <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">As rotas gráficas históricas aceitam períodos como <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> e <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.hashrateResult" datatype="html">
-        <source>Difficulty-derived network hashrate history.</source><target state="needs-review-translation">Histórico de hashrate de rede derivado de dificuldade.</target>
+        <source>Difficulty-derived network hashrate history.</source><target state="translated">Histórico de hashrate de rede derivado de dificuldade.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.rewardResult" datatype="html">
-        <source>Indexed block fee, subsidy, reward, and fiat series.</source><target state="needs-review-translation">Taxa de bloco indexada, subsídio, recompensa e séries fiduciárias.</target>
+        <source>Indexed block fee, subsidy, reward, and fiat series.</source><target state="translated">Taxa de bloco indexada, subsídio, recompensa e séries fiduciárias.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.feeRatesResult" datatype="html">
-        <source>Public fee-rate buckets and block size/weight history.</source><target state="needs-review-translation">Faixas de taxas públicas e histórico de tamanho/peso do bloco.</target>
+        <source>Public fee-rate buckets and block size/weight history.</source><target state="translated">Faixas de taxas públicas e histórico de tamanho/peso do bloco.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">25</context>
@@ -14889,21 +14889,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.transactionProofTitle" datatype="html">
-        <source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="needs-review-translation">Verificação de prova de transação <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Verificação de prova de transação <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.verifyDescription" datatype="html">
-        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source><target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> aceita um <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> público, endereço e mensagem opcional. Ele retorna <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> se monero-wallet-rpc não estiver disponível. Nunca envie uma chave de visualização privada ou uma chave secreta de transação para este endpoint.</target>
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> aceita uma <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> pública, um endereço e uma mensagem opcional. Retorna <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> se o monero-wallet-rpc estiver indisponível. Nunca envie uma chave privada de visualização ou chave secreta de transação a este endpoint.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html">
-        <source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="needs-review-translation">Ponte daemon pública <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Ponte daemon pública <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">29</context>
@@ -14917,14 +14917,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.websocketDescription" datatype="html">
-        <source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> requests another. Messages use the established mempool protocol shape.</source><target state="needs-review-translation">Conecte-se a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. O servidor envia imediatamente um instantâneo; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> solicita outro. As mensagens usam o formato de protocolo mempool estabelecido.</target>
+        <source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> requests another. Messages use the established mempool protocol shape.</source><target state="translated">Conecte-se a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. O servidor envia imediatamente um instantâneo; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> solicita outro. As mensagens usam o formato de protocolo mempool estabelecido.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.serverMessages" datatype="html">
-        <source>Server messages</source><target state="needs-review-translation">Mensagens do servidor</target>
+        <source>Server messages</source><target state="translated">Mensagens do servidor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">37</context>
@@ -14942,7 +14942,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.clientMessages" datatype="html">
-        <source>Client messages</source><target state="needs-review-translation">Mensagens do cliente</target>
+        <source>Client messages</source><target state="translated">Mensagens do cliente</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">38</context>
@@ -14953,42 +14953,42 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.message" datatype="html">
-        <source>Message</source><target state="needs-review-translation">Mensagem</target>
+        <source>Message</source><target state="translated">Mensagem</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.behavior" datatype="html">
-        <source>Behavior</source><target state="needs-review-translation">Comportamento</target>
+        <source>Behavior</source><target state="translated">Comportamento</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.requestSnapshot" datatype="html">
-        <source>Request the current snapshot.</source><target state="needs-review-translation">Solicite o instantâneo atual.</target>
+        <source>Request the current snapshot.</source><target state="translated">Solicite o instantâneo atual.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.pingResult" datatype="html">
-        <source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="needs-review-translation">Recebe <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Recebe <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.subscribeBlock" datatype="html">
-        <source>Subscribe to a projected block snapshot by index.</source><target state="needs-review-translation">Assine um instantâneo de bloco projetado por índice.</target>
+        <source>Subscribe to a projected block snapshot by index.</source><target state="translated">Assine um instantâneo de bloco projetado por índice.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.trackTx" datatype="html">
-        <source>Track public confirmation status for one transaction hash.</source><target state="needs-review-translation">Rastreie o status de confirmação pública para um hash de transação.</target>
+        <source>Track public confirmation status for one transaction hash.</source><target state="translated">Rastreie o status de confirmação pública para um hash de transação.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">38</context>
@@ -15002,14 +15002,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.sseDescription" datatype="html">
-        <source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source><target state="needs-review-translation">Abra <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> como <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> para atualizações unidirecionais. O buffer de proxy está desabilitado e o fluxo começa com um instantâneo.</target>
+        <source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source><target state="translated">Abra <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> como <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> para atualizações unidirecionais. O buffer de proxy está desabilitado e o fluxo começa com um instantâneo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.events" datatype="html">
-        <source>Events and reconnection</source><target state="needs-review-translation">Eventos e reconexão</target>
+        <source>Events and reconnection</source><target state="translated">Eventos e reconexão</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">43</context>
@@ -15020,35 +15020,35 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.event" datatype="html">
-        <source>Event</source><target state="needs-review-translation">Evento</target>
+        <source>Event</source><target state="translated">Evento</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.payload" datatype="html">
-        <source>Payload</source><target state="needs-review-translation">Carga útil</target>
+        <source>Payload</source><target state="translated">Carga útil</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.snapshotEvent" datatype="html">
-        <source>Current daemon info and observed mempool hashes at connect.</source><target state="needs-review-translation">Informações atuais do daemon e hashes de mempool observados na conexão.</target>
+        <source>Current daemon info and observed mempool hashes at connect.</source><target state="translated">Informações atuais do daemon e hashes de mempool observados na conexão.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.blockEvent" datatype="html">
-        <source>A new public block header.</source><target state="needs-review-translation">Um novo cabeçalho de bloco público.</target>
+        <source>A new public block header.</source><target state="translated">Um novo cabeçalho de bloco público.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.deltaResult" datatype="html">
-        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for the observed pool.</source><target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> para o conjunto observado.</target>
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for the observed pool.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> para o conjunto observado.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">43</context>
@@ -15062,14 +15062,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.overview" datatype="html">
-        <source>Overview</source><target state="needs-review-translation">Visão geral</target>
+        <source>Overview</source><target state="translated">Visão geral</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.gettingStarted" datatype="html">
-        <source>Getting started</source><target state="needs-review-translation">Começando</target>
+        <source>Getting started</source><target state="translated">Começando</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">26</context>
@@ -15102,35 +15102,35 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.transactionsMempool" datatype="html">
-        <source>Transactions and mempool</source><target state="needs-review-translation">Transações e mempool</target>
+        <source>Transactions and mempool</source><target state="translated">Transações e mempool</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.feesHistory" datatype="html">
-        <source>Fees and history</source><target state="needs-review-translation">Taxas e histórico</target>
+        <source>Fees and history</source><target state="translated">Taxas e histórico</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.miningData" datatype="html">
-        <source>Mining data</source><target state="needs-review-translation">Dados de mineração</target>
+        <source>Mining data</source><target state="translated">Dados de mineração</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.transactionProof" datatype="html">
-        <source>Transaction proof</source><target state="needs-review-translation">Prova de transação</target>
+        <source>Transaction proof</source><target state="translated">Prova de transação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.verification" datatype="html">
-        <source>Verification</source><target state="needs-review-translation">Verificação</target>
+        <source>Verification</source><target state="translated">Verificação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">28</context>
@@ -15141,21 +15141,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.daemonBridge" datatype="html">
-        <source>Public daemon bridge</source><target state="needs-review-translation">Ponte daemon pública</target>
+        <source>Public daemon bridge</source><target state="translated">Ponte daemon pública</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.connectInitialize" datatype="html">
-        <source>Connect and initialize</source><target state="needs-review-translation">Conecte e inicialize</target>
+        <source>Connect and initialize</source><target state="translated">Conecte e inicialize</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.connection" datatype="html">
-        <source>Connection</source><target state="needs-review-translation">Conexão</target>
+        <source>Connection</source><target state="translated">Conexão</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">31</context>
@@ -15166,7 +15166,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.eventCategory" datatype="html">
-        <source>Events</source><target state="needs-review-translation">Eventos</target>
+        <source>Events</source><target state="translated">Eventos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">31</context>
@@ -15177,77 +15177,77 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.commands" datatype="html">
-        <source>Commands</source><target state="needs-review-translation">Comandos</target>
+        <source>Commands</source><target state="translated">Comandos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.connect" datatype="html">
-        <source>Connect</source><target state="needs-review-translation">Conectar</target>
+        <source>Connect</source><target state="translated">Conectar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.browser-title" datatype="html">
-        <source>Documentation</source><target state="needs-review-translation">Documentação</target>
+        <source>Documentation</source><target state="translated">Documentação</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.xmr.docs" datatype="html">
-        <source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target state="needs-review-translation">Documentação do Monero Explorer: dados públicos com privacidade segura, endpoints REST e transmissões ao vivo.</target>
+        <source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target state="translated">Documentação do Monero Explorer: dados públicos com privacidade segura, endpoints REST e transmissões ao vivo.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
           <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-instance-health" datatype="html">
-        <source>Instance health</source><target state="needs-review-translation">Integridade da instância</target>
+        <source>Instance health</source><target state="translated">Integridade da instância</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-title" datatype="html">
-        <source>Monero daemon status</source><target state="needs-review-translation">Status do daemon Monero</target>
+        <source>Monero daemon status</source><target state="translated">Status do daemon Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-description" datatype="html">
-        <source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target state="needs-review-translation">Atividade de back-end e estado de sincronização do monerod público para esta instância xmr.tx.taxi.</target>
+        <source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target state="translated">Atividade de back-end e estado de sincronização do monerod público para esta instância xmr.tx.taxi.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-checked" datatype="html">
-        <source>Checked</source><target state="needs-review-translation">Verificado</target>
+        <source>Checked</source><target state="translated">Verificado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-service-reachability" datatype="html">
-        <source>Service reachability</source><target state="needs-review-translation">Acessibilidade do serviço</target>
+        <source>Service reachability</source><target state="translated">Acessibilidade do serviço</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-backend" datatype="html">
-        <source>Backend</source><target state="needs-review-translation">Back-end</target>
+        <source>Backend</source><target state="translated">Back-end</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-reachable" datatype="html">
-        <source>reachable</source><target state="needs-review-translation">alcançável</target>
+        <source>reachable</source><target state="translated">alcançável</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">27</context>
@@ -15269,14 +15269,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-unreachable" datatype="html">
-        <source>unreachable</source><target state="needs-review-translation">inacessível</target>
+        <source>unreachable</source><target state="translated">inacessível</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-daemon-details" datatype="html">
-        <source>Daemon details</source><target state="needs-review-translation">Detalhes do daemon</target>
+        <source>Daemon details</source><target state="translated">Detalhes do daemon</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">42</context>
@@ -15290,28 +15290,28 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-height" datatype="html">
-        <source>Height</source><target state="needs-review-translation">Altura</target>
+        <source>Height</source><target state="translated">Altura</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-target-height" datatype="html">
-        <source>Target height</source><target state="needs-review-translation">Altura alvo</target>
+        <source>Target height</source><target state="translated">Altura alvo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-behind" datatype="html">
-        <source>Behind</source><target state="needs-review-translation">Atrás</target>
+        <source>Behind</source><target state="translated">Atrás</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-blocks" datatype="html">
-        <source>blocks</source><target state="needs-review-translation">blocos</target>
+        <source>blocks</source><target state="translated">blocos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">56</context>
@@ -15325,56 +15325,56 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-network" datatype="html">
-        <source>Network</source><target state="needs-review-translation">Rede</target>
+        <source>Network</source><target state="translated">Rede</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-nettype" datatype="html">
-        <source>Nettype</source><target state="needs-review-translation">Tipo de rede</target>
+        <source>Nettype</source><target state="translated">Tipo de rede</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-peers" datatype="html">
-        <source>Peers</source><target state="needs-review-translation">Pares</target>
+        <source>Peers</source><target state="translated">Pares</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-connections" datatype="html">
-        <source>Incoming / outgoing</source><target state="needs-review-translation">Entrada / saída</target>
+        <source>Incoming / outgoing</source><target state="translated">Entrada / saída</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-rpc-clients" datatype="html">
-        <source>RPC clients</source><target state="needs-review-translation">Clientes RPC</target>
+        <source>RPC clients</source><target state="translated">Clientes RPC</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-workload" datatype="html">
-        <source>Workload</source><target state="needs-review-translation">Carga de trabalho</target>
+        <source>Workload</source><target state="translated">Carga de trabalho</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-mempool" datatype="html">
-        <source>Mempool</source><target state="needs-review-translation">Mempool</target>
+        <source>Mempool</source><target state="translated">Mempool</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-txs" datatype="html">
-        <source>txs</source><target state="needs-review-translation">txs</target>
+        <source>txs</source><target state="translated">txs</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">92</context>
@@ -15388,42 +15388,42 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-difficulty" datatype="html">
-        <source>Difficulty</source><target state="needs-review-translation">Dificuldade</target>
+        <source>Difficulty</source><target state="translated">Dificuldade</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-estimated-hashrate" datatype="html">
-        <source>Estimated hashrate</source><target state="needs-review-translation">Taxa de hash estimada</target>
+        <source>Estimated hashrate</source><target state="translated">Hashrate estimado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">103</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-version" datatype="html">
-        <source>Version</source><target state="needs-review-translation">Versão</target>
+        <source>Version</source><target state="translated">Versão</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-uptime" datatype="html">
-        <source>Uptime</source><target state="needs-review-translation">Tempo de atividade</target>
+        <source>Uptime</source><target state="translated">Tempo de atividade</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-started" datatype="html">
-        <source>Started</source><target state="needs-review-translation">Iniciado</target>
+        <source>Started</source><target state="translated">Iniciado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-trusted-rpc" datatype="html">
-        <source>Trusted RPC</source><target state="needs-review-translation">RPC confiável</target>
+        <source>Trusted RPC</source><target state="translated">RPC confiável</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">125</context>
@@ -15437,161 +15437,161 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-database-size" datatype="html">
-        <source>Database size</source><target state="needs-review-translation">Tamanho do banco de dados</target>
+        <source>Database size</source><target state="translated">Tamanho do banco de dados</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-free-space" datatype="html">
-        <source>Free space</source><target state="needs-review-translation">Espaço livre</target>
+        <source>Free space</source><target state="translated">Espaço livre</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">139</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-block-size-limit" datatype="html">
-        <source>Block size limit</source><target state="needs-review-translation">Limite de tamanho de bloco</target>
+        <source>Block size limit</source><target state="translated">Limite de tamanho de bloco</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">143</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-update-available" datatype="html">
-        <source>Update available</source><target state="needs-review-translation">Atualização disponível</target>
+        <source>Update available</source><target state="translated">Atualização disponível</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">147</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-bootstrap" datatype="html">
-        <source>Bootstrap</source><target state="needs-review-translation">Inicialização</target>
+        <source>Bootstrap</source><target state="translated">Inicialização</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">154</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-bootstrap-height" datatype="html">
-        <source>Bootstrap height</source><target state="needs-review-translation">Altura de inicialização</target>
+        <source>Bootstrap height</source><target state="translated">Altura de inicialização</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-bootstrap-daemon" datatype="html">
-        <source>Bootstrap daemon</source><target state="needs-review-translation">Daemon de inicialização</target>
+        <source>Bootstrap daemon</source><target state="translated">Daemon de inicialização</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">161</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-bootstrap-used" datatype="html">
-        <source>Bootstrap used</source><target state="needs-review-translation">Bootstrap usado</target>
+        <source>Bootstrap used</source><target state="translated">Bootstrap usado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-peerlist" datatype="html">
-        <source>Peerlist</source><target state="needs-review-translation">Lista de pares</target>
+        <source>Peerlist</source><target state="translated">Lista de pares</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-white" datatype="html">
-        <source>white</source><target state="needs-review-translation">branco</target>
+        <source>white</source><target state="translated">branco</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">170</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-grey" datatype="html">
-        <source>grey</source><target state="needs-review-translation">cinza</target>
+        <source>grey</source><target state="translated">cinza</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">170</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-check-failed" datatype="html">
-        <source>Daemon check failed</source><target state="needs-review-translation">Falha na verificação do daemon</target>
+        <source>Daemon check failed</source><target state="translated">Falha na verificação do daemon</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">181</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-backend-answered" datatype="html">
-        <source>The backend answered, but monerod did not return</source><target state="needs-review-translation">O backend respondeu, mas o monerod não retornou</target>
+        <source>The backend answered, but monerod did not return</source><target state="translated">O backend respondeu, mas o monerod não retornou</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">182</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-checking" datatype="html">
-        <source>Checking daemon status...</source><target state="needs-review-translation">Verificando o status do daemon...</target>
+        <source>Checking daemon status...</source><target state="translated">Verificando o status do daemon...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
           <context context-type="linenumber">188</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-unknown" datatype="html">
-        <source>unknown</source><target state="needs-review-translation">desconhecido</target>
+        <source>unknown</source><target state="translated">desconhecido</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-not-configured" datatype="html">
-        <source>not configured</source><target state="needs-review-translation">não configurado</target>
+        <source>not configured</source><target state="translated">não configurado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-no" datatype="html">
-        <source>no</source><target state="needs-review-translation">não</target>
+        <source>no</source><target state="translated">não</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-yes" datatype="html">
-        <source>yes</source><target state="needs-review-translation">sim</target>
+        <source>yes</source><target state="translated">sim</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-state-online" datatype="html">
-        <source>monerod reachable</source><target state="needs-review-translation">monerod acessível</target>
+        <source>monerod reachable</source><target state="translated">monerod acessível</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-state-syncing" datatype="html">
-        <source>syncing</source><target state="needs-review-translation">sincronizando</target>
+        <source>syncing</source><target state="translated">sincronizando</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-state-degraded" datatype="html">
-        <source>attention needed</source><target state="needs-review-translation">atenção necessária</target>
+        <source>attention needed</source><target state="translated">atenção necessária</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-state-offline" datatype="html">
-        <source>daemon unreachable</source><target state="needs-review-translation">daemon inacessível</target>
+        <source>daemon unreachable</source><target state="translated">daemon inacessível</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-request-failed" datatype="html">
-        <source>request failed</source><target state="needs-review-translation">solicitação falhou</target>
+        <source>request failed</source><target state="translated">solicitação falhou</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">180</context>
@@ -15602,7 +15602,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr-status-network-request-failed" datatype="html">
-        <source>network request failed</source><target state="needs-review-translation">solicitação de rede falhou</target>
+        <source>network request failed</source><target state="translated">solicitação de rede falhou</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">182</context>
