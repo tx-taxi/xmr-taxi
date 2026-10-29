@@ -93,7 +93,8 @@ export class XmrEntityMetaRoutes {
         }
         const templatePath = locale ? path.join(path.dirname(path.dirname(HTML_PATH)), locale, 'index.html') : HTML_PATH;
         const [template, entity] = await Promise.all([readFile(templatePath, 'utf8').catch(() => readFile(HTML_PATH, 'utf8')), this.entity(kind, id)]);
-        const url = `${ORIGIN}/${kind}/${id}`;
+        // Localized entity pages keep their own URL even while noindex.
+        const url = `${ORIGIN}${locale ? `/${locale}` : ''}/${kind}/${id}`;
         const image = PAGE_CAPTURE.url;
         let html = template.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(entity.title)} | xmr.tx.taxi</title>`);
         html = html.replace(/<link id="canonical"[^>]*>/i, `<link id="canonical" rel="canonical" href="${url}">`);

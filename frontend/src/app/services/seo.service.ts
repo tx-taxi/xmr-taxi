@@ -119,11 +119,16 @@ export class SeoService {
 
   updateCanonical(path) {
     const native = this.nativePage(path);
-    // Translations remain usable but consolidate discovery to the indexable English page.
+    // Locale pages stay excluded from search until their translations are
+    // reviewed, but their canonical must still describe the rendered URL.
     const cleanPath = new URL(path, 'https://' + this.baseDomain).pathname.replace(/^\/(?:ar|bg|bs|ca|cs|da|de|et|el|es|eo|eu|fa|fr|gl|ko|hr|id|it|he|ka|lv|lt|hu|mk|ms|nl|ja|nb|nn|pl|pt|pt-BR|ro|ru|sk|sl|sr|sh|fi|sv|th|tr|uk|vi|zh|hi|ne)(?=\/|$)/, '') || '/';
-    const canonicalUrl = 'https://' + this.baseDomain + (native?.path || cleanPath);
+    const locale = /^\/(ar|ca|cs|da|de|es|fa|fr|hr|ja|ka|ko|it|he|nl|nb|pl|pt|sl|sv|th|tr|uk|fi|vi|hu|mk|zh|ro|ru|hi|ne|lt)(?=\/|$)/.exec(window.location.pathname)?.[1];
+    const pagePath = native?.path || cleanPath;
+    const englishCanonical = 'https://' + this.baseDomain + pagePath;
+    const canonicalUrl = 'https://' + this.baseDomain + (locale ? '/' + locale : '') + pagePath;
     this.canonicalLink?.setAttribute('href', canonicalUrl);
-    this.updateDiscoveryLinks(canonicalUrl);
+    // Markdown discovery is still English-only.
+    this.updateDiscoveryLinks(englishCanonical);
     const pageSchema = document.getElementById('native-page-schema');
     const schemaPage = this.nativePage(path);
     if (pageSchema) {
