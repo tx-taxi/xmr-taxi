@@ -422,17 +422,15 @@
         <note priority="1" from="description">about.managed-by</note>
       </trans-unit>
       <trans-unit id="004b222ff9ef9dd4771b777950ca1d0e4cd4348a" datatype="html">
-        <source>About</source>
-        <target>O stronie</target>
-        <context-group purpose="location">
+        <source>About xmr.tx.taxi</source>
+        <target>O xmr.tx.taxi</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
           <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.about" datatype="html">
-        <source>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
-        <target>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</target>
-        <context-group purpose="location">
+        <source>Learn about xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
+        <target>Poznaj xmr.tx.taxi, eksplorator bloków i mempoola Monero, który pokazuje publiczne dane łańcucha z poszanowaniem prywatności RingCT.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
           <context context-type="linenumber">51</context>
         </context-group>
@@ -2936,9 +2934,8 @@
         <note priority="1" from="description">mining.avg-block-fee-1m</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fee-rates" datatype="html">
-        <source>See Bitcoin feerates visualized over time, including minimum and maximum feerates per block along with feerates at various percentiles.</source>
-        <target>See Monero fee rates visualized over time, including minimum and maximum fee rates per block along with fee rates at various percentiles.</target>
-        <context-group purpose="location">
+        <source>See Monero fee rates visualized over time, including minimum and maximum fee rates per block along with fee rates at various percentiles.</source>
+        <target>Zobacz zmiany stawek opłat Monero w czasie, w tym minimalne i maksymalne stawki na blok oraz stawki dla różnych percentyli.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">74</context>
         </context-group>
@@ -2977,9 +2974,8 @@
         <note priority="1" from="description">mining.block-fees</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees" datatype="html">
-        <source>See the average mining fees earned per Bitcoin block visualized in BTC and USD over time.</source>
-        <target>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</target>
-        <context-group purpose="location">
+        <source>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</source>
+        <target>Zobacz średnie opłaty za wydobycie na blok Monero, przedstawione w XMR i walucie fiat w czasie.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">71</context>
         </context-group>
@@ -3042,9 +3038,8 @@
         <note priority="1" from="description">mining.block-fees-subsidy-subsidy</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees-subsidy" datatype="html">
-        <source>See the mining fees earned per Bitcoin block compared to the Bitcoin block subsidy, visualized in BTC and USD over time.</source>
-        <target>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</target>
-        <context-group purpose="location">
+        <source>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</source>
+        <target>Zobacz opłaty za wydobycie w bloku Monero w porównaniu z dotacją bloku, przedstawione w XMR i USD w czasie.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">80</context>
         </context-group>
@@ -3480,9 +3475,8 @@
         <note priority="1" from="description">mining.block-rewards</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-rewards" datatype="html">
-        <source>See Bitcoin block rewards in BTC and USD visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
-        <target>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</target>
-        <context-group purpose="location">
+        <source>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
+        <target>Zobacz zmiany nagród blokowych Monero w XMR i walucie fiat. Nagrody bloku to łączne środki uzyskane przez górników z dotacji bloku i opłat.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-rewards-graph/block-rewards-graph.component.ts</context>
           <context context-type="linenumber">69</context>
         </context-group>
@@ -3505,9 +3499,8 @@
         <note priority="1" from="description">mining.block-sizes-weights</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-sizes" datatype="html">
-        <source>See Monero block sizes and block weights, both measured in bytes, visualized over time.</source>
-        <target>See Monero block sizes visualized over time.</target>
-        <context-group purpose="location">
+        <source>See Monero block sizes visualized over time.</source>
+        <target>Zobacz zmiany rozmiarów bloków Monero w czasie.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">66</context>
         </context-group>
@@ -5462,9 +5455,8 @@
         <note priority="1" from="description">mining.hashrate</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
-        <source>See hashrate and difficulty for the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> network visualized over time.</source>
-        <target>See Monero hashrate and difficulty<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> visualized over time.</target>
-        <context-group purpose="location">
+        <source>See Monero hashrate and difficulty<x id="PH" equiv-text="''" /> visualized over time.</source>
+        <target>Zobacz zmiany hashrate i trudności Monero <x id="PH" equiv-text="''" /> w czasie.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">79</context>
         </context-group>
@@ -6633,17 +6625,15 @@
         <note priority="1" from="description">price-chart.percent-change</note>
       </trans-unit>
       <trans-unit id="price-chart.title" datatype="html">
-        <source>Bitcoin Price</source>
-        <target>XMR Price</target>
-        <context-group purpose="location">
+        <source>XMR Price</source>
+        <target>Cena XMR</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
-        <source>See the Bitcoin price in USD visualized over time.</source>
-        <target>See the Monero price in USD visualized over time.</target>
-        <context-group purpose="location">
+        <source>See the Monero price in USD visualized over time.</source>
+        <target>Zobacz zmiany ceny Monero w USD w czasie.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">78</context>
         </context-group>
@@ -7528,9 +7518,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.xmr.transaction" datatype="html">
-        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</source>
-        <target>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId"/>. Amounts and recipients stay hidden by RingCT.</target>
-        <context-group purpose="location">
+        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId" />. See public input rings, output keys, transaction extra and protocol metadata.</source>
+        <target>Sprawdź aktualny status transakcji Monero, opłatę, rozmiar, informacje o pierścieniach, obrazy kluczy i potwierdzenia dla identyfikatora <x id="PH" equiv-text="this.txId" />. Zobacz publiczne pierścienie wejść, klucze wyjść, pole extra transakcji i metadane protokołu.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">207</context>
         </context-group>
@@ -11764,6 +11753,1245 @@
         <source>Server-Sent Events</source>
         <target>Zdarzenia wysyłane przez serwer</target>
       </trans-unit>
+
+      <trans-unit id="xmr.about.title" datatype="html">
+        <source>About xmr.tx.taxi</source>
+        <target>O xmr.tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.tagline" datatype="html">
+        <source>The Monero explorer in the tx.taxi family.</source>
+        <target>Eksplorator Monero z rodziny tx.taxi.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.projectLinks" datatype="html">
+        <source>Project links</source>
+        <target>Linki projektu</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.documentation" datatype="html">
+        <source>Monero documentation</source>
+        <target>Dokumentacja Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.contact" datatype="html">
+        <source>Contact the maintainer</source>
+        <target>Kontakt z opiekunem projektu</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.description" datatype="html">
+        <source>xmr.tx.taxi adapts the Mempool Open Source Project interface for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</source>
+        <target>xmr.tx.taxi dostosowuje interfejs <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> do Monero. Pokazuje tylko dane wynikające z łańcucha: wysokość, hashrate, aktywność oczekujących transakcji, poziomy opłat, informacje o pierścieniach i typ RingCT. Kwoty są ukryte przez RingCT, a odbiorcy przez adresy ukryte; w domyślnym widoku pozostają ukryte.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.privacy" datatype="html">
+        <source>Privacy by default</source>
+        <target>Prywatność domyślnie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.privacyDescription" datatype="html">
+        <source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</source>
+        <target>Strony szczegółów transakcji celowo rozmywają wrażliwe pola. Ujawnianie danych przez uczestnika jest ograniczone do sposobów zgodnych z modelem prywatności Monero:</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.recipientChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Recipient checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> — require the recipient's own wallet/view key tooling. Private keys should stay local.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Weryfikacja odbiorcy<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> — wymaga narzędzi portfela lub klucza podglądu odbiorcy. Klucze prywatne powinny pozostać lokalnie.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.proofChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />tx_proof verification<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Weryfikacja tx_proof<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> — podpis tx_proof i adres odbiorcy mogą zostać sprawdzone przez backend, gdy operator skonfiguruje monero-wallet-rpc. Klucze prywatne nie są wysyłane.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.secretChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />tx_secret_key checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Sprawdzanie tx_secret_key<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> — należy wykonywać lokalnie w portfelu; xmr.tx.taxi nie prosi o wysyłanie tego klucza na serwer.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.daemon" datatype="html">
+        <source>Daemon</source>
+        <target>Demon</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.daemonDescription" datatype="html">
+        <source>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> JSON-RPC endpoint.</source>
+        <target>Ta instalacja używa skonfigurowanej puli publicznych węzłów Monero z ograniczonym RPC i uporządkowanymi źródłami zapasowymi. Operatorzy mogą wskazać samodzielnie hostowanej instancji dowolny zgodny punkt JSON-RPC <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.license" datatype="html">
+        <source>License</source>
+        <target>Licencja</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.licenseDescription" datatype="html">
+        <source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source>
+        <target>xmr.tx.taxi przestrzega obowiązków licencyjnych AGPLv3 projektu źródłowego. Mempool Open Source Project stworzył wzorce interfejsu, na których opiera się ten eksplorator.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.openSource" datatype="html">
+        <source>Built on open source</source>
+        <target>Zbudowany na oprogramowaniu open source</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.about.openSourceDescription" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and contact the maintainer for source and license information.</source>
+        <target>Ten eksplorator opiera się na <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. Zobacz <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />informacje o autorach zewnętrznych<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> i skontaktuj się z opiekunem, aby uzyskać informacje o kodzie i licencji.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.fiat.unavailable" datatype="html">
+        <source>Fiat value unavailable</source>
+        <target>Wartość w walucie fiat jest niedostępna</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/amount/amount.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="22074d9b0ef5a18f1569ba121bf689923002ff17" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this block's fee rate</source>
+        <target>Szacowana opłata za transakcję Monero o rozmiarze 2 kB przy stawce tego bloku</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <note priority="1" from="description">Monero historical fee example</note>
+      </trans-unit>
+
+      <trans-unit id="6948786787037977434" datatype="html">
+        <source>Blocks</source>
+        <target>Bloki</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="420763834450076269" datatype="html">
+        <source>Block</source>
+        <target>Blok</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.strip.dashboard" datatype="html">
+        <source>Monero explorer dashboard</source>
+        <target>Panel eksploratora Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.returnHub" datatype="html">
+        <source>Back to tx.taxi</source>
+        <target>Wróć do tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.brand" datatype="html">
+        <source>xmr.tx.taxi dashboard</source>
+        <target>Panel xmr.tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.strip.blockSize" datatype="html">
+        <source>Switch to displaying block sizes</source>
+        <target>Przełącz na wyświetlanie rozmiarów bloków</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.strip.blockFees" datatype="html">
+        <source>Switch to displaying total fees per block</source>
+        <target>Przełącz na wyświetlanie łącznych opłat w bloku</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.strip.newestRight" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source>
+        <target>Wyświetl najnowsze bloki po prawej</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.strip.newestLeft" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source>
+        <target>Wyświetl najnowsze bloki po lewej</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.calculator.waiting" datatype="html">
+        <source> Waiting for price feed... </source>
+        <target>Oczekiwanie na dane o cenie...</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html">
+        <source>difficulty</source>
+        <target>trudność</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.difficulty.toggleRewards" datatype="html">
+        <source>rewards</source>
+        <target>nagrody</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.difficulty.paceHelp" datatype="html">
+        <source>Recent blocks compared with Monero's two-minute target</source>
+        <target>Ostatnie bloki w porównaniu z dwuminutowym celem Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.difficulty.pace" datatype="html">
+        <source>Block pace</source>
+        <target>Tempo bloków</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.difficulty.change" datatype="html">
+        <source>Difficulty Δ</source>
+        <target>Zmiana trudności Δ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.difficulty.title" datatype="html">
+        <source>Difficulty Adjustment</source>
+        <target>Dostosowanie trudności</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.difficulty.rewardsTitle" datatype="html">
+        <source>Reward stats</source>
+        <target>Statystyki nagród</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="71862f6b2c89c8901f90240b219f01844a301dcb" datatype="html">
+        <source>Daemon floor or lowest observed current mempool rate</source>
+        <target>Minimalna stawka demona lub najniższa zaobserwowana aktualna stawka w mempoolu</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (economy)</note>
+      </trans-unit>
+
+      <trans-unit id="77a014215a8ebca1d2cb97afd2d6d0b98f30064d" datatype="html">
+        <source>Derived from lower current Monero mempool fee rates</source>
+        <target>Na podstawie niższych aktualnych stawek opłat w mempoolu Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (low priority)</note>
+      </trans-unit>
+
+      <trans-unit id="9b7f259ef00e0bc210c59220cbe1505594e08510" datatype="html">
+        <source>Derived from mid-range current Monero mempool fee rates</source>
+        <target>Na podstawie średnich aktualnych stawek opłat w mempoolu Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (medium priority)</note>
+      </trans-unit>
+
+      <trans-unit id="841d41ed3f0a7f43195b96dd3f8006706810cd6d" datatype="html">
+        <source>Derived from the highest current Monero projected-block fee rates</source>
+        <target>Na podstawie najwyższych aktualnych stawek opłat w prognozowanym bloku Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Transaction feerate tooltip (high priority)</note>
+      </trans-unit>
+
+      <trans-unit id="b869c9a96b183dcb932213b60d4a26fb4e9fa2db" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this rate</source>
+        <target>Szacowana opłata za transakcję Monero o rozmiarze 2 kB przy tej stawce</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html">
+        <source>Kraken last trade</source>
+        <target>Ostatnia transakcja na Krakenie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.fiat.stale" datatype="html">
+        <source> · stale</source>
+        <target>· nieaktualne</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.fiat.reference" datatype="html">
+        <source>ECB reference rate</source>
+        <target>Kurs referencyjny EBC</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html">
+        <source>ECB reference rate; update unavailable</source>
+        <target>Kurs referencyjny EBC; aktualizacja niedostępna</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="graphs.h1" datatype="html">
+        <source>Monero Network Graphs</source>
+        <target>Wykresy sieci Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/graphs/graphs.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Graphs hidden heading</note>
+      </trans-unit>
+
+      <trans-unit id="xmr.brand.imageAlt" datatype="html">
+        <source>xmr.tx.taxi Monero explorer</source>
+        <target>Eksplorator Monero xmr.tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <target>Panel</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.mining" datatype="html">
+        <source>Mining dashboard</source>
+        <target>Panel wydobycia</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.blocks" datatype="html">
+        <source>Recent blocks</source>
+        <target>Ostatnie bloki</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.graphs" datatype="html">
+        <source>Graphs</source>
+        <target>Wykresy</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.docs" datatype="html">
+        <source>Documentation</source>
+        <target>Dokumentacja</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.nav.about" datatype="html">
+        <source>About xmr.tx.taxi</source>
+        <target>O xmr.tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="2c15418ab123a8ff78ca76d128831cd88893f0da" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this fee rate</source>
+        <target>Szacowana opłata za transakcję Monero o rozmiarze 2 kB przy tej stawce</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+
+      <trans-unit id="xmr.meta.title.mining.dashboard" datatype="html">
+        <source>Mining</source>
+        <target>Wydobycie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.meta.description.mining.dashboard" datatype="html">
+        <source>See Monero mining stats: hashrate, per-block difficulty changes, block rewards, pool attribution, and recent blocks.</source>
+        <target>Statystyki wydobycia Monero: hashrate, zmiany trudności bloków, nagrody, przypisanie do pul i ostatnie bloki.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="8493638f3af7c7eae48091929c7f8461bddbed51" datatype="html">
+        <source>All pools</source>
+        <target>Wszystkie pule</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">mining.all-pools</note>
+      </trans-unit>
+
+      <trans-unit id="2fdc79ab67991fd81012f4fe18de77138da9230f" datatype="html">
+        <source>No observed blocks yet.</source>
+        <target>Nie zaobserwowano jeszcze bloków.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">mining.no-observed-blocks</note>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.0" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Polityka prywatności</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source>
+        <target>Aktualizacja: 16 maja 2026 r.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.2" datatype="html">
+        <source>Audience measurement</source>
+        <target>Pomiar odwiedzin</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.3" datatype="html">
+        <source>tx.taxi uses Cloudflare Web Analytics for page views and performance, and a first-party daily cookie shared across its explorers to count browsers once per UTC day. The daily audience collector stores only a daily identifier, the explorer hostname, and whether there was interaction. It does not receive search text, addresses, transaction IDs, URLs, or IP addresses. Individual daily records expire after 31 days; aggregate counts are retained for 400 days. Do Not Track and Global Privacy Control disable this first-party measurement.</source>
+        <target>tx.taxi korzysta z Cloudflare Web Analytics do pomiaru wyświetleń stron i wydajności oraz z własnego dziennego pliku cookie współdzielonego między eksploratorami, aby zliczać przeglądarki raz na dobę UTC. Dzienny moduł pomiarowy przechowuje tylko identyfikator dzienny, nazwę hosta eksploratora oraz informację o interakcji. Nie otrzymuje treści wyszukiwań, adresów, identyfikatorów transakcji, adresów URL ani IP. Poszczególne rekordy dzienne wygasają po 31 dniach, a zagregowane zliczenia są przechowywane przez 400 dni. Do Not Track i Global Privacy Control wyłączają ten własny pomiar.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.4" datatype="html">
+        <source>Details and opt-out</source>
+        <target>Szczegóły i rezygnacja z pomiaru</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.5" datatype="html">
+        <source>Use Your Own Node When Privacy Matters</source>
+        <target>Używaj własnego węzła, gdy prywatność ma znaczenie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.6" datatype="html">
+        <source>xmr.tx.taxi displays public Monero chain and mempool data from the RPC providers configured by the site operator. For the strongest privacy, run your own Monero node and explorer instead of relying on a public service.</source>
+        <target>xmr.tx.taxi wyświetla publiczne dane łańcucha Monero i mempoola od dostawców RPC skonfigurowanych przez operatora strony. Dla najwyższego poziomu prywatności uruchom własny węzeł Monero i eksplorator zamiast polegać na publicznej usłudze.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.7" datatype="html">
+        <source>What This Explorer Can See</source>
+        <target>Co widzi ten eksplorator</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.8" datatype="html">
+        <source>Regular page and API requests reveal standard web metadata to the operator, including your IP address, user agent, requested URL, and request time. Operators may keep server logs for reliability, abuse prevention, debugging, and capacity planning.</source>
+        <target>Zwykłe żądania strony i API ujawniają operatorowi standardowe metadane internetowe, w tym adres IP, identyfikator przeglądarki, żądany adres URL i czas żądania. Operatorzy mogą przechowywać dzienniki serwera w celu zapewnienia niezawodności, zapobiegania nadużyciom, diagnozowania błędów i planowania zasobów.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.9" datatype="html">
+        <source>What Monero Hides</source>
+        <target>Co ukrywa Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.10" datatype="html">
+        <source>Monero's RingCT and stealth-address design means this site cannot determine transaction recipients or transferred amounts from public chain data. xmr.tx.taxi does not build address histories, wallet histories, account pages, or public spent/unspent output claims.</source>
+        <target>Konstrukcja RingCT i adresów ukrytych Monero sprawia, że strona nie może ustalić odbiorców transakcji ani przesłanych kwot na podstawie publicznych danych łańcucha. xmr.tx.taxi nie tworzy historii adresów, historii portfeli, stron kont ani publicznych informacji o wydanych lub niewydanych wyjściach.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.11" datatype="html">
+        <source>Proof Verification</source>
+        <target>Weryfikacja dowodów</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.12" datatype="html">
+        <source>The tx_proof verification form sends the transaction hash, recipient address, and proof signature to this instance's backend. A tx_proof signature is intended to be shared; private view keys, spend keys, seed phrases, and tx secret keys should not be sent to this server.</source>
+        <target>Formularz weryfikacji tx_proof wysyła hash transakcji, adres odbiorcy i podpis dowodu do backendu tej instancji. Podpis tx_proof jest przeznaczony do udostępniania; prywatnych kluczy podglądu i wydawania, fraz odzyskiwania ani kluczy tajnych transakcji nie należy wysyłać na ten serwer.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.13" datatype="html">
+        <source>Local Preferences</source>
+        <target>Lokalne preferencje</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.14" datatype="html">
+        <source>The frontend may store local preferences such as language, theme, fiat currency, and timezone in your browser. These preferences are used to render the interface and are not needed for chain analysis.</source>
+        <target>Interfejs może przechowywać w przeglądarce lokalne preferencje, takie jak język, motyw, waluta fiat i strefa czasowa. Służą one do wyświetlania interfejsu i nie są potrzebne do analizy łańcucha.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.15" datatype="html">
+        <source>Third Parties</source>
+        <target>Podmioty zewnętrzne</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.16" datatype="html">
+        <source>This instance may call configured upstream services such as a Monero daemon, fiat price provider, or wallet-RPC verifier. Public deployments should document their own logging, analytics, proxy, and retention policies alongside this baseline policy.</source>
+        <target>Ta instancja może korzystać ze skonfigurowanych usług źródłowych, takich jak demon Monero, dostawca cen fiat lub weryfikator wallet-RPC. Publiczne instalacje powinny obok tej podstawowej polityki dokumentować własne zasady dzienników, analityki, proxy i przechowywania danych.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.meta-title" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Polityka prywatności</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.legal.privacy-policy.meta-description" datatype="html">
+        <source>Privacy notes for xmr.tx.taxi, including public Monero data limits, local preferences, server logs, and tx_proof verification behavior.</source>
+        <target>Informacje o prywatności xmr.tx.taxi, ograniczeniach publicznych danych Monero, lokalnych preferencjach, dziennikach serwera i weryfikacji tx_proof.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.searchForm" datatype="html">
+        <source>Chain search</source>
+        <target>Wyszukiwanie w łańcuchu</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.chooseChain" datatype="html">
+        <source>Choose search chain</source>
+        <target>Wybierz łańcuch do wyszukania</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html">
+        <source>Selected explorer</source>
+        <target>Wybrany eksplorator</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.selected" datatype="html">
+        <source>SELECTED</source>
+        <target>WYBRANO</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.automatic" datatype="html">
+        <source>Automatic Routing</source>
+        <target>Automatyczne kierowanie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html">
+        <source>Open tx.taxi in a new tab</source>
+        <target>Otwórz tx.taxi w nowej karcie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.viewHub" datatype="html">
+        <source>View Hub</source>
+        <target>Zobacz centrum</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.routingHint" datatype="html">
+        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></source>
+        <target>Lub przejdź bezpośrednio do <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx.taxi/[wyszukiwana fraza]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source>
+        <target>NATYWNE EKSPLORATORY</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source>
+        <target>Rejestr eksploratorów jest niedostępny</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.thirdParty" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source>
+        <target>EKSPLORATORY ZEWNĘTRZNE</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.open" datatype="html">
+        <source>Open</source>
+        <target>Otwórz</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.opened" datatype="html">
+        <source>Opened</source>
+        <target>Otwarto</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.switch" datatype="html">
+        <source>Switch</source>
+        <target>Przełącz</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source>
+        <target>Ładowanie eksploratorów</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.searchSelected" datatype="html">
+        <source>Search selected chain</source>
+        <target>Przeszukaj wybrany łańcuch</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.moneroAlt" datatype="html">
+        <source>Monero explorer</source>
+        <target>Eksplorator Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.found" datatype="html">
+        <source>Found</source>
+        <target>Znaleziono</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.possible" datatype="html">
+        <source>Possible</source>
+        <target>Możliwe</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.additionalExplorers" datatype="html">
+        <source><x id="name" equiv-text="name" /> additional explorers</source>
+        <target>dodatkowe eksploratory <x id="name" equiv-text="name" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source>
+        <target>Zawołaj taksówkę i wklej tutaj dane.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.suggestions" datatype="html">
+        <source>Monero search suggestions</source>
+        <target>Sugestie wyszukiwania Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.blockHeight" datatype="html">
+        <source>Monero Block Height</source>
+        <target>Wysokość bloku Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html">
+        <source>Monero Block / Transaction</source>
+        <target>Blok / transakcja Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.privateAddress" datatype="html">
+        <source>Monero addresses are private</source>
+        <target>Adresy Monero są prywatne</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html">
+        <source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source>
+        <target>Publiczne dane łańcucha nie pozwalają utworzyć historii adresu. Otwórz transakcję, aby zweryfikować płatność za pomocą jej dowodu lub kluczy.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.title" datatype="html">
+        <source>Swap ticker</source>
+        <target>Notowania wymiany</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.subtitle" datatype="html">
+        <source>Haveno markets and XMR/BTC atomic-swap discovery</source>
+        <target>Rynki Haveno i wyszukiwanie wymian atomowych XMR/BTC</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.network" datatype="html">
+        <source>Network</source>
+        <target>Sieć</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.activePairs" datatype="html">
+        <source>Active pairs</source>
+        <target>Aktywne pary</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.volume" datatype="html">
+        <source>Volume</source>
+        <target>Wolumen</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.tradesSampled" datatype="html">
+        <source>Trades sampled</source>
+        <target>Transakcje w próbce</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.goggles" datatype="html">
+        <source>Swap goggles</source>
+        <target>Filtry wymian</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.atomic" datatype="html">
+        <source>Atomic swaps</source>
+        <target>Wymiany atomowe</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.direction" datatype="html">
+        <source>Direction</source>
+        <target>Kierunek</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.status" datatype="html">
+        <source>Status</source>
+        <target>Status</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.makerDiscovery" datatype="html">
+        <source>Maker discovery</source>
+        <target>Wyszukiwanie oferentów</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.docs" datatype="html">
+        <source>Docs</source>
+        <target>Dokumentacja</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.haveno" datatype="html">
+        <source>Haveno markets</source>
+        <target>Rynki Haveno</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.pair" datatype="html">
+        <source>Pair</source>
+        <target>Para</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.price" datatype="html">
+        <source>Price</source>
+        <target>Cena</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.change" datatype="html">
+        <source>Change</source>
+        <target>Zmiana</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.tableVolume" datatype="html">
+        <source>Volume</source>
+        <target>Wolumen</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.range" datatype="html">
+        <source>Range</source>
+        <target>Zakres</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.noMarkets" datatype="html">
+        <source>No markets match this goggle.</source>
+        <target>Żaden rynek nie pasuje do tego filtra.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.recent" datatype="html">
+        <source>Recent trades</source>
+        <target>Ostatnie transakcje</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.method" datatype="html">
+        <source>Method</source>
+        <target>Metoda</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.time" datatype="html">
+        <source>Time</source>
+        <target>Czas</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.html</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.noUpstreamTrades" datatype="html">
+        <source>No recent trades returned by the upstream market source.</source>
+        <target>Źródło rynku nie zwróciło ostatnich transakcji.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.noFilteredTrades" datatype="html">
+        <source>No recent trades match this goggle.</source>
+        <target>Żadne ostatnie transakcje nie pasują do tego filtra.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.all" datatype="html">
+        <source>All</source>
+        <target>Wszystkie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.crypto" datatype="html">
+        <source>Crypto</source>
+        <target>Kryptowaluty</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.movers" datatype="html">
+        <source>Movers</source>
+        <target>Zmiany cen</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.optionVolume" datatype="html">
+        <source>Volume</source>
+        <target>Wolumen</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.metaTitle" datatype="html">
+        <source>Haveno and atomic swap ticker</source>
+        <target>Notowania Haveno i wymian atomowych</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.metaDescription" datatype="html">
+        <source>Track RetoSwap Haveno XMR markets and XMR/BTC atomic-swap maker discovery.</source>
+        <target>Śledź rynki XMR RetoSwap Haveno i wyszukiwanie oferentów wymian atomowych XMR/BTC.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.unavailable" datatype="html">
+        <source>Swap ticker is unavailable.</source>
+        <target>Notowania wymiany są niedostępne.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.atomicLabel" datatype="html">
+        <source>XMR/BTC atomic swaps</source>
+        <target>Wymiany atomowe XMR/BTC</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.atomicDirection" datatype="html">
+        <source>BTC to XMR makers</source>
+        <target>Oferenci BTC na XMR</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="xmr.swap.atomicNote" datatype="html">
+        <source>Atomic-swap makers advertise through the eigenwallet public registry and libp2p rendezvous discovery instead of a centralized order-book ticker.</source>
+        <target>Oferenci wymian atomowych ogłaszają się za pośrednictwem publicznego rejestru eigenwallet i wyszukiwania rendezvous libp2p zamiast scentralizowanego arkusza zleceń.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/swap-ticker/swap-ticker.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>
