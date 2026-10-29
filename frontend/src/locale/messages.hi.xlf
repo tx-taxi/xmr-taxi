@@ -260,6 +260,7 @@
       </trans-unit>
       <trans-unit id="ngb.progressbar.value" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></source>
+        <target state="translated"><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
           <context context-type="linenumber">41,42</context>
@@ -3726,7 +3727,7 @@
       </trans-unit>
       <trans-unit id="0b47a777f024ab4e3cdf0062acb4d86e9ae1f635" datatype="html">
         <source>Median fee</source>
-        <target>औसत शुल्क</target>
+        <target>मध्य शुल्क</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-preview.component.html</context>
           <context context-type="linenumber">36</context>
@@ -3875,6 +3876,7 @@
       </trans-unit>
       <trans-unit id="1c3e02c3cb8731ce0b6ff66dc6b60e54386f4230" datatype="html">
         <source>Stale Block</source>
+        <target state="translated">पुराना ब्लॉक</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">13</context>
@@ -4015,6 +4017,7 @@
       </trans-unit>
       <trans-unit id="2862af5284f66d4b06bdcf77a5519141723b6989" datatype="html">
         <source>Stale</source>
+        <target state="translated">पुराना</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">239</context>
@@ -4063,6 +4066,7 @@
       </trans-unit>
       <trans-unit id="873d4cb5adceda5fa9e9f1419644a0fa6ac9c17d" datatype="html">
         <source>Winning Block</source>
+        <target state="translated">विजेता ब्लॉक</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">289</context>
@@ -4192,6 +4196,7 @@
       </trans-unit>
       <trans-unit id="6dbc0664d5922cbd6b8bdc24d4c9ac8b990bae24" datatype="html">
         <source>There is a stale block at this height</source>
+        <target state="translated">इस ऊँचाई पर एक पुराना ब्लॉक है</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">372</context>
@@ -4200,6 +4205,7 @@
       </trans-unit>
       <trans-unit id="1535773b0ebd72152246b84f01801104e823be0f" datatype="html">
         <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> stale blocks at this height</source>
+        <target state="translated">इस ऊँचाई पर <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> पुराने ब्लॉक हैं</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">374</context>
