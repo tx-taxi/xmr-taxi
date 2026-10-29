@@ -15609,6 +15609,10 @@
           <context context-type="linenumber">182</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html">
+        <source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source>
+        <target>实时查看 xmr.tx.taxi 后端和 monerod 的运行状况、同步状态、版本、节点连接及存储状态。</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
