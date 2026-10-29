@@ -6083,15 +6083,8 @@
         </context-group>
         <note priority="1" from="description">ord.premine-n-runes</note>
       </trans-unit>
-      <trans-unit id="9319ee1f99786049bc8572abb111be16cdc9a770" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
-          <context context-type="linenumber">19,21</context>
-        </context-group>
-        <note priority="1" from="description">ord.etch-rune</note>
-      </trans-unit>
-      <trans-unit id="10ed70ee6d9d9b753cd59c37cd1fed4a3089f882" datatype="html">
+
+<trans-unit id="10ed70ee6d9d9b753cd59c37cd1fed4a3089f882" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Transfer<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></source>
         <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>स्थानांतरण<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></target>
         <context-group purpose="location">
@@ -6100,19 +6093,8 @@
         </context-group>
         <note priority="1" from="description">ord.transfer-rune</note>
       </trans-unit>
-      <trans-unit id="99264845cdffed75db1a32df6e66febbdf1d99f1" datatype="html">
-        <source>Source inscription</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
-          <context context-type="linenumber">44</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
-          <context context-type="linenumber">104</context>
-        </context-group>
-        <note priority="1" from="description">ord.source-inscription</note>
-      </trans-unit>
-      <trans-unit id="2719dbc7a7e7a691275cebd0b3a0723c4b6e2487" datatype="html">
+
+<trans-unit id="2719dbc7a7e7a691275cebd0b3a0723c4b6e2487" datatype="html">
         <source>Error decoding data</source>
         <target>डेटा डिकोड करने में त्रुटि</target>
         <context-group purpose="location">
@@ -6725,15 +6707,8 @@
         </context-group>
         <note priority="1" from="description">test.tx.max-fee-rate</note>
       </trans-unit>
-      <trans-unit id="b3f9018166b8be3686c3cf58059a9f0ad993115e" datatype="html">
-        <source>Maximum burn amount (sats)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
-          <context context-type="linenumber">23</context>
-        </context-group>
-        <note priority="1" from="description">submitpackage.tx.max-burn-amount</note>
-      </trans-unit>
-      <trans-unit id="b92fb7ca717f99e787cec47dcf1b6f72ba26d685" datatype="html">
+
+<trans-unit id="b92fb7ca717f99e787cec47dcf1b6f72ba26d685" datatype="html">
         <source>Allowed?</source>
         <target>अनुमत?</target>
         <context-group purpose="location">
@@ -7111,15 +7086,8 @@
         </context-group>
         <note priority="1" from="description">simpleproof.verified</note>
       </trans-unit>
-      <trans-unit id="7cbed0a3d916c604f611f73b76c2c4d80e2065c4" datatype="html">
-        <source>Recent Stale Chain Tips</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-        <note priority="1" from="description">page.recent-stale-chain-tips</note>
-      </trans-unit>
-      <trans-unit id="7cbedd89f60daafaf0e56363900d666a4e02ffb1" datatype="html">
+
+<trans-unit id="7cbedd89f60daafaf0e56363900d666a4e02ffb1" datatype="html">
         <source>beta</source>
         <target>बीटा</target>
         <context-group purpose="location">
@@ -7128,23 +7096,9 @@
         </context-group>
         <note priority="1" from="description">beta</note>
       </trans-unit>
-      <trans-unit id="1dfa086c48a00c275983ca44f687965008219f9d" datatype="html">
-        <source>Headers Only</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
-          <context context-type="linenumber">14</context>
-        </context-group>
-        <note priority="1" from="description">chain-tips.headers-only</note>
-      </trans-unit>
-      <trans-unit id="5759ce11e2e959cbcbe7cdf05816f89679d82842" datatype="html">
-        <source>Valid Headers</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-        <note priority="1" from="description">chain-tips.valid-headers</note>
-      </trans-unit>
-      <trans-unit id="4d9d1ba83b190e4f6cd05fc020660977e3e612b1" datatype="html">
+
+
+<trans-unit id="4d9d1ba83b190e4f6cd05fc020660977e3e612b1" datatype="html">
         <source>Valid Fork</source>
         <target>वैध फोर्क</target>
         <context-group purpose="location">
@@ -7171,15 +7125,8 @@
         </context-group>
         <note priority="1" from="description">chain-tips.depth</note>
       </trans-unit>
-      <trans-unit id="3181f08827514236ffd311786fe8ae62f0b361ab" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w"/>Stale<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
-          <context context-type="linenumber">26,27</context>
-        </context-group>
-        <note priority="1" from="description">chain-tips.stale-block</note>
-      </trans-unit>
-      <trans-unit id="07d1fa61f7c289626ee8abdaa9a4f45157a35460" datatype="html">
+
+<trans-unit id="07d1fa61f7c289626ee8abdaa9a4f45157a35460" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-b"/>Winning<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-b"/>विजेता<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
@@ -7188,29 +7135,10 @@
         </context-group>
         <note priority="1" from="description">chain-tips.winning-block</note>
       </trans-unit>
-      <trans-unit id="26a65abd1f3dedb8b5777f6cb01262096549e94d" datatype="html">
-        <source>This node hasn't seen any stale blocks yet!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
-          <context context-type="linenumber">120</context>
-        </context-group>
-        <note priority="1" from="description">chain-tips.no-stale-blocks-yet</note>
-      </trans-unit>
-      <trans-unit id="page.stale-chain-tips" datatype="html">
-        <source>Stale Chain Tips</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
-          <context context-type="linenumber">62</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="meta.description.stale-chain-tips" datatype="html">
-        <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
-          <context context-type="linenumber">63</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="statistics.memory-by-vBytes" datatype="html">
+
+
+
+<trans-unit id="statistics.memory-by-vBytes" datatype="html">
         <source>Mempool by bytes (ɱ/B)</source>
         <target state="translated">बाइट के अनुसार मेमपूल (ɱ/B)</target>
         <context-group purpose="location">
@@ -7767,15 +7695,8 @@
         </context-group>
         <note priority="1" from="description">transaction.fetch-prevout-data</note>
       </trans-unit>
-      <trans-unit id="30672d37c5c8491965bb7b78ad8baba58accec06" datatype="html">
-        <source>Error decoding transaction, reason: <x id="INTERPOLATION" equiv-text="{{ error }}"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
-          <context context-type="linenumber">16,18</context>
-        </context-group>
-        <note priority="1" from="description">transaction.error-decoding</note>
-      </trans-unit>
-      <trans-unit id="f002a69c46c2ba1a79530d6cbef88241b9a0632a" datatype="html">
+
+<trans-unit id="f002a69c46c2ba1a79530d6cbef88241b9a0632a" datatype="html">
         <source>Preview Coinbase</source>
         <target>कॉइनबेस पूर्वावलोकन</target>
         <context-group purpose="location">
@@ -7795,16 +7716,8 @@
         <note priority="1" from="description">This transaction is stored locally in your browser.</note>
         <note priority="1" from="meaning">transaction.local-tx</note>
       </trans-unit>
-      <trans-unit id="35117e03fda0fd4c6ecd1ff5737f883eec337a5e" datatype="html">
-        <source> Redirecting to transaction page... </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
-          <context context-type="linenumber">53,55</context>
-        </context-group>
-        <note priority="1" from="description">Redirecting to transaction page...</note>
-        <note priority="1" from="meaning">transaction.redirecting</note>
-      </trans-unit>
-      <trans-unit id="db03c262a5396dc95104e2e57d9911bf75c9c09e" datatype="html">
+
+<trans-unit id="db03c262a5396dc95104e2e57d9911bf75c9c09e" datatype="html">
         <source>Transaction cannot be broadcasted because it's missing signature(s)</source>
         <target>लेन-देन प्रसारित नहीं किया जा सकता क्योंकि इसमें हस्ताक्षर गायब हैं</target>
         <context-group purpose="location">
@@ -8059,15 +7972,8 @@
         </context-group>
         <note priority="1" from="description">transactions-list.peg-in</note>
       </trans-unit>
-      <trans-unit id="81f138da4f955badade9fb60e0e2248627fc647f" datatype="html">
-        <source>Inscription</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
-          <context context-type="linenumber">123</context>
-        </context-group>
-        <note priority="1" from="description">transaction.inscription-tag</note>
-      </trans-unit>
-      <trans-unit id="23f4a0693bc0ad8dbdccfc0b04238edfaf846bc5" datatype="html">
+
+<trans-unit id="23f4a0693bc0ad8dbdccfc0b04238edfaf846bc5" datatype="html">
         <source>ScriptSig (ASM)</source>
         <target>स्क्रिप्टसिग (एएसएम)</target>
         <context-group purpose="location">
@@ -8619,18 +8525,8 @@
           <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="meta.description.bitcoin.wallet" datatype="html">
-        <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> wallet <x id="INTERPOLATION" equiv-text="walletName"/>.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
-          <context context-type="linenumber">151</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/wallet/wallet.component.ts</context>
-          <context context-type="linenumber">71</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="27e45993fffde56413f767f3cc659331a4fdfa4e" datatype="html">
+
+<trans-unit id="27e45993fffde56413f767f3cc659331a4fdfa4e" datatype="html">
         <source>Error loading wallet data.</source>
         <target>वॉलेट डेटा लोड करने में त्रुटि।</target>
         <context-group purpose="location">
