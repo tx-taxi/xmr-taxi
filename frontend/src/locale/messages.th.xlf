@@ -259,7 +259,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.progressbar.value" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="barConfig);  pu" /></source>
+        <source><x id="INTERPOLATION" equiv-text="barConfig);  pu" /></source><target><x id="INTERPOLATION" equiv-text="barConfig);  pu" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
           <context context-type="linenumber">41,42</context>
@@ -15298,6 +15298,11 @@
           <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
-      </body>
+        <trans-unit id="xmr.legal.trademark-policy.2" datatype="html"><source>xmr.tx.taxi</source><target>xmr.tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html"><source>Coinbase</source><target>Coinbase</target></trans-unit>
+      <trans-unit id="xmr.footer.moneropedia" datatype="html"><source>Moneropedia</source><target>Moneropedia</target></trans-unit>
+      <trans-unit id="xmr.footer.telegram" datatype="html"><source>Telegram</source><target>Telegram</target></trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html"><source>Mempool</source><target>Mempool</target></trans-unit>
+    </body>
   </file>
 </xliff>
