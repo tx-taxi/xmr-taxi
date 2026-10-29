@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="ngb.carousel.slide-number" datatype="html">
         <source> Slide <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli" /> of <x id="INTERPOLATION_1" equiv-text="EventSource = N" /> </source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"> สไลด์ <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli" /> จาก <x id="INTERPOLATION_1" equiv-text="EventSource = N" /> </target><context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
           <context context-type="linenumber">131,135</context>
         </context-group>
@@ -6716,9 +6716,8 @@
         <note priority="1" from="description">show-less</note>
       </trans-unit>
       <trans-unit id="ea7c261363dc5f6134b7bacba2a1ef97f4ff7859" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ x }}" /> remaining</source>
-        <target>คงเหลือ <x id="INTERPOLATION" equiv-text="{{ x }}" /></target>
-        <context-group purpose="location">
+        <source><x id="INTERPOLATION" equiv-text="remaining&lt;/ng-template&gt;" /> remaining</source>
+        <target state="needs-review-translation">เหลือ <x id="INTERPOLATION" equiv-text="remaining&lt;/ng-template&gt;" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/rbf-timeline/rbf-timeline.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
@@ -7224,8 +7223,7 @@
       </trans-unit>
       <trans-unit id="4e738ef3d2b4878f17f43002204f7b31aabb8e87" datatype="html">
         <source>ETA</source>
-        <target>ETA</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">เวลาถึงโดยประมาณ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">68</context>
         </context-group>
@@ -7347,9 +7345,8 @@
         <note priority="1" from="description">accelerator.show-more-details</note>
       </trans-unit>
       <trans-unit id="xmr.transaction.browser-title" datatype="html">
-        <source>Transaction: <x id="INTERPOLATION" equiv-text="this.txId" /></source>
-        <target>ธุรกรรม: <x id="INTERPOLATION" equiv-text="this.txId" /></target>
-        <context-group purpose="location">
+        <source>Transaction: <x id="INTERPOLATION" equiv-text="shortTxId" /></source>
+        <target state="needs-review-translation">ธุรกรรม: <x id="INTERPOLATION" equiv-text="shortTxId" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.ts</context>
           <context context-type="linenumber">446</context>
         </context-group>
@@ -7363,17 +7360,15 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.xmr.transaction" datatype="html">
-        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId" />. Amounts and recipients stay hidden by RingCT.</source>
-        <target>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId" />. Amounts and recipients stay hidden by RingCT.</target>
-        <context-group purpose="location">
+        <source>Get real-time Monero transaction status, fee, size, ring information, key images, and confirmations for txid <x id="PH" equiv-text="this.txId" />. See public input rings, output keys, transaction extra and protocol metadata.</source>
+        <target state="needs-review-translation">ดูสถานะธุรกรรม Monero แบบเรียลไทม์ ค่าธรรมเนียม ขนาด ข้อมูลวงแหวน key image และการยืนยันสำหรับ txid <x id="PH" equiv-text="this.txId" /> ดูวงแหวนอินพุต คีย์เอาต์พุต ข้อมูลเพิ่มเติมของธุรกรรมและข้อมูลโปรโตคอลสาธารณะ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
           <context context-type="linenumber">207</context>
         </context-group>
       </trans-unit>
       <trans-unit id="transaction.blob" datatype="html">
         <source>Transaction blob</source>
-        <target>Transaction blob</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ข้อมูลธุรกรรมดิบ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">189</context>
         </context-group>
@@ -7867,8 +7862,7 @@
       </trans-unit>
       <trans-unit id="7d745f2569c4ddc2992529f00ed991e36dada39a" datatype="html">
         <source>(Newly Generated Coins)</source>
-        <target>(Newly Generated Coins)</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">(เหรียญที่สร้างใหม่)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">90</context>
         </context-group>
@@ -10996,7 +10990,7 @@
       </trans-unit>
       <trans-unit id="52a5264f8dcf69b24e496d0a37fbcdd688c54353" datatype="html">
         <source>Testnet3 is deprecated, and will soon be replaced by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;" />Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Testnet3 เลิกใช้งานแล้ว และจะถูกแทนที่ด้วย <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;" />Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> ในไม่ช้า</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/testnet-alert/testnet-alert.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
@@ -11294,24 +11288,21 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.ring16" datatype="html">
         <source>Standard ring (16)</source>
-        <target>Standard ring (16)</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">วงแหวนมาตรฐาน (16)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.goggle.view-tags" datatype="html">
         <source>View tags</source>
-        <target>View tags</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">View tag</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.goggle.rct6" datatype="html">
         <source>RCT v6 (latest)</source>
-        <target>RCT v6 (latest)</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">RCT v6 (ล่าสุด)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">56</context>
         </context-group>
@@ -11409,8 +11400,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.group-public-signals" datatype="html">
         <source>Monero public signals</source>
-        <target>Monero public signals</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">สัญญาณสาธารณะ Monero</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">98</context>
         </context-group>
@@ -13070,6 +13060,2242 @@
         <target state="needs-review-translation">คีย์สำหรับดู (view key)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.title" datatype="html">
+        <source>Transaction activity</source>
+        <target state="needs-review-translation">กิจกรรมธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.description" datatype="html">
+        <source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source>
+        <target state="needs-review-translation">ธุรกรรม Monero ที่ยืนยันแล้ว นับจากทุกบล็อกตั้งแต่บล็อกปฐมกาล ไม่รวมธุรกรรมรางวัลผู้ขุด ทุกช่วงเวลาใช้ UTC</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.today" datatype="html">
+        <source>Today · so far</source>
+        <target state="needs-review-translation">วันนี้ · จนถึงขณะนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.month" datatype="html">
+        <source>This month · so far</source>
+        <target state="needs-review-translation">เดือนนี้ · จนถึงขณะนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.year" datatype="html">
+        <source>This year · so far</source>
+        <target state="needs-review-translation">ปีนี้ · จนถึงขณะนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.genesis" datatype="html">
+        <source>Since genesis</source>
+        <target state="needs-review-translation">ตั้งแต่บล็อกปฐมกาล</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.countPer" datatype="html">
+        <source>Count transactions per</source>
+        <target state="needs-review-translation">นับธุรกรรมต่อ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.dateRange" datatype="html">
+        <source>Date range</source>
+        <target state="needs-review-translation">ช่วงวันที่</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.loading" datatype="html">
+        <source>Loading transaction history…</source>
+        <target state="needs-review-translation">กำลังโหลดประวัติธุรกรรม…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.error" datatype="html">
+        <source>Transaction history could not be loaded.</source>
+        <target state="needs-review-translation">ไม่สามารถโหลดประวัติธุรกรรมได้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.retry" datatype="html">
+        <source>Retry</source>
+        <target state="needs-review-translation">ลองอีกครั้ง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.chartLabel" datatype="html">
+        <source>Monero transaction counts over time; exact counts are available in the table below</source>
+        <target state="needs-review-translation">จำนวนธุรกรรม Monero ตามเวลา ดูจำนวนที่แน่นอนได้ในตารางด้านล่าง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.totalNote" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}" /> transactions in the displayed periods. Faded bars mark partial periods.</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}" /> ธุรกรรมในช่วงเวลาที่แสดง แท่งสีจางหมายถึงช่วงเวลาที่ยังไม่ครบ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.indexedThrough" datatype="html">
+        <source>Indexed through block <x id="INTERPOLATION" equiv-text="{{ data.height | number }}" /> · <x id="INTERPOLATION_1" equiv-text="{{ data.indexedThrough * 1000 | date:'yyyy-MM-dd HH:mm':'UTC' }}" /> UTC</source>
+        <target state="needs-review-translation">จัดทำดัชนีถึงบล็อก <x id="INTERPOLATION" equiv-text="{{ data.height | number }}" /> · <x id="INTERPOLATION_1" equiv-text="{{ data.indexedThrough * 1000 | date:'yyyy-MM-dd HH:mm':'UTC' }}" /> UTC</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.stale" datatype="html">
+        <source> · Refresh delayed; showing the last indexed data</source>
+        <target state="needs-review-translation"> · การรีเฟรชล่าช้า กำลังแสดงข้อมูลล่าสุดที่จัดทำดัชนี</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.counts" datatype="html">
+        <source>Transaction counts</source>
+        <target state="needs-review-translation">จำนวนธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.download" datatype="html">
+        <source>Download CSV</source>
+        <target state="needs-review-translation">ดาวน์โหลด CSV</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.period" datatype="html">
+        <source>Period (UTC)</source>
+        <target state="needs-review-translation">ช่วงเวลา (UTC)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.transactions" datatype="html">
+        <source>Transactions</source>
+        <target state="needs-review-translation">ธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.blocks" datatype="html">
+        <source>Blocks</source>
+        <target state="needs-review-translation">บล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.partial" datatype="html">
+        <source>Partial</source>
+        <target state="needs-review-translation">ยังไม่ครบ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.showMore" datatype="html">
+        <source>Show more periods</source>
+        <target state="needs-review-translation">แสดงช่วงเวลาเพิ่มเติม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.hour" datatype="html">
+        <source>Hour</source>
+        <target state="needs-review-translation">ชั่วโมง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.day" datatype="html">
+        <source>Day</source>
+        <target state="needs-review-translation">วัน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.intervalMonth" datatype="html">
+        <source>Month</source>
+        <target state="needs-review-translation">เดือน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.intervalYear" datatype="html">
+        <source>Year</source>
+        <target state="needs-review-translation">ปี</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.allTime" datatype="html">
+        <source>All time</source>
+        <target state="needs-review-translation">ตลอดเวลา</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.metaTitle" datatype="html">
+        <source>Monero transaction activity</source>
+        <target state="needs-review-translation">กิจกรรมธุรกรรม Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.metaDescription" datatype="html">
+        <source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source>
+        <target state="needs-review-translation">สำรวจจำนวนธุรกรรม Monero รายชั่วโมง วัน เดือน และปี ตั้งแต่บล็อกปฐมกาลถึงบล็อกล่าสุดที่จัดทำดัชนี</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.partialPeriod" datatype="html">
+        <source> · Partial period</source>
+        <target state="needs-review-translation"> · ช่วงเวลาที่ยังไม่ครบ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.tooltipTransactions" datatype="html">
+        <source><x id="count" equiv-text="row.transactions.toLocaleString()" /> transactions</source>
+        <target state="needs-review-translation"><x id="count" equiv-text="row.transactions.toLocaleString()" /> ธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.tooltipBlocks" datatype="html">
+        <source><x id="count" equiv-text="row.blocks.toLocaleString()" /> blocks</source>
+        <target state="needs-review-translation"><x id="count" equiv-text="row.blocks.toLocaleString()" /> บล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html">
+        <source>Unavailable for pruned data</source>
+        <target state="needs-review-translation">ไม่พร้อมใช้งานสำหรับข้อมูลที่ตัดทอน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html">
+        <source>Pruned data size</source>
+        <target state="needs-review-translation">ขนาดข้อมูลที่ตัดทอน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html">
+        <source>Serialized size</source>
+        <target state="needs-review-translation">ขนาดข้อมูลที่จัดลำดับ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html">
+        <source>Unlock time</source>
+        <target state="needs-review-translation">เวลาปลดล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html">
+        <source>Decoded transaction</source>
+        <target state="needs-review-translation">ธุรกรรมที่ถอดรหัสแล้ว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html">
+        <source>Transaction extra</source>
+        <target state="needs-review-translation">ข้อมูลเพิ่มเติมของธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html">
+        <source>Raw tx_extra</source>
+        <target state="needs-review-translation">tx_extra ดิบ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html">
+        <source>Empty</source>
+        <target state="needs-review-translation">ว่าง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source>
+        <target state="needs-review-translation">ไม่รู้จักบางช่องข้อมูลเพิ่มเติม ไบต์ดิบทั้งหมดแสดงอยู่ด้านบน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html">
+        <source>Payment verification</source>
+        <target state="needs-review-translation">ตรวจสอบการชำระเงิน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html">
+        <source>Monero payment verification mode</source>
+        <target state="needs-review-translation">โหมดตรวจสอบการชำระเงิน Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html">
+        <source>Received</source>
+        <target state="needs-review-translation">ได้รับ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-help" datatype="html">
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source>
+        <target state="needs-review-translation"> การตรวจสอบ tx_proof ใช้ wallet RPC ของแบ็กเอนด์เมื่อกำหนดค่าไว้ ส่วน private view key และ tx_secret_key ตรวจสอบในเบราว์เซอร์นี้และไม่ส่งไปยัง xmr.tx.taxi </target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html">
+        <source>Recipient address</source>
+        <target state="needs-review-translation">ที่อยู่ผู้รับ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html">
+        <source>Message</source>
+        <target state="needs-review-translation">ข้อความ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html">
+        <source>tx_proof signature</source>
+        <target state="needs-review-translation">ลายเซ็น tx_proof</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html">
+        <source>Verifying...</source>
+        <target state="needs-review-translation">กำลังตรวจสอบ...</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html">
+        <source>Verify proof</source>
+        <target state="needs-review-translation">ตรวจสอบหลักฐาน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html">
+        <source>Proof verified</source>
+        <target state="needs-review-translation">ตรวจสอบหลักฐานแล้ว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.confirmations" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}" /> confirmations</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}" /> การยืนยัน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html">
+        <source>In mempool</source>
+        <target state="needs-review-translation">อยู่ใน mempool</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html">
+        <source>Scanning...</source>
+        <target state="needs-review-translation">กำลังสแกน...</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html">
+        <source>Scan this tx</source>
+        <target state="needs-review-translation">สแกนธุรกรรมนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html">
+        <source>Checking...</source>
+        <target state="needs-review-translation">กำลังตรวจสอบ...</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html">
+        <source>Check key</source>
+        <target state="needs-review-translation">ตรวจสอบคีย์</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html">
+        <source>Payment found</source>
+        <target state="needs-review-translation">พบการชำระเงิน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.atomic-amount" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}" /> atomic units </source>
+        <target state="needs-review-translation"> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}" /> หน่วยอะตอม </target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">318,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
+        <source>Address and tx_proof signature are required.</source>
+        <target state="needs-review-translation">ต้องระบุที่อยู่และลายเซ็น tx_proof</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html">
+        <source>Enter a valid-looking Monero mainnet address.</source>
+        <target state="needs-review-translation">ป้อนที่อยู่ Monero mainnet ที่มีรูปแบบถูกต้อง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">502</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">535</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html">
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source>
+        <target state="needs-review-translation">ป้อนลายเซ็น tx_proof ที่สร้างโดยกระเป๋าเงิน Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofMessageLength" datatype="html">
+        <source>Proof messages must be <x id="PH" equiv-text="this.xmrProofMessageMaxLength" /> characters or less.</source>
+        <target state="needs-review-translation">ข้อความหลักฐานต้องมีความยาวไม่เกิน <x id="PH" equiv-text="this.xmrProofMessageMaxLength" /> ตัวอักษร</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">459</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
+        <source>The proof did not verify for this transaction and address.</source>
+        <target state="needs-review-translation">ไม่สามารถยืนยันหลักฐานสำหรับธุรกรรมและที่อยู่นี้ได้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
+        <source>Unable to verify proof.</source>
+        <target state="needs-review-translation">ไม่สามารถตรวจสอบหลักฐานได้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
+        <source>Address and private view key are required.</source>
+        <target state="needs-review-translation">ต้องระบุที่อยู่และ private view key</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
+        <source>Load a transaction before running local verification.</source>
+        <target state="needs-review-translation">โหลดธุรกรรมก่อนตรวจสอบบนเครื่อง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">498</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html">
+        <source>Enter a 64-character hexadecimal private view key.</source>
+        <target state="needs-review-translation">ป้อน private view key เลขฐานสิบหก 64 ตัวอักษร</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
+        <source>Address and tx_secret_key are required.</source>
+        <target state="needs-review-translation">ต้องระบุที่อยู่และ tx_secret_key</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html">
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source>
+        <target state="needs-review-translation">ป้อน tx_secret_key เลขฐานสิบหกจากกระเป๋าเงินของผู้ส่ง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
+        <source>Unable to verify this transaction locally.</source>
+        <target state="needs-review-translation">ไม่สามารถตรวจสอบธุรกรรมนี้บนเครื่องได้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">569</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.inputs" datatype="html">
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}" />)</source>
+        <target state="needs-review-translation">อินพุต (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}" />)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}" /></source>
+        <target state="needs-review-translation">วงแหวน <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html">
+        <source>Input type</source>
+        <target state="needs-review-translation">ประเภทอินพุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html">
+        <source>Ring size</source>
+        <target state="needs-review-translation">ขนาดวงแหวน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
+        <source>Relative ring offsets</source>
+        <target state="needs-review-translation">ออฟเซ็ตสัมพัทธ์ของวงแหวน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html">
+        <source>Ring members</source>
+        <target state="needs-review-translation">สมาชิกวงแหวน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-index" datatype="html">
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}" /></source>
+        <target state="needs-review-translation">เอาต์พุต #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.block-height" datatype="html">
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}" /></source>
+        <target state="needs-review-translation">บล็อก <x id="INTERPOLATION" equiv-text="{{ member.height | number }}" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.blocks-earlier" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }" /> blocks earlier</source>
+        <target state="needs-review-translation">ก่อนหน้า <x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }" /> บล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html">
+        <source>Output key</source>
+        <target state="needs-review-translation">คีย์เอาต์พุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html">
+        <source>Source transaction temporarily unavailable.</source>
+        <target state="needs-review-translation">ธุรกรรมต้นทางไม่พร้อมใช้งานชั่วคราว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html">
+        <source>This legacy input has no decoys.</source>
+        <target state="needs-review-translation">อินพุตรุ่นเก่านี้ไม่มีตัวลวง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html">
+        <source>Ring members include decoys; the actual spent output is not identified.</source>
+        <target state="needs-review-translation">สมาชิกวงแหวนมีตัวลวงรวมอยู่ด้วย จึงไม่ระบุเอาต์พุตที่ถูกใช้จริง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
+        <source>Some ring-member details were not resolved in this response.</source>
+        <target state="needs-review-translation">ไม่สามารถดึงรายละเอียดสมาชิกวงแหวนบางรายการจากการตอบกลับนี้ได้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.outputs" datatype="html">
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}" />)</source>
+        <target state="needs-review-translation">เอาต์พุต (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}" />)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html">
+        <source>RingCT output</source>
+        <target state="needs-review-translation">เอาต์พุต RingCT</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html">
+        <source>recipient hidden</source>
+        <target state="needs-review-translation">ซ่อนผู้รับ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html">
+        <source>Output type</source>
+        <target state="needs-review-translation">ประเภทเอาต์พุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html">
+        <source>Amount</source>
+        <target state="needs-review-translation">จำนวน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html">
+        <source>Hidden by RingCT</source>
+        <target state="needs-review-translation">ซ่อนโดย RingCT</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html">
+        <source>Recipient</source>
+        <target state="needs-review-translation">ผู้รับ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html">
+        <source>Hidden by stealth addressing</source>
+        <target state="needs-review-translation">ซ่อนด้วยที่อยู่แบบ stealth</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html">
+        <source>Global output index</source>
+        <target state="needs-review-translation">ดัชนีเอาต์พุตรวม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html">
+        <source>Amount commitment</source>
+        <target state="needs-review-translation">Commitment ของจำนวนเงิน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html">
+        <source>atomic units</source>
+        <target state="needs-review-translation">หน่วยอะตอม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html">
+        <source>Amount hidden</source>
+        <target state="needs-review-translation">ซ่อนจำนวนเงิน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html">
+        <source>RingCT input</source>
+        <target state="needs-review-translation">อินพุต RingCT</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
+        <source>Legacy ring input</source>
+        <target state="needs-review-translation">อินพุตวงแหวนรุ่นเก่า</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html">
+        <source>Input</source>
+        <target state="needs-review-translation">อินพุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html">
+        <source>Stealth output</source>
+        <target state="needs-review-translation">เอาต์พุตแบบ stealth</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html">
+        <source>Fee</source>
+        <target state="needs-review-translation">ค่าธรรมเนียม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html">
+        <source>Output</source>
+        <target state="needs-review-translation">เอาต์พุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()" /></source>
+        <target state="needs-review-translation">เอาต์พุตรวม <x id="index" equiv-text="member.global_index.toLocaleString()" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-height" datatype="html">
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()" /></source>
+        <target state="needs-review-translation">ความสูง <x id="height" equiv-text="member.height.toLocaleString()" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-blocks-before-spend" datatype="html">
+        <source><x id="count" equiv-text="member.age_blocks.toLocaleString()" /> blocks before spend</source>
+        <target state="needs-review-translation"><x id="count" equiv-text="member.age_blocks.toLocaleString()" /> บล็อกก่อนใช้จ่าย</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html">
+        <source>locked</source>
+        <target state="needs-review-translation">ล็อกแล้ว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
+        <source>Transaction amount hidden by RingCT</source>
+        <target state="needs-review-translation">จำนวนเงินของธุรกรรมถูกซ่อนโดย RingCT</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html">
+        <source>Change amount denomination</source>
+        <target state="needs-review-translation">เปลี่ยนหน่วยแสดงจำนวนเงิน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html">
+        <source>Private view key</source>
+        <target state="needs-review-translation">คีย์สำหรับดูส่วนตัว (private view key)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html">
+        <source>Key image</source>
+        <target state="needs-review-translation">Key image ของอินพุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html">
+        <source>View tag</source>
+        <target state="needs-review-translation">View tag ของเอาต์พุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.heading" datatype="html">
+        <source>Documentation</source>
+        <target state="needs-review-translation">เอกสาร</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html">
+        <source>Documentation sections</source>
+        <target state="needs-review-translation">ส่วนต่าง ๆ ของเอกสาร</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html">
+        <source>On this page</source>
+        <target state="needs-review-translation">ในหน้านี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html">
+        <source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source>
+        <target state="needs-review-translation">xmr.tx.taxi แสดงข้อมูลโหนดและบล็อกเชนสาธารณะ Monero จงใจเก็บจำนวนเงิน ผู้รับ และประวัติที่อยู่เป็นส่วนตัว ดังนั้นตัวสำรวจนี้จึงระบุข้อจำกัดเหล่านั้นแทนการคาดเดา</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html">
+        <source>What is xmr.tx.taxi?</source>
+        <target state="needs-review-translation">xmr.tx.taxi คืออะไร?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.whatDescription" datatype="html">
+        <source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source>
+        <target state="needs-review-translation">ตัวสำรวจบล็อกและธุรกรรมที่รอดำเนินการของ <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> ซึ่งปรับมุมมองตัวสำรวจ mempool ที่คุ้นเคยให้ใช้กับข้อมูลที่โหนด Monero พิสูจน์ได้แบบสาธารณะ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html">
+        <source>What is a mempool?</source>
+        <target state="needs-review-translation">Mempool คืออะไร?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolDescription" datatype="html">
+        <source>A node-local set of valid transactions observed but not yet included in a block. There is no single global mempool: the site shows the configured daemon’s <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> response when last polled.</source>
+        <target state="needs-review-translation">ชุดธุรกรรมที่ถูกต้องซึ่งโหนดพบแล้วแต่ยังไม่รวมในบล็อก ไม่มี mempool ส่วนกลางเพียงชุดเดียว เว็บไซต์จะแสดงผลตอบกลับ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> จากเดมอนที่กำหนดค่าไว้ในการตรวจสอบครั้งล่าสุด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html">
+        <source>Why are amounts hidden?</source>
+        <target state="needs-review-translation">เหตุใดจึงซ่อนจำนวนเงิน?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html">
+        <source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source>
+        <target state="needs-review-translation">RingCT ซ่อนจำนวนเงินของเอาต์พุตด้วย commitment ส่วนที่อยู่แบบ stealth ซ่อนผู้รับไว้หลังเอาต์พุตแบบใช้ครั้งเดียว ข้อมูลสาธารณะเปิดเผยโครงสร้างธุรกรรม ค่าธรรมเนียม การรวมในบล็อก key image และการอ้างอิงสมาชิกวงแหวน แต่ไม่สามารถคำนวณจำนวนเงินหรือผู้รับได้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html">
+        <source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source>
+        <target state="needs-review-translation">หลักฐานธุรกรรมและการสแกนกระเป๋าเงินเป็นการตรวจสอบโดยผู้มีส่วนร่วม ไม่ได้ทำให้ที่อยู่สาธารณะมีประวัติสาธารณะ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html">
+        <source>Why is there no public address history?</source>
+        <target state="needs-review-translation">เหตุใดจึงไม่มีประวัติที่อยู่สาธารณะ?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html">
+        <source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source>
+        <target state="needs-review-translation">ที่อยู่ Monero ไม่ใช่บัญชีบนเชนที่มีเอาต์พุตปรากฏ กระเป๋าเงินใช้ view key เพื่อตรวจหาเอาต์พุตแบบใช้ครั้งเดียวของตน ตัวสำรวจไม่ได้อ้างยอดบัญชี ชุด UTXO หรือประวัติธุรกรรมของที่อยู่</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html">
+        <source>How do Monero fees work?</source>
+        <target state="needs-review-translation">ค่าธรรมเนียม Monero ทำงานอย่างไร?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html">
+        <source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source>
+        <target state="needs-review-translation">ค่าธรรมเนียมสาธารณะแสดงเป็นหน่วยอะตอมต่อไบต์ เดมอนประเมินอัตราความสำคัญแบบช้า ปกติ เร็ว และเร็วที่สุด กระเป๋าเงินนำอัตราที่เลือกไปคำนวณตามน้ำหนักธุรกรรมและการปรับหน่วยค่าธรรมเนียม บล็อกคาดการณ์สรุปค่าธรรมเนียมและน้ำหนักของธุรกรรมรอที่พบ และไม่รับประกันการรวมในบล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html">
+        <source>What does pending or confirmed mean?</source>
+        <target state="needs-review-translation">รอดำเนินการหรือยืนยันแล้วหมายถึงอะไร?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmationDescription" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Pending<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> means this daemon currently observes the transaction in its pool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Confirmed<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> means a daemon returned it as included at a block height; confirmations grow as newer blocks arrive. Absence from one node’s pool is not proof a transaction never propagated or will not confirm.</source>
+        <target state="needs-review-translation"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />รอดำเนินการ<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> หมายถึงเดมอนนี้พบธุรกรรมในพูลขณะนี้ ส่วน <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />ยืนยันแล้ว<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> หมายถึงเดมอนส่งข้อมูลว่าธุรกรรมรวมอยู่ในบล็อกที่ความสูงหนึ่ง จำนวนการยืนยันเพิ่มเมื่อมีบล็อกใหม่ การไม่พบในพูลของโหนดหนึ่งไม่ได้พิสูจน์ว่าธุรกรรมไม่เคยกระจายหรือจะไม่ถูกยืนยัน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html">
+        <source>Can I verify a payment?</source>
+        <target state="needs-review-translation">ฉันตรวจสอบการชำระเงินได้หรือไม่?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proofDescription" datatype="html">
+        <source>The transaction page can verify a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> when monero-wallet-rpc is configured. Recipient scans with a private view key and sender checks with a transaction secret key run in the browser; private key material is not sent to this API. A private view key alone is not a subaddress-proof tool.</source>
+        <target state="needs-review-translation">หน้าธุรกรรมสามารถตรวจสอบ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> สาธารณะได้เมื่อกำหนดค่า monero-wallet-rpc การสแกนของผู้รับด้วย private view key และการตรวจสอบของผู้ส่งด้วย transaction secret key ทำงานในเบราว์เซอร์ โดยไม่ส่งคีย์ส่วนตัวไปยัง API นี้ private view key เพียงอย่างเดียวไม่ใช่เครื่องมือพิสูจน์ subaddress</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html">
+        <source>How are mining pools identified?</source>
+        <target state="needs-review-translation">ระบุกลุ่มขุดได้อย่างไร?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDescription" datatype="html">
+        <source>Pool labels are best-effort: public miner-transaction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> markers and, where published, proof-registry evidence. Unattributed blocks remain <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />Unknown<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" />; a label never identifies an individual miner.</source>
+        <target state="needs-review-translation">ป้ายกลุ่มขุดเป็นการระบุตามข้อมูลที่มี โดยใช้เครื่องหมาย <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> สาธารณะของธุรกรรมผู้ขุด และหลักฐานจากทะเบียนพิสูจน์เมื่อเผยแพร่ไว้ บล็อกที่ระบุไม่ได้ยังคงเป็น <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />ไม่ทราบ<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" /> ป้ายไม่ได้ระบุตัวผู้ขุดรายบุคคล</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.restDescription" datatype="html">
+        <source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source>
+        <target state="needs-review-translation">เส้นทางที่ระบุเป็นแบบอ่านอย่างเดียวและอยู่ในต้นทางเดียวกันภายใต้ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ไม่มี API สำหรับการยืนยันตัวตน กระเป๋าเงิน หรือบัญชี ค่าธรรมเนียมและรางวัลที่เส้นทางแสดงใช้หน่วยอะตอม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocksTitle" datatype="html">
+        <source>Chain and blocks <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">เชนและบล็อก <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html">
+        <source>Endpoint</source>
+        <target state="needs-review-translation">จุดเชื่อมต่อ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html">
+        <source>Public result</source>
+        <target state="needs-review-translation">ผลลัพธ์สาธารณะ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html">
+        <source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source>
+        <target state="needs-review-translation">สถานะเดมอน ความสูง ความยาก อัตราแฮช เพียร์ และจำนวนใน mempool</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html">
+        <source>Recent block headers; count is capped at 25.</source>
+        <target state="needs-review-translation">ส่วนหัวบล็อกล่าสุด จำกัดจำนวนไว้ที่ 25</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html">
+        <source>Up to 25 headers ending at a height.</source>
+        <target state="needs-review-translation">ส่วนหัวสูงสุด 25 รายการที่สิ้นสุด ณ ความสูงที่ระบุ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html">
+        <source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source>
+        <target state="needs-review-translation">ส่วนหัว แฮชธุรกรรม สถิติค่าธรรมเนียมสาธารณะ และการระบุกลุ่มขุดตามข้อมูลที่มี</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html">
+        <source>Privacy-safe summaries used by the block visualization.</source>
+        <target state="needs-review-translation">ข้อมูลสรุปที่รักษาความเป็นส่วนตัวสำหรับภาพแสดงบล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html">
+        <source>The daemon’s raw Monero block blob.</source>
+        <target state="needs-review-translation">ข้อมูลบล็อก Monero ดิบจากเดมอน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html">
+        <source>Every-block Monero retarget metadata.</source>
+        <target state="needs-review-translation">ข้อมูลการปรับความยาก Monero ทุกบล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html">
+        <source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ธุรกรรมและ mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html">
+        <source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source>
+        <target state="needs-review-translation">สถานะ ค่าธรรมเนียม ขนาด/น้ำหนัก การยืนยัน ข้อมูลวงแหวนสาธารณะ และแฟล็ก RingCT ไม่มีที่อยู่ผู้รับหรือจำนวนเงินเอาต์พุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html">
+        <source>Mempool blob or available pruned confirmed transaction hex.</source>
+        <target state="needs-review-translation">ข้อมูล mempool หรือข้อมูลเลขฐานสิบหกที่ตัดทอนของธุรกรรมยืนยันแล้วที่มีอยู่</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html">
+        <source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source>
+        <target state="needs-review-translation">จำนวนในพูลที่พบ น้ำหนัก/ค่าธรรมเนียมรวม และข้อมูลธุรกรรมที่รักษาความเป็นส่วนตัว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html">
+        <source>Projected pending blocks from the observed pool.</source>
+        <target state="needs-review-translation">บล็อกรอดำเนินการที่คาดการณ์จากพูลที่พบ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.timesResult" datatype="html">
+        <source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">เวลาที่ทราบว่า mempool ได้รับธุรกรรม สำหรับธุรกรรมที่ยืนยันแล้วหรือไม่ทราบค่าเป็น <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html">
+        <source>Live-client bootstrap snapshot.</source>
+        <target state="needs-review-translation">ภาพรวมเริ่มต้นสำหรับไคลเอนต์สด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html">
+        <source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ค่าธรรมเนียมและประวัติ <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html">
+        <source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source>
+        <target state="needs-review-translation">ค่าประมาณแบบช้า ปกติ เร็ว และเร็วที่สุดในหน่วยอะตอมต่อไบต์ พร้อม quantization mask</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.statisticsResult" datatype="html">
+        <source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">ข้อมูลรายนาทีที่จัดเก็บสำหรับ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> หรือ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html">
+        <source>Current or timestamped locally indexed fiat conversion data.</source>
+        <target state="needs-review-translation">ข้อมูลแปลงเงินตราปัจจุบันหรือตามเวลาที่จัดทำดัชนีในเครื่อง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDataTitle" datatype="html">
+        <source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ข้อมูลการขุด <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.historyPeriods" datatype="html">
+        <source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">เส้นทางกราฟย้อนหลังรองรับช่วงเวลา เช่น <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> และ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html">
+        <source>Difficulty-derived network hashrate history.</source>
+        <target state="needs-review-translation">ประวัติอัตราแฮชเครือข่ายที่คำนวณจากความยาก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html">
+        <source>Indexed block fee, subsidy, reward, and fiat series.</source>
+        <target state="needs-review-translation">ชุดข้อมูลค่าธรรมเนียมบล็อก รางวัลที่ออกใหม่ รางวัลรวม และเงินตราที่จัดทำดัชนี</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html">
+        <source>Public fee-rate buckets and block size/weight history.</source>
+        <target state="needs-review-translation">ช่วงอัตราค่าธรรมเนียมสาธารณะและประวัติขนาด/น้ำหนักบล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html">
+        <source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source>
+        <target state="needs-review-translation">สถิติกลุ่มขุดที่ระบุจากเครื่องหมายตามข้อมูลที่มี บล็อกที่ระบุไม่ได้ยังเป็น Unknown</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProofTitle" datatype="html">
+        <source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ตรวจสอบหลักฐานธุรกรรม <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verifyDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source>
+        <target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> รับ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> สาธารณะ ที่อยู่ และข้อความเพิ่มเติมหากมี โดยคืนค่า <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> เมื่อ monero-wallet-rpc ไม่พร้อมใช้งาน ห้ามส่ง private view key หรือ transaction secret key ไปยังจุดเชื่อมต่อนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html">
+        <source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ตัวเชื่อมเดมอนสาธารณะ <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> proxy an allowlisted public daemon subset for browser-local verification. Wallet methods and secret-shaped fields are rejected; this is not a general remote node or wallet service.</source>
+        <target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> และ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ส่งต่อชุดคำสั่งเดมอนสาธารณะที่อนุญาตสำหรับการตรวจสอบในเบราว์เซอร์ โดยปฏิเสธคำสั่งกระเป๋าเงินและช่องข้อมูลที่มีลักษณะเป็นความลับ นี่ไม่ใช่บริการโหนดระยะไกลหรือกระเป๋าเงินทั่วไป</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.websocketDescription" datatype="html">
+        <source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ initMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> requests another. Messages use the established mempool protocol shape.</source>
+        <target state="needs-review-translation">เชื่อมต่อกับ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> เซิร์ฟเวอร์ส่งภาพรวมทันที และ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ initMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ใช้ขอภาพรวมอีกครั้ง ข้อความใช้รูปแบบโปรโตคอล mempool ที่มีอยู่</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html">
+        <source>Server messages</source>
+        <target state="needs-review-translation">ข้อความจากเซิร์ฟเวอร์</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventsDescription" datatype="html">
+        <source>Snapshots and updates can contain <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. A projected-block subscriber also receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. Treat all as observations from the configured daemon, not global finality.</source>
+        <target state="needs-review-translation">ภาพรวมและการอัปเดตอาจมี <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> และ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ผู้สมัครรับบล็อกคาดการณ์จะได้รับ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ด้วย ให้ถือว่าทั้งหมดเป็นข้อมูลที่พบจากเดมอนที่กำหนดค่าไว้ ไม่ใช่ความแน่นอนของทั้งเครือข่าย</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html">
+        <source>Client messages</source>
+        <target state="needs-review-translation">ข้อความจากไคลเอนต์</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html">
+        <source>Message</source>
+        <target state="needs-review-translation">ข้อความ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html">
+        <source>Behavior</source>
+        <target state="needs-review-translation">การทำงาน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html">
+        <source>Request the current snapshot.</source>
+        <target state="needs-review-translation">ขอภาพรวมปัจจุบัน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.pingResult" datatype="html">
+        <source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ pongMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">ได้รับ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ pongMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html">
+        <source>Subscribe to a projected block snapshot by index.</source>
+        <target state="needs-review-translation">สมัครรับภาพรวมบล็อกคาดการณ์ตามดัชนี</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html">
+        <source>Track public confirmation status for one transaction hash.</source>
+        <target state="needs-review-translation">ติดตามสถานะการยืนยันสาธารณะของแฮชธุรกรรมหนึ่งรายการ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html">
+        <source>Address tracking is intentionally not a public Monero stream feature.</source>
+        <target state="needs-review-translation">การติดตามที่อยู่ไม่ได้เป็นคุณสมบัติสตรีม Monero สาธารณะโดยตั้งใจ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sseDescription" datatype="html">
+        <source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source>
+        <target state="needs-review-translation">เปิด <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> เป็น <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> สำหรับการอัปเดตทางเดียว โดยปิดบัฟเฟอร์ของพร็อกซีและเริ่มสตรีมด้วยภาพรวม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html">
+        <source>Events and reconnection</source>
+        <target state="needs-review-translation">เหตุการณ์และการเชื่อมต่อใหม่</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html">
+        <source>Event</source>
+        <target state="needs-review-translation">เหตุการณ์</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html">
+        <source>Payload</source>
+        <target state="needs-review-translation">ข้อมูล</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html">
+        <source>Current daemon info and observed mempool hashes at connect.</source>
+        <target state="needs-review-translation">ข้อมูลเดมอนปัจจุบันและแฮช mempool ที่พบเมื่อเชื่อมต่อ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html">
+        <source>A new public block header.</source>
+        <target state="needs-review-translation">ส่วนหัวบล็อกสาธารณะใหม่</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.deltaResult" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> for the observed pool.</source>
+        <target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> สำหรับพูลที่พบ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.reconnectDescription" datatype="html">
+        <source>A comment heartbeat is sent every 25 seconds. Native <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> reconnection is suitable for most clients; resync from the snapshot or REST after a disconnect.</source>
+        <target state="needs-review-translation">ส่ง heartbeat แบบคอมเมนต์ทุก 25 วินาที การเชื่อมต่อใหม่ด้วย <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> เหมาะสำหรับไคลเอนต์ส่วนใหญ่ ให้ซิงก์ใหม่จากภาพรวมหรือ REST หลังการเชื่อมต่อขาด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html">
+        <source>Overview</source>
+        <target state="needs-review-translation">ภาพรวม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html">
+        <source>Getting started</source>
+        <target state="needs-review-translation">เริ่มต้นใช้งาน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html">
+        <source>Chain and blocks</source>
+        <target state="needs-review-translation">เชนและบล็อก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html">
+        <source>Endpoints</source>
+        <target state="needs-review-translation">จุดเชื่อมต่อ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html">
+        <source>Transactions and mempool</source>
+        <target state="needs-review-translation">ธุรกรรมและ mempool</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html">
+        <source>Fees and history</source>
+        <target state="needs-review-translation">ค่าธรรมเนียมและประวัติ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html">
+        <source>Mining data</source>
+        <target state="needs-review-translation">ข้อมูลการขุด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html">
+        <source>Transaction proof</source>
+        <target state="needs-review-translation">หลักฐานธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html">
+        <source>Verification</source>
+        <target state="needs-review-translation">การตรวจสอบ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html">
+        <source>Public daemon bridge</source>
+        <target state="needs-review-translation">ตัวเชื่อมเดมอนสาธารณะ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html">
+        <source>Connect and initialize</source>
+        <target state="needs-review-translation">เชื่อมต่อและเริ่มต้น</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html">
+        <source>Connection</source>
+        <target state="needs-review-translation">การเชื่อมต่อ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html">
+        <source>Events</source>
+        <target state="needs-review-translation">เหตุการณ์</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html">
+        <source>Commands</source>
+        <target state="needs-review-translation">คำสั่ง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html">
+        <source>Connect</source>
+        <target state="needs-review-translation">เชื่อมต่อ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html">
+        <source>Documentation</source>
+        <target state="needs-review-translation">เอกสาร</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.0" datatype="html">
+        <source>Privacy Policy</source>
+        <target state="needs-review-translation">นโยบายความเป็นส่วนตัว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source>
+        <target state="needs-review-translation">ปรับปรุงล่าสุด: 16 พฤษภาคม 2026</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.2" datatype="html">
+        <source>Audience measurement</source>
+        <target state="needs-review-translation">การวัดจำนวนผู้เข้าชม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.3" datatype="html">
+        <source>tx.taxi uses Cloudflare Web Analytics for page views and performance, and a first-party daily cookie shared across its explorers to count browsers once per UTC day. The daily audience collector stores only a daily identifier, the explorer hostname, and whether there was interaction. It does not receive search text, addresses, transaction IDs, URLs, or IP addresses. Individual daily records expire after 31 days; aggregate counts are retained for 400 days. Do Not Track and Global Privacy Control disable this first-party measurement.</source>
+        <target state="needs-review-translation">tx.taxi ใช้ Cloudflare Web Analytics เพื่อวัดการเข้าชมหน้าและประสิทธิภาพ และใช้คุกกี้รายวันของบุคคลที่หนึ่งร่วมกันระหว่างตัวสำรวจเพื่อนับเบราว์เซอร์หนึ่งครั้งต่อวัน UTC ระบบนับผู้ชมรายวันเก็บเพียงตัวระบุรายวัน ชื่อโฮสต์ของตัวสำรวจ และข้อมูลว่ามีการโต้ตอบหรือไม่ โดยไม่ได้รับข้อความค้นหา ที่อยู่ ID ธุรกรรม URL หรือที่อยู่ IP ระเบียนรายวันแต่ละรายการหมดอายุหลัง 31 วัน ส่วนจำนวนรวมเก็บไว้ 400 วัน การตั้งค่า Do Not Track และ Global Privacy Control จะปิดการวัดของบุคคลที่หนึ่งนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.4" datatype="html">
+        <source>Details and opt-out</source>
+        <target state="needs-review-translation">รายละเอียดและการเลือกไม่เข้าร่วม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.5" datatype="html">
+        <source>Use Your Own Node When Privacy Matters</source>
+        <target state="needs-review-translation">ใช้โหนดของคุณเองเมื่อความเป็นส่วนตัวสำคัญ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.6" datatype="html">
+        <source>xmr.tx.taxi displays public Monero chain and mempool data from the RPC providers configured by the site operator. For the strongest privacy, run your own Monero node and explorer instead of relying on a public service.</source>
+        <target state="needs-review-translation">xmr.tx.taxi แสดงข้อมูลเชนและ mempool สาธารณะของ Monero จากผู้ให้บริการ RPC ที่ผู้ดูแลเว็บไซต์กำหนดค่าไว้ เพื่อความเป็นส่วนตัวสูงสุด ควรใช้โหนด Monero และตัวสำรวจของคุณเองแทนการพึ่งบริการสาธารณะ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.7" datatype="html">
+        <source>What This Explorer Can See</source>
+        <target state="needs-review-translation">สิ่งที่ตัวสำรวจนี้มองเห็นได้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.8" datatype="html">
+        <source>Regular page and API requests reveal standard web metadata to the operator, including your IP address, user agent, requested URL, and request time. Operators may keep server logs for reliability, abuse prevention, debugging, and capacity planning.</source>
+        <target state="needs-review-translation">คำขอหน้าเว็บและ API ปกติเปิดเผยข้อมูลเว็บมาตรฐานต่อผู้ดูแล รวมถึงที่อยู่ IP ตัวแทนผู้ใช้ URL ที่ร้องขอ และเวลาของคำขอ ผู้ดูแลอาจเก็บบันทึกเซิร์ฟเวอร์เพื่อความเชื่อถือได้ การป้องกันการใช้งานในทางที่ผิด การแก้ปัญหา และการวางแผนความจุ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.9" datatype="html">
+        <source>What Monero Hides</source>
+        <target state="needs-review-translation">สิ่งที่ Monero ซ่อน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.10" datatype="html">
+        <source>Monero's RingCT and stealth-address design means this site cannot determine transaction recipients or transferred amounts from public chain data. xmr.tx.taxi does not build address histories, wallet histories, account pages, or public spent/unspent output claims.</source>
+        <target state="needs-review-translation">การออกแบบ RingCT และที่อยู่แบบ stealth ของ Monero ทำให้เว็บไซต์นี้ไม่สามารถระบุผู้รับหรือจำนวนเงินที่โอนจากข้อมูลเชนสาธารณะ xmr.tx.taxi ไม่สร้างประวัติที่อยู่ ประวัติกระเป๋าเงิน หน้าบัญชี หรือข้ออ้างสาธารณะว่าเอาต์พุตถูกใช้แล้วหรือยัง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.11" datatype="html">
+        <source>Proof Verification</source>
+        <target state="needs-review-translation">การตรวจสอบหลักฐาน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.12" datatype="html">
+        <source>The tx_proof verification form sends the transaction hash, recipient address, and proof signature to this instance's backend. A tx_proof signature is intended to be shared; private view keys, spend keys, seed phrases, and tx secret keys should not be sent to this server.</source>
+        <target state="needs-review-translation">แบบฟอร์มตรวจสอบ tx_proof ส่งแฮชธุรกรรม ที่อยู่ผู้รับ และลายเซ็นหลักฐานไปยังแบ็กเอนด์ของระบบนี้ ลายเซ็น tx_proof มีไว้สำหรับแบ่งปัน ไม่ควรส่ง private view key, spend key, seed phrase หรือ tx secret key ไปยังเซิร์ฟเวอร์นี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.13" datatype="html">
+        <source>Local Preferences</source>
+        <target state="needs-review-translation">การตั้งค่าบนเครื่อง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.14" datatype="html">
+        <source>The frontend may store local preferences such as language, theme, fiat currency, and timezone in your browser. These preferences are used to render the interface and are not needed for chain analysis.</source>
+        <target state="needs-review-translation">ส่วนหน้าอาจเก็บการตั้งค่าบนเครื่อง เช่น ภาษา ธีม เงินตรา และเขตเวลาไว้ในเบราว์เซอร์ของคุณ การตั้งค่าเหล่านี้ใช้แสดงอินเทอร์เฟซและไม่จำเป็นต่อการวิเคราะห์บล็อกเชน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.15" datatype="html">
+        <source>Third Parties</source>
+        <target state="needs-review-translation">บุคคลที่สาม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.16" datatype="html">
+        <source>This instance may call configured upstream services such as a Monero daemon, fiat price provider, or wallet-RPC verifier. Public deployments should document their own logging, analytics, proxy, and retention policies alongside this baseline policy.</source>
+        <target state="needs-review-translation">ระบบนี้อาจเรียกบริการต้นทางที่กำหนดค่าไว้ เช่น เดมอน Monero ผู้ให้บริการราคาเงินตรา หรือเครื่องมือตรวจสอบ wallet-RPC ผู้ให้บริการสาธารณะควรระบุนโยบายบันทึกข้อมูล การวิเคราะห์ พร็อกซี และระยะเวลาเก็บข้อมูลของตนควบคู่กับนโยบายพื้นฐานนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-title" datatype="html">
+        <source>Privacy Policy</source>
+        <target state="needs-review-translation">นโยบายความเป็นส่วนตัว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-description" datatype="html">
+        <source>Privacy notes for xmr.tx.taxi, including public Monero data limits, local preferences, server logs, and tx_proof verification behavior.</source>
+        <target state="needs-review-translation">ข้อมูลความเป็นส่วนตัวของ xmr.tx.taxi รวมถึงข้อจำกัดข้อมูล Monero สาธารณะ การตั้งค่าบนเครื่อง บันทึกเซิร์ฟเวอร์ และการตรวจสอบ tx_proof</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.0" datatype="html">
+        <source>Terms of Service</source>
+        <target state="needs-review-translation">ข้อกำหนดการให้บริการ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.1" datatype="html">
+        <source>Updated: May 16, 2026</source>
+        <target state="needs-review-translation">ปรับปรุงล่าสุด: 16 พฤษภาคม 2026</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.2" datatype="html">
+        <source>xmr.tx.taxi is a Monero block and pending transaction explorer derived from the Mempool Open Source Project. This instance provides public blockchain data from its configured Monero RPC providers and does not provide wallet, custody, exchange, investment, tax, legal, or transaction acceleration services.</source>
+        <target state="needs-review-translation">xmr.tx.taxi เป็นตัวสำรวจบล็อกและธุรกรรม Monero ที่รอดำเนินการซึ่งพัฒนาต่อยอดจาก Mempool Open Source Project ระบบนี้ให้ข้อมูลบล็อกเชนสาธารณะจากผู้ให้บริการ Monero RPC ที่กำหนดค่าไว้ และไม่ได้ให้บริการกระเป๋าเงิน รับฝากทรัพย์สิน แลกเปลี่ยน ลงทุน ภาษี กฎหมาย หรือเร่งธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.3" datatype="html">
+        <source>By accessing this website, you agree to the following terms:</source>
+        <target state="needs-review-translation">การเข้าใช้เว็บไซต์นี้ถือว่าคุณยอมรับข้อกำหนดต่อไปนี้:</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.4" datatype="html">
+        <source>No Warranty</source>
+        <target state="needs-review-translation">ไม่มีการรับประกัน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.5" datatype="html">
+        <source>This website is provided on an "as is" and "as available" basis, without warranties or representations of any kind. Blockchain data, mempool data, fiat conversions, estimates, charts, and derived labels may be incomplete, delayed, unavailable, or inaccurate. You are responsible for independently verifying any data before relying on it.</source>
+        <target state="needs-review-translation">เว็บไซต์นี้ให้บริการตามสภาพและตามที่พร้อมใช้งาน โดยไม่มีการรับประกันหรือรับรองใด ๆ ข้อมูลบล็อกเชน ข้อมูล mempool การแปลงเงินตรา ค่าประมาณ กราฟ และป้ายที่คำนวณอาจไม่ครบถ้วน ล่าช้า ไม่พร้อมใช้งาน หรือไม่ถูกต้อง คุณมีหน้าที่ตรวจสอบข้อมูลด้วยตนเองก่อนนำไปใช้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.6" datatype="html">
+        <source>No Liability</source>
+        <target state="needs-review-translation">ไม่รับผิด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.7" datatype="html">
+        <source>We are not liable for losses or damages that result from use of this website, its API, its data, unavailable service, delayed updates, incorrect interpretation, or any other content shown here. xmr.tx.taxi does not control the Monero network, does not mine blocks, does not relay privileged transactions, and cannot recover funds.</source>
+        <target state="needs-review-translation">เราไม่รับผิดต่อความสูญเสียหรือความเสียหายจากการใช้เว็บไซต์ API ข้อมูล การไม่พร้อมใช้งาน การอัปเดตล่าช้า การตีความผิด หรือเนื้อหาอื่นใดที่แสดง xmr.tx.taxi ไม่ควบคุมเครือข่าย Monero ไม่ขุดบล็อก ไม่ส่งต่อธุรกรรมที่มีสิทธิพิเศษ และไม่สามารถกู้คืนเงินทุน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.8" datatype="html">
+        <source>Privacy Limits</source>
+        <target state="needs-review-translation">ข้อจำกัดความเป็นส่วนตัว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.9" datatype="html">
+        <source>Monero hides recipient addresses and transaction amounts by design. xmr.tx.taxi only shows public chain data and intentionally does not create address histories, wallet histories, UTXO-style views, payment-channel views, or fee-bump workflows. If you submit a tx_proof signature for verification, the signature and recipient address are sent to this instance's backend verifier; private view keys and tx secret keys should stay local.</source>
+        <target state="needs-review-translation">Monero ซ่อนที่อยู่ผู้รับและจำนวนธุรกรรมตามการออกแบบ xmr.tx.taxi แสดงเฉพาะข้อมูลเชนสาธารณะและจงใจไม่สร้างประวัติที่อยู่ ประวัติกระเป๋าเงิน มุมมองแบบ UTXO มุมมองช่องทางชำระเงิน หรือขั้นตอนเพิ่มค่าธรรมเนียม หากคุณส่งลายเซ็น tx_proof เพื่อตรวจสอบ ลายเซ็นและที่อยู่ผู้รับจะถูกส่งไปยังตัวตรวจสอบแบ็กเอนด์ของระบบนี้ ส่วน private view key และ tx secret key ควรอยู่ในเครื่องของคุณ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.10" datatype="html">
+        <source>External Links</source>
+        <target state="needs-review-translation">ลิงก์ภายนอก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.11" datatype="html">
+        <source>This site may link to Monero documentation, license information, or infrastructure dependencies. External websites have their own terms and policies.</source>
+        <target state="needs-review-translation">เว็บไซต์นี้อาจลิงก์ไปยังเอกสาร Monero ข้อมูลสัญญาอนุญาต หรือโครงสร้างพื้นฐานที่ใช้ เว็บไซต์ภายนอกมีข้อกำหนดและนโยบายของตนเอง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.12" datatype="html">
+        <source>Open Source Attribution</source>
+        <target state="needs-review-translation">การระบุแหล่งที่มาของโอเพนซอร์ส</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.13" datatype="html">
+        <source>xmr.tx.taxi inherits the AGPLv3 licensing obligations of its upstream project. Mempool trademarks and logos remain property of their respective owners; xmr.tx.taxi is not affiliated with or endorsed by Mempool Holdings S.A. de C.V.</source>
+        <target state="needs-review-translation">xmr.tx.taxi รับข้อผูกพันสัญญาอนุญาต AGPLv3 จากโครงการต้นทาง เครื่องหมายการค้าและโลโก้ Mempool ยังคงเป็นทรัพย์สินของเจ้าของแต่ละราย xmr.tx.taxi ไม่ได้เกี่ยวข้องกับหรือได้รับการรับรองจาก Mempool Holdings S.A. de C.V.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.meta-title" datatype="html">
+        <source>Terms of Service</source>
+        <target state="needs-review-translation">ข้อกำหนดการให้บริการ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.meta-description" datatype="html">
+        <source>Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.</source>
+        <target state="needs-review-translation">ข้อกำหนดการใช้ xmr.tx.taxi ตัวสำรวจบล็อกและ mempool Monero ที่แสดงข้อมูลเชนสาธารณะโดยไม่มีบริการกระเป๋าเงิน รับฝากทรัพย์สิน หรือจัดลำดับธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source>
+        <target state="needs-review-translation">ทุกแห่งบนโลก (AoE)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานซามัว (SST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานฮาวาย (HST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานอะแลสกา (AKST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานแปซิฟิก (PST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานภูเขา (MST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานกลาง (CST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานตะวันออก (EST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานแอตแลนติก (AST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source>
+        <target state="needs-review-translation">เวลาอาร์เจนตินา (ART)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source>
+        <target state="needs-review-translation">เวลาเฟร์นันดูจีโนโรญญา (FNT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source>
+        <target state="needs-review-translation">เวลาอะซอเรส (AZOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source>
+        <target state="needs-review-translation">เวลามาตรฐานกรีนิช (GMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source>
+        <target state="needs-review-translation">เวลายุโรปกลาง (CET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source>
+        <target state="needs-review-translation">เวลายุโรปตะวันออก (EET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source>
+        <target state="needs-review-translation">เวลามาตรฐานมอสโก (MSK)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source>
+        <target state="needs-review-translation">เวลาอาร์เมเนีย (AMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source>
+        <target state="needs-review-translation">เวลามาตรฐานปากีสถาน (PKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source>
+        <target state="needs-review-translation">เวลาซินเจียง (XJT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source>
+        <target state="needs-review-translation">เวลาอินโดจีน (ICT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source>
+        <target state="needs-review-translation">เวลาฮ่องกง (HKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานญี่ปุ่น (JST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานตะวันออกออสเตรเลีย (AEST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source>
+        <target state="needs-review-translation">เวลานอร์ฟอล์ก (NFT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source>
+        <target state="needs-review-translation">เวลามาตรฐานนิวซีแลนด์ (NZST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source>
+        <target state="needs-review-translation">เวลาตองกา (TOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source>
+        <target state="needs-review-translation">เวลาหมู่เกาะไลน์ (LINT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.0" datatype="html">
+        <source>Trademark &amp; Attribution</source>
+        <target state="needs-review-translation">เครื่องหมายการค้าและการระบุแหล่งที่มา</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source>
+        <target state="needs-review-translation">ปรับปรุงล่าสุด: 16 พฤษภาคม 2026</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.3" datatype="html">
+        <source>xmr.tx.taxi is a Monero-focused fork of the Mempool Open Source Project. The xmr.tx.taxi name, Monero-oriented copy, and retargeted behavior describe this fork only.</source>
+        <target state="needs-review-translation">xmr.tx.taxi เป็นโครงการแยกจาก Mempool Open Source Project ที่มุ่งเน้น Monero ชื่อ xmr.tx.taxi ข้อความเกี่ยวกับ Monero และพฤติกรรมที่ปรับเปลี่ยนอธิบายเฉพาะโครงการแยกนี้</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.4" datatype="html">
+        <source>Upstream Attribution</source>
+        <target state="needs-review-translation">การระบุแหล่งที่มาของโครงการต้นทาง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.5" datatype="html">
+        <source>The upstream project, its source code, visual system, and trademarks belong to their respective owners. xmr.tx.taxi is not affiliated with, sponsored by, or endorsed by Mempool Holdings S.A. de C.V. References to mempool.space or The Mempool Open Source Project are nominative attribution to the upstream software this fork derives from.</source>
+        <target state="needs-review-translation">โครงการต้นทาง ซอร์สโค้ด ระบบภาพ และเครื่องหมายการค้าเป็นของเจ้าของแต่ละราย xmr.tx.taxi ไม่ได้เกี่ยวข้อง ได้รับการสนับสนุน หรือได้รับการรับรองจาก Mempool Holdings S.A. de C.V. การอ้างถึง mempool.space หรือ The Mempool Open Source Project เป็นการระบุชื่อซอฟต์แวร์ต้นทางที่โครงการแยกนี้พัฒนาต่อยอด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.6" datatype="html">
+        <source>Monero Attribution</source>
+        <target state="needs-review-translation">การระบุแหล่งที่มา Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.7" datatype="html">
+        <source>Monero, XMR, and related marks belong to their respective communities and rightsholders. This explorer is an independent interface for public Monero chain data and is not an official Monero Project website.</source>
+        <target state="needs-review-translation">Monero, XMR และเครื่องหมายที่เกี่ยวข้องเป็นของชุมชนและผู้ถือสิทธิแต่ละราย ตัวสำรวจนี้เป็นอินเทอร์เฟซอิสระสำหรับข้อมูลเชน Monero สาธารณะ และไม่ใช่เว็บไซต์ทางการของ Monero Project</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.8" datatype="html">
+        <source>License</source>
+        <target state="needs-review-translation">สัญญาอนุญาต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.9" datatype="html">
+        <source>This fork follows the upstream AGPLv3 license obligations. License notices are included with this deployment; contact the operator for applicable source and license information.</source>
+        <target state="needs-review-translation">โครงการแยกนี้ปฏิบัติตามข้อผูกพันสัญญาอนุญาต AGPLv3 ของต้นทาง ประกาศสัญญาอนุญาตรวมอยู่ในการติดตั้งนี้ ติดต่อผู้ดูแลเพื่อขอข้อมูลซอร์สโค้ดและสัญญาอนุญาตที่เกี่ยวข้อง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.meta-title" datatype="html">
+        <source>Trademark &amp; Attribution</source>
+        <target state="needs-review-translation">เครื่องหมายการค้าและการระบุแหล่งที่มา</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.meta-description" datatype="html">
+        <source>Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.</source>
+        <target state="needs-review-translation">ข้อมูลเครื่องหมายการค้าและการระบุแหล่งที่มาของ xmr.tx.taxi รวมถึงการอ้างอิง mempool/mempool ต้นทางและความเป็นอิสระจากโครงการ Monero</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="15c02cb6b6c3be53477e502d3e1ee26955b23af0" datatype="html">
+        <source>Unavailable</source>
+        <target state="needs-review-translation">ไม่พร้อมใช้งาน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <note priority="1" from="description">shared.unavailable</note>
+      </trans-unit>
+      <trans-unit id="2611475427610660053" datatype="html">
+        <source>Transactions</source>
+        <target state="needs-review-translation">ธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="313854265968026491" datatype="html">
+        <source>Transaction</source>
+        <target state="needs-review-translation">ธุรกรรม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.miner" datatype="html">
+        <source>Miner transaction</source>
+        <target state="needs-review-translation">ธุรกรรมผู้ขุด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacyHelp" datatype="html">
+        <source>Pre-RingCT transaction; input and output amounts are public</source>
+        <target state="needs-review-translation">ธุรกรรมก่อน RingCT ซึ่งจำนวนเงินอินพุตและเอาต์พุตเป็นสาธารณะ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacy" datatype="html">
+        <source>Legacy · public amounts</source>
+        <target state="needs-review-translation">รุ่นเก่า · จำนวนเงินเป็นสาธารณะ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTagsHelp" datatype="html">
+        <source>View tags help wallets scan outputs</source>
+        <target state="needs-review-translation">View tag ช่วยกระเป๋าเงินสแกนเอาต์พุต</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTags" datatype="html">
+        <source>View tags</source>
+        <target state="needs-review-translation">View tag</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringHelp" datatype="html">
+        <source>Number of members in the first input's ring</source>
+        <target state="needs-review-translation">จำนวนสมาชิกในวงแหวนของอินพุตแรก</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}" /></source>
+        <target state="needs-review-translation">วงแหวน <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringType" datatype="html">
+        <source>RingCT type <x id="type" equiv-text="this.tx.rct_type" />: <x id="name" equiv-text="this.tx.rct_type_name" /></source>
+        <target state="needs-review-translation">ประเภท RingCT <x id="type" equiv-text="this.tx.rct_type" />: <x id="name" equiv-text="this.tx.rct_type_name" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.h1" datatype="html">
+        <source>Monero Block &amp; Pending Transactions Explorer</source>
+        <target state="needs-review-translation">ตัวสำรวจบล็อกและธุรกรรม Monero ที่รอดำเนินการ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Dashboard hidden heading</note>
+      </trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
+        <source>Pending Transactions</source>
+        <target state="needs-review-translation">ธุรกรรมที่รอดำเนินการ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html">
+        <source>Total fees</source>
+        <target state="needs-review-translation">ค่าธรรมเนียมรวม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html">
+        <source>Median fee rate</source>
+        <target state="needs-review-translation">อัตราค่าธรรมเนียมมัธยฐาน</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html">
+        <source>Fee range</source>
+        <target state="needs-review-translation">ช่วงค่าธรรมเนียม</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.pool.logoNamed" datatype="html">
+        <source>Logo of <x id="name" equiv-text="this.name" /> mining pool</source>
+        <target state="needs-review-translation">โลโก้กลุ่มขุด <x id="name" equiv-text="this.name" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html">
+        <source>Mining pool logo</source>
+        <target state="needs-review-translation">โลโก้กลุ่มขุด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.aria" datatype="html">
+        <source>About tx.taxi</source>
+        <target state="needs-review-translation">เกี่ยวกับ tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.title" datatype="html">
+        <source>One search across chains.</source>
+        <target state="needs-review-translation">ค้นหาข้ามเชนได้ในครั้งเดียว</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.description" datatype="html">
+        <source>Paste a transaction, block or address into tx.taxi. Open a confirmed match, choose between possible networks, or head straight to your chain’s explorer.</source>
+        <target state="needs-review-translation">วางธุรกรรม บล็อก หรือที่อยู่ลงใน tx.taxi เปิดผลที่ยืนยันแล้ว เลือกจากเครือข่ายที่อาจตรงกัน หรือไปยังตัวสำรวจเชนของคุณโดยตรง</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.openTaxi" datatype="html">
+        <source>Open tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;" />↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">เปิด tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;" />↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.intro.exploreChain" datatype="html">
+        <source>Explore <x id="INTERPOLATION" equiv-text="{{ chainName }}" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;" />→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">สำรวจ <x id="INTERPOLATION" equiv-text="{{ chainName }}" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;" />→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html">
+        <source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source>
+        <target state="needs-review-translation">เอกสารตัวสำรวจ Monero: ข้อมูลสาธารณะที่รักษาความเป็นส่วนตัว จุดเชื่อมต่อ REST และสตรีมสด</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html">
+        <source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source>
+        <target state="needs-review-translation">สถานะแบ็กเอนด์ xmr.tx.taxi และ monerod แบบสด การซิงก์ เวอร์ชัน เพียร์ และพื้นที่จัดเก็บ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       </body>
