@@ -2858,7 +2858,7 @@
       </trans-unit>
       <trans-unit id="23555386d8af1ff73f297e89dd4af3f4689fb9dd" datatype="html">
         <source>Indexing blocks</source>
-        <target>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</target>
+        <target>ბლოკების ინდექსირება</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">120</context>
@@ -2944,7 +2944,7 @@
       </trans-unit>
       <trans-unit id="180092a6b8a6151a05f4a7552a2fb75fd159dfa8" datatype="html">
         <source>Match</source>
-        <target>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</target>
+        <target>შესატყვისი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">18</context>
@@ -3340,7 +3340,7 @@
       </trans-unit>
       <trans-unit id="56fa1cd221491b6478998679cba2dc8d55ba330d" datatype="html">
         <source>Block Sizes and Weights</source>
-        <target>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</target>
+        <target>ბლოკების ზომები და წონები</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.html</context>
           <context context-type="linenumber">5</context>
@@ -3365,7 +3365,7 @@
       </trans-unit>
       <trans-unit id="7faaaa08f56427999f3be41df1093ce4089bbd75" datatype="html">
         <source>Size</source>
-        <target>See Monero block sizes visualized over time.</target>
+        <target>ზომა</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">188</context>
@@ -13164,6 +13164,714 @@
         <target state="needs-review-translation">თანხის საზომი ერთეულის შეცვლა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
           <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.heading" datatype="html">
+        <source>Documentation</source>
+        <target state="needs-review-translation">დოკუმენტაცია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html">
+        <source>Documentation sections</source>
+        <target state="needs-review-translation">დოკუმენტაციის სექციები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html">
+        <source>On this page</source>
+        <target state="needs-review-translation">ამ გვერდზე</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html">
+        <source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source>
+        <target state="needs-review-translation">xmr.tx.taxi აჩვენებს კვანძისა და ბლოკჩეინის საჯარო მონაცემებს. Monero განზრახ იცავს გადახდის თანხების, მიმღებებისა და მისამართების ისტორიის კონფიდენციალურობას, ამიტომ მაძიებელი ამ შეზღუდვებს აღნიშნავს და არ ვარაუდობს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html">
+        <source>What is xmr.tx.taxi?</source>
+        <target state="needs-review-translation">რა არის xmr.tx.taxi?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.whatDescription" datatype="html">
+        <source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source>
+        <target state="needs-review-translation"><x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />Monero-ს<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> ბლოკებისა და მომლოდინე ტრანზაქციების მაძიებელი. ის ნაცნობ mempool ხედს უსადაგებს მონაცემებს, რომელთა საჯაროდ დადასტურებაც Monero კვანძს შეუძლია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html">
+        <source>What is a mempool?</source>
+        <target state="needs-review-translation">რა არის mempool?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolDescription" datatype="html">
+        <source>A node-local set of valid transactions observed but not yet included in a block. There is no single global mempool: the site shows the configured daemon’s <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> response when last polled.</source>
+        <target state="needs-review-translation">კვანძის მიერ ნანახი მოქმედი ტრანზაქციების ადგილობრივი ნაკრები, რომლებიც ბლოკში ჯერ არ შესულა. ერთი გლობალური mempool არ არსებობს: საიტი აჩვენებს გამართული დემონის ბოლო მოთხოვნის <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> პასუხს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html">
+        <source>Why are amounts hidden?</source>
+        <target state="needs-review-translation">რატომ არის თანხები დაფარული?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html">
+        <source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source>
+        <target state="needs-review-translation">RingCT კრიპტოგრაფიული ვალდებულებებით მალავს გამოსასვლელების თანხებს, ხოლო ერთჯერადი მისამართები მიმღებებს ფარავს. საჯარო მონაცემები აჩვენებს ტრანზაქციის სტრუქტურას, საკომისიოებს, ბლოკში ჩართვას, key image-ებსა და რგოლის წევრების მითითებებს, მაგრამ ვერ ადგენს გადახდის თანხასა და მიმღებს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html">
+        <source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source>
+        <target state="needs-review-translation">ტრანზაქციის მტკიცებულებები და საფულის სკანირება მონაწილეების შემოწმებაა; ისინი საჯარო მისამართს საჯარო ისტორიად არ აქცევს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html">
+        <source>Why is there no public address history?</source>
+        <target state="needs-review-translation">რატომ არ არსებობს მისამართის საჯარო ისტორია?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html">
+        <source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source>
+        <target state="needs-review-translation">Monero მისამართი არ არის ბლოკჩეინზე არსებული ანგარიში ხილული გამოსასვლელებით. საფულეები საკუთარ ერთჯერად გამოსასვლელებს view key-ით ცნობენ. მაძიებელი მისამართისთვის ანგარიშის ბალანსს, UTXO ნაკრებს ან ტრანზაქციების ისტორიას არ ამტკიცებს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html">
+        <source>How do Monero fees work?</source>
+        <target state="needs-review-translation">როგორ მუშაობს Monero-ს საკომისიოები?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html">
+        <source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source>
+        <target state="needs-review-translation">საჯარო საკომისიოები ატომური ერთეულებით ბაიტზე გამოისახება. დემონი აფასებს ნელ, ჩვეულებრივ, სწრაფ და უსწრაფეს პრიორიტეტის განაკვეთებს; საფულე შერჩეულ განაკვეთს ტრანზაქციის წონასა და საკომისიოს კვანტიზაციაზე იყენებს. პროგნოზირებული ბლოკები ნანახი მომლოდინე ტრანზაქციების საკომისიოებსა და წონას აჯამებს და ბლოკში ჩართვას არ იძლევა გარანტიას.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html">
+        <source>What does pending or confirmed mean?</source>
+        <target state="needs-review-translation">რას ნიშნავს მოლოდინში ან დადასტურებული?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmationDescription" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Pending<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> means this daemon currently observes the transaction in its pool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Confirmed<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> means a daemon returned it as included at a block height; confirmations grow as newer blocks arrive. Absence from one node’s pool is not proof a transaction never propagated or will not confirm.</source>
+        <target state="needs-review-translation"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />მოლოდინში<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> ნიშნავს, რომ დემონი ამჟამად ხედავს ტრანზაქციას თავის პულში. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />დადასტურებული<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> ნიშნავს, რომ დემონის პასუხით ტრანზაქცია კონკრეტული სიმაღლის ბლოკში შევიდა; ახალი ბლოკების მოსვლისას დადასტურებები იზრდება. ერთ კვანძში ტრანზაქციის არყოფნა არ ამტკიცებს, რომ ის არ გავრცელებულა ან არ დადასტურდება.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html">
+        <source>Can I verify a payment?</source>
+        <target state="needs-review-translation">შემიძლია გადახდის შემოწმება?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proofDescription" datatype="html">
+        <source>The transaction page can verify a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> when monero-wallet-rpc is configured. Recipient scans with a private view key and sender checks with a transaction secret key run in the browser; private key material is not sent to this API. A private view key alone is not a subaddress-proof tool.</source>
+        <target state="needs-review-translation">ტრანზაქციის გვერდს საჯარო <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />-ის შემოწმება შეუძლია, თუ monero-wallet-rpc გამართულია. მიმღების სკანირება პირადი view key-ით და გამგზავნის შემოწმება ტრანზაქციის საიდუმლო გასაღებით ბრაუზერში სრულდება; პირადი გასაღებები API-ს არ ეგზავნება. მხოლოდ პირადი view key ქვემისამართის მტკიცებულების ხელსაწყო არ არის.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html">
+        <source>How are mining pools identified?</source>
+        <target state="needs-review-translation">როგორ განისაზღვრება მაინინგ პული?</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDescription" datatype="html">
+        <source>Pool labels are best-effort: public miner-transaction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> markers and, where published, proof-registry evidence. Unattributed blocks remain <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />Unknown<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" />; a label never identifies an individual miner.</source>
+        <target state="needs-review-translation">პულების სახელები საუკეთესო ხელმისაწვდომ მონაცემებს ეფუძნება: მაინერის ტრანზაქციის საჯარო <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ნიშნულებს და, გამოქვეყნების შემთხვევაში, მტკიცებულებების რეესტრს. მიუკუთვნებელი ბლოკები რჩება <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />უცნობად<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" />; პულის სახელი ცალკეულ მაინერს არ ადგენს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.restDescription" datatype="html">
+        <source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source>
+        <target state="needs-review-translation">დოკუმენტირებული მისამართები მხოლოდ წასაკითხია და იმავე წყაროზეა: <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. ავტორიზაციის, საფულის ან ანგარიშის API არ არის ხელმისაწვდომი. სადაც საკომისიო ან ჯილდოა ნაჩვენები, მნიშვნელობები ატომურ ერთეულებშია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocksTitle" datatype="html">
+        <source>Chain and blocks <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ქსელი და ბლოკები <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html">
+        <source>Endpoint</source>
+        <target state="needs-review-translation">მისამართი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html">
+        <source>Public result</source>
+        <target state="needs-review-translation">საჯარო შედეგი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html">
+        <source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source>
+        <target state="needs-review-translation">დემონის სტატუსი, სიმაღლე, სირთულე, ჰეშრეიტი, პირები და mempool-ის რაოდენობა.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html">
+        <source>Recent block headers; count is capped at 25.</source>
+        <target state="needs-review-translation">ბოლო ბლოკების სათაურები; მაქსიმუმ 25.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html">
+        <source>Up to 25 headers ending at a height.</source>
+        <target state="needs-review-translation">მოცემულ სიმაღლეზე დამთავრებული მაქსიმუმ 25 სათაური.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html">
+        <source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source>
+        <target state="needs-review-translation">სათაური, ტრანზაქციების ჰეშები, საჯარო საკომისიოს სტატისტიკა და პულის საუკეთესო შესაძლო იდენტიფიკაცია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html">
+        <source>Privacy-safe summaries used by the block visualization.</source>
+        <target state="needs-review-translation">კონფიდენციალურობის დამცავი შეჯამებები ბლოკების ვიზუალიზაციისთვის.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html">
+        <source>The daemon’s raw Monero block blob.</source>
+        <target state="needs-review-translation">დემონის ნედლი Monero ბლოკის მონაცემები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html">
+        <source>Every-block Monero retarget metadata.</source>
+        <target state="needs-review-translation">Monero-ს სირთულის ყოველი ბლოკის ცვლილების მეტამონაცემები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html">
+        <source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ტრანზაქციები და mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html">
+        <source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source>
+        <target state="needs-review-translation">სტატუსი, საკომისიო, ზომა/წონა, დადასტურებები, საჯარო რგოლის მონაცემები და RingCT ნიშნულები. მიმღების მისამართი და გამოსასვლელის თანხა არ არის მოცემული.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html">
+        <source>Mempool blob or available pruned confirmed transaction hex.</source>
+        <target state="needs-review-translation">mempool-ის მონაცემები ან დადასტურებული ტრანზაქციის ხელმისაწვდომი შეკვეცილი თექვსმეტობითი მონაცემები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html">
+        <source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source>
+        <target state="needs-review-translation">ნანახი პულის რაოდენობა, საერთო წონა/საკომისიოები და კონფიდენციალურობის დამცავი ტრანზაქციის ველები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html">
+        <source>Projected pending blocks from the observed pool.</source>
+        <target state="needs-review-translation">ნანახი პულიდან პროგნოზირებული მომლოდინე ბლოკები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.timesResult" datatype="html">
+        <source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">mempool-ში მიღების ცნობილი დროები; დადასტურებული ან უცნობი მნიშვნელობაა <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html">
+        <source>Live-client bootstrap snapshot.</source>
+        <target state="needs-review-translation">ცოცხალი კლიენტის საწყისი მდგომარეობის სურათი.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html">
+        <source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">საკომისიოები და ისტორია <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html">
+        <source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source>
+        <target state="needs-review-translation">ნელი, ჩვეულებრივი, სწრაფი და უსწრაფესი შეფასებები ატომურ ერთეულებში ბაიტზე და კვანტიზაციის ნიღაბი.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.statisticsResult" datatype="html">
+        <source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">შენახული ერთწუთიანი დაკვირვებები: <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ან <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html">
+        <source>Current or timestamped locally indexed fiat conversion data.</source>
+        <target state="needs-review-translation">ფიატის მიმდინარე ან დროით მონიშნული, ადგილობრივად ინდექსირებული კონვერტაციის მონაცემები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDataTitle" datatype="html">
+        <source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">მაინინგის მონაცემები <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.historyPeriods" datatype="html">
+        <source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">ისტორიული გრაფიკების მისამართები იღებს პერიოდებს, მაგალითად <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> და <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html">
+        <source>Difficulty-derived network hashrate history.</source>
+        <target state="needs-review-translation">სირთულიდან გამოთვლილი ქსელის ჰეშრეიტის ისტორია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html">
+        <source>Indexed block fee, subsidy, reward, and fiat series.</source>
+        <target state="needs-review-translation">ინდექსირებული ბლოკის საკომისიოს, ემისიის, ჯილდოსა და ფიატის მონაცემები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html">
+        <source>Public fee-rate buckets and block size/weight history.</source>
+        <target state="needs-review-translation">საჯარო საკომისიოს დიაპაზონები და ბლოკის ზომის/წონის ისტორია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html">
+        <source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source>
+        <target state="needs-review-translation">ნიშნულებიდან მაქსიმალური სიზუსტით მიღებული პულების სტატისტიკა; მიუკუთვნებელი ბლოკები უცნობად რჩება.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProofTitle" datatype="html">
+        <source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">ტრანზაქციის მტკიცებულების შემოწმება <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verifyDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source>
+        <target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> იღებს საჯარო <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />-ს, მისამართს და არასავალდებულო შეტყობინებას. monero-wallet-rpc-ის მიუწვდომლობისას პასუხია <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. არასოდეს გაგზავნოთ პირადი view key ან ტრანზაქციის საიდუმლო გასაღები ამ მისამართზე.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html">
+        <source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target state="needs-review-translation">საჯარო დემონის ხიდი <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> proxy an allowlisted public daemon subset for browser-local verification. Wallet methods and secret-shaped fields are rejected; this is not a general remote node or wallet service.</source>
+        <target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> და <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ბრაუზერში ლოკალური შემოწმებისთვის გადამისამართებს დაშვებული საჯარო დემონის მეთოდების ქვეჯგუფს. საფულის მეთოდები და საიდუმლოს მსგავსი ველები უარყოფილია; ეს არ არის ზოგადი დისტანციური კვანძი ან საფულის სერვისი.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.websocketDescription" datatype="html">
+        <source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ initMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> requests another. Messages use the established mempool protocol shape.</source>
+        <target state="needs-review-translation">დაუკავშირდით <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> მისამართს. სერვერი მაშინვე აგზავნის მდგომარეობის სურათს; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ initMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ახალ სურათს ითხოვს. შეტყობინებები დამკვიდრებული mempool პროტოკოლის ფორმატს იყენებს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html">
+        <source>Server messages</source>
+        <target state="needs-review-translation">სერვერის შეტყობინებები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventsDescription" datatype="html">
+        <source>Snapshots and updates can contain <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. A projected-block subscriber also receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. Treat all as observations from the configured daemon, not global finality.</source>
+        <target state="needs-review-translation">სურათები და განახლებები შეიძლება შეიცავდეს <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> და <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. პროგნოზირებული ბლოკის გამომწერი ასევე იღებს <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />-ს. ეს მონაცემები გამართული დემონის დაკვირვებებად მიიჩნიეთ და არა გლობალურ საბოლოო დადასტურებად.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html">
+        <source>Client messages</source>
+        <target state="needs-review-translation">კლიენტის შეტყობინებები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html">
+        <source>Message</source>
+        <target state="needs-review-translation">შეტყობინება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html">
+        <source>Behavior</source>
+        <target state="needs-review-translation">ქცევა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html">
+        <source>Request the current snapshot.</source>
+        <target state="needs-review-translation">მიმდინარე სურათის მოთხოვნა.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.pingResult" datatype="html">
+        <source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ pongMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</source>
+        <target state="needs-review-translation">იღებს <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ pongMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html">
+        <source>Subscribe to a projected block snapshot by index.</source>
+        <target state="needs-review-translation">პროგნოზირებული ბლოკის სურათის გამოწერა ინდექსით.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html">
+        <source>Track public confirmation status for one transaction hash.</source>
+        <target state="needs-review-translation">ერთი ტრანზაქციის ჰეშის საჯარო დადასტურების სტატუსის თვალყურის დევნება.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html">
+        <source>Address tracking is intentionally not a public Monero stream feature.</source>
+        <target state="needs-review-translation">მისამართის თვალყურის დევნება განზრახ არ არის საჯარო Monero სტრიმის ფუნქცია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sseDescription" datatype="html">
+        <source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source>
+        <target state="needs-review-translation">ცალმხრივი განახლებებისთვის გახსენით <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> როგორც <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />. პროქსის ბუფერიზაცია გამორთულია და ნაკადი სურათით იწყება.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html">
+        <source>Events and reconnection</source>
+        <target state="needs-review-translation">მოვლენები და ხელახალი დაკავშირება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html">
+        <source>Event</source>
+        <target state="needs-review-translation">მოვლენა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html">
+        <source>Payload</source>
+        <target state="needs-review-translation">მონაცემები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html">
+        <source>Current daemon info and observed mempool hashes at connect.</source>
+        <target state="needs-review-translation">დაკავშირებისას დემონის მიმდინარე ინფორმაცია და ნანახი mempool ჰეშები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html">
+        <source>A new public block header.</source>
+        <target state="needs-review-translation">ახალი საჯარო ბლოკის სათაური.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.deltaResult" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> for the observed pool.</source>
+        <target state="needs-review-translation"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" /><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}" /><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> ნანახი პულისთვის.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.reconnectDescription" datatype="html">
+        <source>A comment heartbeat is sent every 25 seconds. Native <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /> reconnection is suitable for most clients; resync from the snapshot or REST after a disconnect.</source>
+        <target state="needs-review-translation">კავშირის შესანარჩუნებელი კომენტარი ყოველ 25 წამში იგზავნება. <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" />-ის ჩაშენებული ხელახალი დაკავშირება კლიენტების უმრავლესობისთვის გამოდგება; გათიშვის შემდეგ ხელახლა დაასინქრონეთ სურათიდან ან REST-ით.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html">
+        <source>Overview</source>
+        <target state="needs-review-translation">მიმოხილვა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html">
+        <source>Getting started</source>
+        <target state="needs-review-translation">დაწყება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html">
+        <source>Chain and blocks</source>
+        <target state="needs-review-translation">ქსელი და ბლოკები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html">
+        <source>Endpoints</source>
+        <target state="needs-review-translation">მისამართები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html">
+        <source>Transactions and mempool</source>
+        <target state="needs-review-translation">ტრანზაქციები და mempool</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html">
+        <source>Fees and history</source>
+        <target state="needs-review-translation">საკომისიოები და ისტორია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html">
+        <source>Mining data</source>
+        <target state="needs-review-translation">მაინინგის მონაცემები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html">
+        <source>Transaction proof</source>
+        <target state="needs-review-translation">ტრანზაქციის მტკიცებულება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html">
+        <source>Verification</source>
+        <target state="needs-review-translation">შემოწმება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html">
+        <source>Public daemon bridge</source>
+        <target state="needs-review-translation">საჯარო დემონის ხიდი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html">
+        <source>Connect and initialize</source>
+        <target state="needs-review-translation">დაკავშირება და ინიციალიზაცია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html">
+        <source>Connection</source>
+        <target state="needs-review-translation">კავშირი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html">
+        <source>Events</source>
+        <target state="needs-review-translation">მოვლენები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html">
+        <source>Commands</source>
+        <target state="needs-review-translation">ბრძანებები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html">
+        <source>Connect</source>
+        <target state="needs-review-translation">დაკავშირება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html">
+        <source>Documentation</source>
+        <target state="needs-review-translation">დოკუმენტაცია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       </body>
