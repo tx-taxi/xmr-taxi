@@ -55,10 +55,16 @@ export class XmrDocsComponent implements OnInit, AfterViewInit {
     void this.router.navigateByUrl(path);
   }
 
+  sectionHref(fragment: string): string {
+    return `${window.location.pathname}${window.location.search}#${encodeURIComponent(fragment)}`;
+  }
+
   anchorLinkClick(event: MouseEvent, fragment: string): void {
+    // Let modified clicks open the real deep link in a new tab or window.
+    if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     document.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    history.replaceState(null, '', `#${fragment}`);
+    history.replaceState(null, '', this.sectionHref(fragment));
   }
 
   private tabForUrl(url: string): DocsTab {
