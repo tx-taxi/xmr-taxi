@@ -13977,6 +13977,599 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source><target state="translated">Kdekoli na Zemi (AoE)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source><target state="translated">Samojský standardní čas (SST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source><target state="translated">Havajský standardní čas (HST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source><target state="translated">Aljašský standardní čas (AKST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source><target state="translated">Tichomořský standardní čas (PST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source><target state="translated">Horský standardní čas (MST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source><target state="translated">Centrální standardní čas (CST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source><target state="translated">Východní standardní čas (EST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source><target state="translated">Atlantický standardní čas (AST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source><target state="translated">Argentinský čas (ART)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source><target state="translated">Čas Fernanda de Noronha (FNT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source><target state="translated">Azorský čas (AZOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source><target state="translated">Greenwichský střední čas (GMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source><target state="translated">Středoevropský čas (CET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source><target state="translated">Východoevropský čas (EET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source><target state="translated">Moskevský standardní čas (MSK)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source><target state="translated">Arménský čas (AMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source><target state="translated">Pákistánský standardní čas (PKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source><target state="translated">Sinťiangský čas (XJT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source><target state="translated">Indočínský čas (ICT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source><target state="translated">Hongkongský čas (HKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source><target state="translated">Japonský standardní čas (JST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source><target state="translated">Australský východní standardní čas (AEST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source><target state="translated">Čas ostrova Norfolk (NFT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source><target state="translated">Novozélandský standardní čas (NZST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source><target state="translated">Čas Tongy (TOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source><target state="translated">Čas Liniových ostrovů (LINT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-instance-health" datatype="html">
+        <source>Instance health</source><target state="translated">Stav instance</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-title" datatype="html">
+        <source>Monero daemon status</source><target state="translated">Stav daemonu Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-description" datatype="html">
+        <source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target state="translated">Dostupnost backendu a stav synchronizace veřejného monerod pro tuto instanci xmr.tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-checked" datatype="html">
+        <source>Checked</source><target state="translated">Zkontrolováno</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-service-reachability" datatype="html">
+        <source>Service reachability</source><target state="translated">Dostupnost služeb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-backend" datatype="html">
+        <source>Backend</source><target state="translated">Backend</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-reachable" datatype="html">
+        <source>reachable</source><target state="translated">dostupný</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-daemon" datatype="html">
+        <source>Daemon</source><target state="translated">Daemon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-unreachable" datatype="html">
+        <source>unreachable</source><target state="translated">nedostupný</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-daemon-details" datatype="html">
+        <source>Daemon details</source><target state="translated">Podrobnosti daemonu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-chain" datatype="html">
+        <source>Chain</source><target state="translated">Řetězec</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-height" datatype="html">
+        <source>Height</source><target state="translated">Výška</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-target-height" datatype="html">
+        <source>Target height</source><target state="translated">Cílová výška</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-behind" datatype="html">
+        <source>Behind</source><target state="translated">Pozadu o</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-blocks" datatype="html">
+        <source>blocks</source><target state="translated">bloků</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-tip-hash" datatype="html">
+        <source>Tip hash</source><target state="translated">Hash posledního bloku</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-network" datatype="html">
+        <source>Network</source><target state="translated">Síť</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-nettype" datatype="html">
+        <source>Nettype</source><target state="translated">Typ sítě</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-peers" datatype="html">
+        <source>Peers</source><target state="translated">Peery</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-connections" datatype="html">
+        <source>Incoming / outgoing</source><target state="translated">Příchozí / odchozí</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-rpc-clients" datatype="html">
+        <source>RPC clients</source><target state="translated">RPC klienti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-workload" datatype="html">
+        <source>Workload</source><target state="translated">Zátěž</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html">
+        <source>Mempool</source><target state="translated">Mempool</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-txs" datatype="html">
+        <source>txs</source><target state="translated">transakce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-total-txs" datatype="html">
+        <source>Total txs</source><target state="translated">Transakcí celkem</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-difficulty" datatype="html">
+        <source>Difficulty</source><target state="translated">Obtížnost</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-estimated-hashrate" datatype="html">
+        <source>Estimated hashrate</source><target state="translated">Odhadovaný výpočetní výkon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-version" datatype="html">
+        <source>Version</source><target state="translated">Verze</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-uptime" datatype="html">
+        <source>Uptime</source><target state="translated">Doba provozu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-started" datatype="html">
+        <source>Started</source><target state="translated">Spuštěno</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-trusted-rpc" datatype="html">
+        <source>Trusted RPC</source><target state="translated">Důvěryhodné RPC</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-storage" datatype="html">
+        <source>Storage</source><target state="translated">Úložiště</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-database-size" datatype="html">
+        <source>Database size</source><target state="translated">Velikost databáze</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-free-space" datatype="html">
+        <source>Free space</source><target state="translated">Volné místo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-block-size-limit" datatype="html">
+        <source>Block size limit</source><target state="translated">Limit velikosti bloku</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-update-available" datatype="html">
+        <source>Update available</source><target state="translated">Je dostupná aktualizace</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap" datatype="html">
+        <source>Bootstrap</source><target state="translated">Bootstrap</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-height" datatype="html">
+        <source>Bootstrap height</source><target state="translated">Výška bootstrapu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-daemon" datatype="html">
+        <source>Bootstrap daemon</source><target state="translated">Bootstrap daemon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-used" datatype="html">
+        <source>Bootstrap used</source><target state="translated">Použit bootstrap</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-peerlist" datatype="html">
+        <source>Peerlist</source><target state="translated">Seznam peerů</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-white" datatype="html">
+        <source>white</source><target state="translated">bílý</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-grey" datatype="html">
+        <source>grey</source><target state="translated">šedý</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-check-failed" datatype="html">
+        <source>Daemon check failed</source><target state="translated">Kontrola daemonu selhala</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-backend-answered" datatype="html">
+        <source>The backend answered, but monerod did not return</source><target state="translated">Backend odpověděl, ale monerod neodpověděl</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-checking" datatype="html">
+        <source>Checking daemon status...</source><target state="translated">Kontrola stavu daemonu...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-unknown" datatype="html">
+        <source>unknown</source><target state="translated">neznámý</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-not-configured" datatype="html">
+        <source>not configured</source><target state="translated">není nakonfigurováno</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-no" datatype="html">
+        <source>no</source><target state="translated">ne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-yes" datatype="html">
+        <source>yes</source><target state="translated">ano</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-online" datatype="html">
+        <source>monerod reachable</source><target state="translated">monerod je dostupný</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-syncing" datatype="html">
+        <source>syncing</source><target state="translated">synchronizuje se</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-degraded" datatype="html">
+        <source>attention needed</source><target state="translated">vyžaduje pozornost</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-offline" datatype="html">
+        <source>daemon unreachable</source><target state="translated">daemon je nedostupný</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-request-failed" datatype="html">
+        <source>request failed</source><target state="translated">požadavek selhal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-network-request-failed" datatype="html">
+        <source>network request failed</source><target state="translated">síťový požadavek selhal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
