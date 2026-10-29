@@ -5938,8 +5938,7 @@
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
         <source>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</source>
-        <target>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Bekijk live statistieken van Monero-mempoolblokken: het kostenbereik in atomaire eenheden per byte, de totale grootte in bytes, het aantal transacties en de totale kosten. Mempoolblokken worden realtime bijgewerkt wanneer het netwerk nieuwe transacties ontvangt.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
         </context-group>
@@ -6620,17 +6619,15 @@
         <note priority="1" from="description">price-chart.percent-change</note>
       </trans-unit>
       <trans-unit id="price-chart.title" datatype="html">
-        <source>Bitcoin Price</source>
-        <target>XMR Price</target>
-        <context-group purpose="location">
+        <source>XMR Price</source>
+        <target state="needs-review-translation">XMR-prijs</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
-        <source>See the Bitcoin price in USD visualized over time.</source>
-        <target>See the Monero price in USD visualized over time.</target>
-        <context-group purpose="location">
+        <source>See the Monero price in USD visualized over time.</source>
+        <target state="needs-review-translation">Bekijk de Monero-prijs in USD over de tijd.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">78</context>
         </context-group>
@@ -11402,24 +11399,21 @@
       </trans-unit>
       <trans-unit id="recent-transactions-title" datatype="html">
         <source>Recent Transactions</source>
-        <target>Recent Transactions</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Recente transacties</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.xmr.recent-transactions" datatype="html">
         <source>See the most recent Monero transactions known to this node's mempool, updated in real time.</source>
-        <target>See the most recent Monero transactions known to this node's mempool, updated in real time.</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Bekijk de meest recente Monero-transacties die bekend zijn in de mempool van deze node, realtime bijgewerkt.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
         <source>1 new transaction</source>
-        <target>1 new transaction</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">1 nieuwe transactie</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
@@ -11427,8 +11421,7 @@
       </trans-unit>
       <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source>
-        <target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> nieuwe transacties</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
@@ -11436,8 +11429,7 @@
       </trans-unit>
       <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Pauzeren/hervatten</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
@@ -11446,8 +11438,7 @@
       </trans-unit>
       <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Pauzeren/hervatten</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
@@ -11456,8 +11447,7 @@
       </trans-unit>
       <trans-unit id="32fba724df729afb840693b40e3f8869356f4e33" datatype="html">
         <source>Size</source>
-        <target>Size</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Grootte</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">39</context>
         </context-group>
@@ -11466,8 +11456,7 @@
       </trans-unit>
       <trans-unit id="12712092967db7dedb58de04474dd9387f0b25c1" datatype="html">
         <source>No transactions currently in the mempool.</source>
-        <target>No transactions currently in the mempool.</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Momenteel staan er geen transacties in de mempool.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">57</context>
         </context-group>
@@ -11631,8 +11620,7 @@
       </trans-unit>
       <trans-unit id="f7861032fb8a0dd0876cef908e93dd380cdf509d" datatype="html">
         <source>XMR Price</source>
-        <target>XMR Price</target>
-        <context-group purpose="location">
+        <target state="needs-review-translation">XMR-prijs</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
@@ -12164,6 +12152,320 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
           <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html">
+        <source>About xmr.tx.taxi</source>
+        <target state="needs-review-translation">Over xmr.tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c15418ab123a8ff78ca76d128831cd88893f0da" datatype="html">
+        <source>Estimated fee for a 2 kB Monero transaction at this fee rate</source>
+        <target state="needs-review-translation">Geschatte kosten voor een Monero-transactie van 2 kB tegen dit kostentarief</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Monero fee example</note>
+      </trans-unit>
+      <trans-unit id="xmr.meta.description.mining.dashboard" datatype="html">
+        <source>See Monero mining stats: hashrate, per-block difficulty changes, block rewards, pool attribution, and recent blocks.</source>
+        <target state="needs-review-translation">Bekijk Monero-miningstatistieken: hashrate, veranderingen in de moeilijkheidsgraad per blok, blokbeloningen, pooltoeschrijving en recente blokken.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8493638f3af7c7eae48091929c7f8461bddbed51" datatype="html">
+        <source>All pools</source>
+        <target state="needs-review-translation">Alle pools</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">mining.all-pools</note>
+      </trans-unit>
+      <trans-unit id="2fdc79ab67991fd81012f4fe18de77138da9230f" datatype="html">
+        <source>No observed blocks yet.</source>
+        <target state="needs-review-translation">Nog geen blokken waargenomen.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">mining.no-observed-blocks</note>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source>
+        <target state="needs-review-translation">Bijgewerkt: 16 mei 2026</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.5" datatype="html">
+        <source>Use Your Own Node When Privacy Matters</source>
+        <target state="needs-review-translation">Gebruik je eigen node wanneer privacy belangrijk is</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.6" datatype="html">
+        <source>xmr.tx.taxi displays public Monero chain and mempool data from the RPC providers configured by the site operator. For the strongest privacy, run your own Monero node and explorer instead of relying on a public service.</source>
+        <target state="needs-review-translation">xmr.tx.taxi toont openbare Monero-blockchain- en mempoolgegevens van de RPC-providers die de beheerder heeft geconfigureerd. Voor de sterkste privacy kun je beter je eigen Monero-node en explorer gebruiken dan op een openbare dienst vertrouwen.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.7" datatype="html">
+        <source>What This Explorer Can See</source>
+        <target state="needs-review-translation">Wat deze explorer kan zien</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.8" datatype="html">
+        <source>Regular page and API requests reveal standard web metadata to the operator, including your IP address, user agent, requested URL, and request time. Operators may keep server logs for reliability, abuse prevention, debugging, and capacity planning.</source>
+        <target state="needs-review-translation">Gewone pagina- en API-verzoeken onthullen standaard webmetadata aan de beheerder, waaronder je IP-adres, useragent, opgevraagde URL en aanvraagtijdstip. Beheerders kunnen serverlogs bewaren voor betrouwbaarheid, misbruikpreventie, foutopsporing en capaciteitsplanning.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.9" datatype="html">
+        <source>What Monero Hides</source>
+        <target state="needs-review-translation">Wat Monero verborgen houdt</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.10" datatype="html">
+        <source>Monero's RingCT and stealth-address design means this site cannot determine transaction recipients or transferred amounts from public chain data. xmr.tx.taxi does not build address histories, wallet histories, account pages, or public spent/unspent output claims.</source>
+        <target state="needs-review-translation">Door het ontwerp van Monero met RingCT en stealth-adressen kan deze site ontvangers of overgedragen bedragen niet uit openbare blockchaingegevens afleiden. xmr.tx.taxi bouwt geen adresgeschiedenissen, walletgeschiedenissen of accountpagina’s op en doet geen openbare uitspraken over bestede of onbestede outputs.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.11" datatype="html">
+        <source>Proof Verification</source>
+        <target state="needs-review-translation">Bewijsverificatie</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.12" datatype="html">
+        <source>The tx_proof verification form sends the transaction hash, recipient address, and proof signature to this instance's backend. A tx_proof signature is intended to be shared; private view keys, spend keys, seed phrases, and tx secret keys should not be sent to this server.</source>
+        <target state="needs-review-translation">Het formulier voor tx_proof-verificatie stuurt de transactiehash, het ontvangersadres en de bewijshandtekening naar de backend van deze installatie. Een tx_proof-handtekening is bedoeld om te delen; privé-viewkeys, spendkeys, seedzinnen en geheime transactiesleutels mogen niet naar deze server worden gestuurd.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.13" datatype="html">
+        <source>Local Preferences</source>
+        <target state="needs-review-translation">Lokale voorkeuren</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.14" datatype="html">
+        <source>The frontend may store local preferences such as language, theme, fiat currency, and timezone in your browser. These preferences are used to render the interface and are not needed for chain analysis.</source>
+        <target state="needs-review-translation">De frontend kan lokale voorkeuren zoals taal, thema, fiatvaluta en tijdzone in je browser opslaan. Deze voorkeuren worden gebruikt om de interface weer te geven en zijn niet nodig voor blockchainanalyse.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.15" datatype="html">
+        <source>Third Parties</source>
+        <target state="needs-review-translation">Derden</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.16" datatype="html">
+        <source>This instance may call configured upstream services such as a Monero daemon, fiat price provider, or wallet-RPC verifier. Public deployments should document their own logging, analytics, proxy, and retention policies alongside this baseline policy.</source>
+        <target state="needs-review-translation">Deze installatie kan geconfigureerde externe diensten aanroepen, zoals een Monero-daemon, fiatprijsprovider of wallet-RPC-verificateur. Openbare installaties moeten naast dit basisbeleid hun eigen beleid voor logging, analytics, proxy’s en bewaartermijnen documenteren.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-description" datatype="html">
+        <source>Privacy notes for xmr.tx.taxi, including public Monero data limits, local preferences, server logs, and tx_proof verification behavior.</source>
+        <target state="needs-review-translation">Privacyinformatie voor xmr.tx.taxi, inclusief beperkingen van openbare Monero-gegevens, lokale voorkeuren, serverlogs en de werking van tx_proof-verificatie.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html">
+        <source>Chain search</source>
+        <target state="needs-review-translation">Blockchain zoeken</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html">
+        <source>Choose search chain</source>
+        <target state="needs-review-translation">Kies blockchain voor het zoeken</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html">
+        <source>Selected explorer</source>
+        <target state="needs-review-translation">Geselecteerde explorer</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html">
+        <source>SELECTED</source>
+        <target state="needs-review-translation">GESELECTEERD</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html">
+        <source>Automatic Routing</source>
+        <target state="needs-review-translation">Automatische routering</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html">
+        <source>Open tx.taxi in a new tab</source>
+        <target state="needs-review-translation">Open tx.taxi in een nieuw tabblad</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html">
+        <source>View Hub</source>
+        <target state="needs-review-translation">Hub bekijken</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.routingHint" datatype="html">
+        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></source>
+        <target state="needs-review-translation">Of ga direct naar <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;" />tx.taxi/[je zoekopdracht]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source>
+        <target state="needs-review-translation">EIGEN EXPLORERS</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source>
+        <target state="needs-review-translation">Explorerregister niet beschikbaar</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source>
+        <target state="needs-review-translation">EXPLORERS VAN DERDEN</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html">
+        <source>Open</source>
+        <target state="needs-review-translation">Openen</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html">
+        <source>Opened</source>
+        <target state="needs-review-translation">Geopend</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html">
+        <source>Switch</source>
+        <target state="needs-review-translation">Wisselen</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source>
+        <target state="needs-review-translation">Explorers laden</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.0" datatype="html">
+        <source>Privacy Policy</source>
+        <target state="needs-review-translation">Privacybeleid</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.2" datatype="html">
+        <source>Audience measurement</source>
+        <target state="needs-review-translation">Meting van bezoekers</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.3" datatype="html">
+        <source>tx.taxi uses Cloudflare Web Analytics for page views and performance, and a first-party daily cookie shared across its explorers to count browsers once per UTC day. The daily audience collector stores only a daily identifier, the explorer hostname, and whether there was interaction. It does not receive search text, addresses, transaction IDs, URLs, or IP addresses. Individual daily records expire after 31 days; aggregate counts are retained for 400 days. Do Not Track and Global Privacy Control disable this first-party measurement.</source>
+        <target state="needs-review-translation">tx.taxi gebruikt Cloudflare Web Analytics voor paginaweergaven en prestaties, en een eigen dagelijks cookie dat tussen de explorers wordt gedeeld om browsers eenmaal per UTC-dag te tellen. De dagelijkse bezoekersteller bewaart alleen een dagelijkse identificatie, de hostnaam van de explorer en of er interactie was. Hij ontvangt geen zoektekst, adressen, transactie-ID's, URL's of IP-adressen. Afzonderlijke dagrecords vervallen na 31 dagen; geaggregeerde tellingen worden 400 dagen bewaard. Do Not Track en Global Privacy Control schakelen deze eigen meting uit.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.4" datatype="html">
+        <source>Details and opt-out</source>
+        <target state="needs-review-translation">Details en afmelden</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-title" datatype="html">
+        <source>Privacy Policy</source>
+        <target state="needs-review-translation">Privacybeleid</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.0" datatype="html">
+        <source>Terms of Service</source>
+        <target state="needs-review-translation">Gebruiksvoorwaarden</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.meta-title" datatype="html">
+        <source>Terms of Service</source>
+        <target state="needs-review-translation">Gebruiksvoorwaarden</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       </body>
