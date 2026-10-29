@@ -11764,6 +11764,1314 @@
         <source>Server-Sent Events</source>
         <target>Události odesílané serverem</target>
       </trans-unit>
+          <trans-unit id="xmr.about.title" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">O xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.tagline" datatype="html">
+        <source>The Monero explorer in the tx.taxi family.</source><target state="translated">Průzkumník Monero z rodiny tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.projectLinks" datatype="html">
+        <source>Project links</source><target state="translated">Odkazy projektu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.documentation" datatype="html">
+        <source>Monero documentation</source><target state="translated">Dokumentace Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.contact" datatype="html">
+        <source>Contact the maintainer</source><target state="translated">Kontaktovat správce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.description" datatype="html">
+        <source>xmr.tx.taxi adapts the Mempool Open Source Project interface for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</source><target state="translated">xmr.tx.taxi upravuje rozhraní Mempool Open Source Project pro <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Zobrazuje pouze údaje doložitelné řetězcem: výšku, hashrate, čekající transakce, úrovně poplatků, informace o kruzích a typ RingCT. Částky skrývá RingCT a příjemce skryté adresy; ve výchozím zobrazení zůstávají skryté.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacy" datatype="html">
+        <source>Privacy by default</source><target state="translated">Soukromí ve výchozím nastavení</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacyDescription" datatype="html">
+        <source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</source><target state="translated">Stránky s podrobnostmi transakce záměrně rozmazávají citlivá pole. Zveřejnění účastníkem je omezeno na postupy odpovídající modelu soukromí Monero:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.recipientChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Recipient checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — require the recipient's own wallet/view key tooling. Private keys should stay local.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Kontrola příjemcem<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> vyžaduje vlastní peněženku příjemce nebo nástroj s jeho zobrazovacím klíčem. Soukromé klíče mají zůstat v zařízení.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.proofChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_proof verification<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Ověření tx_proof<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: server může ověřit podpis tx_proof a adresu příjemce, pokud provozovatel nastaví monero-wallet-rpc. Soukromé klíče se neposílají.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.secretChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_secret_key checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Kontrola tx_secret_key<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> patří do místních nástrojů peněženky; xmr.tx.taxi nežádá o odeslání tohoto klíče na server.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemon" datatype="html">
+        <source>Daemon</source><target state="translated">Démon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemonDescription" datatype="html">
+        <source>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> JSON-RPC endpoint.</source><target state="translated">Tato instance používá nastavenou skupinu veřejných uzlů Monero s omezeným RPC a seřazenými záložními uzly. Provozovatel může vlastní instanci připojit k libovolnému kompatibilnímu JSON-RPC endpointu <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.license" datatype="html">
+        <source>License</source><target state="translated">Licence</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.licenseDescription" datatype="html">
+        <source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source><target state="translated">xmr.tx.taxi dodržuje licenční povinnosti AGPLv3 původního projektu. Mempool Open Source Project vytvořil vzory rozhraní, na kterých tento průzkumník staví.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSource" datatype="html">
+        <source>Built on open source</source><target state="translated">Postaveno na otevřeném kódu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSourceDescription" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source><target state="translated">Tento průzkumník staví na <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Viz <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>uvedení autorství třetích stran<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>; informace o zdrojovém kódu a licenci poskytne správce.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html">
+        <source>Fiat value unavailable</source><target state="translated">Hodnota ve fiat měně není dostupná</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/amount/amount.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html">
+        <source>Monero explorer dashboard</source><target state="translated">Přehled průzkumníka Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.returnHub" datatype="html">
+        <source>Back to tx.taxi</source><target state="translated">Zpět na tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.brand" datatype="html">
+        <source>xmr.tx.taxi dashboard</source><target state="translated">Přehled xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html">
+        <source>Switch to displaying block sizes</source><target state="translated">Zobrazovat velikosti bloků</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html">
+        <source>Switch to displaying total fees per block</source><target state="translated">Zobrazovat celkové poplatky za blok</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source><target state="translated">Zobrazovat nejnovější bloky vpravo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source><target state="translated">Zobrazovat nejnovější bloky vlevo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html">
+        <source>difficulty</source><target state="translated">obtížnost</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleRewards" datatype="html">
+        <source>rewards</source><target state="translated">odměny</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.paceHelp" datatype="html">
+        <source>Recent blocks compared with Monero's two-minute target</source><target state="translated">Nedávné bloky ve srovnání s dvouminutovým cílem Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.pace" datatype="html">
+        <source>Block pace</source><target state="translated">Tempo bloků</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.change" datatype="html">
+        <source>Difficulty Δ</source><target state="translated">Změna obtížnosti Δ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.title" datatype="html">
+        <source>Difficulty Adjustment</source><target state="translated">Úprava obtížnosti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.rewardsTitle" datatype="html">
+        <source>Reward stats</source><target state="translated">Statistiky odměn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html">
+        <source>Kraken last trade</source><target state="translated">Poslední obchod Kraken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html">
+        <source> · stale</source><target state="translated"> · zastaralá data</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html">
+        <source>ECB reference rate</source><target state="translated">Referenční kurz ECB</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html">
+        <source>ECB reference rate; update unavailable</source><target state="translated">Referenční kurz ECB; aktualizace není dostupná</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html">
+        <source>Dashboard</source><target state="translated">Přehled</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.mining" datatype="html">
+        <source>Mining dashboard</source><target state="translated">Přehled těžby</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.blocks" datatype="html">
+        <source>Recent blocks</source><target state="translated">Nedávné bloky</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.graphs" datatype="html">
+        <source>Graphs</source><target state="translated">Grafy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.docs" datatype="html">
+        <source>Documentation</source><target state="translated">Dokumentace</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">O xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html">
+        <source>Chain search</source><target state="translated">Hledání v řetězcích</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html">
+        <source>Choose search chain</source><target state="translated">Vyberte řetězec pro hledání</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html">
+        <source>Selected explorer</source><target state="translated">Vybraný průzkumník</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html">
+        <source>SELECTED</source><target state="translated">VYBRÁNO</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html">
+        <source>Automatic Routing</source><target state="translated">Automatické směrování</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html">
+        <source>Open tx.taxi in a new tab</source><target state="translated">Otevřít tx.taxi na nové kartě</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html">
+        <source>View Hub</source><target state="translated">Zobrazit hlavní stránku</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.routingHint" datatype="html">
+        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source><target state="translated">Nebo přejděte přímo na <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[hledaný výraz]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source><target state="translated">VLASTNÍ PRŮZKUMNÍCI</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source><target state="translated">Seznam průzkumníků není dostupný</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source><target state="translated">PRŮZKUMNÍCI TŘETÍCH STRAN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html">
+        <source>Open</source><target state="translated">Otevřít</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html">
+        <source>Opened</source><target state="translated">Otevřeno</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html">
+        <source>Switch</source><target state="translated">Přepnout</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source><target state="translated">Načítání průzkumníků</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html">
+        <source>Search selected chain</source><target state="translated">Hledat ve vybraném řetězci</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html">
+        <source>Monero explorer</source><target state="translated">Průzkumník Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html">
+        <source>Found</source><target state="translated">Nalezeno</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html">
+        <source>Possible</source><target state="translated">Možné</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.additionalExplorers" datatype="html">
+        <source><x id="name" equiv-text="name"/> additional explorers</source><target state="translated">Další průzkumníci: <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorer" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/></source><target state="translated">Otevřít <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorerNewTab" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/> in a new tab</source><target state="translated">Otevřít <x id="name" equiv-text="name"/> na nové kartě</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switchExplorer" datatype="html">
+        <source>Switch to <x id="name" equiv-text="name"/></source><target state="translated">Přepnout na <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideOne" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">Skrýt <x id="count" equiv-text="count"/> další možnost pro <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideMany" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">Skrýt <x id="count" equiv-text="count"/> další možnosti pro <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showOne" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">Zobrazit <x id="count" equiv-text="count"/> další možnost pro <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showMany" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">Zobrazit <x id="count" equiv-text="count"/> další možnosti pro <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source><target state="translated">Zavolejte taxi a vložte sem cokoli.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html">
+        <source>Monero search suggestions</source><target state="translated">Návrhy hledání Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html">
+        <source>Monero Block Height</source><target state="translated">Výška bloku Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html">
+        <source>Monero Block / Transaction</source><target state="translated">Blok nebo transakce Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html">
+        <source>Monero addresses are private</source><target state="translated">Adresy Monero jsou soukromé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html">
+        <source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target state="translated">Z veřejných dat řetězce nelze získat historii adresy. Otevřete transakci a ověřte platbu pomocí důkazu nebo klíčů.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html">
+        <source>Unavailable for pruned data</source><target state="translated">Pro prořezaná data není dostupné</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html">
+        <source>Pruned data size</source><target state="translated">Velikost prořezaných dat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html">
+        <source>Serialized size</source><target state="translated">Serializovaná velikost</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html">
+        <source>Unlock time</source><target state="translated">Čas odemčení</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html">
+        <source>Decoded transaction</source><target state="translated">Dekódovaná transakce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html">
+        <source>Transaction extra</source><target state="translated">Dodatečná data transakce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html">
+        <source>Raw tx_extra</source><target state="translated">Surová data tx_extra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html">
+        <source>Empty</source><target state="translated">Prázdné</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target state="translated">Některá dodatečná pole nebyla rozpoznána; úplné surové bajty jsou uvedeny výše.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html">
+        <source>Payment verification</source><target state="translated">Ověření platby</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html">
+        <source>Monero payment verification mode</source><target state="translated">Způsob ověření platby Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html">
+        <source>Received</source><target state="translated">Přijato</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-help" datatype="html">
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source><target state="translated">Ověření tx_proof používá RPC serverové peněženky, pokud je nastaveno. Soukromé zobrazovací klíče a hodnoty tx_secret_key se kontrolují lokálně v tomto prohlížeči a neposílají se na xmr.tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html">
+        <source>Recipient address</source><target state="translated">Adresa příjemce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html">
+        <source>Message</source><target state="translated">Zpráva</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html">
+        <source>tx_proof signature</source><target state="translated">Podpis tx_proof</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html">
+        <source>Verifying...</source><target state="translated">Ověřování...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html">
+        <source>Verify proof</source><target state="translated">Ověřit důkaz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html">
+        <source>Proof verified</source><target state="translated">Důkaz ověřen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.confirmations" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/> confirmations</source><target state="translated">Potvrzení: <x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html">
+        <source>In mempool</source><target state="translated">V mempoolu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html">
+        <source>Private view key</source><target state="translated">Soukromý zobrazovací klíč</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html">
+        <source>Scanning...</source><target state="translated">Skenování...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html">
+        <source>Scan this tx</source><target state="translated">Skenovat transakci</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html">
+        <source>Checking...</source><target state="translated">Kontrola...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html">
+        <source>Check key</source><target state="translated">Zkontrolovat klíč</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html">
+        <source>Payment found</source><target state="translated">Platba nalezena</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.atomic-amount" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> atomic units </source><target state="translated"><x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> atomických jednotek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">318,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
+        <source>Address and tx_proof signature are required.</source><target state="translated">Je vyžadována adresa a podpis tx_proof.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html">
+        <source>Enter a valid-looking Monero mainnet address.</source><target state="translated">Zadejte adresu hlavní sítě Monero v platném formátu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">502</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">535</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html">
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source><target state="translated">Zadejte podpis tx_proof vytvořený peněženkou Monero.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofMessageLength" datatype="html">
+        <source>Proof messages must be <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> characters or less.</source><target state="translated">Zpráva důkazu smí mít nejvýše <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> znaků.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">459</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
+        <source>The proof did not verify for this transaction and address.</source><target state="translated">Důkaz pro tuto transakci a adresu nebyl ověřen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
+        <source>Unable to verify proof.</source><target state="translated">Důkaz nelze ověřit.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
+        <source>Address and private view key are required.</source><target state="translated">Je vyžadována adresa a soukromý zobrazovací klíč.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
+        <source>Load a transaction before running local verification.</source><target state="translated">Před místním ověřením načtěte transakci.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">498</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html">
+        <source>Enter a 64-character hexadecimal private view key.</source><target state="translated">Zadejte soukromý zobrazovací klíč o 64 šestnáctkových znacích.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
+        <source>Address and tx_secret_key are required.</source><target state="translated">Je vyžadována adresa a tx_secret_key.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html">
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target state="translated">Zadejte šestnáctkový tx_secret_key z peněženky odesílatele.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
+        <source>Unable to verify this transaction locally.</source><target state="translated">Tuto transakci nelze místně ověřit.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">569</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.inputs" datatype="html">
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</source><target state="translated">Vstupy (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></source><target state="translated">Kruh <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html">
+        <source>Key image</source><target state="translated">Obraz klíče</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html">
+        <source>Input type</source><target state="translated">Typ vstupu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html">
+        <source>Ring size</source><target state="translated">Velikost kruhu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
+        <source>Relative ring offsets</source><target state="translated">Relativní posuny kruhu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html">
+        <source>Ring members</source><target state="translated">Členové kruhu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-index" datatype="html">
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></source><target state="translated">Výstup č. <x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.block-height" datatype="html">
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></source><target state="translated">Blok <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.blocks-earlier" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> blocks earlier</source><target state="translated">o <x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> bloků dříve</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html">
+        <source>Output key</source><target state="translated">Klíč výstupu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html">
+        <source>Source transaction temporarily unavailable.</source><target state="translated">Zdrojová transakce je dočasně nedostupná.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html">
+        <source>This legacy input has no decoys.</source><target state="translated">Tento starší vstup neobsahuje návnady.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html">
+        <source>Ring members include decoys; the actual spent output is not identified.</source><target state="translated">Členové kruhu zahrnují návnady; skutečně utracený výstup není určen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
+        <source>Some ring-member details were not resolved in this response.</source><target state="translated">Některé podrobnosti členů kruhu se v této odpovědi nepodařilo získat.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.outputs" datatype="html">
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</source><target state="translated">Výstupy (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html">
+        <source>RingCT output</source><target state="translated">Výstup RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html">
+        <source>recipient hidden</source><target state="translated">příjemce skryt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html">
+        <source>Output type</source><target state="translated">Typ výstupu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html">
+        <source>Amount</source><target state="translated">Částka</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html">
+        <source>Hidden by RingCT</source><target state="translated">Skryto pomocí RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html">
+        <source>Recipient</source><target state="translated">Příjemce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html">
+        <source>Hidden by stealth addressing</source><target state="translated">Skryto pomocí skryté adresy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html">
+        <source>Global output index</source><target state="translated">Globální index výstupu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html">
+        <source>View tag</source><target state="translated">Zobrazovací značka</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html">
+        <source>Amount commitment</source><target state="translated">Závazek částky</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html">
+        <source>atomic units</source><target state="translated">atomických jednotek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html">
+        <source>Amount hidden</source><target state="translated">Částka skryta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html">
+        <source>Coinbase</source><target state="translated">Coinbase</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html">
+        <source>RingCT input</source><target state="translated">Vstup RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
+        <source>Legacy ring input</source><target state="translated">Kruhový vstup staršího formátu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html">
+        <source>Input</source><target state="translated">Vstup</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html">
+        <source>Stealth output</source><target state="translated">Skrytý výstup</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html">
+        <source>Fee</source><target state="translated">Poplatek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html">
+        <source>Output</source><target state="translated">Výstup</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()"/></source><target state="translated">globální výstup <x id="index" equiv-text="member.global_index.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-height" datatype="html">
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()"/></source><target state="translated">výška <x id="height" equiv-text="member.height.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-blocks-before-spend" datatype="html">
+        <source><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> blocks before spend</source><target state="translated"><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> bloků před utracením</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html">
+        <source>locked</source><target state="translated">uzamčeno</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
+        <source>Transaction amount hidden by RingCT</source><target state="translated">Částka transakce skryta pomocí RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html">
+        <source>Change amount denomination</source><target state="translated">Nominální hodnota vrácené částky</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.miner" datatype="html">
+        <source>Miner transaction</source><target state="translated">Transakce těžaře</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacyHelp" datatype="html">
+        <source>Pre-RingCT transaction; input and output amounts are public</source><target state="translated">Transakce před RingCT; částky vstupů a výstupů jsou veřejné</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacy" datatype="html">
+        <source>Legacy · public amounts</source><target state="translated">Starší formát · veřejné částky</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTagsHelp" datatype="html">
+        <source>View tags help wallets scan outputs</source><target state="translated">Zobrazovací značky pomáhají peněženkám skenovat výstupy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTags" datatype="html">
+        <source>View tags</source><target state="translated">Zobrazovací značky</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringHelp" datatype="html">
+        <source>Number of members in the first input's ring</source><target state="translated">Počet členů kruhu prvního vstupu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></source><target state="translated">Kruh <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringType" datatype="html">
+        <source>RingCT type <x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></source><target state="translated">Typ RingCT <x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
+        <source>Pending Transactions</source><target state="translated">Čekající transakce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html">
+        <source>Total fees</source><target state="translated">Celkové poplatky</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html">
+        <source>Median fee rate</source><target state="translated">Mediánová sazba poplatku</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html">
+        <source>Fee range</source><target state="translated">Rozsah poplatků</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
