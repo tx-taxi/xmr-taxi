@@ -11304,6 +11304,14 @@
         </context-group>
         <note priority="1" from="description">mining.no-observed-blocks</note>
       </trans-unit>
+      <trans-unit id="xmr.docs.browser" datatype="html">
+        <source>Browser</source>
+        <target>Прелистувач</target>
+      </trans-unit>
+      <trans-unit id="xmr.docs.serverSentEvents" datatype="html">
+        <source>Server-Sent Events</source>
+        <target>Настани испратени од серверот</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

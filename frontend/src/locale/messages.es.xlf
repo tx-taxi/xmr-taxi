@@ -13349,6 +13349,14 @@
       <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target>Hora estándar de Nueva Zelanda (NZST)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target>Hora de Tonga (TOT)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target>Hora de las islas de la Línea (LINT)</target></trans-unit>
+      <trans-unit id="xmr.docs.browser" datatype="html">
+        <source>Browser</source>
+        <target>Navegador</target>
+      </trans-unit>
+      <trans-unit id="xmr.docs.serverSentEvents" datatype="html">
+        <source>Server-Sent Events</source>
+        <target>Eventos enviados por el servidor</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
