@@ -15608,6 +15608,10 @@
           <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html">
+        <source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source>
+        <target>Текущее состояние сервера xmr.tx.taxi и monerod: доступность, синхронизация, версия, подключения и хранилище.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
