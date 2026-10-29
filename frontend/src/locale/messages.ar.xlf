@@ -7197,6 +7197,7 @@
       </trans-unit>
       <trans-unit id="26a65abd1f3dedb8b5777f6cb01262096549e94d" datatype="html">
         <source>This node hasn't seen any stale blocks yet!</source>
+        <target state="translated">لم ترصد هذه العقدة كتلًا مهجورة بعد.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">120</context>
@@ -7692,6 +7693,7 @@
       </trans-unit>
       <trans-unit id="500acb5f67d1f175e1d5dd666c7b15c66611e411" datatype="html">
         <source>This transaction may have been added out-of-band</source>
+        <target state="translated">قد تكون هذه المعاملة أُضيفت خارج المسار المعتاد.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">136</context>
@@ -7700,6 +7702,7 @@
       </trans-unit>
       <trans-unit id="0badd8c91194cb72dd79e12955d4ed4b43a7cf41" datatype="html">
         <source>This transaction may have been prioritized out-of-band</source>
+        <target state="translated">قد تكون أولوية هذه المعاملة رُفعت خارج المسار المعتاد.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">139</context>
@@ -7976,6 +7979,7 @@
       </trans-unit>
       <trans-unit id="df5fd5288dc0b13ce611a0c857e97baee9595e67" datatype="html">
         <source> This transaction ID appears twice in the blockchain as the coinbase of blocks <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;"/><x id="INTERPOLATION" equiv-text="locks[0] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="cks[1] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, due to a bug later mitigated by <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>BIP-30<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target state="translated">يظهر معرّف هذه المعاملة مرتين في البلوكتشين بوصفه معاملة coinbase للكتلتين <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;"/><x id="INTERPOLATION" equiv-text="locks[0] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> و<x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="cks[1] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>، بسبب خطأ خُففت آثاره لاحقاً بواسطة <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>BIP-30<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">40,42</context>
@@ -8125,6 +8129,7 @@
       </trans-unit>
       <trans-unit id="7d94a59c779ba549751c9f36eb40fd339725fec6" datatype="html">
         <source>P2TR Simplicity script</source>
+        <target state="translated">برنامج P2TR Simplicity</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">256</context>
@@ -8243,6 +8248,7 @@
       </trans-unit>
       <trans-unit id="344b8ee2243000ff6ef72754d146afc800afefef" datatype="html">
         <source>script depth</source>
+        <target state="translated">عمق البرنامج</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">597</context>
@@ -8332,6 +8338,7 @@
       </trans-unit>
       <trans-unit id="264b04d29a43ca770d1c046df8ffc045161087bf" datatype="html">
         <source>verified addresses</source>
+        <target state="translated">العناوين التي تم التحقق منها</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/verify/treasuries-verify.component.html</context>
           <context context-type="linenumber">35</context>
@@ -8340,6 +8347,7 @@
       </trans-unit>
       <trans-unit id="bf91f7ae886628be207b9f68503e8323d64fb192" datatype="html">
         <source>verified of total</source>
+        <target state="translated">العدد المتحقق منه من الإجمالي</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/verify/treasuries-verify.component.html</context>
           <context context-type="linenumber">42</context>
@@ -8626,6 +8634,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.wallet" datatype="html">
         <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> wallet <x id="INTERPOLATION" equiv-text="walletName"/>.</source>
+        <target state="translated">عرض معاملات مجمع الانتظار والمعاملات المؤكدة والرصيد وغيرها لمحفظة <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> <x id="INTERPOLATION" equiv-text="walletName"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
           <context context-type="linenumber">151</context>
@@ -10879,6 +10888,7 @@
       </trans-unit>
       <trans-unit id="630c4823008421f6c74812ca4ab21d63a93c2d82" datatype="html">
         <source>This address is deceptively similar to another output. It may be part of an address poisoning attack.</source>
+        <target state="translated">يشبه هذا العنوان مخرجاً آخر بشكل مضلل، وقد يكون جزءاً من هجوم تسميم العناوين.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-text/address-text.component.html</context>
           <context context-type="linenumber">9</context>
