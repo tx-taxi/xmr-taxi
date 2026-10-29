@@ -11369,6 +11369,1314 @@
         <source>Server-Sent Events</source>
         <target>Serverio siunčiami įvykiai</target>
       </trans-unit>
+          <trans-unit id="xmr.about.title" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">Apie xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.tagline" datatype="html">
+        <source>The Monero explorer in the tx.taxi family.</source><target state="translated">tx.taxi šeimos Monero naršyklė.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.projectLinks" datatype="html">
+        <source>Project links</source><target state="translated">Projekto nuorodos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.documentation" datatype="html">
+        <source>Monero documentation</source><target state="translated">Monero dokumentacija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.contact" datatype="html">
+        <source>Contact the maintainer</source><target state="translated">Susisiekti su prižiūrėtoju</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.description" datatype="html">
+        <source>xmr.tx.taxi adapts the Mempool Open Source Project interface for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</source><target state="translated">xmr.tx.taxi pritaiko Mempool Open Source Project sąsają <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> tinklui. Ji rodo tik tai, ką įrodo pati grandinė: bloko aukštį, skaičiavimo galią, laukiančių operacijų aktyvumą, mokesčių lygius, žiedo informaciją ir RingCT tipą. RingCT slepia sumas, o slaptieji adresai – gavėjus; pagal numatytuosius nustatymus jie lieka paslėpti.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacy" datatype="html">
+        <source>Privacy by default</source><target state="translated">Privatumas pagal numatytuosius nustatymus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacyDescription" datatype="html">
+        <source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</source><target state="translated">Operacijos informacijos puslapiai specialiai sulieja jautrius laukus. Dalyvių patikros apsiriboja veiksmais, atitinkančiais Monero privatumo modelį:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.recipientChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Recipient checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — require the recipient's own wallet/view key tooling. Private keys should stay local.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Gavėjo patikros<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — reikia paties gavėjo piniginės arba peržiūros rakto įrankių. Privatūs raktai turi likti vietiniame įrenginyje.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.proofChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_proof verification<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_proof tikrinimas<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — serveris gali patikrinti tx_proof parašą ir gavėjo adresą, jei operatorius sukonfigūravo monero-wallet-rpc. Privatūs raktai nesiunčiami.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.secretChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_secret_key checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_secret_key patikros<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> atliekamos vietiniais piniginės įrankiais; xmr.tx.taxi neprašo siųsti šio rakto į serverį.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemon" datatype="html">
+        <source>Daemon</source><target state="translated">Tarnyba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemonDescription" datatype="html">
+        <source>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> JSON-RPC endpoint.</source><target state="translated">Šis diegimas naudoja sukonfigūruotą viešų riboto RPC Monero mazgų grupę su iš eilės naudojamais atsarginiais mazgais. Savo diegimą galima nukreipti į bet kurį suderinamą <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> JSON-RPC galinį tašką.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.license" datatype="html">
+        <source>License</source><target state="translated">Licencija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.licenseDescription" datatype="html">
+        <source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source><target state="translated">xmr.tx.taxi laikosi pirminio projekto AGPLv3 licencijos įsipareigojimų. Mempool Open Source Project sukūrė sąsajos modelius, kuriais pagrįsta ši naršyklė.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSource" datatype="html">
+        <source>Built on open source</source><target state="translated">Sukurta naudojant atvirąjį kodą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSourceDescription" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source><target state="translated">Ši naršyklė remiasi <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Žr. <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>trečiųjų šalių nurodymą<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ir susisiek su prižiūrėtoju dėl kodo bei licencijos informacijos.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html">
+        <source>Fiat value unavailable</source><target state="translated">Fiat vertė nepasiekiama</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/amount/amount.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html">
+        <source>Monero explorer dashboard</source><target state="translated">Monero naršyklės apžvalga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.returnHub" datatype="html">
+        <source>Back to tx.taxi</source><target state="translated">Grįžti į tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.brand" datatype="html">
+        <source>xmr.tx.taxi dashboard</source><target state="translated">xmr.tx.taxi apžvalga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html">
+        <source>Switch to displaying block sizes</source><target state="translated">Rodyti blokų dydžius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html">
+        <source>Switch to displaying total fees per block</source><target state="translated">Rodyti bendrus kiekvieno bloko mokesčius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source><target state="translated">Naujausius blokus rodyti dešinėje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source><target state="translated">Naujausius blokus rodyti kairėje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html">
+        <source>difficulty</source><target state="translated">sudėtingumas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleRewards" datatype="html">
+        <source>rewards</source><target state="translated">atlygiai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.paceHelp" datatype="html">
+        <source>Recent blocks compared with Monero's two-minute target</source><target state="translated">Naujausi blokai palyginti su Monero dviejų minučių tikslu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.pace" datatype="html">
+        <source>Block pace</source><target state="translated">Blokų tempas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.change" datatype="html">
+        <source>Difficulty Δ</source><target state="translated">Sudėtingumo pokytis Δ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.title" datatype="html">
+        <source>Difficulty Adjustment</source><target state="translated">Sudėtingumo koregavimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.rewardsTitle" datatype="html">
+        <source>Reward stats</source><target state="translated">Atlygių statistika</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html">
+        <source>Kraken last trade</source><target state="translated">Paskutinis Kraken sandoris</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html">
+        <source> · stale</source><target state="translated"> · pasenę</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html">
+        <source>ECB reference rate</source><target state="translated">ECB orientacinis kursas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html">
+        <source>ECB reference rate; update unavailable</source><target state="translated">ECB orientacinis kursas; atnaujinimas nepasiekiamas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html">
+        <source>Dashboard</source><target state="translated">Apžvalga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.mining" datatype="html">
+        <source>Mining dashboard</source><target state="translated">Kasimo apžvalga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.blocks" datatype="html">
+        <source>Recent blocks</source><target state="translated">Naujausi blokai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.graphs" datatype="html">
+        <source>Graphs</source><target state="translated">Grafikai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.docs" datatype="html">
+        <source>Documentation</source><target state="translated">Dokumentacija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">Apie xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html">
+        <source>Chain search</source><target state="translated">Paieška grandinėje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html">
+        <source>Choose search chain</source><target state="translated">Pasirink paieškos grandinę</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html">
+        <source>Selected explorer</source><target state="translated">Pasirinkta naršyklė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html">
+        <source>SELECTED</source><target state="translated">PASIRINKTA</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html">
+        <source>Automatic Routing</source><target state="translated">Automatinis nukreipimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html">
+        <source>Open tx.taxi in a new tab</source><target state="translated">Atidaryti tx.taxi naujame skirtuke</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html">
+        <source>View Hub</source><target state="translated">Atidaryti pagrindinį puslapį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.routingHint" datatype="html">
+        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source><target state="translated">Arba eik tiesiai į <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[paieška]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source><target state="translated">TX.TAXI NARŠYKLĖS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source><target state="translated">Naršyklių registras nepasiekiamas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source><target state="translated">TREČIŲJŲ ŠALIŲ NARŠYKLĖS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html">
+        <source>Open</source><target state="translated">Atidaryti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html">
+        <source>Opened</source><target state="translated">Atidaryta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html">
+        <source>Switch</source><target state="translated">Perjungti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source><target state="translated">Įkeliamos naršyklės</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html">
+        <source>Search selected chain</source><target state="translated">Ieškoti pasirinktoje grandinėje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html">
+        <source>Monero explorer</source><target state="translated">Monero naršyklė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html">
+        <source>Found</source><target state="translated">Rasta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html">
+        <source>Possible</source><target state="translated">Galimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.additionalExplorers" datatype="html">
+        <source><x id="name" equiv-text="name"/> additional explorers</source><target state="translated">Papildomos naršyklės: <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorer" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/></source><target state="translated">Atidaryti <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorerNewTab" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/> in a new tab</source><target state="translated">Atidaryti <x id="name" equiv-text="name"/> naujame skirtuke</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switchExplorer" datatype="html">
+        <source>Switch to <x id="name" equiv-text="name"/></source><target state="translated">Perjungti į <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideOne" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">Slėpti <x id="count" equiv-text="count"/> papildomą <x id="name" equiv-text="name"/> parinktį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideMany" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">Slėpti <x id="count" equiv-text="count"/> papildomų <x id="name" equiv-text="name"/> parinkčių</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showOne" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">Rodyti <x id="count" equiv-text="count"/> papildomą <x id="name" equiv-text="name"/> parinktį</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showMany" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">Rodyti <x id="count" equiv-text="count"/> papildomų <x id="name" equiv-text="name"/> parinkčių</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source><target state="translated">Išsikviesk taksi – įklijuok čia bet ką.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html">
+        <source>Monero search suggestions</source><target state="translated">Monero paieškos pasiūlymai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html">
+        <source>Monero Block Height</source><target state="translated">Monero bloko aukštis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html">
+        <source>Monero Block / Transaction</source><target state="translated">Monero blokas / operacija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html">
+        <source>Monero addresses are private</source><target state="translated">Monero adresai yra privatūs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html">
+        <source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target state="translated">Iš viešų grandinės duomenų negalima sudaryti adreso istorijos. Atidaryk operaciją ir patikrink mokėjimą naudodamas įrodymą arba raktus.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html">
+        <source>Unavailable for pruned data</source><target state="translated">Neprieinama iš sutrumpintų duomenų</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html">
+        <source>Pruned data size</source><target state="translated">Sutrumpintų duomenų dydis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html">
+        <source>Serialized size</source><target state="translated">Serializuotas dydis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html">
+        <source>Unlock time</source><target state="translated">Atrakinimo laikas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html">
+        <source>Decoded transaction</source><target state="translated">Iškoduota operacija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html">
+        <source>Transaction extra</source><target state="translated">Papildomi operacijos duomenys</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html">
+        <source>Raw tx_extra</source><target state="translated">Neapdorotas tx_extra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html">
+        <source>Empty</source><target state="translated">Tuščia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target state="translated">Kai kurie papildomi laukai neatpažinti; visi neapdoroti baitai pateikti aukščiau.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html">
+        <source>Payment verification</source><target state="translated">Mokėjimo patikra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html">
+        <source>Monero payment verification mode</source><target state="translated">Monero mokėjimo patikros būdas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html">
+        <source>Received</source><target state="translated">Gauta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-help" datatype="html">
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source><target state="translated"> tx_proof tikrinimui naudojamas serverio piniginės RPC, jei jis sukonfigūruotas. Privatūs peržiūros raktai ir tx_secret_key reikšmės tikrinami vietoje šioje naršyklėje ir nesiunčiami į xmr.tx.taxi. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html">
+        <source>Recipient address</source><target state="translated">Gavėjo adresas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html">
+        <source>Message</source><target state="translated">Pranešimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html">
+        <source>tx_proof signature</source><target state="translated">tx_proof parašas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html">
+        <source>Verifying...</source><target state="translated">Tikrinama...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html">
+        <source>Verify proof</source><target state="translated">Patikrinti įrodymą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html">
+        <source>Proof verified</source><target state="translated">Įrodymas patikrintas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.confirmations" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/> confirmations</source><target state="translated">Patvirtinimų: <x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html">
+        <source>In mempool</source><target state="translated">Mempool eilėje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html">
+        <source>Private view key</source><target state="translated">Privatus peržiūros raktas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html">
+        <source>Scanning...</source><target state="translated">Nuskaitoma...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html">
+        <source>Scan this tx</source><target state="translated">Nuskaityti operaciją</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html">
+        <source>Checking...</source><target state="translated">Tikrinama...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html">
+        <source>Check key</source><target state="translated">Patikrinti raktą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html">
+        <source>Payment found</source><target state="translated">Mokėjimas rastas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.atomic-amount" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> atomic units </source><target state="translated"> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> atominių vienetų </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">318,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
+        <source>Address and tx_proof signature are required.</source><target state="translated">Būtinas adresas ir tx_proof parašas.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html">
+        <source>Enter a valid-looking Monero mainnet address.</source><target state="translated">Įvesk galiojantį Monero pagrindinio tinklo adresą.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">502</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">535</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html">
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source><target state="translated">Įvesk Monero piniginės sugeneruotą tx_proof parašą.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofMessageLength" datatype="html">
+        <source>Proof messages must be <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> characters or less.</source><target state="translated">Įrodymo pranešimas gali būti ne ilgesnis kaip <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> simbolių.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">459</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
+        <source>The proof did not verify for this transaction and address.</source><target state="translated">Šios operacijos ir adreso įrodymas nepasitvirtino.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
+        <source>Unable to verify proof.</source><target state="translated">Nepavyko patikrinti įrodymo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
+        <source>Address and private view key are required.</source><target state="translated">Būtinas adresas ir privatus peržiūros raktas.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
+        <source>Load a transaction before running local verification.</source><target state="translated">Prieš vietinį tikrinimą įkelk operaciją.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">498</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html">
+        <source>Enter a 64-character hexadecimal private view key.</source><target state="translated">Įvesk 64 simbolių šešioliktainį privatų peržiūros raktą.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
+        <source>Address and tx_secret_key are required.</source><target state="translated">Būtinas adresas ir tx_secret_key.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html">
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target state="translated">Įvesk siunčiančios piniginės šešioliktainį tx_secret_key.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
+        <source>Unable to verify this transaction locally.</source><target state="translated">Nepavyko patikrinti šios operacijos vietoje.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">569</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.inputs" datatype="html">
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</source><target state="translated">Įvestys (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></source><target state="translated">Žiedas <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html">
+        <source>Key image</source><target state="translated">Rakto atvaizdas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html">
+        <source>Input type</source><target state="translated">Įvesties tipas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html">
+        <source>Ring size</source><target state="translated">Žiedo dydis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
+        <source>Relative ring offsets</source><target state="translated">Santykiniai žiedo poslinkiai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html">
+        <source>Ring members</source><target state="translated">Žiedo nariai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-index" datatype="html">
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></source><target state="translated">Išvestis #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.block-height" datatype="html">
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></source><target state="translated">Blokas <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.blocks-earlier" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> blocks earlier</source><target state="translated">Prieš <x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> blokų</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html">
+        <source>Output key</source><target state="translated">Išvesties raktas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html">
+        <source>Source transaction temporarily unavailable.</source><target state="translated">Šaltinio operacija laikinai nepasiekiama.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html">
+        <source>This legacy input has no decoys.</source><target state="translated">Šioje senos formos įvestyje nėra klaidinančių išvesčių.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html">
+        <source>Ring members include decoys; the actual spent output is not identified.</source><target state="translated">Žiedo nariai apima klaidinančias išvestis; iš tiesų panaudota išvestis nenustatoma.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
+        <source>Some ring-member details were not resolved in this response.</source><target state="translated">Kai kurių žiedo narių informacijos šiame atsakyme nustatyti nepavyko.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.outputs" datatype="html">
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</source><target state="translated">Išvestys (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html">
+        <source>RingCT output</source><target state="translated">RingCT išvestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html">
+        <source>recipient hidden</source><target state="translated">gavėjas paslėptas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html">
+        <source>Output type</source><target state="translated">Išvesties tipas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html">
+        <source>Amount</source><target state="translated">Suma</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html">
+        <source>Hidden by RingCT</source><target state="translated">Paslėpta naudojant RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html">
+        <source>Recipient</source><target state="translated">Gavėjas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html">
+        <source>Hidden by stealth addressing</source><target state="translated">Paslėpta naudojant slaptąjį adresą</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html">
+        <source>Global output index</source><target state="translated">Bendras išvesties indeksas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html">
+        <source>View tag</source><target state="translated">Peržiūros žyma</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html">
+        <source>Amount commitment</source><target state="translated">Sumos įsipareigojimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html">
+        <source>atomic units</source><target state="translated">atominių vienetų</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html">
+        <source>Amount hidden</source><target state="translated">Suma paslėpta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html">
+        <source>Coinbase</source><target state="translated">Coinbase</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html">
+        <source>RingCT input</source><target state="translated">RingCT įvestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
+        <source>Legacy ring input</source><target state="translated">Senos formos žiedo įvestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html">
+        <source>Input</source><target state="translated">Įvestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html">
+        <source>Stealth output</source><target state="translated">Slaptoji išvestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html">
+        <source>Fee</source><target state="translated">Mokestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html">
+        <source>Output</source><target state="translated">Išvestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()"/></source><target state="translated">bendra išvestis <x id="index" equiv-text="member.global_index.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-height" datatype="html">
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()"/></source><target state="translated">aukštis <x id="height" equiv-text="member.height.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-blocks-before-spend" datatype="html">
+        <source><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> blocks before spend</source><target state="translated"><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> blokų iki panaudojimo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html">
+        <source>locked</source><target state="translated">užrakinta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
+        <source>Transaction amount hidden by RingCT</source><target state="translated">RingCT paslėpta operacijos suma</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html">
+        <source>Change amount denomination</source><target state="translated">Grąžos sumos nominalas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.miner" datatype="html">
+        <source>Miner transaction</source><target state="translated">Kasėjo operacija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacyHelp" datatype="html">
+        <source>Pre-RingCT transaction; input and output amounts are public</source><target state="translated">Operacija iki RingCT; įvesčių ir išvesčių sumos viešos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacy" datatype="html">
+        <source>Legacy · public amounts</source><target state="translated">Senas formatas · viešos sumos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTagsHelp" datatype="html">
+        <source>View tags help wallets scan outputs</source><target state="translated">Peržiūros žymos padeda piniginėms nuskaityti išvestis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTags" datatype="html">
+        <source>View tags</source><target state="translated">Peržiūros žymos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringHelp" datatype="html">
+        <source>Number of members in the first input's ring</source><target state="translated">Pirmos įvesties žiedo narių skaičius</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></source><target state="translated">Žiedas <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringType" datatype="html">
+        <source>RingCT type <x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></source><target state="translated">RingCT tipas <x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
+        <source>Pending Transactions</source><target state="translated">Laukiančios operacijos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html">
+        <source>Total fees</source><target state="translated">Visi mokesčiai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html">
+        <source>Median fee rate</source><target state="translated">Mokesčio normos mediana</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html">
+        <source>Fee range</source><target state="translated">Mokesčių intervalas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
