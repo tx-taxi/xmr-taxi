@@ -2908,7 +2908,7 @@
       </trans-unit>
       <trans-unit id="6c453b11fd7bd159ae30bc381f367bc736d86909" datatype="html">
         <source>Block Fees</source>
-        <target>See Monero fee rates visualized over time, including minimum and maximum fee rates per block along with fee rates at various percentiles.</target>
+        <target>ค่าธรรมเนียมบล็อก</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -2932,7 +2932,7 @@
       </trans-unit>
       <trans-unit id="23555386d8af1ff73f297e89dd4af3f4689fb9dd" datatype="html">
         <source>Indexing blocks</source>
-        <target>See the average mining fees earned per Monero block visualized in XMR and fiat over time.</target>
+        <target>กำลังจัดทำดัชนีบล็อก</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">120</context>
@@ -3424,7 +3424,7 @@
       </trans-unit>
       <trans-unit id="56fa1cd221491b6478998679cba2dc8d55ba330d" datatype="html">
         <source>Block Sizes and Weights</source>
-        <target>See Monero block rewards in XMR and fiat visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</target>
+        <target>ขนาดและน้ำหนักบล็อก</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.html</context>
           <context context-type="linenumber">5</context>
@@ -3448,7 +3448,7 @@
       </trans-unit>
       <trans-unit id="7faaaa08f56427999f3be41df1093ce4089bbd75" datatype="html">
         <source>Size</source>
-        <target>See Monero block sizes visualized over time.</target>
+        <target>ขนาด</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">188</context>
