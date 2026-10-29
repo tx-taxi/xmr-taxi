@@ -13582,6 +13582,599 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source><target state="translated">Bet kur Žemėje (AoE)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source><target state="translated">Samoa standartinis laikas (SST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source><target state="translated">Havajų standartinis laikas (HST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source><target state="translated">Aliaskos standartinis laikas (AKST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source><target state="translated">Ramiojo vandenyno standartinis laikas (PST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source><target state="translated">Kalnų standartinis laikas (MST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source><target state="translated">Centrinis standartinis laikas (CST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source><target state="translated">Rytų standartinis laikas (EST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source><target state="translated">Atlanto standartinis laikas (AST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source><target state="translated">Argentinos laikas (ART)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source><target state="translated">Fernando de Noronjos laikas (FNT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source><target state="translated">Azorų laikas (AZOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source><target state="translated">Grinvičo laikas (GMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source><target state="translated">Vidurio Europos laikas (CET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source><target state="translated">Rytų Europos laikas (EET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source><target state="translated">Maskvos standartinis laikas (MSK)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source><target state="translated">Armėnijos laikas (AMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source><target state="translated">Pakistano standartinis laikas (PKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source><target state="translated">Sindziango laikas (XJT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source><target state="translated">Indokinijos laikas (ICT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source><target state="translated">Honkongo laikas (HKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source><target state="translated">Japonijos standartinis laikas (JST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source><target state="translated">Australijos rytų standartinis laikas (AEST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source><target state="translated">Norfolko laikas (NFT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source><target state="translated">Naujosios Zelandijos standartinis laikas (NZST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source><target state="translated">Tongos laikas (TOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source><target state="translated">Linijinių salų laikas (LINT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-instance-health" datatype="html">
+        <source>Instance health</source><target state="translated">Egzemplioriaus būsena</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-title" datatype="html">
+        <source>Monero daemon status</source><target state="translated">Monero tarnybos būsena</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-description" datatype="html">
+        <source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target state="translated">Šio xmr.tx.taxi egzemplioriaus serverio pasiekiamumas ir viešo monerod sinchronizavimo būsena.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-checked" datatype="html">
+        <source>Checked</source><target state="translated">Patikrinta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-service-reachability" datatype="html">
+        <source>Service reachability</source><target state="translated">Paslaugų pasiekiamumas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-backend" datatype="html">
+        <source>Backend</source><target state="translated">Serveris</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-reachable" datatype="html">
+        <source>reachable</source><target state="translated">pasiekiamas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-daemon" datatype="html">
+        <source>Daemon</source><target state="translated">Tarnyba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-unreachable" datatype="html">
+        <source>unreachable</source><target state="translated">nepasiekiamas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-daemon-details" datatype="html">
+        <source>Daemon details</source><target state="translated">Tarnybos duomenys</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-chain" datatype="html">
+        <source>Chain</source><target state="translated">Grandinė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-height" datatype="html">
+        <source>Height</source><target state="translated">Aukštis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-target-height" datatype="html">
+        <source>Target height</source><target state="translated">Tikslinis aukštis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-behind" datatype="html">
+        <source>Behind</source><target state="translated">Atsilieka</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-blocks" datatype="html">
+        <source>blocks</source><target state="translated">blokų</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-tip-hash" datatype="html">
+        <source>Tip hash</source><target state="translated">Paskutinio bloko maiša</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-network" datatype="html">
+        <source>Network</source><target state="translated">Tinklas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-nettype" datatype="html">
+        <source>Nettype</source><target state="translated">Tinklo tipas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-peers" datatype="html">
+        <source>Peers</source><target state="translated">Mazgai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-connections" datatype="html">
+        <source>Incoming / outgoing</source><target state="translated">Įeinantys / išeinantys</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-rpc-clients" datatype="html">
+        <source>RPC clients</source><target state="translated">RPC klientai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-workload" datatype="html">
+        <source>Workload</source><target state="translated">Apkrova</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html">
+        <source>Mempool</source><target state="translated">Mempool</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-txs" datatype="html">
+        <source>txs</source><target state="translated">operacijų</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-total-txs" datatype="html">
+        <source>Total txs</source><target state="translated">Visos operacijos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-difficulty" datatype="html">
+        <source>Difficulty</source><target state="translated">Sudėtingumas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-estimated-hashrate" datatype="html">
+        <source>Estimated hashrate</source><target state="translated">Numatoma skaičiavimo galia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-version" datatype="html">
+        <source>Version</source><target state="translated">Versija</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-uptime" datatype="html">
+        <source>Uptime</source><target state="translated">Veikimo trukmė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-started" datatype="html">
+        <source>Started</source><target state="translated">Paleista</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-trusted-rpc" datatype="html">
+        <source>Trusted RPC</source><target state="translated">Patikimas RPC</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-storage" datatype="html">
+        <source>Storage</source><target state="translated">Saugykla</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-database-size" datatype="html">
+        <source>Database size</source><target state="translated">Duomenų bazės dydis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-free-space" datatype="html">
+        <source>Free space</source><target state="translated">Laisva vieta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-block-size-limit" datatype="html">
+        <source>Block size limit</source><target state="translated">Bloko dydžio riba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-update-available" datatype="html">
+        <source>Update available</source><target state="translated">Yra naujinys</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap" datatype="html">
+        <source>Bootstrap</source><target state="translated">Pradinis sinchronizavimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-height" datatype="html">
+        <source>Bootstrap height</source><target state="translated">Pradinio sinchronizavimo aukštis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-daemon" datatype="html">
+        <source>Bootstrap daemon</source><target state="translated">Pradinio sinchronizavimo tarnyba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-bootstrap-used" datatype="html">
+        <source>Bootstrap used</source><target state="translated">Naudotas pradinis sinchronizavimas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-peerlist" datatype="html">
+        <source>Peerlist</source><target state="translated">Mazgų sąrašas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-white" datatype="html">
+        <source>white</source><target state="translated">baltasis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-grey" datatype="html">
+        <source>grey</source><target state="translated">pilkasis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-check-failed" datatype="html">
+        <source>Daemon check failed</source><target state="translated">Tarnybos patikra nepavyko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-backend-answered" datatype="html">
+        <source>The backend answered, but monerod did not return</source><target state="translated">Serveris atsakė, bet monerod neatsakė</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-checking" datatype="html">
+        <source>Checking daemon status...</source><target state="translated">Tikrinama tarnybos būsena...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-unknown" datatype="html">
+        <source>unknown</source><target state="translated">nežinoma</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-not-configured" datatype="html">
+        <source>not configured</source><target state="translated">nesukonfigūruota</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-no" datatype="html">
+        <source>no</source><target state="translated">ne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-yes" datatype="html">
+        <source>yes</source><target state="translated">taip</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-online" datatype="html">
+        <source>monerod reachable</source><target state="translated">monerod pasiekiamas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-syncing" datatype="html">
+        <source>syncing</source><target state="translated">sinchronizuojama</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-degraded" datatype="html">
+        <source>attention needed</source><target state="translated">reikia dėmesio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-state-offline" datatype="html">
+        <source>daemon unreachable</source><target state="translated">tarnyba nepasiekiama</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-request-failed" datatype="html">
+        <source>request failed</source><target state="translated">užklausa nepavyko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr-status-network-request-failed" datatype="html">
+        <source>network request failed</source><target state="translated">tinklo užklausa nepavyko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
