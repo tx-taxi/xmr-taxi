@@ -14899,6 +14899,721 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="xmr.docs.heading" datatype="html">
+        <source>Documentation</source><target state="translated">مستندات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html">
+        <source>Documentation sections</source><target state="translated">بخش‌های مستندات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html">
+        <source>On this page</source><target state="translated">در این صفحه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html">
+        <source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target state="translated">xmr.tx.taxi داده‌های عمومی گره و زنجیره را نشان می‌دهد. Monero عمداً مبلغ پرداخت، گیرندگان و تاریخچهٔ آدرس را خصوصی نگه می‌دارد؛ بنابراین این کاوشگر به جای حدس، این محدودیت‌ها را مشخص می‌کند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html">
+        <source>What is xmr.tx.taxi?</source><target state="translated">xmr.tx.taxi چیست؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.whatDescription" datatype="html">
+        <source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source><target state="translated">کاوشگر بلاک‌ها و تراکنش‌های در انتظار <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> است. نمای آشنای کاوشگر ممپول را با داده‌هایی سازگار می‌کند که گره Monero می‌تواند به‌طور عمومی اثبات کند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html">
+        <source>What is a mempool?</source><target state="translated">ممپول چیست؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolDescription" datatype="html">
+        <source>A node-local set of valid transactions observed but not yet included in a block. There is no single global mempool: the site shows the configured daemon’s <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> response when last polled.</source><target state="translated">مجموعهٔ محلی تراکنش‌های معتبری است که گره مشاهده کرده اما هنوز در بلاک قرار نگرفته‌اند. ممپول جهانی واحد وجود ندارد؛ سایت آخرین پاسخ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> دیمون تنظیم‌شده را نشان می‌دهد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html">
+        <source>Why are amounts hidden?</source><target state="translated">چرا مبلغ‌ها پنهان هستند؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html">
+        <source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source><target state="translated">RingCT مبلغ خروجی‌ها را با تعهدات پنهان می‌کند و آدرس‌های مخفی گیرندگان را پشت خروجی‌های یک‌بارمصرف پنهان می‌کنند. داده‌های عمومی ساختار تراکنش، کارمزد، ورود به بلاک، تصاویر کلید و ارجاعات اعضای حلقه را نشان می‌دهند، اما مبلغ پرداخت یا گیرنده را مشخص نمی‌کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html">
+        <source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source><target state="translated">اثبات تراکنش و اسکن کیف پول بررسی‌هایی توسط مشارکت‌کنندگان هستند و تاریخچهٔ آدرس عمومی را عمومی نمی‌کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html">
+        <source>Why is there no public address history?</source><target state="translated">چرا تاریخچهٔ عمومی آدرس وجود ندارد؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html">
+        <source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target state="translated">آدرس Monero حسابی روی زنجیره با خروجی‌های قابل مشاهده نیست. کیف پول‌ها از کلید مشاهده برای تشخیص خروجی‌های یک‌بارمصرف خود استفاده می‌کنند. کاوشگر ادعا نمی‌کند موجودی، مجموعهٔ UTXO یا تاریخچهٔ تراکنش یک آدرس را می‌داند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html">
+        <source>How do Monero fees work?</source><target state="translated">کارمزدهای Monero چگونه کار می‌کنند؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html">
+        <source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target state="translated">نرخ کارمزد عمومی بر حسب واحد اتمی در هر بایت است. دیمون نرخ‌های اولویت کند، عادی، سریع و سریع‌ترین را برآورد می‌کند؛ کیف پول نرخ انتخابی را با توجه به وزن تراکنش و کوانتیزه‌شدن کارمزد اعمال می‌کند. بلاک‌های پیش‌بینی‌شده کارمزد و وزن تراکنش‌های در انتظار مشاهده‌شده را خلاصه می‌کنند و ورود به بلاک را تضمین نمی‌کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html">
+        <source>What does pending or confirmed mean?</source><target state="translated">در انتظار یا تأییدشده یعنی چه؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmationDescription" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Pending<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means this daemon currently observes the transaction in its pool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Confirmed<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means a daemon returned it as included at a block height; confirmations grow as newer blocks arrive. Absence from one node’s pool is not proof a transaction never propagated or will not confirm.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>در انتظار<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> یعنی این دیمون اکنون تراکنش را در ممپول خود مشاهده می‌کند. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>تأییدشده<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> یعنی دیمون گزارش کرده تراکنش در ارتفاع بلاکی قرار گرفته است؛ با رسیدن بلاک‌های جدید تعداد تأییدها افزایش می‌یابد. نبود تراکنش در ممپول یک گره ثابت نمی‌کند که تراکنش منتشر نشده یا تأیید نخواهد شد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html">
+        <source>Can I verify a payment?</source><target state="translated">آیا می‌توانم پرداخت را بررسی کنم؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proofDescription" datatype="html">
+        <source>The transaction page can verify a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> when monero-wallet-rpc is configured. Recipient scans with a private view key and sender checks with a transaction secret key run in the browser; private key material is not sent to this API. A private view key alone is not a subaddress-proof tool.</source><target state="translated">اگر monero-wallet-rpc تنظیم شده باشد، صفحهٔ تراکنش می‌تواند <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> عمومی را بررسی کند. اسکن گیرنده با کلید مشاهدهٔ خصوصی و بررسی فرستنده با کلید محرمانهٔ تراکنش در مرورگر انجام می‌شوند؛ کلیدهای خصوصی به این API ارسال نمی‌شوند. کلید مشاهدهٔ خصوصی به‌تنهایی ابزار اثبات زیرآدرس نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html">
+        <source>How are mining pools identified?</source><target state="translated">استخرهای استخراج چگونه شناسایی می‌شوند؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDescription" datatype="html">
+        <source>Pool labels are best-effort: public miner-transaction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> markers and, where published, proof-registry evidence. Unattributed blocks remain <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Unknown<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; a label never identifies an individual miner.</source><target state="translated">استخرها تا حد امکان با نشانگرهای عمومی <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> تراکنش استخراج‌کننده و در صورت انتشار، شواهد فهرست اثبات شناسایی می‌شوند. بلاک‌های بدون انتساب <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>نامشخص<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> می‌مانند؛ برچسب استخر هرگز استخراج‌کنندهٔ فردی را شناسایی نمی‌کند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.restDescription" datatype="html">
+        <source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source><target state="translated">مسیرهای مستند فقط خواندنی و هم‌مبدأ در <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> هستند. API احراز هویت، کیف پول یا حساب ارائه نمی‌شود. کارمزدها و پاداش‌ها بر حسب واحد اتمی هستند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocksTitle" datatype="html">
+        <source>Chain and blocks <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">زنجیره و بلاک‌ها <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html">
+        <source>Endpoint</source><target state="translated">نقطهٔ پایانی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html">
+        <source>Public result</source><target state="translated">نتیجهٔ عمومی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html">
+        <source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target state="translated">وضعیت دیمون، ارتفاع، سختی، نرخ هش، همتایان و تعداد تراکنش‌های ممپول.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html">
+        <source>Recent block headers; count is capped at 25.</source><target state="translated">سرآیند بلاک‌های اخیر؛ حداکثر ۲۵ مورد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html">
+        <source>Up to 25 headers ending at a height.</source><target state="translated">حداکثر ۲۵ سرآیند تا ارتفاع مشخص‌شده.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html">
+        <source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target state="translated">سرآیند، هش تراکنش‌ها، آمار عمومی کارمزد و انتساب استخر تا حد امکان.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html">
+        <source>Privacy-safe summaries used by the block visualization.</source><target state="translated">خلاصه‌های حافظ حریم خصوصی برای نمایش بلاک.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html">
+        <source>The daemon’s raw Monero block blob.</source><target state="translated">دادهٔ blob خام بلاک Monero از دیمون.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html">
+        <source>Every-block Monero retarget metadata.</source><target state="translated">فرادادهٔ تنظیم سختی Monero برای هر بلاک.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html">
+        <source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">تراکنش‌ها و ممپول <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html">
+        <source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target state="translated">وضعیت، کارمزد، اندازه و وزن، تأییدها، دادهٔ عمومی حلقه و نشانگرهای RingCT. آدرس گیرنده یا مبلغ خروجی وجود ندارد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html">
+        <source>Mempool blob or available pruned confirmed transaction hex.</source><target state="translated">blob ممپول یا نمایش شانزده‌شانزدهی موجود از تراکنش تأییدشدهٔ هرس‌شده.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html">
+        <source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source><target state="translated">تعداد تراکنش‌های مشاهده‌شده، مجموع وزن و کارمزد و فیلدهای حافظ حریم خصوصی تراکنش.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html">
+        <source>Projected pending blocks from the observed pool.</source><target state="translated">بلاک‌های در انتظار پیش‌بینی‌شده بر اساس ممپول مشاهده‌شده.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.timesResult" datatype="html">
+        <source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">زمان‌های دریافت شناخته‌شده در ممپول؛ مقدار تأییدشده یا نامشخص <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> است.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html">
+        <source>Live-client bootstrap snapshot.</source><target state="translated">تصویر اولیهٔ کلاینت بلادرنگ.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html">
+        <source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">کارمزد و تاریخچه <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html">
+        <source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target state="translated">برآوردهای کند، عادی، سریع و سریع‌ترین بر حسب واحد اتمی در هر بایت، همراه با ماسک کوانتیزه‌سازی.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.statisticsResult" datatype="html">
+        <source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">مشاهدات ذخیره‌شده با فاصلهٔ یک دقیقه برای <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> یا <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html">
+        <source>Current or timestamped locally indexed fiat conversion data.</source><target state="translated">دادهٔ تبدیل پول رایج فعلی یا نمایه‌شدهٔ محلی با زمان ثبت.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDataTitle" datatype="html">
+        <source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">داده‌های استخراج <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.historyPeriods" datatype="html">
+        <source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">مسیرهای نمودار تاریخی دوره‌هایی مانند <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> و <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> را می‌پذیرند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html">
+        <source>Difficulty-derived network hashrate history.</source><target state="translated">تاریخچهٔ نرخ هش شبکه محاسبه‌شده از سختی.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html">
+        <source>Indexed block fee, subsidy, reward, and fiat series.</source><target state="translated">سری‌های نمایه‌شدهٔ کارمزد، یارانه، پاداش و ارزش پول رایج بلاک‌ها.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html">
+        <source>Public fee-rate buckets and block size/weight history.</source><target state="translated">گروه‌های عمومی نرخ کارمزد و تاریخچهٔ اندازه و وزن بلاک.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html">
+        <source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source><target state="translated">آمار استخر بر اساس نشانگرهای موجود؛ بلاک‌های بدون انتساب نامشخص می‌مانند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProofTitle" datatype="html">
+        <source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">بررسی اثبات تراکنش <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verifyDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> اثبات عمومی <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، آدرس و پیام اختیاری را می‌پذیرد. اگر monero-wallet-rpc در دسترس نباشد <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> برمی‌گرداند. هرگز کلید مشاهدهٔ خصوصی یا کلید محرمانهٔ تراکنش را به این نقطه نفرستید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html">
+        <source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">پل عمومی دیمون <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> proxy an allowlisted public daemon subset for browser-local verification. Wallet methods and secret-shaped fields are rejected; this is not a general remote node or wallet service.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> و <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> زیرمجموعهٔ مجاز روش‌های عمومی دیمون را برای بررسی محلی در مرورگر پروکسی می‌کنند. روش‌های کیف پول و فیلدهای شبیه اسرار رد می‌شوند؛ این یک سرویس عمومی گرهٔ راه دور یا کیف پول نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.websocketDescription" datatype="html">
+        <source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> requests another. Messages use the established mempool protocol shape.</source><target state="translated">به <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> وصل شوید. سرور بلافاصله تصویری می‌فرستد؛ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> تصویر تازه‌ای درخواست می‌کند. پیام‌ها از قالب تثبیت‌شدهٔ پروتکل mempool استفاده می‌کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html">
+        <source>Server messages</source><target state="translated">پیام‌های سرور</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventsDescription" datatype="html">
+        <source>Snapshots and updates can contain <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. A projected-block subscriber also receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Treat all as observations from the configured daemon, not global finality.</source><target state="translated">تصاویر و به‌روزرسانی‌ها می‌توانند شامل <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>، <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> و <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> باشند. مشترک بلاک پیش‌بینی‌شده <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> را نیز دریافت می‌کند. این‌ها مشاهدات دیمون تنظیم‌شده‌اند، نه قطعیت جهانی.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html">
+        <source>Client messages</source><target state="translated">پیام‌های کلاینت</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html">
+        <source>Message</source><target state="translated">پیام</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html">
+        <source>Behavior</source><target state="translated">رفتار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html">
+        <source>Request the current snapshot.</source><target state="translated">درخواست تصویر فعلی.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.pingResult" datatype="html">
+        <source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> دریافت می‌کند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html">
+        <source>Subscribe to a projected block snapshot by index.</source><target state="translated">اشتراک تصویر بلاک پیش‌بینی‌شده با شاخص.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html">
+        <source>Track public confirmation status for one transaction hash.</source><target state="translated">پیگیری وضعیت تأیید عمومی یک هش تراکنش.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html">
+        <source>Address tracking is intentionally not a public Monero stream feature.</source><target state="translated">پیگیری آدرس عمداً بخشی از امکانات جریان عمومی Monero نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sseDescription" datatype="html">
+        <source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> را به صورت <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> برای به‌روزرسانی یک‌طرفه باز کنید. بافر پروکسی غیرفعال است و جریان با تصویر آغاز می‌شود.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html">
+        <source>Events and reconnection</source><target state="translated">رویدادها و اتصال دوباره</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html">
+        <source>Event</source><target state="translated">رویداد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html">
+        <source>Payload</source><target state="translated">محتوا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html">
+        <source>Current daemon info and observed mempool hashes at connect.</source><target state="translated">اطلاعات فعلی دیمون و هش‌های ممپول مشاهده‌شده هنگام اتصال.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html">
+        <source>A new public block header.</source><target state="translated">یک سرآیند بلاک عمومی جدید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.deltaResult" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for the observed pool.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> برای ممپول مشاهده‌شده.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.reconnectDescription" datatype="html">
+        <source>A comment heartbeat is sent every 25 seconds. Native <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> reconnection is suitable for most clients; resync from the snapshot or REST after a disconnect.</source><target state="translated">هر ۲۵ ثانیه یک نظر heartbeat ارسال می‌شود. اتصال دوبارهٔ بومی <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> برای بیشتر کلاینت‌ها مناسب است؛ پس از قطع، از تصویر یا REST دوباره همگام شوید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html">
+        <source>Overview</source><target state="translated">نمای کلی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html">
+        <source>Getting started</source><target state="translated">شروع کار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html">
+        <source>Chain and blocks</source><target state="translated">زنجیره و بلاک‌ها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html">
+        <source>Endpoints</source><target state="translated">نقاط پایانی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html">
+        <source>Transactions and mempool</source><target state="translated">تراکنش‌ها و ممپول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html">
+        <source>Fees and history</source><target state="translated">کارمزد و تاریخچه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html">
+        <source>Mining data</source><target state="translated">داده‌های استخراج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html">
+        <source>Transaction proof</source><target state="translated">اثبات تراکنش</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html">
+        <source>Verification</source><target state="translated">بررسی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html">
+        <source>Public daemon bridge</source><target state="translated">پل عمومی دیمون</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html">
+        <source>Connect and initialize</source><target state="translated">اتصال و راه‌اندازی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html">
+        <source>Connection</source><target state="translated">اتصال</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html">
+        <source>Events</source><target state="translated">رویدادها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html">
+        <source>Commands</source><target state="translated">دستورها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html">
+        <source>Connect</source><target state="translated">اتصال</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html">
+        <source>Documentation</source><target state="translated">مستندات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html">
+        <source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target state="translated">مستندات کاوشگر Monero: داده‌های عمومی حافظ حریم خصوصی، نقاط REST و جریان‌های بلادرنگ.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
