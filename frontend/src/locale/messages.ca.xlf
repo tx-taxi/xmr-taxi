@@ -11462,6 +11462,36 @@
       <trans-unit id="xmr.docs.rewardResult" datatype="html"><source>Indexed block fee, subsidy, reward, and fiat series.</source><target>Sèries indexades de comissions de blocs, subvencions, recompenses i valors fiduciaris.</target></trans-unit>
       <trans-unit id="xmr.docs.feeRatesResult" datatype="html"><source>Public fee-rate buckets and block size/weight history.</source><target>Grups de tarifes públiques de comissió i historial de mida o pes dels blocs.</target></trans-unit>
       <trans-unit id="xmr.docs.poolsResult" datatype="html"><source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source><target>Estadístiques de grups derivades de marcadors segons la informació disponible; els blocs sense atribució romanen desconeguts.</target></trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html"><source>Server messages</source><target>Missatges del servidor</target></trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html"><source>Client messages</source><target>Missatges del client</target></trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html"><source>Message</source><target>Missatge</target></trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html"><source>Behavior</source><target>Comportament</target></trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html"><source>Request the current snapshot.</source><target>Sol·licita la instantània actual.</target></trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html"><source>Subscribe to a projected block snapshot by index.</source><target>Subscriu-te a una instantània de bloc projectat per índex.</target></trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html"><source>Track public confirmation status for one transaction hash.</source><target>Segueix l’estat públic de confirmació d’un hash de transacció.</target></trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html"><source>Address tracking is intentionally not a public Monero stream feature.</source><target>El seguiment d’adreces no és, deliberadament, una funció del flux públic de Monero.</target></trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html"><source>Events and reconnection</source><target>Esdeveniments i reconnexió</target></trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html"><source>Event</source><target>Esdeveniment</target></trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html"><source>Payload</source><target>Dades</target></trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html"><source>Current daemon info and observed mempool hashes at connect.</source><target>Informació actual del dimoni i hash del mempool observats en connectar-se.</target></trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html"><source>A new public block header.</source><target>Una nova capçalera pública de bloc.</target></trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html"><source>Overview</source><target>Visió general</target></trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html"><source>Getting started</source><target>Primers passos</target></trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html"><source>Chain and blocks</source><target>Cadena i blocs</target></trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html"><source>Endpoints</source><target>Punts finals</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html"><source>Transactions and mempool</source><target>Transaccions i mempool</target></trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html"><source>Fees and history</source><target>Comissions i historial</target></trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html"><source>Mining data</source><target>Dades de mineria</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html"><source>Transaction proof</source><target>Prova de transacció</target></trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html"><source>Verification</source><target>Verificació</target></trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html"><source>Public daemon bridge</source><target>Passarel·la pública del dimoni</target></trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html"><source>Connect and initialize</source><target>Connexió i inicialització</target></trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html"><source>Connection</source><target>Connexió</target></trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html"><source>Events</source><target>Esdeveniments</target></trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html"><source>Commands</source><target>Ordres</target></trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html"><source>Connect</source><target>Connecta</target></trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html"><source>Documentation</source><target>Documentació</target></trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html"><source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target>Documentació de l’explorador Monero: dades públiques respectuoses amb la privadesa, punts finals REST i fluxos en directe.</target></trans-unit>
     </body>
   </file>
 </xliff>
