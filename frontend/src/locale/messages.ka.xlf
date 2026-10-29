@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="ngb.carousel.slide-number" datatype="html">
         <source> Slide <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli" /> of <x id="INTERPOLATION_1" equiv-text="EventSource = N" /> </source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"> სლაიდი <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli" /> / <x id="INTERPOLATION_1" equiv-text="EventSource = N" /> </target><context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
           <context context-type="linenumber">131,135</context>
         </context-group>
@@ -421,8 +421,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.about" datatype="html">
-        <source>Learn about xmr-space, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
-        <context-group purpose="location">
+        <source>Learn about xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data while respecting RingCT privacy.</source>
+        <target state="needs-review-translation">გაეცანით xmr.tx.taxi-ს — Monero ბლოკებისა და mempool-ის მაძიებელს, რომელიც საჯარო მონაცემებს RingCT-ის კონფიდენციალურობის დაცვით აჩვენებს.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.ts</context>
           <context context-type="linenumber">51</context>
         </context-group>
@@ -445,7 +445,7 @@
       </trans-unit>
       <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
         <source>Close</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დახურვა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
@@ -1486,8 +1486,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8918254921747459635" datatype="html">
-        <source>Around block: <x id="PH" equiv-text="ticks[0].data[2]" /></source>
-        <context-group purpose="location">
+        <source>Around block: <x id="PH" equiv-text="data[0].data[2]" /></source>
+        <target state="needs-review-translation">დაახლოებით ბლოკთან: <x id="PH" equiv-text="data[0].data[2]" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-fees-graph/acceleration-fees-graph.component.ts</context>
           <context context-type="linenumber">192</context>
         </context-group>
@@ -2385,7 +2385,7 @@
       </trans-unit>
       <trans-unit id="9a1fbb23439ab07ca411d9cb744ea3564911e024" datatype="html">
         <source>Fiat</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ფიატი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/amount-selector/amount-selector.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -2787,7 +2787,7 @@
       </trans-unit>
       <trans-unit id="f2600d9f6db47cc43f16142cf401048a1d360bda" datatype="html">
         <source>Avg Block Fee (24h)</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკის საშუალო საკომისიო (24 სთ)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html</context>
           <context context-type="linenumber">51</context>
         </context-group>
@@ -2799,7 +2799,7 @@
       </trans-unit>
       <trans-unit id="de9a93ca8a13ccbd6de65782abb6b1432759b654" datatype="html">
         <source>Avg Block Fee (1m)</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკის საშუალო საკომისიო (1 თვე)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html</context>
           <context context-type="linenumber">57</context>
         </context-group>
@@ -2819,7 +2819,7 @@
       </trans-unit>
       <trans-unit id="4793828002882320882" datatype="html">
         <source>At block: <x id="PH" equiv-text="data[0].data[2]" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკზე: <x id="PH" equiv-text="data[0].data[2]" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">256</context>
         </context-group>
@@ -2834,7 +2834,7 @@
       </trans-unit>
       <trans-unit id="6c453b11fd7bd159ae30bc381f367bc736d86909" datatype="html">
         <source>Block Fees</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკის საკომისიოები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
@@ -2898,7 +2898,7 @@
       </trans-unit>
       <trans-unit id="41545303ec98792b738d6237adbd1f3b54a22196" datatype="html">
         <source>Block Fees Vs Subsidy</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკის საკომისიოები და ემისიის ჯილდო</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
@@ -2922,14 +2922,14 @@
       </trans-unit>
       <trans-unit id="8538305450922736186" datatype="html">
         <source>At block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკზე <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8807945662832318286" datatype="html">
         <source>Around block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დაახლოებით ბლოკთან <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">188</context>
         </context-group>
@@ -2961,7 +2961,7 @@
       </trans-unit>
       <trans-unit id="16d449549ab7bc61caf3d636372a4a56b5870383" datatype="html">
         <source>Any</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ნებისმიერი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
@@ -2969,7 +2969,7 @@
       </trans-unit>
       <trans-unit id="a2f14a73f7a6e94479f67423cc51102da8d6f524" datatype="html">
         <source>None</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">არცერთი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
@@ -2977,7 +2977,7 @@
       </trans-unit>
       <trans-unit id="360b9f5c32209001518dbd1dc512f25291473b79" datatype="html">
         <source>Tint</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">შეფერილობა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">32</context>
         </context-group>
@@ -2985,7 +2985,7 @@
       </trans-unit>
       <trans-unit id="4cfabb48965febabe67eb491a3b7e58555d3d52a" datatype="html">
         <source>Classic</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">კლასიკური</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">35</context>
         </context-group>
@@ -2993,7 +2993,7 @@
       </trans-unit>
       <trans-unit id="2e6be334a2152f179a557167f98ce4459ff9a2f9" datatype="html">
         <source>Age</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ასაკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
@@ -3081,7 +3081,7 @@
       </trans-unit>
       <trans-unit id="f13653cd063e5c83ac884349e4657d68d804126e" datatype="html">
         <source>Your browser does not support this feature.</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">თქვენს ბრაუზერს ამ ფუნქციის მხარდაჭერა არ აქვს.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-graph/block-overview-graph.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
@@ -3192,7 +3192,7 @@
       </trans-unit>
       <trans-unit id="58fbcd58e305ab289b99fad67d223f3e83ddb755" datatype="html">
         <source>Removed</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">წაშლილია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">71</context>
         </context-group>
@@ -3243,7 +3243,7 @@
       </trans-unit>
       <trans-unit id="73d42175ea0544a652c4f989afbec127367e8681" datatype="html">
         <source>Added</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დამატებულია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">76</context>
         </context-group>
@@ -3264,7 +3264,7 @@
       </trans-unit>
       <trans-unit id="f046047ce9c57627e2b74101ef739a89cf0f568a" datatype="html">
         <source>Prioritized</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">პრიორიტეტული</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">77</context>
         </context-group>
@@ -3281,7 +3281,7 @@
       </trans-unit>
       <trans-unit id="7ad7e4da036e6fd1f3c16f7a52fd15d58f32fd38" datatype="html">
         <source>Deprioritized</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">შემცირებული პრიორიტეტი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">82</context>
         </context-group>
@@ -3307,7 +3307,7 @@
       </trans-unit>
       <trans-unit id="4c58d7502a441dcd221a04ab84bb6e2070f39faf" datatype="html">
         <source>No Match</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">შესატყვისი არ არის</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">91</context>
         </context-group>
@@ -3652,7 +3652,7 @@
       </trans-unit>
       <trans-unit id="27387c2af5dcaf343a548feba821515f5dc00faa" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti" /> transaction</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti" /> ტრანზაქცია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -3671,8 +3671,8 @@
         <note priority="1" from="description">shared.transaction-count.singular</note>
       </trans-unit>
       <trans-unit id="14779b0ce4cbc4d975a35a8fe074426228a324f3" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri" /> transactions</source>
-        <context-group purpose="location">
+        <source><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-en" /> transactions</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-en" /> ტრანზაქცია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -3713,7 +3713,7 @@
       </trans-unit>
       <trans-unit id="e170a90ee0d3a604adf439a60c890caff9152466" datatype="html">
         <source>This block does not belong to the main chain, it has been replaced by:</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ეს ბლოკი მთავარ ჯაჭვს არ ეკუთვნის; ის ჩანაცვლდა ბლოკით:</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -3722,7 +3722,7 @@
       </trans-unit>
       <trans-unit id="1c3e02c3cb8731ce0b6ff66dc6b60e54386f4230" datatype="html">
         <source>Stale Block</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ჩანაცვლებული ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
@@ -3747,7 +3747,7 @@
       </trans-unit>
       <trans-unit id="0dc973e4853621b49d9e31be902a0680334f632d" datatype="html">
         <source>Stale</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ჩანაცვლებულია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
@@ -3861,7 +3861,7 @@
       </trans-unit>
       <trans-unit id="2862af5284f66d4b06bdcf77a5519141723b6989" datatype="html">
         <source>Stale</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ჩანაცვლებულია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">239</context>
         </context-group>
@@ -3869,7 +3869,7 @@
       </trans-unit>
       <trans-unit id="9ec7a3eef7ee27f93c9f69d11b820e636efdcd6d" datatype="html">
         <source>Winning</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">გამარჯვებული</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">241</context>
         </context-group>
@@ -3908,7 +3908,7 @@
       </trans-unit>
       <trans-unit id="873d4cb5adceda5fa9e9f1419644a0fa6ac9c17d" datatype="html">
         <source>Winning Block</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">გამარჯვებული ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">289</context>
         </context-group>
@@ -4037,7 +4037,7 @@
       </trans-unit>
       <trans-unit id="6dbc0664d5922cbd6b8bdc24d4c9ac8b990bae24" datatype="html">
         <source>There is a stale block at this height</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ამ სიმაღლეზე ჩანაცვლებული ბლოკია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">372</context>
         </context-group>
@@ -4045,7 +4045,7 @@
       </trans-unit>
       <trans-unit id="1535773b0ebd72152246b84f01801104e823be0f" datatype="html">
         <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}" /> stale blocks at this height</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ამ სიმაღლეზე <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}" /> ჩანაცვლებული ბლოკია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">374</context>
         </context-group>
@@ -4121,7 +4121,7 @@
       </trans-unit>
       <trans-unit id="56ad2f3895f350abdd3cee2d95498deb8819afac" datatype="html">
         <source>Error loading block data.</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკის მონაცემების ჩატვირთვის შეცდომა.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">444</context>
         </context-group>
@@ -4309,7 +4309,7 @@
       </trans-unit>
       <trans-unit id="cf8caac4de0166eae6cd0fdfd010ee92b995cd96" datatype="html">
         <source>Calculator</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">კალკულატორი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
@@ -4354,7 +4354,7 @@
       </trans-unit>
       <trans-unit id="b7dde2cf8ec2fcd328295c9c7fcc944c4d3720b6" datatype="html">
         <source>Memory Usage</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">მეხსიერების გამოყენება</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/clock/clock.component.html</context>
           <context context-type="linenumber">65</context>
         </context-group>
@@ -4410,7 +4410,7 @@
       </trans-unit>
       <trans-unit id="9dfdbeb922d811d7b7b3fecd48360a059e52aaba" datatype="html">
         <source>Incoming Transactions</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">შემომავალი ტრანზაქციები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">55</context>
         </context-group>
@@ -4540,7 +4540,7 @@
       </trans-unit>
       <trans-unit id="93ce500c36b94b52219495ae1491efc2fca40cb6" datatype="html">
         <source>Recent Blocks</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბოლო ბლოკები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">147</context>
         </context-group>
@@ -4560,7 +4560,7 @@
       </trans-unit>
       <trans-unit id="aa6ce7e6e6fe5cd080713965451f25bca15a2a25" datatype="html">
         <source>Recent Transactions</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბოლო ტრანზაქციები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">190</context>
         </context-group>
@@ -4701,7 +4701,7 @@
       </trans-unit>
       <trans-unit id="1bb6965f8e1bbe40c076528ffd841da86f57f119" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;" />blocks<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;" />ბლოკი<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty-mining/difficulty-mining.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
@@ -4790,7 +4790,7 @@
       </trans-unit>
       <trans-unit id="0c65c3ee0ce537e507e0b053b479012e5803d2cf" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks expected</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">მოსალოდნელია <x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">50</context>
         </context-group>
@@ -4798,7 +4798,7 @@
       </trans-unit>
       <trans-unit id="ec9f27d00a7778cd1cfe1806105d2ca3314fa506" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block expected</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">მოსალოდნელია <x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">51</context>
         </context-group>
@@ -4806,7 +4806,7 @@
       </trans-unit>
       <trans-unit id="b89cb92adf0a831d4a263ecdba02139abbda02ae" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks mined</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">მოპოვებულია <x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">52</context>
         </context-group>
@@ -4814,7 +4814,7 @@
       </trans-unit>
       <trans-unit id="4f7e823fd45c6def13a3f15f678888c7fe254fa5" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block mined</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">მოპოვებულია <x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">53</context>
         </context-group>
@@ -4822,7 +4822,7 @@
       </trans-unit>
       <trans-unit id="229dfb17b342aa8b9a1db27557069445ea1a7051" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks remaining</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დარჩენილია <x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">54</context>
         </context-group>
@@ -4830,7 +4830,7 @@
       </trans-unit>
       <trans-unit id="13ff0d092caf85cd23815f0235e316dc3a6d1bbe" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block remaining</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დარჩენილია <x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">55</context>
         </context-group>
@@ -4838,7 +4838,7 @@
       </trans-unit>
       <trans-unit id="4f78348af343fb64016891d67b53bdab473f9dbf" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks ahead</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკით წინ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">56</context>
         </context-group>
@@ -4846,7 +4846,7 @@
       </trans-unit>
       <trans-unit id="15c5f3475966bf3be381378b046a65849f0f6bb6" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block ahead</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკით წინ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">57</context>
         </context-group>
@@ -4854,7 +4854,7 @@
       </trans-unit>
       <trans-unit id="697b8cb1caaf1729809bc5c065d4dd873810550a" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks behind</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკით უკან</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">58</context>
         </context-group>
@@ -4862,7 +4862,7 @@
       </trans-unit>
       <trans-unit id="32137887e3f5a25b3a016eb03357f4e363fccb0b" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block behind</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ i }}" /> ბლოკით უკან</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">59</context>
         </context-group>
@@ -4894,7 +4894,7 @@
       </trans-unit>
       <trans-unit id="5e78899c9b98f29856ce3c7c265e1344bc7a5a18" datatype="html">
         <source>Average block time</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკის საშუალო დრო</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
           <context context-type="linenumber">50</context>
         </context-group>
@@ -5220,7 +5220,7 @@
       </trans-unit>
       <trans-unit id="cad77115d6fd3adb4383841223f9feae57e1ee86" datatype="html">
         <source>Hashrate (1w)</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ჰეშრეიტი (1 კვირა)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
@@ -5716,7 +5716,7 @@
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
         <source>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">იხილეთ Monero mempool ბლოკის ცოცხალი სტატისტიკა: საკომისიოს დიაპაზონი ატომურ ერთეულებში ბაიტზე, საერთო ზომა, ტრანზაქციების რაოდენობა და საკომისიოები. ბლოკები რეალურ დროში ახლდება ახალი ტრანზაქციების მიღებისას.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
         </context-group>
@@ -5739,7 +5739,7 @@
       </trans-unit>
       <trans-unit id="8177873832400820695" datatype="html">
         <source>Count</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">რაოდენობა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-graph/mempool-graph.component.ts</context>
           <context context-type="linenumber">330</context>
         </context-group>
@@ -5766,7 +5766,7 @@
       </trans-unit>
       <trans-unit id="ba4f24bf9bf3dc4db3d6bc1b8b63339295f0b806" datatype="html">
         <source>Sign In</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">შესვლა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
@@ -5888,7 +5888,7 @@
       </trans-unit>
       <trans-unit id="4e338e7daa64c7a074cee3824fbd7425e5b7c9a5" datatype="html">
         <source>Pools Luck</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">პულების იღბალი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
@@ -5918,7 +5918,7 @@
       </trans-unit>
       <trans-unit id="ade0bf412a0fae1e4672505fc1fa79ade185db05" datatype="html">
         <source>Pools Count</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">პულების რაოდენობა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.html</context>
           <context context-type="linenumber">17</context>
         </context-group>
@@ -6003,7 +6003,7 @@
       </trans-unit>
       <trans-unit id="5d680aaa8e24bb235cf4fbeff3df0bfc8e2f564e" datatype="html">
         <source>Empty Blocks</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ცარიელი ბლოკები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.html</context>
           <context context-type="linenumber">98</context>
         </context-group>
@@ -6020,7 +6020,7 @@
       </trans-unit>
       <trans-unit id="fe5317c6c60dd7e0e86f04d22f566f67cf04d404" datatype="html">
         <source>Mining Pools</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">მაინინგ პულები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">60</context>
         </context-group>
@@ -6038,7 +6038,7 @@
       </trans-unit>
       <trans-unit id="312539377512157124" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="i" /> blocks</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="i" /> ბლოკი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">171</context>
         </context-group>
@@ -6057,7 +6057,7 @@
       </trans-unit>
       <trans-unit id="3666195172774554282" datatype="html">
         <source>Other (<x id="PH" equiv-text="percentage" />)</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">სხვა (<x id="PH" equiv-text="percentage" />)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">190</context>
         </context-group>
@@ -6224,7 +6224,7 @@
       </trans-unit>
       <trans-unit id="3dc78651b2810cbb6e830fe7e57499d8cf6a8e4d" datatype="html">
         <source>Blocks (24h)</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ბლოკები (24 სთ)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">120</context>
         </context-group>
@@ -6314,7 +6314,7 @@
       </trans-unit>
       <trans-unit id="09c61c6c6f04877fbce3db88fa0f20cd046ed9b1" datatype="html">
         <source>Error loading pool data.</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">პულის მონაცემების ჩატვირთვის შეცდომა.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">589</context>
         </context-group>
@@ -6322,14 +6322,14 @@
       </trans-unit>
       <trans-unit id="7989855514418840406" datatype="html">
         <source>Not enough data yet</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ჯერ საკმარისი მონაცემები არ არის</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.ts</context>
           <context context-type="linenumber">178</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8831611540421575858" datatype="html">
         <source>Pool Dominance</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">პულის წილი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.ts</context>
           <context context-type="linenumber">256</context>
         </context-group>
@@ -6357,7 +6357,7 @@
       </trans-unit>
       <trans-unit id="8c73c5605f32a096f3c08b7b96060b393d53d4df" datatype="html">
         <source>% Change</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ცვლილება %</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">14</context>
         </context-group>
@@ -6571,8 +6571,8 @@
         <note priority="1" from="description">show-less</note>
       </trans-unit>
       <trans-unit id="ea7c261363dc5f6134b7bacba2a1ef97f4ff7859" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ x }}" /> remaining</source>
-        <context-group purpose="location">
+        <source><x id="INTERPOLATION" equiv-text="remaining&lt;/ng-template&gt;" /> remaining</source>
+        <target state="needs-review-translation">დარჩენილია <x id="INTERPOLATION" equiv-text="remaining&lt;/ng-template&gt;" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/rbf-timeline/rbf-timeline.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
@@ -6968,7 +6968,7 @@
       </trans-unit>
       <trans-unit id="68d44b7bd049ae93c2bc15973eb5266aec64693e" datatype="html">
         <source>Cap outliers</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">გამონაკლისების შეზღუდვა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">118</context>
         </context-group>
@@ -7085,7 +7085,7 @@
       </trans-unit>
       <trans-unit id="dbd3edcb9583d2d5a624f70b4593d785858b6130" datatype="html">
         <source>Not any time soon</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">უახლოეს მომავალში არა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">73</context>
         </context-group>
@@ -7170,7 +7170,7 @@
       </trans-unit>
       <trans-unit id="8a736bd53341b2dedaf9cdcfd9d1093cc16cb12c" datatype="html">
         <source>Error loading transaction data.</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ტრანზაქციის მონაცემების ჩატვირთვის შეცდომა.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">196</context>
         </context-group>
@@ -7189,9 +7189,8 @@
         <note priority="1" from="description">accelerator.show-more-details</note>
       </trans-unit>
       <trans-unit id="xmr.transaction.browser-title" datatype="html">
-        <source>Transaction: <x id="INTERPOLATION" equiv-text="this.txId" /></source>
-        <target>ტრანზაქცია: <x id="INTERPOLATION" equiv-text="this.txId" /></target>
-        <context-group purpose="location">
+        <source>Transaction: <x id="INTERPOLATION" equiv-text="shortTxId" /></source>
+        <target state="needs-review-translation">ტრანზაქცია: <x id="INTERPOLATION" equiv-text="shortTxId" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.ts</context>
           <context context-type="linenumber">446</context>
         </context-group>
@@ -10145,7 +10144,7 @@
       </trans-unit>
       <trans-unit id="date-base.immediately" datatype="html">
         <source>Immediately</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დაუყოვნებლივ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">71</context>
         </context-group>
@@ -10228,7 +10227,7 @@
       </trans-unit>
       <trans-unit id="time-until" datatype="html">
         <source>In ~<x id="DATE" equiv-text="dateStrings.i18nYear" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დაახლოებით <x id="DATE" equiv-text="dateStrings.i18nYear" />-ში</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">152</context>
         </context-group>
@@ -10287,7 +10286,7 @@
       </trans-unit>
       <trans-unit id="time-within" datatype="html">
         <source>within ~<x id="DATE" equiv-text="dateStrings.i18nYear" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">დაახლოებით <x id="DATE" equiv-text="dateStrings.i18nYear" />-ის განმავლობაში</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">175</context>
         </context-group>
@@ -10406,7 +10405,7 @@
       </trans-unit>
       <trans-unit id="time-before" datatype="html">
         <source><x id="DATE" equiv-text="dateStrings.i18nYear" /> before</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="DATE" equiv-text="dateStrings.i18nYear" />-ით ადრე</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">221</context>
         </context-group>
@@ -10505,7 +10504,7 @@
       </trans-unit>
       <trans-unit id="8e623d3cfecb7c560c114390db53c1f430ffd0de" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> confirmation</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ i }}" /> დადასტურება</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -10514,7 +10513,7 @@
       </trans-unit>
       <trans-unit id="bc5b0a2631f0b7bc71aaec6aa6f01af21f9a80d4" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> confirmations</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ i }}" /> დადასტურება</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -10523,7 +10522,7 @@
       </trans-unit>
       <trans-unit id="a001c3d27d5fe4a7a362a6089b5b5020ef8c1c95" datatype="html">
         <source>Replaced</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ჩანაცვლებულია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
@@ -10545,7 +10544,7 @@
       </trans-unit>
       <trans-unit id="5ce2bda884ea801c34a1a6c23627d9a5e08f0a82" datatype="html">
         <source>My Account</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ჩემი ანგარიში</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">44</context>
         </context-group>
@@ -10726,7 +10725,7 @@
       </trans-unit>
       <trans-unit id="9a91783e9c0f790ed49edae730f9156070ed9dd5" datatype="html">
         <source>Legal</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">იურიდიული ინფორმაცია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">113</context>
         </context-group>
@@ -10754,7 +10753,7 @@
       </trans-unit>
       <trans-unit id="6a0a8485405b9b289101e52a46e282342c8dc9e0" datatype="html">
         <source>Trademark Policy</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">სავაჭრო ნიშნების პოლიტიკა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">116</context>
         </context-group>
@@ -10763,7 +10762,7 @@
       </trans-unit>
       <trans-unit id="3acac5d996ebd58adf283129c084bd8f837689f1" datatype="html">
         <source>Third-party Licenses</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">მესამე მხარის ლიცენზიები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">117</context>
         </context-group>
@@ -10772,7 +10771,7 @@
       </trans-unit>
       <trans-unit id="64dd13424d9486cf3d680d934987ec685bac0b3d" datatype="html">
         <source>This is a test network. Coins have no value.</source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">ეს სატესტო ქსელია. მონეტებს ღირებულება არ აქვთ.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/testnet-alert/testnet-alert.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -10780,7 +10779,7 @@
       </trans-unit>
       <trans-unit id="52a5264f8dcf69b24e496d0a37fbcdd688c54353" datatype="html">
         <source>Testnet3 is deprecated, and will soon be replaced by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;" />Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></source>
-        <context-group purpose="location">
+        <target state="needs-review-translation">Testnet3 მოძველებულია და მალე ჩანაცვლდება <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;" />Testnet4-ით<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/testnet-alert/testnet-alert.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
@@ -12329,6 +12328,842 @@
         <target state="needs-review-translation">ქსელის მოთხოვნა ვერ შესრულდა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/status/xmr-status.component.ts</context>
           <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.title" datatype="html">
+        <source>Transaction activity</source>
+        <target state="needs-review-translation">ტრანზაქციების აქტივობა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.description" datatype="html">
+        <source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source>
+        <target state="needs-review-translation">დადასტურებული Monero ტრანზაქციები, დათვლილი ყველა ბლოკიდან საწყისი ბლოკის შემდეგ. მაინერის ჯილდოს ტრანზაქციები გამორიცხულია. ყველა პერიოდი UTC-ს იყენებს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.today" datatype="html">
+        <source>Today · so far</source>
+        <target state="needs-review-translation">დღეს · ამ დროისთვის</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.month" datatype="html">
+        <source>This month · so far</source>
+        <target state="needs-review-translation">ამ თვეში · ამ დროისთვის</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.year" datatype="html">
+        <source>This year · so far</source>
+        <target state="needs-review-translation">ამ წელს · ამ დროისთვის</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.genesis" datatype="html">
+        <source>Since genesis</source>
+        <target state="needs-review-translation">საწყისი ბლოკიდან</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.countPer" datatype="html">
+        <source>Count transactions per</source>
+        <target state="needs-review-translation">ტრანზაქციების დათვლის პერიოდი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.dateRange" datatype="html">
+        <source>Date range</source>
+        <target state="needs-review-translation">თარიღების დიაპაზონი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.loading" datatype="html">
+        <source>Loading transaction history…</source>
+        <target state="needs-review-translation">ტრანზაქციების ისტორია იტვირთება…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.error" datatype="html">
+        <source>Transaction history could not be loaded.</source>
+        <target state="needs-review-translation">ტრანზაქციების ისტორია ვერ ჩაიტვირთა.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.retry" datatype="html">
+        <source>Retry</source>
+        <target state="needs-review-translation">ხელახლა ცდა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.chartLabel" datatype="html">
+        <source>Monero transaction counts over time; exact counts are available in the table below</source>
+        <target state="needs-review-translation">Monero ტრანზაქციების რაოდენობა დროში; ზუსტი რაოდენობები ქვემოთ ცხრილშია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.totalNote" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}" /> transactions in the displayed periods. Faded bars mark partial periods.</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ selectedTotal | number }}" /> ტრანზაქცია ნაჩვენებ პერიოდებში. მკრთალი სვეტები არასრულ პერიოდებს აღნიშნავს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.indexedThrough" datatype="html">
+        <source>Indexed through block <x id="INTERPOLATION" equiv-text="{{ data.height | number }}" /> · <x id="INTERPOLATION_1" equiv-text="{{ data.indexedThrough * 1000 | date:'yyyy-MM-dd HH:mm':'UTC' }}" /> UTC</source>
+        <target state="needs-review-translation">ინდექსირებულია ბლოკამდე <x id="INTERPOLATION" equiv-text="{{ data.height | number }}" /> · <x id="INTERPOLATION_1" equiv-text="{{ data.indexedThrough * 1000 | date:'yyyy-MM-dd HH:mm':'UTC' }}" /> UTC</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.stale" datatype="html">
+        <source> · Refresh delayed; showing the last indexed data</source>
+        <target state="needs-review-translation"> · განახლება დაგვიანებულია; ნაჩვენებია ბოლო ინდექსირებული მონაცემები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.counts" datatype="html">
+        <source>Transaction counts</source>
+        <target state="needs-review-translation">ტრანზაქციების რაოდენობა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.download" datatype="html">
+        <source>Download CSV</source>
+        <target state="needs-review-translation">CSV-ის ჩამოტვირთვა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.period" datatype="html">
+        <source>Period (UTC)</source>
+        <target state="needs-review-translation">პერიოდი (UTC)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.transactions" datatype="html">
+        <source>Transactions</source>
+        <target state="needs-review-translation">ტრანზაქციები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.blocks" datatype="html">
+        <source>Blocks</source>
+        <target state="needs-review-translation">ბლოკები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.partial" datatype="html">
+        <source>Partial</source>
+        <target state="needs-review-translation">არასრული</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.showMore" datatype="html">
+        <source>Show more periods</source>
+        <target state="needs-review-translation">მეტი პერიოდის ჩვენება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.hour" datatype="html">
+        <source>Hour</source>
+        <target state="needs-review-translation">საათი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.day" datatype="html">
+        <source>Day</source>
+        <target state="needs-review-translation">დღე</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.intervalMonth" datatype="html">
+        <source>Month</source>
+        <target state="needs-review-translation">თვე</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.intervalYear" datatype="html">
+        <source>Year</source>
+        <target state="needs-review-translation">წელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.allTime" datatype="html">
+        <source>All time</source>
+        <target state="needs-review-translation">მთელი პერიოდი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.metaTitle" datatype="html">
+        <source>Monero transaction activity</source>
+        <target state="needs-review-translation">Monero ტრანზაქციების აქტივობა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.metaDescription" datatype="html">
+        <source>Explore Monero transaction counts by hour, day, month and year, from genesis to the latest indexed block.</source>
+        <target state="needs-review-translation">იხილეთ Monero ტრანზაქციების რაოდენობა საათის, დღის, თვისა და წლის მიხედვით, საწყისი ბლოკიდან ბოლო ინდექსირებულ ბლოკამდე.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.partialPeriod" datatype="html">
+        <source> · Partial period</source>
+        <target state="needs-review-translation"> · არასრული პერიოდი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.tooltipTransactions" datatype="html">
+        <source><x id="count" equiv-text="row.transactions.toLocaleString()" /> transactions</source>
+        <target state="needs-review-translation"><x id="count" equiv-text="row.transactions.toLocaleString()" /> ტრანზაქცია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.activity.tooltipBlocks" datatype="html">
+        <source><x id="count" equiv-text="row.blocks.toLocaleString()" /> blocks</source>
+        <target state="needs-review-translation"><x id="count" equiv-text="row.blocks.toLocaleString()" /> ბლოკი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html">
+        <source>Unavailable for pruned data</source>
+        <target state="needs-review-translation">შეკვეცილი მონაცემებისთვის მიუწვდომელია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html">
+        <source>Pruned data size</source>
+        <target state="needs-review-translation">შეკვეცილი მონაცემების ზომა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html">
+        <source>Serialized size</source>
+        <target state="needs-review-translation">სერიალიზებული ზომა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html">
+        <source>Unlock time</source>
+        <target state="needs-review-translation">განბლოკვის დრო</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html">
+        <source>Decoded transaction</source>
+        <target state="needs-review-translation">გაშიფრული ტრანზაქცია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html">
+        <source>Transaction extra</source>
+        <target state="needs-review-translation">ტრანზაქციის დამატებითი მონაცემები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html">
+        <source>Raw tx_extra</source>
+        <target state="needs-review-translation">ნედლი tx_extra</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html">
+        <source>Empty</source>
+        <target state="needs-review-translation">ცარიელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source>
+        <target state="needs-review-translation">ზოგი დამატებითი ველი ამოუცნობია; სრული ნედლი ბაიტები ზემოთაა ნაჩვენები.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html">
+        <source>Payment verification</source>
+        <target state="needs-review-translation">გადახდის შემოწმება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html">
+        <source>Monero payment verification mode</source>
+        <target state="needs-review-translation">Monero გადახდის შემოწმების რეჟიმი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html">
+        <source>Received</source>
+        <target state="needs-review-translation">მიღებულია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-help" datatype="html">
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source>
+        <target state="needs-review-translation"> tx_proof-ის შემოწმება იყენებს სერვერის wallet RPC-ს, თუ ის გამართულია. პირადი view key და tx_secret_key მოწმდება ამ ბრაუზერში ლოკალურად და არ იგზავნება xmr.tx.taxi-ზე. </target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html">
+        <source>Recipient address</source>
+        <target state="needs-review-translation">მიმღების მისამართი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html">
+        <source>Message</source>
+        <target state="needs-review-translation">შეტყობინება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html">
+        <source>tx_proof signature</source>
+        <target state="needs-review-translation">tx_proof ხელმოწერა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html">
+        <source>Verifying...</source>
+        <target state="needs-review-translation">მოწმდება...</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html">
+        <source>Verify proof</source>
+        <target state="needs-review-translation">მტკიცებულების შემოწმება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html">
+        <source>Proof verified</source>
+        <target state="needs-review-translation">მტკიცებულება დადასტურდა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.confirmations" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}" /> confirmations</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}" /> დადასტურება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html">
+        <source>In mempool</source>
+        <target state="needs-review-translation">mempool-ში</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html">
+        <source>Private view key</source>
+        <target state="needs-review-translation">პირადი view key</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html">
+        <source>Scanning...</source>
+        <target state="needs-review-translation">სკანირება მიმდინარეობს...</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html">
+        <source>Scan this tx</source>
+        <target state="needs-review-translation">ტრანზაქციის სკანირება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html">
+        <source>Checking...</source>
+        <target state="needs-review-translation">მოწმდება...</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html">
+        <source>Check key</source>
+        <target state="needs-review-translation">გასაღების შემოწმება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html">
+        <source>Payment found</source>
+        <target state="needs-review-translation">გადახდა ნაპოვნია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.atomic-amount" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}" /> atomic units </source>
+        <target state="needs-review-translation"> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}" /> ატომური ერთეული </target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">318,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
+        <source>Address and tx_proof signature are required.</source>
+        <target state="needs-review-translation">საჭიროა მისამართი და tx_proof ხელმოწერა.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html">
+        <source>Enter a valid-looking Monero mainnet address.</source>
+        <target state="needs-review-translation">შეიყვანეთ Monero-ს მთავარი ქსელის სწორი ფორმატის მისამართი.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">502</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">535</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html">
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source>
+        <target state="needs-review-translation">შეიყვანეთ Monero საფულით შექმნილი tx_proof ხელმოწერა.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofMessageLength" datatype="html">
+        <source>Proof messages must be <x id="PH" equiv-text="this.xmrProofMessageMaxLength" /> characters or less.</source>
+        <target state="needs-review-translation">მტკიცებულების შეტყობინება უნდა შეიცავდეს არაუმეტეს <x id="PH" equiv-text="this.xmrProofMessageMaxLength" /> სიმბოლოს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">459</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
+        <source>The proof did not verify for this transaction and address.</source>
+        <target state="needs-review-translation">მტკიცებულება ვერ დადასტურდა ამ ტრანზაქციისა და მისამართისთვის.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
+        <source>Unable to verify proof.</source>
+        <target state="needs-review-translation">მტკიცებულების შემოწმება შეუძლებელია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
+        <source>Address and private view key are required.</source>
+        <target state="needs-review-translation">საჭიროა მისამართი და პირადი view key.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
+        <source>Load a transaction before running local verification.</source>
+        <target state="needs-review-translation">ლოკალურ შემოწმებამდე ჩატვირთეთ ტრანზაქცია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">498</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html">
+        <source>Enter a 64-character hexadecimal private view key.</source>
+        <target state="needs-review-translation">შეიყვანეთ 64-სიმბოლოიანი თექვსმეტობითი პირადი view key.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
+        <source>Address and tx_secret_key are required.</source>
+        <target state="needs-review-translation">საჭიროა მისამართი და tx_secret_key.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html">
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source>
+        <target state="needs-review-translation">შეიყვანეთ გამგზავნის საფულის თექვსმეტობითი tx_secret_key.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
+        <source>Unable to verify this transaction locally.</source>
+        <target state="needs-review-translation">ამ ტრანზაქციის ლოკალურად შემოწმება შეუძლებელია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">569</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.inputs" datatype="html">
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}" />)</source>
+        <target state="needs-review-translation">შესასვლელები (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}" />)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}" /></source>
+        <target state="needs-review-translation">რგოლი <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html">
+        <source>Key image</source>
+        <target state="needs-review-translation">გასაღების გამოსახულება (key image)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html">
+        <source>Input type</source>
+        <target state="needs-review-translation">შესასვლელის ტიპი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html">
+        <source>Ring size</source>
+        <target state="needs-review-translation">რგოლის ზომა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
+        <source>Relative ring offsets</source>
+        <target state="needs-review-translation">რგოლის ფარდობითი გადანაცვლებები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html">
+        <source>Ring members</source>
+        <target state="needs-review-translation">რგოლის წევრები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-index" datatype="html">
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}" /></source>
+        <target state="needs-review-translation">გამოსასვლელი #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.block-height" datatype="html">
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}" /></source>
+        <target state="needs-review-translation">ბლოკი <x id="INTERPOLATION" equiv-text="{{ member.height | number }}" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.blocks-earlier" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }" /> blocks earlier</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }" /> ბლოკით ადრე</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html">
+        <source>Output key</source>
+        <target state="needs-review-translation">გამოსასვლელის გასაღები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html">
+        <source>Source transaction temporarily unavailable.</source>
+        <target state="needs-review-translation">საწყისი ტრანზაქცია დროებით მიუწვდომელია.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html">
+        <source>This legacy input has no decoys.</source>
+        <target state="needs-review-translation">ამ ძველი ფორმატის შესასვლელს სატყუარა წევრები არ აქვს.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html">
+        <source>Ring members include decoys; the actual spent output is not identified.</source>
+        <target state="needs-review-translation">რგოლის წევრები შეიცავს სატყუარებს; რეალურად დახარჯული გამოსასვლელი არ არის იდენტიფიცირებული.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
+        <source>Some ring-member details were not resolved in this response.</source>
+        <target state="needs-review-translation">ამ პასუხში რგოლის ზოგი წევრის დეტალი ვერ მოიძებნა.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.outputs" datatype="html">
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}" />)</source>
+        <target state="needs-review-translation">გამოსასვლელები (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}" />)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html">
+        <source>RingCT output</source>
+        <target state="needs-review-translation">RingCT გამოსასვლელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html">
+        <source>recipient hidden</source>
+        <target state="needs-review-translation">მიმღები დაფარულია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html">
+        <source>Output type</source>
+        <target state="needs-review-translation">გამოსასვლელის ტიპი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html">
+        <source>Amount</source>
+        <target state="needs-review-translation">თანხა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html">
+        <source>Hidden by RingCT</source>
+        <target state="needs-review-translation">დაფარულია RingCT-ით</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html">
+        <source>Recipient</source>
+        <target state="needs-review-translation">მიმღები</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html">
+        <source>Hidden by stealth addressing</source>
+        <target state="needs-review-translation">დაფარულია ერთჯერადი მისამართით</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html">
+        <source>Global output index</source>
+        <target state="needs-review-translation">გამოსასვლელის გლობალური ინდექსი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html">
+        <source>View tag</source>
+        <target state="needs-review-translation">ხედვის ნიშნული (view tag)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html">
+        <source>Amount commitment</source>
+        <target state="needs-review-translation">თანხის კრიპტოგრაფიული ვალდებულება</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html">
+        <source>atomic units</source>
+        <target state="needs-review-translation">ატომური ერთეული</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html">
+        <source>Amount hidden</source>
+        <target state="needs-review-translation">თანხა დაფარულია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html">
+        <source>RingCT input</source>
+        <target state="needs-review-translation">RingCT შესასვლელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
+        <source>Legacy ring input</source>
+        <target state="needs-review-translation">ძველი ფორმატის რგოლის შესასვლელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html">
+        <source>Input</source>
+        <target state="needs-review-translation">შესასვლელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html">
+        <source>Stealth output</source>
+        <target state="needs-review-translation">ერთჯერადი გამოსასვლელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html">
+        <source>Fee</source>
+        <target state="needs-review-translation">საკომისიო</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html">
+        <source>Output</source>
+        <target state="needs-review-translation">გამოსასვლელი</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()" /></source>
+        <target state="needs-review-translation">გლობალური გამოსასვლელი <x id="index" equiv-text="member.global_index.toLocaleString()" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-height" datatype="html">
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()" /></source>
+        <target state="needs-review-translation">სიმაღლე <x id="height" equiv-text="member.height.toLocaleString()" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-blocks-before-spend" datatype="html">
+        <source><x id="count" equiv-text="member.age_blocks.toLocaleString()" /> blocks before spend</source>
+        <target state="needs-review-translation">დახარჯვამდე <x id="count" equiv-text="member.age_blocks.toLocaleString()" /> ბლოკით ადრე</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html">
+        <source>locked</source>
+        <target state="needs-review-translation">დაბლოკილია</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
+        <source>Transaction amount hidden by RingCT</source>
+        <target state="needs-review-translation">ტრანზაქციის თანხა დაფარულია RingCT-ით</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html">
+        <source>Change amount denomination</source>
+        <target state="needs-review-translation">თანხის საზომი ერთეულის შეცვლა</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">204</context>
         </context-group>
       </trans-unit>
       </body>
