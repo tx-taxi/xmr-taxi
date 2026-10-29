@@ -11582,6 +11582,1314 @@
         <source>Server-Sent Events</source>
         <target>Події, надіслані сервером</target>
       </trans-unit>
+          <trans-unit id="xmr.about.title" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">Про xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.tagline" datatype="html">
+        <source>The Monero explorer in the tx.taxi family.</source><target state="translated">Оглядач Monero у сімействі tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.projectLinks" datatype="html">
+        <source>Project links</source><target state="translated">Посилання проєкту</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.documentation" datatype="html">
+        <source>Monero documentation</source><target state="translated">Документація Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.contact" datatype="html">
+        <source>Contact the maintainer</source><target state="translated">Зв’язатися з розробником</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.description" datatype="html">
+        <source>xmr.tx.taxi adapts the Mempool Open Source Project interface for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</source><target state="translated">xmr.tx.taxi адаптує інтерфейс Mempool Open Source Project для <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Він показує лише дані, які підтверджує блокчейн: висоту, хешрейт, транзакції в очікуванні, рівні комісій, відомості про кільця та тип RingCT. RingCT приховує суми, а приховані адреси — отримувачів; за замовчуванням вони не відображаються.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacy" datatype="html">
+        <source>Privacy by default</source><target state="translated">Конфіденційність за замовчуванням</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacyDescription" datatype="html">
+        <source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</source><target state="translated">Сторінки транзакцій навмисно приховують чутливі поля. Розкриття інформації учасниками обмежено способами, сумісними з моделлю конфіденційності Monero:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.recipientChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Recipient checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — require the recipient's own wallet/view key tooling. Private keys should stay local.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Перевірка отримувачем<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> потребує власного гаманця або інструмента з ключем перегляду отримувача. Приватні ключі мають залишатися на пристрої.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.proofChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_proof verification<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Перевірка tx_proof<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: сервер може перевірити підпис tx_proof та адресу отримувача, якщо оператор налаштував monero-wallet-rpc. Приватні ключі не надсилаються.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.secretChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_secret_key checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Перевірка tx_secret_key<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> виконується локальними інструментами гаманця; xmr.tx.taxi не просить надсилати цей ключ на сервер.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemon" datatype="html">
+        <source>Daemon</source><target state="translated">Демон</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemonDescription" datatype="html">
+        <source>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> JSON-RPC endpoint.</source><target state="translated">Цей екземпляр використовує налаштований набір публічних вузлів Monero з обмеженим RPC і послідовними резервними вузлами. Оператор може вказати будь-яку сумісну адресу JSON-RPC <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.license" datatype="html">
+        <source>License</source><target state="translated">Ліцензія</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.licenseDescription" datatype="html">
+        <source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source><target state="translated">xmr.tx.taxi дотримується зобов’язань вихідного проєкту за ліцензією AGPLv3. Mempool Open Source Project створив шаблони інтерфейсу, на яких базується цей оглядач.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSource" datatype="html">
+        <source>Built on open source</source><target state="translated">На основі відкритого коду</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSourceDescription" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source><target state="translated">Цей оглядач базується на <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Див. <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>зазначення авторства третіх сторін<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>; щодо вихідного коду й ліцензії зверніться до розробника.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html">
+        <source>Fiat value unavailable</source><target state="translated">Вартість у фіатній валюті недоступна</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/amount/amount.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html">
+        <source>Monero explorer dashboard</source><target state="translated">Панель оглядача Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.returnHub" datatype="html">
+        <source>Back to tx.taxi</source><target state="translated">Повернутися до tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.brand" datatype="html">
+        <source>xmr.tx.taxi dashboard</source><target state="translated">Панель xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html">
+        <source>Switch to displaying block sizes</source><target state="translated">Показувати розміри блоків</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html">
+        <source>Switch to displaying total fees per block</source><target state="translated">Показувати загальні комісії блоків</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source><target state="translated">Показувати нові блоки праворуч</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source><target state="translated">Показувати нові блоки ліворуч</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html">
+        <source>difficulty</source><target state="translated">складність</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleRewards" datatype="html">
+        <source>rewards</source><target state="translated">винагороди</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.paceHelp" datatype="html">
+        <source>Recent blocks compared with Monero's two-minute target</source><target state="translated">Останні блоки порівняно з цільовим інтервалом Monero у дві хвилини</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.pace" datatype="html">
+        <source>Block pace</source><target state="translated">Темп блоків</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.change" datatype="html">
+        <source>Difficulty Δ</source><target state="translated">Зміна складності Δ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.title" datatype="html">
+        <source>Difficulty Adjustment</source><target state="translated">Коригування складності</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.rewardsTitle" datatype="html">
+        <source>Reward stats</source><target state="translated">Статистика винагород</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html">
+        <source>Kraken last trade</source><target state="translated">Остання угода Kraken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html">
+        <source> · stale</source><target state="translated"> · дані застаріли</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html">
+        <source>ECB reference rate</source><target state="translated">Довідковий курс ЄЦБ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html">
+        <source>ECB reference rate; update unavailable</source><target state="translated">Довідковий курс ЄЦБ; оновлення недоступне</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html">
+        <source>Dashboard</source><target state="translated">Огляд</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.mining" datatype="html">
+        <source>Mining dashboard</source><target state="translated">Панель майнінгу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.blocks" datatype="html">
+        <source>Recent blocks</source><target state="translated">Останні блоки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.graphs" datatype="html">
+        <source>Graphs</source><target state="translated">Графіки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.docs" datatype="html">
+        <source>Documentation</source><target state="translated">Документація</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">Про xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html">
+        <source>Chain search</source><target state="translated">Пошук у блокчейнах</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html">
+        <source>Choose search chain</source><target state="translated">Виберіть мережу для пошуку</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html">
+        <source>Selected explorer</source><target state="translated">Вибраний оглядач</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html">
+        <source>SELECTED</source><target state="translated">ВИБРАНО</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html">
+        <source>Automatic Routing</source><target state="translated">Автоматичний пошук</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html">
+        <source>Open tx.taxi in a new tab</source><target state="translated">Відкрити tx.taxi в новій вкладці</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html">
+        <source>View Hub</source><target state="translated">Відкрити головну</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.routingHint" datatype="html">
+        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source><target state="translated">Або перейдіть за адресою <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[пошуковий запит]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source><target state="translated">НАШІ ОГЛЯДАЧІ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source><target state="translated">Список оглядачів недоступний</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source><target state="translated">СТОРОННІ ОГЛЯДАЧІ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html">
+        <source>Open</source><target state="translated">Відкрити</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html">
+        <source>Opened</source><target state="translated">Відкрито</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html">
+        <source>Switch</source><target state="translated">Перейти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source><target state="translated">Завантаження оглядачів</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html">
+        <source>Search selected chain</source><target state="translated">Шукати у вибраній мережі</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html">
+        <source>Monero explorer</source><target state="translated">Оглядач Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html">
+        <source>Found</source><target state="translated">Знайдено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html">
+        <source>Possible</source><target state="translated">Можливо</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.additionalExplorers" datatype="html">
+        <source><x id="name" equiv-text="name"/> additional explorers</source><target state="translated">Додаткові оглядачі: <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorer" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/></source><target state="translated">Відкрити <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorerNewTab" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/> in a new tab</source><target state="translated">Відкрити <x id="name" equiv-text="name"/> у новій вкладці</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switchExplorer" datatype="html">
+        <source>Switch to <x id="name" equiv-text="name"/></source><target state="translated">Перейти на <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideOne" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">Приховати <x id="count" equiv-text="count"/> додатковий варіант <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideMany" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">Приховати додаткові варіанти <x id="count" equiv-text="count"/> <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showOne" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">Показати <x id="count" equiv-text="count"/> додатковий варіант <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showMany" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">Показати додаткові варіанти <x id="count" equiv-text="count"/> <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source><target state="translated">Викличте таксі: вставте сюди будь-що.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html">
+        <source>Monero search suggestions</source><target state="translated">Підказки пошуку Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html">
+        <source>Monero Block Height</source><target state="translated">Висота блоку Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html">
+        <source>Monero Block / Transaction</source><target state="translated">Блок або транзакція Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html">
+        <source>Monero addresses are private</source><target state="translated">Адреси Monero конфіденційні</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html">
+        <source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target state="translated">За публічними даними блокчейна неможливо отримати історію адреси. Відкрийте транзакцію, щоб перевірити платіж за допомогою доказу або ключів.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html">
+        <source>Unavailable for pruned data</source><target state="translated">Недоступно для скорочених даних</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html">
+        <source>Pruned data size</source><target state="translated">Розмір скорочених даних</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html">
+        <source>Serialized size</source><target state="translated">Розмір серіалізованих даних</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html">
+        <source>Unlock time</source><target state="translated">Час розблокування</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html">
+        <source>Decoded transaction</source><target state="translated">Декодована транзакція</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html">
+        <source>Transaction extra</source><target state="translated">Додаткові дані транзакції</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html">
+        <source>Raw tx_extra</source><target state="translated">Початкові дані tx_extra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html">
+        <source>Empty</source><target state="translated">Порожньо</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target state="translated">Деякі додаткові поля не розпізнано; повні початкові байти показано вище.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html">
+        <source>Payment verification</source><target state="translated">Перевірка платежу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html">
+        <source>Monero payment verification mode</source><target state="translated">Спосіб перевірки платежу Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html">
+        <source>Received</source><target state="translated">Отримано</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-help" datatype="html">
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source><target state="translated">Для перевірки tx_proof використовується RPC серверного гаманця, якщо його налаштовано. Приватні ключі перегляду та значення tx_secret_key перевіряються локально у браузері й не надсилаються на xmr.tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html">
+        <source>Recipient address</source><target state="translated">Адреса отримувача</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html">
+        <source>Message</source><target state="translated">Повідомлення</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html">
+        <source>tx_proof signature</source><target state="translated">Підпис tx_proof</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html">
+        <source>Verifying...</source><target state="translated">Перевірка...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html">
+        <source>Verify proof</source><target state="translated">Перевірити доказ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html">
+        <source>Proof verified</source><target state="translated">Доказ перевірено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.confirmations" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/> confirmations</source><target state="translated">Підтверджень: <x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html">
+        <source>In mempool</source><target state="translated">У мемпулі</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html">
+        <source>Private view key</source><target state="translated">Приватний ключ перегляду</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html">
+        <source>Scanning...</source><target state="translated">Сканування...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html">
+        <source>Scan this tx</source><target state="translated">Сканувати транзакцію</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html">
+        <source>Checking...</source><target state="translated">Перевірка...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html">
+        <source>Check key</source><target state="translated">Перевірити ключ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html">
+        <source>Payment found</source><target state="translated">Платіж знайдено</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.atomic-amount" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> atomic units </source><target state="translated"><x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> атомних одиниць</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">318,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
+        <source>Address and tx_proof signature are required.</source><target state="translated">Потрібні адреса та підпис tx_proof.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html">
+        <source>Enter a valid-looking Monero mainnet address.</source><target state="translated">Введіть адресу основної мережі Monero у правильному форматі.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">502</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">535</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html">
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source><target state="translated">Введіть підпис tx_proof, створений гаманцем Monero.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofMessageLength" datatype="html">
+        <source>Proof messages must be <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> characters or less.</source><target state="translated">Повідомлення доказу не має перевищувати <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> символів.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">459</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
+        <source>The proof did not verify for this transaction and address.</source><target state="translated">Доказ не підтвердився для цієї транзакції та адреси.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
+        <source>Unable to verify proof.</source><target state="translated">Не вдалося перевірити доказ.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
+        <source>Address and private view key are required.</source><target state="translated">Потрібні адреса та приватний ключ перегляду.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
+        <source>Load a transaction before running local verification.</source><target state="translated">Завантажте транзакцію перед локальною перевіркою.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">498</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html">
+        <source>Enter a 64-character hexadecimal private view key.</source><target state="translated">Введіть приватний ключ перегляду з 64 шістнадцяткових символів.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
+        <source>Address and tx_secret_key are required.</source><target state="translated">Потрібні адреса та tx_secret_key.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html">
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target state="translated">Введіть шістнадцятковий tx_secret_key з гаманця відправника.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
+        <source>Unable to verify this transaction locally.</source><target state="translated">Не вдалося перевірити транзакцію локально.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">569</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.inputs" datatype="html">
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</source><target state="translated">Входи (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></source><target state="translated">Кільце <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html">
+        <source>Key image</source><target state="translated">Образ ключа</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html">
+        <source>Input type</source><target state="translated">Тип входу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html">
+        <source>Ring size</source><target state="translated">Розмір кільця</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
+        <source>Relative ring offsets</source><target state="translated">Відносні зсуви кільця</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html">
+        <source>Ring members</source><target state="translated">Учасники кільця</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-index" datatype="html">
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></source><target state="translated">Вихід №<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.block-height" datatype="html">
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></source><target state="translated">Блок <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.blocks-earlier" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> blocks earlier</source><target state="translated">на <x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> блоків раніше</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html">
+        <source>Output key</source><target state="translated">Ключ виходу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html">
+        <source>Source transaction temporarily unavailable.</source><target state="translated">Вихідна транзакція тимчасово недоступна.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html">
+        <source>This legacy input has no decoys.</source><target state="translated">Цей вхід старого формату не містить приманок.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html">
+        <source>Ring members include decoys; the actual spent output is not identified.</source><target state="translated">Учасники кільця включають приманки; фактично витрачений вихід не визначається.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
+        <source>Some ring-member details were not resolved in this response.</source><target state="translated">Не вдалося отримати деякі відомості про учасників кільця.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.outputs" datatype="html">
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</source><target state="translated">Виходи (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html">
+        <source>RingCT output</source><target state="translated">Вихід RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html">
+        <source>recipient hidden</source><target state="translated">отримувача приховано</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html">
+        <source>Output type</source><target state="translated">Тип виходу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html">
+        <source>Amount</source><target state="translated">Сума</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html">
+        <source>Hidden by RingCT</source><target state="translated">Приховано RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html">
+        <source>Recipient</source><target state="translated">Отримувач</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html">
+        <source>Hidden by stealth addressing</source><target state="translated">Приховано за допомогою прихованої адреси</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html">
+        <source>Global output index</source><target state="translated">Глобальний індекс виходу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html">
+        <source>View tag</source><target state="translated">Тег перегляду</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html">
+        <source>Amount commitment</source><target state="translated">Зобов’язання суми</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html">
+        <source>atomic units</source><target state="translated">атомних одиниць</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html">
+        <source>Amount hidden</source><target state="translated">Суму приховано</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html">
+        <source>Coinbase</source><target state="translated">Coinbase</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html">
+        <source>RingCT input</source><target state="translated">Вхід RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
+        <source>Legacy ring input</source><target state="translated">Кільцевий вхід старого формату</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html">
+        <source>Input</source><target state="translated">Вхід</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html">
+        <source>Stealth output</source><target state="translated">Прихований вихід</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html">
+        <source>Fee</source><target state="translated">Комісія</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html">
+        <source>Output</source><target state="translated">Вихід</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()"/></source><target state="translated">глобальний вихід <x id="index" equiv-text="member.global_index.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-height" datatype="html">
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()"/></source><target state="translated">висота <x id="height" equiv-text="member.height.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-blocks-before-spend" datatype="html">
+        <source><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> blocks before spend</source><target state="translated"><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> блоків до витрати</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html">
+        <source>locked</source><target state="translated">заблоковано</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
+        <source>Transaction amount hidden by RingCT</source><target state="translated">Суму транзакції приховано RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html">
+        <source>Change amount denomination</source><target state="translated">Номінал решти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.miner" datatype="html">
+        <source>Miner transaction</source><target state="translated">Транзакція майнера</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacyHelp" datatype="html">
+        <source>Pre-RingCT transaction; input and output amounts are public</source><target state="translated">Транзакція до появи RingCT; суми входів і виходів публічні</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacy" datatype="html">
+        <source>Legacy · public amounts</source><target state="translated">Старий формат · суми публічні</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTagsHelp" datatype="html">
+        <source>View tags help wallets scan outputs</source><target state="translated">Теги перегляду допомагають гаманцям сканувати виходи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTags" datatype="html">
+        <source>View tags</source><target state="translated">Теги перегляду</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringHelp" datatype="html">
+        <source>Number of members in the first input's ring</source><target state="translated">Кількість учасників кільця першого входу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></source><target state="translated">Кільце <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringType" datatype="html">
+        <source>RingCT type <x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></source><target state="translated">Тип RingCT <x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
+        <source>Pending Transactions</source><target state="translated">Транзакції в очікуванні</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html">
+        <source>Total fees</source><target state="translated">Загальна комісія</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html">
+        <source>Median fee rate</source><target state="translated">Медіанна ставка комісії</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html">
+        <source>Fee range</source><target state="translated">Діапазон комісій</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
