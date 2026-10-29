@@ -3102,7 +3102,7 @@
       </trans-unit>
       <trans-unit id="b59ea65c89a5ae15b787d8318fdad9edd6fec243" datatype="html">
         <source>Transaction</source>
-        <target>See the mining fees earned per Monero block compared to the Monero block subsidy, visualized in XMR and USD over time.</target>
+        <target>Transacció</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">12</context>
@@ -3373,7 +3373,7 @@
       </trans-unit>
       <trans-unit id="7faaaa08f56427999f3be41df1093ce4089bbd75" datatype="html">
         <source>Size</source>
-        <target>See Monero block sizes visualized over time.</target>
+        <target>Mida</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">188</context>
@@ -6583,7 +6583,7 @@
       </trans-unit>
       <trans-unit id="7e892ba15f2c6c17e83510e273b3e10fc32ea016" datatype="html">
         <source>Search</source>
-        <target>See the Monero price in USD visualized over time.</target>
+        <target>Cerca</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
           <context context-type="linenumber">9</context>
@@ -6984,7 +6984,7 @@
       </trans-unit>
       <trans-unit id="4e738ef3d2b4878f17f43002204f7b31aabb8e87" datatype="html">
         <source>ETA</source>
-        <target>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</target>
+        <target>Temps estimat</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">68</context>
