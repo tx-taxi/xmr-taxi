@@ -11875,7 +11875,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.about.openSourceDescription" datatype="html">
-        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source><target state="needs-review-translation">Este explorador baseia-se no projeto de código aberto <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Consulte <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>atribuição de terceiros<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> e entre em contato com o mantenedor para obter informações sobre a fonte e a licença.</target>
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source><target state="translated">Este explorador se baseia no <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Consulte as <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>atribuições de terceiros<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> e entre em contato com o mantenedor para obter informações sobre o código-fonte e a licença.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.html</context>
           <context context-type="linenumber">29</context>
@@ -11904,7 +11904,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="420763834450076269" datatype="html">
-        <source>Block</source><target state="needs-review-translation">Bloquear</target>
+        <source>Block</source><target state="translated">Bloco</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
           <context context-type="linenumber">245</context>
@@ -12056,7 +12056,7 @@
         <note priority="1" from="description">Transaction feerate tooltip (economy)</note>
       </trans-unit>
       <trans-unit id="77a014215a8ebca1d2cb97afd2d6d0b98f30064d" datatype="html">
-        <source>Derived from lower current Monero mempool fee rates</source><target state="needs-review-translation">Derivado das taxas atuais mais baixas de taxas do mempool Monero</target>
+        <source>Derived from lower current Monero mempool fee rates</source><target state="translated">Derivado das menores taxas atuais da mempool Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
           <context context-type="linenumber">8</context>
@@ -12064,7 +12064,7 @@
         <note priority="1" from="description">Transaction feerate tooltip (low priority)</note>
       </trans-unit>
       <trans-unit id="9b7f259ef00e0bc210c59220cbe1505594e08510" datatype="html">
-        <source>Derived from mid-range current Monero mempool fee rates</source><target state="needs-review-translation">Derivado das taxas atuais de médio porte do mempool Monero</target>
+        <source>Derived from mid-range current Monero mempool fee rates</source><target state="translated">Derivado das taxas intermediárias atuais da mempool Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
           <context context-type="linenumber">9</context>
@@ -12461,7 +12461,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.search.routingHint" datatype="html">
-        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source><target state="needs-review-translation">Ou vá direto para <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[sua pesquisa]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></target>
+        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source><target state="translated">Ou acesse diretamente <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[sua pesquisa]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
           <context context-type="linenumber">60,61</context>
@@ -12944,7 +12944,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.legal.terms-of-service.2" datatype="html">
-        <source>xmr.tx.taxi is a Monero block and pending transaction explorer derived from the Mempool Open Source Project. This instance provides public blockchain data from its configured Monero RPC providers and does not provide wallet, custody, exchange, investment, tax, legal, or transaction acceleration services.</source><target state="needs-review-translation">xmr.tx.taxi é um bloco Monero e um explorador de transações pendentes derivado do Mempool Open Source Project. Esta instância fornece dados públicos de blockchain de seus provedores Monero RPC configurados e não fornece serviços de carteira, custódia, câmbio, investimento, impostos, legais ou de aceleração de transações.</target>
+        <source>xmr.tx.taxi is a Monero block and pending transaction explorer derived from the Mempool Open Source Project. This instance provides public blockchain data from its configured Monero RPC providers and does not provide wallet, custody, exchange, investment, tax, legal, or transaction acceleration services.</source><target state="translated">xmr.tx.taxi é um explorador de blocos e transações pendentes do Monero, derivado do Mempool Open Source Project. Esta instância fornece dados públicos da blockchain obtidos dos provedores RPC Monero configurados e não oferece serviços de carteira, custódia, câmbio, investimento, tributação, assessoria jurídica ou aceleração de transações.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
           <context context-type="linenumber">13</context>
@@ -13035,7 +13035,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.legal.terms-of-service.meta-description" datatype="html">
-        <source>Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.</source><target state="needs-review-translation">Termos para usar xmr.tx.taxi, um bloco Monero e explorador de mempool que revela dados de cadeia pública sem carteira, custódia ou serviços de prioridade de transação.</target>
+        <source>Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.</source><target state="translated">Termos de uso do xmr.tx.taxi, explorador de blocos e mempool Monero que mostra dados públicos da cadeia sem serviços de carteira, custódia ou priorização de transações.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
           <context context-type="linenumber">18</context>
@@ -13322,7 +13322,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.activity.description" datatype="html">
-        <source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source><target state="needs-review-translation">Transações Monero confirmadas, contadas de cada bloco desde a gênese. As transações de recompensa do mineiro estão excluídas. Todos os períodos usam UTC.</target>
+        <source>Confirmed Monero transactions, counted from every block since genesis. Miner reward transactions are excluded. All periods use UTC.</source><target state="translated">Transações Monero confirmadas, contadas em cada bloco desde o bloco gênese. As transações de recompensa de mineradores são excluídas. Todos os períodos usam UTC.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction-activity/transaction-activity.component.html</context>
           <context context-type="linenumber">3</context>
@@ -14590,7 +14590,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="xmr.docs.addressPrivacy" datatype="html">
-        <source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target state="needs-review-translation">Um endereço Monero não é uma conta na rede com resultados visíveis. As carteiras usam chaves de visualização para reconhecer suas próprias saídas únicas. O explorador não reivindica saldo de conta, conjunto UTXO ou histórico de transações para um endereço.</target>
+        <source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target state="translated">Um endereço Monero não é uma conta na cadeia com saídas visíveis. As carteiras usam chaves de visualização para reconhecer suas próprias saídas únicas. O explorador não afirma conhecer o saldo, o conjunto de UTXOs ou o histórico de transações de um endereço.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
           <context context-type="linenumber">14</context>
@@ -15608,6 +15608,6 @@
           <context context-type="linenumber">182</context>
         </context-group>
       </trans-unit>
-    </body>
+        </body>
   </file>
 </xliff>
