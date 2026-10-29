@@ -16067,6 +16067,10 @@
         </context-group>
       </trans-unit>
 
+      <trans-unit id="meta.description.xmr.status" datatype="html">
+        <source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source>
+        <target>Bieżący stan serwera xmr.tx.taxi i monerod: dostępność, synchronizacja, wersja, połączenia i pamięć masowa.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
