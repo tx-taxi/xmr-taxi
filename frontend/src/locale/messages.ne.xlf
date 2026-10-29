@@ -11292,6 +11292,163 @@
         <source>Server-Sent Events</source>
         <target>सर्भरबाट पठाइएका घटनाहरू</target>
       </trans-unit>
+      <trans-unit id="xmr.about.title" datatype="html"><source>About xmr.tx.taxi</source><target>xmr.tx.taxi बारे</target></trans-unit>
+      <trans-unit id="xmr.about.tagline" datatype="html"><source>The Monero explorer in the tx.taxi family.</source><target>tx.taxi परिवारको Monero एक्सप्लोरर।</target></trans-unit>
+      <trans-unit id="xmr.about.projectLinks" datatype="html"><source>Project links</source><target>परियोजनाका लिङ्कहरू</target></trans-unit>
+      <trans-unit id="xmr.about.documentation" datatype="html"><source>Monero documentation</source><target>Monero कागजात</target></trans-unit>
+      <trans-unit id="xmr.about.contact" datatype="html"><source>Contact the maintainer</source><target>सम्भारकर्तालाई सम्पर्क गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.about.privacy" datatype="html"><source>Privacy by default</source><target>पूर्वनिर्धारित रूपमा गोपनीयता</target></trans-unit>
+      <trans-unit id="xmr.about.privacyDescription" datatype="html"><source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero&#x27;s privacy model:</source><target>कारोबार विवरणका पृष्ठहरूले संवेदनशील क्षेत्रहरू जानाजानी धमिलो पार्छन्। सहभागीबाट जानकारी खुलाउने प्रक्रिया Monero को गोपनीयता मोडेलसँग मिल्ने कार्यहरूमा सीमित छ:</target></trans-unit>
+      <trans-unit id="xmr.about.daemon" datatype="html"><source>Daemon</source><target>डेमन</target></trans-unit>
+      <trans-unit id="xmr.about.license" datatype="html"><source>License</source><target>इजाजतपत्र</target></trans-unit>
+      <trans-unit id="xmr.about.licenseDescription" datatype="html"><source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source><target>xmr.tx.taxi ले मूल परियोजनाको AGPLv3 इजाजतपत्रका दायित्व पालना गर्छ। यो एक्सप्लोरर आधारित भएका इन्टरफेस ढाँचाहरू Mempool Open Source Project ले सिर्जना गरेको हो।</target></trans-unit>
+      <trans-unit id="xmr.about.openSource" datatype="html"><source>Built on open source</source><target>खुला स्रोतमा आधारित</target></trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html"><source>Fiat value unavailable</source><target>फिएट मूल्य उपलब्ध छैन</target></trans-unit>
+      <trans-unit id="22074d9b0ef5a18f1569ba121bf689923002ff17" datatype="html"><source>Estimated fee for a 2 kB Monero transaction at this block&#x27;s fee rate</source><target>यस ब्लकको शुल्क दरमा 2 kB Monero कारोबारको अनुमानित शुल्क</target></trans-unit>
+      <trans-unit id="6948786787037977434" datatype="html"><source>Blocks</source><target>ब्लकहरू</target></trans-unit>
+      <trans-unit id="420763834450076269" datatype="html"><source>Block</source><target>ब्लक</target></trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html"><source>Monero explorer dashboard</source><target>Monero एक्सप्लोरर ड्यासबोर्ड</target></trans-unit>
+      <trans-unit id="xmr.nav.returnHub" datatype="html"><source>Back to tx.taxi</source><target>tx.taxi मा फर्कनुहोस्</target></trans-unit>
+      <trans-unit id="xmr.nav.brand" datatype="html"><source>xmr.tx.taxi dashboard</source><target>xmr.tx.taxi ड्यासबोर्ड</target></trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html"><source>Switch to displaying block sizes</source><target>ब्लकको आकार देखाउन परिवर्तन गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html"><source>Switch to displaying total fees per block</source><target>प्रत्येक ब्लकको कुल शुल्क देखाउन परिवर्तन गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>नयाँ ब्लकहरू दायाँ देखाउनुहोस्</target></trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>नयाँ ब्लकहरू बायाँ देखाउनुहोस्</target></trans-unit>
+      <trans-unit id="xmr.calculator.waiting" datatype="html"><source> Waiting for price feed... </source><target> मूल्य जानकारी पर्खिँदै... </target></trans-unit>
+      <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html"><source>difficulty</source><target>कठिनाइ</target></trans-unit>
+      <trans-unit id="xmr.difficulty.toggleRewards" datatype="html"><source>rewards</source><target>पुरस्कार</target></trans-unit>
+      <trans-unit id="xmr.difficulty.paceHelp" datatype="html"><source>Recent blocks compared with Monero&#x27;s two-minute target</source><target>Monero को दुई मिनेट लक्ष्यसँग हालका ब्लकहरूको तुलना</target></trans-unit>
+      <trans-unit id="xmr.difficulty.pace" datatype="html"><source>Block pace</source><target>ब्लकको गति</target></trans-unit>
+      <trans-unit id="xmr.difficulty.change" datatype="html"><source>Difficulty Δ</source><target>कठिनाइ परिवर्तन</target></trans-unit>
+      <trans-unit id="xmr.difficulty.title" datatype="html"><source>Difficulty Adjustment</source><target>कठिनाइ समायोजन</target></trans-unit>
+      <trans-unit id="xmr.difficulty.rewardsTitle" datatype="html"><source>Reward stats</source><target>पुरस्कार तथ्याङ्क</target></trans-unit>
+      <trans-unit id="71862f6b2c89c8901f90240b219f01844a301dcb" datatype="html"><source>Daemon floor or lowest observed current mempool rate</source><target>डेमनको न्यूनतम दर वा हालको mempool मा देखिएको सबैभन्दा कम दर</target></trans-unit>
+      <trans-unit id="77a014215a8ebca1d2cb97afd2d6d0b98f30064d" datatype="html"><source>Derived from lower current Monero mempool fee rates</source><target>हालको Monero mempool का कम शुल्क दरहरूबाट निकालिएको</target></trans-unit>
+      <trans-unit id="9b7f259ef00e0bc210c59220cbe1505594e08510" datatype="html"><source>Derived from mid-range current Monero mempool fee rates</source><target>हालको Monero mempool का मध्यम शुल्क दरहरूबाट निकालिएको</target></trans-unit>
+      <trans-unit id="841d41ed3f0a7f43195b96dd3f8006706810cd6d" datatype="html"><source>Derived from the highest current Monero projected-block fee rates</source><target>हालका अनुमानित Monero ब्लकहरूको उच्चतम शुल्क दरबाट निकालिएको</target></trans-unit>
+      <trans-unit id="b869c9a96b183dcb932213b60d4a26fb4e9fa2db" datatype="html"><source>Estimated fee for a 2 kB Monero transaction at this rate</source><target>यस दरमा 2 kB Monero कारोबारको अनुमानित शुल्क</target></trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html"><source>Kraken last trade</source><target>Kraken को पछिल्लो कारोबार</target></trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html"><source> · stale</source><target> · पुरानो</target></trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html"><source>ECB reference rate</source><target>ECB सन्दर्भ विनिमय दर</target></trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html"><source>ECB reference rate; update unavailable</source><target>ECB सन्दर्भ दर; अद्यावधिक उपलब्ध छैन</target></trans-unit>
+      <trans-unit id="graphs.h1" datatype="html"><source>Monero Network Graphs</source><target>Monero नेटवर्क ग्राफहरू</target></trans-unit>
+      <trans-unit id="xmr.brand.imageAlt" datatype="html"><source>xmr.tx.taxi Monero explorer</source><target>xmr.tx.taxi Monero एक्सप्लोरर</target></trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html"><source>Dashboard</source><target>ड्यासबोर्ड</target></trans-unit>
+      <trans-unit id="xmr.nav.mining" datatype="html"><source>Mining dashboard</source><target>माइनिङ ड्यासबोर्ड</target></trans-unit>
+      <trans-unit id="xmr.nav.blocks" datatype="html"><source>Recent blocks</source><target>हालका ब्लकहरू</target></trans-unit>
+      <trans-unit id="xmr.nav.graphs" datatype="html"><source>Graphs</source><target>ग्राफहरू</target></trans-unit>
+      <trans-unit id="xmr.nav.docs" datatype="html"><source>Documentation</source><target>कागजात</target></trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html"><source>About xmr.tx.taxi</source><target>xmr.tx.taxi बारे</target></trans-unit>
+      <trans-unit id="2c15418ab123a8ff78ca76d128831cd88893f0da" datatype="html"><source>Estimated fee for a 2 kB Monero transaction at this fee rate</source><target>यस शुल्क दरमा 2 kB Monero कारोबारको अनुमानित शुल्क</target></trans-unit>
+      <trans-unit id="xmr.meta.title.mining.dashboard" datatype="html"><source>Mining</source><target>माइनिङ</target></trans-unit>
+      <trans-unit id="xmr.meta.description.mining.dashboard" datatype="html"><source>See Monero mining stats: hashrate, per-block difficulty changes, block rewards, pool attribution, and recent blocks.</source><target>Monero माइनिङ तथ्याङ्क हेर्नुहोस्: ह्यासरेट, प्रत्येक ब्लकको कठिनाइ परिवर्तन, पुरस्कार, पूल पहिचान र हालका ब्लकहरू।</target></trans-unit>
+      <trans-unit id="8493638f3af7c7eae48091929c7f8461bddbed51" datatype="html"><source>All pools</source><target>सबै पूलहरू</target></trans-unit>
+      <trans-unit id="2fdc79ab67991fd81012f4fe18de77138da9230f" datatype="html"><source>No observed blocks yet.</source><target>अहिलेसम्म कुनै ब्लक देखिएको छैन।</target></trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html"><source>Chain search</source><target>चेन खोज</target></trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html"><source>Choose search chain</source><target>खोज्ने चेन छान्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html"><source>Selected explorer</source><target>छानिएको एक्सप्लोरर</target></trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html"><source>SELECTED</source><target>छानिएको</target></trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html"><source>Automatic Routing</source><target>स्वचालित राउटिङ</target></trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html"><source>Open tx.taxi in a new tab</source><target>tx.taxi नयाँ ट्याबमा खोल्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html"><source>View Hub</source><target>हब हेर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>नेटिभ एक्सप्लोररहरू</target></trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>एक्सप्लोरर सूची उपलब्ध छैन</target></trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>तेस्रो-पक्ष एक्सप्लोररहरू</target></trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html"><source>Open</source><target>खोल्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html"><source>Opened</source><target>खुला छ</target></trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html"><source>Switch</source><target>बदल्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>एक्सप्लोररहरू लोड हुँदैछन्</target></trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html"><source>Search selected chain</source><target>छानिएको चेन खोज्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html"><source>Monero explorer</source><target>Monero एक्सप्लोरर</target></trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html"><source>Found</source><target>फेला पर्‍यो</target></trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html"><source>Possible</source><target>सम्भावित</target></trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>ट्याक्सी बोलाउनुहोस्, यहाँ जे पनि टाँस्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html"><source>Monero search suggestions</source><target>Monero खोज सुझावहरू</target></trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html"><source>Monero Block Height</source><target>Monero ब्लक उचाइ</target></trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html"><source>Monero Block / Transaction</source><target>Monero ब्लक वा कारोबार</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html"><source>Monero addresses are private</source><target>Monero ठेगानाहरू निजी हुन्छन्</target></trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html"><source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target>सार्वजनिक चेन डेटाबाट ठेगानाको इतिहास बनाउन सकिँदैन। प्रमाण वा कुञ्जी प्रयोग गरी भुक्तानी जाँच गर्न कारोबार खोल्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.footer.privacy" datatype="html"><source>Privacy by default</source><target>पूर्वनिर्धारित रूपमा गोपनीयता</target></trans-unit>
+      <trans-unit id="xmr.footer.explore" datatype="html"><source>Explore</source><target>अन्वेषण</target></trans-unit>
+      <trans-unit id="xmr.footer.dashboard" datatype="html"><source>Dashboard</source><target>ड्यासबोर्ड</target></trans-unit>
+      <trans-unit id="xmr.footer.recentBlocks" datatype="html"><source>Recent Blocks</source><target>हालका ब्लकहरू</target></trans-unit>
+      <trans-unit id="xmr.footer.pending" datatype="html"><source>Pending Transactions</source><target>प्रतीक्षारत कारोबारहरू</target></trans-unit>
+      <trans-unit id="xmr.footer.activity" datatype="html"><source>Transaction activity</source><target>कारोबार गतिविधि</target></trans-unit>
+      <trans-unit id="xmr.footer.instanceStatus" datatype="html"><source>Instance status</source><target>इन्स्ट्यान्सको स्थिति</target></trans-unit>
+      <trans-unit id="xmr.footer.learn" datatype="html"><source>Learn</source><target>थप जान्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.footer.moneropedia" datatype="html"><source>Moneropedia</source><target>Moneropedia</target></trans-unit>
+      <trans-unit id="xmr.footer.whatRingct" datatype="html"><source>What is RingCT?</source><target>RingCT के हो?</target></trans-unit>
+      <trans-unit id="xmr.footer.viewKey" datatype="html"><source>View key</source><target>हेर्ने कुञ्जी</target></trans-unit>
+      <trans-unit id="xmr.footer.proofSignatures" datatype="html"><source>tx_proof signatures</source><target>tx_proof हस्ताक्षरहरू</target></trans-unit>
+      <trans-unit id="xmr.footer.research" datatype="html"><source>Monero research lab</source><target>Monero अनुसन्धान प्रयोगशाला</target></trans-unit>
+      <trans-unit id="xmr.footer.documentation" datatype="html"><source>Explorer documentation</source><target>एक्सप्लोरर कागजात</target></trans-unit>
+      <trans-unit id="xmr.footer.about" datatype="html"><source>About</source><target>बारेमा</target></trans-unit>
+      <trans-unit id="xmr.footer.source" datatype="html"><source>Source code</source><target>स्रोत कोड</target></trans-unit>
+      <trans-unit id="xmr.footer.status" datatype="html"><source>Status</source><target>स्थिति</target></trans-unit>
+      <trans-unit id="xmr.footer.telegramLabel" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>tx.taxi को Telegram च्यानलमा सामेल हुनुहोस्</target></trans-unit>
+      <trans-unit id="xmr.footer.telegram" datatype="html"><source>Telegram</source><target>Telegram</target></trans-unit>
+      <trans-unit id="xmr.footer.contact" datatype="html"><source>Contact Us</source><target>सम्पर्क गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.footer.released" datatype="html"><source>Released under AGPLv3</source><target>AGPLv3 अन्तर्गत जारी</target></trans-unit>
+      <trans-unit id="xmr.footer.madeWith" datatype="html"><source>Made with</source><target>यसबाट बनाइएको</target></trans-unit>
+      <trans-unit id="xmr.footer.by" datatype="html"><source>by</source><target>द्वारा</target></trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html"><source>Mining pool logo</source><target>माइनिङ पूलको लोगो</target></trans-unit>
+      <trans-unit id="xmr-status-instance-health" datatype="html"><source>Instance health</source><target>इन्स्ट्यान्सको अवस्था</target></trans-unit>
+      <trans-unit id="xmr-status-title" datatype="html"><source>Monero daemon status</source><target>Monero डेमनको स्थिति</target></trans-unit>
+      <trans-unit id="xmr-status-description" datatype="html"><source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target>यस xmr.tx.taxi इन्स्ट्यान्सको ब्याकएन्ड उपलब्धता र सार्वजनिक monerod सिङ्क स्थिति।</target></trans-unit>
+      <trans-unit id="xmr-status-checked" datatype="html"><source>Checked</source><target>जाँच गरिएको</target></trans-unit>
+      <trans-unit id="xmr-status-service-reachability" datatype="html"><source>Service reachability</source><target>सेवाको पहुँच</target></trans-unit>
+      <trans-unit id="xmr-status-backend" datatype="html"><source>Backend</source><target>ब्याकएन्ड</target></trans-unit>
+      <trans-unit id="xmr-status-reachable" datatype="html"><source>reachable</source><target>पहुँचयोग्य</target></trans-unit>
+      <trans-unit id="xmr-status-daemon" datatype="html"><source>Daemon</source><target>डेमन</target></trans-unit>
+      <trans-unit id="xmr-status-unreachable" datatype="html"><source>unreachable</source><target>पहुँचयोग्य छैन</target></trans-unit>
+      <trans-unit id="xmr-status-daemon-details" datatype="html"><source>Daemon details</source><target>डेमन विवरण</target></trans-unit>
+      <trans-unit id="xmr-status-chain" datatype="html"><source>Chain</source><target>चेन</target></trans-unit>
+      <trans-unit id="xmr-status-height" datatype="html"><source>Height</source><target>उचाइ</target></trans-unit>
+      <trans-unit id="xmr-status-target-height" datatype="html"><source>Target height</source><target>लक्ष्य उचाइ</target></trans-unit>
+      <trans-unit id="xmr-status-behind" datatype="html"><source>Behind</source><target>पछाडि</target></trans-unit>
+      <trans-unit id="xmr-status-blocks" datatype="html"><source>blocks</source><target>ब्लकहरू</target></trans-unit>
+      <trans-unit id="xmr-status-tip-hash" datatype="html"><source>Tip hash</source><target>अन्तिम ब्लकको ह्यास</target></trans-unit>
+      <trans-unit id="xmr-status-network" datatype="html"><source>Network</source><target>नेटवर्क</target></trans-unit>
+      <trans-unit id="xmr-status-nettype" datatype="html"><source>Nettype</source><target>नेटवर्क प्रकार</target></trans-unit>
+      <trans-unit id="xmr-status-peers" datatype="html"><source>Peers</source><target>सहकर्मी नोडहरू</target></trans-unit>
+      <trans-unit id="xmr-status-connections" datatype="html"><source>Incoming / outgoing</source><target>आगमन / बहिर्गमन</target></trans-unit>
+      <trans-unit id="xmr-status-rpc-clients" datatype="html"><source>RPC clients</source><target>RPC क्लाइन्टहरू</target></trans-unit>
+      <trans-unit id="xmr-status-workload" datatype="html"><source>Workload</source><target>कार्यभार</target></trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html"><source>Mempool</source><target>Mempool</target></trans-unit>
+      <trans-unit id="xmr-status-txs" datatype="html"><source>txs</source><target>कारोबारहरू</target></trans-unit>
+      <trans-unit id="xmr-status-total-txs" datatype="html"><source>Total txs</source><target>कुल कारोबारहरू</target></trans-unit>
+      <trans-unit id="xmr-status-difficulty" datatype="html"><source>Difficulty</source><target>कठिनाइ</target></trans-unit>
+      <trans-unit id="xmr-status-estimated-hashrate" datatype="html"><source>Estimated hashrate</source><target>अनुमानित ह्यासरेट</target></trans-unit>
+      <trans-unit id="xmr-status-version" datatype="html"><source>Version</source><target>संस्करण</target></trans-unit>
+      <trans-unit id="xmr-status-uptime" datatype="html"><source>Uptime</source><target>चलेको समय</target></trans-unit>
+      <trans-unit id="xmr-status-started" datatype="html"><source>Started</source><target>सुरु भएको</target></trans-unit>
+      <trans-unit id="xmr-status-trusted-rpc" datatype="html"><source>Trusted RPC</source><target>विश्वसनीय RPC</target></trans-unit>
+      <trans-unit id="xmr-status-storage" datatype="html"><source>Storage</source><target>भण्डारण</target></trans-unit>
+      <trans-unit id="xmr-status-database-size" datatype="html"><source>Database size</source><target>डेटाबेसको आकार</target></trans-unit>
+      <trans-unit id="xmr-status-free-space" datatype="html"><source>Free space</source><target>खाली स्थान</target></trans-unit>
+      <trans-unit id="xmr-status-block-size-limit" datatype="html"><source>Block size limit</source><target>ब्लक आकार सीमा</target></trans-unit>
+      <trans-unit id="xmr-status-update-available" datatype="html"><source>Update available</source><target>अद्यावधिक उपलब्ध छ</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap" datatype="html"><source>Bootstrap</source><target>प्रारम्भिक सिङ्क</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-height" datatype="html"><source>Bootstrap height</source><target>प्रारम्भिक उचाइ</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-daemon" datatype="html"><source>Bootstrap daemon</source><target>प्रारम्भिक डेमन</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-used" datatype="html"><source>Bootstrap used</source><target>प्रारम्भिक सिङ्क प्रयोग भयो</target></trans-unit>
+      <trans-unit id="xmr-status-peerlist" datatype="html"><source>Peerlist</source><target>सहकर्मी सूची</target></trans-unit>
+      <trans-unit id="xmr-status-white" datatype="html"><source>white</source><target>सेतो</target></trans-unit>
+      <trans-unit id="xmr-status-grey" datatype="html"><source>grey</source><target>खैरो</target></trans-unit>
+      <trans-unit id="xmr-status-check-failed" datatype="html"><source>Daemon check failed</source><target>डेमन जाँच असफल भयो</target></trans-unit>
+      <trans-unit id="xmr-status-backend-answered" datatype="html"><source>The backend answered, but monerod did not return</source><target>ब्याकएन्डले जवाफ दियो तर monerod ले प्रतिक्रिया दिएन</target></trans-unit>
+      <trans-unit id="xmr-status-checking" datatype="html"><source>Checking daemon status...</source><target>डेमन स्थिति जाँच हुँदैछ...</target></trans-unit>
+      <trans-unit id="xmr-status-unknown" datatype="html"><source>unknown</source><target>अज्ञात</target></trans-unit>
+      <trans-unit id="xmr-status-not-configured" datatype="html"><source>not configured</source><target>सेट गरिएको छैन</target></trans-unit>
+      <trans-unit id="xmr-status-no" datatype="html"><source>no</source><target>छैन</target></trans-unit>
+      <trans-unit id="xmr-status-yes" datatype="html"><source>yes</source><target>छ</target></trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html"><source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source><target>xmr.tx.taxi ब्याकएन्ड र monerod को प्रत्यक्ष अवस्था, सिङ्क स्थिति, संस्करण, सहकर्मी र भण्डारण स्थिति।</target></trans-unit>
+      <trans-unit id="xmr-status-state-online" datatype="html"><source>monerod reachable</source><target>monerod पहुँचयोग्य छ</target></trans-unit>
+      <trans-unit id="xmr-status-state-syncing" datatype="html"><source>syncing</source><target>सिङ्क हुँदैछ</target></trans-unit>
+      <trans-unit id="xmr-status-state-degraded" datatype="html"><source>attention needed</source><target>ध्यान आवश्यक छ</target></trans-unit>
+      <trans-unit id="xmr-status-state-offline" datatype="html"><source>daemon unreachable</source><target>डेमनमा पहुँच छैन</target></trans-unit>
+      <trans-unit id="xmr-status-request-failed" datatype="html"><source>request failed</source><target>अनुरोध असफल भयो</target></trans-unit>
+      <trans-unit id="xmr-status-network-request-failed" datatype="html"><source>network request failed</source><target>नेटवर्क अनुरोध असफल भयो</target></trans-unit>
     </body>
   </file>
 </xliff>
