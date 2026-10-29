@@ -164,7 +164,7 @@
       </trans-unit>
       <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
         <source>Increment hours</source>
-        <target>증가한 시간</target>
+        <target>시간 증가</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -180,7 +180,7 @@
       </trans-unit>
       <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
         <source>Decrement hours</source>
-        <target>감소한 시간</target>
+        <target>시간 감소</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -196,7 +196,7 @@
       </trans-unit>
       <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
         <source>Increment minutes</source>
-        <target>증가한 분</target>
+        <target>분 증가</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -212,7 +212,7 @@
       </trans-unit>
       <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
         <source>Decrement minutes</source>
-        <target>감소한 분</target>
+        <target>분 감소</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -236,7 +236,7 @@
       </trans-unit>
       <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
         <source>Increment seconds</source>
-        <target>증가한 초</target>
+        <target>초 증가</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -244,7 +244,7 @@
       </trans-unit>
       <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
         <source>Decrement seconds</source>
-        <target>감소한 초</target>
+        <target>초 감소</target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
@@ -3727,7 +3727,7 @@
       </trans-unit>
       <trans-unit id="0b47a777f024ab4e3cdf0062acb4d86e9ae1f635" datatype="html">
         <source>Median fee</source>
-        <target>평균 수수료</target>
+        <target>중앙 수수료</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-preview.component.html</context>
           <context context-type="linenumber">36</context>
