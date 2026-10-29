@@ -10,7 +10,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.carousel.slide-number" datatype="html">
-        <source> Slide <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli"/> of <x id="INTERPOLATION_1" equiv-text="EventSource = N"/> </source>
+        <source> Slide <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli"/> of <x id="INTERPOLATION_1" equiv-text="EventSource = N"/> </source><target> Diapozitiv <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli"/> od <x id="INTERPOLATION_1" equiv-text="EventSource = N"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
           <context context-type="linenumber">131,135</context>
@@ -258,7 +258,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.progressbar.value" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></source>
+        <source><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></source><target><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
           <context context-type="linenumber">41,42</context>
@@ -441,7 +441,7 @@
         <note priority="1" from="description">accelerator.error-failed-to-accelerate</note>
       </trans-unit>
       <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
-        <source>Close</source>
+        <source>Close</source><target>Zapri</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">26</context>
@@ -1482,7 +1482,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8918254921747459635" datatype="html">
-        <source>Around block: <x id="PH" equiv-text="ticks[0].data[2]"/></source>
+        <source>Around block: <x id="PH" equiv-text="ticks[0].data[2]"/></source><target>Okoli bloka: <x id="PH" equiv-text="ticks[0].data[2]"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-fees-graph/acceleration-fees-graph.component.ts</context>
           <context context-type="linenumber">192</context>
@@ -1696,7 +1696,7 @@
         <note priority="1" from="meaning">transaction.bid-boost</note>
       </trans-unit>
       <trans-unit id="7f5d0c10614e8a34f0e2dad33a0568277c50cf69" datatype="html">
-        <source>Block</source>
+        <source>Block</source><target>Blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerations-list/accelerations-list.component.html</context>
           <context context-type="linenumber">18</context>
@@ -2379,7 +2379,7 @@
         <note priority="1" from="description">address.taproot-psbt-add-unpublished-spend-paths</note>
       </trans-unit>
       <trans-unit id="9a1fbb23439ab07ca411d9cb744ea3564911e024" datatype="html">
-        <source>Fiat</source>
+        <source>Fiat</source><target>Fiat</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/amount-selector/amount-selector.component.html</context>
           <context context-type="linenumber">5</context>
@@ -2781,7 +2781,7 @@
         <note priority="1" from="description">mining.block-fee-rates</note>
       </trans-unit>
       <trans-unit id="f2600d9f6db47cc43f16142cf401048a1d360bda" datatype="html">
-        <source>Avg Block Fee (24h)</source>
+        <source>Avg Block Fee (24h)</source><target>Povprečna provizija bloka (24 h)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html</context>
           <context context-type="linenumber">51</context>
@@ -2793,7 +2793,7 @@
         <note priority="1" from="description">mining.avg-block-fee-24h</note>
       </trans-unit>
       <trans-unit id="de9a93ca8a13ccbd6de65782abb6b1432759b654" datatype="html">
-        <source>Avg Block Fee (1m)</source>
+        <source>Avg Block Fee (1m)</source><target>Povprečna provizija bloka (1 m)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html</context>
           <context context-type="linenumber">57</context>
@@ -2812,7 +2812,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4793828002882320882" datatype="html">
-        <source>At block: <x id="PH" equiv-text="data[0].data[2]"/></source>
+        <source>At block: <x id="PH" equiv-text="data[0].data[2]"/></source><target>Pri bloku: <x id="PH" equiv-text="data[0].data[2]"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">256</context>
@@ -2827,7 +2827,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="6c453b11fd7bd159ae30bc381f367bc736d86909" datatype="html">
-        <source>Block Fees</source>
+        <source>Block Fees</source><target>Provizije blokov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -2890,7 +2890,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="41545303ec98792b738d6237adbd1f3b54a22196" datatype="html">
-        <source>Block Fees Vs Subsidy</source>
+        <source>Block Fees Vs Subsidy</source><target>Provizije blokov in subvencija</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -2913,14 +2913,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8538305450922736186" datatype="html">
-        <source>At block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source>
+        <source>At block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source><target>Pri bloku <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8807945662832318286" datatype="html">
-        <source>Around block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source>
+        <source>Around block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source><target>Okoli bloka <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">188</context>
@@ -2935,7 +2935,7 @@
         <note priority="1" from="description">Mempool Goggles™ tooltip</note>
       </trans-unit>
       <trans-unit id="180092a6b8a6151a05f4a7552a2fb75fd159dfa8" datatype="html">
-        <source>Match</source>
+        <source>Match</source><target>Ujemanje</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">18</context>
@@ -2951,7 +2951,7 @@
         <note priority="1" from="description">mempool-goggles.match</note>
       </trans-unit>
       <trans-unit id="16d449549ab7bc61caf3d636372a4a56b5870383" datatype="html">
-        <source>Any</source>
+        <source>Any</source><target>Katero koli</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">24</context>
@@ -2959,7 +2959,7 @@
         <note priority="1" from="description">mempool-goggles.any</note>
       </trans-unit>
       <trans-unit id="a2f14a73f7a6e94479f67423cc51102da8d6f524" datatype="html">
-        <source>None</source>
+        <source>None</source><target>Brez</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">27</context>
@@ -2967,7 +2967,7 @@
         <note priority="1" from="description">mempool-goggles.none</note>
       </trans-unit>
       <trans-unit id="360b9f5c32209001518dbd1dc512f25291473b79" datatype="html">
-        <source>Tint</source>
+        <source>Tint</source><target>Odtenek</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">32</context>
@@ -2975,7 +2975,7 @@
         <note priority="1" from="description">mempool-goggles.tint</note>
       </trans-unit>
       <trans-unit id="4cfabb48965febabe67eb491a3b7e58555d3d52a" datatype="html">
-        <source>Classic</source>
+        <source>Classic</source><target>Klasično</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">35</context>
@@ -2983,7 +2983,7 @@
         <note priority="1" from="description">mempool-goggles.classic</note>
       </trans-unit>
       <trans-unit id="2e6be334a2152f179a557167f98ce4459ff9a2f9" datatype="html">
-        <source>Age</source>
+        <source>Age</source><target>Starost</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">38</context>
@@ -3060,7 +3060,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="86c50fc2171298179283e3c9b6d79b57b821599b" datatype="html">
-        <source>not available</source>
+        <source>not available</source><target>ni na voljo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-graph/block-overview-graph.component.html</context>
           <context context-type="linenumber">8</context>
@@ -3068,7 +3068,7 @@
         <note priority="1" from="description">block.not-available</note>
       </trans-unit>
       <trans-unit id="f13653cd063e5c83ac884349e4657d68d804126e" datatype="html">
-        <source>Your browser does not support this feature.</source>
+        <source>Your browser does not support this feature.</source><target>Vaš brskalnik ne podpira te funkcije.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-graph/block-overview-graph.component.html</context>
           <context context-type="linenumber">23</context>
@@ -3178,7 +3178,7 @@
         <note priority="1" from="description">transaction.audit-status</note>
       </trans-unit>
       <trans-unit id="58fbcd58e305ab289b99fad67d223f3e83ddb755" datatype="html">
-        <source>Removed</source>
+        <source>Removed</source><target>Odstranjeno</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">71</context>
@@ -3211,7 +3211,7 @@
         <note priority="1" from="description">transaction.audit.sigop</note>
       </trans-unit>
       <trans-unit id="d702ad6f00c620c9658ac1ad8184d5fe5bc099fb" datatype="html">
-        <source>Recently broadcasted</source>
+        <source>Recently broadcasted</source><target>Nedavno oddano</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">74</context>
@@ -3227,7 +3227,7 @@
         <note priority="1" from="description">transaction.audit.recently-cpfped</note>
       </trans-unit>
       <trans-unit id="73d42175ea0544a652c4f989afbec127367e8681" datatype="html">
-        <source>Added</source>
+        <source>Added</source><target>Dodano</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">76</context>
@@ -3248,7 +3248,7 @@
         <note priority="1" from="meaning">tx-features.tag.added</note>
       </trans-unit>
       <trans-unit id="f046047ce9c57627e2b74101ef739a89cf0f568a" datatype="html">
-        <source>Prioritized</source>
+        <source>Prioritized</source><target>Prednostno</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">77</context>
@@ -3265,7 +3265,7 @@
         <note priority="1" from="meaning">tx-features.tag.prioritized</note>
       </trans-unit>
       <trans-unit id="7ad7e4da036e6fd1f3c16f7a52fd15d58f32fd38" datatype="html">
-        <source>Deprioritized</source>
+        <source>Deprioritized</source><target>Nižja prednost</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">82</context>
@@ -3291,7 +3291,7 @@
         <note priority="1" from="meaning">tx-features.tag.conflict</note>
       </trans-unit>
       <trans-unit id="4c58d7502a441dcd221a04ab84bb6e2070f39faf" datatype="html">
-        <source>No Match</source>
+        <source>No Match</source><target>Brez ujemanja</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">91</context>
@@ -3451,7 +3451,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4786852746659896870" datatype="html">
-        <source>Size per weight</source>
+        <source>Size per weight</source><target>Velikost glede na težo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.ts</context>
           <context context-type="linenumber">204</context>
@@ -3509,7 +3509,7 @@
       </trans-unit>
       <trans-unit id="2303359202781425764" datatype="html">
         <source>Genesis</source>
-        <target>Genesis</target>
+        <target>Geneza</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-preview.component.html</context>
           <context context-type="linenumber">10</context>
@@ -3633,7 +3633,7 @@
         <note priority="1" from="description">block.miner</note>
       </trans-unit>
       <trans-unit id="27387c2af5dcaf343a548feba821515f5dc00faa" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti"/> transaction</source>
+        <source><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti"/> transaction</source><target><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti"/> transakcija</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">4</context>
@@ -3653,7 +3653,7 @@
         <note priority="1" from="description">shared.transaction-count.singular</note>
       </trans-unit>
       <trans-unit id="14779b0ce4cbc4d975a35a8fe074426228a324f3" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri"/> transactions</source>
+        <source><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri"/> transactions</source><target><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri"/> transakcij</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">5</context>
@@ -3694,7 +3694,7 @@
         <note priority="1" from="description">error.general-loading-data</note>
       </trans-unit>
       <trans-unit id="e170a90ee0d3a604adf439a60c890caff9152466" datatype="html">
-        <source>This block does not belong to the main chain, it has been replaced by:</source>
+        <source>This block does not belong to the main chain, it has been replaced by:</source><target>Ta blok ne pripada glavni verigi; zamenjal ga je:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">5</context>
@@ -3703,7 +3703,7 @@
         <note priority="1" from="meaning">block.reorged</note>
       </trans-unit>
       <trans-unit id="1c3e02c3cb8731ce0b6ff66dc6b60e54386f4230" datatype="html">
-        <source>Stale Block</source>
+        <source>Stale Block</source><target>Zastareli blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">13</context>
@@ -3728,7 +3728,7 @@
         <note priority="1" from="description">Previous Block</note>
       </trans-unit>
       <trans-unit id="0dc973e4853621b49d9e31be902a0680334f632d" datatype="html">
-        <source>Stale</source>
+        <source>Stale</source><target>Zastarelo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">34</context>
@@ -3750,7 +3750,7 @@
         <note priority="1" from="description">block.hash</note>
       </trans-unit>
       <trans-unit id="e5d8bb389c702588877f039d72178f219453a72d" datatype="html">
-        <source>Unknown</source>
+        <source>Unknown</source><target>Neznano</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">77</context>
@@ -3827,7 +3827,7 @@
         <note priority="1" from="description">mempool-block.fee-span</note>
       </trans-unit>
       <trans-unit id="a1c8a44428c774facdd0b1e3ae42468c25666367" datatype="html">
-        <source>Subsidy + fees</source>
+        <source>Subsidy + fees</source><target>Subvencija + provizije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">168</context>
@@ -3840,7 +3840,7 @@
         <note priority="1" from="meaning">block.subsidy-and-fees</note>
       </trans-unit>
       <trans-unit id="2862af5284f66d4b06bdcf77a5519141723b6989" datatype="html">
-        <source>Stale</source>
+        <source>Stale</source><target>Zastarelo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">239</context>
@@ -3848,7 +3848,7 @@
         <note priority="1" from="description">block.stale</note>
       </trans-unit>
       <trans-unit id="9ec7a3eef7ee27f93c9f69d11b820e636efdcd6d" datatype="html">
-        <source>Winning</source>
+        <source>Winning</source><target>Zmagovalni</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">241</context>
@@ -3884,7 +3884,7 @@
         <note priority="1" from="description">block.expected-block</note>
       </trans-unit>
       <trans-unit id="873d4cb5adceda5fa9e9f1419644a0fa6ac9c17d" datatype="html">
-        <source>Winning Block</source>
+        <source>Winning Block</source><target>Zmagovalni blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">289</context>
@@ -4011,7 +4011,7 @@
         <note priority="1" from="description">block.header</note>
       </trans-unit>
       <trans-unit id="6dbc0664d5922cbd6b8bdc24d4c9ac8b990bae24" datatype="html">
-        <source>There is a stale block at this height</source>
+        <source>There is a stale block at this height</source><target>Na tej višini je zastareli blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">372</context>
@@ -4019,7 +4019,7 @@
         <note priority="1" from="description">block.stale-block-singular</note>
       </trans-unit>
       <trans-unit id="1535773b0ebd72152246b84f01801104e823be0f" datatype="html">
-        <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> stale blocks at this height</source>
+        <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> stale blocks at this height</source><target>Na tej višini je <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> zastarelih blokov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">374</context>
@@ -4094,7 +4094,7 @@
         <note priority="1" from="meaning">transaction.details</note>
       </trans-unit>
       <trans-unit id="56ad2f3895f350abdd3cee2d95498deb8819afac" datatype="html">
-        <source>Error loading block data.</source>
+        <source>Error loading block data.</source><target>Napaka pri nalaganju podatkov o bloku.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">444</context>
@@ -4102,7 +4102,7 @@
         <note priority="1" from="description">block.error.loading-block-data</note>
       </trans-unit>
       <trans-unit id="9f63968580fcea609d6b9e7a5b6ba7180b54e18f" datatype="html">
-        <source>Why is this block empty?</source>
+        <source>Why is this block empty?</source><target>Zakaj je ta blok prazen?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">458</context>
@@ -4231,7 +4231,7 @@
       </trans-unit>
       <trans-unit id="e6213c3f05146287cf121868d9f3d3c3ff5f9714" datatype="html">
         <source>TXs</source>
-        <target>TXs</target>
+        <target>Transakcije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -4281,7 +4281,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="cf8caac4de0166eae6cd0fdfd010ee92b995cd96" datatype="html">
-        <source>Calculator</source>
+        <source>Calculator</source><target>Kalkulator</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
           <context context-type="linenumber">3</context>
@@ -4326,7 +4326,7 @@
         <note priority="1" from="description">fees-box.high-priority</note>
       </trans-unit>
       <trans-unit id="b7dde2cf8ec2fcd328295c9c7fcc944c4d3720b6" datatype="html">
-        <source>Memory Usage</source>
+        <source>Memory Usage</source><target>Uporaba pomnilnika</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/clock/clock.component.html</context>
           <context context-type="linenumber">65</context>
@@ -4382,7 +4382,7 @@
         <note priority="1" from="description">fees-box.transaction-fees</note>
       </trans-unit>
       <trans-unit id="9dfdbeb922d811d7b7b3fecd48360a059e52aaba" datatype="html">
-        <source>Incoming Transactions</source>
+        <source>Incoming Transactions</source><target>Prihajajoče transakcije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">55</context>
@@ -4512,7 +4512,7 @@
         <note priority="1" from="meaning">tx-features.tag.rbf</note>
       </trans-unit>
       <trans-unit id="93ce500c36b94b52219495ae1491efc2fca40cb6" datatype="html">
-        <source>Recent Blocks</source>
+        <source>Recent Blocks</source><target>Nedavni bloki</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">147</context>
@@ -4532,7 +4532,7 @@
         <note priority="1" from="description">dashboard.recent-blocks</note>
       </trans-unit>
       <trans-unit id="aa6ce7e6e6fe5cd080713965451f25bca15a2a25" datatype="html">
-        <source>Recent Transactions</source>
+        <source>Recent Transactions</source><target>Nedavne transakcije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">190</context>
@@ -4673,7 +4673,7 @@
         <note priority="1" from="description">difficulty-box.remaining</note>
       </trans-unit>
       <trans-unit id="1bb6965f8e1bbe40c076528ffd841da86f57f119" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;"/>blocks<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <source><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;"/>blocks<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;"/>blokov<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty-mining/difficulty-mining.component.html</context>
           <context context-type="linenumber">10,11</context>
@@ -4762,7 +4762,7 @@
         <note priority="1" from="description">difficulty-box.next-halving</note>
       </trans-unit>
       <trans-unit id="0c65c3ee0ce537e507e0b053b479012e5803d2cf" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks expected</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks expected</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> pričakovanih blokov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">50</context>
@@ -4770,7 +4770,7 @@
         <note priority="1" from="description">difficulty-box.expected-blocks</note>
       </trans-unit>
       <trans-unit id="ec9f27d00a7778cd1cfe1806105d2ca3314fa506" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block expected</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block expected</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> pričakovan blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">51</context>
@@ -4778,7 +4778,7 @@
         <note priority="1" from="description">difficulty-box.expected-block</note>
       </trans-unit>
       <trans-unit id="b89cb92adf0a831d4a263ecdba02139abbda02ae" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks mined</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks mined</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> izkopanih blokov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">52</context>
@@ -4786,7 +4786,7 @@
         <note priority="1" from="description">difficulty-box.mined-blocks</note>
       </trans-unit>
       <trans-unit id="4f7e823fd45c6def13a3f15f678888c7fe254fa5" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block mined</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block mined</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> izkopan blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">53</context>
@@ -4794,7 +4794,7 @@
         <note priority="1" from="description">difficulty-box.mined-block</note>
       </trans-unit>
       <trans-unit id="229dfb17b342aa8b9a1db27557069445ea1a7051" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks remaining</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks remaining</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> preostalih blokov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">54</context>
@@ -4802,7 +4802,7 @@
         <note priority="1" from="description">difficulty-box.remaining-blocks</note>
       </trans-unit>
       <trans-unit id="13ff0d092caf85cd23815f0235e316dc3a6d1bbe" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block remaining</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block remaining</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> preostal blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">55</context>
@@ -4810,7 +4810,7 @@
         <note priority="1" from="description">difficulty-box.remaining-block</note>
       </trans-unit>
       <trans-unit id="4f78348af343fb64016891d67b53bdab473f9dbf" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks ahead</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks ahead</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blokov naprej</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">56</context>
@@ -4818,7 +4818,7 @@
         <note priority="1" from="description">difficulty-box.blocks-ahead</note>
       </trans-unit>
       <trans-unit id="15c5f3475966bf3be381378b046a65849f0f6bb6" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block ahead</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block ahead</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blok naprej</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">57</context>
@@ -4826,7 +4826,7 @@
         <note priority="1" from="description">difficulty-box.block-ahead</note>
       </trans-unit>
       <trans-unit id="697b8cb1caaf1729809bc5c065d4dd873810550a" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks behind</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks behind</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blokov zadaj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">58</context>
@@ -4834,7 +4834,7 @@
         <note priority="1" from="description">difficulty-box.blocks-behind</note>
       </trans-unit>
       <trans-unit id="32137887e3f5a25b3a016eb03357f4e363fccb0b" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block behind</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block behind</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blok zadaj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">59</context>
@@ -4866,7 +4866,7 @@
         <note priority="1" from="description">statistics.median-small</note>
       </trans-unit>
       <trans-unit id="5e78899c9b98f29856ce3c7c265e1344bc7a5a18" datatype="html">
-        <source>Average block time</source>
+        <source>Average block time</source><target>Povprečni čas bloka</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
           <context context-type="linenumber">50</context>
@@ -5185,7 +5185,7 @@
         <note priority="1" from="description">lightning.nodes-channels-world-map</note>
       </trans-unit>
       <trans-unit id="cad77115d6fd3adb4383841223f9feae57e1ee86" datatype="html">
-        <source>Hashrate (1w)</source>
+        <source>Hashrate (1w)</source><target>Zgoščevalna moč (1 teden)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.html</context>
           <context context-type="linenumber">8</context>
@@ -5234,7 +5234,7 @@
       </trans-unit>
       <trans-unit id="8105839921891777281" datatype="html">
         <source>Hashrate (MA)</source>
-        <target>Hashrate (MA)</target>
+        <target>Zgoščevalna moč (drseče povprečje)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">311</context>
@@ -5479,7 +5479,7 @@
         <note priority="1" from="description">liquid.change-output</note>
       </trans-unit>
       <trans-unit id="1a8246eba9a999ee881248c4767d63b875ef07fe" datatype="html">
-        <source>blocks</source>
+        <source>blocks</source><target>blokov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-utxos-list/federation-utxos-list.component.html</context>
           <context context-type="linenumber">62</context>
@@ -5679,7 +5679,7 @@
         <note priority="1" from="description">shared.as-of-block</note>
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
-        <source>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</source>
+        <source>See live Monero mempool-block stats: atomic-per-byte fee range, aggregate byte size, transaction count, and total fees. Mempool blocks update in real time as the network receives new transactions.</source><target>Oglejte si statistiko blokov mempoola Monero v živo: razpon provizij v atomskih enotah na bajt, skupno velikost, število transakcij in skupne provizije. Bloki mempoola se posodabljajo, ko omrežje prejema nove transakcije.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -5702,7 +5702,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8177873832400820695" datatype="html">
-        <source>Count</source>
+        <source>Count</source><target>Število</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-graph/mempool-graph.component.ts</context>
           <context context-type="linenumber">330</context>
@@ -5729,7 +5729,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ba4f24bf9bf3dc4db3d6bc1b8b63339295f0b806" datatype="html">
-        <source>Sign In</source>
+        <source>Sign In</source><target>Prijava</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">27</context>
@@ -5851,7 +5851,7 @@
         <note priority="1" from="description">mining.miners-luck-1w</note>
       </trans-unit>
       <trans-unit id="4e338e7daa64c7a074cee3824fbd7425e5b7c9a5" datatype="html">
-        <source>Pools Luck</source>
+        <source>Pools Luck</source><target>Sreča bazenov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.html</context>
           <context context-type="linenumber">9</context>
@@ -5881,7 +5881,7 @@
         <note priority="1" from="description">mining.miners-count-1w</note>
       </trans-unit>
       <trans-unit id="ade0bf412a0fae1e4672505fc1fa79ade185db05" datatype="html">
-        <source>Pools Count</source>
+        <source>Pools Count</source><target>Število bazenov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.html</context>
           <context context-type="linenumber">17</context>
@@ -5945,7 +5945,7 @@
         <note priority="1" from="description">mining.rank</note>
       </trans-unit>
       <trans-unit id="1d9f405ab98a5f79d98b439de29fc8baca46b97c" datatype="html">
-        <source>Avg Block Fees</source>
+        <source>Avg Block Fees</source><target>Povprečne provizije bloka</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.html</context>
           <context context-type="linenumber">97</context>
@@ -5965,7 +5965,7 @@
         <note priority="1" from="description">mining.fees-per-block</note>
       </trans-unit>
       <trans-unit id="5d680aaa8e24bb235cf4fbeff3df0bfc8e2f564e" datatype="html">
-        <source>Empty Blocks</source>
+        <source>Empty Blocks</source><target>Prazni bloki</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.html</context>
           <context context-type="linenumber">98</context>
@@ -5982,7 +5982,7 @@
         <note priority="1" from="description">mining.all-miners</note>
       </trans-unit>
       <trans-unit id="fe5317c6c60dd7e0e86f04d22f566f67cf04d404" datatype="html">
-        <source>Mining Pools</source>
+        <source>Mining Pools</source><target>Rudarski bazeni</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -6000,7 +6000,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="312539377512157124" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="i"/> blocks</source>
+        <source><x id="INTERPOLATION" equiv-text="i"/> blocks</source><target><x id="INTERPOLATION" equiv-text="i"/> blokov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">171</context>
@@ -6019,7 +6019,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3666195172774554282" datatype="html">
-        <source>Other (<x id="PH" equiv-text="percentage"/>)</source>
+        <source>Other (<x id="PH" equiv-text="percentage"/>)</source><target>Drugo (<x id="PH" equiv-text="percentage"/>)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">190</context>
@@ -6185,7 +6185,7 @@
         <note priority="1" from="description">mining.hashrate</note>
       </trans-unit>
       <trans-unit id="3dc78651b2810cbb6e830fe7e57499d8cf6a8e4d" datatype="html">
-        <source>Blocks (24h)</source>
+        <source>Blocks (24h)</source><target>Bloki (24 h)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">120</context>
@@ -6275,7 +6275,7 @@
         <note priority="1" from="description">next-block.job-received</note>
       </trans-unit>
       <trans-unit id="09c61c6c6f04877fbce3db88fa0f20cd046ed9b1" datatype="html">
-        <source>Error loading pool data.</source>
+        <source>Error loading pool data.</source><target>Napaka pri nalaganju podatkov o bazenu.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">589</context>
@@ -6283,14 +6283,14 @@
         <note priority="1" from="description">pool.error.loading-pool-data</note>
       </trans-unit>
       <trans-unit id="7989855514418840406" datatype="html">
-        <source>Not enough data yet</source>
+        <source>Not enough data yet</source><target>Za zdaj ni dovolj podatkov</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.ts</context>
           <context context-type="linenumber">178</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8831611540421575858" datatype="html">
-        <source>Pool Dominance</source>
+        <source>Pool Dominance</source><target>Prevlada bazena</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.ts</context>
           <context context-type="linenumber">256</context>
@@ -6318,7 +6318,7 @@
         <note priority="1" from="description">price-chart.bitcoin-price</note>
       </trans-unit>
       <trans-unit id="8c73c5605f32a096f3c08b7b96060b393d53d4df" datatype="html">
-        <source>% Change</source>
+        <source>% Change</source><target>Sprememba v %</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">14</context>
@@ -6530,7 +6530,7 @@
         <note priority="1" from="description">show-less</note>
       </trans-unit>
       <trans-unit id="ea7c261363dc5f6134b7bacba2a1ef97f4ff7859" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ x }}"/> remaining</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ x }}"/> remaining</source><target><x id="INTERPOLATION" equiv-text="{{ x }}"/> preostalih</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/rbf-timeline/rbf-timeline.component.html</context>
           <context context-type="linenumber">86</context>
@@ -6568,7 +6568,7 @@
         <note priority="1" from="description">mining.rewards-desc</note>
       </trans-unit>
       <trans-unit id="a0d4ab5b063e7be1c9ea980f5fd6ce1b5384ad0b" datatype="html">
-        <source>Average fees per block in the past 144 blocks</source>
+        <source>Average fees per block in the past 144 blocks</source><target>Povprečne provizije na blok v zadnjih 144 blokih</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/reward-stats/reward-stats.component.html</context>
           <context context-type="linenumber">18</context>
@@ -6576,7 +6576,7 @@
         <note priority="1" from="description">mining.fees-per-block-desc</note>
       </trans-unit>
       <trans-unit id="cf3a97b1c1546b843411cfe101bc55ba2ac46bac" datatype="html">
-        <source>Avg Tx Fee</source>
+        <source>Avg Tx Fee</source><target>Povprečna provizija transakcije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/reward-stats/reward-stats.component.html</context>
           <context context-type="linenumber">30</context>
@@ -6702,7 +6702,7 @@
         <note priority="1" from="description">search.liquid-asset</note>
       </trans-unit>
       <trans-unit id="2abc4d0d3ae0b49fa9e94a2efb8c2e1a47e680f4" datatype="html">
-        <source>Go to &quot;<x id="INTERPOLATION" equiv-text="{{ x }}"/>&quot;</source>
+        <source>Go to &quot;<x id="INTERPOLATION" equiv-text="{{ x }}"/>&quot;</source><target>Pojdi na &quot;<x id="INTERPOLATION" equiv-text="{{ x }}"/>&quot;</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">93</context>
@@ -6873,7 +6873,7 @@
       </trans-unit>
       <trans-unit id="statistics.memory-by-vBytes" datatype="html">
         <source>Mempool by bytes (ɱ/B)</source>
-        <target>Mempool by bytes (ɱ/B)</target>
+        <target>Mempool po bajtih (ɱ/B)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">7</context>
@@ -6912,7 +6912,7 @@
       </trans-unit>
       <trans-unit id="statistics.transaction-vbytes-per-second" datatype="html">
         <source>Transaction bytes per second (B/s)</source>
-        <target>Transaction bytes per second (B/s)</target>
+        <target>Bajti transakcij na sekundo (B/s)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">110</context>
@@ -6920,7 +6920,7 @@
         <note priority="1" from="description">statistics.transaction-vbytes-per-second</note>
       </trans-unit>
       <trans-unit id="68d44b7bd049ae93c2bc15973eb5266aec64693e" datatype="html">
-        <source>Cap outliers</source>
+        <source>Cap outliers</source><target>Omeji odstopajoče vrednosti</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">118</context>
@@ -6937,7 +6937,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.mempool" datatype="html">
         <source>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</source>
-        <target>See Monero mempool size (in MB) and transaction bytes per second (B/s) visualized over time.</target>
+        <target>Oglejte si velikost mempoola Monero (v MB) in bajte transakcij na sekundo (B/s) skozi čas.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.ts</context>
           <context context-type="linenumber">67</context>
@@ -7037,7 +7037,7 @@
         <note priority="1" from="meaning">transaction.eta</note>
       </trans-unit>
       <trans-unit id="dbd3edcb9583d2d5a624f70b4593d785858b6130" datatype="html">
-        <source>Not any time soon</source>
+        <source>Not any time soon</source><target>Ne v kratkem</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">73</context>
@@ -7122,7 +7122,7 @@
         <note priority="1" from="description">tracker.explain.replaced</note>
       </trans-unit>
       <trans-unit id="8a736bd53341b2dedaf9cdcfd9d1093cc16cb12c" datatype="html">
-        <source>Error loading transaction data.</source>
+        <source>Error loading transaction data.</source><target>Napaka pri nalaganju podatkov o transakciji.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">196</context>
@@ -7166,7 +7166,7 @@
       </trans-unit>
       <trans-unit id="transaction.blob" datatype="html">
         <source>Transaction blob</source>
-        <target>Transaction blob</target>
+        <target>Binarni zapis transakcije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">189</context>
@@ -7481,7 +7481,7 @@
         <note priority="1" from="description">hide-diagram</note>
       </trans-unit>
       <trans-unit id="f0c5f6f270e70cbe063b5368fcf48f9afc1abd9b" datatype="html">
-        <source>Show more</source>
+        <source>Show more</source><target>Prikaži več</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">125</context>
@@ -7648,7 +7648,7 @@
       </trans-unit>
       <trans-unit id="7d745f2569c4ddc2992529f00ed991e36dada39a" datatype="html">
         <source>(Newly Generated Coins)</source>
-        <target>(Newly Generated Coins)</target>
+        <target>(Novo ustvarjeni kovanci)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">90</context>
@@ -7801,7 +7801,7 @@
         <note priority="1" from="meaning">transactions-list.scriptpubkey.hex</note>
       </trans-unit>
       <trans-unit id="d70397ee91f6c9ec91f1c1dff88126f8f9b7c2c4" datatype="html">
-        <source>Show more inputs to reveal fee data</source>
+        <source>Show more inputs to reveal fee data</source><target>Prikaži več vhodov za podatke o provizijah</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">520</context>
@@ -9967,7 +9967,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.immediately" datatype="html">
-        <source>Immediately</source>
+        <source>Immediately</source><target>Takoj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">71</context>
@@ -10050,7 +10050,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-until" datatype="html">
-        <source>In ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></source>
+        <source>In ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></source><target>Čez ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">152</context>
@@ -10109,7 +10109,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-within" datatype="html">
-        <source>within ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></source>
+        <source>within ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></source><target>v približno ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">175</context>
@@ -10228,7 +10228,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-before" datatype="html">
-        <source><x id="DATE" equiv-text="dateStrings.i18nYear"/> before</source>
+        <source><x id="DATE" equiv-text="dateStrings.i18nYear"/> before</source><target><x id="DATE" equiv-text="dateStrings.i18nYear"/> prej</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">221</context>
@@ -10327,7 +10327,7 @@
         <note priority="1" from="description">address.bare-multisig</note>
       </trans-unit>
       <trans-unit id="8e623d3cfecb7c560c114390db53c1f430ffd0de" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> confirmation</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> confirmation</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> potrditev</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">4</context>
@@ -10336,7 +10336,7 @@
         <note priority="1" from="meaning">shared.confirmation-count.singular</note>
       </trans-unit>
       <trans-unit id="bc5b0a2631f0b7bc71aaec6aa6f01af21f9a80d4" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> confirmations</source>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> confirmations</source><target><x id="INTERPOLATION" equiv-text="{{ i }}"/> potrditev</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">5</context>
@@ -10345,7 +10345,7 @@
         <note priority="1" from="meaning">shared.confirmation-count.plural</note>
       </trans-unit>
       <trans-unit id="a001c3d27d5fe4a7a362a6089b5b5020ef8c1c95" datatype="html">
-        <source>Replaced</source>
+        <source>Replaced</source><target>Zamenjano</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">12</context>
@@ -10367,7 +10367,7 @@
         <note priority="1" from="meaning">shared.sat-weight-units</note>
       </trans-unit>
       <trans-unit id="5ce2bda884ea801c34a1a6c23627d9a5e08f0a82" datatype="html">
-        <source>My Account</source>
+        <source>My Account</source><target>Moj račun</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">44</context>
@@ -10548,7 +10548,7 @@
         <note priority="1" from="description">footer.clock-mined</note>
       </trans-unit>
       <trans-unit id="9a91783e9c0f790ed49edae730f9156070ed9dd5" datatype="html">
-        <source>Legal</source>
+        <source>Legal</source><target>Pravno</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">113</context>
@@ -10576,7 +10576,7 @@
         <note priority="1" from="meaning">shared.privacy-policy</note>
       </trans-unit>
       <trans-unit id="6a0a8485405b9b289101e52a46e282342c8dc9e0" datatype="html">
-        <source>Trademark Policy</source>
+        <source>Trademark Policy</source><target>Pravila o blagovnih znamkah</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">116</context>
@@ -10585,7 +10585,7 @@
         <note priority="1" from="meaning">shared.trademark-policy</note>
       </trans-unit>
       <trans-unit id="3acac5d996ebd58adf283129c084bd8f837689f1" datatype="html">
-        <source>Third-party Licenses</source>
+        <source>Third-party Licenses</source><target>Licence tretjih oseb</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">117</context>
@@ -10594,7 +10594,7 @@
         <note priority="1" from="meaning">shared.trademark-policy</note>
       </trans-unit>
       <trans-unit id="64dd13424d9486cf3d680d934987ec685bac0b3d" datatype="html">
-        <source>This is a test network. Coins have no value.</source>
+        <source>This is a test network. Coins have no value.</source><target>To je testno omrežje. Kovanci nimajo vrednosti.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/testnet-alert/testnet-alert.component.html</context>
           <context context-type="linenumber">4</context>
@@ -10602,7 +10602,7 @@
         <note priority="1" from="description">warning-testnet</note>
       </trans-unit>
       <trans-unit id="52a5264f8dcf69b24e496d0a37fbcdd688c54353" datatype="html">
-        <source>Testnet3 is deprecated, and will soon be replaced by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;"/>Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <source>Testnet3 is deprecated, and will soon be replaced by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;"/>Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source><target>Testnet3 je opuščen in ga bo kmalu nadomestil <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;"/>Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/testnet-alert/testnet-alert.component.html</context>
           <context context-type="linenumber">6</context>
@@ -10773,7 +10773,7 @@
       </trans-unit>
       <trans-unit id="recent-transactions-title" datatype="html">
         <source>Recent Transactions</source>
-        <target>Recent Transactions</target>
+        <target>Nedavne transakcije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">94</context>
@@ -10781,7 +10781,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.recent-transactions" datatype="html">
         <source>See the most recent Monero transactions known to this node&apos;s mempool, updated in real time.</source>
-        <target>See the most recent Monero transactions known to this node&apos;s mempool, updated in real time.</target>
+        <target>Oglejte si najnovejše transakcije Monero, ki jih pozna mempool tega vozlišča in se posodabljajo v realnem času.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
           <context context-type="linenumber">95</context>
@@ -10789,7 +10789,7 @@
       </trans-unit>
       <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
         <source>1 new transaction</source>
-        <target>1 new transaction</target>
+        <target>1 nova transakcija</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">7</context>
@@ -10804,7 +10804,7 @@
         <target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt;
 &lt;/button&gt;
 
-&lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> new transactions</target>
+&lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> novih transakcij</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">8</context>
@@ -10813,7 +10813,7 @@
       </trans-unit>
       <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
+        <target>Premor / nadaljuj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -10823,7 +10823,7 @@
       </trans-unit>
       <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
         <source>Pause/Resume</source>
-        <target>Pause/Resume</target>
+        <target>Premor / nadaljuj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -10833,7 +10833,7 @@
       </trans-unit>
       <trans-unit id="32fba724df729afb840693b40e3f8869356f4e33" datatype="html">
         <source>Size</source>
-        <target>Size</target>
+        <target>Velikost</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">39</context>
@@ -10843,7 +10843,7 @@
       </trans-unit>
       <trans-unit id="12712092967db7dedb58de04474dd9387f0b25c1" datatype="html">
         <source>No transactions currently in the mempool.</source>
-        <target>No transactions currently in the mempool.</target>
+        <target>Trenutno v mempoolu ni transakcij.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
           <context context-type="linenumber">57</context>
@@ -10852,7 +10852,7 @@
       </trans-unit>
       <trans-unit id="meta.description.xmr.block" datatype="html">
         <source>See Monero block size, weight, fees, reward, included transaction hashes, and public chain metadata for block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</source>
-        <target>See Monero block size, weight, fees, reward, included transaction hashes, and public chain metadata for block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</target>
+        <target>Oglejte si velikost in težo bloka Monero, provizije, nagrado, zgoščene vrednosti vključenih transakcij in javne metapodatke verige za blok <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.ts</context>
           <context context-type="linenumber">288</context>
@@ -10860,7 +10860,7 @@
       </trans-unit>
       <trans-unit id="f2e3b7efbb8a150162d83424d6e47d6e56aa8402" datatype="html">
         <source>Major version</source>
-        <target>Major version</target>
+        <target>Glavna različica</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">308</context>
@@ -10869,7 +10869,7 @@
       </trans-unit>
       <trans-unit id="723c8f5d2ddddc61bd1de35aa3b198b8b6be3766" datatype="html">
         <source>Miner tx hash</source>
-        <target>Miner tx hash</target>
+        <target>Zgoščena vrednost rudarske transakcije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">316</context>
@@ -10878,7 +10878,7 @@
       </trans-unit>
       <trans-unit id="d698f4953b16a622df57735484ebf7c0b000da81" datatype="html">
         <source>Minor version</source>
-        <target>Minor version</target>
+        <target>Podrazličica</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">312</context>
@@ -10887,7 +10887,7 @@
       </trans-unit>
       <trans-unit id="a0c19cdf2e20449ee2b70d469a5fb00973024e43" datatype="html">
         <source>Block blob</source>
-        <target>Block blob</target>
+        <target>Binarni zapis bloka</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">335</context>
@@ -10914,7 +10914,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.ring16" datatype="html">
         <source>Standard ring (16)</source>
-        <target>Standard ring (16)</target>
+        <target>Standardni obroč (16)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">54</context>
@@ -10922,7 +10922,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.view-tags" datatype="html">
         <source>View tags</source>
-        <target>View tags</target>
+        <target>Oznake za vpogled</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">55</context>
@@ -10930,7 +10930,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.rct6" datatype="html">
         <source>RCT v6 (latest)</source>
-        <target>RCT v6 (latest)</target>
+        <target>RCT v6 (najnovejši)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -10938,7 +10938,7 @@
       </trans-unit>
       <trans-unit id="1bb63205bfc0b2c54da06a75b8d60516697c2382" datatype="html">
         <source>atomic units</source>
-        <target>atomic units</target>
+        <target>atomske enote</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
           <context context-type="linenumber">42</context>
@@ -10951,7 +10951,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesBtc" datatype="html">
         <source>Fees XMR</source>
-        <target>Fees XMR</target>
+        <target>Provizije XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">116</context>
@@ -10959,7 +10959,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.feesFiat" datatype="html">
         <source>Fees <x id="currency" equiv-text="this.currency"/></source>
-        <target>Fees <x id="currency" equiv-text="this.currency"/></target>
+        <target>Provizije <x id="currency" equiv-text="this.currency"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">117</context>
@@ -10967,7 +10967,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFees.avgBlock" datatype="html">
         <source>* On average around block <x id="block" equiv-text="data[0].data[2]"/></source>
-        <target>* On average around block <x id="block" equiv-text="data[0].data[2]"/></target>
+        <target>* V povprečju okoli bloka <x id="block" equiv-text="data[0].data[2]"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">180</context>
@@ -10975,7 +10975,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html">
         <source>Subsidy</source>
-        <target>Subsidy</target>
+        <target>Subvencija</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">57</context>
@@ -10983,7 +10983,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.fees" datatype="html">
         <source>Fees</source>
-        <target>Fees</target>
+        <target>Provizije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">58</context>
@@ -10991,7 +10991,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html">
         <source>Subsidy (USD)</source>
-        <target>Subsidy (USD)</target>
+        <target>Subvencija (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">59</context>
@@ -10999,7 +10999,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html">
         <source>Fees (USD)</source>
-        <target>Fees (USD)</target>
+        <target>Provizije (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -11007,7 +11007,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html">
         <source>Subsidy (%)</source>
-        <target>Subsidy (%)</target>
+        <target>Subvencija (%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">61</context>
@@ -11015,7 +11015,7 @@
       </trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html">
         <source>Fees (%)</source>
-        <target>Fees (%)</target>
+        <target>Provizije (%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -11023,7 +11023,7 @@
       </trans-unit>
       <trans-unit id="f7861032fb8a0dd0876cef908e93dd380cdf509d" datatype="html">
         <source>XMR Price</source>
-        <target>XMR Price</target>
+        <target>Cena XMR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">8</context>
@@ -11040,7 +11040,7 @@
       </trans-unit>
       <trans-unit id="xmr.goggle.group-public-signals" datatype="html">
         <source>Monero public signals</source>
-        <target>Monero public signals</target>
+        <target>Javni signali Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">98</context>
@@ -11048,7 +11048,7 @@
       </trans-unit>
       <trans-unit id="b17df68c0822021ce4480bbd4ed72b15733b818e" datatype="html">
         <source>Hidden by RingCT</source>
-        <target>Hidden by RingCT</target>
+        <target>Skrito z RingCT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">40</context>
@@ -11057,7 +11057,7 @@
       </trans-unit>
       <trans-unit id="89864e276d5211949a4f7bfe381f86d509191852" datatype="html">
         <source>Comparison status</source>
-        <target>Comparison status</target>
+        <target>Stanje primerjave</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">58</context>
@@ -11066,7 +11066,7 @@
       </trans-unit>
       <trans-unit id="ab4fd1a5febd86d3f383293363de659a92fd4091" datatype="html">
         <source>Missing from block</source>
-        <target>Missing from block</target>
+        <target>Manjka v bloku</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">62</context>
@@ -11076,7 +11076,7 @@
       </trans-unit>
       <trans-unit id="bd686becafa75168c61368a59bee2c36af7a521a" datatype="html">
         <source>Different block template</source>
-        <target>Different block template</target>
+        <target>Drugačna predloga bloka</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">63</context>
@@ -11089,7 +11089,7 @@
       </trans-unit>
       <trans-unit id="66f3ae3eff97ee4cbf8c9751eacdd4f736cb338b" datatype="html">
         <source>Monero transaction filters</source>
-        <target>Monero transaction filters</target>
+        <target>Filtri transakcij Monero</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">3</context>
@@ -11217,7 +11217,7 @@
       
       <trans-unit id="xmr.about.daemon" datatype="html">
         <source>Daemon</source>
-        <target>Daemon</target><context-group purpose="location">
+        <target>Demon</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
@@ -13756,6 +13756,209 @@
         </context-group>
       </trans-unit>
       
+      <trans-unit id="taxi.timezone.minus12" datatype="html"><source>Anywhere on Earth (AoE)</source><target>Kjer koli na Zemlji (AoE)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html"><source>Samoa Standard Time (SST)</source><target>Samojski standardni čas (SST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html"><source>Hawaii Standard Time (HST)</source><target>Havajski standardni čas (HST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html"><source>Alaska Standard Time (AKST)</source><target>Aljaški standardni čas (AKST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html"><source>Pacific Standard Time (PST)</source><target>Pacifiški standardni čas (PST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html"><source>Mountain Standard Time (MST)</source><target>Gorski standardni čas (MST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html"><source>Central Standard Time (CST)</source><target>Centralni standardni čas (CST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html"><source>Eastern Standard Time (EST)</source><target>Vzhodni standardni čas (EST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html"><source>Atlantic Standard Time (AST)</source><target>Atlantski standardni čas (AST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html"><source>Argentina Time (ART)</source><target>Argentinski čas (ART)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html"><source>Fernando de Noronha Time (FNT)</source><target>Čas otoka Fernando de Noronha (FNT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html"><source>Azores Time (AZOT)</source><target>Azorski čas (AZOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html"><source>Greenwich Mean Time (GMT)</source><target>Greenwiški srednji čas (GMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html"><source>Central European Time (CET)</source><target>Srednjeevropski čas (CET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html"><source>Eastern European Time (EET)</source><target>Vzhodnoevropski čas (EET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html"><source>Moscow Standard Time (MSK)</source><target>Moskovski standardni čas (MSK)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html"><source>Armenia Time (AMT)</source><target>Armenski čas (AMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html"><source>Pakistan Standard Time (PKT)</source><target>Pakistanski standardni čas (PKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html"><source>Xinjiang Time (XJT)</source><target>Čas v Šindžjangu (XJT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html"><source>Indochina Time (ICT)</source><target>Indokitajski čas (ICT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html"><source>Hong Kong Time (HKT)</source><target>Hongkonški čas (HKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html"><source>Japan Standard Time (JST)</source><target>Japonski standardni čas (JST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html"><source>Australian Eastern Standard Time (AEST)</source><target>Avstralski vzhodni standardni čas (AEST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html"><source>Norfolk Time (NFT)</source><target>Čas otoka Norfolk (NFT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target>Novozelandski standardni čas (NZST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target>Tonški čas (TOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target>Čas otočja Line (LINT)</target></trans-unit>
+      <trans-unit id="xmr.footer.privacy" datatype="html"><source>Privacy by default</source><target>Zasebnost privzeto</target></trans-unit>
+      <trans-unit id="xmr.footer.explore" datatype="html"><source>Explore</source><target>Raziščite</target></trans-unit>
+      <trans-unit id="xmr.footer.dashboard" datatype="html"><source>Dashboard</source><target>Pregledna plošča</target></trans-unit>
+      <trans-unit id="xmr.footer.recentBlocks" datatype="html"><source>Recent Blocks</source><target>Nedavni bloki</target></trans-unit>
+      <trans-unit id="xmr.footer.pending" datatype="html"><source>Pending Transactions</source><target>Čakajoče transakcije</target></trans-unit>
+      <trans-unit id="xmr.footer.activity" datatype="html"><source>Transaction activity</source><target>Dejavnost transakcij</target></trans-unit>
+      <trans-unit id="xmr.footer.instanceStatus" datatype="html"><source>Instance status</source><target>Stanje instance</target></trans-unit>
+      <trans-unit id="xmr.footer.learn" datatype="html"><source>Learn</source><target>Več informacij</target></trans-unit>
+      <trans-unit id="xmr.footer.moneropedia" datatype="html"><source>Moneropedia</source><target>Moneropedia</target></trans-unit>
+      <trans-unit id="xmr.footer.whatRingct" datatype="html"><source>What is RingCT?</source><target>Kaj je RingCT?</target></trans-unit>
+      <trans-unit id="xmr.footer.viewKey" datatype="html"><source>View key</source><target>Ključ za vpogled</target></trans-unit>
+      <trans-unit id="xmr.footer.proofSignatures" datatype="html"><source>tx_proof signatures</source><target>Podpisi tx_proof</target></trans-unit>
+      <trans-unit id="xmr.footer.research" datatype="html"><source>Monero research lab</source><target>Raziskovalni laboratorij Monero</target></trans-unit>
+      <trans-unit id="xmr.footer.documentation" datatype="html"><source>Explorer documentation</source><target>Dokumentacija raziskovalnika</target></trans-unit>
+      <trans-unit id="xmr.footer.about" datatype="html"><source>About</source><target>O projektu</target></trans-unit>
+      <trans-unit id="xmr.footer.source" datatype="html"><source>Source code</source><target>Izvorna koda</target></trans-unit>
+      <trans-unit id="xmr.footer.status" datatype="html"><source>Status</source><target>Stanje</target></trans-unit>
+      <trans-unit id="xmr.footer.telegramLabel" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Pridružite se kanalu tx.taxi na Telegramu</target></trans-unit>
+      <trans-unit id="xmr.footer.telegram" datatype="html"><source>Telegram</source><target>Telegram</target></trans-unit>
+      <trans-unit id="xmr.footer.contact" datatype="html"><source>Contact Us</source><target>Pišite nam</target></trans-unit>
+      <trans-unit id="xmr.footer.released" datatype="html"><source>Released under AGPLv3</source><target>Objavljeno pod licenco AGPLv3</target></trans-unit>
+      <trans-unit id="xmr.footer.madeWith" datatype="html"><source>Made with</source><target>Izdelano z</target></trans-unit>
+      <trans-unit id="xmr.footer.by" datatype="html"><source>by</source><target>avtorja</target></trans-unit>
+      <trans-unit id="xmr.pool.logo" datatype="html"><source>Mining pool logo</source><target>Logotip rudarskega bazena</target></trans-unit>
+      <trans-unit id="xmr.intro.aria" datatype="html"><source>About tx.taxi</source><target>O tx.taxi</target></trans-unit>
+      <trans-unit id="xmr.intro.title" datatype="html"><source>One search across chains.</source><target>Eno iskanje po vseh verigah.</target></trans-unit>
+      <trans-unit id="xmr.intro.description" datatype="html"><source>Paste a transaction, block or address into tx.taxi. Open a confirmed match, choose between possible networks, or head straight to your chain’s explorer.</source><target>Prilepite transakcijo, blok ali naslov v tx.taxi. Odprite potrjeno ujemanje, izberite med možnimi omrežji ali neposredno obiščite raziskovalnik svoje verige.</target></trans-unit>
+      <trans-unit id="xmr.docs.heading" datatype="html"><source>Documentation</source><target>Dokumentacija</target></trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html"><source>Documentation sections</source><target>Razdelki dokumentacije</target></trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html"><source>On this page</source><target>Na tej strani</target></trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html"><source>What is xmr.tx.taxi?</source><target>Kaj je xmr.tx.taxi?</target></trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html"><source>What is a mempool?</source><target>Kaj je mempool?</target></trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html"><source>Why are amounts hidden?</source><target>Zakaj so zneski skriti?</target></trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html"><source>Why is there no public address history?</source><target>Zakaj zgodovina naslovov ni javna?</target></trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html"><source>How do Monero fees work?</source><target>Kako delujejo provizije Monero?</target></trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html"><source>What does pending or confirmed mean?</source><target>Kaj pomeni čakajoča ali potrjena transakcija?</target></trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html"><source>Can I verify a payment?</source><target>Ali lahko preverim plačilo?</target></trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html"><source>How are mining pools identified?</source><target>Kako se prepoznajo rudarski bazeni?</target></trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html"><source>Endpoint</source><target>Končna točka</target></trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html"><source>Public result</source><target>Javni rezultat</target></trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html"><source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target>xmr.tx.taxi prikazuje javne podatke vozlišča in verige. Monero namenoma ohranja zneske plačil, prejemnike in zgodovino naslovov zasebne, zato raziskovalnik te omejitve označi, namesto da bi ugibal.</target></trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html"><source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source><target>RingCT skriva zneske izhodov z zavezami, prikriti naslovi pa prejemnike za enkratnimi izhodi. Javni podatki razkrivajo strukturo transakcije, provizije, vključitev v blok, slike ključev in sklice na člane obroča, ne omogočajo pa izpeljave zneskov plačil ali prejemnikov.</target></trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html"><source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source><target>Dokazila transakcij in pregledi denarnic so preverjanja udeležencev; javnega naslova ne spremenijo v javno zgodovino.</target></trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html"><source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target>Naslov Monero ni račun na verigi z vidnimi izhodi. Denarnice s ključi za vpogled prepoznajo lastne enkratne izhode. Raziskovalnik ne trdi, da pozna stanje računa, množico UTXO ali zgodovino transakcij naslova.</target></trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html"><source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target>Javne provizije so izražene v atomskih enotah na bajt. Demon oceni počasne, običajne, hitre in najhitrejše prednostne stopnje; denarnice uporabijo izbrano stopnjo za težo transakcije in kvantizacijo provizije. Predvideni bloki povzemajo opažene podatke čakajočih provizij in teže ter ne zagotavljajo vključitve.</target></trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html"><source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target>Stanje demona, višina, težavnost, zgoščevalna moč, povezana vozlišča in število transakcij v mempoolu.</target></trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html"><source>Recent block headers; count is capped at 25.</source><target>Nedavne glave blokov; največ 25.</target></trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html"><source>Up to 25 headers ending at a height.</source><target>Do 25 glav, ki se končajo pri podani višini.</target></trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html"><source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target>Glava, zgoščene vrednosti transakcij, javna statistika provizij in najboljši razpoložljivi pripis bazena.</target></trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html"><source>Privacy-safe summaries used by the block visualization.</source><target>Povzetki za vizualizacijo bloka, ki varujejo zasebnost.</target></trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html"><source>The daemon’s raw Monero block blob.</source><target>Surovi zapis bloka Monero iz demona.</target></trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html"><source>Every-block Monero retarget metadata.</source><target>Metapodatki o prilagoditvi težavnosti Monero pri vsakem bloku.</target></trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html"><source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target>Stanje, provizija, velikost oziroma teža, potrditve, javni podatki o obroču in oznake RingCT. Brez naslova prejemnika ali zneska izhoda.</target></trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html"><source>Mempool blob or available pruned confirmed transaction hex.</source><target>Heksadecimalni zapis transakcije iz mempoola ali razpoložljiv okrnjeni zapis potrjene transakcije.</target></trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html"><source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source><target>Opaženo število v bazenu, skupna teža in provizije ter polja transakcij, ki varujejo zasebnost.</target></trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html"><source>Projected pending blocks from the observed pool.</source><target>Predvideni čakajoči bloki iz opaženega bazena.</target></trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html"><source>Live-client bootstrap snapshot.</source><target>Začetni posnetek za odjemalca v živo.</target></trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html"><source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target>Ocene za počasno, običajno, hitro in najhitrejšo prioriteto v atomskih enotah na bajt ter maska kvantizacije.</target></trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html"><source>Current or timestamped locally indexed fiat conversion data.</source><target>Trenutni ali časovno označeni lokalno indeksirani podatki o pretvorbi v fiat valute.</target></trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html"><source>Difficulty-derived network hashrate history.</source><target>Zgodovina zgoščevalne moči omrežja, izpeljana iz težavnosti.</target></trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html"><source>Indexed block fee, subsidy, reward, and fiat series.</source><target>Indeksirane vrste provizij blokov, subvencij, nagrad in fiat vrednosti.</target></trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html"><source>Public fee-rate buckets and block size/weight history.</source><target>Skupine javnih stopenj provizij in zgodovina velikosti oziroma teže blokov.</target></trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html"><source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source><target>Statistika bazenov po najboljših razpoložljivih oznakah; bloki brez pripisa ostanejo neznani.</target></trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html"><source>Server messages</source><target>Sporočila strežnika</target></trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html"><source>Client messages</source><target>Sporočila odjemalca</target></trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html"><source>Message</source><target>Sporočilo</target></trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html"><source>Behavior</source><target>Delovanje</target></trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html"><source>Request the current snapshot.</source><target>Zahtevaj trenutni posnetek.</target></trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html"><source>Subscribe to a projected block snapshot by index.</source><target>Naročite se na posnetek predvidenega bloka po indeksu.</target></trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html"><source>Track public confirmation status for one transaction hash.</source><target>Spremljajte javno stanje potrditve ene zgoščene vrednosti transakcije.</target></trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html"><source>Address tracking is intentionally not a public Monero stream feature.</source><target>Sledenje naslovom namenoma ni funkcija javnega toka Monero.</target></trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html"><source>Events and reconnection</source><target>Dogodki in ponovna povezava</target></trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html"><source>Event</source><target>Dogodek</target></trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html"><source>Payload</source><target>Vsebina</target></trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html"><source>Current daemon info and observed mempool hashes at connect.</source><target>Trenutni podatki demona in opažene zgoščene vrednosti mempoola ob povezavi.</target></trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html"><source>A new public block header.</source><target>Nova javna glava bloka.</target></trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html"><source>Overview</source><target>Pregled</target></trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html"><source>Getting started</source><target>Začetek</target></trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html"><source>Chain and blocks</source><target>Veriga in bloki</target></trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html"><source>Endpoints</source><target>Končne točke</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html"><source>Transactions and mempool</source><target>Transakcije in mempool</target></trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html"><source>Fees and history</source><target>Provizije in zgodovina</target></trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html"><source>Mining data</source><target>Podatki o rudarjenju</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html"><source>Transaction proof</source><target>Dokazilo transakcije</target></trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html"><source>Verification</source><target>Preverjanje</target></trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html"><source>Public daemon bridge</source><target>Javni vmesnik do demona</target></trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html"><source>Connect and initialize</source><target>Povezava in inicializacija</target></trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html"><source>Connection</source><target>Povezava</target></trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html"><source>Events</source><target>Dogodki</target></trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html"><source>Commands</source><target>Ukazi</target></trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html"><source>Connect</source><target>Poveži</target></trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html"><source>Documentation</source><target>Dokumentacija</target></trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html"><source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target>Dokumentacija raziskovalnika Monero: javni podatki, ki varujejo zasebnost, končne točke REST in tokovi v živo.</target></trans-unit>
+      <trans-unit id="xmr-status-instance-health" datatype="html"><source>Instance health</source><target>Stanje instance</target></trans-unit>
+      <trans-unit id="xmr-status-title" datatype="html"><source>Monero daemon status</source><target>Stanje demona Monero</target></trans-unit>
+      <trans-unit id="xmr-status-description" datatype="html"><source>Backend liveness and public monerod sync state for this xmr.tx.taxi instance.</source><target>Delovanje zaledja in javno stanje sinhronizacije moneroda za to instanco xmr.tx.taxi.</target></trans-unit>
+      <trans-unit id="xmr-status-checked" datatype="html"><source>Checked</source><target>Preverjeno</target></trans-unit>
+      <trans-unit id="xmr-status-service-reachability" datatype="html"><source>Service reachability</source><target>Dosegljivost storitve</target></trans-unit>
+      <trans-unit id="xmr-status-backend" datatype="html"><source>Backend</source><target>Zaledje</target></trans-unit>
+      <trans-unit id="xmr-status-reachable" datatype="html"><source>reachable</source><target>dosegljivo</target></trans-unit>
+      <trans-unit id="xmr-status-daemon" datatype="html"><source>Daemon</source><target>Demon</target></trans-unit>
+      <trans-unit id="xmr-status-unreachable" datatype="html"><source>unreachable</source><target>nedosegljivo</target></trans-unit>
+      <trans-unit id="xmr-status-daemon-details" datatype="html"><source>Daemon details</source><target>Podrobnosti o demonu</target></trans-unit>
+      <trans-unit id="xmr-status-chain" datatype="html"><source>Chain</source><target>Veriga</target></trans-unit>
+      <trans-unit id="xmr-status-height" datatype="html"><source>Height</source><target>Višina</target></trans-unit>
+      <trans-unit id="xmr-status-target-height" datatype="html"><source>Target height</source><target>Ciljna višina</target></trans-unit>
+      <trans-unit id="xmr-status-behind" datatype="html"><source>Behind</source><target>Zaostanek</target></trans-unit>
+      <trans-unit id="xmr-status-blocks" datatype="html"><source>blocks</source><target>blokov</target></trans-unit>
+      <trans-unit id="xmr-status-tip-hash" datatype="html"><source>Tip hash</source><target>Zgoščena vrednost zadnjega bloka</target></trans-unit>
+      <trans-unit id="xmr-status-network" datatype="html"><source>Network</source><target>Omrežje</target></trans-unit>
+      <trans-unit id="xmr-status-nettype" datatype="html"><source>Nettype</source><target>Vrsta omrežja</target></trans-unit>
+      <trans-unit id="xmr-status-peers" datatype="html"><source>Peers</source><target>Povezana vozlišča</target></trans-unit>
+      <trans-unit id="xmr-status-connections" datatype="html"><source>Incoming / outgoing</source><target>Dohodne / odhodne</target></trans-unit>
+      <trans-unit id="xmr-status-rpc-clients" datatype="html"><source>RPC clients</source><target>Odjemalci RPC</target></trans-unit>
+      <trans-unit id="xmr-status-workload" datatype="html"><source>Workload</source><target>Obremenitev</target></trans-unit>
+      <trans-unit id="xmr-status-mempool" datatype="html"><source>Mempool</source><target>Mempool</target></trans-unit>
+      <trans-unit id="xmr-status-txs" datatype="html"><source>txs</source><target>transakcij</target></trans-unit>
+      <trans-unit id="xmr-status-total-txs" datatype="html"><source>Total txs</source><target>Skupaj transakcij</target></trans-unit>
+      <trans-unit id="xmr-status-difficulty" datatype="html"><source>Difficulty</source><target>Težavnost</target></trans-unit>
+      <trans-unit id="xmr-status-estimated-hashrate" datatype="html"><source>Estimated hashrate</source><target>Ocenjena zgoščevalna moč</target></trans-unit>
+      <trans-unit id="xmr-status-version" datatype="html"><source>Version</source><target>Različica</target></trans-unit>
+      <trans-unit id="xmr-status-uptime" datatype="html"><source>Uptime</source><target>Čas delovanja</target></trans-unit>
+      <trans-unit id="xmr-status-started" datatype="html"><source>Started</source><target>Zagnano</target></trans-unit>
+      <trans-unit id="xmr-status-trusted-rpc" datatype="html"><source>Trusted RPC</source><target>Zaupanja vreden RPC</target></trans-unit>
+      <trans-unit id="xmr-status-storage" datatype="html"><source>Storage</source><target>Shramba</target></trans-unit>
+      <trans-unit id="xmr-status-database-size" datatype="html"><source>Database size</source><target>Velikost zbirke podatkov</target></trans-unit>
+      <trans-unit id="xmr-status-free-space" datatype="html"><source>Free space</source><target>Prosti prostor</target></trans-unit>
+      <trans-unit id="xmr-status-block-size-limit" datatype="html"><source>Block size limit</source><target>Omejitev velikosti bloka</target></trans-unit>
+      <trans-unit id="xmr-status-update-available" datatype="html"><source>Update available</source><target>Na voljo je posodobitev</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap" datatype="html"><source>Bootstrap</source><target>Začetna sinhronizacija</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-height" datatype="html"><source>Bootstrap height</source><target>Začetna višina</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-daemon" datatype="html"><source>Bootstrap daemon</source><target>Začetni demon</target></trans-unit>
+      <trans-unit id="xmr-status-bootstrap-used" datatype="html"><source>Bootstrap used</source><target>Uporabljena začetna sinhronizacija</target></trans-unit>
+      <trans-unit id="xmr-status-peerlist" datatype="html"><source>Peerlist</source><target>Seznam vozlišč</target></trans-unit>
+      <trans-unit id="xmr-status-white" datatype="html"><source>white</source><target>beli</target></trans-unit>
+      <trans-unit id="xmr-status-grey" datatype="html"><source>grey</source><target>sivi</target></trans-unit>
+      <trans-unit id="xmr-status-check-failed" datatype="html"><source>Daemon check failed</source><target>Preverjanje demona ni uspelo</target></trans-unit>
+      <trans-unit id="xmr-status-backend-answered" datatype="html"><source>The backend answered, but monerod did not return</source><target>Zaledje je odgovorilo, vendar monerod ni vrnil odgovora</target></trans-unit>
+      <trans-unit id="xmr-status-checking" datatype="html"><source>Checking daemon status...</source><target>Preverjanje stanja demona ...</target></trans-unit>
+      <trans-unit id="xmr-status-unknown" datatype="html"><source>unknown</source><target>neznano</target></trans-unit>
+      <trans-unit id="xmr-status-not-configured" datatype="html"><source>not configured</source><target>ni nastavljeno</target></trans-unit>
+      <trans-unit id="xmr-status-no" datatype="html"><source>no</source><target>ne</target></trans-unit>
+      <trans-unit id="xmr-status-yes" datatype="html"><source>yes</source><target>da</target></trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html"><source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source><target>Trenutno stanje zaledja xmr.tx.taxi in moneroda: delovanje, sinhronizacija, različica, vozlišča in shramba.</target></trans-unit>
+      <trans-unit id="xmr-status-state-online" datatype="html"><source>monerod reachable</source><target>monerod je dosegljiv</target></trans-unit>
+      <trans-unit id="xmr-status-state-syncing" datatype="html"><source>syncing</source><target>sinhronizacija</target></trans-unit>
+      <trans-unit id="xmr-status-state-degraded" datatype="html"><source>attention needed</source><target>potrebna je pozornost</target></trans-unit>
+      <trans-unit id="xmr-status-state-offline" datatype="html"><source>daemon unreachable</source><target>demon ni dosegljiv</target></trans-unit>
+      <trans-unit id="xmr-status-request-failed" datatype="html"><source>request failed</source><target>zahteva ni uspela</target></trans-unit>
+      <trans-unit id="xmr-status-network-request-failed" datatype="html"><source>network request failed</source><target>omrežna zahteva ni uspela</target></trans-unit>
+      <trans-unit id="xmr.pool.logoNamed" datatype="html"><source>Logo of <x id="name" equiv-text="this.name"/> mining pool</source><target>Logotip rudarskega bazena <x id="name" equiv-text="this.name"/></target></trans-unit>
+      <trans-unit id="xmr.intro.openTaxi" datatype="html"><source>Open tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Odpri tx.taxi <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>↗︎<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.intro.exploreChain" datatype="html"><source>Explore <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Razišči <x id="INTERPOLATION" equiv-text="{{ chainName }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span aria-hidden=&quot;true&quot;&gt;"/>→<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.whatDescription" datatype="html"><source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source><target>Raziskovalnik blokov in čakajočih transakcij za <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Znani pogled raziskovalnika mempoola prilagaja podatkom, ki jih lahko vozlišče Monero javno dokaže.</target></trans-unit>
+      <trans-unit id="xmr.docs.mempoolDescription" datatype="html"><source>A node-local set of valid transactions observed but not yet included in a block. There is no single global mempool: the site shows the configured daemon’s <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> response when last polled.</source><target>Lokalna zbirka veljavnih transakcij, ki jih vozlišče opazuje, a še niso vključene v blok. Enotnega globalnega mempoola ni: stran prikazuje odgovor nastavljenega demona na <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> ob zadnji poizvedbi.</target></trans-unit>
+      <trans-unit id="xmr.docs.confirmationDescription" datatype="html"><source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Pending<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means this daemon currently observes the transaction in its pool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Confirmed<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means a daemon returned it as included at a block height; confirmations grow as newer blocks arrive. Absence from one node’s pool is not proof a transaction never propagated or will not confirm.</source><target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Čakajoča<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> pomeni, da ta demon transakcijo trenutno opazuje v svojem bazenu. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Potrjena<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> pomeni, da jo je demon vrnil kot vključeno na določeni višini bloka; število potrditev raste z novimi bloki. Odsotnost iz bazena enega vozlišča ne dokazuje, da se transakcija ni razširila ali da ne bo potrjena.</target></trans-unit>
+      <trans-unit id="xmr.docs.proofDescription" datatype="html"><source>The transaction page can verify a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> when monero-wallet-rpc is configured. Recipient scans with a private view key and sender checks with a transaction secret key run in the browser; private key material is not sent to this API. A private view key alone is not a subaddress-proof tool.</source><target>Stran transakcije lahko preveri javni <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> ob nastavljenem monero-wallet-rpc. Pregledi prejemnika z zasebnim ključem za vpogled in preverjanja pošiljatelja s skrivnim ključem transakcije potekajo v brskalniku; zasebni ključi se ne pošljejo temu API-ju. Sam zasebni ključ za vpogled ni orodje za dokazovanje podnaslovov.</target></trans-unit>
+      <trans-unit id="xmr.docs.miningDescription" datatype="html"><source>Pool labels are best-effort: public miner-transaction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> markers and, where published, proof-registry evidence. Unattributed blocks remain <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Unknown<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; a label never identifies an individual miner.</source><target>Oznake bazenov temeljijo na najboljših razpoložljivih dokazih: javnih oznakah polja <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> rudarske transakcije in, kjer so objavljeni, dokazih iz registra. Bloki brez pripisa ostanejo <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>neznani<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; oznaka nikoli ne identificira posameznega rudarja.</target></trans-unit>
+      <trans-unit id="xmr.docs.restDescription" datatype="html"><source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source><target>Dokumentirane poti so samo za branje in pod istim izvorom <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. API za avtentikacijo, denarnico ali račun ni izpostavljen. Kjer pot vrača provizijo ali nagrado, so vrednosti v atomskih enotah.</target></trans-unit>
+      <trans-unit id="xmr.docs.chainBlocksTitle" datatype="html"><source>Chain and blocks <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Veriga in bloki <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html"><source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Transakcije in mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.timesResult" datatype="html"><source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target>Znani časi prejema v mempool; potrjene ali neznane vrednosti so <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target></trans-unit>
+      <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html"><source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Provizije in zgodovina <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.statisticsResult" datatype="html"><source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target>Shranjena enominutna opazovanja za <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, ali <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target></trans-unit>
+      <trans-unit id="xmr.docs.miningDataTitle" datatype="html"><source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Podatki o rudarjenju <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.historyPeriods" datatype="html"><source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target>Zgodovinske grafične poti sprejemajo obdobja, kot so <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionProofTitle" datatype="html"><source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Preverjanje dokazila transakcije <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.verifyDescription" datatype="html"><source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source><target><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> sprejme javni <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, naslov in neobvezno sporočilo. Vrne <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> če monero-wallet-rpc ni na voljo. Na to končno točko nikoli ne pošiljajte zasebnega ključa za vpogled ali skrivnega ključa transakcije.</target></trans-unit>
+      <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html"><source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target>Javni vmesnik do demona <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target></trans-unit>
+      <trans-unit id="xmr.docs.daemonDescription" datatype="html"><source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> proxy an allowlisted public daemon subset for browser-local verification. Wallet methods and secret-shaped fields are rejected; this is not a general remote node or wallet service.</source><target><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> posredujeta dovoljeni javni podnabor demona za lokalno preverjanje v brskalniku. Metode denarnice in polja, podobna skrivnostim, so zavrnjena; to ni splošno oddaljeno vozlišče ali storitev denarnice.</target></trans-unit>
+      <trans-unit id="xmr.docs.websocketDescription" datatype="html"><source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> requests another. Messages use the established mempool protocol shape.</source><target>Povežite se z <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Strežnik takoj pošlje posnetek; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> zahteva novega. Sporočila uporabljajo ustaljeno obliko protokola mempool.</target></trans-unit>
+      <trans-unit id="xmr.docs.eventsDescription" datatype="html"><source>Snapshots and updates can contain <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. A projected-block subscriber also receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Treat all as observations from the configured daemon, not global finality.</source><target>Posnetki in posodobitve lahko vsebujejo <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Naročnik na predvideni blok prejme tudi <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Vse obravnavajte kot opažanja nastavljenega demona, ne kot globalno dokončnost.</target></trans-unit>
+      <trans-unit id="xmr.docs.pingResult" datatype="html"><source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target>Prejme <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target></trans-unit>
+      <trans-unit id="xmr.docs.sseDescription" datatype="html"><source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source><target>Odprite <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> kot <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> za enosmerne posodobitve. Medpomnjenje posrednika je izklopljeno, tok pa se začne s posnetkom.</target></trans-unit>
+      <trans-unit id="xmr.docs.deltaResult" datatype="html"><source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for the observed pool.</source><target><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> za opazovani bazen.</target></trans-unit>
+      <trans-unit id="xmr.docs.reconnectDescription" datatype="html"><source>A comment heartbeat is sent every 25 seconds. Native <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> reconnection is suitable for most clients; resync from the snapshot or REST after a disconnect.</source><target>Komentar za ohranjanje povezave se pošlje vsakih 25 sekund. Izvorna ponovna povezava <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> je primerna za večino odjemalcev; po prekinitvi ponovno uskladite podatke s posnetkom ali REST.</target></trans-unit>
     </body>
   </file>
 </xliff>
