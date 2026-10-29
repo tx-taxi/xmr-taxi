@@ -13357,6 +13357,10 @@
         <source>Server-Sent Events</source>
         <target>Eventos enviados por el servidor</target>
       </trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html">
+        <source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source>
+        <target>Estado en tiempo real del servicio de xmr.tx.taxi y monerod: salud, sincronización, versión, pares y almacenamiento.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
