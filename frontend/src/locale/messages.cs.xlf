@@ -14899,6 +14899,721 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="xmr.docs.heading" datatype="html">
+        <source>Documentation</source><target state="translated">Dokumentace</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html">
+        <source>Documentation sections</source><target state="translated">Sekce dokumentace</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html">
+        <source>On this page</source><target state="translated">Na této stránce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html">
+        <source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target state="translated">xmr.tx.taxi zobrazuje veřejná data uzlu a řetězce. Monero záměrně uchovává částky plateb, příjemce a historii adres v soukromí, proto tento průzkumník tato omezení uvádí místo odhadování.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html">
+        <source>What is xmr.tx.taxi?</source><target state="translated">Co je xmr.tx.taxi?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.whatDescription" datatype="html">
+        <source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source><target state="translated">Průzkumník bloků a čekajících transakcí pro <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Přizpůsobuje známý pohled průzkumníku mempoolu datům, která uzel Monero dokáže veřejně prokázat.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html">
+        <source>What is a mempool?</source><target state="translated">Co je mempool?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolDescription" datatype="html">
+        <source>A node-local set of valid transactions observed but not yet included in a block. There is no single global mempool: the site shows the configured daemon’s <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> response when last polled.</source><target state="translated">Místní soubor platných transakcí, které uzel zaznamenal, ale dosud nebyly zahrnuty do bloku. Jediný globální mempool neexistuje: web zobrazuje odpověď <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> nastaveného daemonu při posledním dotazu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html">
+        <source>Why are amounts hidden?</source><target state="translated">Proč jsou částky skryté?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html">
+        <source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source><target state="translated">RingCT skrývá částky výstupů pomocí závazků a stealth adresy skrývají příjemce za jednorázovými výstupy. Veřejná data ukazují strukturu transakce, poplatky, zahrnutí do bloku, key images a odkazy na členy kruhu, ale nelze z nich odvodit částky plateb ani příjemce.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html">
+        <source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source><target state="translated">Důkazy transakcí a skenování peněženky jsou kontroly účastníků; nevytvářejí veřejnou historii veřejné adresy.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html">
+        <source>Why is there no public address history?</source><target state="translated">Proč neexistuje veřejná historie adresy?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html">
+        <source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target state="translated">Adresa Monero není účet v řetězci s viditelnými výstupy. Peněženky rozpoznávají vlastní jednorázové výstupy pomocí zobrazovacích klíčů. Průzkumník netvrdí, že zná zůstatek účtu, množinu UTXO ani historii transakcí adresy.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html">
+        <source>How do Monero fees work?</source><target state="translated">Jak fungují poplatky Monero?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html">
+        <source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target state="translated">Veřejné poplatky jsou v atomických jednotkách na bajt. Daemon odhaduje sazby pro pomalou, běžnou, rychlou a nejrychlejší prioritu; peněženky použijí zvolenou sazbu na váhu transakce a kvantování poplatku. Předpokládané bloky shrnují pozorované poplatky a váhy čekajících transakcí a nezaručují zahrnutí.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html">
+        <source>What does pending or confirmed mean?</source><target state="translated">Co znamená čekající nebo potvrzená?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmationDescription" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Pending<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means this daemon currently observes the transaction in its pool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Confirmed<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means a daemon returned it as included at a block height; confirmations grow as newer blocks arrive. Absence from one node’s pool is not proof a transaction never propagated or will not confirm.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Čekající<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> znamená, že tento daemon transakci aktuálně vidí ve svém poolu. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Potvrzená<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> znamená, že ji daemon vrátil jako zahrnutou na určité výšce bloku; počet potvrzení roste s přibývajícími bloky. Nepřítomnost v poolu jednoho uzlu nedokazuje, že se transakce nikdy nerozšířila nebo nebude potvrzena.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html">
+        <source>Can I verify a payment?</source><target state="translated">Mohu ověřit platbu?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proofDescription" datatype="html">
+        <source>The transaction page can verify a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> when monero-wallet-rpc is configured. Recipient scans with a private view key and sender checks with a transaction secret key run in the browser; private key material is not sent to this API. A private view key alone is not a subaddress-proof tool.</source><target state="translated">Stránka transakce může ověřit veřejný <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, pokud je nakonfigurován monero-wallet-rpc. Skenování příjemce pomocí soukromého zobrazovacího klíče a kontrola odesílatele pomocí tajného klíče transakce probíhají v prohlížeči; soukromé klíče se tomuto API neposílají. Samotný soukromý zobrazovací klíč nestačí k prokázání subadresy.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html">
+        <source>How are mining pools identified?</source><target state="translated">Jak se určují těžební pooly?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDescription" datatype="html">
+        <source>Pool labels are best-effort: public miner-transaction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> markers and, where published, proof-registry evidence. Unattributed blocks remain <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Unknown<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; a label never identifies an individual miner.</source><target state="translated">Označení poolů jsou pouze orientační: vycházejí z veřejných značek <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> transakce těžaře a případně ze zveřejněných důkazů v registru. Nepřiřazené bloky zůstávají označeny <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Neznámý<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; označení nikdy neidentifikuje jednotlivého těžaře.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.restDescription" datatype="html">
+        <source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source><target state="translated">Zdokumentované cesty jsou pouze pro čtení a mají stejný původ pod <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Není vystaveno API pro ověřování, peněženky ani účty. Hodnoty poplatků a odměn jsou v atomických jednotkách.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocksTitle" datatype="html">
+        <source>Chain and blocks <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Řetězec a bloky <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html">
+        <source>Endpoint</source><target state="translated">Endpoint</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html">
+        <source>Public result</source><target state="translated">Veřejný výsledek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html">
+        <source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target state="translated">Stav daemonu, výška, obtížnost, výpočetní výkon, peery a počet transakcí v mempoolu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html">
+        <source>Recent block headers; count is capped at 25.</source><target state="translated">Hlavičky posledních bloků; počet je omezen na 25.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html">
+        <source>Up to 25 headers ending at a height.</source><target state="translated">Až 25 hlaviček končících na zadané výšce.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html">
+        <source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target state="translated">Hlavička, hashe transakcí, veřejné statistiky poplatků a orientační přiřazení poolu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html">
+        <source>Privacy-safe summaries used by the block visualization.</source><target state="translated">Souhrny chránící soukromí používané pro vizualizaci bloku.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html">
+        <source>The daemon’s raw Monero block blob.</source><target state="translated">Surový binární blob bloku Monero z daemonu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html">
+        <source>Every-block Monero retarget metadata.</source><target state="translated">Metadata úpravy obtížnosti Monero pro každý blok.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html">
+        <source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Transakce a mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html">
+        <source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target state="translated">Stav, poplatek, velikost/váha, potvrzení, veřejná data kruhu a příznaky RingCT. Bez adresy příjemce a částky výstupu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html">
+        <source>Mempool blob or available pruned confirmed transaction hex.</source><target state="translated">Blob z mempoolu nebo dostupná ořezaná potvrzená transakce v hexadecimálním formátu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html">
+        <source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source><target state="translated">Pozorovaný počet transakcí v poolu, celková váha/poplatky a pole transakcí chránící soukromí.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html">
+        <source>Projected pending blocks from the observed pool.</source><target state="translated">Předpokládané čekající bloky z pozorovaného poolu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.timesResult" datatype="html">
+        <source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Známé časy přijetí do mempoolu; potvrzené nebo neznámé hodnoty jsou <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html">
+        <source>Live-client bootstrap snapshot.</source><target state="translated">Počáteční snímek pro živého klienta.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html">
+        <source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Poplatky a historie <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html">
+        <source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target state="translated">Odhady pro pomalou, běžnou, rychlou a nejrychlejší prioritu v atomických jednotkách na bajt a kvantovací maska.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.statisticsResult" datatype="html">
+        <source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Uložená minutová pozorování pro <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> nebo <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html">
+        <source>Current or timestamped locally indexed fiat conversion data.</source><target state="translated">Aktuální nebo časově označená lokálně indexovaná data převodu na fiat měnu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDataTitle" datatype="html">
+        <source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Data těžby <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.historyPeriods" datatype="html">
+        <source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Cesty historických grafů přijímají období jako <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html">
+        <source>Difficulty-derived network hashrate history.</source><target state="translated">Historie výpočetního výkonu sítě odvozená z obtížnosti.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html">
+        <source>Indexed block fee, subsidy, reward, and fiat series.</source><target state="translated">Indexované řady poplatků, dotace, odměn za blok a fiat hodnot.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html">
+        <source>Public fee-rate buckets and block size/weight history.</source><target state="translated">Veřejné intervaly sazeb poplatků a historie velikosti/váhy bloků.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html">
+        <source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source><target state="translated">Orientační statistiky poolů odvozené ze značek; nepřiřazené bloky zůstávají neznámé.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProofTitle" datatype="html">
+        <source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Ověření důkazu transakce <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verifyDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> přijímá veřejný <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, adresu a volitelnou zprávu. Vrací <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, pokud monero-wallet-rpc není dostupný. Na tento endpoint nikdy neposílejte soukromý zobrazovací klíč ani tajný klíč transakce.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html">
+        <source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Veřejná brána daemonu <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> proxy an allowlisted public daemon subset for browser-local verification. Wallet methods and secret-shaped fields are rejected; this is not a general remote node or wallet service.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> zprostředkovávají povolenou veřejnou podmnožinu daemonu pro místní ověření v prohlížeči. Metody peněženek a pole připomínající tajné údaje se odmítají; nejde o obecnou službu vzdáleného uzlu ani peněženky.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.websocketDescription" datatype="html">
+        <source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> requests another. Messages use the established mempool protocol shape.</source><target state="translated">Připojte se k <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Server okamžitě odešle snímek; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> vyžádá další. Zprávy mají zavedený formát protokolu mempoolu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html">
+        <source>Server messages</source><target state="translated">Zprávy serveru</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventsDescription" datatype="html">
+        <source>Snapshots and updates can contain <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. A projected-block subscriber also receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Treat all as observations from the configured daemon, not global finality.</source><target state="translated">Snímky a aktualizace mohou obsahovat <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Odběratel předpokládaného bloku dostává také <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Vše považujte za pozorování nastaveného daemonu, nikoli za globální finalitu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html">
+        <source>Client messages</source><target state="translated">Zprávy klienta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html">
+        <source>Message</source><target state="translated">Zpráva</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html">
+        <source>Behavior</source><target state="translated">Chování</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html">
+        <source>Request the current snapshot.</source><target state="translated">Vyžádá aktuální snímek.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.pingResult" datatype="html">
+        <source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Obdrží <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html">
+        <source>Subscribe to a projected block snapshot by index.</source><target state="translated">Přihlásí odběr snímku předpokládaného bloku podle indexu.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html">
+        <source>Track public confirmation status for one transaction hash.</source><target state="translated">Sleduje veřejný stav potvrzení jednoho hashe transakce.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html">
+        <source>Address tracking is intentionally not a public Monero stream feature.</source><target state="translated">Sledování adres záměrně není funkcí veřejného streamu Monero.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sseDescription" datatype="html">
+        <source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source><target state="translated">Otevřete <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> jako <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> pro jednosměrné aktualizace. Bufferování proxy je vypnuto a stream začíná snímkem.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html">
+        <source>Events and reconnection</source><target state="translated">Události a opětovné připojení</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html">
+        <source>Event</source><target state="translated">Událost</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html">
+        <source>Payload</source><target state="translated">Obsah zprávy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html">
+        <source>Current daemon info and observed mempool hashes at connect.</source><target state="translated">Aktuální informace daemonu a pozorované hashe mempoolu při připojení.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html">
+        <source>A new public block header.</source><target state="translated">Nová veřejná hlavička bloku.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.deltaResult" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for the observed pool.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> pro pozorovaný pool.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.reconnectDescription" datatype="html">
+        <source>A comment heartbeat is sent every 25 seconds. Native <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> reconnection is suitable for most clients; resync from the snapshot or REST after a disconnect.</source><target state="translated">Komentářový heartbeat se odesílá každých 25 sekund. Pro většinu klientů je vhodné nativní opětovné připojení <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>; po odpojení se znovu synchronizujte ze snímku nebo REST.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html">
+        <source>Overview</source><target state="translated">Přehled</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html">
+        <source>Getting started</source><target state="translated">Začínáme</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html">
+        <source>Chain and blocks</source><target state="translated">Řetězec a bloky</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html">
+        <source>Endpoints</source><target state="translated">Endpointy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html">
+        <source>Transactions and mempool</source><target state="translated">Transakce a mempool</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html">
+        <source>Fees and history</source><target state="translated">Poplatky a historie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html">
+        <source>Mining data</source><target state="translated">Data těžby</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html">
+        <source>Transaction proof</source><target state="translated">Důkaz transakce</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html">
+        <source>Verification</source><target state="translated">Ověření</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html">
+        <source>Public daemon bridge</source><target state="translated">Veřejná brána daemonu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html">
+        <source>Connect and initialize</source><target state="translated">Připojení a inicializace</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html">
+        <source>Connection</source><target state="translated">Připojení</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html">
+        <source>Events</source><target state="translated">Události</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html">
+        <source>Commands</source><target state="translated">Příkazy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html">
+        <source>Connect</source><target state="translated">Připojení</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html">
+        <source>Documentation</source><target state="translated">Dokumentace</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html">
+        <source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target state="translated">Dokumentace průzkumníku Monero: veřejná data chránící soukromí, REST endpointy a živé streamy.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
