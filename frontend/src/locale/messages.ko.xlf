@@ -14570,6 +14570,335 @@
           <context context-type="linenumber">182</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="xmr.legal.privacy-policy.0" datatype="html">
+        <source>Privacy Policy</source><target state="translated">개인정보 처리방침</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source><target state="translated">업데이트: 2026년 5월 16일</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.2" datatype="html">
+        <source>Audience measurement</source><target state="translated">방문자 측정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.3" datatype="html">
+        <source>tx.taxi uses Cloudflare Web Analytics for page views and performance, and a first-party daily cookie shared across its explorers to count browsers once per UTC day. The daily audience collector stores only a daily identifier, the explorer hostname, and whether there was interaction. It does not receive search text, addresses, transaction IDs, URLs, or IP addresses. Individual daily records expire after 31 days; aggregate counts are retained for 400 days. Do Not Track and Global Privacy Control disable this first-party measurement.</source><target state="translated">tx.taxi는 페이지 조회수와 성능을 측정하기 위해 Cloudflare Web Analytics를 사용하며, 탐색기 간에 공유되는 자체 일일 쿠키를 사용해 UTC 기준 하루에 브라우저를 한 번 집계합니다. 일일 방문자 수집기는 일일 식별자, 탐색기 호스트 이름, 상호작용 여부만 저장합니다. 검색어, 주소, 거래 ID, URL 또는 IP 주소는 수신하지 않습니다. 개별 일일 기록은 31일 후 만료되며 집계 수치는 400일 동안 보관됩니다. Do Not Track과 Global Privacy Control은 이 자체 측정을 비활성화합니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.4" datatype="html">
+        <source>Details and opt-out</source><target state="translated">자세한 내용 및 측정 거부</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.5" datatype="html">
+        <source>Use Your Own Node When Privacy Matters</source><target state="translated">개인정보 보호가 중요하다면 자체 노드를 사용하세요</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.6" datatype="html">
+        <source>xmr.tx.taxi displays public Monero chain and mempool data from the RPC providers configured by the site operator. For the strongest privacy, run your own Monero node and explorer instead of relying on a public service.</source><target state="translated">xmr.tx.taxi는 사이트 운영자가 설정한 RPC 제공자의 공개 Monero 체인 및 멤풀 데이터를 표시합니다. 개인정보를 최대한 보호하려면 공개 서비스 대신 자체 Monero 노드와 탐색기를 실행하세요.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.7" datatype="html">
+        <source>What This Explorer Can See</source><target state="translated">이 탐색기가 볼 수 있는 정보</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.8" datatype="html">
+        <source>Regular page and API requests reveal standard web metadata to the operator, including your IP address, user agent, requested URL, and request time. Operators may keep server logs for reliability, abuse prevention, debugging, and capacity planning.</source><target state="translated">일반 페이지 및 API 요청은 IP 주소, 사용자 에이전트, 요청 URL, 요청 시간 등 표준 웹 메타데이터를 운영자에게 노출합니다. 운영자는 안정성, 악용 방지, 문제 해결 및 용량 계획을 위해 서버 로그를 보관할 수 있습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.9" datatype="html">
+        <source>What Monero Hides</source><target state="translated">Monero가 숨기는 정보</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.10" datatype="html">
+        <source>Monero's RingCT and stealth-address design means this site cannot determine transaction recipients or transferred amounts from public chain data. xmr.tx.taxi does not build address histories, wallet histories, account pages, or public spent/unspent output claims.</source><target state="translated">Monero의 RingCT 및 스텔스 주소 설계로 인해 이 사이트는 공개 체인 데이터에서 거래 수신자나 전송 금액을 알아낼 수 없습니다. xmr.tx.taxi는 주소 내역, 지갑 내역, 계정 페이지를 만들거나 공개 출력의 사용 여부를 주장하지 않습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.11" datatype="html">
+        <source>Proof Verification</source><target state="translated">증명 확인</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.12" datatype="html">
+        <source>The tx_proof verification form sends the transaction hash, recipient address, and proof signature to this instance's backend. A tx_proof signature is intended to be shared; private view keys, spend keys, seed phrases, and tx secret keys should not be sent to this server.</source><target state="translated">tx_proof 확인 양식은 거래 해시, 수신자 주소 및 증명 서명을 이 인스턴스의 백엔드로 전송합니다. tx_proof 서명은 공유하도록 설계되었지만, 개인 보기 키, 사용 키, 시드 문구 및 거래 비밀 키는 이 서버에 전송해서는 안 됩니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.13" datatype="html">
+        <source>Local Preferences</source><target state="translated">로컬 설정</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.14" datatype="html">
+        <source>The frontend may store local preferences such as language, theme, fiat currency, and timezone in your browser. These preferences are used to render the interface and are not needed for chain analysis.</source><target state="translated">프런트엔드는 언어, 테마, 법정화폐 및 시간대와 같은 로컬 설정을 브라우저에 저장할 수 있습니다. 이 설정은 인터페이스 표시용이며 체인 분석에는 필요하지 않습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.15" datatype="html">
+        <source>Third Parties</source><target state="translated">제3자</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.16" datatype="html">
+        <source>This instance may call configured upstream services such as a Monero daemon, fiat price provider, or wallet-RPC verifier. Public deployments should document their own logging, analytics, proxy, and retention policies alongside this baseline policy.</source><target state="translated">이 인스턴스는 Monero 데몬, 법정화폐 가격 제공자 또는 wallet-RPC 검증기와 같은 설정된 외부 서비스를 호출할 수 있습니다. 공개 서비스 운영자는 이 기본 정책과 함께 자체 로깅, 분석, 프록시 및 보관 정책을 문서화해야 합니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-title" datatype="html">
+        <source>Privacy Policy</source><target state="translated">개인정보 처리방침</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-description" datatype="html">
+        <source>Privacy notes for xmr.tx.taxi, including public Monero data limits, local preferences, server logs, and tx_proof verification behavior.</source><target state="translated">공개 Monero 데이터의 한계, 로컬 설정, 서버 로그 및 tx_proof 확인을 포함한 xmr.tx.taxi 개인정보 안내.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.0" datatype="html">
+        <source>Terms of Service</source><target state="translated">서비스 약관</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.1" datatype="html">
+        <source>Updated: May 16, 2026</source><target state="translated">업데이트: 2026년 5월 16일</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.2" datatype="html">
+        <source>xmr.tx.taxi is a Monero block and pending transaction explorer derived from the Mempool Open Source Project. This instance provides public blockchain data from its configured Monero RPC providers and does not provide wallet, custody, exchange, investment, tax, legal, or transaction acceleration services.</source><target state="translated">xmr.tx.taxi는 Mempool Open Source Project에서 파생된 Monero 블록 및 대기 거래 탐색기입니다. 이 인스턴스는 설정된 Monero RPC 제공자의 공개 블록체인 데이터를 제공하며 지갑, 자산 보관, 교환, 투자, 세무, 법률 또는 거래 가속 서비스를 제공하지 않습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.3" datatype="html">
+        <source>By accessing this website, you agree to the following terms:</source><target state="translated">이 웹사이트에 접속하면 다음 약관에 동의하는 것으로 간주됩니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.4" datatype="html">
+        <source>No Warranty</source><target state="translated">보증 없음</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.5" datatype="html">
+        <source>This website is provided on an "as is" and "as available" basis, without warranties or representations of any kind. Blockchain data, mempool data, fiat conversions, estimates, charts, and derived labels may be incomplete, delayed, unavailable, or inaccurate. You are responsible for independently verifying any data before relying on it.</source><target state="translated">이 웹사이트는 어떠한 보증이나 진술 없이 ‘있는 그대로’ 및 ‘이용 가능한 상태’로 제공됩니다. 블록체인 및 멤풀 데이터, 법정화폐 환산, 추정치, 차트 및 파생 라벨은 불완전하거나 지연되거나 제공되지 않거나 부정확할 수 있습니다. 데이터를 신뢰하기 전에 독립적으로 확인할 책임은 사용자에게 있습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.6" datatype="html">
+        <source>No Liability</source><target state="translated">책임 제한</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.7" datatype="html">
+        <source>We are not liable for losses or damages that result from use of this website, its API, its data, unavailable service, delayed updates, incorrect interpretation, or any other content shown here. xmr.tx.taxi does not control the Monero network, does not mine blocks, does not relay privileged transactions, and cannot recover funds.</source><target state="translated">당사는 이 웹사이트, API 또는 데이터의 사용, 서비스 중단, 업데이트 지연, 잘못된 해석 또는 기타 표시된 콘텐츠로 인한 손실이나 손해에 대해 책임지지 않습니다. xmr.tx.taxi는 Monero 네트워크를 통제하거나 블록을 채굴하거나 특권 거래를 중계하지 않으며 자금을 복구할 수 없습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.8" datatype="html">
+        <source>Privacy Limits</source><target state="translated">개인정보 보호의 한계</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.9" datatype="html">
+        <source>Monero hides recipient addresses and transaction amounts by design. xmr.tx.taxi only shows public chain data and intentionally does not create address histories, wallet histories, UTXO-style views, payment-channel views, or fee-bump workflows. If you submit a tx_proof signature for verification, the signature and recipient address are sent to this instance's backend verifier; private view keys and tx secret keys should stay local.</source><target state="translated">Monero는 설계상 수신자 주소와 거래 금액을 숨깁니다. xmr.tx.taxi는 공개 체인 데이터만 표시하며 주소 및 지갑 내역, UTXO 방식 화면, 결제 채널 화면 또는 수수료 인상 기능을 의도적으로 제공하지 않습니다. tx_proof 서명을 확인용으로 제출하면 서명과 수신자 주소가 이 인스턴스의 백엔드 검증기로 전송됩니다. 개인 보기 키와 거래 비밀 키는 로컬에 보관해야 합니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.10" datatype="html">
+        <source>External Links</source><target state="translated">외부 링크</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.11" datatype="html">
+        <source>This site may link to Monero documentation, license information, or infrastructure dependencies. External websites have their own terms and policies.</source><target state="translated">이 사이트는 Monero 문서, 라이선스 정보 또는 인프라 서비스에 링크할 수 있습니다. 외부 웹사이트에는 자체 약관과 정책이 적용됩니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.12" datatype="html">
+        <source>Open Source Attribution</source><target state="translated">오픈소스 저작권 표시</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.13" datatype="html">
+        <source>xmr.tx.taxi inherits the AGPLv3 licensing obligations of its upstream project. Mempool trademarks and logos remain property of their respective owners; xmr.tx.taxi is not affiliated with or endorsed by Mempool Holdings S.A. de C.V.</source><target state="translated">xmr.tx.taxi는 원본 프로젝트의 AGPLv3 라이선스 의무를 이어받습니다. Mempool 상표와 로고는 각 소유자의 재산이며, xmr.tx.taxi는 Mempool Holdings S.A. de C.V.와 제휴하지 않고 해당 회사의 승인을 받지 않았습니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.meta-title" datatype="html">
+        <source>Terms of Service</source><target state="translated">서비스 약관</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.meta-description" datatype="html">
+        <source>Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.</source><target state="translated">지갑, 자산 보관 또는 거래 우선 처리 서비스 없이 공개 체인 데이터를 제공하는 Monero 블록 및 멤풀 탐색기 xmr.tx.taxi의 이용 약관.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.0" datatype="html">
+        <source>Trademark &amp; Attribution</source><target state="translated">상표 및 저작권 표시</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source><target state="translated">업데이트: 2026년 5월 16일</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.2" datatype="html">
+        <source>xmr.tx.taxi</source><target state="translated">xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.3" datatype="html">
+        <source>xmr.tx.taxi is a Monero-focused fork of the Mempool Open Source Project. The xmr.tx.taxi name, Monero-oriented copy, and retargeted behavior describe this fork only.</source><target state="translated">xmr.tx.taxi는 Monero에 중점을 둔 Mempool Open Source Project의 포크입니다. xmr.tx.taxi 이름, Monero 관련 문구 및 조정된 기능은 이 포크만을 설명합니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.4" datatype="html">
+        <source>Upstream Attribution</source><target state="translated">원본 프로젝트 저작권 표시</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.5" datatype="html">
+        <source>The upstream project, its source code, visual system, and trademarks belong to their respective owners. xmr.tx.taxi is not affiliated with, sponsored by, or endorsed by Mempool Holdings S.A. de C.V. References to mempool.space or The Mempool Open Source Project are nominative attribution to the upstream software this fork derives from.</source><target state="translated">원본 프로젝트, 소스 코드, 시각 시스템 및 상표는 각 소유자에게 귀속됩니다. xmr.tx.taxi는 Mempool Holdings S.A. de C.V.와 제휴하지 않으며 해당 회사의 후원이나 승인을 받지 않았습니다. mempool.space 또는 Mempool Open Source Project에 대한 언급은 이 포크의 기반이 된 원본 소프트웨어를 표시하기 위한 것입니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.6" datatype="html">
+        <source>Monero Attribution</source><target state="translated">Monero 저작권 표시</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.7" datatype="html">
+        <source>Monero, XMR, and related marks belong to their respective communities and rightsholders. This explorer is an independent interface for public Monero chain data and is not an official Monero Project website.</source><target state="translated">Monero, XMR 및 관련 표시는 각 커뮤니티와 권리자에게 귀속됩니다. 이 탐색기는 공개 Monero 체인 데이터를 위한 독립 인터페이스이며 Monero Project의 공식 웹사이트가 아닙니다.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.8" datatype="html">
+        <source>License</source><target state="translated">라이선스</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.9" datatype="html">
+        <source>This fork follows the upstream AGPLv3 license obligations. License notices are included with this deployment; contact the operator for applicable source and license information.</source><target state="translated">이 포크는 원본 프로젝트의 AGPLv3 라이선스 의무를 따릅니다. 이 배포본에 라이선스 고지가 포함되어 있으며 적용되는 소스와 라이선스 정보는 운영자에게 문의하세요.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.meta-title" datatype="html">
+        <source>Trademark &amp; Attribution</source><target state="translated">상표 및 저작권 표시</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.meta-description" datatype="html">
+        <source>Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.</source><target state="translated">원본 mempool/mempool 저작권 표시와 Monero 프로젝트로부터의 독립성을 포함한 xmr.tx.taxi 상표 및 저작권 안내.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
