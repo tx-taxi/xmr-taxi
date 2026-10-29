@@ -50,6 +50,7 @@ export class SearchFormComponent implements OnInit {
   readonly sourceChainId = 'monero';
   readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/monero.png';
   readonly defaultChainIconAlt = $localize`:@@xmr.search.moneroAlt:Monero explorer`;
+  readonly chooseSearchChainLabel = $localize`:@@xmr.search.chooseChain:Choose search chain`;
   readonly registryUnavailableLabel = $localize`:@@xmr.search.registryUnavailable:Explorer registry unavailable`;
   readonly loadingExplorersLabel = $localize`:@@xmr.search.loadingExplorers:Loading explorers`;
   readonly foundLabel = $localize`:@@xmr.search.found:Found`;
