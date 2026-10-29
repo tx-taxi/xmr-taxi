@@ -15608,6 +15608,10 @@
           <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="meta.description.xmr.status" datatype="html">
+        <source>Live xmr.tx.taxi backend and monerod health, sync state, version, peers, and storage status.</source>
+        <target>xmr.tx.taxi 백엔드와 monerod의 실시간 상태, 동기화 상태, 버전, 피어 및 저장 공간을 확인합니다.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
