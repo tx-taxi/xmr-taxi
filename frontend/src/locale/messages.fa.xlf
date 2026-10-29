@@ -11764,6 +11764,1314 @@
         <source>Server-Sent Events</source>
         <target>رویدادهای ارسالی از سرور</target>
       </trans-unit>
+          <trans-unit id="xmr.about.title" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">دربارهٔ xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.tagline" datatype="html">
+        <source>The Monero explorer in the tx.taxi family.</source><target state="translated">کاوشگر Monero در خانوادهٔ tx.taxi.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.projectLinks" datatype="html">
+        <source>Project links</source><target state="translated">پیوندهای پروژه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.documentation" datatype="html">
+        <source>Monero documentation</source><target state="translated">مستندات Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.contact" datatype="html">
+        <source>Contact the maintainer</source><target state="translated">تماس با نگه‌دارنده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.description" datatype="html">
+        <source>xmr.tx.taxi adapts the Mempool Open Source Project interface for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It surfaces what the chain alone proves - height, hashrate, pending transaction activity, fee tiers, ring information, and RingCT type - and stops there. Amounts are hidden by RingCT and recipients by stealth addresses and stay hidden in the default render.</source><target state="translated">xmr.tx.taxi رابط Mempool Open Source Project را برای <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> سازگار می‌کند. فقط اطلاعات قابل تأیید زنجیره، از جمله ارتفاع، نرخ هش، تراکنش‌های در انتظار، سطوح کارمزد، اطلاعات حلقه و نوع RingCT را نشان می‌دهد. مبلغ‌ها با RingCT و گیرندگان با آدرس‌های مخفی پنهان می‌شوند و در نمایش پیش‌فرض پنهان می‌مانند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacy" datatype="html">
+        <source>Privacy by default</source><target state="translated">حریم خصوصی به‌صورت پیش‌فرض</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.privacyDescription" datatype="html">
+        <source>Transaction-detail pages blur sensitive fields by design. Participant-side disclosure is limited to flows that match Monero's privacy model:</source><target state="translated">صفحه‌های جزئیات تراکنش عمداً فیلدهای حساس را محو می‌کنند. افشای اطلاعات توسط مشارکت‌کنندگان به روش‌های سازگار با مدل حریم خصوصی Monero محدود است:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.recipientChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Recipient checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — require the recipient's own wallet/view key tooling. Private keys should stay local.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>بررسی گیرنده<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> به کیف پول یا ابزار کلید مشاهدهٔ خود گیرنده نیاز دارد. کلیدهای خصوصی باید روی دستگاه بمانند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.proofChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_proof verification<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> — a tx_proof signature plus recipient address can be checked by the backend when the operator configures monero-wallet-rpc. No private keys are sent.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>بررسی tx_proof<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: اگر اپراتور monero-wallet-rpc را تنظیم کند، سرور می‌تواند امضای tx_proof و آدرس گیرنده را بررسی کند. هیچ کلید خصوصی ارسال نمی‌شود.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.secretChecks" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tx_secret_key checks<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> - belong in local wallet tooling; xmr.tx.taxi does not ask users to send that key to the server.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>بررسی tx_secret_key<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> باید با ابزار محلی کیف پول انجام شود؛ xmr.tx.taxi از کاربران نمی‌خواهد این کلید را به سرور بفرستند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemon" datatype="html">
+        <source>Daemon</source><target state="translated">دیمون</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.daemonDescription" datatype="html">
+        <source>This deployment uses a configured pool of public restricted-RPC Monero nodes with ordered fallbacks. Operators can point a self-hosted instance at any compatible <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> JSON-RPC endpoint.</source><target state="translated">این نمونه از مجموعه‌ای تنظیم‌شده از گره‌های عمومی Monero با RPC محدود و گره‌های جایگزین مرتب‌شده استفاده می‌کند. اپراتورها می‌توانند نمونهٔ میزبانی‌شدهٔ خود را به هر نقطهٔ JSON-RPC سازگار با <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>monerod<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> متصل کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.license" datatype="html">
+        <source>License</source><target state="translated">مجوز</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.licenseDescription" datatype="html">
+        <source>xmr.tx.taxi follows the upstream AGPLv3 license obligations. The Mempool Open Source Project created the interface patterns on which this explorer is based.</source><target state="translated">xmr.tx.taxi از تعهدات مجوز AGPLv3 پروژهٔ اصلی پیروی می‌کند. Mempool Open Source Project الگوهای رابطی را ساخته که این کاوشگر بر آن‌ها بنا شده است.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSource" datatype="html">
+        <source>Built on open source</source><target state="translated">ساخته‌شده بر پایهٔ متن‌باز</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.about.openSourceDescription" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source><target state="translated">این کاوشگر بر پایهٔ <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ساخته شده است. <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>انتساب به اشخاص ثالث<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> را ببینید و برای اطلاعات کد منبع و مجوز با نگه‌دارنده تماس بگیرید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.unavailable" datatype="html">
+        <source>Fiat value unavailable</source><target state="translated">ارزش به پول رایج در دسترس نیست</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/amount/amount.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.dashboard" datatype="html">
+        <source>Monero explorer dashboard</source><target state="translated">داشبورد کاوشگر Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.returnHub" datatype="html">
+        <source>Back to tx.taxi</source><target state="translated">بازگشت به tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.brand" datatype="html">
+        <source>xmr.tx.taxi dashboard</source><target state="translated">داشبورد xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockSize" datatype="html">
+        <source>Switch to displaying block sizes</source><target state="translated">نمایش اندازهٔ بلاک‌ها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.blockFees" datatype="html">
+        <source>Switch to displaying total fees per block</source><target state="translated">نمایش مجموع کارمزد هر بلاک</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestRight" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source><target state="translated">نمایش جدیدترین بلاک‌ها در سمت راست</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.strip.newestLeft" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source><target state="translated">نمایش جدیدترین بلاک‌ها در سمت چپ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleDifficulty" datatype="html">
+        <source>difficulty</source><target state="translated">سختی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.toggleRewards" datatype="html">
+        <source>rewards</source><target state="translated">پاداش‌ها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.paceHelp" datatype="html">
+        <source>Recent blocks compared with Monero's two-minute target</source><target state="translated">بلاک‌های اخیر در مقایسه با هدف دو دقیقه‌ای Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.pace" datatype="html">
+        <source>Block pace</source><target state="translated">سرعت بلاک‌ها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.change" datatype="html">
+        <source>Difficulty Δ</source><target state="translated">تغییر سختی Δ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.title" datatype="html">
+        <source>Difficulty Adjustment</source><target state="translated">تنظیم سختی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.difficulty.rewardsTitle" datatype="html">
+        <source>Reward stats</source><target state="translated">آمار پاداش</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.krakenTrade" datatype="html">
+        <source>Kraken last trade</source><target state="translated">آخرین معاملهٔ Kraken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.stale" datatype="html">
+        <source> · stale</source><target state="translated"> · داده قدیمی است</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.reference" datatype="html">
+        <source>ECB reference rate</source><target state="translated">نرخ مرجع بانک مرکزی اروپا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.fiat.referenceStale" datatype="html">
+        <source>ECB reference rate; update unavailable</source><target state="translated">نرخ مرجع بانک مرکزی اروپا؛ به‌روزرسانی در دسترس نیست</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/fiat-selector/fiat-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.dashboard" datatype="html">
+        <source>Dashboard</source><target state="translated">داشبورد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.mining" datatype="html">
+        <source>Mining dashboard</source><target state="translated">داشبورد استخراج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.blocks" datatype="html">
+        <source>Recent blocks</source><target state="translated">بلاک‌های اخیر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.graphs" datatype="html">
+        <source>Graphs</source><target state="translated">نمودارها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.docs" datatype="html">
+        <source>Documentation</source><target state="translated">مستندات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.nav.about" datatype="html">
+        <source>About xmr.tx.taxi</source><target state="translated">دربارهٔ xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchForm" datatype="html">
+        <source>Chain search</source><target state="translated">جست‌وجوی زنجیره</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.chooseChain" datatype="html">
+        <source>Choose search chain</source><target state="translated">انتخاب زنجیره برای جست‌وجو</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selectedExplorer" datatype="html">
+        <source>Selected explorer</source><target state="translated">کاوشگر انتخاب‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.selected" datatype="html">
+        <source>SELECTED</source><target state="translated">انتخاب‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.automatic" datatype="html">
+        <source>Automatic Routing</source><target state="translated">مسیریابی خودکار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openHubNewTab" datatype="html">
+        <source>Open tx.taxi in a new tab</source><target state="translated">باز کردن tx.taxi در زبانهٔ جدید</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.viewHub" datatype="html">
+        <source>View Hub</source><target state="translated">مشاهدهٔ صفحهٔ اصلی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.routingHint" datatype="html">
+        <source>Or go straight to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[your search]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source><target state="translated">یا مستقیم به <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx.taxi/[عبارت جست‌وجو]<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> بروید</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source><target state="translated">کاوشگرهای بومی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source><target state="translated">فهرست کاوشگرها در دسترس نیست</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.thirdParty" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source><target state="translated">کاوشگرهای شخص ثالث</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.open" datatype="html">
+        <source>Open</source><target state="translated">باز کردن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.opened" datatype="html">
+        <source>Opened</source><target state="translated">باز است</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switch" datatype="html">
+        <source>Switch</source><target state="translated">تغییر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source><target state="translated">در حال بارگذاری کاوشگرها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.searchSelected" datatype="html">
+        <source>Search selected chain</source><target state="translated">جست‌وجو در زنجیرهٔ انتخاب‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.moneroAlt" datatype="html">
+        <source>Monero explorer</source><target state="translated">کاوشگر Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.found" datatype="html">
+        <source>Found</source><target state="translated">پیدا شد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.possible" datatype="html">
+        <source>Possible</source><target state="translated">احتمالی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.additionalExplorers" datatype="html">
+        <source><x id="name" equiv-text="name"/> additional explorers</source><target state="translated">کاوشگرهای بیشتر: <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorer" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/></source><target state="translated">باز کردن <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.openExplorerNewTab" datatype="html">
+        <source>Open <x id="name" equiv-text="name"/> in a new tab</source><target state="translated">باز کردن <x id="name" equiv-text="name"/> در زبانهٔ جدید</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.switchExplorer" datatype="html">
+        <source>Switch to <x id="name" equiv-text="name"/></source><target state="translated">تغییر به <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideOne" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">پنهان کردن <x id="count" equiv-text="count"/> گزینهٔ اضافی <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.hideMany" datatype="html">
+        <source>Hide <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">پنهان کردن <x id="count" equiv-text="count"/> گزینهٔ اضافی <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showOne" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> option</source><target state="translated">نمایش <x id="count" equiv-text="count"/> گزینهٔ اضافی <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.showMany" datatype="html">
+        <source>Show <x id="count" equiv-text="count"/> additional <x id="name" equiv-text="name"/> options</source><target state="translated">نمایش <x id="count" equiv-text="count"/> گزینهٔ اضافی <x id="name" equiv-text="name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source><target state="translated">یک تاکسی صدا بزنید؛ هر چیزی را اینجا جای‌گذاری کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.suggestions" datatype="html">
+        <source>Monero search suggestions</source><target state="translated">پیشنهادهای جست‌وجوی Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockHeight" datatype="html">
+        <source>Monero Block Height</source><target state="translated">ارتفاع بلاک Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.blockOrTransaction" datatype="html">
+        <source>Monero Block / Transaction</source><target state="translated">بلاک یا تراکنش Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddress" datatype="html">
+        <source>Monero addresses are private</source><target state="translated">آدرس‌های Monero خصوصی هستند</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.search.privateAddressHelp" datatype="html">
+        <source>Public chain data cannot produce an address history. Open a transaction to verify a payment with its proof or keys.</source><target state="translated">از داده‌های عمومی زنجیره نمی‌توان تاریخچهٔ آدرس را به دست آورد. تراکنشی را باز کنید تا پرداخت را با اثبات یا کلیدهای آن بررسی کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-fee-rate-unavailable" datatype="html">
+        <source>Unavailable for pruned data</source><target state="translated">برای داده‌های هرس‌شده در دسترس نیست</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.pruned-size" datatype="html">
+        <source>Pruned data size</source><target state="translated">اندازهٔ داده‌های هرس‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.serialized-size" datatype="html">
+        <source>Serialized size</source><target state="translated">اندازهٔ سریال‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.unlock-time" datatype="html">
+        <source>Unlock time</source><target state="translated">زمان باز شدن قفل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.decoded" datatype="html">
+        <source>Decoded transaction</source><target state="translated">تراکنش رمزگشایی‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra" datatype="html">
+        <source>Transaction extra</source><target state="translated">دادهٔ اضافی تراکنش</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.raw-extra" datatype="html">
+        <source>Raw tx_extra</source><target state="translated">tx_extra خام</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.empty-extra" datatype="html">
+        <source>Empty</source><target state="translated">خالی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.extra-unrecognized" datatype="html">
+        <source>Some extra fields are unrecognized; the complete raw bytes are shown above.</source><target state="translated">برخی فیلدهای اضافی شناخته نشدند؛ بایت‌های خام کامل در بالا نشان داده شده‌اند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-verification" datatype="html">
+        <source>Payment verification</source><target state="translated">بررسی پرداخت</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verification-mode" datatype="html">
+        <source>Monero payment verification mode</source><target state="translated">روش بررسی پرداخت Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.received" datatype="html">
+        <source>Received</source><target state="translated">دریافت‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-help" datatype="html">
+        <source> tx_proof verification uses the backend wallet RPC when configured. Private view keys and tx_secret_key values are checked locally in this browser and are not sent to xmr.tx.taxi. </source><target state="translated">بررسی tx_proof در صورت تنظیم از RPC کیف پول سرور استفاده می‌کند. کلیدهای مشاهدهٔ خصوصی و مقادیر tx_secret_key به‌صورت محلی در این مرورگر بررسی می‌شوند و به xmr.tx.taxi ارسال نمی‌شوند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.recipient-address" datatype="html">
+        <source>Recipient address</source><target state="translated">آدرس گیرنده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-message" datatype="html">
+        <source>Message</source><target state="translated">پیام</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-signature" datatype="html">
+        <source>tx_proof signature</source><target state="translated">امضای tx_proof</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verifying" datatype="html">
+        <source>Verifying...</source><target state="translated">در حال بررسی...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.verify-proof" datatype="html">
+        <source>Verify proof</source><target state="translated">بررسی اثبات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.proof-verified" datatype="html">
+        <source>Proof verified</source><target state="translated">اثبات بررسی شد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.confirmations" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/> confirmations</source><target state="translated">تأییدها: <x id="INTERPOLATION" equiv-text="{{ xmrProofResult.confirmations | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.in-mempool" datatype="html">
+        <source>In mempool</source><target state="translated">در ممپول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.private-view-key" datatype="html">
+        <source>Private view key</source><target state="translated">کلید مشاهدهٔ خصوصی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scanning" datatype="html">
+        <source>Scanning...</source><target state="translated">در حال اسکن...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.scan-transaction" datatype="html">
+        <source>Scan this tx</source><target state="translated">اسکن این تراکنش</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.checking" datatype="html">
+        <source>Checking...</source><target state="translated">در حال بررسی...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.check-key" datatype="html">
+        <source>Check key</source><target state="translated">بررسی کلید</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.payment-found" datatype="html">
+        <source>Payment found</source><target state="translated">پرداخت پیدا شد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.atomic-amount" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> atomic units </source><target state="translated"><x id="INTERPOLATION" equiv-text="{{ xmrLocalResult.receivedAtomic }}"/> واحد اتمی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">318,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofRequired" datatype="html">
+        <source>Address and tx_proof signature are required.</source><target state="translated">آدرس و امضای tx_proof لازم است.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.address" datatype="html">
+        <source>Enter a valid-looking Monero mainnet address.</source><target state="translated">آدرس شبکهٔ اصلی Monero را با قالب معتبر وارد کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">502</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">535</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.signature" datatype="html">
+        <source>Enter the tx_proof signature generated by a Monero wallet.</source><target state="translated">امضای tx_proof ساخته‌شده توسط کیف پول Monero را وارد کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofMessageLength" datatype="html">
+        <source>Proof messages must be <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> characters or less.</source><target state="translated">پیام اثبات نباید بیش از <x id="PH" equiv-text="this.xmrProofMessageMaxLength"/> نویسه باشد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">459</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofInvalid" datatype="html">
+        <source>The proof did not verify for this transaction and address.</source><target state="translated">اثبات برای این تراکنش و آدرس تأیید نشد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.proofUnavailable" datatype="html">
+        <source>Unable to verify proof.</source><target state="translated">بررسی اثبات ممکن نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewRequired" datatype="html">
+        <source>Address and private view key are required.</source><target state="translated">آدرس و کلید مشاهدهٔ خصوصی لازم است.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.loadFirst" datatype="html">
+        <source>Load a transaction before running local verification.</source><target state="translated">پیش از بررسی محلی یک تراکنش را بارگذاری کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">498</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.viewKey" datatype="html">
+        <source>Enter a 64-character hexadecimal private view key.</source><target state="translated">کلید مشاهدهٔ خصوصی ۶۴ نویسه‌ای شانزده‌شانزدهی را وارد کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretRequired" datatype="html">
+        <source>Address and tx_secret_key are required.</source><target state="translated">آدرس و tx_secret_key لازم است.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.secretKey" datatype="html">
+        <source>Enter the hexadecimal tx_secret_key from the sending wallet.</source><target state="translated">tx_secret_key شانزده‌شانزدهی را از کیف پول فرستنده وارد کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.tx.error.localUnavailable" datatype="html">
+        <source>Unable to verify this transaction locally.</source><target state="translated">بررسی محلی این تراکنش ممکن نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.ts</context>
+          <context context-type="linenumber">569</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.inputs" datatype="html">
+        <source>Inputs (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</source><target state="translated">ورودی‌ها (<x id="INTERPOLATION" equiv-text="{{ tx.vin.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></source><target state="translated">حلقهٔ <x id="INTERPOLATION" equiv-text="{{ vin.ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.key-image" datatype="html">
+        <source>Key image</source><target state="translated">تصویر کلید</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input-type" datatype="html">
+        <source>Input type</source><target state="translated">نوع ورودی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-size" datatype="html">
+        <source>Ring size</source><target state="translated">اندازهٔ حلقه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.relative-ring-offsets" datatype="html">
+        <source>Relative ring offsets</source><target state="translated">فاصله‌های نسبی حلقه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-members" datatype="html">
+        <source>Ring members</source><target state="translated">اعضای حلقه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-index" datatype="html">
+        <source>Output #<x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></source><target state="translated">خروجی شمارهٔ <x id="INTERPOLATION" equiv-text="{{ member.global_index | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.block-height" datatype="html">
+        <source>Block <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></source><target state="translated">بلاک <x id="INTERPOLATION" equiv-text="{{ member.height | number }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.blocks-earlier" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> blocks earlier</source><target state="translated"><x id="INTERPOLATION" equiv-text="blocks earlier&lt;/ng-container&gt; }"/> بلاک پیش‌تر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-key" datatype="html">
+        <source>Output key</source><target state="translated">کلید خروجی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.source-unavailable" datatype="html">
+        <source>Source transaction temporarily unavailable.</source><target state="translated">تراکنش منبع موقتاً در دسترس نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.no-decoys" datatype="html">
+        <source>This legacy input has no decoys.</source><target state="translated">این ورودی قدیمی طعمه ندارد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.decoys" datatype="html">
+        <source>Ring members include decoys; the actual spent output is not identified.</source><target state="translated">اعضای حلقه شامل طعمه‌ها هستند؛ خروجی واقعاً خرج‌شده مشخص نمی‌شود.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ring-details-unresolved" datatype="html">
+        <source>Some ring-member details were not resolved in this response.</source><target state="translated">برخی جزئیات اعضای حلقه در این پاسخ به دست نیامد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.outputs" datatype="html">
+        <source>Outputs (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</source><target state="translated">خروجی‌ها (<x id="INTERPOLATION" equiv-text="{{ tx.vout.length }}"/>)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-output" datatype="html">
+        <source>RingCT output</source><target state="translated">خروجی RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient-hidden" datatype="html">
+        <source>recipient hidden</source><target state="translated">گیرنده پنهان است</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output-type" datatype="html">
+        <source>Output type</source><target state="translated">نوع خروجی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount" datatype="html">
+        <source>Amount</source><target state="translated">مبلغ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-ringct" datatype="html">
+        <source>Hidden by RingCT</source><target state="translated">پنهان‌شده با RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.recipient" datatype="html">
+        <source>Recipient</source><target state="translated">گیرنده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.hidden-stealth" datatype="html">
+        <source>Hidden by stealth addressing</source><target state="translated">پنهان‌شده با آدرس مخفی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.global-output-index" datatype="html">
+        <source>Global output index</source><target state="translated">شاخص جهانی خروجی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.view-tag" datatype="html">
+        <source>View tag</source><target state="translated">برچسب مشاهده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-commitment" datatype="html">
+        <source>Amount commitment</source><target state="translated">تعهد مبلغ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.atomic-units" datatype="html">
+        <source>atomic units</source><target state="translated">واحد اتمی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.amount-hidden" datatype="html">
+        <source>Amount hidden</source><target state="translated">مبلغ پنهان است</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.coinbase" datatype="html">
+        <source>Coinbase</source><target state="translated">Coinbase</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.ringct-input" datatype="html">
+        <source>RingCT input</source><target state="translated">ورودی RingCT</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.legacy-ring-input" datatype="html">
+        <source>Legacy ring input</source><target state="translated">ورودی حلقه‌ای قدیمی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.input" datatype="html">
+        <source>Input</source><target state="translated">ورودی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.stealth-output" datatype="html">
+        <source>Stealth output</source><target state="translated">خروجی مخفی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.fee" datatype="html">
+        <source>Fee</source><target state="translated">کارمزد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.output" datatype="html">
+        <source>Output</source><target state="translated">خروجی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-global-output" datatype="html">
+        <source>global output <x id="index" equiv-text="member.global_index.toLocaleString()"/></source><target state="translated">خروجی جهانی <x id="index" equiv-text="member.global_index.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-height" datatype="html">
+        <source>height <x id="height" equiv-text="member.height.toLocaleString()"/></source><target state="translated">ارتفاع <x id="height" equiv-text="member.height.toLocaleString()"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-blocks-before-spend" datatype="html">
+        <source><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> blocks before spend</source><target state="translated"><x id="count" equiv-text="member.age_blocks.toLocaleString()"/> بلاک پیش از خرج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.tooltip-locked" datatype="html">
+        <source>locked</source><target state="translated">قفل‌شده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-amount-hidden" datatype="html">
+        <source>Transaction amount hidden by RingCT</source><target state="translated">مبلغ تراکنش با RingCT پنهان شده است</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.list.aria-change-denomination" datatype="html">
+        <source>Change amount denomination</source><target state="translated">واحد مبلغ باقی‌مانده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.miner" datatype="html">
+        <source>Miner transaction</source><target state="translated">تراکنش استخراج‌کننده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacyHelp" datatype="html">
+        <source>Pre-RingCT transaction; input and output amounts are public</source><target state="translated">تراکنش پیش از RingCT؛ مبلغ ورودی‌ها و خروجی‌ها عمومی است</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.legacy" datatype="html">
+        <source>Legacy · public amounts</source><target state="translated">قدیمی · مبلغ‌ها عمومی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTagsHelp" datatype="html">
+        <source>View tags help wallets scan outputs</source><target state="translated">برچسب‌های مشاهده به کیف پول‌ها در اسکن خروجی‌ها کمک می‌کنند</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.viewTags" datatype="html">
+        <source>View tags</source><target state="translated">برچسب‌های مشاهده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringHelp" datatype="html">
+        <source>Number of members in the first input's ring</source><target state="translated">تعداد اعضای حلقهٔ ورودی اول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ring" datatype="html">
+        <source>Ring <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></source><target state="translated">حلقهٔ <x id="INTERPOLATION" equiv-text="{{ tx.vin[0].ring_size }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.features.ringType" datatype="html">
+        <source>RingCT type <x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></source><target state="translated">نوع RingCT ‏<x id="type" equiv-text="this.tx.rct_type"/>: <x id="name" equiv-text="this.tx.rct_type_name"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.dashboard.pendingTransactions" datatype="html">
+        <source>Pending Transactions</source><target state="translated">تراکنش‌های در انتظار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.totalFees" datatype="html">
+        <source>Total fees</source><target state="translated">مجموع کارمزدها</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.medianFeeRate" datatype="html">
+        <source>Median fee rate</source><target state="translated">میانهٔ نرخ کارمزد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.block.tooltip.feeRange" datatype="html">
+        <source>Fee range</source><target state="translated">بازهٔ کارمزد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
