@@ -14717,6 +14717,721 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="xmr.docs.heading" datatype="html">
+        <source>Documentation</source><target state="translated">Документація</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html">
+        <source>Documentation sections</source><target state="translated">Розділи документації</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html">
+        <source>On this page</source><target state="translated">На цій сторінці</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html">
+        <source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target state="translated">xmr.tx.taxi показує публічні дані вузла й блокчейна. Monero навмисно приховує суми платежів, отримувачів та історію адрес, тому оглядач зазначає ці обмеження замість припущень.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html">
+        <source>What is xmr.tx.taxi?</source><target state="translated">Що таке xmr.tx.taxi?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.whatDescription" datatype="html">
+        <source>A block and pending-transaction explorer for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. It adapts the familiar mempool explorer view to data a Monero node can prove publicly.</source><target state="translated">Оглядач блоків і транзакцій <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.getmonero.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>Monero<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> в очікуванні. Він адаптує звичний інтерфейс оглядача мемпулу до даних, які вузол Monero може підтвердити публічно.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html">
+        <source>What is a mempool?</source><target state="translated">Що таке мемпул?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolDescription" datatype="html">
+        <source>A node-local set of valid transactions observed but not yet included in a block. There is no single global mempool: the site shows the configured daemon’s <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> response when last polled.</source><target state="translated">Це локальний набір дійсних транзакцій, які вузол спостерігає, але ще не включив до блоку. Єдиного глобального мемпулу немає: сайт показує останню відповідь <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>get_transaction_pool<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> налаштованого демона.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html">
+        <source>Why are amounts hidden?</source><target state="translated">Чому суми приховано?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html">
+        <source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source><target state="translated">RingCT приховує суми виходів за допомогою зобов’язань, а приховані адреси приховують отримувачів за одноразовими виходами. Публічні дані містять структуру транзакцій, комісії, включення до блоку, образи ключів і посилання на учасників кільця, але не дають визначити суми платежів або отримувачів.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html">
+        <source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source><target state="translated">Перевірка доказів транзакцій і сканування гаманця виконуються учасниками; вони не роблять історію публічної адреси загальнодоступною.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html">
+        <source>Why is there no public address history?</source><target state="translated">Чому немає публічної історії адреси?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html">
+        <source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target state="translated">Адреса Monero не є обліковим записом блокчейна з видимими виходами. Гаманці використовують ключі перегляду для розпізнавання власних одноразових виходів. Оглядач не стверджує, що знає баланс, набір UTXO чи історію транзакцій адреси.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html">
+        <source>How do Monero fees work?</source><target state="translated">Як працюють комісії Monero?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html">
+        <source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target state="translated">Публічні ставки комісії виражаються в атомних одиницях за байт. Демон оцінює ставки для низького, звичайного, високого й максимального пріоритету; гаманець застосовує вибрану ставку до ваги транзакції з урахуванням квантування комісії. Прогнозовані блоки узагальнюють спостережені комісії та вагу транзакцій в очікуванні й не гарантують включення.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html">
+        <source>What does pending or confirmed mean?</source><target state="translated">Що означає «очікує» або «підтверджено»?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.confirmationDescription" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Pending<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means this daemon currently observes the transaction in its pool. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Confirmed<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> means a daemon returned it as included at a block height; confirmations grow as newer blocks arrive. Absence from one node’s pool is not proof a transaction never propagated or will not confirm.</source><target state="translated"><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Очікує<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> означає, що цей демон зараз спостерігає транзакцію у своєму мемпулі. <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Підтверджено<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> означає, що демон повідомив про її включення до блоку на певній висоті; кількість підтверджень зростає з появою нових блоків. Відсутність у мемпулі одного вузла не доводить, що транзакція не поширювалася або не буде підтверджена.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html">
+        <source>Can I verify a payment?</source><target state="translated">Чи можна перевірити платіж?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.proofDescription" datatype="html">
+        <source>The transaction page can verify a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> when monero-wallet-rpc is configured. Recipient scans with a private view key and sender checks with a transaction secret key run in the browser; private key material is not sent to this API. A private view key alone is not a subaddress-proof tool.</source><target state="translated">Сторінка транзакції може перевірити публічний доказ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, якщо налаштовано monero-wallet-rpc. Сканування отримувачем із приватним ключем перегляду та перевірка відправником із секретним ключем транзакції виконуються в браузері; приватні ключі не надсилаються до API. Один приватний ключ перегляду не є інструментом доказу субадреси.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html">
+        <source>How are mining pools identified?</source><target state="translated">Як визначаються майнінг-пули?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDescription" datatype="html">
+        <source>Pool labels are best-effort: public miner-transaction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> markers and, where published, proof-registry evidence. Unattributed blocks remain <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Unknown<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; a label never identifies an individual miner.</source><target state="translated">Пули визначаються за можливості: за публічними маркерами <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>extra<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> транзакції майнера та, за наявності, даними реєстру доказів. Блоки без атрибуції залишаються <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>невідомими<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>; назва пулу не визначає окремого майнера.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.restDescription" datatype="html">
+        <source>Documented routes are read-only and same-origin under <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. No authentication, wallet, or account API is exposed. Values are atomic units where a route exposes a fee or reward.</source><target state="translated">Описані маршрути доступні лише для читання та розташовані на тому самому джерелі за адресою <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. API для авторизації, гаманців або облікових записів не надається. Комісії та винагороди повертаються в атомних одиницях.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocksTitle" datatype="html">
+        <source>Chain and blocks <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Блокчейн і блоки <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html">
+        <source>Endpoint</source><target state="translated">Кінцева точка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html">
+        <source>Public result</source><target state="translated">Публічний результат</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html">
+        <source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target state="translated">Стан демона, висота, складність, хешрейт, піри та кількість транзакцій мемпулу.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html">
+        <source>Recent block headers; count is capped at 25.</source><target state="translated">Останні заголовки блоків; не більше 25.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html">
+        <source>Up to 25 headers ending at a height.</source><target state="translated">До 25 заголовків, що закінчуються на зазначеній висоті.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html">
+        <source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target state="translated">Заголовок, хеші транзакцій, публічна статистика комісій та доступна атрибуція пулу.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html">
+        <source>Privacy-safe summaries used by the block visualization.</source><target state="translated">Підсумки для візуалізації блоку, що зберігають конфіденційність.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html">
+        <source>The daemon’s raw Monero block blob.</source><target state="translated">Початковий blob блоку Monero, отриманий від демона.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html">
+        <source>Every-block Monero retarget metadata.</source><target state="translated">Метадані перерахунку складності Monero для кожного блоку.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempoolTitle" datatype="html">
+        <source>Transactions and mempool <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Транзакції та мемпул <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html">
+        <source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target state="translated">Стан, комісія, розмір і вага, підтвердження, публічні дані кільця та ознаки RingCT. Адреса отримувача й суми виходів відсутні.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html">
+        <source>Mempool blob or available pruned confirmed transaction hex.</source><target state="translated">Blob транзакції мемпулу або доступне шістнадцяткове представлення скороченої підтвердженої транзакції.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html">
+        <source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source><target state="translated">Спостережена кількість транзакцій, загальна вага й комісії та поля транзакцій, що зберігають конфіденційність.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html">
+        <source>Projected pending blocks from the observed pool.</source><target state="translated">Прогнозовані блоки в очікуванні на основі спостереженого мемпулу.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.timesResult" datatype="html">
+        <source>Known mempool receive times; confirmed or unknown values are <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Відомий час отримання транзакцій мемпулом; для підтверджених або невідомих значень повертається <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>0<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html">
+        <source>Live-client bootstrap snapshot.</source><target state="translated">Початковий знімок для клієнта в реальному часі.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistoryTitle" datatype="html">
+        <source>Fees and history <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Комісії та історія <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html">
+        <source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target state="translated">Оцінки для низького, звичайного, високого й максимального пріоритету в атомних одиницях за байт і маска квантування.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.statisticsResult" datatype="html">
+        <source>Persisted one-minute observations for <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Збережені спостереження з інтервалом у хвилину за <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>2h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>3d<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> або <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html">
+        <source>Current or timestamped locally indexed fiat conversion data.</source><target state="translated">Поточні або локально індексовані дані валютного перерахунку з позначкою часу.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningDataTitle" datatype="html">
+        <source>Mining data <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Дані майнінгу <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>GET<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.historyPeriods" datatype="html">
+        <source>Historical graph routes accept periods such as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Маршрути історичних графіків приймають періоди <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>24h<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1w<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>1m<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> і <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>all<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html">
+        <source>Difficulty-derived network hashrate history.</source><target state="translated">Історія хешрейту мережі, обчислена за складністю.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html">
+        <source>Indexed block fee, subsidy, reward, and fiat series.</source><target state="translated">Індексовані ряди комісій, субсидій, винагород і фіатної вартості блоків.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html">
+        <source>Public fee-rate buckets and block size/weight history.</source><target state="translated">Публічні діапазони ставок комісії та історія розміру й ваги блоків.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html">
+        <source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source><target state="translated">Статистика пулів за доступними маркерами; блоки без атрибуції залишаються невідомими.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProofTitle" datatype="html">
+        <source>Transaction proof verification <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Перевірка доказу транзакції <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verifyDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> accepts a public <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, address, and optional message. It returns <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> if monero-wallet-rpc is unavailable. Never send a private view key or transaction secret key to this endpoint.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/tx/:hash/verify-proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> приймає публічний доказ <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>tx_proof<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, адресу та необов’язкове повідомлення. Якщо monero-wallet-rpc недоступний, повертається <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>503<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Ніколи не надсилайте на цю кінцеву точку приватний ключ перегляду чи секретний ключ транзакції.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridgeTitle" datatype="html">
+        <source>Public daemon bridge <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source><target state="translated">Публічний міст демона <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>POST<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonDescription" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> proxy an allowlisted public daemon subset for browser-local verification. Wallet methods and secret-shaped fields are rejected; this is not a general remote node or wallet service.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/json_rpc<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> і <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>/monerod/:method<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> проксіюють дозволену підмножину публічних методів демона для локальної перевірки в браузері. Методи гаманця та поля, схожі на секрети, відхиляються; це не універсальний сервіс віддаленого вузла чи гаманця.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.websocketDescription" datatype="html">
+        <source>Connect to <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. The server immediately sends a snapshot; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> requests another. Messages use the established mempool protocol shape.</source><target state="translated">Підключіться до <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>wss://xmr.tx.taxi/api/v1/ws<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Сервер одразу надсилає знімок; <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ initMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> запитує новий. Повідомлення використовують усталений формат протоколу mempool.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html">
+        <source>Server messages</source><target state="translated">Повідомлення сервера</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventsDescription" datatype="html">
+        <source>Snapshots and updates can contain <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. A projected-block subscriber also receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Treat all as observations from the configured daemon, not global finality.</source><target state="translated">Знімки та оновлення можуть містити <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>block<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempool-blocks<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mempoolInfo<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>fees<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>bytesPerSecond<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> і <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>da<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Підписник прогнозованого блоку також отримує <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>projected-block-transactions<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Це спостереження налаштованого демона, а не глобальна остаточність.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html">
+        <source>Client messages</source><target state="translated">Повідомлення клієнта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html">
+        <source>Message</source><target state="translated">Повідомлення</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html">
+        <source>Behavior</source><target state="translated">Поведінка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html">
+        <source>Request the current snapshot.</source><target state="translated">Запитати поточний знімок.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.pingResult" datatype="html">
+        <source>Receives <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source><target state="translated">Отримує <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ pongMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html">
+        <source>Subscribe to a projected block snapshot by index.</source><target state="translated">Підписатися на знімок прогнозованого блоку за індексом.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html">
+        <source>Track public confirmation status for one transaction hash.</source><target state="translated">Відстежувати публічний стан підтвердження одного хешу транзакції.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html">
+        <source>Address tracking is intentionally not a public Monero stream feature.</source><target state="translated">Відстеження адрес навмисно не входить до функцій публічного потоку Monero.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.sseDescription" datatype="html">
+        <source>Open <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> as <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for one-way updates. Proxy buffering is disabled and the stream begins with a snapshot.</source><target state="translated">Відкрийте <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>https://xmr.tx.taxi/api/v1/events<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> як <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>text/event-stream<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> для односторонніх оновлень. Буферизацію проксі вимкнено, потік починається зі знімка.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html">
+        <source>Events and reconnection</source><target state="translated">Події та повторне підключення</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html">
+        <source>Event</source><target state="translated">Подія</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html">
+        <source>Payload</source><target state="translated">Дані</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html">
+        <source>Current daemon info and observed mempool hashes at connect.</source><target state="translated">Поточні відомості про демона та спостережені хеші мемпулу під час підключення.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html">
+        <source>A new public block header.</source><target state="translated">Новий публічний заголовок блоку.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.deltaResult" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for the observed pool.</source><target state="translated"><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/><x id="INTERPOLATION" equiv-text="{{ poolDeltaMessage }}"/><x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> для спостереженого мемпулу.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.reconnectDescription" datatype="html">
+        <source>A comment heartbeat is sent every 25 seconds. Native <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> reconnection is suitable for most clients; resync from the snapshot or REST after a disconnect.</source><target state="translated">Коментар heartbeat надсилається кожні 25 секунд. Вбудоване повторне підключення <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>EventSource<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> підходить більшості клієнтів; після відключення повторно синхронізуйтеся за знімком або REST.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html">
+        <source>Overview</source><target state="translated">Огляд</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html">
+        <source>Getting started</source><target state="translated">Початок роботи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html">
+        <source>Chain and blocks</source><target state="translated">Блокчейн і блоки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html">
+        <source>Endpoints</source><target state="translated">Кінцеві точки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html">
+        <source>Transactions and mempool</source><target state="translated">Транзакції та мемпул</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html">
+        <source>Fees and history</source><target state="translated">Комісії та історія</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html">
+        <source>Mining data</source><target state="translated">Дані майнінгу</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html">
+        <source>Transaction proof</source><target state="translated">Доказ транзакції</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html">
+        <source>Verification</source><target state="translated">Перевірка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html">
+        <source>Public daemon bridge</source><target state="translated">Публічний міст демона</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html">
+        <source>Connect and initialize</source><target state="translated">Підключення та ініціалізація</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html">
+        <source>Connection</source><target state="translated">Підключення</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html">
+        <source>Events</source><target state="translated">Події</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html">
+        <source>Commands</source><target state="translated">Команди</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html">
+        <source>Connect</source><target state="translated">Підключитися</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html">
+        <source>Documentation</source><target state="translated">Документація</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html">
+        <source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target state="translated">Документація оглядача Monero: публічні дані із захистом конфіденційності, кінцеві точки REST і потоки в реальному часі.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/xmr/docs/xmr-docs.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
