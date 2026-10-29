@@ -14570,6 +14570,335 @@
           <context context-type="linenumber">182</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="xmr.legal.privacy-policy.0" datatype="html">
+        <source>Privacy Policy</source><target state="translated">سیاست حریم خصوصی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source><target state="translated">به‌روزرسانی: ۱۶ مه ۲۰۲۶</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.2" datatype="html">
+        <source>Audience measurement</source><target state="translated">اندازه‌گیری مخاطبان</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.3" datatype="html">
+        <source>tx.taxi uses Cloudflare Web Analytics for page views and performance, and a first-party daily cookie shared across its explorers to count browsers once per UTC day. The daily audience collector stores only a daily identifier, the explorer hostname, and whether there was interaction. It does not receive search text, addresses, transaction IDs, URLs, or IP addresses. Individual daily records expire after 31 days; aggregate counts are retained for 400 days. Do Not Track and Global Privacy Control disable this first-party measurement.</source><target state="translated">tx.taxi از Cloudflare Web Analytics برای بازدید صفحه و عملکرد استفاده می‌کند و یک کوکی روزانهٔ متعلق به خود را بین کاوشگرها به اشتراک می‌گذارد تا مرورگرها را یک بار در هر روز UTC بشمارد. گردآورندهٔ مخاطبان روزانه فقط شناسهٔ روزانه، نام میزبان کاوشگر و وقوع تعامل را ذخیره می‌کند. متن جست‌وجو، آدرس‌ها، شناسهٔ تراکنش، URL یا آدرس IP را دریافت نمی‌کند. رکوردهای روزانهٔ فردی پس از ۳۱ روز منقضی می‌شوند؛ شمارش‌های تجمیعی ۴۰۰ روز نگهداری می‌شوند. Do Not Track و Global Privacy Control این اندازه‌گیری را غیرفعال می‌کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.4" datatype="html">
+        <source>Details and opt-out</source><target state="translated">جزئیات و انصراف از اندازه‌گیری</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.5" datatype="html">
+        <source>Use Your Own Node When Privacy Matters</source><target state="translated">هنگام اهمیت حریم خصوصی از گرهٔ خود استفاده کنید</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.6" datatype="html">
+        <source>xmr.tx.taxi displays public Monero chain and mempool data from the RPC providers configured by the site operator. For the strongest privacy, run your own Monero node and explorer instead of relying on a public service.</source><target state="translated">xmr.tx.taxi داده‌های عمومی زنجیره و ممپول Monero را از ارائه‌دهندگان RPC تنظیم‌شده توسط اپراتور سایت نمایش می‌دهد. برای بیشترین حریم خصوصی، به جای تکیه بر سرویس عمومی، گره و کاوشگر Monero خود را اجرا کنید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.7" datatype="html">
+        <source>What This Explorer Can See</source><target state="translated">این کاوشگر چه چیزهایی را می‌بیند</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.8" datatype="html">
+        <source>Regular page and API requests reveal standard web metadata to the operator, including your IP address, user agent, requested URL, and request time. Operators may keep server logs for reliability, abuse prevention, debugging, and capacity planning.</source><target state="translated">درخواست‌های عادی صفحه و API فراداده‌های استاندارد وب از جمله آدرس IP، عامل کاربر، URL درخواست‌شده و زمان درخواست را به اپراتور نشان می‌دهند. اپراتورها ممکن است برای پایداری، جلوگیری از سوءاستفاده، رفع اشکال و برنامه‌ریزی ظرفیت، گزارش سرور را نگه دارند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.9" datatype="html">
+        <source>What Monero Hides</source><target state="translated">Monero چه چیزهایی را پنهان می‌کند</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.10" datatype="html">
+        <source>Monero's RingCT and stealth-address design means this site cannot determine transaction recipients or transferred amounts from public chain data. xmr.tx.taxi does not build address histories, wallet histories, account pages, or public spent/unspent output claims.</source><target state="translated">طراحی RingCT و آدرس‌های مخفی Monero باعث می‌شود این سایت نتواند گیرندگان یا مبلغ انتقال را از داده‌های عمومی زنجیره تعیین کند. xmr.tx.taxi تاریخچهٔ آدرس و کیف پول یا صفحهٔ حساب نمی‌سازد و ادعای عمومی دربارهٔ خرج‌شدن یا نشدن خروجی‌ها ارائه نمی‌کند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.11" datatype="html">
+        <source>Proof Verification</source><target state="translated">بررسی اثبات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.12" datatype="html">
+        <source>The tx_proof verification form sends the transaction hash, recipient address, and proof signature to this instance's backend. A tx_proof signature is intended to be shared; private view keys, spend keys, seed phrases, and tx secret keys should not be sent to this server.</source><target state="translated">فرم بررسی tx_proof هش تراکنش، آدرس گیرنده و امضای اثبات را به سرور این نمونه می‌فرستد. امضای tx_proof برای اشتراک‌گذاری طراحی شده است؛ کلیدهای مشاهده و خرج خصوصی، عبارت بازیابی و کلیدهای محرمانهٔ تراکنش نباید به این سرور ارسال شوند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.13" datatype="html">
+        <source>Local Preferences</source><target state="translated">تنظیمات محلی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.14" datatype="html">
+        <source>The frontend may store local preferences such as language, theme, fiat currency, and timezone in your browser. These preferences are used to render the interface and are not needed for chain analysis.</source><target state="translated">رابط ممکن است تنظیمات محلی مانند زبان، پوسته، پول رایج و منطقهٔ زمانی را در مرورگر ذخیره کند. این تنظیمات برای نمایش رابط استفاده می‌شوند و برای تحلیل زنجیره لازم نیستند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.15" datatype="html">
+        <source>Third Parties</source><target state="translated">اشخاص ثالث</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.16" datatype="html">
+        <source>This instance may call configured upstream services such as a Monero daemon, fiat price provider, or wallet-RPC verifier. Public deployments should document their own logging, analytics, proxy, and retention policies alongside this baseline policy.</source><target state="translated">این نمونه ممکن است سرویس‌های خارجی تنظیم‌شده مانند دیمون Monero، ارائه‌دهندهٔ قیمت یا بررسی‌کنندهٔ wallet-RPC را فراخوانی کند. اپراتورهای عمومی باید سیاست‌های خود دربارهٔ ثبت گزارش، تحلیل، پروکسی و نگهداری داده را در کنار این سیاست پایه مستند کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-title" datatype="html">
+        <source>Privacy Policy</source><target state="translated">سیاست حریم خصوصی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.privacy-policy.meta-description" datatype="html">
+        <source>Privacy notes for xmr.tx.taxi, including public Monero data limits, local preferences, server logs, and tx_proof verification behavior.</source><target state="translated">حریم خصوصی xmr.tx.taxi: محدودیت داده‌های عمومی Monero، تنظیمات محلی، گزارش‌های سرور و بررسی tx_proof.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.0" datatype="html">
+        <source>Terms of Service</source><target state="translated">شرایط استفاده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.1" datatype="html">
+        <source>Updated: May 16, 2026</source><target state="translated">به‌روزرسانی: ۱۶ مه ۲۰۲۶</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.2" datatype="html">
+        <source>xmr.tx.taxi is a Monero block and pending transaction explorer derived from the Mempool Open Source Project. This instance provides public blockchain data from its configured Monero RPC providers and does not provide wallet, custody, exchange, investment, tax, legal, or transaction acceleration services.</source><target state="translated">xmr.tx.taxi کاوشگر بلاک‌ها و تراکنش‌های در انتظار Monero است که از Mempool Open Source Project مشتق شده است. این نمونه داده‌های عمومی بلاک‌چین را از ارائه‌دهندگان RPC تنظیم‌شدهٔ Monero ارائه می‌کند و خدمات کیف پول، نگهداری دارایی، مبادله، سرمایه‌گذاری، مالیات، مشاورهٔ حقوقی یا تسریع تراکنش ارائه نمی‌دهد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.3" datatype="html">
+        <source>By accessing this website, you agree to the following terms:</source><target state="translated">با دسترسی به این وب‌سایت، شرایط زیر را می‌پذیرید:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.4" datatype="html">
+        <source>No Warranty</source><target state="translated">بدون ضمانت</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.5" datatype="html">
+        <source>This website is provided on an "as is" and "as available" basis, without warranties or representations of any kind. Blockchain data, mempool data, fiat conversions, estimates, charts, and derived labels may be incomplete, delayed, unavailable, or inaccurate. You are responsible for independently verifying any data before relying on it.</source><target state="translated">این وب‌سایت «همان‌گونه که هست» و «در صورت دسترسی» بدون هیچ ضمانت یا اظهار نظری ارائه می‌شود. داده‌های بلاک‌چین و ممپول، تبدیل‌های پول رایج، برآوردها، نمودارها و برچسب‌های مشتق‌شده ممکن است ناقص، تأخیری، غیرقابل دسترس یا نادرست باشند. مسئولیت بررسی مستقل داده‌ها پیش از اتکا به آن‌ها بر عهدهٔ شماست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.6" datatype="html">
+        <source>No Liability</source><target state="translated">محدودیت مسئولیت</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.7" datatype="html">
+        <source>We are not liable for losses or damages that result from use of this website, its API, its data, unavailable service, delayed updates, incorrect interpretation, or any other content shown here. xmr.tx.taxi does not control the Monero network, does not mine blocks, does not relay privileged transactions, and cannot recover funds.</source><target state="translated">ما در قبال زیان یا خسارت ناشی از استفاده از سایت، API یا داده‌ها، عدم دسترسی سرویس، تأخیر به‌روزرسانی، تفسیر نادرست یا سایر محتوای نمایش‌داده‌شده مسئول نیستیم. xmr.tx.taxi شبکهٔ Monero را کنترل نمی‌کند، بلاک استخراج نمی‌کند، تراکنش‌های ویژه را منتقل نمی‌کند و قادر به بازیابی دارایی نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.8" datatype="html">
+        <source>Privacy Limits</source><target state="translated">محدودیت‌های حریم خصوصی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.9" datatype="html">
+        <source>Monero hides recipient addresses and transaction amounts by design. xmr.tx.taxi only shows public chain data and intentionally does not create address histories, wallet histories, UTXO-style views, payment-channel views, or fee-bump workflows. If you submit a tx_proof signature for verification, the signature and recipient address are sent to this instance's backend verifier; private view keys and tx secret keys should stay local.</source><target state="translated">Monero بنا بر طراحی آدرس گیرندگان و مبلغ تراکنش‌ها را پنهان می‌کند. xmr.tx.taxi فقط داده‌های عمومی زنجیره را نشان می‌دهد و عمداً تاریخچهٔ آدرس یا کیف پول، نمای UTXO یا کانال پرداخت، یا ابزار افزایش کارمزد نمی‌سازد. اگر امضای tx_proof را برای بررسی ارسال کنید، امضا و آدرس گیرنده به بررسی‌کنندهٔ سرور این نمونه فرستاده می‌شوند؛ کلیدهای مشاهدهٔ خصوصی و کلیدهای محرمانهٔ تراکنش باید محلی بمانند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.10" datatype="html">
+        <source>External Links</source><target state="translated">پیوندهای خارجی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.11" datatype="html">
+        <source>This site may link to Monero documentation, license information, or infrastructure dependencies. External websites have their own terms and policies.</source><target state="translated">این سایت ممکن است به مستندات Monero، اطلاعات مجوز یا سرویس‌های زیرساختی پیوند دهد. سایت‌های خارجی شرایط و سیاست‌های خود را دارند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.12" datatype="html">
+        <source>Open Source Attribution</source><target state="translated">انتساب متن‌باز</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.13" datatype="html">
+        <source>xmr.tx.taxi inherits the AGPLv3 licensing obligations of its upstream project. Mempool trademarks and logos remain property of their respective owners; xmr.tx.taxi is not affiliated with or endorsed by Mempool Holdings S.A. de C.V.</source><target state="translated">xmr.tx.taxi تعهدات مجوز AGPLv3 پروژهٔ اصلی را به ارث می‌برد. علامت‌ها و نشان‌های Mempool متعلق به صاحبان مربوطه هستند؛ xmr.tx.taxi به Mempool Holdings S.A. de C.V. وابسته نیست و تأیید آن شرکت را ندارد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.meta-title" datatype="html">
+        <source>Terms of Service</source><target state="translated">شرایط استفاده</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.terms-of-service.meta-description" datatype="html">
+        <source>Terms for using xmr.tx.taxi, a Monero block and mempool explorer that surfaces public chain data without wallet, custody, or transaction-priority services.</source><target state="translated">شرایط استفاده از xmr.tx.taxi، کاوشگر بلاک و ممپول Monero که داده‌های عمومی را بدون خدمات کیف پول، نگهداری دارایی یا اولویت‌بندی تراکنش نشان می‌دهد.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.0" datatype="html">
+        <source>Trademark &amp; Attribution</source><target state="translated">علامت تجاری و انتساب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.1" datatype="html">
+        <source>Updated: May 16, 2026</source><target state="translated">به‌روزرسانی: ۱۶ مه ۲۰۲۶</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.2" datatype="html">
+        <source>xmr.tx.taxi</source><target state="translated">xmr.tx.taxi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.3" datatype="html">
+        <source>xmr.tx.taxi is a Monero-focused fork of the Mempool Open Source Project. The xmr.tx.taxi name, Monero-oriented copy, and retargeted behavior describe this fork only.</source><target state="translated">xmr.tx.taxi انشعابی از Mempool Open Source Project با تمرکز بر Monero است. نام xmr.tx.taxi، متن‌های مرتبط با Monero و رفتار سازگارشده فقط این انشعاب را توصیف می‌کنند.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.4" datatype="html">
+        <source>Upstream Attribution</source><target state="translated">انتساب پروژهٔ اصلی</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.5" datatype="html">
+        <source>The upstream project, its source code, visual system, and trademarks belong to their respective owners. xmr.tx.taxi is not affiliated with, sponsored by, or endorsed by Mempool Holdings S.A. de C.V. References to mempool.space or The Mempool Open Source Project are nominative attribution to the upstream software this fork derives from.</source><target state="translated">پروژهٔ اصلی، کد منبع، سیستم بصری و علامت‌های آن متعلق به صاحبان مربوطه هستند. xmr.tx.taxi به Mempool Holdings S.A. de C.V. وابسته نیست و از آن حمایت یا تأیید دریافت نمی‌کند. اشاره به mempool.space یا Mempool Open Source Project برای انتساب به نرم‌افزار اصلی است که این انشعاب از آن مشتق شده است.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.6" datatype="html">
+        <source>Monero Attribution</source><target state="translated">انتساب Monero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.7" datatype="html">
+        <source>Monero, XMR, and related marks belong to their respective communities and rightsholders. This explorer is an independent interface for public Monero chain data and is not an official Monero Project website.</source><target state="translated">Monero، XMR و علامت‌های مرتبط متعلق به جوامع و صاحبان حقوق مربوطه هستند. این کاوشگر رابطی مستقل برای داده‌های عمومی زنجیرهٔ Monero است و وب‌سایت رسمی پروژهٔ Monero نیست.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.8" datatype="html">
+        <source>License</source><target state="translated">مجوز</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.9" datatype="html">
+        <source>This fork follows the upstream AGPLv3 license obligations. License notices are included with this deployment; contact the operator for applicable source and license information.</source><target state="translated">این انشعاب از تعهدات AGPLv3 پروژهٔ اصلی پیروی می‌کند. اعلان‌های مجوز در این نسخه گنجانده شده‌اند؛ برای کد منبع و اطلاعات مجوز با اپراتور تماس بگیرید.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.meta-title" datatype="html">
+        <source>Trademark &amp; Attribution</source><target state="translated">علامت تجاری و انتساب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="xmr.legal.trademark-policy.meta-description" datatype="html">
+        <source>Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.</source><target state="translated">علامت تجاری و انتساب xmr.tx.taxi، شامل انتساب به پروژهٔ اصلی mempool/mempool و استقلال از پروژهٔ Monero.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
