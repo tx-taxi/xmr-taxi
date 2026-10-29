@@ -11666,6 +11666,75 @@
       <trans-unit id="xmr.legal.trademark-policy.9" datatype="html"><source>This fork follows the upstream AGPLv3 license obligations. License notices are included with this deployment; contact the operator for applicable source and license information.</source><target>यो फोर्कले मूल AGPLv3 इजाजतपत्रका दायित्व पालना गर्छ। इजाजतपत्र सूचना यस इन्स्ट्यान्समा समावेश छन्; लागू हुने स्रोत र इजाजतपत्र जानकारीका लागि सञ्चालकलाई सम्पर्क गर्नुहोस्।</target></trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.meta-title" datatype="html"><source>Trademark &amp; Attribution</source><target>ट्रेडमार्क र श्रेय</target></trans-unit>
       <trans-unit id="xmr.legal.trademark-policy.meta-description" datatype="html"><source>Trademark and attribution notes for xmr.tx.taxi, including upstream mempool/mempool attribution and Monero project independence.</source><target>xmr.tx.taxi का ट्रेडमार्क र श्रेय सम्बन्धी जानकारी, मूल mempool परियोजनाको श्रेय र Monero परियोजनाबाट स्वतन्त्रतासहित।</target></trans-unit>
+      <trans-unit id="xmr.intro.aria" datatype="html"><source>About tx.taxi</source><target>tx.taxi बारे</target></trans-unit>
+      <trans-unit id="xmr.intro.title" datatype="html"><source>One search across chains.</source><target>विभिन्न चेनमा एउटै खोज।</target></trans-unit>
+      <trans-unit id="xmr.intro.description" datatype="html"><source>Paste a transaction, block or address into tx.taxi. Open a confirmed match, choose between possible networks, or head straight to your chain’s explorer.</source><target>tx.taxi मा कारोबार, ब्लक वा ठेगाना टाँस्नुहोस्। पुष्टि भएको परिणाम खोल्नुहोस्, सम्भावित नेटवर्कमध्ये छान्नुहोस् वा आफ्नो चेनको एक्सप्लोररमा सिधै जानुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.docs.heading" datatype="html"><source>Documentation</source><target>कागजात</target></trans-unit>
+      <trans-unit id="xmr.docs.sectionsAria" datatype="html"><source>Documentation sections</source><target>कागजातका खण्डहरू</target></trans-unit>
+      <trans-unit id="xmr.docs.onPageAria" datatype="html"><source>On this page</source><target>यस पृष्ठमा</target></trans-unit>
+      <trans-unit id="xmr.docs.welcome" datatype="html"><source>xmr.tx.taxi reports public node and chain data. Monero deliberately keeps payment values, recipients, and address histories private, so this explorer marks those limits instead of guessing.</source><target>xmr.tx.taxi ले सार्वजनिक नोड र चेन डेटा देखाउँछ। Monero ले भुक्तानी रकम, प्राप्तकर्ता र ठेगानाको इतिहास जानाजानी निजी राख्छ, त्यसैले एक्सप्लोररले अनुमान गर्नुको सट्टा ती सीमाहरू देखाउँछ।</target></trans-unit>
+      <trans-unit id="xmr.docs.what" datatype="html"><source>What is xmr.tx.taxi?</source><target>xmr.tx.taxi के हो?</target></trans-unit>
+      <trans-unit id="xmr.docs.mempool" datatype="html"><source>What is a mempool?</source><target>mempool के हो?</target></trans-unit>
+      <trans-unit id="xmr.docs.amounts" datatype="html"><source>Why are amounts hidden?</source><target>रकम किन लुकाइएको छ?</target></trans-unit>
+      <trans-unit id="xmr.docs.hidden" datatype="html"><source>RingCT hides output amounts with commitments, while stealth addresses hide recipients behind one-time outputs. Public data exposes transaction structure, fees, block inclusion, key images, and ring-member references, but cannot derive payment values or recipients.</source><target>RingCT ले कमिटमेन्ट प्रयोग गरी आउटपुट रकम लुकाउँछ, जबकि स्टेल्थ ठेगानाले एकपटक प्रयोग हुने आउटपुट पछाडि प्राप्तकर्ता लुकाउँछ। सार्वजनिक डेटाले कारोबार संरचना, शुल्क, ब्लकमा समावेश भएको अवस्था, कुञ्जी छवि र रिङ सदस्यका सन्दर्भ देखाउँछ, तर भुक्तानी रकम वा प्राप्तकर्ता निकाल्न सक्दैन।</target></trans-unit>
+      <trans-unit id="xmr.docs.walletScans" datatype="html"><source>Transaction proofs and wallet scans are participant checks; they do not turn a public address into a public history.</source><target>कारोबार प्रमाण र वालेट स्क्यान सहभागीका जाँच हुन्; तिनले सार्वजनिक ठेगानालाई सार्वजनिक इतिहासमा बदल्दैनन्।</target></trans-unit>
+      <trans-unit id="xmr.docs.addresses" datatype="html"><source>Why is there no public address history?</source><target>सार्वजनिक ठेगाना इतिहास किन छैन?</target></trans-unit>
+      <trans-unit id="xmr.docs.addressPrivacy" datatype="html"><source>A Monero address is not an on-chain account with visible outputs. Wallets use view keys to recognize their own one-time outputs. The explorer does not claim an account balance, UTXO set, or transaction history for an address.</source><target>Monero ठेगाना देखिने आउटपुट भएको अन-चेन खाता होइन। वालेटहरूले आफ्नै एकपटक प्रयोग हुने आउटपुट पहिचान गर्न हेर्ने कुञ्जी प्रयोग गर्छन्। एक्सप्लोररले ठेगानाको खाता ब्यालेन्स, UTXO सेट वा कारोबार इतिहास थाहा भएको दाबी गर्दैन।</target></trans-unit>
+      <trans-unit id="xmr.docs.fees" datatype="html"><source>How do Monero fees work?</source><target>Monero शुल्क कसरी काम गर्छ?</target></trans-unit>
+      <trans-unit id="xmr.docs.feesDescription" datatype="html"><source>Public fees are atomic units per byte. The daemon estimates slow, normal, fast, and fastest priority rates; wallets apply a chosen rate to transaction weight and fee quantization. Projected blocks summarize observed pending fee/weight data and do not guarantee inclusion.</source><target>सार्वजनिक शुल्क प्रति बाइट एटोमिक एकाइमा हुन्छ। डेमनले सुस्त, सामान्य, छिटो र सबैभन्दा छिटो प्राथमिकता दर अनुमान गर्छ; वालेटहरूले छानिएको दर कारोबारको भार र शुल्क क्वान्टाइजेसनमा लागू गर्छन्। अनुमानित ब्लकहरूले देखिएका प्रतीक्षारत शुल्क र भारको सार दिन्छन् र समावेश हुने ग्यारेन्टी गर्दैनन्।</target></trans-unit>
+      <trans-unit id="xmr.docs.confirmations" datatype="html"><source>What does pending or confirmed mean?</source><target>प्रतीक्षारत वा पुष्टि भएको भन्नाले के बुझिन्छ?</target></trans-unit>
+      <trans-unit id="xmr.docs.proof" datatype="html"><source>Can I verify a payment?</source><target>के म भुक्तानी जाँच गर्न सक्छु?</target></trans-unit>
+      <trans-unit id="xmr.docs.mining" datatype="html"><source>How are mining pools identified?</source><target>माइनिङ पूल कसरी पहिचान गरिन्छ?</target></trans-unit>
+      <trans-unit id="xmr.docs.endpoint" datatype="html"><source>Endpoint</source><target>एन्डपोइन्ट</target></trans-unit>
+      <trans-unit id="xmr.docs.publicResult" datatype="html"><source>Public result</source><target>सार्वजनिक नतिजा</target></trans-unit>
+      <trans-unit id="xmr.docs.infoResult" datatype="html"><source>Daemon status, height, difficulty, hashrate, peers, and mempool count.</source><target>डेमन स्थिति, उचाइ, कठिनाइ, ह्यासरेट, सहकर्मी र mempool संख्या।</target></trans-unit>
+      <trans-unit id="xmr.docs.blocksResult" datatype="html"><source>Recent block headers; count is capped at 25.</source><target>हालका ब्लक हेडर; बढीमा 25।</target></trans-unit>
+      <trans-unit id="xmr.docs.blocksHeightResult" datatype="html"><source>Up to 25 headers ending at a height.</source><target>दिएको उचाइमा अन्त्य हुने बढीमा 25 हेडर।</target></trans-unit>
+      <trans-unit id="xmr.docs.blockResult" datatype="html"><source>Header, transaction hashes, public fee stats, and best-effort pool attribution.</source><target>हेडर, कारोबार ह्यास, सार्वजनिक शुल्क तथ्याङ्क र उपलब्ध जानकारीअनुसार पूल पहिचान।</target></trans-unit>
+      <trans-unit id="xmr.docs.summaryResult" datatype="html"><source>Privacy-safe summaries used by the block visualization.</source><target>ब्लक दृश्यका लागि गोपनीयता सुरक्षित सारांश।</target></trans-unit>
+      <trans-unit id="xmr.docs.rawResult" datatype="html"><source>The daemon’s raw Monero block blob.</source><target>डेमनको कच्चा Monero ब्लक डेटा।</target></trans-unit>
+      <trans-unit id="xmr.docs.difficultyResult" datatype="html"><source>Every-block Monero retarget metadata.</source><target>प्रत्येक ब्लकमा Monero कठिनाइ समायोजनका मेटाडेटा।</target></trans-unit>
+      <trans-unit id="xmr.docs.txResult" datatype="html"><source>Status, fee, size/weight, confirmations, public ring data, and RingCT flags. No recipient address or output amount.</source><target>स्थिति, शुल्क, आकार/भार, पुष्टि, सार्वजनिक रिङ डेटा र RingCT फ्ल्याग। प्राप्तकर्ताको ठेगाना वा आउटपुट रकम हुँदैन।</target></trans-unit>
+      <trans-unit id="xmr.docs.txHexResult" datatype="html"><source>Mempool blob or available pruned confirmed transaction hex.</source><target>mempool डेटा वा उपलब्ध छाँटिएको पुष्टि भएको कारोबारको हेक्स।</target></trans-unit>
+      <trans-unit id="xmr.docs.mempoolResult" datatype="html"><source>Observed pool count, aggregate weight/fees, and privacy-safe transaction fields.</source><target>देखिएको पूल संख्या, कुल भार/शुल्क र गोपनीयता सुरक्षित कारोबार क्षेत्रहरू।</target></trans-unit>
+      <trans-unit id="xmr.docs.projectedResult" datatype="html"><source>Projected pending blocks from the observed pool.</source><target>देखिएको पूलबाट अनुमानित प्रतीक्षारत ब्लकहरू।</target></trans-unit>
+      <trans-unit id="xmr.docs.snapshotResult" datatype="html"><source>Live-client bootstrap snapshot.</source><target>प्रत्यक्ष क्लाइन्टका लागि प्रारम्भिक स्न्यापसट।</target></trans-unit>
+      <trans-unit id="xmr.docs.feesResult" datatype="html"><source>Slow, normal, fast, and fastest estimates in atomic units per byte plus quantization mask.</source><target>प्रति बाइट एटोमिक एकाइमा सुस्त, सामान्य, छिटो र सबैभन्दा छिटो अनुमान तथा क्वान्टाइजेसन मास्क।</target></trans-unit>
+      <trans-unit id="xmr.docs.fiatResult" datatype="html"><source>Current or timestamped locally indexed fiat conversion data.</source><target>हालको वा समय उल्लेख गरिएको स्थानीय रूपमा इन्डेक्स गरिएको फिएट रूपान्तरण डेटा।</target></trans-unit>
+      <trans-unit id="xmr.docs.hashrateResult" datatype="html"><source>Difficulty-derived network hashrate history.</source><target>कठिनाइबाट निकालिएको नेटवर्क ह्यासरेट इतिहास।</target></trans-unit>
+      <trans-unit id="xmr.docs.rewardResult" datatype="html"><source>Indexed block fee, subsidy, reward, and fiat series.</source><target>इन्डेक्स गरिएको ब्लक शुल्क, सब्सिडी, पुरस्कार र फिएट शृङ्खला।</target></trans-unit>
+      <trans-unit id="xmr.docs.feeRatesResult" datatype="html"><source>Public fee-rate buckets and block size/weight history.</source><target>सार्वजनिक शुल्क दर समूह र ब्लक आकार/भार इतिहास।</target></trans-unit>
+      <trans-unit id="xmr.docs.poolsResult" datatype="html"><source>Best-effort marker-derived pool stats; unattributed blocks remain Unknown.</source><target>उपलब्ध मार्करबाट निकालिएको पूल तथ्याङ्क; पहिचान नभएका ब्लक अज्ञात रहन्छन्।</target></trans-unit>
+      <trans-unit id="xmr.docs.serverMessages" datatype="html"><source>Server messages</source><target>सर्भर सन्देशहरू</target></trans-unit>
+      <trans-unit id="xmr.docs.clientMessages" datatype="html"><source>Client messages</source><target>क्लाइन्ट सन्देशहरू</target></trans-unit>
+      <trans-unit id="xmr.docs.message" datatype="html"><source>Message</source><target>सन्देश</target></trans-unit>
+      <trans-unit id="xmr.docs.behavior" datatype="html"><source>Behavior</source><target>व्यवहार</target></trans-unit>
+      <trans-unit id="xmr.docs.requestSnapshot" datatype="html"><source>Request the current snapshot.</source><target>हालको स्न्यापसट अनुरोध गर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.docs.subscribeBlock" datatype="html"><source>Subscribe to a projected block snapshot by index.</source><target>इन्डेक्सअनुसार अनुमानित ब्लकको स्न्यापसट सदस्यता लिनुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.docs.trackTx" datatype="html"><source>Track public confirmation status for one transaction hash.</source><target>एउटा कारोबार ह्यासको सार्वजनिक पुष्टि स्थिति ट्र्याक गर्नुहोस्।</target></trans-unit>
+      <trans-unit id="xmr.docs.noAddressTracking" datatype="html"><source>Address tracking is intentionally not a public Monero stream feature.</source><target>ठेगाना ट्र्याकिङ जानाजानी सार्वजनिक Monero स्ट्रिमको सुविधा होइन।</target></trans-unit>
+      <trans-unit id="xmr.docs.events" datatype="html"><source>Events and reconnection</source><target>घटनाहरू र पुनः जडान</target></trans-unit>
+      <trans-unit id="xmr.docs.event" datatype="html"><source>Event</source><target>घटना</target></trans-unit>
+      <trans-unit id="xmr.docs.payload" datatype="html"><source>Payload</source><target>पेलोड</target></trans-unit>
+      <trans-unit id="xmr.docs.snapshotEvent" datatype="html"><source>Current daemon info and observed mempool hashes at connect.</source><target>जडान हुँदा हालको डेमन जानकारी र देखिएका mempool ह्यासहरू।</target></trans-unit>
+      <trans-unit id="xmr.docs.blockEvent" datatype="html"><source>A new public block header.</source><target>नयाँ सार्वजनिक ब्लक हेडर।</target></trans-unit>
+      <trans-unit id="xmr.docs.overview" datatype="html"><source>Overview</source><target>सिंहावलोकन</target></trans-unit>
+      <trans-unit id="xmr.docs.gettingStarted" datatype="html"><source>Getting started</source><target>सुरु गर्ने</target></trans-unit>
+      <trans-unit id="xmr.docs.chainBlocks" datatype="html"><source>Chain and blocks</source><target>चेन र ब्लकहरू</target></trans-unit>
+      <trans-unit id="xmr.docs.endpoints" datatype="html"><source>Endpoints</source><target>एन्डपोइन्टहरू</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionsMempool" datatype="html"><source>Transactions and mempool</source><target>कारोबार र mempool</target></trans-unit>
+      <trans-unit id="xmr.docs.feesHistory" datatype="html"><source>Fees and history</source><target>शुल्क र इतिहास</target></trans-unit>
+      <trans-unit id="xmr.docs.miningData" datatype="html"><source>Mining data</source><target>माइनिङ डेटा</target></trans-unit>
+      <trans-unit id="xmr.docs.transactionProof" datatype="html"><source>Transaction proof</source><target>कारोबार प्रमाण</target></trans-unit>
+      <trans-unit id="xmr.docs.verification" datatype="html"><source>Verification</source><target>प्रमाणीकरण</target></trans-unit>
+      <trans-unit id="xmr.docs.daemonBridge" datatype="html"><source>Public daemon bridge</source><target>सार्वजनिक डेमन ब्रिज</target></trans-unit>
+      <trans-unit id="xmr.docs.connectInitialize" datatype="html"><source>Connect and initialize</source><target>जडान र प्रारम्भ</target></trans-unit>
+      <trans-unit id="xmr.docs.connection" datatype="html"><source>Connection</source><target>जडान</target></trans-unit>
+      <trans-unit id="xmr.docs.eventCategory" datatype="html"><source>Events</source><target>घटनाहरू</target></trans-unit>
+      <trans-unit id="xmr.docs.commands" datatype="html"><source>Commands</source><target>आदेशहरू</target></trans-unit>
+      <trans-unit id="xmr.docs.connect" datatype="html"><source>Connect</source><target>जडान गर्नुहोस्</target></trans-unit>
+      <trans-unit id="xmr.docs.browser-title" datatype="html"><source>Documentation</source><target>कागजात</target></trans-unit>
+      <trans-unit id="meta.description.xmr.docs" datatype="html"><source>Monero explorer documentation: privacy-safe public data, REST endpoints, and live streams.</source><target>Monero एक्सप्लोरर कागजात: गोपनीयता सुरक्षित सार्वजनिक डेटा, REST एन्डपोइन्ट र प्रत्यक्ष स्ट्रिम।</target></trans-unit>
     </body>
   </file>
 </xliff>
