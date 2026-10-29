@@ -136,6 +136,10 @@ export class SeoService {
       else pageSchema.remove();
     }
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
+    if (locale) {
+      const expanded = new Intl.Locale(locale).maximize();
+      this.metaService.updateTag({ property: 'og:locale', content: `${expanded.language}_${expanded.region}` });
+    }
     // These locale routes are noindex; advertising them as hreflang alternatives
     // caused crawlers to discover a duplicate URL for every entity and language.
     document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => link.remove());

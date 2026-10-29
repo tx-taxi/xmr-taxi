@@ -98,6 +98,10 @@ export class XmrEntityMetaRoutes {
         const image = PAGE_CAPTURE.url;
         let html = template.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(entity.title)} | xmr.tx.taxi</title>`);
         html = html.replace(/<link id="canonical"[^>]*>/i, `<link id="canonical" rel="canonical" href="${url}">`);
+        if (locale) {
+          const expanded = new Intl.Locale(locale).maximize();
+          html = replaceMeta(html, 'property', 'og:locale', `${expanded.language}_${expanded.region}`);
+        }
         for (const [attribute, key, value] of [
           ['name', 'description', entity.description],
           ['property', 'og:type', 'article'],
